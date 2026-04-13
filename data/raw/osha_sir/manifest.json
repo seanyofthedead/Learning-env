@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-04-13T18:36:16.584193+00:00",
+  "entries": [
+    {
+      "url": "https://www.osha.gov/sites/default/files/January2015toAugust2025.zip",
+      "download_ts": "2026-04-13T18:36:16.534559+00:00",
+      "filename": "January2015toAugust2025.zip",
+      "bytes": 15810524,
+      "sha256": "5a6df2a0aca2ed5bc3940e28e24638dff7f7ff8d401c82686f4f3a416963d237",
+      "notes": "OSHA Severe Injury Reports (federal OSHA only)",
+      "extracted_files": [
+        "extracted/January2015toAugust2025.csv"
+      ]
+    }
+  ]
+}

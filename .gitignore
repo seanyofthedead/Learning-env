@@ -37,9 +37,28 @@ ENV/
 *.swo
 
 # --- Data (kept out of git; provenance preserved via manifests) ---
-data/raw/**
-data/processed/**
-data/features/**
+# File-pattern exclusions so negations below actually apply (git can't
+# re-include files inside a directory matched by a directory-level rule).
+data/raw/**/*.zip
+data/raw/**/*.zip.part
+data/raw/**/*.csv
+data/raw/**/*.csv.gz
+data/raw/**/*.tsv
+data/raw/**/*.txt
+data/raw/**/*.json
+data/raw/**/*.jsonl
+data/raw/**/*.xml
+data/raw/**/*.xls
+data/raw/**/*.xlsx
+data/raw/**/*.mdb
+data/raw/**/*.dat
+data/raw/**/*.parquet
+data/processed/**/*.parquet
+data/processed/**/*.csv
+data/processed/**/*.jsonl
+data/features/**/*.parquet
+data/features/**/*.csv
+data/features/**/*.npy
 
 # --- But KEEP manifests and summary logs ---
 !data/raw/**/manifest.json
@@ -47,11 +66,7 @@ data/features/**
 !data/processed/**/*_stats.md
 !data/features/**/*_stats.md
 
-# --- Keep directory structure ---
-!data/
-!data/raw/
-!data/processed/
-!data/features/
+# --- Keep .gitkeep placeholders ---
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/features/.gitkeep
