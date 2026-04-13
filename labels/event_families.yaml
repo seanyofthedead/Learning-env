@@ -1,0 +1,157 @@
+# Event-family mapping: collapse source-native event types into coarser
+# families so recurrence can be detected across slightly different labels
+# at the same entity. Used when --match-level=family.
+#
+# Pattern: map[source][family_name] -> list of case-insensitive substring
+# patterns that match the source-native event_type string.
+
+osha_sir:
+  fall:
+    - fall
+    - slip
+  struck_by:
+    - struck by
+    - struck-by
+    - contact with
+  caught_in:
+    - caught in
+    - caught-in
+    - caught between
+    - pinch
+    - crush
+  overexertion:
+    - overexertion
+    - lifting
+    - pushing
+    - pulling
+  cut_pierce:
+    - cut
+    - laceration
+    - knife
+    - blade
+  fire_explosion:
+    - fire
+    - explosion
+    - burn
+  exposure:
+    - exposure
+    - inhalation
+    - ingestion
+  transport:
+    - vehicle
+    - forklift
+    - truck
+    - motor
+
+osha_ita:
+  fall:
+    - fall
+    - slip
+  struck_by:
+    - struck
+    - contact
+    - non-running
+  caught_in:
+    - caught
+    - crushed
+    - pinch
+  overexertion:
+    - overexertion
+    - strain
+    - sprain
+    - lifting
+  cut_pierce:
+    - cut
+    - laceration
+    - puncture
+    - stab
+  fire_explosion:
+    - fire
+    - burn
+    - explosion
+  exposure:
+    - exposure
+    - inhalation
+    - chemical
+  transport:
+    - vehicle
+    - forklift
+    - motor
+
+msha:
+  fall:
+    - fall
+    - slip
+  struck_by:
+    - struck
+    - handling materials
+  caught_in:
+    - caught
+    - machinery
+    - pinch
+  fall_of_ground:
+    - fall of ground
+    - roof
+    - rib
+  electrical:
+    - electrical
+  fire_explosion:
+    - fire
+    - explosion
+    - inundation
+  powered_haulage:
+    - powered haulage
+    - haulage
+    - truck
+  exposure:
+    - exposure
+    - inhalation
+    - dust
+
+nrc:
+  power_change:
+    - power
+    - scram
+    - trip
+  radioactive_release:
+    - release
+    - radiation
+  equipment:
+    - equipment
+    - component
+    - failure
+  part21:
+    - part 21
+  emergency:
+    - emergency
+  security:
+    - security
+
+asrs:
+  deviation_altitude:
+    - deviation-altitude
+  deviation_procedural:
+    - deviation-procedural
+    - deviation procedural
+  conflict:
+    - conflict
+    - less than legal
+  atc:
+    - atc
+  equipment:
+    - aircraft equipment
+    - equipment problem
+  airspace_violation:
+    - airspace
+  runway_incursion:
+    - runway incursion
+  ground_incursion:
+    - ground incursion
+
+ntsb:
+  accident:
+    - accident
+  incident:
+    - incident
+  fatal:
+    - fatal
