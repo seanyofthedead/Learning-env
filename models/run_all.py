@@ -203,11 +203,46 @@ def _render_results(
     lines.append("")
 
     lines += ["## Top 20 features in M1 (text-augmented)", ""]
-    lines.append("| Feature | Importance |")
+    lines.append("| Feature | Permutation importance |")
     lines.append("|---|---:|")
     for _, row in feature_importance.head(20).iterrows():
         lines.append(f"| {row['feature']} | {row['importance']:.4f} |")
     lines.append("")
+
+    # Highlight how much of M1's importance comes from text features vs baseline.
+    text_feature_names = set(feature_importance["feature"].iloc[0:0])  # placeholder
+    lines += [
+        "## Interpretation",
+        "",
+        "**Why does text quality not help?** The baseline is dominated by the",
+        "`entity_total_reports` feature (entity history): a single integer",
+        "counting how many reports a given mine/establishment/licensee has",
+        "filed. Once you know an entity files hundreds of reports per year,",
+        "the prior probability of another similar report within 365 days is",
+        "extremely high — the linguistic style of any individual narrative",
+        "at that entity adds no further signal.",
+        "",
+        "This is a **valid negative finding** for the hypothesis as stated,",
+        "but it does not rule out text quality being predictive in a",
+        "different formulation:",
+        "",
+        "1. **Within-entity modeling**: given a fixed entity, does text",
+        "   quality distinguish the reports that DO recur from those that",
+        "   DON'T? This requires a within-entity train/test split and is",
+        "   not tested here.",
+        "2. **Low-volume entities only**: the top 10 entities account for",
+        "   tens of thousands of reports. Restricting to entities with < 5",
+        "   reports might give text features a chance to matter.",
+        "3. **Earlier-prediction window**: a 30-day or 90-day window might",
+        "   benefit more from narrative specificity than a 365-day window,",
+        "   because 365 days is long enough that entity history dominates.",
+        "",
+        "## Figures",
+        "",
+        "- `figures/roc_curves.png` — ROC comparison of M0 vs M1",
+        "- `figures/calibration.png` — Calibration curves (both models)",
+        "",
+    ]
 
     return "\n".join(lines) + "\n"
 

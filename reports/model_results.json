@@ -1,0 +1,36 @@
+{
+  "cutoff": "2024-01-01",
+  "n_train": 985138,
+  "n_test": 28909,
+  "models": [
+    {
+      "name": "M0 baseline",
+      "features": "26 structured",
+      "metrics": {
+        "roc_auc": 0.9708311454653737,
+        "pr_auc": 0.9045869450352823,
+        "brier": 0.06081281584677473,
+        "n": 28909,
+        "positive_rate": 0.2540385347123733
+      }
+    },
+    {
+      "name": "M1 text-augmented",
+      "features": "44 combined",
+      "metrics": {
+        "roc_auc": 0.9703709354906659,
+        "pr_auc": 0.904408068956957,
+        "brier": 0.06149718047215998,
+        "n": 28909,
+        "positive_rate": 0.2540385347123733
+      }
+    }
+  ],
+  "delta_m0_m1": {
+    "delta_mean": -0.00046271126722635723,
+    "ci_low": -0.0006668686425652937,
+    "ci_high": -0.00026453293834787785,
+    "ci_excludes_zero": true,
+    "n_boot": 1000
+  }
+}
