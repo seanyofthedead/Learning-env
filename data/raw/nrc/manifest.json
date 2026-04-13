@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-04-13T18:49:34.375372+00:00",
+  "entries": [
+    {
+      "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/event-notification-rpt-lastmonth.txt",
+      "download_ts": "2026-04-13T18:49:34.372538+00:00",
+      "filename": "event-notification-rpt-lastmonth.txt",
+      "bytes": 98963,
+      "sha256": "1decbe2257a5f5b94ff128df5bfc2525b1f6f42e99b392979bbf5eaa3b51b8df",
+      "notes": "NRC Event Notifications, most recent ~month only"
+    },
+    {
+      "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/event-notification-rpt-datadictionary.xls",
+      "download_ts": "2026-04-13T18:49:34.374189+00:00",
+      "filename": "event-notification-rpt-datadictionary.xls",
+      "bytes": 26112,
+      "sha256": "1fa25614420184b299870a5b4cb402ca1d282535b653a615320a1e8c18766661",
+      "notes": "Data dictionary (XLS)"
+    }
+  ]
+}
