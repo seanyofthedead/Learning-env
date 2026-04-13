@@ -60,9 +60,11 @@ data/features/**/*.parquet
 data/features/**/*.csv
 data/features/**/*.npy
 
-# --- But KEEP manifests and summary logs ---
+# --- But KEEP manifests, summary logs, and escape-hatch instructions ---
 !data/raw/**/manifest.json
 !data/raw/ACQUISITION_LOG.md
+!data/raw/**/MANUAL_EXPORT_INSTRUCTIONS.md
+!data/raw/**/asrs_manual_instructions.md
 !data/processed/**/*_stats.md
 !data/features/**/*_stats.md
 
