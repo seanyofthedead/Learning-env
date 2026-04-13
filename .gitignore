@@ -1,0 +1,61 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.ruff_cache/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# --- OS/IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Data (kept out of git; provenance preserved via manifests) ---
+data/raw/**
+data/processed/**
+data/features/**
+
+# --- But KEEP manifests and summary logs ---
+!data/raw/**/manifest.json
+!data/raw/ACQUISITION_LOG.md
+!data/processed/**/*_stats.md
+!data/features/**/*_stats.md
+
+# --- Keep directory structure ---
+!data/
+!data/raw/
+!data/processed/
+!data/features/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/features/.gitkeep
+
+# --- Models and figures ---
+models/checkpoints/
+# reports/ is intentionally tracked — it's the capstone deliverable
