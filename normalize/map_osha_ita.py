@@ -63,6 +63,28 @@ def _load_raw() -> pd.DataFrame:
     return pd.concat(frames, ignore_index=True)
 
 
+def _parse_ita_dates(series: pd.Series) -> pd.Series:
+    """Parse OSHA ITA date_of_incident across both known formats.
+
+    - 2023 Case Detail file uses MM/DD/YYYY (e.g. "01/12/2023")
+    - 2024 Case Detail file uses SAS-style %d%b%Y (e.g. "16JAN2024")
+
+    The two formats are disjoint on first character (digit vs non-digit
+    for the middle part) so we try the slash format first and fall back
+    to the SAS format for whatever fails.
+    """
+    out = pd.to_datetime(series, format="%m/%d/%Y", errors="coerce")
+    mask = out.isna() & series.notna() & (series.astype(str).str.strip() != "")
+    if mask.any():
+        fallback = pd.to_datetime(series[mask], format="%d%b%Y", errors="coerce")
+        out.loc[mask] = fallback
+    # Last-ditch: dateutil mixed parsing for any stragglers.
+    mask2 = out.isna() & series.notna() & (series.astype(str).str.strip() != "")
+    if mask2.any():
+        out.loc[mask2] = pd.to_datetime(series[mask2], errors="coerce", format="mixed")
+    return out
+
+
 def _vectorized_narrative(df: pd.DataFrame) -> pd.Series:
     """Concatenate the five NEW_NAR_* fields with section headers."""
     parts: list[pd.Series] = []
@@ -107,7 +129,7 @@ def to_normalized(raw_df: pd.DataFrame) -> pd.DataFrame:
     out = pd.DataFrame(index=raw_df.index)
     out["report_id"] = SOURCE + ":" + raw_df["id"].astype(str)
     out["source"] = SOURCE
-    out["event_date"] = pd.to_datetime(raw_df["date_of_incident"], errors="coerce")
+    out["event_date"] = _parse_ita_dates(raw_df["date_of_incident"])
     out["entity_raw_key"] = raw_df["establishment_id"].fillna("").astype(str)
     out["entity_name"] = raw_df["establishment_name"].where(
         raw_df["establishment_name"].notna(), raw_df["company_name"]

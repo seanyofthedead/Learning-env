@@ -1,6 +1,6 @@
 # Grammar of Failure — Model Results
 
-_Generated at 2026-04-13T20:08:53+00:00_
+_Generated at 2026-04-13T20:51:56+00:00_
 
 ## Hypothesis
 
@@ -9,30 +9,30 @@ _Generated at 2026-04-13T20:08:53+00:00_
 ## Setup
 
 - **Train/test split:** time-based, cutoff = 2024-01-01
-- **Training reports:** 985,138
-- **Test reports:** 28,909
+- **Training reports:** 985,764
+- **Test reports:** 716,904
 - **Classifier:** `HistGradientBoostingClassifier(max_iter=200, max_depth=7, lr=0.08)`
 
 ## Results
 
 | Model | Features | ROC-AUC | PR-AUC | Brier | Positive rate |
 |---|---|---:|---:|---:|---:|
-| M0 baseline | 26 structured | 0.9708 | 0.9046 | 0.0608 | 25.4% |
-| M1 text-augmented | 44 combined | 0.9704 | 0.9044 | 0.0615 | 25.4% |
+| M0 baseline | 26 structured | 0.9210 | 0.9643 | 0.1025 | 70.8% |
+| M1 text-augmented | 44 combined | 0.9207 | 0.9641 | 0.1029 | 70.8% |
 
 ## Per-source ROC-AUC
 
 | Source | M0 baseline | M1 text-augmented |
 |---|---:|---:|
-| msha | 0.9099 | 0.9084 |
+| msha | 0.9178 | 0.9174 |
 | nrc | 1.0000 | 1.0000 |
-| osha_ita | 0.9181 | 0.9156 |
-| osha_sir | 0.9898 | 0.9900 |
+| osha_ita | 0.9147 | 0.9143 |
+| osha_sir | 0.9900 | 0.9901 |
 
 ## Δ AUC (M1 − M0) — capstone finding
 
-- **Mean delta:** -0.0005
-- **95% bootstrap CI:** [-0.0007, -0.0003]
+- **Mean delta:** -0.0004
+- **95% bootstrap CI:** [-0.0005, -0.0002]
 - **CI excludes zero:** True
 - **Bootstrap resamples:** 1000
 
@@ -42,26 +42,26 @@ _Generated at 2026-04-13T20:08:53+00:00_
 
 | Feature | Permutation importance |
 |---|---:|
-| entity_total_reports | 0.6905 |
-| prior_report_count | 0.0280 |
-| days_since_first_seen | 0.0024 |
-| fam_caught_in | 0.0012 |
-| fam_fire_explosion | 0.0011 |
-| fam_exposure | 0.0007 |
-| src_msha | 0.0006 |
-| fam_electrical | 0.0005 |
-| fam_fall | 0.0003 |
-| char_count | 0.0002 |
-| fam_other | 0.0001 |
-| month | 0.0001 |
-| mean_word_length | 0.0001 |
-| src_osha_ita | 0.0001 |
-| src_osha_sir | 0.0001 |
-| type_token_ratio | 0.0000 |
-| fam_struck_by | 0.0000 |
-| narrative_word_count | 0.0000 |
-| passive_per_sentence | 0.0000 |
-| word_count | 0.0000 |
+| entity_total_reports | 0.5040 |
+| prior_report_count | 0.1434 |
+| days_since_first_seen | 0.0174 |
+| month | 0.0058 |
+| fam_exposure | 0.0044 |
+| fam_transport | 0.0032 |
+| fam_fire_explosion | 0.0014 |
+| fam_struck_by | 0.0007 |
+| fam_overexertion | 0.0004 |
+| fam_electrical | 0.0003 |
+| numeric_density_per100 | 0.0003 |
+| flesch_kincaid_grade | 0.0003 |
+| fam_caught_in | 0.0003 |
+| src_osha_ita | 0.0002 |
+| first_third_ratio | 0.0001 |
+| gunning_fog | 0.0001 |
+| third_person_density_per100 | 0.0001 |
+| passive_per_sentence | 0.0001 |
+| first_person_density_per100 | 0.0001 |
+| causal_density_per100 | 0.0000 |
 
 ## Interpretation
 

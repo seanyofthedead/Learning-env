@@ -1,8 +1,8 @@
 # Normalized corpus statistics
 
-_Generated at 2026-04-13T19:51:32+00:00_
+_Generated at 2026-04-13T20:26:28+00:00_
 
-**Total normalized rows:** 1,014,047
+**Total normalized rows:** 1,702,668
 **Output:** `data/processed/normalized.parquet`
 
 ## Per-source breakdown
@@ -10,7 +10,7 @@ _Generated at 2026-04-13T19:51:32+00:00_
 | Source | Rows | Date range | Narrative (mean/median words) |
 |---|---:|---|---|
 | osha_sir | 73,398 | 2018-01-01 → 2025-08-31 | 35.2 / 32.0 |
-| osha_ita | 890,934 | 2022-02-26 → 2024-12-12 | 51.6 / 45.0 |
+| osha_ita | 1,579,555 | 2022-02-26 → 2025-08-15 | 51.5 / 45.0 |
 | msha | 49,666 | 2018-01-01 → 2026-04-07 | 36.4 / 35.0 |
 | nrc | 49 | 2023-10-01 → 2025-11-26 | 240.7 / 179.0 |
 | ntsb | 0 | — | — |
