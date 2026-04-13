@@ -98,13 +98,22 @@ base query body.
 
 
 def _find_manual_files() -> list[Path]:
-    """Return any user-dropped CSV/JSON files in the source dir."""
+    """Return any user-dropped CSV/JSON files in the source dir.
+
+    Excludes the manifest and instructions file that this script writes
+    itself.
+    """
     if not SOURCE_DIR.exists():
         return []
+    excluded = {"manifest.json", "MANUAL_EXPORT_INSTRUCTIONS.md"}
     return [
         p
         for p in SOURCE_DIR.iterdir()
-        if p.is_file() and p.suffix.lower() in {".csv", ".json", ".jsonl"}
+        if (
+            p.is_file()
+            and p.suffix.lower() in {".csv", ".json", ".jsonl"}
+            and p.name not in excluded
+        )
     ]
 
 

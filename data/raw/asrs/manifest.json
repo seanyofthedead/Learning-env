@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-04-13T19:03:16.711080+00:00",
+  "entries": [
+    {
+      "url": "https://akama.arc.nasa.gov/ASRSDBOnline/QueryWizard_Filter.aspx",
+      "filename": "asrs_manual_instructions.md",
+      "notes": "escape-hatch: no chunks present. form_introspected=True. See asrs_manual_instructions.md for the export plan.",
+      "sha256": null,
+      "bytes": 18124
+    },
+    {
+      "url": "https://akama.arc.nasa.gov/ASRSDBOnline/QueryWizard_Filter.aspx",
+      "filename": "form_schema.json",
+      "notes": "DBOL form state introspection",
+      "sha256": null,
+      "bytes": 4267
+    }
+  ]
+}

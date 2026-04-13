@@ -1,18 +1,20 @@
 # Acquisition Log
 
-_Generated at 2026-04-13T18:49:34+00:00_
+_Generated at 2026-04-13T19:03:16+00:00_
 
-**Sources attempted:** 4  
+**Sources attempted:** 6  
 **Combined row count (summary):** 1,733,050
 
 ## Summary
 
 | Source | Status | Rows | Date range | Narrative (words) | Duration |
 |---|---|---:|---|---|---:|
-| osha_sir | ok | 103,750 | 2015-01-01 → 2025-08-31 | n=103750, mean=34.5, median=31.0, p25=23.0, p75=42.0 | 3.7s |
-| msha | ok | 49,668 | 2018-01-01 → 2026-04-07 | n=49667, mean=36.4, median=35.0, p25=23.0, p75=49.0 | 12.8s |
-| osha_ita | ok | 1,579,583 | 2022-02-26 → 2025-08-15 | n=1579583, mean=46.5, median=40.0, p25=28.0, p75=58.0 | 112.4s |
-| nrc | partial | 49 | 2023-10-01 → 2025-11-26 | n=49, mean=240.7, median=179.0, p25=150.0, p75=292.0 | 0.6s |
+| osha_sir | ok | 103,750 | 2015-01-01 → 2025-08-31 | n=103750, mean=34.5, median=31.0, p25=23.0, p75=42.0 | 4.1s |
+| msha | ok | 49,668 | 2018-01-01 → 2026-04-07 | n=49667, mean=36.4, median=35.0, p25=23.0, p75=49.0 | 12.6s |
+| osha_ita | ok | 1,579,583 | 2022-02-26 → 2025-08-15 | n=1579583, mean=46.5, median=40.0, p25=28.0, p75=58.0 | 119.1s |
+| nrc | partial | 49 | 2023-10-01 → 2025-11-26 | n=49, mean=240.7, median=179.0, p25=150.0, p75=292.0 | 0.8s |
+| ntsb | failed | — | — | — | 0.0s |
+| asrs | failed | — | — | — | 2.4s |
 
 ## Details
 
@@ -59,4 +61,22 @@ _Generated at 2026-04-13T18:49:34+00:00_
 
 **Files:**
 - `/home/user/Learning-env/data/raw/nrc/event-notification-rpt-lastmonth.txt`
+
+### ntsb — `failed`
+
+**Error:** `CAROL_QUERY_BODY not configured`
+
+**Notes:** See data/raw/ntsb/MANUAL_EXPORT_INSTRUCTIONS.md for manual steps. Once CAROL_QUERY_BODY is populated with a DevTools-captured request body, this module will paginate automatically.
+
+**Files:**
+- `/home/user/Learning-env/data/raw/ntsb/MANUAL_EXPORT_INSTRUCTIONS.md`
+
+### asrs — `failed`
+
+**Error:** `No ASRS chunk CSVs present and DBOL scripted export unavailable`
+
+**Notes:** Manual export plan written with 224 chunks. Form introspection succeeded. Drop CSVs into data/raw/asrs/chunks/ and re-run to combine.
+
+**Files:**
+- `/home/user/Learning-env/data/raw/asrs/asrs_manual_instructions.md`
 

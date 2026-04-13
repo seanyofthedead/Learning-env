@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-13T18:47:41.233556+00:00",
+  "generated_at": "2026-04-13T19:01:14.246289+00:00",
   "entries": [
     {
       "url": "https://arlweb.msha.gov/OpenGovernmentData/DataSets/Accidents.zip",
-      "download_ts": "2026-04-13T18:47:41.076826+00:00",
+      "download_ts": "2026-04-13T19:01:14.080435+00:00",
       "filename": "Accidents.zip",
       "bytes": 51708666,
       "sha256": "b7ddd03a6c21551378dee42fcd5e03baff6fdae714a9896586cc0c07c2aa348d",
@@ -14,7 +14,7 @@
     },
     {
       "url": "https://arlweb.msha.gov/OpenGovernmentData/DataSets/Accidents_Definition_File.txt",
-      "download_ts": "2026-04-13T18:47:41.232128+00:00",
+      "download_ts": "2026-04-13T19:01:14.245056+00:00",
       "filename": "Accidents_Definition_File.txt",
       "bytes": 10214,
       "sha256": "c7681808dd372b6c5bd95fdf70b01e856e0d2501b7e5d7cc9185f4c4e1f876e5",
