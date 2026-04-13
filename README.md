@@ -18,6 +18,16 @@ Phase 2C: extract features       -> data/features/*.parquet
 Phase 2D: train + evaluate       -> reports/model_results.md
 ```
 
+Run all of Phase 1 then all of Phase 2:
+
+```bash
+python -m scripts.acquire_all
+python -m normalize.run_all
+python -m labels.run_all
+python -m features.run_all
+python -m models.run_all
+```
+
 ## Data sources
 
 | Source | Domain | Access |
