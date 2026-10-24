@@ -33,4 +33,4 @@ Re-read ASSUMPTIONS.md before resuming.
 | 7.5 | 7 Review | builder | README.md (setup, offline run, cache regen, day-of checklist, responsible Demo 2) | done |
 | 7.6 | 7 Review | builder | copilot-kit (clean files, prompts list, rehearsal log template + 3-rehearsal rule) | done |
 | 8.1 | 8 Report | builder | Run preflight three times, confirm identical results | done |
-| 8.2 | 8 Report | builder | FINAL_REPORT.md | todo |
+| 8.2 | 8 Report | builder | FINAL_REPORT.md | done |
