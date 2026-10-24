@@ -1,8 +1,9 @@
-SYNTHETIC DEMONSTRATION DATA. Prompts for the optional Microsoft 365 Copilot path.
+SYNTHETIC DEMONSTRATION DATA. Prompts for running the demos live in Microsoft 365 Copilot (see RUNBOOK.md).
 Paste each prompt exactly as written. Attach or reference the file named in brackets.
 
 DEMO 1  From weak to strong   [fy26_q3_execution_report.xlsx  (this folder)]
-Start a NEW chat for each stage so earlier answers do not carry over.
+Copilot Chat (Work). Start a NEW chat for each stage so earlier answers do not carry over.
+Pre-stage all five before the session: attach the file, paste the prompt, do not send.
 
 Stage 1  Weak
 Summarize this report.
@@ -19,7 +20,7 @@ Act as a federal budget analyst supporting an NSA directorate. Review the attach
 Stage 5  + Output (the strong prompt)
 Act as a federal budget analyst supporting an NSA directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology. Present findings in a leadership-ready table with the variance, likely cause, and a recommended follow-up for each.
 
-DEMO 2  Trust but verify   (same prompt for both files; new chat for each)
+DEMO 2  Trust but verify   (Copilot in Word; same prompt in each document's Copilot pane)
 File 1: demo2/demo_report.docx  (clean)
 File 2: demo2/INJECTED_demo_report_DO_NOT_USE.docx  (lives only in ./demo2; see demo2/REVEAL.md)
 Live use only after three successful rehearsals on the presentation tenant (REHEARSAL_LOG.md).

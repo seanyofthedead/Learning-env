@@ -9,11 +9,43 @@ tool-agnostic. **Everything here is synthetic demonstration data.**
 | 1. From weak to strong | 4:00 (90 s and 45 s versions) | 6 | The same report and AI. The prompt grows Role → Task → Context → Output and the answer goes from "generally on track" to a leadership-ready table. |
 | 2. Trust but verify | 1:30 (45 s version) | 3 | Two identical-looking copies of the report. One has a hidden white line. The AI follows it. The red reveal. |
 
-> The outputs on screen are **pre-generated** and replayed from `app/cache.json`, so the
-> demo runs the same every time. As shipped they are *representative pre-generated
-> outputs* written for this demo (no model API key was available at build time). See
-> "Regenerate the cache" to replace them with real model output. The presenter script
-> says they are pre-generated in either case.
+## Run it in Microsoft 365 Copilot (primary)
+
+Both demos run **live in Microsoft 365 Copilot**: Demo 1 in Copilot Chat with the report
+attached, Demo 2 in Copilot in Word. Everything for that is in
+[`copilot-kit/RUNBOOK.md`](copilot-kit/RUNBOOK.md): approvals, tenant prep, pre-staging
+each prompt in its own chat so each stage is one Enter key, the live steps, fallback rules,
+and what to say if Copilot ignores the hidden line.
+
+The app in `./app` plays two supporting roles during a Copilot session:
+
+- **Teleprompter:** press O for the presenter window on your laptop screen. It opens on
+  the **Copilot live** script (4:00 / 1:30), with fallback lines and both Demo 2 endings.
+- **Fallback:** if Copilot is slow or fails, Alt+Tab to the app at the same step. After
+  each rehearsal, `scripts/import_copilot_run.py` loads the answers Copilot actually gave,
+  so the fallback is a labelled recording of your own Copilot run.
+
+Rules carried over: Demo 2 runs live only after **three successful rehearsals on the
+presentation tenant** (`copilot-kit/REHEARSAL_LOG.md`); a disclosed injection demo needs
+the venue's OK; tell the tenant's security team first (Defender can raise a
+prompt-injection alert).
+
+> Until you import a Copilot rehearsal, the app's answers are *representative
+> pre-generated outputs* written for this demo, and every answer panel says so
+> ("Representative example"). Never present them as Copilot output.
+
+## Rehearse in Copilot and record it
+
+```
+# after each rehearsal, paste the 7 answers into copilot-kit/rehearsals/<date>/ (see its README)
+python3 scripts/check_copilot_run.py copilot-kit/rehearsals/<date>    # SUCCESS / FAIL / RESISTED + log row
+python3 scripts/import_copilot_run.py copilot-kit/rehearsals/<date>   # make it the app fallback
+python3 scripts/preflight.py                                          # must print PASS
+```
+
+If Copilot ignored the hidden line in the run you import, preflight fails on purpose;
+add `--accept-resisted` only if you will present the "Copilot caught it" ending.
+`python3 scripts/build_cache.py` restores the representative outputs.
 
 ## Setup
 
@@ -57,7 +89,7 @@ Screens 1280x720 and larger are supported; body text never drops below 18px.
 
 ```
 python3 scripts/preflight.py        # prints PASS, or FAIL and the first failure
-python3 scripts/preflight.py -v     # lists all 175 checks
+python3 scripts/preflight.py -v     # lists all 195 checks
 python3 scripts/inspect_files.py    # integrity report: raw XML and metadata of every file
 ```
 
@@ -114,6 +146,8 @@ network access and an approved tool.
 - [ ] Notifications off, other windows closed, browser zoom 100%, full screen (F11).
 - [ ] If showing the files in Word/Excel: Office in light mode (dark mode can expose white text early), `demo2/REVEAL.md` steps rehearsed.
 - [ ] Venue confirmation on file that a disclosed prompt-injection demo is permitted (see below).
+- [ ] Copilot: every item in `copilot-kit/RUNBOOK.md` sections 1–3 done; Demo 2 live only with 3/3 in `REHEARSAL_LOG.md`.
+- [ ] App fallback holds your latest Copilot rehearsal (`Recorded in Copilot · <date>` on the answer panels) and preflight PASS.
 
 ## Presenting Demo 2 responsibly
 
@@ -138,7 +172,7 @@ network access and an approved tool.
 | `app/index.html`, `app/app.js`, `app/cache.json` | The demo app (no build step). `app/SCHEMA.md` documents the cache. |
 | `data/` | The synthetic FY26 Q3 report (.csv/.xlsx/.docx) and the answer key (kept out of the report files). |
 | `demo2/` | Clean copy, the `INJECTED_demo_report_DO_NOT_USE` copies, and `REVEAL.md`. |
-| `copilot-kit/` | Optional Microsoft 365 Copilot path: clean files, prompt list, rehearsal log. |
+| `copilot-kit/` | **Primary path:** RUNBOOK.md, clean files, prompt list, rehearsal log, `rehearsals/` recordings. |
 | `content/` | Source text: ladder stages, outputs, presenter script. |
 | `scripts/` | Build, regenerate, live server, preflight, integrity inspection, timing check. |
 | `CONCEPTS.md`, `REVIEW.md`, `ASSUMPTIONS.md`, `TASKS.md`, `FINAL_REPORT.md` | Design choices, sign-offs, assumptions, task log, final report. |

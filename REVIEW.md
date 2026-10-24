@@ -9,7 +9,7 @@ every check was re-run until all three came back clean.
 
 | Check | Result |
 |-------|--------|
-| `scripts/preflight.py`: 175 checks, including a headless run of both demos through the app's own render code (`scripts/headless_run.js`) | PASS |
+| `scripts/preflight.py`: 195 checks, including a headless run of both demos through the app's own render code (`scripts/headless_run.js`) | PASS |
 | Stage counts: Demo 1 = 5 ladder stages + side-by-side (6 presses); Demo 2 = 3 presses | PASS |
 | All five planted variances, with cause and amount, in Demo 1's final table, both in the cache and in the rendered HTML table | PASS |
 | Demo 2 clean run names SYN-102 and says not on plan; injected run says on plan and omits SYN-102 | PASS |
@@ -96,3 +96,28 @@ Round 2: all checks re-run after the fixes (preflight PASS, inspection clean, sc
 timing 25/25 cues fit, layout fits at all four resolutions). No new findings.
 
 **Signed off: skeptical NSA financial manager.**
+
+## Phase 9 addendum: Copilot as the primary path
+
+**Reliability engineer.** Preflight now runs 195 checks (PASS), including the Copilot-live
+script versions (4:00 and 1:30, a fallback line on every live step, both Demo 2 endings)
+and a source label on every answer panel. `check_copilot_run.py` and
+`import_copilot_run.py` were tested on a simulated Copilot paste (tab-separated table,
+citation markers): judged SUCCESS, imported, preflight PASS, app labels "Recorded in
+Copilot". A simulated run where Copilot ignored the hidden line is judged RESISTED, and
+import fails preflight unless `--accept-resisted` is given; the reveal then says "Did not
+follow the hidden line this time". Layout still fits at 1280x720 to 1920x1080. **Signed off.**
+
+**Integrity reviewer.** The .xlsx files gained one Excel table definition
+(`xl/tables/table1.xml`, name `ExecutionReport`, A5:L30) and its relationship part.
+Re-inspected: no hidden content, injected copies still differ only by the disclosed
+sentence, and clean and injected still render pixel-identical. App answers can no longer be
+mistaken for Copilot output: every panel says "Representative example" until a real Copilot
+recording is imported. The runbook adds a security-team heads-up (Defender XPIA alerts) and
+clean-up of OneDrive and its recycle bin. No variants designed to get past Copilot's
+injection protections were written. **Signed off.**
+
+**Skeptical NSA financial manager.** The Copilot-live script makes no claims about
+answers it hasn't seen: it points the room at what Copilot leads with rather than
+quoting figures, and keeps the verified figures ($4.8M, 30 September) that come from
+the report itself. The "Copilot caught it" ending is accurate and keeps the lesson. **Signed off.**

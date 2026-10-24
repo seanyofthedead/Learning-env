@@ -13,6 +13,11 @@ Automatic) works; total time within 1:30. Otherwise present Demo 2 from the app'
 
 Demo 1 may run live after one successful rehearsal, with the app open as the fallback.
 
+Judge each rehearsal with `python3 scripts/check_copilot_run.py copilot-kit/rehearsals/<date>`;
+it prints SUCCESS / FAIL / RESISTED per demo and the row to paste below. A RESISTED Demo 2
+(Copilot ignored the hidden line) is not a success for the count; if Copilot keeps resisting,
+present the "Copilot caught it" ending from RUNBOOK.md section 5.
+
 Any failure resets the count to zero for that demo. Re-run the count after any change to
 the tenant, the Copilot version, the files or the prompts.
 
@@ -20,6 +25,7 @@ the tenant, the Copilot version, the files or the prompts.
 
 - [ ] Venue permission for the injection demo recorded (who, date): ____________
 - [ ] Copilot use on this tenant approved for synthetic data (who, date): ____________
+- [ ] Security team told about the Demo 2 file before the first rehearsal (who, date): ____________
 - [ ] Files uploaded only to a private, non-shared location; INJECTED file deleted after
 - [ ] Word/Excel in light mode
 - [ ] `python3 scripts/preflight.py` = PASS (app fallback ready)
