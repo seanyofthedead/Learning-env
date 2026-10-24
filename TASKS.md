@@ -14,7 +14,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 2.2 | 2 Data | synthetic data designer | Generate data/ report files; verify they open (openpyxl/python-docx/LibreOffice render) | done |
 | 2.3 | 2 Data | synthetic data designer | Write data/answer_key.md (outside the report files) | done |
 | 3.1 | 3 Injected file | security demo builder | Build demo2 clean copies and INJECTED_demo_report_DO_NOT_USE.xlsx/.docx with simple hidden text | done |
-| 3.2 | 3 Injected file | security demo builder | Render clean vs injected to images and confirm they look identical | todo |
+| 3.2 | 3 Injected file | security demo builder | Render clean vs injected to images and confirm they look identical | done |
 | 3.3 | 3 Injected file | security demo builder | Write demo2/REVEAL.md (exact location, how to show it) | todo |
 | 4.1 | 4 Prompts/cache | prompt engineer | Write the 5 ladder stages and Demo 2 prompt (prompts.json source) | todo |
 | 4.2 | 4 Prompts/cache | prompt engineer | Author representative outputs; iterate until each stage is visibly better | todo |
