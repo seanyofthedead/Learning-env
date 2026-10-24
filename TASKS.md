@@ -44,4 +44,4 @@ Re-read ASSUMPTIONS.md before resuming.
 | 9.3 | 9 Copilot | presentation coach + front-end builder | "Copilot live" presenter versions (4:00 / 1:30), default in presenter view; footer states where outputs came from | done |
 | 9.4 | 9 Copilot | reliability engineer | check_copilot_run.py (judge a rehearsal) and import_copilot_run.py (recorded Copilot answers become the app fallback) | done |
 | 9.5 | 9 Copilot | builder | README, REHEARSAL_LOG, ASSUMPTIONS, REVIEW addendum, FINAL_REPORT updated for Copilot-first | done |
-| 9.6 | 9 Copilot | builder | Preflight three times, identical PASS; push | todo |
+| 9.6 | 9 Copilot | builder | Preflight three times, identical PASS; push | done |
