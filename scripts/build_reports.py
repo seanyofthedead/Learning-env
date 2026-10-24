@@ -373,8 +373,17 @@ def build_docx(path, inject=False):
     ])
 
 
-def main():
-    p = lambda *a: os.path.join(ROOT, *a)  # noqa: E731
+OUTPUT_FILES = [
+    "data/fy26_q3_execution_report.csv", "data/fy26_q3_execution_report.xlsx",
+    "data/fy26_q3_execution_report.docx", "demo2/demo_report.xlsx", "demo2/demo_report.docx",
+    "demo2/INJECTED_demo_report_DO_NOT_USE.xlsx", "demo2/INJECTED_demo_report_DO_NOT_USE.docx",
+    "copilot-kit/fy26_q3_execution_report.xlsx", "copilot-kit/fy26_q3_execution_report.docx",
+]
+
+
+def main(root=ROOT):
+    p = lambda *a: os.path.join(root, *a)  # noqa: E731
+    os.makedirs(p("data"), exist_ok=True)
     build_csv(p("data", f"{BASE}.csv"))
     for folder, name in (("data", BASE), ("demo2", "demo_report"), ("copilot-kit", BASE)):
         build_xlsx(p(folder, f"{name}.xlsx"))

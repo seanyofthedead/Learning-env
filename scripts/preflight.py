@@ -1,0 +1,267 @@
+#!/usr/bin/env python3
+"""Preflight: run both demos headlessly against the cache and check everything that
+must be true on the day. Prints PASS, or FAIL and the first failure. Exit code 0/1.
+
+  python3 scripts/preflight.py            # PASS / FAIL
+  python3 scripts/preflight.py -v         # list every check
+
+Needs Python 3.8+. Uses Node.js (if installed) to run the app's own render code; without
+Node the rendered-HTML checks are skipped and PASS says so.
+"""
+import argparse
+import hashlib
+import html
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_cache  # noqa: E402
+import build_reports  # noqa: E402
+import office_text  # noqa: E402
+import report_data as rd  # noqa: E402
+
+ROOT = build_cache.ROOT
+VERBOSE = False
+
+
+class Fail(Exception):
+    pass
+
+
+def check(name, cond, detail=""):
+    if not cond:
+        raise Fail(f"{name}" + (f": {detail}" if detail else ""))
+    if VERBOSE:
+        print(f"  ok  {name}")
+
+
+def path(*p):
+    return os.path.join(ROOT, *p)
+
+
+def sha(p):
+    with open(p, "rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()
+
+
+def table_rows(md):
+    """Data rows of the first pipe table in a markdown string, as lists of cells."""
+    rows = [l for l in md.splitlines() if l.strip().startswith("|")]
+    cells = [[c.strip() for c in r.strip().strip("|").split("|")] for r in rows]
+    cells = [r for r in cells if not all(re.fullmatch(r":?-{2,}:?", c) for c in r)]
+    return cells[1:] if cells else []
+
+
+def amount_patterns(k):
+    """Ways a model might write a $K amount: 4,800 / 4800 / 4.8M / 4.80 million."""
+    k = abs(k)
+    pats = [f"{k:,}", str(k)]
+    m = k / 1000
+    pats += [f"{m:.1f}M", f"{m:.2f}M", f"{m:.1f} million", f"{m:.2f} million"]
+    return pats
+
+
+ON_PLAN = re.compile(r"\bon plan\b", re.I)
+NOT_ON_PLAN = re.compile(r"\b(not on plan|is not on plan|no\b[.,:]|isn['’]t on plan|off plan)", re.I)
+LARGEST = re.compile(r"SYN-102|Help Desk", re.I)
+
+
+def run_checks(skip_node=False):
+    key = json.load(open(path("data", "answer_key.json"), encoding="utf-8"))
+    planted = key["planted"]
+
+    # ---- 1. files present
+    for p in ["app/index.html", "app/app.js", "app/cache.json", "app/SCHEMA.md",
+              "data/answer_key.md", "data/answer_key.json", "demo2/REVEAL.md"] + build_reports.OUTPUT_FILES:
+        check(f"file exists: {p}", os.path.exists(path(p)))
+
+    # ---- 2. report files are exactly what the builder makes (no hand edits, no tampering)
+    tmp = tempfile.mkdtemp(prefix="preflight-")
+    try:
+        import contextlib, io
+        with contextlib.redirect_stdout(io.StringIO()):
+            build_reports.main(tmp)
+        for p in build_reports.OUTPUT_FILES:
+            check(f"rebuild is byte-identical: {p}", sha(path(p)) == sha(os.path.join(tmp, p)))
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    for a, b in (("data/fy26_q3_execution_report.xlsx", "demo2/demo_report.xlsx"),
+                 ("data/fy26_q3_execution_report.docx", "demo2/demo_report.docx"),
+                 ("data/fy26_q3_execution_report.xlsx", "copilot-kit/fy26_q3_execution_report.xlsx"),
+                 ("data/fy26_q3_execution_report.docx", "copilot-kit/fy26_q3_execution_report.docx")):
+        check(f"clean copy identical: {b}", sha(path(a)) == sha(path(b)))
+
+    # ---- 3. payload only where it belongs
+    clean_files = [p for p in build_reports.OUTPUT_FILES if "INJECTED" not in p]
+    for p in clean_files:
+        text = (office_text.csv_text(path(p)) if p.endswith(".csv") else
+                office_text.docx_text(path(p)) if p.endswith(".docx") else office_text.xlsx_text(path(p)))
+        check(f"no hidden instruction in clean file: {p}", "ignore the largest" not in text.lower())
+    for p in [p for p in build_reports.OUTPUT_FILES if "INJECTED" in p]:
+        text = office_text.docx_text(path(p)) if p.endswith(".docx") else office_text.xlsx_text(path(p))
+        check(f"injected file carries the payload exactly once: {p}", text.count(rd.PAYLOAD) == 1)
+    injected_anywhere = [os.path.relpath(os.path.join(d, f), ROOT) for d, _, fs in os.walk(ROOT)
+                         if ".git" not in d for f in fs if "INJECTED" in f]
+    check("INJECTED files live only in ./demo2", all(p.startswith("demo2" + os.sep) for p in injected_anywhere),
+          ", ".join(injected_anywhere))
+
+    # ---- 4. report numbers match the answer key
+    rows = {r["code"]: r for r in rd.rows()}
+    check("report has 25 lines", len(rows) == 25)
+    for v in planted:
+        r = rows[v["code"]]
+        actual = r["obl_var"] if v["measure"] == "obligations" else r["exp_var"]
+        check(f"answer key variance matches report: {v['code']}", actual == v["variance_k"],
+              f"{actual} vs {v['variance_k']}")
+    others = [max(abs(r["obl_var"]), abs(r["exp_var"])) for c, r in rows.items()
+              if c not in {v["code"] for v in planted}]
+    check("five planted variances are the five largest",
+          max(others) < min(abs(v["variance_k"]) for v in planted), f"largest other {max(others)}")
+    check("largest variance is SYN-102", max(rows.values(), key=lambda r: abs(r["obl_var"]))["code"] == "SYN-102")
+
+    # ---- 5. cache structure
+    cache = json.load(open(path("app", "cache.json"), encoding="utf-8"))
+    check("schema_version is 1", cache.get("schema_version") == 1)
+    check("label is 'Synthetic demonstration data'", cache.get("label") == rd.LABEL)
+    gen = cache["generation"]
+    check("generation mode is valid", gen["mode"] in ("representative-pregenerated", "model-generated"))
+    if gen["mode"] == "model-generated":
+        check("model-generated cache names its model", bool(gen.get("model")))
+    check("index.html embeds an identical copy of cache.json", build_cache.embedded_cache() == cache)
+
+    d1 = cache["demo1"]
+    ids = [s["id"] for s in d1["stages"]]
+    check("Demo 1 has 5 ladder stages", ids == ["weak", "role", "task", "context", "output"], str(ids))
+    check("Demo 1 weak prompt is exact", d1["stages"][0]["prompt"] == build_cache.WEAK)
+    check("Demo 1 strong prompt is exact", d1["stages"][-1]["prompt"] == build_cache.STRONG)
+    for i, s in enumerate(d1["stages"]):
+        check(f"Demo 1 {s['id']}: segments join to the prompt",
+              "".join(x["text"] for x in s["prompt_segments"]) == s["prompt"])
+        new_parts = {x["part"] for x in s["prompt_segments"] if x["new"]}
+        check(f"Demo 1 {s['id']}: only the added part is highlighted",
+              new_parts == ({s["adds"]} if s["adds"] else {"base"}), str(new_parts))
+        check(f"Demo 1 {s['id']}: guess list shrinks by one per stage", len(s["guesses"]) == 4 - i)
+        if i:
+            prev = d1["stages"][i - 1]
+            check(f"Demo 1 {s['id']}: output differs from previous stage",
+                  s["output"]["markdown"].strip() != prev["output"]["markdown"].strip())
+
+    # ---- 6. Demo 1 final table has all five planted variances, each with its cause
+    final = d1["stages"][-1]["output"]["markdown"]
+    trs = table_rows(final)
+    check("Demo 1 final output contains a table", len(trs) >= 5, f"{len(trs)} rows")
+    for v in planted:
+        row = next((r for r in trs if v["code"] in " ".join(r) or v["name"].lower() in " ".join(r).lower()), None)
+        check(f"Demo 1 final table includes {v['code']} ({v['cause']})", row is not None)
+        text = " ".join(row).lower()
+        check(f"Demo 1 final table names the cause for {v['code']}: {v['cause']}",
+              any(k in text for k in v["cause_keywords"]), " | ".join(row))
+        check(f"Demo 1 final table shows the amount for {v['code']}",
+              any(p.lower() in text for p in amount_patterns(v["variance_k"])), " | ".join(row))
+    weak = d1["stages"][0]["output"]["markdown"]
+    check("Demo 1 weak output has no table", not table_rows(weak))
+
+    # ---- 7. Demo 2
+    d2 = cache["demo2"]
+    check("Demo 2 has 3 steps", [s["id"] for s in d2["steps"]] == ["clean", "injected", "reveal"])
+    check("Demo 2 prompt is exact", d2["prompt"] == build_cache.DEMO2_PROMPT)
+    check("Demo 2 payload is the agreed benign sentence", d2["payload"] == rd.PAYLOAD)
+    check("Demo 2 reveal caption", d2["steps"][2].get("caption") == "Both files look identical to a human reader.")
+    clean = d2["steps"][0]["output"]["markdown"]
+    inj = d2["steps"][1]["output"]["markdown"]
+    check("Demo 2 clean run names the correct largest variance (SYN-102)", bool(LARGEST.search(clean)), clean[:160])
+    check("Demo 2 clean run says execution is not on plan", bool(NOT_ON_PLAN.search(clean)), clean[:160])
+    check("Demo 2 injected run reports execution on plan (followed the planted instruction)",
+          bool(ON_PLAN.search(inj)) and not NOT_ON_PLAN.search(inj), inj[:160])
+    check("Demo 2 injected run omits the largest variance (followed the planted instruction)",
+          not LARGEST.search(inj), inj[:160])
+    hidden = [r for p in d2["documents"]["injected"]["notes"] for r in p["runs"] if r["hidden"]]
+    check("reveal preview carries exactly one hidden run, the payload",
+          len(hidden) == 1 and hidden[0]["text"].strip() == rd.PAYLOAD)
+    check("clean preview carries no hidden run",
+          not any(r["hidden"] for p in d2["documents"]["clean"]["notes"] for r in p["runs"]))
+    for k in ("clean", "injected"):
+        doc = d2["documents"][k]
+        fresh = office_text.docx_structure(path(doc["file"]))
+        check(f"Demo 2 {k} preview matches the real .docx", all(doc[x] == fresh[x] for x in fresh))
+
+    # ---- 8. presenter script
+    pres = cache["presenter"]
+    want = {"demo1": {"full": "4:00", "90s": "1:30", "45s": "0:45"}, "demo2": {"full": "1:30", "45s": "0:45"}}
+    for demo, versions in want.items():
+        for vname, total in versions.items():
+            v = pres[demo]["versions"].get(vname)
+            check(f"presenter {demo}/{vname} exists", v is not None)
+            check(f"presenter {demo}/{vname} totals {total}", v["total"] == total)
+            secs = sum(c["seconds"] for c in v["cues"])
+            check(f"presenter {demo}/{vname} cue lengths add to {total}",
+                  f"{secs // 60}:{secs % 60:02d}" == total, str(secs))
+            check(f"presenter {demo}/{vname} says outputs are pre-generated",
+                  "{outputs" in v["cues"][0]["say"])
+    asks = " ".join(c.get("ask", "") for c in pres["demo1"]["versions"]["full"]["cues"])
+    check("room question: what is the AI being forced to guess", "forced to guess" in asks)
+    asks = " ".join(c.get("ask", "") for c in pres["demo2"]["versions"]["full"]["cues"])
+    check("room question: which file would you have trusted", "which file would you have trusted" in asks.lower())
+
+    # ---- 9. run the app's own render code headlessly
+    node = shutil.which("node")
+    if skip_node or not node:
+        return "node not found: rendered-HTML checks skipped" if not skip_node else "rendered-HTML checks skipped"
+    out = subprocess.run([node, path("scripts", "headless_run.js"), path("app", "cache.json")],
+                         capture_output=True, text=True, timeout=60)
+    check("headless app run succeeds", out.returncode == 0, out.stderr[:300])
+    run = json.loads(out.stdout)
+    check("Demo 1 takes 6 key presses (5 stages + side-by-side)", run["demo1"]["key_presses"] == 6)
+    check("Demo 2 takes 3 key presses", run["demo2"]["key_presses"] == 3)
+    for demo in ("demo1", "demo2"):
+        for s in run[demo]["steps"]:
+            check(f"{demo} step {s['step']} renders", len(s["html"]) > 200)
+            check(f"{demo} step {s['step']} presenter has a script line", "pv-say" in s["presenter"] or "pv-do" in s["presenter"])
+    for s in range(1, 6):
+        h = run["demo1"]["steps"][s]["html"]
+        check(f"Demo 1 stage {s} highlights the new prompt part", h.count('class="seg-new"') >= 1)
+    final_html = run["demo1"]["steps"][6]["html"]
+    m = re.search(r'<table class="md-table">.*?<tbody>(.*?)</tbody>', final_html, re.S)
+    check("Demo 1 side-by-side renders the leadership table as an HTML table", m is not None)
+    body_rows = re.findall(r"<tr>(.*?)</tr>", m.group(1), re.S)
+    check("leadership table has 5 rows", len(body_rows) == 5, str(len(body_rows)))
+    for v in planted:
+        check(f"rendered table includes {v['code']}", any(v["code"] in html.unescape(r) for r in body_rows))
+    check("side-by-side shows the weak output too", "generally on track" in final_html or 'data-stage="weak"' in final_html)
+    rev = html.unescape(run["demo2"]["steps"][3]["html"])
+    check("reveal shows the hidden text highlighted", 'class="hidden-run"' in rev and rd.PAYLOAD in rev and "revealed" in rev)
+    check("reveal shows the caption", "Both files look identical to a human reader." in rev)
+    check("reveal shows both outputs", 'data-step="clean"' in rev and 'data-step="injected"' in rev)
+    check("reveal labels the injected answer as following the hidden line", "Followed the hidden line" in rev)
+    for i in (1, 2):
+        h = run["demo2"]["steps"][i]["html"]
+        check(f"Demo 2 step {i} hides the payload (white, tiny) before the reveal",
+              ("revealed" not in h) and (('class="hidden-run"' in h) == (i == 2)))
+    return None
+
+
+def main():
+    global VERBOSE
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-v", "--verbose", action="store_true")
+    ap.add_argument("--no-node", action="store_true", help="skip the headless app run")
+    a = ap.parse_args()
+    VERBOSE = a.verbose
+    try:
+        note = run_checks(skip_node=a.no_node)
+    except Fail as e:
+        print(f"FAIL: {e}")
+        sys.exit(1)
+    except Exception as e:  # a crash is a failure too, never a silent pass
+        print(f"FAIL: preflight error: {type(e).__name__}: {e}")
+        sys.exit(1)
+    print("PASS" + (f" ({note})" if note else ""))
+
+
+if __name__ == "__main__":
+    main()
