@@ -7,7 +7,7 @@ day to make **Microsoft 365 Copilot the primary path** (Phase 9).
 ## Outcome
 
 Both demos are ready to run live in Microsoft 365 Copilot, with a tested runbook, a
-teleprompter, and an offline fallback app. `scripts/preflight.py` (195 checks) passes,
+teleprompter, and an offline fallback app. `scripts/preflight.py` (223 checks) passes,
 three runs, identical output. What cannot be done from here is the Copilot run itself:
 that needs your tenant, your approvals and three rehearsals (see "What you must confirm").
 
@@ -20,6 +20,16 @@ that needs your tenant, your approvals and three rehearsals (see "What you must 
 | Fallback | Alt+Tab to the app at the same step; it shows your recorded Copilot rehearsal, labelled with its date | Same; Demo 2 runs from the app if three successful rehearsals were not reached |
 
 Full steps: `copilot-kit/RUNBOOK.md`.
+
+## Any major LLM chat tool (Phase 10)
+
+The same demos run in ChatGPT, Claude, Gemini, Microsoft Copilot or any approved chat tool
+(`chat-kit/RUNBOOK.md`). Demo 1 uses one paste block per stage (report + prompt), so no
+upload is needed. Demo 2 uses copy-paste out of Word: the hidden sentence is invisible in
+Word and sits unread at the bottom of the paste in the chat. Every tool has a reset
+checklist and a card to fill in at rehearsal. Recordings are labelled with the tool and
+model that produced them, and the presenter window has an **Any chat live** script. Rule:
+Demo 2 live in a tool only after three successful rehearsals in that tool.
 
 ## What was built
 
@@ -70,5 +80,8 @@ labelled "Recorded in Copilot · <date>", and ASSUMPTIONS/cache record it.
    allow a neutral name for the tenant copy, which is more realistic but less safe. Your call.
 6. **DoD FMR chapter titles** in `data/answer_key.md` (Volume 3, Chapters 6 and 8); the DoD
    site blocked automated checks. Not shown on screen.
-7. **Projector check** per the README day-of checklist, including Copilot zoom (about
+7. **Which chat tool(s)** are approved for the session and for rehearsal, if not Copilot,
+   and that a personal or consumer account is acceptable under your policy (synthetic data
+   alone does not settle that).
+8. **Projector check** per the README day-of checklist, including Copilot zoom (about
    125–150%) so answers read from the back of the room.

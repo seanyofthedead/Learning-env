@@ -34,6 +34,25 @@ prompt-injection alert).
 > pre-generated outputs* written for this demo, and every answer panel says so
 > ("Representative example"). Never present them as Copilot output.
 
+## Run it in any major LLM chat tool
+
+The same demos run in ChatGPT, Claude, Gemini, Microsoft Copilot or any other approved chat
+tool: see [`chat-kit/RUNBOOK.md`](chat-kit/RUNBOOK.md).
+
+- **Demo 1, paste route:** `chat-kit/paste/demo1_<n>_<stage>.txt` holds the report plus that
+  stage's prompt. One paste per stage, no upload needed.
+- **Demo 2, copy-paste route:** select all in the Word file, copy, paste into the chat. The
+  white text travels as plain text at the bottom of a ~30-line paste. The reveal has two
+  beats: invisible in Word, unread in the chat.
+- **Reset checklist and tool cards** (`chat-kit/TOOL_CARDS.md`): temporary chat, memory
+  and custom instructions off, web search off, same model, no projects.
+- **Recordings labelled by tool:** `scripts/check_chat_run.py <folder> --source "<tool, model>"`
+  judges a rehearsal; `scripts/import_chat_run.py` makes it the app fallback, and every
+  answer panel then says "Recorded in <tool, model> · <date>".
+- The presenter window has an **Any chat live** script (press V).
+- Rule: Demo 2 runs live in a tool only after three successful rehearsals **in that tool**,
+  on the presentation machine and account.
+
 ## Rehearse in Copilot and record it
 
 ```
@@ -89,7 +108,7 @@ Screens 1280x720 and larger are supported; body text never drops below 18px.
 
 ```
 python3 scripts/preflight.py        # prints PASS, or FAIL and the first failure
-python3 scripts/preflight.py -v     # lists all 195 checks
+python3 scripts/preflight.py -v     # lists all 223 checks
 python3 scripts/inspect_files.py    # integrity report: raw XML and metadata of every file
 ```
 
@@ -172,6 +191,7 @@ network access and an approved tool.
 | `app/index.html`, `app/app.js`, `app/cache.json` | The demo app (no build step). `app/SCHEMA.md` documents the cache. |
 | `data/` | The synthetic FY26 Q3 report (.csv/.xlsx/.docx) and the answer key (kept out of the report files). |
 | `demo2/` | Clean copy, the `INJECTED_demo_report_DO_NOT_USE` copies, and `REVEAL.md`. |
+| `chat-kit/` | Any chat tool: RUNBOOK.md, TOOL_CARDS.md, paste blocks, per-tool rehearsal log, recordings. |
 | `copilot-kit/` | **Primary path:** RUNBOOK.md, clean files, prompt list, rehearsal log, `rehearsals/` recordings. |
 | `content/` | Source text: ladder stages, outputs, presenter script. |
 | `scripts/` | Build, regenerate, live server, preflight, integrity inspection, timing check. |

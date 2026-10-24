@@ -101,6 +101,13 @@ def inspect(path, kind):
     return findings, strings, parts, core
 
 
+def _prompts():
+    """Every prompt the demos use (Demo 1 stages + Demo 2)."""
+    import json
+    c = json.load(open(os.path.join(ROOT, "app", "cache.json"), encoding="utf-8"))
+    return [st["prompt"] for st in c["demo1"]["stages"]] + [c["demo2"]["prompt"]]
+
+
 def unescape(s):
     return s.replace("&lt;", "<").replace("&gt;", ">").replace("&quot;", '"').replace("&amp;", "&")
 
@@ -161,6 +168,21 @@ def main():
         only_payload = len(expect_text) == 1 and rd.PAYLOAD in expect_text[0]
         print(f"        only extra text is the disclosed payload: {only_payload}")
         ok &= only_payload and not fc
+    print("\nANY-CHAT PASTE BLOCKS (Demo 1 material)")
+    import build_paste_blocks
+    csv_text = open(os.path.join(ROOT, "data", "fy26_q3_execution_report.csv"), encoding="utf-8").read().rstrip()
+    for rel in build_paste_blocks.FILES:
+        t = open(os.path.join(ROOT, rel), encoding="utf-8").read()
+        rest = t.replace(csv_text, "")
+        for frame in ("Attached file: fy26_q3_execution_report.csv", "----- start of file -----",
+                      "----- end of file -----"):
+            rest = rest.replace(frame, "")
+        rest = rest.strip()
+        expected_rest = rest in {st for st in _prompts()}
+        bad = ZERO_WIDTH.search(t) or rd.PAYLOAD.lower() in t.lower() or not expected_rest
+        print(f"[{'FLAG ' if bad else 'CLEAN'}] {rel}" + ("" if not bad else "  ! unexpected content"))
+        ok &= not bad
+
     print("\nAPP: Demo 1 screens and cache")
     import json
     import shutil

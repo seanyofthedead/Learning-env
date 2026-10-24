@@ -9,7 +9,7 @@ every check was re-run until all three came back clean.
 
 | Check | Result |
 |-------|--------|
-| `scripts/preflight.py`: 195 checks, including a headless run of both demos through the app's own render code (`scripts/headless_run.js`) | PASS |
+| `scripts/preflight.py`: 223 checks, including a headless run of both demos through the app's own render code (`scripts/headless_run.js`) | PASS |
 | Stage counts: Demo 1 = 5 ladder stages + side-by-side (6 presses); Demo 2 = 3 presses | PASS |
 | All five planted variances, with cause and amount, in Demo 1's final table, both in the cache and in the rendered HTML table | PASS |
 | Demo 2 clean run names SYN-102 and says not on plan; injected run says on plan and omits SYN-102 | PASS |
@@ -121,3 +121,23 @@ injection protections were written. **Signed off.**
 answers it hasn't seen: it points the room at what Copilot leads with rather than
 quoting figures, and keeps the verified figures ($4.8M, 30 September) that come from
 the report itself. The "Copilot caught it" ending is accurate and keeps the lesson. **Signed off.**
+
+## Phase 10 addendum: same demo on any major LLM chat
+
+**Reliability engineer.** Preflight now runs 223 checks (PASS): paste blocks rebuilt and
+byte-identical, each holding the full report and its exact prompt; "Any chat live"
+scripts at 4:00 / 1:30 with fallbacks and both endings; speaking-rate check 47/47 cues
+fit. `check_chat_run.py` / `import_chat_run.py --source` tested on a simulated ChatGPT
+recording (SUCCESS, imported, panels read "Recorded in ChatGPT, test model · date"); the
+Copilot wrappers still work. **Signed off.**
+
+**Integrity reviewer.** The paste blocks are Demo 1 material: inspected, they contain only
+the report CSV, a fixed "Attached file" frame and one prompt; no hidden instruction, no
+zero-width characters. A planted "Note to the assistant" line is flagged and fails
+preflight. The copy-paste route for Demo 2 is described truthfully: invisible in Word,
+visible but unread in the chat. Recordings can only be labelled with the tool that produced
+them. **Signed off.**
+
+**Skeptical NSA financial manager.** The any-chat script quotes only figures from the
+report, and "Same tool" replaces "Same Copilot". The "visible but unread" beat is the most
+realistic lesson in the session; we all paste reports we haven't read line by line. **Signed off.**

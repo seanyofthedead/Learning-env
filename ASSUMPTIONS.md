@@ -89,3 +89,17 @@ Decisions made without asking. Each is reversible.
 - A22. I did not write variants of the hidden text designed to get past Copilot's
   prompt-injection protections. If Copilot ignores the hidden line, the script has a
   "Copilot caught it" branch that is still a true lesson.
+
+## Any chat tool (Phase 10)
+- A23. Universal routes: Demo 1 by pasting a ready-made block (report CSV text + prompt);
+  Demo 2 by copying the Word document into the chat. Uploads are used where a tool supports
+  them, but nothing depends on uploads.
+- A24. With copy-paste, the hidden sentence arrives as plain text, the last of about 30
+  pasted lines. It is visible in the chat if anyone scrolls. The script says so and turns it
+  into the second beat of the reveal ("visible but unread"), never claiming it was invisible
+  there.
+- A25. Tool cards name the settings to clear, not exact click paths, because menus change
+  often. Whether each tool follows the hidden line is left blank until a real rehearsal.
+- A26. The three-rehearsal rule applies per tool, machine and account. A recording is
+  labelled with the tool and model given by `--source`; the app never shows a recording
+  under another tool's name.
