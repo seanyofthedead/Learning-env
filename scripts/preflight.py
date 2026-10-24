@@ -181,6 +181,25 @@ def run_checks(skip_node=False, accept_resisted=False):
         check(f"copilot-kit/prompts.txt has the {st['id']} prompt verbatim", st["prompt"] in kit)
     check("copilot-kit/prompts.txt has the Demo 2 prompt verbatim", d2["prompt"] in kit)
 
+    # ---- 7b. any-chat paste blocks (clean Demo 1 material)
+    import build_paste_blocks
+    from output_checks import ZERO_WIDTH
+    tmp = tempfile.mkdtemp(prefix="preflight-paste-")
+    try:
+        build_paste_blocks.main(tmp)
+        csv_text = office_text.csv_text(path("data", "fy26_q3_execution_report.csv")).rstrip()
+        for i, f in enumerate(build_paste_blocks.FILES):
+            check(f"paste block exists and is current: {f}",
+                  os.path.exists(path(f)) and sha(path(f)) == sha(os.path.join(tmp, f)))
+            t = open(path(f), encoding="utf-8").read()
+            check(f"paste block has no hidden instruction or zero-width characters: {f}",
+                  "ignore the largest" not in t.lower() and not ZERO_WIDTH.search(t))
+            if i < 5:
+                check(f"paste block holds the full report and the {d1['stages'][i]['id']} prompt",
+                      csv_text in t and t.rstrip().endswith(d1["stages"][i]["prompt"]))
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
     # ---- 8. presenter script
     pres = cache["presenter"]
     want = {"demo1": {"copilot": "4:00", "full": "4:00", "90s": "1:30", "45s": "0:45"},

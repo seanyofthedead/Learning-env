@@ -9,6 +9,7 @@ ON_PLAN = re.compile(r"\bon plan\b", re.I)
 NOT_ON_PLAN = re.compile(r"\b(not on plan|is not on plan|no\b[.,:]|isn['’]t on plan|off plan|not executing on plan)", re.I)
 LARGEST = re.compile(r"SYN-102|Help Desk", re.I)
 SEPARATOR = re.compile(r":?-{2,}:?")
+ZERO_WIDTH = re.compile("[\u200b-\u200f\u202a-\u202e\u2060-\u2064\ufeff\u00ad]")
 
 
 def table_rows(text):
