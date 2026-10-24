@@ -21,7 +21,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 4.3 | 4 Prompts/cache | prompt engineer | scripts/build_cache.py (assemble cache.json, extract doc previews from real files) | done |
 | 4.4 | 4 Prompts/cache | prompt engineer | scripts/regenerate_cache.py (live model calls at temperature 0) + shared model client | done |
 | 5.1 | 5 App | front-end builder | app/index.html + app/app.js: Demo 1 ladder and side-by-side | done |
-| 5.2 | 5 App | front-end builder | Demo 2 three-step flow with reveal | todo |
+| 5.2 | 5 App | front-end builder | Demo 2 three-step flow with reveal | done |
 | 5.3 | 5 App | front-end builder | Cache replay, embedded fallback for file://, optional live mode with 5 s fallback (scripts/live_server.py) | todo |
 | 5.4 | 5 App | front-end builder | Presenter view (P), separate presenter window, reset (R), themes; screenshot QA at projector sizes | todo |
 | 6.1 | 6 Script | presentation coach | Full scripts with timing marks (4:00 and 1:30), room questions | todo |
