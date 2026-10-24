@@ -194,6 +194,11 @@ def run_checks(skip_node=False):
         fresh = office_text.docx_structure(path(doc["file"]))
         check(f"Demo 2 {k} preview matches the real .docx", all(doc[x] == fresh[x] for x in fresh))
 
+    kit = open(path("copilot-kit", "prompts.txt"), encoding="utf-8").read()
+    for st in d1["stages"]:
+        check(f"copilot-kit/prompts.txt has the {st['id']} prompt verbatim", st["prompt"] in kit)
+    check("copilot-kit/prompts.txt has the Demo 2 prompt verbatim", d2["prompt"] in kit)
+
     # ---- 8. presenter script
     pres = cache["presenter"]
     want = {"demo1": {"full": "4:00", "90s": "1:30", "45s": "0:45"}, "demo2": {"full": "1:30", "45s": "0:45"}}

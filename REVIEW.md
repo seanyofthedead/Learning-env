@@ -9,7 +9,7 @@ every check was re-run until all three came back clean.
 
 | Check | Result |
 |-------|--------|
-| `scripts/preflight.py`: 169 checks, including a headless run of both demos through the app's own render code (`scripts/headless_run.js`) | PASS |
+| `scripts/preflight.py`: 175 checks, including a headless run of both demos through the app's own render code (`scripts/headless_run.js`) | PASS |
 | Stage counts: Demo 1 = 5 ladder stages + side-by-side (6 presses); Demo 2 = 3 presses | PASS |
 | All five planted variances, with cause and amount, in Demo 1's final table, both in the cache and in the rendered HTML table | PASS |
 | Demo 2 clean run names SYN-102 and says not on plan; injected run says on plan and omits SYN-102 | PASS |

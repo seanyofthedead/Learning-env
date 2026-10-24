@@ -57,7 +57,7 @@ Screens 1280x720 and larger are supported; body text never drops below 18px.
 
 ```
 python3 scripts/preflight.py        # prints PASS, or FAIL and the first failure
-python3 scripts/preflight.py -v     # lists all 169 checks
+python3 scripts/preflight.py -v     # lists all 175 checks
 python3 scripts/inspect_files.py    # integrity report: raw XML and metadata of every file
 ```
 
