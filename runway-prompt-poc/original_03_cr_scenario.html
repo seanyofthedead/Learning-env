@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Runway — CR Scenarios</title>
+<style>
+  :root {
+    --bg: #f5f5f7; --s1: #ffffff; --s2: #f5f5f7; --soft: #f0f0f3; --hair: #e2e2e7; --ink: #1d1d1f; --ink2: #3a3a3c; --muted: #56565b;
+    --teal: #0f766e; --teal-fill: #14b8a6; --red: #d92d20; --amber: #b54708; --violet: #6941c6; --ok: #2f7d4f;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #f5f5f7; overflow: hidden; }
+  body { font-family: "Segoe UI Variable Text", "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 18px; -webkit-font-smoothing: antialiased; }
+  #stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; background: var(--bg);
+           transform-origin: 0 0; display: flex; flex-direction: column; overflow: hidden; }
+  button { font-family: inherit; cursor: pointer; color: inherit; }
+  button:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+  .hidden { display: none !important; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* ---------- app bar ---------- */
+  header { height: 76px; flex: none; border-bottom: 1px solid var(--hair); display: grid; grid-template-columns: 1fr auto 1fr;
+           align-items: center; padding: 0 40px; background: rgba(255,255,255,.9); }
+  .brand { display: flex; align-items: center; gap: 14px; white-space: nowrap; position: relative; }
+  /* Suite switcher: the wordmark opens a menu of the three products (menu stays light across the suite). */
+  .suite { display: flex; align-items: center; gap: 12px; background: none; border: 0; padding: 6px 10px 6px 4px; margin-left: -4px;
+           border-radius: 10px; color: inherit; font-family: inherit; cursor: pointer; }
+  .suite:hover, .suite[aria-expanded="true"] { background: var(--soft); }
+  .suite .caret { font-size: 16px; color: var(--muted); margin-left: -4px; }
+  .menu { position: absolute; left: -8px; top: 58px; width: 440px; background: #fff; border-radius: 18px; padding: 10px; z-index: 20;
+          box-shadow: 0 2px 6px rgba(0,0,0,.08), 0 24px 60px rgba(0,0,0,.18); }
+  .menu a { display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 14px; padding: 12px 14px; border-radius: 12px;
+            text-decoration: none; color: #1d1d1f; }
+  .menu a:hover, .menu a:focus-visible { background: #f2f2f5; outline: none; }
+  .menu a svg { width: 34px; height: 34px; }
+  .menu a b { display: block; font-size: 19px; font-weight: 700; }
+  .menu a span { display: block; font-size: 16px; color: #56565b; white-space: normal; }
+  .menu a .cur { font-size: 16px; font-weight: 700; color: var(--teal); }
+  .menu hr { border: 0; border-top: 1px solid #e2e2e7; margin: 6px 8px; }
+  .menu a.home { grid-template-columns: 40px 1fr; }
+  .menu a.home b { font-size: 17px; font-weight: 600; }
+  .brand .word { font-size: 24px; font-weight: 700; letter-spacing: -.3px; }
+  .brand .scope { font-size: 18px; color: var(--muted); padding-left: 16px; border-left: 1px solid var(--hair); }
+  nav { display: flex; gap: 6px; background: var(--soft); border-radius: 12px; padding: 5px; }
+  nav button { border: 0; background: transparent; font-size: 18px; font-weight: 600; color: var(--muted); padding: 8px 26px; border-radius: 9px; }
+  nav button.on { background: #fff; color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+  nav button:disabled { color: #b0b0b6; cursor: default; }
+  .due { justify-self: end; display: flex; align-items: center; gap: 18px; white-space: nowrap; }
+  .due .when { font-size: 18px; color: var(--muted); }
+  .due .when b { color: var(--ink); font-weight: 700; }
+  .synth { font-size: 16px; font-weight: 700; color: #5c4300; background: #fff4cc; border: 1.5px solid #e0b400;
+           border-radius: 999px; padding: 4px 14px; }
+
+  main { flex: 1; min-height: 0; position: relative; }
+  .view { position: absolute; inset: 0; padding: 26px 48px 24px; display: flex; flex-direction: column; min-height: 0; }
+
+
+  /* ---------- Operating plan (inputs) ---------- */
+  /* ---------- page header: title, context, count tiles, actions (same across the suite) ---------- */
+  .phdr { display: flex; align-items: center; gap: 24px; flex: none; margin-bottom: 22px; }
+  .phdr .ttl { min-width: 0; margin-right: auto; }
+  .phdr h1 { margin: 0; font-size: 34px; font-weight: 700; letter-spacing: -.6px; line-height: 1.1; }
+  .phdr .meta { font-size: 18px; color: var(--muted); margin-top: 6px; }
+  .kpis { display: flex; gap: 12px; flex: none; }
+  .kpi { background: #fff; border-radius: 14px; padding: 10px 20px 11px; min-width: 150px; border-top: 4px solid var(--k, #d5d8de); box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+  .kpi .n { font-size: 38px; font-weight: 700; letter-spacing: -1px; line-height: 1.05; color: var(--k, var(--ink)); font-variant-numeric: tabular-nums; }
+  .kpi .l { font-size: 16px; font-weight: 600; color: var(--muted); margin-top: 2px; white-space: nowrap; }
+  .kpi.muted .n { color: var(--ink2); }
+  .kpis.sm .kpi { padding: 7px 16px 8px; min-width: 0; } .kpis.sm .kpi .n { font-size: 26px; }
+  .chip { display: inline-block; font-size: 16px; font-weight: 700; color: #fff; background: var(--c); border-radius: 8px; padding: 3px 12px; letter-spacing: .3px; vertical-align: middle; white-space: nowrap; }
+  .chip.ok { background: var(--ok); }
+  .primary { background: var(--teal); color: #fff; border: 0; border-radius: 14px; font-size: 22px; font-weight: 600; padding: 16px 40px; white-space: nowrap; flex: none;
+             box-shadow: 0 6px 18px rgba(15,118,110,.25); }
+  .card { background: var(--s1); border-radius: 20px; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 10px 30px rgba(0,0,0,.05); }
+  .sheet { flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }
+  .fh { display: flex; align-items: center; gap: 16px; padding: 20px 26px 14px; }
+  .ftype { width: 44px; height: 44px; border-radius: 10px; color: #fff; font-weight: 800; font-size: 16px; display: grid; place-items: center; flex: none; background: #6e6e73; }
+  .fname { font-size: 20px; font-weight: 600; }
+  .fsub { font-size: 16px; color: var(--muted); margin-top: 2px; }
+  .props { display: flex; gap: 10px; padding: 0 26px 16px; flex-wrap: wrap; }
+  .prop { font-size: 16px; border-radius: 8px; padding: 5px 12px; background: var(--soft); color: var(--ink2); }
+  .prop b { font-weight: 600; color: var(--muted); margin-right: 8px; }
+  .prop.diff { background: #fff1d6; color: #6a4200; }
+  .prop.diff b { color: #8a5a00; }
+  .preview { position: relative; flex: 1; min-height: 0; overflow: hidden; border-top: 1px solid var(--hair); }
+  .preview table { border-collapse: collapse; font-family: Consolas, "Cascadia Mono", monospace; font-size: 16px; width: 100%; }
+  .preview th, .preview td { padding: 7px 14px; white-space: nowrap; border-bottom: 1px solid #efeff2; text-align: left; }
+  .preview th { color: var(--muted); font-weight: 600; background: #fafafb; }
+  .preview td.n { text-align: right; }
+  .preview td.miss { color: #fff; background: var(--amber); font-weight: 700; text-align: center; }
+  .preview td.lump.sep { color: #4c2a9e; background: #f1ebfd; font-weight: 600; }
+  .srcrow { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; flex: none; }
+  .small { display: flex; gap: 20px; align-items: flex-start; padding: 20px 26px; }
+  .small ul { list-style: none; margin: 10px 0 0; padding: 0; font-size: 16px; color: var(--ink2); }
+  .small li { padding: 2px 0; }
+  code { font-family: Consolas, monospace; font-size: 16px; }
+
+  /* ---------- Scenario control ---------- */
+  .scen { flex: none; display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; background: var(--s1);
+          border-radius: 18px; padding: 6px; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 10px 30px rgba(0,0,0,.05); }
+  .scen button { border: 0; background: transparent; border-radius: 13px; padding: 12px 10px; text-align: center; font-size: 22px; font-weight: 600; color: var(--muted); }
+  .scen button small { display: block; font-size: 16px; font-weight: 400; margin-top: 2px; }
+  .scen button.on { background: var(--teal); color: #fff; }
+  .scen button.on small { color: #d5f3ef; }
+  .scen button.lapse.on { background: var(--red); color: #fff; }
+  .scen button.lapse.on small { color: #fde2df; }
+
+  .work { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 24px; margin-top: 22px; }
+  #v-scen .phdr { margin-bottom: 0; }
+  #v-scen .phdr .scen { flex: none; width: 1180px; }
+  .trow { display: flex; align-items: center; gap: 18px; }
+  .rate { display: flex; align-items: center; gap: 4px; background: var(--s1); border-radius: 12px; padding: 4px; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 6px 18px rgba(0,0,0,.05); }
+  .rate.off { visibility: hidden; }
+  .rate span { font-size: 16px; font-weight: 600; color: var(--muted); padding: 0 8px 0 6px; }
+  .rate button { border: 0; background: transparent; border-radius: 9px; padding: 5px 12px; font-size: 18px; font-weight: 600; color: var(--muted); }
+  .rate button.on { background: var(--teal); color: #fff; }
+  .work.ev { grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); }
+  .left { display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+  .hero { flex: none; margin-bottom: 18px; }
+  .hero .kpis { width: 100%; }
+  .hero .kpi { flex: 1; min-width: 0; padding: 10px 16px 11px; }
+  .hero .kpi.lead .n { font-size: 44px; }
+  .chartcard { flex: 1; min-height: 0; padding: 14px 18px 10px; display: flex; flex-direction: column; }
+  #runway { flex: 1; min-height: 0; }
+  #runway svg { display: block; }
+  #runway .row { cursor: pointer; }
+  /* Fixed height so the chart, which sizes itself to the space left, never measures before the legend exists. */
+  .legend { display: flex; gap: 26px; font-size: 16px; color: var(--ink2); padding: 6px 4px 0; flex-wrap: wrap; flex: none; height: 32px; overflow: hidden; }
+  .legend i { display: inline-block; width: 26px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 8px; }
+
+  /* ---------- right pane: requests ---------- */
+  .pane { min-height: 0; min-width: 0; padding: 20px 24px; display: flex; flex-direction: column; overflow: hidden; }
+  .sect { font-size: 16px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1.2px; margin: 12px 4px 8px; }
+  .sect:first-child { margin-top: 0; }
+  .req { display: grid; grid-template-columns: 34px 1fr auto; gap: 14px; align-items: center; width: 100%; text-align: left;
+         background: var(--s2); border: 1px solid transparent; border-radius: 16px; padding: 10px 16px; margin-bottom: 8px; color: var(--ink); }
+  .req .rk { font-size: 24px; font-weight: 700; color: var(--muted); }
+  .req .t { font-size: 20px; font-weight: 600; line-height: 1.2; }
+  .req .s { font-size: 17px; color: var(--ink2); margin-top: 3px; }
+  .req .s b { color: var(--red); font-weight: 700; }
+  .req .per { text-align: right; }
+  .req .rc { display: flex; align-items: center; gap: 10px; }
+  .req .rc .cl { font-size: 16px; color: var(--muted); text-align: right; line-height: 1.2; }
+  .req .rc .cl b { display: block; font-weight: 600; color: var(--ink2); }
+  .req.dim { grid-template-columns: 1fr auto; background: transparent; border: 1.5px dashed #d5d8de; color: var(--ink2); }
+  .req.dim .t { font-weight: 600; color: var(--ink2); }
+  .req.dim .go { font-size: 17px; font-weight: 600; color: var(--teal); white-space: nowrap; }
+  .sect.dim { color: #8a8a90; }
+  .req .per .v { font-size: 26px; font-weight: 700; color: var(--red); }
+  .req .per .l { font-size: 16px; color: var(--muted); }
+  .pane.tight .sect { margin: 8px 4px 6px; }
+  .pane.tight .req { padding: 6px 14px; margin-bottom: 6px; }
+  .comp { display: inline-block; font-size: 16px; font-weight: 700; border-radius: 6px; padding: 0 7px; margin-right: 8px; background: #e6e6eb; color: var(--ink2); }
+  .ring { flex: none; position: relative; }
+  .ring .pct { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 700; letter-spacing: -.5px; }
+
+  /* ---------- evidence (right pane) ---------- */
+  .back { background: none; border: 0; font-size: 19px; font-weight: 600; padding: 0 0 10px; text-align: left; }
+  .back .chev { color: var(--teal); margin-right: 6px; }
+  .evhead { display: flex; align-items: center; gap: 22px; }
+  .evhead .kind { font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); }
+  .evhead h2 { margin: 4px 0 0; font-size: 28px; font-weight: 700; letter-spacing: -.4px; line-height: 1.15; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .evhead .rc { display: flex; flex-direction: column; align-items: center; flex: none; }
+  .evhead .rc .cl { font-size: 16px; font-weight: 600; color: var(--muted); margin-top: 2px; }
+  .ptsline { display: flex; align-items: baseline; gap: 10px; margin: 8px 0 0; padding-bottom: 6px; border-bottom: 1px solid var(--hair); font-size: 17px; color: var(--muted); }
+  .ptsline b { color: var(--ink); font-size: 19px; }
+  .ptsline .pts { margin-left: auto; white-space: nowrap; } .ptsline .pts b { font-size: 22px; font-variant-numeric: tabular-nums; }
+  .evhead .lead { font-size: 21px; font-weight: 600; color: var(--ink); margin-top: 6px; line-height: 1.25; }
+  .evhead .lead b { color: var(--c); }
+  .evhead .sub { font-size: 17px; color: var(--muted); margin-top: 2px; }
+  .evcols { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; margin-top: 8px; }
+  .fac { display: grid; grid-template-columns: 1fr 74px; gap: 1px 14px; padding: 8px 0; border-bottom: 1px solid var(--hair); }
+  .fac:last-child { border-bottom: 0; }
+  .fac .fn { font-size: 18px; font-weight: 600; display: flex; align-items: center; gap: 9px; }
+  .fac .fb { grid-column: 1; height: 8px; border-radius: 4px; background: #ececf0; overflow: hidden; margin-top: 5px; }
+  .fac .fb i { display: block; height: 100%; border-radius: 4px; background: var(--c); }
+  .fac .fe { font-size: 16px; color: var(--muted); line-height: 1.25; }
+  .fac .fp { grid-row: 1 / 4; grid-column: 2; align-self: center; text-align: right; font-size: 21px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .fac .fp small { font-size: 16px; font-weight: 400; color: var(--muted); }
+  .col { display: flex; flex-direction: column; min-height: 0; min-width: 0; gap: 14px; }
+  .mini { background: var(--s2); border-radius: 14px; padding: 8px 10px 4px; }
+  .mini .lg { display: flex; gap: 16px; font-size: 16px; color: var(--ink2); padding: 2px 4px 4px; flex-wrap: wrap; }
+  .mini .lg i { display: inline-block; width: 20px; height: 0; border-top: 3px solid; vertical-align: middle; margin-right: 6px; }
+  .amount { background: var(--s2); border-radius: 14px; padding: 14px 16px; }
+  .amount .k { font-size: 16px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1.2px; }
+  .amount .v { font-size: 38px; font-weight: 700; letter-spacing: -1px; color: var(--c); margin-top: 2px; }
+  .amount .m { font-size: 16px; color: var(--ink2); margin-top: 2px; }
+  .amount .draft { font-family: Georgia, "Times New Roman", serif; font-size: 17px; line-height: 1.4; color: var(--ink); margin-top: 10px;
+                   border-left: 3px solid var(--c); padding-left: 12px; }
+
+  .sect.act { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .sect .pk { background: none; border: 0; padding: 0; font-size: 17px; font-weight: 600; color: var(--teal); text-transform: none; letter-spacing: 0; white-space: nowrap; }
+  .sect .pk .chev { margin-left: 4px; }
+
+  /* ---------- Anomaly package: the transmittal document for the selected scenario ---------- */
+  .pbar { display: flex; align-items: center; gap: 20px; flex: none; margin: 10px 0 8px; }
+  .pbar .back { padding: 0; }
+  .pbar .ttl { margin-right: auto; min-width: 0; }
+  .pbar h1 { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -.5px; line-height: 1.1; }
+  .pbar .meta { font-size: 17px; color: var(--muted); margin-top: 3px; }
+  .pkg { flex: 1; min-height: 0; overflow: hidden; background: #fff; border-radius: 6px; padding: 18px 48px 14px; display: flex; flex-direction: column;
+         box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 18px 50px rgba(0,0,0,.10); font-family: Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.42; }
+  .pkg .dr { font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; font-weight: 700; color: var(--teal); letter-spacing: 1.5px; }
+  .pkg h2 { font-size: 26px; margin: 4px 0 2px; letter-spacing: -.3px; }
+  .pkg .pm { font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; color: var(--muted); }
+  .pkg .cols { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 44px; margin-top: 2px; }
+  .pkg .col { min-width: 0; min-height: 0; overflow: hidden; }
+  .pkg h4 { font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; margin: 11px 0 5px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+  .pkg table { border-collapse: collapse; font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; width: 100%; }
+  .pkg th, .pkg td { border-bottom: 1px solid var(--hair); padding: 5px 12px 5px 0; white-space: nowrap; text-align: left; }
+  .pkg th { color: var(--muted); font-weight: 600; }
+  .pkg td.n, .pkg th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .pkg tr.tot td { font-weight: 700; border-bottom: 0; }
+  .pkg .comp { font-size: 16px; }
+  .pkg .sec { font-size: 17px; line-height: 1.32; margin: 0 0 8px; }
+  .pkg ul { margin: 2px 0; padding-left: 22px; font-size: 17px; line-height: 1.33; }
+  .pkg li { margin-bottom: 4px; }
+  .pkg .src { font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; color: #2563eb; font-weight: 600; white-space: nowrap; }
+  .pkg .foot { font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; color: var(--muted); border-top: 1px solid var(--hair);
+               margin-top: 10px; padding-top: 10px; display: flex; justify-content: space-between; flex: none; }
+  .pkg .foot b { color: var(--ink); }
+  /* Redraft: what the new scenario changed. New lines stay tinted; changed amounts flash once. */
+  .pkg tr.new td { background: #fff4e0; }
+  .pkg .nw { font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; font-weight: 700; color: #fff; background: var(--amber); border-radius: 6px; padding: 0 7px; margin-left: 8px; }
+  .pkg .sec.new, .pkg li.new { background: #fff4e0; box-shadow: -10px 0 0 #fff4e0, 10px 0 0 #fff4e0; }
+  @keyframes flash { 0%, 35% { background: #ffd98a; } 100% { background: transparent; } }
+  .pkg td.chg { animation: flash 1.8s ease both; }
+  .chip.wait { visibility: hidden; }
+  .chip.arrive { animation: pop .4s cubic-bezier(.2,.7,.2,1) both; }
+
+  /* ---------- motion: every animated stage replays a real engine step ---------- */
+  @keyframes pop { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } }
+  @keyframes wipe { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+  @keyframes grow { from { width: 0; } }
+  @keyframes ringfill { from { stroke-dasharray: 0 100; } }
+  .hero.enter .kpi, .enter .phdr .kpi { animation: pop .45s cubic-bezier(.2,.7,.2,1) both; }
+  #pane.enter .req, #pane.enter .sect, #pane.enter .evhead, #pane.enter .back, #pane.enter .fac, #pane.enter .amount, #pane.enter .mini { animation: pop .45s cubic-bezier(.2,.7,.2,1) both; }
+  #pane.enter .ring circle.arc { animation: ringfill 1.1s cubic-bezier(.3,.7,.2,1) both; }
+  #pane.enter .fac .fb i { animation: grow .6s cubic-bezier(.3,.7,.2,1) both; }
+  #pane.enter .ptsline { animation: pop .45s cubic-bezier(.2,.7,.2,1) both; }
+  #pane.enter .mini svg { animation: wipe 1s cubic-bezier(.4,0,.2,1) both; }
+  #pane.enter .amount .draft { animation: fade .5s ease both; }
+  #v-pkg.enter .pkg > :not(.cols), #v-pkg.enter .pkg h4, #v-pkg.enter .pkg tr, #v-pkg.enter .pkg .sec, #v-pkg.enter .pkg li { animation: pop .35s ease both; }
+  #v-pkg.enter .pkg .src { animation: fade .4s ease both; }
+  #runway .fadein { animation: fade .45s ease both; }
+  @keyframes pulse1 { 0% { opacity: .15; } 40% { opacity: 1; transform: scale(1.14); } 100% { opacity: 1; transform: none; } }
+  #runway text.pulse { transform-box: fill-box; transform-origin: 0 50%; animation: pulse1 .9s cubic-bezier(.2,.7,.2,1) both; }
+
+  /* Model pipeline on the Operating plan screen */
+  .pipe { display: flex; gap: 10px; margin-top: 14px; }
+  .stage { width: 232px; background: #fff; border-radius: 12px; padding: 9px 14px; box-shadow: 0 1px 2px rgba(0,0,0,.05); opacity: .45; transition: opacity .2s; }
+  .stage .sl { font-size: 16px; color: var(--muted); display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .stage .sv { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; margin-top: 2px; white-space: nowrap; }
+  .stage.run { opacity: 1; box-shadow: 0 0 0 2px var(--teal), 0 6px 18px rgba(15,118,110,.18); }
+  .stage.done { opacity: 1; }
+  .stage .ic { width: 10px; height: 10px; border-radius: 5px; background: #c7c7cc; flex: none; }
+  .stage.run .ic { background: var(--teal); animation: pulse .7s ease-in-out infinite alternate; }
+  .stage.done .ic { background: var(--teal); }
+  @keyframes pulse { from { transform: scale(.7); opacity: .5; } to { transform: scale(1.25); opacity: 1; } }
+  .preview td.srcc { transition: background .25s, color .25s; }
+  .preview tr.ok td.srcc { background: #e3f4ef; color: #0b5e57; }
+  .preview td.fixed { background: #e3f4ef; color: #0b5e57; font-weight: 700; text-align: center; }
+  .preview td.lump.sep { box-shadow: inset 0 0 0 2px var(--violet); }
+  .prop.good { background: #e3f4ef; color: #0b5e57; transition: background .3s; }
+  .prop.good b { color: var(--teal); }
+  .fsub.good { color: var(--teal); font-weight: 600; }
+  .primary:disabled { background: #115e59; cursor: default; box-shadow: none; }
+  .spin { display: inline-block; width: 18px; height: 18px; border: 3px solid rgba(255,255,255,.35); border-top-color: #fff; border-radius: 50%;
+          animation: rot .8s linear infinite; margin-right: 12px; vertical-align: -3px; }
+  @keyframes rot { to { transform: rotate(360deg); } }
+
+  /* ---------- presenter (rehearsal only; P toggles) ---------- */
+  #presenter { position: absolute; right: 24px; top: 88px; width: 760px; max-height: 960px; overflow: hidden; background: rgba(20,20,22,.97);
+               color: #f2f2f5; border-radius: 18px; padding: 22px 26px; font-size: 18px; line-height: 1.4; z-index: 10; box-shadow: 0 20px 60px rgba(0,0,0,.45); }
+  #presenter h3 { margin: 14px 0 4px; font-size: 16px; text-transform: uppercase; letter-spacing: 1.2px; color: #5eead4; }
+  #presenter h3:first-child { margin-top: 0; }
+  #presenter ol { margin: 0; padding-left: 26px; }
+  #presenter li { margin: 3px 0; color: #9a9aa2; }
+  #presenter li.now { color: #fff; font-weight: 600; }
+  #presenter .q { background: #2a2a2e; border-left: 4px solid #5eead4; padding: 8px 12px; border-radius: 6px; }
+  #presenter .sm { font-size: 16px; color: #c7c7cc; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <header>
+    <div class="brand">
+      <button class="suite" id="suiteBtn" aria-haspopup="true" aria-expanded="false">
+        <svg width="36" height="34" viewBox="0 0 36 34" aria-hidden="true">
+          <line x1="2" y1="27" x2="34" y2="27" stroke="#8e8e93" stroke-width="3" stroke-linecap="round"/>
+          <path d="M4 27 L16 27 Q24 27 32 7" fill="none" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span class="word">Runway</span><span class="caret">&#9662;</span>
+      </button>
+      <span class="scope">FY2027 continuing resolution · O&amp;S · ICE · CBP · TSA</span>
+      <!-- SUITE-MENU-BEGIN (identical in all three products except the "cur" marker) -->
+      <div class="menu hidden" id="suiteMenu" role="menu">
+        <a href="01_spend_plan_deviation.html" role="menuitem">
+          <svg viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="8" width="28" height="5" rx="2.5" fill="#e0452b"/><rect x="3" y="21" width="28" height="5" rx="2.5" fill="#e0452b"/><rect x="7" y="4" width="4" height="26" rx="2" fill="#1d1d1f"/><rect x="23" y="4" width="4" height="26" rx="2" fill="#1d1d1f"/></svg>
+          <div><b>Guardrail</b><span>Catch spend-plan deviations before OMB does.</span></div><span></span></a>
+        <a href="02_duplication_provenance.html" role="menuitem">
+          <svg viewBox="0 0 34 34" aria-hidden="true"><line x1="7" y1="26" x2="17" y2="9" stroke="#4338ca" stroke-width="3"/><line x1="17" y1="9" x2="27" y2="26" stroke="#4338ca" stroke-width="3"/><circle cx="7" cy="26" r="5" fill="#4338ca"/><circle cx="17" cy="9" r="5" fill="#1c1a17"/><circle cx="27" cy="26" r="5" fill="#4338ca"/></svg>
+          <div><b>Lineage</b><span>Every number traced to its source, before the committee asks.</span></div><span></span></a>
+        <a href="03_cr_scenario.html" role="menuitem">
+          <svg viewBox="0 0 34 34" aria-hidden="true"><line x1="3" y1="27" x2="31" y2="27" stroke="#8e8e93" stroke-width="3" stroke-linecap="round"/><path d="M5 27 Q18 26 29 8" fill="none" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/></svg>
+          <div><b>Runway</b><span>See which accounts run out under each CR scenario, and when.</span></div><span class="cur">&#10003;</span></a>
+        <hr>
+        <a href="index.html" class="home" role="menuitem">
+          <svg viewBox="0 0 34 34" aria-hidden="true"><rect x="4" y="4" width="11" height="11" rx="3" fill="#8e8e93"/><rect x="19" y="4" width="11" height="11" rx="3" fill="#8e8e93"/><rect x="4" y="19" width="11" height="11" rx="3" fill="#8e8e93"/><rect x="19" y="19" width="11" height="11" rx="3" fill="#8e8e93"/></svg>
+          <div><b>All products</b></div></a>
+      </div>
+      <!-- SUITE-MENU-END -->
+    </div>
+    <nav id="nav"><button data-go="0">Operating plan</button><button data-go="1">Scenarios</button><button data-go="5">Anomaly package</button></nav>
+    <div class="due"><span class="when" id="due"></span><span class="synth">Synthetic data — illustrative</span></div>
+  </header>
+
+  <main>
+    <section id="v-plan" class="view hidden">
+      <div class="phdr">
+        <div class="ttl"><h1>Operating plan</h1><div class="meta" id="planMeta"></div><div class="pipe hidden" id="pipe"></div></div>
+        <div class="kpis" id="planKpis"></div>
+        <button class="primary" id="runBtn">Model scenarios &rarr;</button>
+      </div>
+      <div class="card sheet" id="sheet"></div>
+      <div class="srcrow" id="srcRow"></div>
+    </section>
+
+    <section id="v-scen" class="view hidden">
+      <div class="phdr"><div class="ttl"><div class="trow"><h1>Scenarios</h1><div class="rate" id="rate"></div></div><div class="meta" id="scenMeta"></div></div><div class="scen" id="scen"></div></div>
+      <div class="work" id="work">
+        <div class="left">
+          <div class="hero" id="hero"></div>
+          <div class="card chartcard"><div id="runway"></div><div class="legend" id="legend"></div></div>
+        </div>
+        <div class="card pane" id="pane"></div>
+      </div>
+    </section>
+
+    <section id="v-pkg" class="view hidden">
+      <div class="scen" id="pscen"></div>
+      <div class="pbar"><button class="back" id="pback"><span class="chev">‹</span>Scenarios</button>
+        <div class="ttl"><h1>Anomaly package</h1><div class="meta" id="phead"></div></div>
+        <div class="kpis sm" id="pkpis"></div><span class="chip" id="pchip"></span></div>
+      <div class="pkg" id="pkg"></div>
+    </section>
+  </main>
+
+  <aside id="presenter" class="hidden"></aside>
+</div>
+
+<script id="demo-data">
+// DATA-BEGIN
+const DATA = {"meta":{"title":"Demo 03 — December 11 CR Scenario Model","synthetic":true,"fiscalYear":"FY2027","scenarioDate":"2026-11-12","crStart":"2026-10-01","crEnd":"2026-12-11","weeks":["Oct 7","Oct 14","Oct 21","Oct 28","Nov 4","Nov 11"],"weekEndDay":[6,13,20,27,34,41],"basis":"FY2026 enacted level, rate for operations pro rata by day","generator":"scripts/gen_demo03.js (seed 20261211)"},"scenarios":[{"key":"dec11","label":"CR ends Dec 11","sub":"Current CR","end":"2026-12-11"},{"key":"jan30","label":"Extended to Jan 30","sub":"Same rate","extension":true,"end":"2027-01-30"},{"key":"mar31","label":"Extended to Mar 31","sub":"Same rate","extension":true,"end":"2027-03-31"},{"key":"fullyear","label":"Full-year CR","sub":"Same rate","extension":true,"end":"2027-09-30"},{"key":"lapse","label":"Lapse from Dec 12","sub":"No funding","end":"2026-12-11","lapse":true}],"overlay":{"tafs":"070-1917","name":"Border Support (OBBBA mandatory)","balance":1240,"eligible":["ICE","CBP"],"covers":"law-enforcement payroll","precedent":"Carried DHS law-enforcement salaries during the FY2026 DHS-only lapse (Feb 14–Apr 30, 2026)","lapseWeeksAssumed":8},"ppas":[{"id":"ICE-CUS","component":"ICE","ppa":"ERO — Custody Operations","enacted":2846.3,"payroll":0.14,"le":0.8,"system":"FFMS","cumulative":[65.8,134,199.6,268.2,334.8,400.1],"tafs":"070-0545 2027","scheduled":[]},{"id":"ICE-TRO","component":"ICE","ppa":"ERO — Transportation and Removal","enacted":712.4,"payroll":0.1,"le":0.7,"system":"FFMS","cumulative":[16.5,30.9,47.3,63.1,null,96.3],"tafs":"070-0545 2027","scheduled":[]},{"id":"ICE-ATD","component":"ICE","ppa":"ERO — Alternatives to Detention","enacted":438.9,"payroll":0.12,"le":0.5,"system":"FFMS","cumulative":[8.3,16.2,23.9,32.2,40,47.7],"tafs":"070-0545 2027","scheduled":[]},{"id":"ICE-HSI","component":"ICE","ppa":"HSI — Domestic Investigations","enacted":1904.7,"payroll":0.76,"le":0.85,"system":"FFMS","cumulative":[31.8,64.5,99.7,132.7,166.7,200.7],"tafs":"070-0545 2027","scheduled":[]},{"id":"CBP-BPO","component":"CBP","ppa":"BSO — US Border Patrol — Operations","enacted":4127.5,"payroll":0.8,"le":0.92,"system":"SAP","cumulative":[88.3,176.5,265.6,353.8,444.5,532.5],"tafs":"070-0531 2027","scheduled":[]},{"id":"CBP-OFO","component":"CBP","ppa":"TTO — OFO — Domestic Operations","enacted":3318.6,"payroll":0.72,"le":0.85,"system":"SAP","cumulative":[53.1,108.2,168.1,229.4,290.2,353.1],"tafs":"070-0531 2027","scheduled":[]},{"id":"CBP-AMO","component":"CBP","ppa":"IO — AMO — Operations and Support","enacted":671.2,"payroll":0.55,"le":0.8,"system":"SAP","cumulative":[11.6,24.2,35.7,47.8,60.6,72],"tafs":"070-0531 2027","scheduled":[]},{"id":"CBP-ENT","component":"CBP","ppa":"Mission Support — Enterprise Services","enacted":1512.8,"payroll":0.35,"le":0,"system":"SAP","cumulative":[25.2,50.8,76.1,102.3,128.3,155.8],"tafs":"070-0531 2027","scheduled":[]},{"id":"TSA-SCR","component":"TSA","ppa":"ASO — Screener PC&B","enacted":3985.1,"payroll":1,"le":0,"system":"FSMS (Oracle)","cumulative":[78.3,157,236.1,317.7,395.4,473],"tafs":"070-0551 2027","scheduled":[]},{"id":"TSA-TEC","component":"TSA","ppa":"ASO — Screening Technology Maintenance","enacted":486.3,"payroll":0.05,"le":0,"system":"FSMS (Oracle)","scheduled":[{"week":1,"amount":31,"desc":"Annual maintenance contract renewal (Q1)","ref":"TSA contract log CL-27-0112","weekLabel":"Oct 14"}],"cumulative":[5.9,42.6,48.6,54.2,59.4,65.1],"tafs":"070-0551 2027"},{"id":"TSA-FAM","component":"TSA","ppa":"Operations and Enforcement — Federal Air Marshals","enacted":842.6,"payroll":0.82,"le":0.95,"system":"FSMS (Oracle)","cumulative":[15,30,44.8,59.6,75.3,89.8],"tafs":"070-0551 2027","scheduled":[]}]};
+// DATA-END
+</script>
+
+<script id="demo-engine">
+// Deterministic scenario engine. Pure functions over DATA; no randomness, no network.
+const STRENGTH_W = { weeks: 0.10, stability: 0.20, margin: 0.30, basis: 0.15, overlay: 0.25 };
+const WEEKS_FULL = 8;        // eight weeks of burn history earns full credit
+const CV_ZERO = 0.30;        // weekly-burn CV of 30% scores zero on stability
+const MARGIN_FULL = 21;      // exhausting 21+ days before the CR ends scores 1.0 on margin
+const SLOPE_WEEKS_MAX = 8;   // a burn trend is extrapolated at most eight weeks, then held flat
+const COVERED_SHARE = 0.80;  // overlay covering 80%+ of a PPA's payroll = "covered"
+
+const sum = (a) => a.reduce((x, y) => x + y, 0);
+const DAY0 = Date.UTC(2026, 9, 1);
+const dayOf = (iso) => { const [y, m, d] = iso.split('-').map(Number); return Math.round((Date.UTC(y, m - 1, d) - DAY0) / 86400000); };
+const isoOf = (day) => new Date(DAY0 + day * 86400000).toISOString().slice(0, 10);
+
+function fitLine(ys) {
+  const n = ys.length, xs = ys.map((_, i) => i), mx = sum(xs) / n, my = sum(ys) / n;
+  let num = 0, den = 0;
+  for (let i = 0; i < n; i++) { num += (xs[i] - mx) * (ys[i] - my); den += (xs[i] - mx) ** 2; }
+  const slope = den ? num / den : 0;
+  return { slope, at: (x) => my + slope * (x - mx) };
+}
+
+// Weekly obligations from cumulative extracts; a missing extract splits the next
+// week's increase evenly across both weeks.
+function weeklyFrom(p) {
+  const c = p.cumulative, out = [];
+  let prev = 0, gap = 0;
+  for (let w = 0; w < c.length; w++) {
+    if (c[w] === null) { gap++; continue; }
+    const inc = (c[w] - prev) / (gap + 1);
+    for (let k = 0; k <= gap; k++) out.push(inc);
+    prev = c[w]; gap = 0;
+  }
+  return out;
+}
+
+function prepare(D) {
+  const asOf = D.meta.weekEndDay[D.meta.weekEndDay.length - 1];
+  return D.ppas.map((p) => {
+    const weekly = weeklyFrom(p);
+    const lump = weekly.map((_, w) => sum(p.scheduled.filter((s) => s.week === w).map((s) => s.amount)));
+    const base = weekly.map((v, w) => v - lump[w]);
+    const fit = fitLine(base);
+    const mean = sum(base) / base.length;
+    const cv = Math.sqrt(sum(base.map((v) => (v - mean) ** 2)) / base.length) / mean;
+    const cum = p.cumulative[p.cumulative.length - 1];
+    const observed = p.cumulative.filter((x) => x !== null).length;
+    const naiveWeekly = cum / weekly.length;      // "current burn" as a flat run rate, lumps included
+    const rate = p.enacted * 7 / 365;
+    return { p, weekly, lump, base, fit, cv, cum, observed, naiveWeekly, rate, asOf };
+  });
+}
+
+// Projected weekly obligations k weeks after the as-of date (k = 1, 2, ...).
+function projWeekly(x, k, naive) {
+  if (naive) return x.naiveWeekly;
+  const n = x.base.length;
+  return Math.max(0, x.fit.at(n - 1 + Math.min(k, SLOPE_WEEKS_MAX)));
+}
+
+// CR availability: the FY2026 rate pro rata by day through the current CR's end; an extension past it
+// funds each extra day at `rate` × that rate (1 = same rate).
+function runPpa(x, endDay, naive, rate = 1, crEnd = endDay) {
+  const avail = x.p.enacted * (Math.min(endDay, crEnd) + 1 + rate * Math.max(0, endDay - crEnd)) / 365;
+  let cum = x.cum, exhaust = cum >= avail ? x.asOf : null;
+  const path = [];
+  for (let d = x.asOf + 1; d <= endDay; d++) {
+    cum += projWeekly(x, Math.ceil((d - x.asOf) / 7), naive) / 7;
+    if (exhaust === null && cum >= avail) exhaust = d;
+    if ((d - x.asOf) % 7 === 0 || d === endDay) path.push([d, cum]);
+  }
+  return { avail, days: endDay + 1, cumAtEnd: cum, exhaust, shortfall: Math.max(0, cum - avail), path };
+}
+
+function overlayFor(D, x) {
+  const o = D.overlay, eligible = o.eligible.includes(x.p.component);
+  const payrollWk = x.p.payroll * projWeekly(x, 1, false);
+  const coveredWk = eligible ? payrollWk * x.p.le : 0;
+  return { eligible, payrollWk, coveredWk, uncoveredWk: payrollWk - coveredWk, share: payrollWk ? coveredWk / payrollWk : 0 };
+}
+
+function analyze(D, scenarioKey, rate = 1) {
+  const t0 = (typeof performance !== 'undefined') ? performance.now() : 0;
+  const sc = D.scenarios.find((s) => s.key === scenarioKey);
+  const endDay = dayOf(sc.end), crEnd = dayOf(D.meta.crEnd);
+  if (!sc.extension) rate = 1;
+  const xs = prepare(D);
+  const ov = xs.map((x) => overlayFor(D, x));
+  const totalCovered = sum(ov.map((o) => o.coveredWk));
+  const overlayWeeks = D.overlay.balance / totalCovered;
+  const sufficiency = Math.min(overlayWeeks / D.overlay.lapseWeeksAssumed, 1);
+
+  const rows = xs.map((x, i) => {
+    const run = runPpa(x, endDay, false, rate, crEnd);
+    const naive = runPpa(x, endDay, true, rate, crEnd);
+    const o = ov[i];
+    const certainty = o.eligible ? 0.4 * 1 + 0.3 * sufficiency + 0.3 * x.p.le : 0;
+    const offset = o.eligible ? (x.p.payroll * x.p.le) * certainty : 0;
+    const exposedWithoutLumps = (() => {
+      if (!x.lump.some((v) => v > 0)) return true;
+      const y = Object.assign({}, x, { cum: x.cum - sum(x.lump) });
+      return runPpa(y, endDay, false, rate, crEnd).exhaust !== null;
+    })();
+    const f = {
+      weeks: Math.min(x.observed / WEEKS_FULL, 1),
+      stability: 1 - Math.min(x.cv / CV_ZERO, 1),
+      margin: run.exhaust === null ? 0 : Math.min((endDay - run.exhaust) / MARGIN_FULL, 1),
+      basis: exposedWithoutLumps ? 1 : 0.5,
+      overlay: 1 - offset,
+    };
+    const strength = sum(Object.keys(STRENGTH_W).map((k) => STRENGTH_W[k] * f[k]));
+    const status = run.exhaust !== null ? 'exposed' : naive.exhaust !== null && x.lump.some((v) => v > 0) ? 'seasonal' : 'ok';
+    const lapseStatus = o.share >= COVERED_SHARE ? 'covered' : o.share > 0 ? 'partial' : 'uncovered';
+    const seasonalCert = 0.5 * (x.p.scheduled.every((s) => s.ref) ? 1 : 0) + 0.3 * f.stability + 0.2 * f.weeks;
+    return { x, run, naive, o, certainty, offset, f, strength, status, lapseStatus, seasonalCert };
+  });
+
+  const recs = [];
+  rows.filter((r) => r.status === 'exposed').sort((a, b) => b.strength - a.strength)
+    .forEach((r) => recs.push({ kind: 'anomaly', r, conf: r.strength }));
+  rows.filter((r) => r.status === 'seasonal').forEach((r) => recs.push({ kind: 'seasonal', r, conf: r.seasonalCert }));
+  if (sc.lapse) {
+    const cov = rows.filter((r) => r.status === 'exposed' && r.lapseStatus === 'covered').sort((a, b) => b.o.coveredWk - a.o.coveredWk)[0];
+    const unc = rows.filter((r) => r.lapseStatus === 'uncovered').sort((a, b) => b.o.uncoveredWk - a.o.uncoveredWk)[0];
+    if (cov) recs.push({ kind: 'covered', r: cov, conf: cov.certainty });
+    if (unc) recs.push({ kind: 'uncovered', r: unc, conf: 1 - unc.o.share });
+  }
+  const t1 = (typeof performance !== 'undefined') ? performance.now() : 0;
+  const added = sum(D.ppas.map((p) => p.enacted)) * rate * Math.max(0, endDay - crEnd) / 365;
+  return { sc, endDay, rate, added, rows, recs, overlayWeeks, totalCovered, sufficiency, ms: t1 - t0 };
+}
+</script>
+
+<script id="demo-ui">
+(function () {
+  const D = DATA;
+  const $ = (id) => document.getElementById(id);
+  const NS = 'http://www.w3.org/2000/svg';
+  const fmtM = (x) => '$' + x.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + 'M';
+  const pct0 = (x) => Math.round(x * 100) + '%';
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const dshort = (day) => { const d = new Date(DAY0 + day * 86400000); return MON[d.getUTCMonth()] + ' ' + d.getUTCDate(); };
+  const dlong = (iso) => { const [y, m, d] = iso.split('-').map(Number); return MON[m - 1] + ' ' + d + ', ' + y; };
+  const shortPpa = (p) => (p.ppa.includes('— ') ? p.ppa.slice(p.ppa.indexOf('— ') + 2) : p.ppa).replace('Screening Technology', 'Screening Tech');
+  const comp = (c) => '<span class="comp">' + c + '</span>';
+  const words = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven'];
+  const C = { teal: '#0f766e', tealFill: '#14b8a6', tealSoft: '#99dcd3', red: '#d92d20', amber: '#b54708', violet: '#6941c6', ink: '#1d1d1f', ink2: '#3a3a3c', muted: '#56565b', hair: '#ececf0', track: '#efeff2' };
+  const KIND = { anomaly: 'Anomaly request', seasonal: 'Seasonal — no anomaly', covered: 'Lapse · payroll covered', uncovered: 'Lapse · no payroll offset' };
+  const KIND_C = { anomaly: C.red, seasonal: C.violet, covered: C.teal, uncovered: C.red };
+  // One word for every score: confidence, with what it is confidence in.
+  const CONF = { anomaly: 'in the case for an anomaly', seasonal: 'that the spike is a renewal, not trend', covered: 'that ' + D.overlay.tafs + ' covers this payroll' };
+  const CONF_SHORT = { anomaly: 'in the case for an anomaly', seasonal: 'that it is a renewal', covered: 'that payroll is covered' };
+  const isLapseKind = (k) => k.kind === 'covered' || k.kind === 'uncovered';
+  // Count tile: number, label, colour. A muted tile is context, not a finding.
+  const kpi = (n, label, color, muted, cls) => '<div class="kpi' + (muted ? ' muted' : '') + (cls ? ' ' + cls : '') + '" style="--k:' + color + '"><div class="n num" data-v="' + n + '">' + n + '</div><div class="l">' + esc(label) + '</div></div>';
+  const recKey = (k) => k.kind + ':' + k.r.x.p.id;
+  // Draft anomaly in CR bill form: the annual rate for operations that funds projected obligations
+  // through the end date is projected × 365 ÷ days in the CR, whatever rate the extension runs at.
+  const ACCOUNT = { ICE: 'U.S. Immigration and Customs Enforcement', CBP: 'U.S. Customs and Border Protection', TSA: 'Transportation Security Administration' };
+  const rateFor = (pp, run) => run.cumAtEnd * 365 / run.days;
+  const fmtDollars = (m) => '$' + (Math.round(m * 10) * 100000).toLocaleString('en-US');
+  const billText = (p, run) => '<b>SEC. 1__.</b> Notwithstanding section 101, amounts are provided for “' + esc(ACCOUNT[p.component] || p.component) + '—Operations and Support”, for ' +
+    esc(p.ppa.replace(/ — /g, '—')) + ', at a rate for operations of ' + fmtDollars(rateFor(p, run)) + '.';
+  const scenDay = dayOf(D.meta.scenarioDate);
+  // Funding rate for an extension past Dec 11, as a share of the FY2026 rate. The switch shows on extension scenarios only.
+  const RATES = [0.9, 1, 1.1];
+  const rateName = (x) => x === 1 ? 'Same rate' : Math.round(x * 100) + '% rate';
+  const fmtAmt = (m) => m >= 1000 ? '$' + (m / 1000).toFixed(1) + 'B' : fmtM(m);
+  const rateNote = (R) => rateName(R.rate).toLowerCase() + ', +' + fmtAmt(R.added) + ' vs Dec 11';
+
+  let step = 0, scen = 'dec11', rate = 1, result = null, baseline = null, selected = null;
+  let explore = null;    // set when an unscripted scenario is picked: { label, prev, next }
+  let modeled = false;   // the pipeline has run (or a rehearsal hash skipped it)
+  let running = false;   // the pipeline is playing on the Operating plan screen
+  let anim = null;       // what the next draw animates: { mode: 'reveal' | 'morph', pane: true } — only on user navigation
+  let geo = null;        // pixel geometry of the last runway render: the "from" state of a scenario morph
+  let lastBig = 0;
+  let pkgPrev = null;    // the last drafted package, so a redraft can show what the new scenario changed
+  let toPkg = false;     // the Anomaly package tab was clicked before modeling: open it when the model finishes       // hero number of the last render, so a morph counts from old to new
+
+  // Every timer and animation frame belongs to a generation; navigating bumps it, so no
+  // stale callback ever touches a view that has been re-rendered.
+  let gen = 0;
+  const timers = [];
+  function later(fn, ms) { const g = gen; timers.push(setTimeout(() => { if (g === gen) fn(); }, ms)); }
+  function clearTimers() { timers.forEach(clearTimeout); timers.length = 0; gen++; running = false; }
+  function countFrom(node, from, to, ms, fmt, delay) {
+    if (!node) return;
+    const g = gen; node.textContent = fmt(from);
+    later(() => {
+      const t0 = performance.now();
+      const tick = (t) => { if (g !== gen) return; const q = Math.max(0, Math.min(1, (t - t0) / ms)), e = 1 - Math.pow(1 - q, 3);
+        node.textContent = fmt(from + (to - from) * e); if (q < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    }, delay || 0);
+  }
+  const countUp = (node, to, ms, fmt, delay) => countFrom(node, 0, to, ms, fmt, delay);
+  // Frame-by-frame SVG geometry: fn(0) is applied now, then eased to fn(1). Progress is clamped:
+  // a frame's timestamp can precede the performance.now() taken when the tween starts.
+  function tween(ms, delay, fn) {
+    const g = gen; fn(0);
+    later(() => {
+      const t0 = performance.now();
+      const tick = (t) => { if (g !== gen) return; const q = Math.max(0, Math.min(1, (t - t0) / ms)), e = q < .5 ? 4 * q * q * q : 1 - Math.pow(-2 * q + 2, 3) / 2;
+        fn(e); if (q < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    }, delay || 0);
+  }
+  const lerp = (a, b, e) => a + (b - a) * e;
+  const STEP_SCEN = { 1: 'dec11', 2: 'jan30', 3: 'lapse', 4: 'dec11', 5: 'dec11', 6: 'jan30' };
+  const LAST = 6;
+  // The package is steps 5 and 6: Jan 30 is the scripted redraft (6); any other scenario is the package step (5).
+  const pkgStep = (key) => key === 'jan30' ? 6 : 5;
+  const SCEN_SHORT = { mar31: 'Mar 31', fullyear: 'Full-year CR' };
+
+  // A scenario picked by hand moves the script with it: a scripted scenario jumps to its step;
+  // an unscripted one (Mar 31, full-year) is off script, and the arrows resume from the scripted
+  // steps either side of it in the control's order.
+  function pickScen(key) {
+    scen = key; selected = null; explore = null;
+    const order = D.scenarios.map((s) => s.key), at = order.indexOf(key);
+    const scripted = [1, 2, 3].filter((i) => STEP_SCEN[i] === key)[0];
+    if (scripted) step = scripted;
+    else {
+      const before = [1, 2, 3].filter((i) => order.indexOf(STEP_SCEN[i]) < at);
+      const after = [1, 2, 3].filter((i) => order.indexOf(STEP_SCEN[i]) > at);
+      explore = { label: SCEN_SHORT[key] || key, prev: before.length ? before[before.length - 1] : 1, next: after.length ? after[0] : 4 };
+      step = explore.prev;
+    }
+  }
+
+  function fit() {
+    const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080), st = $('stage');
+    st.style.transform = 'scale(' + s + ')';
+    st.style.left = ((window.innerWidth - 1920 * s) / 2) + 'px';
+    st.style.top = ((window.innerHeight - 1080 * s) / 2) + 'px';
+  }
+  window.addEventListener('resize', () => { fit(); });
+
+  function el(tag, attrs, parent) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+  function txt(parent, x, y, s, attrs) { const t = el('text', Object.assign({ x, y, 'font-size': 17, fill: C.muted }, attrs || {}), parent); t.textContent = s; return t; }
+
+  function ring(v, color, size) {
+    const r = size / 2 - 6, c = 2 * Math.PI * r, h = size / 2;
+    return '<div class="ring" style="width:' + size + 'px;height:' + size + 'px"><svg width="' + size + '" height="' + size + '">' +
+      '<circle cx="' + h + '" cy="' + h + '" r="' + r + '" fill="none" stroke="' + C.hair + '" stroke-width="8"/>' +
+      '<circle class="arc" pathLength="100" cx="' + h + '" cy="' + h + '" r="' + r + '" fill="none" stroke="' + color + '" stroke-width="8" stroke-linecap="round" stroke-dasharray="' + (v * 100) + ' 100" transform="rotate(-90 ' + h + ' ' + h + ')"/></svg>' +
+      '<div class="pct" style="font-size:' + Math.max(16, Math.round(size * 0.26)) + 'px">' + pct0(v) + '</div></div>';
+  }
+
+  // ---------- Operating plan (inputs as they exist today) ----------
+  function renderPlan() {
+    const nSys = new Set(D.ppas.map((p) => p.system.split(' ')[0])).size;
+    const daysLeft = dayOf('2026-12-11') - scenDay;
+    const nMiss = D.ppas.filter((q) => q.cumulative.includes(null)).length;
+    // Context only: the one accent on this screen is the MISSING cell in the workbook.
+    const quiet = '#d5d8de';
+    $('planKpis').innerHTML = kpi(D.ppas.length, 'Accounts', quiet, true) + kpi(nSys, 'Source systems', quiet, true) +
+      kpi(nMiss, 'Missing extract', quiet, true) + kpi(daysLeft, 'Days to CR end', quiet, true);
+    $('planMeta').textContent = 'FY2027 · as of ' + dlong(D.meta.scenarioDate) + ' · six weeks into the CR · availability: ' + D.meta.basis;
+    let h = '<table><tr><th>Comp</th><th>TAFS</th><th>PPA</th><th class="n">FY26 enacted</th><th class="n">CR rate/wk</th>' +
+      D.meta.weeks.map((w) => '<th class="n">' + w + '</th>').join('') + '<th>Source</th></tr>';
+    D.ppas.forEach((p) => {
+      h += '<tr data-r="' + p.id + '"><td>' + p.component + '</td><td>' + p.tafs + '</td><td>' + esc(p.ppa) + '</td><td class="n">' + p.enacted.toFixed(1) + '</td><td class="n">' + (p.enacted * 7 / 365).toFixed(1) + '</td>' +
+        p.cumulative.map((c, w) => c === null ? '<td class="miss">MISSING</td>' : '<td class="n' + (p.scheduled.some((s) => s.week === w) ? ' lump' : '') + '">' + c.toFixed(1) + '</td>').join('') +
+        '<td class="srcc">' + esc(p.system) + '</td></tr>';
+    });
+    const systems = [...new Set(D.ppas.map((p) => p.system))];
+    const missing = D.ppas.filter((p) => p.cumulative.includes(null));
+    const sched = []; D.ppas.forEach((p) => p.scheduled.forEach((s) => sched.push(Object.assign({ p }, s))));
+    $('sheet').innerHTML = '<div class="fh"><div class="ftype">XLS</div><div><div class="fname">FY27_CR_OpPlan_WeeklyBurn_v4.xlsx</div>' +
+      '<div class="fsub">Budget Division · ' + D.ppas.length + ' O&amp;S PPAs · cumulative obligations under the CR · $M</div></div></div>' +
+      '<div class="props"><span class="prop" id="pSys"><b>Systems</b>' + systems.join(' · ') + '</span>' +
+      (missing.length ? '<span class="prop" id="pMiss"><b>Missing</b>' + missing.map((p) => p.component + ' week of ' + D.meta.weeks[p.cumulative.indexOf(null)]).join(', ') + '</span>' : '') +
+      '<span class="prop"><b>Weeks</b>' + D.meta.weeks[0] + ' – ' + D.meta.weeks[D.meta.weeks.length - 1] + '</span></div>' +
+      '<div class="preview">' + h + '</table></div>';
+    const o = D.overlay;
+    $('srcRow').innerHTML =
+      '<div class="card small"><div class="ftype log">MND</div><div><div class="fname">Mandatory overlay workbook</div>' +
+        '<div class="fsub" id="ovStat">Separate file · ' + o.tafs + ' ' + esc(o.name) + '</div>' +
+        '<ul><li>Balance ' + fmtM(o.balance) + ' · covers ' + esc(o.covers) + ' for ' + o.eligible.join(' and ') + '</li><li>' + esc(o.precedent) + '</li></ul></div></div>' +
+      '<div class="card small"><div class="ftype log">LOG</div><div><div class="fname">Contract log</div>' +
+        '<div class="fsub" id="logStat">Scheduled one-off obligations inside the burn</div>' +
+        '<ul>' + sched.map((s) => '<li><code>' + esc(s.ref.split(' ').pop()) + '</code> · ' + s.p.component + ' ' + esc(shortPpa(s.p)) + ' · ' + esc(s.desc) + ', ' + fmtM(s.amount) + '</li>').join('') + '</ul></div></div>';
+  }
+
+  // ---------- status per row ----------
+  function rowState(row) {
+    const was = baseline && baseline.rows.find((b) => b.x.p.id === row.x.p.id);
+    if (row.status === 'exposed') {
+      const newly = result.sc.key !== 'dec11' && was && was.status !== 'exposed';
+      return { c: C.red, t: (newly ? 'New · out ' : 'Out ') + dshort(row.run.exhaust), newly };
+    }
+    if (row.status === 'seasonal') return { c: C.violet, t: 'Renewal, not trend' };
+    return { c: C.muted, t: 'Lasts to ' + dshort(result.endDay) };
+  }
+
+  // ---------- the runway chart ----------
+  // mode: null (static) · 'reveal' (bars grow in sequence) · 'morph' (from the previous scenario's geometry)
+  function renderRunway(mode) {
+    const R = result, box = $('runway');
+    const from = mode === 'morph' && geo ? geo : null;
+    if (mode === 'morph' && !from) mode = 'reveal';
+    const next = { end: 0, lapse: !!R.sc.lapse, rows: {} };
+    box.innerHTML = '';
+    const W = box.clientWidth, H = box.clientHeight;
+    const lapseDays = R.sc.lapse ? D.overlay.lapseWeeksAssumed * 7 : 0;
+    const xMax = R.endDay + (R.sc.lapse ? lapseDays + 6 : Math.max(8, Math.round(R.endDay * 0.06)));
+    const pad = { l: 330, r: 214, t: 34, b: 30 };
+    const X = (d) => pad.l + (Math.min(d, xMax) / xMax) * (W - pad.l - pad.r);
+    const n = R.rows.length, rowH = (H - pad.t - pad.b) / n, barH = Math.min(22, rowH * 0.42);
+    const svg = el('svg', { width: W, height: H, viewBox: '0 0 ' + W + ' ' + H }, box);
+
+    // month ticks
+    const months = [];
+    for (let y = 2026, m = 9; ; m++) { if (m > 11) { m = 0; y++; } const d = Math.round((Date.UTC(y, m, 1) - DAY0) / 864e5); if (d > xMax) break; months.push([d, MON[m]]); }
+    const every = months.length > 7 ? 2 : 1;
+    months.forEach(([d, lab], i) => {
+      el('line', { x1: X(d), x2: X(d), y1: pad.t, y2: H - pad.b, stroke: '#efeff2' }, svg);
+      if (i % every === 0 && X(d) < X(R.endDay) - 40) { const t = txt(svg, X(d) + 4, H - 8, lab); if (mode === 'morph') t.setAttribute('class', 'fadein'); }
+    });
+    // lapse zone
+    if (R.sc.lapse) {
+      const zw = X(xMax) - X(R.endDay);
+      const zone = el('rect', { x: X(R.endDay), y: pad.t, width: zw, height: H - pad.t - pad.b, fill: '#fdecea' }, svg);
+      const zl = txt(svg, X(R.endDay) + 10, H - 8, 'Lapse', { fill: C.red, 'font-weight': 700 });
+      if (mode && !(from && from.lapse)) { tween(650, 150, (e) => zone.setAttribute('width', zw * e)); zl.setAttribute('class', 'fadein'); zl.setAttribute('style', 'animation-delay:500ms'); }
+    }
+    // today
+    el('line', { x1: X(scenDay), x2: X(scenDay), y1: pad.t - 4, y2: H - pad.b, stroke: C.muted, 'stroke-width': 1.5, 'stroke-dasharray': '3 4' }, svg);
+    txt(svg, X(scenDay) - 8, pad.t - 12, 'Today ' + dshort(scenDay), { 'text-anchor': 'end' });
+
+    R.rows.forEach((row, i) => {
+      const p = row.x.p, y = pad.t + i * rowH, cy = y + rowH / 2, st = rowState(row);
+      const rec = R.recs.find((k) => k.r.x.p.id === p.id);
+      const sel = selected && selected.split(':')[1] === p.id;
+      const g = el('g', { class: 'row', 'data-id': p.id }, svg);
+      el('rect', { x: 0, y: y + 2, width: W, height: rowH - 4, rx: 10, fill: sel ? '#e7f4f2' : 'transparent' }, g);
+      // label
+      el('rect', { x: 6, y: cy - 12, width: 44, height: 24, rx: 5, fill: '#e6e6eb' }, g);
+      txt(g, 28, cy + 6, p.component, { 'text-anchor': 'middle', 'font-size': 16, 'font-weight': 700, fill: C.ink2 });
+      txt(g, 62, cy + 6, shortPpa(p), { 'font-size': 18, fill: row.status === 'ok' ? C.ink2 : C.ink, 'font-weight': row.status === 'ok' ? 400 : 600 });
+      // track and runway
+      el('rect', { x: X(0), y: cy - barH / 2, width: X(R.endDay) - X(0), height: barH, rx: barH / 2, fill: C.track }, g);
+      const runEnd = row.run.exhaust !== null ? row.run.exhaust : R.endDay;
+      const barW = Math.max(0, X(runEnd) - X(0)), endX = X(R.endDay);
+      const bar = el('rect', { x: X(0), y: cy - barH / 2, width: barW, height: barH, rx: barH / 2, fill: row.status === 'ok' ? C.tealSoft : C.tealFill }, g);
+      const hasRed = row.run.exhaust !== null, redX = X(0) + barW, redW = Math.max(4, endX - redX);
+      const o = from && from.rows[p.id];
+      const red = (hasRed || (o && o.red)) ? el('rect', { x: redX, y: cy - barH / 2, width: hasRed ? redW : 0, height: barH, rx: 3, fill: C.red }, g) : null;
+      next.rows[p.id] = { barW, red: hasRed };
+      if (mode === 'reveal') {
+        // Bars grow from the left in sequence; the run-out segment follows once its bar has landed.
+        tween(650, 150 + i * 70, (e) => bar.setAttribute('width', barW * e));
+        if (red) tween(300, 150 + i * 70 + 620, (e) => red.setAttribute('width', redW * e));
+      } else if (mode === 'morph' && o) {
+        // The whole plan re-models: every bar re-grows together from Today while the scenario end line
+        // slides; the run-out segment is whatever lies between the bar's end and that moving line.
+        const w0 = Math.min(barW, X(scenDay) - X(0));
+        tween(800, 0, (e) => {
+          const bw = lerp(w0, barW, e), ex = lerp(from.end, endX, e);
+          bar.setAttribute('width', bw);
+          if (red) { const rx0 = X(0) + bw; red.setAttribute('x', rx0); red.setAttribute('width', e === 1 ? (hasRed ? redW : 0) : Math.max(0, ex - rx0)); }
+        });
+      }
+      if (row.status === 'seasonal' && row.naive.exhaust !== null) {
+        el('line', { x1: X(row.naive.exhaust), x2: X(row.naive.exhaust), y1: cy - barH, y2: cy + barH, stroke: C.violet, 'stroke-width': 3, 'stroke-dasharray': '4 3' }, g);
+      }
+      // lapse coverage
+      let right = st;
+      if (R.sc.lapse) {
+        const len = Math.min(R.overlayWeeks * 7, lapseDays);
+        if (row.lapseStatus !== 'uncovered') {
+          const c = row.lapseStatus === 'covered' ? C.teal : C.amber;
+          const ow = X(R.endDay + len) - X(R.endDay) - 4, fw = ow * row.o.share;
+          const outl = el('rect', { x: X(R.endDay) + 4, y: cy - barH / 2, width: ow, height: barH, rx: barH / 2, fill: 'none', stroke: c, 'stroke-width': 2.5 }, g);
+          const fill = el('rect', { x: X(R.endDay) + 4, y: cy - barH / 2, width: fw, height: barH, rx: barH / 2, fill: c, opacity: 0.85 }, g);
+          if (mode && !(from && from.lapse)) {
+            // Lapse: the carried-payroll bars fill once the lapse zone has opened.
+            tween(450, 350 + i * 50, (e) => outl.setAttribute('width', ow * e));
+            tween(600, 650 + i * 60, (e) => fill.setAttribute('width', fw * e));
+          }
+          right = { c, t: 'Payroll ' + pct0(row.o.share) + ' carried' };
+        } else right = { c: C.red, t: 'No payroll offset' };
+      }
+      const lab = txt(g, W - pad.r + 18, cy + 6, right.t, { fill: right.c, 'font-size': 18, 'font-weight': right.c === C.muted ? 400 : 700 });
+      const kind = R.sc.lapse ? 'lapse:' + row.lapseStatus : row.status + (st.newly ? ':new' : '');
+      next.rows[p.id].kind = kind;
+      if (mode === 'reveal') { lab.setAttribute('class', 'fadein'); lab.setAttribute('style', 'animation-delay:' + (800 + i * 60) + 'ms'); }
+      else if (mode === 'morph' && from.lapse !== next.lapse) { lab.setAttribute('class', 'fadein'); lab.setAttribute('style', 'animation-delay:' + (250 + i * 25) + 'ms'); }
+      else if (mode === 'morph' && o && o.kind !== kind) { lab.setAttribute('class', 'pulse'); lab.setAttribute('style', 'animation-delay:' + (650 + i * 30) + 'ms'); }
+      if (rec) g.addEventListener('click', () => { selected = recKey(rec); redraw({ pane: true }); });
+    });
+    // scenario end line on top
+    const endX = X(R.endDay);
+    const endLine = el('line', { x1: endX, x2: endX, y1: pad.t - 4, y2: H - pad.b, stroke: C.ink, 'stroke-width': 2.5 }, svg);
+    const endLab = txt(svg, endX + 8, pad.t - 12, (R.sc.key === 'dec11' || R.sc.lapse ? 'CR ends ' : 'Ends ') + dshort(R.endDay), { fill: C.ink, 'font-weight': 700, 'font-size': 18 });
+    next.end = endX;
+    if (mode === 'morph') {
+      // The scenario end line slides to its new date.
+      tween(800, 0, (e) => { const x = lerp(from.end, endX, e); endLine.setAttribute('x1', x); endLine.setAttribute('x2', x); endLab.setAttribute('x', x + 8); });
+    } else if (mode === 'reveal') { endLine.setAttribute('class', 'fadein'); endLab.setAttribute('class', 'fadein'); }
+    geo = next;
+
+    $('legend').innerHTML = '<span><i style="background:' + C.tealFill + '"></i>CR availability lasts</span><span><i style="background:' + C.red + '"></i>Runs out before the CR ends</span>' +
+      (R.rows.some((r) => r.status === 'seasonal') ? '<span><i style="background:none;border-left:3px dashed ' + C.violet + ';width:4px"></i>Straight-line date</span>' : '') +
+      (R.sc.lapse ? '<span><i style="background:' + C.teal + '"></i>Carried by ' + D.overlay.tafs + '</span>' : '');
+  }
+
+  // ---------- hero ----------
+  function renderHero(mode) {
+    const R = result, ex = R.rows.filter((r) => r.status === 'exposed');
+    // The first tile is the finding; the rest are context. Zero findings turn it green.
+    let big, tiles;
+    if (R.sc.lapse) {
+      const unc = R.rows.filter((r) => r.lapseStatus === 'uncovered'), cov = R.rows.filter((r) => r.lapseStatus === 'covered'), part = R.rows.filter((r) => r.lapseStatus === 'partial');
+      big = unc.length;
+      tiles = [[big, 'No payroll offset', big ? C.red : 'var(--ok)'], [cov.length, 'Carried by ' + D.overlay.tafs, C.teal],
+        [part.length, 'Partly carried', C.amber]];
+    } else {
+      const newly = ex.filter((r) => rowState(r).newly), sea = R.rows.filter((r) => r.status === 'seasonal'), ok = R.rows.filter((r) => r.status === 'ok');
+      big = ex.length;
+      tiles = [[big, 'Run out before ' + dshort(R.endDay), big ? C.red : 'var(--ok)']]
+        .concat(newly.length ? [[newly.length, 'New vs Dec 11', C.red]] : [], sea.length ? [[sea.length, 'Renewal cleared', C.violet]] : [],
+          [[ok.length, 'Last to ' + dshort(R.endDay), '#d5d8de', true]]);
+    }
+    $('scenMeta').textContent = 'FY2027 · ' + (R.sc.lapse ? 'CR ends ' + dshort(R.endDay) + ', then no funding' : 'CR through ' + dshort(R.endDay)) + (R.sc.extension ? ' · ' + rateNote(R) : '') + ' · as of ' + dshort(scenDay);
+    $('hero').classList.toggle('enter', mode === 'reveal');
+    $('hero').innerHTML = '<div class="kpis">' + tiles.map(([n, l, c, m], i) => kpi(n, l, c, m, i === 0 ? 'lead' : '')).join('') + '</div>';
+    if (mode) {
+      const ns = $('hero').querySelectorAll('.kpi .n');
+      countFrom(ns[0], mode === 'reveal' ? 0 : lastBig, big, 600, (x) => String(Math.round(x)), mode === 'reveal' ? 150 : 0);
+      if (mode === 'reveal') {
+        $('hero').querySelectorAll('.kpi').forEach((k, i) => { k.style.animationDelay = (i * 90) + 'ms'; });
+        for (let i = 1; i < ns.length; i++) countUp(ns[i], +ns[i].dataset.v, 500, (x) => String(Math.round(x)), 150 + i * 90);
+      }
+    }
+    lastBig = big;
+  }
+
+  // ---------- right pane: ranked requests ----------
+  function recLine(k) {
+    const r = k.r, days = result.endDay - (r.run.exhaust || 0);
+    if (k.kind === 'anomaly') return 'Out ' + dshort(r.run.exhaust) + ' · ' + (days === 0 ? 'on the CR&rsquo;s last day' : days + (days === 1 ? ' day' : ' days') + ' early') + ' · need <b>' + fmtM(r.run.shortfall) + '</b>';
+    if (k.kind === 'seasonal') return 'Q1 renewal, not trend · straight line says ' + dshort(r.naive.exhaust);
+    if (k.kind === 'covered') return D.overlay.tafs + ' carries ' + pct0(r.o.share) + ' of payroll · ' + fmtM(r.o.coveredWk) + '/wk';
+    return 'No mandatory overlay for ' + r.x.p.component;
+  }
+  function renderList() {
+    const R = result, lapse = !!R.sc.lapse;
+    let h = '', last = '';
+    // In a lapse the payroll cards lead; the pre-lapse requests collapse to one line that opens the package.
+    const recs = lapse ? R.recs.filter(isLapseKind) : R.recs;
+    recs.forEach((k, i) => {
+      const sect = isLapseKind(k) ? 'If funding lapses ' + dshort(R.endDay + 1) : k.kind === 'seasonal' ? 'Cleared' : 'Anomaly requests · before ' + dshort(R.endDay);
+      if (sect !== last) {
+        const act = k.kind === 'anomaly';
+        h += '<div class="sect' + (act ? ' act' : '') + '"><span>' + sect + '</span>' + (act ? '<button class="pk" id="toPkg">Draft anomaly package<span class="chev">›</span></button>' : '') + '</div>';
+        last = sect;
+      }
+      const per = k.kind === 'uncovered'
+        ? '<div class="per"><div class="v num">' + fmtM(k.r.o.uncoveredWk) + '</div><div class="l">per week unfunded</div></div>'
+        : '<div class="rc"><div class="cl"><b>Confidence</b>' + esc(CONF_SHORT[k.kind]) + '</div>' + ring(k.conf, KIND_C[k.kind], R.recs.length > 6 ? 64 : 72) + '</div>';
+      h += '<button class="req" data-k="' + recKey(k) + '"><div class="rk">' + (i + 1) + '</div><div><div class="t">' + comp(k.r.x.p.component) + esc(shortPpa(k.r.x.p)) + '</div>' +
+        '<div class="s">' + recLine(k) + '</div></div>' + per + '</button>';
+    });
+    if (lapse) {
+      const an = R.recs.filter((k) => k.kind === 'anomaly'), sea = R.recs.filter((k) => k.kind === 'seasonal');
+      const tot = an.reduce((t, k) => t + k.r.run.shortfall, 0);
+      h += '<div class="sect dim"><span>Before ' + dshort(R.endDay) + '</span></div>' +
+        '<button class="req dim" id="toPkg"><div><div class="t">' + an.length + (an.length === 1 ? ' anomaly request' : ' anomaly requests') + ' · ' + fmtM(tot) + '</div>' +
+        '<div class="s">' + (sea.length ? sea.length + (sea.length === 1 ? ' renewal' : ' renewals') + ' cleared · ' : '') + 'unchanged by a lapse</div></div>' +
+        '<div class="go">Anomaly package<span class="chev"> ›</span></div></button>';
+    }
+    $('pane').innerHTML = h;
+    $('pane').classList.toggle('tight', recs.length > 6);
+    $('pane').querySelectorAll('.req[data-k]').forEach((b) => b.addEventListener('click', () => { selected = b.dataset.k; redraw({ pane: true }); }));
+    const tp = $('toPkg'); if (tp) tp.addEventListener('click', (e) => { e.stopPropagation(); openPkg(); });
+  }
+
+  // ---------- anomaly package: every request for the selected scenario, in one transmittal draft ----------
+  function renderPackage(animate, diff) {
+    const R = result, end = dshort(R.endDay);
+    const an = R.recs.filter((k) => k.kind === 'anomaly'), sea = R.recs.filter((k) => k.kind === 'seasonal');
+    const ok = R.rows.filter((r) => r.status === 'ok');
+    const idx = (k) => R.recs.indexOf(k) + 1;
+    const lastWk = D.meta.weeks[D.meta.weeks.length - 1];
+    const cite = (p, extra) => ' <span class="src">[' + esc(p.tafs + ' · ' + p.system.split(' ')[0] + (extra ? ' · ' + extra : '')) + ']</span>';
+    const total = an.reduce((t, k) => t + k.r.run.shortfall, 0);
+    // Lapse coverage from every modeled account (the recommendations list shows only the lead case of each kind).
+    const lapseOn = !!R.sc.lapse, by = (st) => R.rows.filter((r) => r.lapseStatus === st);
+    const covR = by('covered'), partR = by('partial'), uncR = by('uncovered').sort((a, b) => b.o.uncoveredWk - a.o.uncoveredWk);
+    const uncWk = R.rows.reduce((t, r) => t + r.o.uncoveredWk, 0), noOffWk = uncR.reduce((t, r) => t + r.o.uncoveredWk, 0);
+    const n = an.length;
+    const prev = animate && diff && pkgPrev && pkgPrev.key !== R.sc.key ? pkgPrev : null;
+    const isNew = (id) => !!prev && prev.rows[id] === undefined;
+    const changed = (id, v) => !!prev && prev.rows[id] !== undefined && Math.abs(prev.rows[id] - v) > 0.05;
+    $('phead').textContent = R.sc.label + ' · CR through ' + end + (R.sc.extension ? ' · ' + rateNote(R) : '') + ' · as of ' + dshort(scenDay);
+    $('pkpis').innerHTML = kpi(n, n === 1 ? 'Request' : 'Requests', n ? C.red : 'var(--ok)') + kpi(fmtM(total), 'Total anomaly amount', C.red) +
+      (lapseOn ? kpi(fmtM(uncWk), 'Payroll unfunded a week', C.red) : '');
+    const chip = $('pchip');
+    chip.className = (lapseOn ? 'chip' : 'chip ok') + (animate ? ' wait' : ''); chip.style.setProperty('--c', C.red);
+    chip.textContent = lapseOn ? 'Lapse contingency' : 'Ready for transmittal';
+
+    const rows = an.map((k) => { const p = k.r.x.p, r = k.r, nw = isNew(p.id), ch = changed(p.id, r.run.shortfall) ? ' chg' : '';
+      return '<tr' + (nw ? ' class="new"' : '') + '><td class="n">' + idx(k) + '</td><td>' + comp(p.component) + ' ' + esc(shortPpa(p)) + (nw ? '<span class="nw">New</span>' : '') + '</td><td>' + dshort(r.run.exhaust) + '</td><td class="n' + ch + '">' + fmtM(r.run.shortfall) +
+        '</td><td class="n' + ch + '">' + fmtDollars(rateFor(p, r.run)) + '</td><td class="n">' + pct0(k.conf) + '</td></tr>'; }).join('');
+    const table = '<table><tr><th class="n">#</th><th>Account</th><th>Runs out</th><th class="n">Anomaly</th><th class="n">Rate for operations</th><th class="n">Confidence</th></tr>' + rows +
+      '<tr class="tot"><td></td><td>Total</td><td></td><td class="n" id="ptot">' + fmtM(total) + '</td><td></td><td></td></tr></table>';
+    const reviewed = sea.map((k) => { const p = k.r.x.p, sc = p.scheduled[0];
+      return '<li>' + esc(p.component + ' ' + p.ppa + ': a straight-line rate runs out ' + dshort(k.r.naive.exhaust) + '; the spike is a scheduled renewal (' + sc.ref + ', ' + fmtM(sc.amount) + ', week of ' + sc.weekLabel + '), not trend.') +
+        cite(p, sc.ref) + '</li>'; }).join('') +
+      (ok.length ? '<li>' + esc(ok.length + ' accounts last to ' + end + ' at the CR rate: ' + ok.map((r) => r.x.p.component + ' ' + shortPpa(r.x.p)).join(', ') + '.') + '</li>' : '');
+    const wks = D.overlay.lapseWeeksAssumed;
+    const nm = (r) => r.x.p.component + ' ' + shortPpa(r.x.p);
+    const nl = prev && !prev.lapse ? '<li class="new">' : '<li>';
+    const lapse = !lapseOn ? '' :
+      nl + esc(D.overlay.tafs + ' carries payroll for ' + R.overlayWeeks.toFixed(1) + ' weeks: ' + covR.map((r) => nm(r) + ' ' + pct0(r.o.share)).join(', ') +
+        (partR.length ? '; partly ' + partR.map((r) => nm(r) + ' ' + pct0(r.o.share)).join(', ') : '') + '.') + ' <span class="src">[' + esc(D.overlay.tafs + ' · FY2026 lapse precedent') + ']</span></li>' +
+      nl + esc('No payroll offset: ' + uncR.map((r) => nm(r) + ' ' + fmtM(r.o.uncoveredWk)).join(', ') + '; ' + fmtM(noOffWk) + ' a week.') + '</li>' +
+      nl + esc('All accounts: ' + fmtM(uncWk) + ' a week unfunded, including payroll ' + D.overlay.tafs + ' does not carry; ' + fmtM(uncWk * wks) + ' over a ' + wks + '-week lapse.') +
+        ' <span class="src">[operating plan · payroll share]</span></li>';
+    const secs = an.map((k) => '<p class="sec' + (isNew(k.r.x.p.id) ? ' new' : '') + '">' + billText(k.r.x.p, k.r.run) + cite(k.r.x.p) + '</p>').join('');
+    const systems = [...new Set(D.ppas.map((q) => q.system.split(' ')[0]))].join(' · ');
+
+    $('pkg').innerHTML = '<div class="dr">DRAFT · SYNTHETIC DATA — ILLUSTRATIVE</div>' +
+      '<h2>FY2027 Continuing Resolution — DHS Operations and Support Anomaly Requests</h2>' +
+      '<div class="pm">' + esc(R.sc.label) + ' · CR through ' + dlong(isoOf(R.endDay)) + (R.sc.extension ? (R.rate === 1 ? ' at the FY2026 rate' : ' at ' + Math.round(R.rate * 100) + '% of the FY2026 rate') : '') + ' · operating plan as of ' + dlong(D.meta.scenarioDate) + ' · obligations through week of ' + lastWk + ' (' + systems + ')</div>' +
+      '<div class="cols"><div class="col"><h4>1. Requests</h4>' + table +
+        '<h4>2. Reviewed, no anomaly requested</h4><ul>' + reviewed + '</ul></div>' +
+      '<div class="col"><h4>Proposed bill language</h4>' + secs +
+        (lapse ? '<h4>If funding lapses ' + dshort(R.endDay + 1) + '</h4><ul>' + lapse + '</ul>' : '') + '</div></div>' +
+      '<div class="foot"><span>Every figure carries its source in brackets.</span><span>Approved for transmittal to OMB: <b>______________________</b></span></div>';
+    const V = $('v-pkg');
+    V.className = 'view' + (animate ? ' enter' : '');
+    if (animate) {
+      // Assemble the draft block by block, the request table first, then each paragraph; sources land last.
+      let i = 0;
+      V.querySelectorAll('.pkg > :not(.cols), .pkg h4, .pkg tr, .pkg li, .pkg .sec').forEach((x) => { x.style.animationDelay = (120 + i++ * 55) + 'ms'; });
+      V.querySelectorAll('.pkg .src').forEach((x) => { const b = x.parentElement; x.style.animationDelay = (parseInt(b.style.animationDelay, 10) + 300) + 'ms'; });
+      // A redraft: amounts that moved flash once their row lands; the totals count from the old draft's.
+      V.querySelectorAll('.pkg td.chg').forEach((x) => { x.style.animationDelay = (parseInt(x.parentElement.style.animationDelay, 10) + 350) + 'ms'; });
+      if (prev) {
+        const tot = $('ptot'), ns = $('pkpis').querySelectorAll('.kpi .n');
+        countFrom(tot, prev.total, total, 900, fmtM, parseInt(tot.parentElement.style.animationDelay, 10) + 150);
+        countFrom(ns[0], prev.n, n, 700, (x) => String(Math.round(x)), 200);
+        countFrom(ns[1], prev.total, total, 900, fmtM, 200);
+      }
+      // The status arrives last, once the draft is written.
+      later(() => { chip.classList.remove('wait'); chip.classList.add('arrive'); }, 120 + i * 55 + 450);
+    }
+    pkgPrev = { key: R.sc.key, lapse: lapseOn, n, total, rows: {} };
+    an.forEach((k) => { pkgPrev.rows[k.r.x.p.id] = k.r.run.shortfall; });
+  }
+  function openPkg() { clearTimers(); explore = null; selected = null; step = pkgStep(scen); anim = { pkg: true }; draw(); }
+
+  // ---------- burn chart (evidence) ----------
+  function burnChart(row, w, h, naive) {
+    const R = result, x = row.x, run = row.run;
+    const xMax = R.endDay + 6;
+    const actual = [[0, 0]].concat(D.meta.weekEndDay.map((d, i) => [d, x.p.cumulative[i]]).filter((p) => p[1] !== null));
+    const proj = [[x.asOf, x.cum]].concat(run.path);
+    const nv = naive ? [[x.asOf, x.cum]].concat(row.naive.path) : [];
+    const yMax = Math.max(run.avail, run.cumAtEnd, ...(nv.map((p) => p[1]))) * 1.1;
+    const pad = { l: 62, r: 10, t: 10, b: 28 };
+    const X = (d) => pad.l + (d / xMax) * (w - pad.l - pad.r), Y = (v) => pad.t + (1 - v / yMax) * (h - pad.t - pad.b);
+    const svg = el('svg', { width: w, height: h, viewBox: '0 0 ' + w + ' ' + h }); svg.style.display = 'block';
+    // Long scenarios (Mar 31, full-year) reach billions: step in $1B and label in B so labels fit the gutter.
+    const stepV = yMax > 3000 ? 1000 : yMax > 1500 ? 500 : yMax > 600 ? 200 : yMax > 250 ? 100 : 25;
+    const yLab = (v) => (v >= 1000 ? '$' + (v / 1000) + 'B' : '$' + v + 'M');
+    for (let v = 0; v <= yMax; v += stepV) { el('line', { x1: pad.l, x2: w - pad.r, y1: Y(v), y2: Y(v), stroke: C.hair }, svg); txt(svg, pad.l - 8, Y(v) + 6, yLab(v), { 'text-anchor': 'end', 'font-size': 16 }); }
+    // Month labels through the scenario end, skipping any closer than 44 px to the last one drawn.
+    let lastX = -Infinity;
+    ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'].forEach((lab, i) => {
+      const iso = (i < 3 ? '2026-' + (10 + i) : '2027-0' + (i - 2)) + '-01';
+      const d = dayOf(iso), xx = X(d);
+      if (d <= xMax - 10 && xx - lastX >= 44) { txt(svg, xx, h - 6, lab, { 'font-size': 16 }); lastX = xx; } });
+    el('line', { x1: X(R.endDay), x2: X(R.endDay), y1: pad.t, y2: h - pad.b, stroke: C.ink, 'stroke-width': 1.5, 'stroke-dasharray': '4 4' }, svg);
+    el('line', { x1: X(0), x2: X(R.endDay), y1: Y(run.avail), y2: Y(run.avail), stroke: C.teal, 'stroke-width': 2, 'stroke-dasharray': '7 5' }, svg);
+    const pts = (a) => a.map((p) => X(p[0]) + ',' + Y(p[1])).join(' ');
+    if (nv.length) el('polyline', { points: pts(nv), fill: 'none', stroke: C.violet, 'stroke-width': 3, 'stroke-dasharray': '3 5' }, svg);
+    el('polyline', { points: pts(proj), fill: 'none', stroke: C.ink, 'stroke-width': 3, 'stroke-dasharray': '7 5' }, svg);
+    el('polyline', { points: pts(actual), fill: 'none', stroke: C.ink, 'stroke-width': 4 }, svg);
+    if (run.exhaust !== null) el('circle', { cx: X(run.exhaust), cy: Y(run.avail), r: 8, fill: C.red, stroke: '#fff', 'stroke-width': 3 }, svg);
+    return svg;
+  }
+
+  // ---------- evidence ----------
+  function factorRows(k) {
+    const r = k.r, x = r.x, p = x.p, R = result;
+    if (k.kind === 'seasonal') return [
+      ['Renewal documented', p.scheduled.map((s) => s.ref + ', ' + fmtM(s.amount) + ', week of ' + s.weekLabel).join('; '), p.scheduled.every((s) => s.ref) ? 1 : 0, 0.5],
+      ['Base burn stable', 'Weekly burn varies ±' + (x.cv * 100).toFixed(1) + '% once the renewal is removed', r.f.stability, 0.3],
+      ['Weeks of burn data', x.observed + ' of ' + WEEKS_FULL + ' weeks', r.f.weeks, 0.2]];
+    if (k.kind === 'covered') return [
+      ['Precedent', 'Carried DHS law-enforcement payroll in the FY2026 lapse', 1, 0.4],
+      ['Balance sufficiency', 'Lasts ' + R.overlayWeeks.toFixed(1) + ' weeks; ' + D.overlay.lapseWeeksAssumed + '-week lapse assumed', R.sufficiency, 0.3],
+      ['Law-enforcement share', pct0(p.le) + ' of payroll is law-enforcement', p.le, 0.3]];
+    const ofs = r.o.eligible ? D.overlay.tafs + ' could carry ' + pct0(p.payroll * p.le) + ' of cost at ' + pct0(r.certainty) + ' certainty' : 'No mandatory overlay for ' + p.component;
+    return [
+      ['Margin to exhaustion', (R.endDay - r.run.exhaust) + (R.endDay - r.run.exhaust === 1 ? ' day' : ' days') + ' before ' + dshort(R.endDay) + ' · full at 21', r.f.margin, STRENGTH_W.margin],
+      ['No mandatory offset', ofs, r.f.overlay, STRENGTH_W.overlay],
+      ['Stable weekly burn', 'Varies ±' + (x.cv * 100).toFixed(1) + '% with scheduled items removed', r.f.stability, STRENGTH_W.stability],
+      ['Recurring, not one-off', r.f.basis === 1 ? 'Runs out even with one-offs removed' : 'Depends on a scheduled one-off', r.f.basis, STRENGTH_W.basis],
+      ['Weeks of burn data', x.observed + ' of ' + WEEKS_FULL + ' weekly extracts' + (x.observed < x.weekly.length ? ' (one missing, bridged)' : ''), r.f.weeks, STRENGTH_W.weeks]];
+  }
+
+  // One-line takeaway for the evidence pane: the action first, with its amount.
+  function evLead(k) {
+    const r = k.r, R = result;
+    if (k.kind === 'anomaly') return 'Request <b>' + fmtM(r.run.shortfall) + '</b> in an anomaly before ' + dshort(R.endDay) + '.';
+    if (k.kind === 'seasonal') return 'No anomaly needed: the spike is a scheduled renewal.';
+    if (k.kind === 'covered') return D.overlay.tafs + ' carries <b>' + pct0(r.o.share) + '</b> of payroll in a lapse.';
+    return '<b>' + fmtM(r.o.uncoveredWk) + '</b> a week of payroll goes unfunded in a lapse.';
+  }
+
+  function renderEvidence(k) {
+    const r = k.r, x = r.x, p = x.p, R = result, c = KIND_C[k.kind];
+    const P = $('pane');
+    P.style.setProperty('--c', c);
+    const idx = R.recs.indexOf(k) + 1;
+    let sub = recLine(k).replace(/<\/?b>/g, '').replace(/&rsquo;/g, '’');
+    const lead = evLead(k);
+    let head = '<button class="back" id="back"><span class="chev">‹</span>All requests</button>' +
+      '<div class="evhead">' + (k.kind === 'uncovered' ? '' : '<div class="rc">' + ring(k.conf, c, 90) + '<div class="cl">Confidence</div></div>') +
+      '<div style="min-width:0"><div class="kind">' + (isLapseKind(k) ? 'If funding lapses ' + dshort(R.endDay + 1) : 'Request ' + idx) + ' · ' + esc(p.tafs) + ' · ' + esc(p.system.split(' ')[0]) + '</div>' +
+      '<h2>' + comp(p.component) + esc(p.ppa) + '<span class="chip">' + KIND[k.kind] + '</span></h2><div class="lead">' + lead + '</div><div class="sub">' + esc(sub) + '</div></div></div>';
+
+    if (k.kind === 'uncovered') {
+      const wks = D.overlay.lapseWeeksAssumed;
+      P.innerHTML = head + '<div class="evcols"><div class="col">' +
+        '<div class="amount"><div class="k">Payroll unfunded in a lapse</div><div class="v num">' + fmtM(r.o.uncoveredWk) + ' / week</div>' +
+        '<div class="m">Payroll is ' + pct0(p.payroll) + ' of this PPA&rsquo;s weekly obligations, and no mandatory account can carry it. From ' + dshort(R.endDay + 1) + ' it has no funding source until enactment.</div></div>' +
+        '<div class="amount"><div class="k">Over a ' + wks + '-week lapse · computed</div><div class="v num">' + fmtM(r.o.uncoveredWk * wks) + '</div>' +
+        '<div class="m">' + fmtM(r.o.uncoveredWk) + '/wk × ' + wks + ' weeks, the lapse length the model assumes.</div></div></div>' +
+        '<div class="col"><div class="mini" id="burn"></div>' +
+        '<div class="amount"><div class="k">Compare</div><div class="m">' + D.overlay.tafs + ' ' + esc(D.overlay.name) + ' covers ' + esc(D.overlay.covers) + ' for ' + D.overlay.eligible.join(' and ') + ' only. ' +
+        'Payroll only: non-payroll costs (contracts, detention, fuel) are not modelled.</div></div></div></div>';
+      const b = $('burn');
+      b.appendChild(burnChart(r, b.clientWidth - 20, 236, false));
+      b.insertAdjacentHTML('beforeend', '<div class="lg"><span><i style="border-color:' + C.ink + '"></i>Obligations</span><span><i style="border-color:' + C.teal + ';border-top-style:dashed"></i>Available</span></div>');
+      $('back').addEventListener('click', () => { selected = null; redraw({ pane: true }); });
+      return;
+    }
+
+    const rows = factorRows(k);
+    // Points earned per factor, rounded by largest remainder so they add up to the headline score.
+    const raw = rows.map(([, , v, w]) => v * w * 100), pts = raw.map(Math.floor);
+    let left = Math.round(k.conf * 100) - pts.reduce((a, b) => a + b, 0);
+    raw.map((q, i) => [q - Math.floor(q), i]).sort((a, b) => b[0] - a[0]).forEach(([, i]) => { if (left > 0) { pts[i]++; left--; } });
+    const total = pts.reduce((a, b) => a + b, 0), possible = Math.round(rows.reduce((a, q) => a + q[3], 0) * 100);
+    const stack = '<div class="ptsline"><b>Confidence</b> ' + esc(CONF[k.kind]) +
+      (possible === 100 ? '<span class="pts"><b>' + total + '</b> of ' + possible + ' points</span>' : '') + '</div>';
+    const facs = rows.map(([n, e, v, w], i) => '<div class="fac"><div class="fn">' + esc(n) + '</div>' +
+      '<div class="fe">' + esc(e) + '</div><div class="fb"><i style="width:' + v * 100 + '%"></i></div><div class="fp num">' + pts[i] + '<small> / ' + Math.round(w * 100) + '</small></div></div>').join('');
+
+    let amount;
+    if (k.kind === 'anomaly') {
+      amount = '<div class="amount"><div class="k">Anomaly amount · computed</div><div class="v num">' + fmtM(r.run.shortfall) + '</div>' +
+        '<div class="m">Projected ' + fmtM(r.run.cumAtEnd) + ' through ' + dshort(R.endDay) + ' − available ' + fmtM(r.run.avail) + '</div>' +
+        '<div class="draft">' + billText(p, r.run) + '</div>' +
+        '<div class="m">Rate = projected ' + fmtM(r.run.cumAtEnd) + ' × 365 ÷ ' + r.run.days + ' days in the CR</div></div>';
+    } else if (k.kind === 'seasonal') {
+      amount = '<div class="amount"><div class="k">No anomaly request</div><div class="m" style="font-size:17px">A straight-line rate with the renewal averaged in (' + fmtM(x.naiveWeekly) + '/wk) would run out ' + dshort(r.naive.exhaust) +
+        '. Base burn is ' + pct0(projWeekly(x, 1, false) / x.rate) + ' of the CR rate. A false alarm, cleared.</div></div>';
+    } else {
+      amount = '<div class="amount"><div class="k">Payroll carried in a lapse</div><div class="v num">' + pct0(r.o.share) + '</div>' +
+        '<div class="m">' + fmtM(r.o.coveredWk) + ' of ' + fmtM(r.o.payrollWk) + '/wk by ' + D.overlay.tafs + '; ' + fmtM(r.o.uncoveredWk) + '/wk unfunded. Payroll only: non-payroll costs are not modelled.</div></div>';
+    }
+
+    P.innerHTML = head + stack +
+      '<div class="evcols"><div class="col" style="gap:0">' + facs + '</div>' +
+      '<div class="col"><div class="mini" id="burn"></div>' + amount + '</div></div>';
+    const b = $('burn');
+    b.appendChild(burnChart(r, b.clientWidth - 20, 236, k.kind === 'seasonal'));
+    b.insertAdjacentHTML('beforeend', '<div class="lg"><span><i style="border-color:' + C.ink + '"></i>Obligations</span><span><i style="border-color:' + C.teal + ';border-top-style:dashed"></i>Available</span>' +
+      (k.kind === 'seasonal' ? '<span><i style="border-color:' + C.violet + ';border-top-style:dotted"></i>Straight line</span>' : '') + '</div>');
+    $('back').addEventListener('click', () => { selected = null; redraw({ pane: true }); });
+  }
+
+  // Requests arrive in sequence; each ring fills and its percentage counts up to the engine's value.
+  function animateList(base) {
+    const P = $('pane');
+    let i = 0;
+    P.querySelectorAll('.sect, .req').forEach((q) => {
+      const d = base + i * 90; i++;
+      q.style.animationDelay = d + 'ms';
+      const arc = q.querySelector('circle.arc'), pct = q.querySelector('.pct');
+      if (arc) arc.style.animationDelay = (d + 150) + 'ms';
+      if (pct) countUp(pct, parseInt(pct.textContent, 10), 900, (x) => Math.round(x) + '%', d + 150);
+    });
+  }
+  // Evidence: ring and score first, then the factor segments grow in turn, the burn chart wipes in,
+  // and the computed amount and draft language arrive last.
+  function animateEvidence() {
+    const P = $('pane');
+    const pct = P.querySelector('.evhead .pct');
+    if (pct) countUp(pct, parseInt(pct.textContent, 10), 1000, (x) => Math.round(x) + '%', 100);
+    P.querySelectorAll('.fac .fb i').forEach((q, i) => { q.style.animationDelay = (300 + i * 150) + 'ms'; });
+    P.querySelectorAll('.fac').forEach((q, i) => { q.style.animationDelay = (200 + i * 90) + 'ms'; });
+    P.querySelectorAll('.mini').forEach((q) => { q.style.animationDelay = '300ms'; const sv = q.querySelector('svg'); if (sv) sv.style.animationDelay = '400ms'; });
+    P.querySelectorAll('.amount').forEach((q, i) => { q.style.animationDelay = (1000 + i * 150) + 'ms'; });
+    P.querySelectorAll('.amount .draft').forEach((q) => { q.style.animationDelay = '1450ms'; });
+  }
+
+  // ---------- presenter overlay (rehearsal aid; P toggles) ----------
+  function renderPresenter() {
+    const B = analyze(D, 'dec11'), L = analyze(D, 'lapse');
+    const ex = B.rows.filter((r) => r.status === 'exposed');
+    const top = B.recs.filter((k) => k.kind === 'anomaly').slice(0, 2);
+    const cov = L.recs.find((k) => k.kind === 'covered'), unc = L.recs.find((k) => k.kind === 'uncovered');
+    const moment = words[ex.length] + ' accounts exhaust CR availability before December 11 under the base case; anomaly requests for ' +
+      top.map((k) => k.r.x.p.component + ' ' + shortPpa(k.r.x.p)).join(' and ') + ' have the strongest evidentiary case — ' + top.map((k) => pct0(k.conf)).join(' and ') + '. ' +
+      (cov ? cov.r.x.p.component + ' ' + shortPpa(cov.r.x.p) + ' has its payroll covered by the Border Support overlay in a lapse; ' : '') +
+      (unc ? unc.r.x.p.component + ' ' + shortPpa(unc.r.x.p) + ' is not.' : '');
+    const J = analyze(D, 'jan30'), sum = (R) => R.recs.filter((k) => k.kind === 'anomaly').reduce((t, k) => t + k.r.run.shortfall, 0);
+    const jNew = J.rows.filter((r) => r.status === 'exposed' && B.rows.find((b) => b.x.p.id === r.x.p.id).status !== 'exposed');
+    const nm = (k) => k.r.x.p.component + ' ' + shortPpa(k.r.x.p);
+    const path = [
+      'Operating plan: three systems, one amber MISSING cell, a renewal buried in the burn; a spreadsheet exercise today. Click Model scenarios.',
+      'CR ends Dec 11: every account projected; the Run out tile counts to ' + ex.length + '. TSA Screening Technology: renewal, not trend, so nobody chases it.',
+      'Click Extended to Jan 30: every bar re-grows from Today and the end line slides; ' + jNew.map((r) => r.x.p.component + ' ' + shortPpa(r.x.p)).join(', ') + ' pulses New. Re-modeled, not rebuilt.',
+      'Click Lapse from Dec 12: two cards lead. ' + (cov ? nm(cov) + ' carried by 070-1917 ~' + L.overlayWeeks.toFixed(1) + ' weeks; ' : '') + (unc ? nm(unc) + ' ' + fmtM(unc.r.o.uncoveredWk) + '/wk unfunded.' : ''),
+      'Back on Dec 11, request #1 open: the amount and the SEC. 1__ language are drafted from the burn, not typed. Say the confidence moment.',
+      'Draft anomaly package: every request, amount and bill paragraph writes itself, then Ready for transmittal.',
+      '→ Extended to Jan 30: the package redrafts in place; ' + jNew.map((r) => r.x.p.component + ' ' + shortPpa(r.x.p)).join(', ') + ' lands tagged New and the total counts ' + fmtM(sum(B)) + ' → ' + fmtM(sum(J)) + '. Pause for it. Ask Q17.',
+    ];
+    $('presenter').innerHTML =
+      '<h3>Opener</h3><div>"FY2026 had three lapses including a 76-day DHS-only shutdown; the current CR ends December 11."</div>' +
+      '<h3>Click path · ' + (explore ? 'off script: ' + esc(explore.label) + ' (→ resumes at step ' + (explore.next + 1) + ')' : 'step ' + (step + 1) + ' of ' + (LAST + 1)) + '</h3><ol>' +
+      path.map((t, i) => '<li class="' + (i === step && !explore ? 'now' : '') + '">' + esc(t) + '</li>').join('') + '</ol>' +
+      '<h3>Confidence moment</h3><div>"' + esc(moment) + '"</div>' +
+      '<h3>Validation question (Q17)</h3><div class="q">"How many FY2027 operating-plan revisions has the division executed under this CR, and how much of the December 11 scenario is pre-built?"</div>' +
+      '<h3>If asked</h3><div class="sm">Availability is FY2026 enacted pro rata by day; OMB apportionment timing is not modelled. Payroll only in a lapse. Synthetic data.</div>';
+  }
+
+  // ---------- state ----------
+  function renderScen(id, onPick) {
+    $(id).innerHTML = D.scenarios.map((s) => '<button data-s="' + s.key + '" class="' + (s.key === scen ? 'on ' : '') + (s.lapse ? 'lapse' : '') + '">' + esc(s.label) + '<small>' + esc(s.extension ? rateName(rate) : s.sub) + '</small>' + '</button>').join('');
+    $(id).querySelectorAll('button').forEach((b) => b.addEventListener('click', () => { b.blur(); clearTimers(); onPick(b.dataset.s); }));
+  }
+  function renderRate() {
+    const ext = !!D.scenarios.find((s) => s.key === scen).extension;
+    $('rate').classList.toggle('off', !ext);
+    $('rate').innerHTML = '<span>Funding rate</span>' + RATES.map((x) => '<button data-r="' + x + '" class="' + (x === rate ? 'on' : '') + '">' + (x === 1 ? 'Same' : Math.round(x * 100) + '%') + '</button>').join('');
+    $('rate').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => { b.blur(); rate = +b.dataset.r; selected = null; redraw({ mode: 'morph', pane: true }); }));
+  }
+  // In the package, a scenario switch redrafts the package for that scenario and stays there.
+  const pickOnScen = (key) => { pickScen(key); redraw({ mode: 'morph', pane: true }); };
+  const pickOnPkg = (key) => { scen = key; step = pkgStep(key); selected = null; explore = null; redraw({ pkg: true, diff: true }); };
+  // Back from the package to the scenario screen, on the same scenario.
+  function toScen() { clearTimers(); pickScen(scen); redraw({ mode: 'reveal', pane: true }); }
+  // A user action: cancel whatever is playing, then draw with the given animation.
+  function redraw(a) { clearTimers(); anim = a; draw(); }
+  function draw() {
+    const a = anim; anim = null;
+    const due = dayOf('2026-12-11') - scenDay;
+    $('due').innerHTML = 'As of ' + dshort(scenDay) + ' · CR expires <b>Dec 11</b> · ' + due + ' days';
+    const inPkg = step >= 5;
+    $('v-plan').classList.toggle('hidden', step !== 0);
+    $('v-scen').classList.toggle('hidden', step === 0 || inPkg);
+    $('v-pkg').classList.toggle('hidden', !inPkg);
+    $('nav').querySelectorAll('button').forEach((b) => { const g = +b.dataset.go; b.classList.toggle('on', g === 0 ? step === 0 : g === 5 ? inPkg : step > 0 && !inPkg); });
+    if (inPkg) {
+      result = analyze(D, scen, rate);
+      renderScen('pscen', pickOnPkg);
+      renderPackage(!!(a && a.pkg), !!(a && a.diff));
+    } else if (step > 0) {
+      baseline = baseline || analyze(D, 'dec11');
+      result = analyze(D, scen, rate);
+      const k = selected && result.recs.find((x) => recKey(x) === selected);
+      if (!k) selected = null;
+      $('work').classList.toggle('ev', !!k);
+      renderScen('scen', pickOnScen);
+      renderRate();
+      renderHero(a && a.mode);
+      $('pane').classList.toggle('enter', !!(a && a.pane));
+      if (k) { renderEvidence(k); if (a && a.pane) animateEvidence(); }
+      else { $('pane').style.removeProperty('--c'); renderList(); if (a && a.pane) animateList(a.mode === 'reveal' ? 650 : 0); }
+      renderRunway(a && a.mode);
+    }
+    if (!$('presenter').classList.contains('hidden')) renderPresenter();
+  }
+  function go(n, still) {
+    const prev = step;
+    clearTimers();
+    explore = null;
+    const target = Math.max(0, Math.min(LAST, n));
+    if (target > 0 && !modeled) { step = 0; draw(); runPipeline(); return; }
+    step = target;
+    rate = 1;    // the scripted steps run at the same rate
+    if (STEP_SCEN[step]) scen = STEP_SCEN[step];
+    selected = null;
+    if (step === 4) { const k = analyze(D, scen, rate).recs.find((x) => x.kind === 'anomaly'); selected = k ? recKey(k) : null; }
+    // Within the package (5 ↔ 6) the draft is rewritten against the one on screen, so the changes show.
+    anim = still || step === 0 ? null : step >= 5 ? { pkg: true, diff: prev >= 5 } : { mode: prev > 0 && geo ? 'morph' : 'reveal', pane: true };
+    draw();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    const k = e.key;
+    if (running && !'pPrR'.includes(k)) { e.preventDefault(); finishPipeline(); return; }
+    if (k === 'Enter' && e.target.closest && e.target.closest('button')) return;
+    if (k === 'ArrowRight' || k === 'ArrowDown' || k === 'PageDown' || k === ' ' || k === 'Enter') { e.preventDefault(); const nx = explore ? explore.next : step + 1; if (nx <= LAST) go(nx); }
+    else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); go(explore ? explore.prev : step - 1); }
+    else if (k === 'r' || k === 'R') { clearTimers(); resetRunUI(); modeled = false; toPkg = false; baseline = null; geo = null; pkgPrev = null; renderPlan(); step = -1; go(0); }
+    else if (k === 'p' || k === 'P') { $('presenter').classList.toggle('hidden'); if (running) renderPresenter(); else redraw(null); }
+    else if (k === 'Escape') { $('presenter').classList.add('hidden'); menuOpen(false); }
+  });
+  // Suite switcher (same behaviour in all three products).
+  function menuOpen(open) {
+    $('suiteMenu').classList.toggle('hidden', !open);
+    $('suiteBtn').setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  $('suiteBtn').addEventListener('click', (e) => { e.stopPropagation(); menuOpen($('suiteMenu').classList.contains('hidden')); });
+  document.addEventListener('click', (e) => { if (!$('suiteMenu').contains(e.target)) menuOpen(false); });
+
+  // stopPropagation: the button's contents are replaced when the run starts, so the click's
+  // original target is detached by the time it bubbles and must not count as a "skip" click.
+  $('runBtn').addEventListener('click', (e) => { e.stopPropagation(); if (!running) { toPkg = false; go(1); } });
+  $('stage').addEventListener('click', () => { if (running) finishPipeline(); });
+  $('nav').querySelectorAll('button').forEach((b) => b.addEventListener('click', (e) => { e.stopPropagation(); b.blur(); if (running) { finishPipeline(); return; } const g = +b.dataset.go;
+    if (g === 0) go(0);
+    else if (step === 0) { toPkg = g === 5 && !modeled; go(g === 5 && modeled ? 5 : 1); }
+    else if (g === 5) { if (step < 5) openPkg(); }
+    else if (step >= 5) toScen(); }));
+  $('pback').addEventListener('click', toScen);
+  window.addEventListener('resize', () => { if (step > 0 && !running) redraw(null); });
+
+  // ---------- Model pipeline: the engine's real steps, with its real counts ----------
+  function runPipeline() {
+    running = true;
+    const R = analyze(D, 'dec11'), rows = R.rows, n = rows.length;
+    const systems = new Set(D.ppas.map((q) => q.system.split(' ')[0])).size;
+    const bridged = rows.filter((r) => r.x.observed < r.x.weekly.length).length;
+    const sched = rows.filter((r) => r.x.lump.some((v) => v > 0)).length;
+    const linked = rows.filter((r) => r.o.share > 0).length;
+    const reqs = R.recs.filter((k) => k.kind === 'anomaly').length;
+    const stages = [
+      ['Join PPAs · ' + systems + ' systems', n, (x) => Math.round(x) + ' of ' + n],
+      ['Bridge missing extract', bridged, (x) => Math.round(x) + ' bridged'],
+      ['Separate scheduled items', sched, (x) => Math.round(x) + (sched === 1 ? ' renewal' : ' renewals')],
+      ['Link overlay ' + D.overlay.tafs, linked, (x) => Math.round(x) + ' accounts'],
+      ['Project burn to Dec 11', n, (x) => Math.round(x) + ' accounts'],
+      ['Score anomaly requests', reqs, (x) => Math.round(x) + ' requests'],
+    ];
+    const P = $('pipe');
+    P.innerHTML = stages.map(([lab]) => '<div class="stage"><div class="sl"><span class="ic"></span>' + esc(lab) + '</div><div class="sv num">–</div></div>').join('');
+    P.classList.remove('hidden');
+    $('planMeta').classList.add('hidden'); $('planKpis').classList.add('hidden');
+    $('runBtn').disabled = true;
+    $('runBtn').innerHTML = '<span class="spin"></span>Modeling';
+    const SD = 540;
+    const els = P.querySelectorAll('.stage');
+    stages.forEach(([, to, fmt], i) => {
+      later(() => { els[i].classList.add('run'); countUp(els[i].querySelector('.sv'), to, SD - 80, fmt); }, i * SD);
+      later(() => { els[i].classList.remove('run'); els[i].classList.add('done'); }, (i + 1) * SD - 40);
+    });
+    // Stage 1: each PPA row is joined to its system's extract, row by row.
+    D.ppas.forEach((q, i) => later(() => { const tr = document.querySelector('.preview tr[data-r="' + q.id + '"]'); if (tr) tr.classList.add('ok'); }, 30 + i * ((SD - 80) / n)));
+    later(() => good('pSys', 'Systems', 'joined'), SD);
+    later(() => { document.querySelectorAll('.preview td.miss').forEach((t) => { t.className = 'fixed'; t.textContent = '✓ bridged'; }); good('pMiss', 'Missing', 'bridged'); }, 2 * SD);
+    later(() => { document.querySelectorAll('.preview td.lump').forEach((t) => t.classList.add('sep'));
+      const g = $('logStat'); if (g) { g.textContent = '✓ ' + sched + (sched === 1 ? ' renewal' : ' renewals') + ' separated from the burn trend'; g.classList.add('good'); } }, 3 * SD);
+    later(() => { const g = $('ovStat'); if (g) { g.textContent = '✓ Linked · payroll carried for ' + linked + ' accounts'; g.classList.add('good'); } }, 4 * SD);
+    later(() => finishPipeline(true), stages.length * SD + 350);
+  }
+  function good(id, k, v) { const e = $(id); if (!e) return; e.className = 'prop good'; e.innerHTML = '<b>' + k + '</b>&#10003; ' + esc(v); }
+  function resetRunUI() {
+    $('runBtn').disabled = false;
+    $('runBtn').innerHTML = 'Model scenarios &rarr;';
+    $('pipe').classList.add('hidden');
+    $('planMeta').classList.remove('hidden'); $('planKpis').classList.remove('hidden');
+  }
+  // played: the pipeline ran to the end, so the scenario screen reveals; skipped: it lands in its final state.
+  function finishPipeline(played) {
+    clearTimers();
+    resetRunUI();
+    renderPlan();
+    modeled = true;
+    step = toPkg ? 5 : 1; scen = STEP_SCEN[1]; selected = null; explore = null; geo = null;
+    anim = step === 5 ? { pkg: !!played } : played ? { mode: 'reveal', pane: true } : null;
+    toPkg = false;
+    draw();
+  }
+
+  // Rehearsal hash: #step=0..6 (5 = anomaly package, 6 = package redrafted for Jan 30), &scen=<key>, &rate=90|100|110, &sel=<kind:PPA id>, &p
+  const h = new URLSearchParams(location.hash.slice(1));
+  if (h.has('p')) $('presenter').classList.remove('hidden');
+  renderPlan();
+  fit();
+  const hs = Math.max(0, Math.min(LAST, parseInt(h.get('step') || '0', 10) || 0));
+  if (hs > 0 || h.has('scen')) modeled = true;
+  go(hs, true);
+  if (h.has('scen') && D.scenarios.some((s) => s.key === h.get('scen'))) {
+    if (step >= 5) { scen = h.get('scen'); step = pkgStep(scen); } else { if (step === 0) step = 1; pickScen(h.get('scen')); }
+    draw();
+  }
+  if (h.has('rate')) { const x = +h.get('rate') / 100; if (RATES.includes(x)) { rate = x; draw(); } }
+  if (h.has('sel')) { selected = h.get('sel'); draw(); }
+})();
+</script>
+</body>
+</html>
