@@ -27,8 +27,8 @@ outputs is escaped, never rendered.
 
 | Key | Type | Notes |
 |-----|------|-------|
-| `mode` | `"representative-pregenerated"`, `"model-generated"` or `"copilot-recorded"` | Authored by the builder; produced by `scripts/regenerate_cache.py`; or answers copied out of Microsoft 365 Copilot during rehearsal and imported by `scripts/import_copilot_run.py`. |
-| `model` | string or null | Model ID, or `"Microsoft 365 Copilot"`. Required unless representative. |
+| `mode` | `"representative-pregenerated"`, `"model-generated"`, `"chat-recorded"` (or legacy `"copilot-recorded"`) | Authored by the builder; produced by `scripts/regenerate_cache.py`; or answers copied out of a chat tool during rehearsal and imported by `scripts/import_chat_run.py --source "<tool, model>"` (`import_copilot_run.py` sets the source to Microsoft 365 Copilot). |
+| `model` | string or null | Model ID, or for recordings the tool and model as given in `--source`; shown on every answer panel. Required unless representative. |
 | `temperature` | number or null | `0` when model-generated. |
 | `generated_at` | string | ISO date. |
 | `note` | string | One line shown in the presenter view. |
@@ -110,7 +110,7 @@ teleprompter and fallback. Demo 1 has `copilot` (4:00), `full` (4:00), `90s` and
 Demo 2 has `copilot` (1:30), `full` (1:30) and `45s`.
 
 Every output panel shows where its answer came from (`Representative example`,
-`Pre-generated · <model>` or `Recorded in Copilot · <date>`).
+`Pre-generated · <model>` or `Recorded in <tool, model> · <date>`).
 
 ## Live mode contract (optional)
 

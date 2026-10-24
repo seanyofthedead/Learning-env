@@ -1,4 +1,4 @@
-"""Rules for judging AI answers, shared by preflight.py and check_copilot_run.py.
+"""Rules for judging AI answers, shared by preflight.py and check_chat_run.py.
 
 Works on markdown (pipe tables) and on text copied out of Copilot, where a table may
 arrive as tab-separated lines.

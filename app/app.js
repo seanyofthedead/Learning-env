@@ -92,13 +92,13 @@
   // Where the on-screen answers came from. Shown on every output panel and in the footer.
   function sourceLine(cache) {
     var g = (cache && cache.generation) || {};
-    if (g.mode === 'copilot-recorded') return 'Recorded live in Microsoft 365 Copilot on ' + (g.generated_at || '?');
+    if (g.mode === 'chat-recorded' || g.mode === 'copilot-recorded') return 'Recorded live in ' + (g.model || 'Microsoft 365 Copilot') + ' on ' + (g.generated_at || '?');
     if (g.mode === 'model-generated') return 'Pre-generated with ' + (g.model || 'a model') + ' on ' + (g.generated_at || '?');
     return 'Representative pre-generated example, not a live AI run';
   }
   function sourceTag(cache) {
     var g = (cache && cache.generation) || {};
-    var t = g.mode === 'copilot-recorded' ? 'Recorded in Copilot \u00b7 ' + (g.generated_at || '')
+    var t = (g.mode === 'chat-recorded' || g.mode === 'copilot-recorded') ? 'Recorded in ' + (g.model || 'Copilot') + ' \u00b7 ' + (g.generated_at || '')
       : g.mode === 'model-generated' ? 'Pre-generated \u00b7 ' + (g.model || '')
       : 'Representative example';
     return '<span class="src-tag">' + esc(t) + '</span>';
@@ -312,7 +312,7 @@
   function presenterHTML(cache, st, nowMs) {
     var demo = st.view, gen = cache.generation || {};
     var genNote = 'App fallback answers: ' + esc(sourceLine(cache)) + '. ' +
-      (gen.mode === 'copilot-recorded' ? 'If you switch to the app, say it is the run recorded in Copilot at rehearsal.'
+      ((gen.mode === 'chat-recorded' || gen.mode === 'copilot-recorded') ? 'If you switch to the app, say it is the run recorded in ' + esc(gen.model || 'the tool') + ' at rehearsal.'
         : gen.mode === 'model-generated' ? 'If you show the app, say the answers are pre-generated.'
         : 'If you show the app, say these are representative pre-generated examples, not Copilot.');
     var foot = '<p class="pv-gen">' + genNote + '</p>' +
@@ -327,8 +327,8 @@
       return '<div class="pv"><div class="pv-top"><span>Presenter · Home</span></div><ul class="pv-home">' + rows + '</ul>' + foot + '</div>';
     }
     var model = gen.model ? String(gen.model) : 'a model';
-    var outputsLine = gen.mode === 'copilot-recorded'
-      ? 'The answers were recorded live in Microsoft 365 Copilot during rehearsal on ' + gen.generated_at + ', so the demo runs the same every time.'
+    var outputsLine = (gen.mode === 'chat-recorded' || gen.mode === 'copilot-recorded')
+      ? 'The answers were recorded live in ' + model + ' during rehearsal on ' + gen.generated_at + ', so the demo runs the same every time.'
       : gen.mode === 'model-generated'
       ? 'The answers were pre-generated with ' + model + ', so the demo runs the same every time.'
       : 'The answers were pre-generated, as representative examples, so the demo runs the same every time.';

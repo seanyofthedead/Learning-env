@@ -1,6 +1,7 @@
-"""Read a folder of answers copied out of Microsoft 365 Copilot during a rehearsal.
+"""Read a folder of answers copied out of any chat tool (Copilot, ChatGPT, Claude, Gemini...)
+during a rehearsal.
 
-Expected files (.md or .txt), one per answer, pasted with Copilot's Copy button:
+Expected files (.md or .txt), one per answer, pasted with the tool's Copy button:
   demo1_weak  demo1_role  demo1_task  demo1_context  demo1_output  demo2_clean  demo2_injected
 """
 import os

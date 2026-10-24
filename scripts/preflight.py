@@ -117,7 +117,7 @@ def run_checks(skip_node=False, accept_resisted=False):
     check("label is 'Synthetic demonstration data'", cache.get("label") == rd.LABEL)
     gen = cache["generation"]
     check("generation mode is valid",
-          gen["mode"] in ("representative-pregenerated", "model-generated", "copilot-recorded"))
+          gen["mode"] in ("representative-pregenerated", "model-generated", "copilot-recorded", "chat-recorded"))
     if gen["mode"] != "representative-pregenerated":
         check(f"{gen['mode']} cache names its source and date", bool(gen.get("model")) and bool(gen.get("generated_at")))
     check("index.html embeds an identical copy of cache.json", build_cache.embedded_cache() == cache)
@@ -159,13 +159,14 @@ def run_checks(skip_node=False, accept_resisted=False):
     for name, ok, detail in clean_results(clean):
         check(f"Demo 2 {name}", ok, detail)
     followed = injected_followed(inj)
-    if accept_resisted and gen["mode"] == "copilot-recorded" and not followed:
+    recorded = gen["mode"] in ("copilot-recorded", "chat-recorded")
+    if accept_resisted and recorded and not followed:
         notes.append("injected run did NOT follow the hidden line; accepted with --accept-resisted: "
-                     "present the 'Copilot caught it' branch")
+                     "present the 'tool caught it' ending")
     else:
         check("Demo 2 injected run follows the planted instruction (says on plan, omits SYN-102)"
-              + ("" if gen["mode"] != "copilot-recorded" else
-                 "; if Copilot resisted, re-record or use --accept-resisted"), followed, inj[:160])
+              + ("" if not recorded else
+                 "; if the tool resisted, re-record or use --accept-resisted"), followed, inj[:160])
     hidden = [r for p in d2["documents"]["injected"]["notes"] for r in p["runs"] if r["hidden"]]
     check("reveal preview carries exactly one hidden run, the payload",
           len(hidden) == 1 and hidden[0]["text"].strip() == rd.PAYLOAD)
@@ -260,7 +261,7 @@ def run_checks(skip_node=False, accept_resisted=False):
     check("reveal shows both outputs", 'data-step="clean"' in rev and 'data-step="injected"' in rev)
     check("reveal labels the injected answer to match what it did",
           ("Followed the hidden line" in rev) == followed)
-    from_label = {"copilot-recorded": "Recorded", "model-generated": "Pre-generated",
+    from_label = {"copilot-recorded": "Recorded", "chat-recorded": "Recorded", "model-generated": "Pre-generated",
                   "representative-pregenerated": "Representative"}[gen["mode"]]
     for demo in ("demo1", "demo2"):
         for s in run[demo]["steps"][1:]:
