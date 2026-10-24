@@ -56,3 +56,17 @@ Decisions made without asking. Each is reversible.
 - A13. The model receives the report as text: the CSV export for Demo 1 (same data as
   the .xlsx shown on screen) and the text extracted from the .docx for Demo 2 (which
   includes the hidden run, as any text extractor would).
+
+## App
+- A14. The app opens straight from disk (`file://`), where browsers block `fetch()`, so
+  `scripts/build_cache.py` embeds a byte-identical copy of `cache.json` inside
+  `index.html`. Over HTTP the app fetches `cache.json` and falls back to the embedded copy.
+  Preflight fails if the two differ.
+- A15. Live mode is opt-in (`?live=1`) and needs `scripts/live_server.py`, which keeps the
+  API key server-side. The browser aborts after 5 s and shows the saved output, labelled.
+- A16. Supported screens: 1280x720 and up. Verified with no clipped content at 1280x720,
+  1280x800, 1366x768 and 1920x1080, light and dark. Body text never drops below 18px. On
+  screens 740px tall or less the footer is hidden; the header pill keeps the
+  "Synthetic demonstration data" label on screen.
+- A17. Demo 1 = 6 key presses (5 ladder stages + side-by-side) after a title card; Demo 2 =
+  3 key presses after a title card. Clicker PageDown/PageUp map to next/previous.
