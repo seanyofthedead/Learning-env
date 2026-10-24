@@ -19,7 +19,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 4.1 | 4 Prompts/cache | prompt engineer | Write the 5 ladder stages and Demo 2 prompt (content/demo1.json, content/demo2.json) | done |
 | 4.2 | 4 Prompts/cache | prompt engineer | Author representative outputs; iterate until each stage is visibly better | done |
 | 4.3 | 4 Prompts/cache | prompt engineer | scripts/build_cache.py (assemble cache.json, extract doc previews from real files) | done |
-| 4.4 | 4 Prompts/cache | prompt engineer | scripts/regenerate_cache.py (live model calls at temperature 0) + shared model client | todo |
+| 4.4 | 4 Prompts/cache | prompt engineer | scripts/regenerate_cache.py (live model calls at temperature 0) + shared model client | done |
 | 5.1 | 5 App | front-end builder | app/index.html + app/app.js: Demo 1 ladder and side-by-side | todo |
 | 5.2 | 5 App | front-end builder | Demo 2 three-step flow with reveal | todo |
 | 5.3 | 5 App | front-end builder | Cache replay, embedded fallback for file://, optional live mode with 5 s fallback (scripts/live_server.py) | todo |
