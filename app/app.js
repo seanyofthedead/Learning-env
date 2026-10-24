@@ -314,7 +314,7 @@
     var genNote = 'App fallback answers: ' + esc(sourceLine(cache)) + '. ' +
       ((gen.mode === 'chat-recorded' || gen.mode === 'copilot-recorded') ? 'If you switch to the app, say it is the run recorded in ' + esc(gen.model || 'the tool') + ' at rehearsal.'
         : gen.mode === 'model-generated' ? 'If you show the app, say the answers are pre-generated.'
-        : 'If you show the app, say these are representative pre-generated examples, not Copilot.');
+        : 'If you show the app, say these are representative pre-generated examples, not a live AI run.');
     var foot = '<p class="pv-gen">' + genNote + '</p>' +
       '<p class="pv-keys">→ / ← step · End last step · R reset · V version · S restart timer · O pop out · P close · T theme · 1 / 2 / H demos</p>' +
       '<p class="pv-label">' + esc(cache.label) + '</p>';
