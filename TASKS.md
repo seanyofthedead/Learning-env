@@ -52,7 +52,7 @@ Re-read ASSUMPTIONS.md before resuming.
 |----|-------|------|------|--------|
 | 10.1 | 10 Any chat | prompt engineer | Paste blocks for Demo 1 (prompt + report text, one file per stage), generated and checked | done |
 | 10.2 | 10 Any chat | security demo builder | chat-kit/RUNBOOK.md: tool-agnostic run, reset checklist, pre-staged chats, Demo 2 copy-paste route | done |
-| 10.3 | 10 Any chat | builder | chat-kit/TOOL_CARDS.md (ChatGPT, Claude, Gemini, Copilot) + REHEARSAL_LOG with tool column | todo |
+| 10.3 | 10 Any chat | builder | chat-kit/TOOL_CARDS.md (ChatGPT, Claude, Gemini, Copilot) + REHEARSAL_LOG with tool column | done |
 | 10.4 | 10 Any chat | reliability engineer | Generic check_chat_run.py / import_chat_run.py --source; app and cache label any tool; Copilot scripts become wrappers | todo |
 | 10.5 | 10 Any chat | presentation coach | "Any chat live" presenter versions (4:00 / 1:30) incl. copy-paste reveal | todo |
 | 10.6 | 10 Any chat | all three reviewers | Preflight/inspection extended; REVIEW addendum; README, ASSUMPTIONS, FINAL_REPORT; preflight x3; push | todo |
