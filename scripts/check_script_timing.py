@@ -24,7 +24,7 @@ def main():
             for c in v["cues"]:
                 branch = max(words(c.get("if_followed", "")), words(c.get("if_resisted", "")))
                 n = words(c["say"]) + (words(c["ask"]) if c.get("ask") else 0) + branch
-                pause = (6 if name in ("full", "copilot") else 2) if c.get("ask") else 0
+                pause = (6 if name in ("full", "copilot", "chat") else 2) if c.get("ask") else 0
                 need = n / RATE + pause
                 ok = need <= c["seconds"]
                 bad += not ok

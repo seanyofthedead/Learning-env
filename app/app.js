@@ -304,7 +304,7 @@
   }
 
   // ------------------------------------------------------------ presenter
-  var VERSION_ORDER = ['copilot', 'full', '90s', '45s'];
+  var VERSION_ORDER = ['copilot', 'chat', 'full', '90s', '45s'];
   function versionsFor(cache, demo) {
     var p = cache.presenter && cache.presenter[demo];
     return p ? VERSION_ORDER.filter(function (v) { return p.versions[v]; }) : [];
@@ -354,7 +354,7 @@
         '<p class="pv-say"><b>SAY</b> ' + esc(fill(cur.say)) + '</p>' +
         (cur.ask ? '<p class="pv-ask"><b>ASK THE ROOM</b> ' + esc(cur.ask) + '</p>' : '') +
         (cur.if_followed ? '<p class="pv-branch"><b>IF IT FOLLOWED THE HIDDEN LINE</b> ' + esc(cur.if_followed) + '</p>' : '') +
-        (cur.if_resisted ? '<p class="pv-branch"><b>IF COPILOT CAUGHT IT</b> ' + esc(cur.if_resisted) + '</p>' : '') +
+        (cur.if_resisted ? '<p class="pv-branch"><b>IF THE TOOL CAUGHT IT</b> ' + esc(cur.if_resisted) + '</p>' : '') +
         (cur.fallback ? '<p class="pv-fallback"><b>FALLBACK</b> ' + esc(cur.fallback) + '</p>' : '') + '</div>'
       : '<div class="pv-cue"><p class="pv-do"><b>DO</b> This step is not in the ' + esc(ver.label) +
         ' version. Press →' + (next ? ' to continue (next cue at ' + esc(next.at) + ')' : '') + ' or End.</p></div>';

@@ -203,8 +203,8 @@ def run_checks(skip_node=False, accept_resisted=False):
 
     # ---- 8. presenter script
     pres = cache["presenter"]
-    want = {"demo1": {"copilot": "4:00", "full": "4:00", "90s": "1:30", "45s": "0:45"},
-            "demo2": {"copilot": "1:30", "full": "1:30", "45s": "0:45"}}
+    want = {"demo1": {"copilot": "4:00", "chat": "4:00", "full": "4:00", "90s": "1:30", "45s": "0:45"},
+            "demo2": {"copilot": "1:30", "chat": "1:30", "full": "1:30", "45s": "0:45"}}
     for demo, versions in want.items():
         for vname, total in versions.items():
             v = pres[demo]["versions"].get(vname)
@@ -213,10 +213,10 @@ def run_checks(skip_node=False, accept_resisted=False):
             secs = sum(c["seconds"] for c in v["cues"])
             check(f"presenter {demo}/{vname} cue lengths add to {total}",
                   f"{secs // 60}:{secs % 60:02d}" == total, str(secs))
-            if vname == "copilot":
-                check(f"presenter {demo}/copilot says it is live in Copilot on synthetic data",
+            if vname in ("copilot", "chat"):
+                check(f"presenter {demo}/{vname} says it is live, on synthetic data",
                       "live" in v["cues"][0]["say"] or "staged" in v["cues"][0]["say"])
-                check(f"presenter {demo}/copilot has a fallback line for every live step",
+                check(f"presenter {demo}/{vname} has a fallback line for every live step",
                       all(c.get("fallback") for c in v["cues"]
                           if c["step"] in ((1, 2, 3, 4, 5) if demo == "demo1" else (1, 2))))
             else:
@@ -226,8 +226,10 @@ def run_checks(skip_node=False, accept_resisted=False):
     check("room question: what is the AI being forced to guess", "forced to guess" in asks)
     asks = " ".join(c.get("ask", "") for c in pres["demo2"]["versions"]["full"]["cues"])
     check("room question: which file would you have trusted", "which file would you have trusted" in asks.lower())
-    cp = pres["demo2"]["versions"]["copilot"]["cues"][-1]
-    check("Copilot reveal cue has both branches (followed / caught it)", bool(cp.get("if_followed")) and bool(cp.get("if_resisted")))
+    for vname in ("copilot", "chat"):
+        cp = pres["demo2"]["versions"][vname]["cues"][-1]
+        check(f"{vname} reveal cue has both endings (followed / caught it)",
+              bool(cp.get("if_followed")) and bool(cp.get("if_resisted")))
 
     # ---- 9. run the app's own render code headlessly
     node = shutil.which("node")
