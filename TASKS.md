@@ -29,7 +29,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 7.1 | 7 Review | reliability engineer | scripts/preflight.py (+ headless app run) passing | done |
 | 7.2 | 7 Review | integrity reviewer | scripts/inspect_files.py; inspect raw XML/metadata of all Demo 1 files; certify | done |
 | 7.3 | 7 Review | skeptical NSA financial manager | Check every number, term, DoD FMR reference; fix findings | done |
-| 7.4 | 7 Review | all three | REVIEW.md with sign-offs after fixes repeat clean | todo |
+| 7.4 | 7 Review | all three | REVIEW.md with sign-offs after fixes repeat clean | done |
 | 7.5 | 7 Review | builder | README.md (setup, offline run, cache regen, day-of checklist, responsible Demo 2) | todo |
 | 7.6 | 7 Review | builder | copilot-kit (clean files, prompts list, rehearsal log template + 3-rehearsal rule) | todo |
 | 8.1 | 8 Report | builder | Run preflight three times, confirm identical results | todo |
