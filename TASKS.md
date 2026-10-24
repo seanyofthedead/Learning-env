@@ -23,7 +23,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 5.1 | 5 App | front-end builder | app/index.html + app/app.js: Demo 1 ladder and side-by-side | done |
 | 5.2 | 5 App | front-end builder | Demo 2 three-step flow with reveal | done |
 | 5.3 | 5 App | front-end builder | Cache replay, embedded fallback for file://, optional live mode with 5 s fallback (scripts/live_server.py) | done |
-| 5.4 | 5 App | front-end builder | Presenter view (P), separate presenter window, reset (R), themes; screenshot QA at projector sizes | todo |
+| 5.4 | 5 App | front-end builder | Presenter view (P), separate presenter window, reset (R), themes; screenshot QA at projector sizes | done |
 | 6.1 | 6 Script | presentation coach | Full scripts with timing marks (4:00 and 1:30), room questions | todo |
 | 6.2 | 6 Script | presentation coach | 90-second and 45-second compressed versions; cut until it fits | todo |
 | 7.1 | 7 Review | reliability engineer | scripts/preflight.py (+ headless app run) passing | todo |

@@ -309,6 +309,11 @@
       }).join('');
       return '<div class="pv"><div class="pv-top"><span>Presenter · Home</span></div><ul class="pv-home">' + rows + '</ul>' + foot + '</div>';
     }
+    var model = gen.model ? String(gen.model) : 'a model';
+    var outputsLine = gen.mode === 'model-generated'
+      ? 'The answers were pre-generated with ' + model + ', so the demo runs the same every time.'
+      : 'The answers were pre-generated, as representative examples, so the demo runs the same every time.';
+    var fill = function (t) { return String(t || '').replace('{outputs_short}', 'Answers are pre-generated.').replace('{outputs}', outputsLine); };
     var vs = versionsFor(cache, demo);
     var vkey = vs.indexOf(st.version) >= 0 ? st.version : vs[0];
     var ver = vkey ? cache.presenter[demo].versions[vkey] : { label: 'No script', total: '0:00', cues: [] };
@@ -327,11 +332,11 @@
     timer += '</div>';
     var body = cur
       ? '<div class="pv-cue">' + (cur.do ? '<p class="pv-do"><b>DO</b> ' + esc(cur.do) + '</p>' : '') +
-        '<p class="pv-say"><b>SAY</b> ' + esc(cur.say) + '</p>' +
+        '<p class="pv-say"><b>SAY</b> ' + esc(fill(cur.say)) + '</p>' +
         (cur.ask ? '<p class="pv-ask"><b>ASK THE ROOM</b> ' + esc(cur.ask) + '</p>' : '') + '</div>'
       : '<div class="pv-cue"><p class="pv-do"><b>DO</b> This step is not in the ' + esc(ver.label) +
         ' version. Press →' + (next ? ' to continue (next cue at ' + esc(next.at) + ')' : '') + ' or End.</p></div>';
-    var nextHtml = next ? '<p class="pv-next"><b>Next · ' + esc(next.at) + '</b> ' + esc(next.do || next.say) + '</p>' : '<p class="pv-next"><b>Next</b> End of demo (' + esc(ver.total) + ')</p>';
+    var nextHtml = next ? '<p class="pv-next"><b>Next · ' + esc(next.at) + '</b> ' + esc(next.do || fill(next.say)) + '</p>' : '<p class="pv-next"><b>Next</b> End of demo (' + esc(ver.total) + ')</p>';
     var list = '<ol class="pv-all">' + cues.map(function (c) {
       return '<li class="' + (c === cur ? 'cur' : '') + '"><span class="pv-at">' + esc(c.at) + '</span> ' +
         esc(c.label || ('Step ' + c.step)) + '</li>';

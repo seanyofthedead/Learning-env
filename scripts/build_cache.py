@@ -89,6 +89,26 @@ def build_demo2(outputs):
             "documents": docs, "steps": steps}
 
 
+def fmt_mss(sec):
+    return f"{sec // 60}:{sec % 60:02d}"
+
+
+def with_timing(presenter):
+    """Add each cue's 'at' mark from cumulative cue lengths; check totals add up."""
+    for demo, d in presenter.items():
+        if not isinstance(d, dict) or "versions" not in d:
+            continue
+        for name, v in d["versions"].items():
+            t = 0
+            for cue in v["cues"]:
+                cue["at"] = fmt_mss(t)
+                t += cue["seconds"]
+            assert fmt_mss(t) == v["total"], f"{demo}/{name}: cues add to {fmt_mss(t)}, not {v['total']}"
+            steps = [c["step"] for c in v["cues"]]
+            assert steps == sorted(steps), f"{demo}/{name}: cues out of step order"
+    return presenter
+
+
 def representative_outputs():
     out = {}
     folder = os.path.join(ROOT, "content", "outputs")
@@ -111,6 +131,7 @@ def build(outputs=None, generation=None):
         outputs = representative_outputs()
     presenter_path = os.path.join(ROOT, "content", "presenter.json")
     presenter = load_json("content", "presenter.json") if os.path.exists(presenter_path) else {}
+    presenter = with_timing(presenter)
     cache = {
         "schema_version": 1,
         "label": rd.LABEL,
