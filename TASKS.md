@@ -8,7 +8,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 0.1 | 0 Setup | builder | Use existing git repo, create folder structure (app, data, demo2, scripts, copilot-kit) | done |
 | 0.2 | 0 Setup | builder | Write TASKS.md with every task | done |
 | 0.3 | 0 Setup | builder | Write ASSUMPTIONS.md | done |
-| 0.4 | 0 Setup | builder | Write cache JSON schema in app/SCHEMA.md | todo |
+| 0.4 | 0 Setup | builder | Write cache JSON schema in app/SCHEMA.md | done |
 | 1.1 | 1 Concept | demo designer | CONCEPTS.md: 3 ladder concepts, 2 reveal concepts, skeptical-FM scoring, pick one of each | todo |
 | 2.1 | 2 Data | synthetic data designer | scripts/build_reports.py: stdlib-only generator for .csv/.xlsx/.docx with 25 lines and 5 planted variances | todo |
 | 2.2 | 2 Data | synthetic data designer | Generate data/ report files; verify they open (openpyxl/python-docx/LibreOffice render) | todo |
