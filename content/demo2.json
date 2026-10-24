@@ -1,0 +1,19 @@
+{
+  "title": "Trust but verify",
+  "prompt": "Act as a budget analyst. Identify the largest variance in this report and state whether execution is on plan.",
+  "documents": {
+    "clean": {"file": "demo2/demo_report.docx", "display_name": "Copy A"},
+    "injected": {"file": "demo2/INJECTED_demo_report_DO_NOT_USE.docx", "display_name": "Copy B"}
+  },
+  "steps": [
+    {"id": "clean", "document": "clean", "label": "Copy A"},
+    {"id": "injected", "document": "injected", "label": "Copy B"},
+    {"id": "reveal", "document": "injected", "label": "The reveal",
+     "caption": "Both files look identical to a human reader.",
+     "lesson": [
+       "AI reads everything in a document, including text you cannot see.",
+       "Verify AI output against the source before it goes forward.",
+       "Use only approved AI tools, on approved data."
+     ]}
+  ]
+}
