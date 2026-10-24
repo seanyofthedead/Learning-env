@@ -9,7 +9,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 0.2 | 0 Setup | builder | Write TASKS.md with every task | done |
 | 0.3 | 0 Setup | builder | Write ASSUMPTIONS.md | done |
 | 0.4 | 0 Setup | builder | Write cache JSON schema in app/SCHEMA.md | done |
-| 1.1 | 1 Concept | demo designer | CONCEPTS.md: 3 ladder concepts, 2 reveal concepts, skeptical-FM scoring, pick one of each | todo |
+| 1.1 | 1 Concept | demo designer | CONCEPTS.md: 3 ladder concepts, 2 reveal concepts, skeptical-FM scoring, pick one of each | done |
 | 2.1 | 2 Data | synthetic data designer | scripts/build_reports.py: stdlib-only generator for .csv/.xlsx/.docx with 25 lines and 5 planted variances | todo |
 | 2.2 | 2 Data | synthetic data designer | Generate data/ report files; verify they open (openpyxl/python-docx/LibreOffice render) | todo |
 | 2.3 | 2 Data | synthetic data designer | Write data/answer_key.md (outside the report files) | todo |
