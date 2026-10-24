@@ -222,7 +222,23 @@ def build_xlsx(path, inject=False):
              f'<sheetData>{"".join(rows_xml)}</sheetData>'
              '<pageMargins left="0.4" right="0.4" top="0.5" bottom="0.5" header="0.3" footer="0.3"/>'
              '<pageSetup orientation="landscape" fitToWidth="1" fitToHeight="0"/>'
+             '<tableParts count="1"><tablePart r:id="rId1"/></tableParts>'
              '</worksheet>')
+    # Excel table over the header + 25 data rows, so Copilot in Excel can read the data
+    # (Copilot needs an Excel table or a range with a single header row).
+    tref = f"A5:L{last}"
+    table = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
+             '<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" id="1" '
+             f'name="ExecutionReport" displayName="ExecutionReport" ref="{tref}" totalsRowShown="0">'
+             f'<autoFilter ref="{tref}"/>'
+             f'<tableColumns count="{len(rd.COLUMNS)}">'
+             + "".join(f'<tableColumn id="{i + 1}" name="{x(c)}"/>' for i, c in enumerate(rd.COLUMNS))
+             + '</tableColumns><tableStyleInfo name="TableStyleLight1" showFirstColumn="0" '
+             'showLastColumn="0" showRowStripes="1" showColumnStripes="0"/></table>')
+    sheet_rels = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
+                  '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+                  '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/table" Target="../tables/table1.xml"/>'
+                  '</Relationships>')
     sst_xml = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
                '<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" '
                f'count="{len(strings)}" uniqueCount="{len(strings)}">'
@@ -254,6 +270,7 @@ def build_xlsx(path, inject=False):
               '<Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>'
               '<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>'
               '<Override PartName="/xl/sharedStrings.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"/>'
+              '<Override PartName="/xl/tables/table1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml"/>'
               '<Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/>'
               '</Types>')
     write_zip(path, [
@@ -262,6 +279,7 @@ def build_xlsx(path, inject=False):
         ("xl/workbook.xml", workbook), ("xl/_rels/workbook.xml.rels", wb_rels),
         ("xl/styles.xml", xlsx_styles(inject)), ("xl/sharedStrings.xml", sst_xml),
         ("xl/worksheets/sheet1.xml", sheet),
+        ("xl/worksheets/_rels/sheet1.xml.rels", sheet_rels), ("xl/tables/table1.xml", table),
     ])
 
 

@@ -70,3 +70,22 @@ Decisions made without asking. Each is reversible.
   "Synthetic demonstration data" label on screen.
 - A17. Demo 1 = 6 key presses (5 ladder stages + side-by-side) after a title card; Demo 2 =
   3 key presses after a title card. Clicker PageDown/PageUp map to next/previous.
+
+## Copilot-first (Phase 9, after you said "This must be run in Copilot")
+- A18. Microsoft 365 Copilot is now the primary path; the app is the fallback and the
+  presenter teleprompter. Original rules still hold: Demo 2 runs live only after three
+  successful rehearsals on the presentation tenant.
+- A19. Every .xlsx now holds the 25 data rows as an Excel table named `ExecutionReport`
+  (A5:L30). Microsoft's guidance says Copilot in Excel needs an Excel table or a range
+  with a single header row, and our sheet has title rows above the header. Totals and
+  notes sit outside the table. Clean and injected copies still render identically.
+- A20. Demo 1 runs in Microsoft 365 Copilot Chat with the .xlsx attached (one new chat per
+  stage, pre-staged). Demo 2 runs in Copilot in Word on the two .docx files, so the
+  reveal can be done in the same Word window.
+- A21. The injected file keeps its required name `INJECTED_demo_report_DO_NOT_USE` on the
+  tenant too. Copilot can see file names, and the name may make it more cautious. I did not
+  rename it, because the name is a safety label you specified; whether a tenant copy
+  may use a neutral name is your call (FINAL_REPORT).
+- A22. I did not write variants of the hidden text designed to get past Copilot's
+  prompt-injection protections. If Copilot ignores the hidden line, the script has a
+  "Copilot caught it" branch that is still a true lesson.

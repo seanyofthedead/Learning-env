@@ -37,7 +37,7 @@ EXPECTED = set([rd.TITLE, rd.SUBTITLE, rd.LABEL_LINE, "Total", ""] + rd.COLUMNS 
 EXPECTED_PARTS = {
     "xlsx": {"[Content_Types].xml", "_rels/.rels", "docProps/core.xml", "xl/workbook.xml",
              "xl/_rels/workbook.xml.rels", "xl/styles.xml", "xl/sharedStrings.xml",
-             "xl/worksheets/sheet1.xml"},
+             "xl/worksheets/sheet1.xml", "xl/worksheets/_rels/sheet1.xml.rels", "xl/tables/table1.xml"},
     "docx": {"[Content_Types].xml", "_rels/.rels", "docProps/core.xml", "word/document.xml",
              "word/_rels/document.xml.rels", "word/styles.xml"},
 }
