@@ -12,7 +12,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 1.1 | 1 Concept | demo designer | CONCEPTS.md: 3 ladder concepts, 2 reveal concepts, skeptical-FM scoring, pick one of each | done |
 | 2.1 | 2 Data | synthetic data designer | scripts/build_reports.py: stdlib-only generator for .csv/.xlsx/.docx with 25 lines and 5 planted variances | done |
 | 2.2 | 2 Data | synthetic data designer | Generate data/ report files; verify they open (openpyxl/python-docx/LibreOffice render) | done |
-| 2.3 | 2 Data | synthetic data designer | Write data/answer_key.md (outside the report files) | todo |
+| 2.3 | 2 Data | synthetic data designer | Write data/answer_key.md (outside the report files) | done |
 | 3.1 | 3 Injected file | security demo builder | Build demo2 clean copies and INJECTED_demo_report_DO_NOT_USE.xlsx/.docx with simple hidden text | todo |
 | 3.2 | 3 Injected file | security demo builder | Render clean vs injected to images and confirm they look identical | todo |
 | 3.3 | 3 Injected file | security demo builder | Write demo2/REVEAL.md (exact location, how to show it) | todo |

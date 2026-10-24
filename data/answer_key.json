@@ -1,0 +1,31 @@
+{
+  "label": "Synthetic demonstration data",
+  "note": "Answer key for the synthetic FY26 Q3 O&M execution report. Kept outside the report files on purpose. Dollars in thousands ($K).",
+  "largest_variance": {
+    "code": "SYN-102",
+    "name": "Enterprise Help Desk Services",
+    "measure": "obligations",
+    "variance_k": -4800,
+    "variance_pct": -80.0
+  },
+  "aggregate": {
+    "obligation_variance_k": 965,
+    "obligation_variance_pct": 1.5,
+    "expenditure_variance_k": -3580,
+    "expenditure_variance_pct": -7.4,
+    "why_it_matters": "Net obligations look on plan (+1.5%) only because large line-level variances offset each other."
+  },
+  "planted": [
+    {"rank": 1, "code": "SYN-102", "name": "Enterprise Help Desk Services", "measure": "obligations", "variance_k": -4800, "variance_pct": -80.0,
+     "cause_id": "late_contract_award", "cause": "Late contract award", "cause_keywords": ["award"]},
+    {"rank": 2, "code": "SYN-107", "name": "End-User Device Refresh", "measure": "obligations", "variance_k": 3100, "variance_pct": 147.6,
+     "cause_id": "one_time_equipment_buy", "cause": "One-time equipment buy", "cause_keywords": ["one-time"]},
+    {"rank": 3, "code": "SYN-109", "name": "Mission Support Services", "measure": "expenditures", "variance_k": -2600, "variance_pct": -63.4,
+     "cause_id": "billing_lag", "cause": "Billing lag", "cause_keywords": ["billing lag", "invoice"]},
+    {"rank": 4, "code": "SYN-103", "name": "Facilities Sustainment", "measure": "obligations", "variance_k": 1800, "variance_pct": 50.0,
+     "cause_id": "reprogramming", "cause": "Reprogramming", "cause_keywords": ["reprogramming"]},
+    {"rank": 5, "code": "SYN-108", "name": "Software Licenses & Maintenance", "measure": "obligations", "variance_k": 1250, "variance_pct": 50.0,
+     "cause_id": "duplicate_posting", "cause": "Duplicate posting", "cause_keywords": ["duplicate"]}
+  ],
+  "largest_unplanted_variance_k": 150
+}
