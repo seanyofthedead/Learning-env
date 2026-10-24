@@ -17,7 +17,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 3.2 | 3 Injected file | security demo builder | Render clean vs injected to images and confirm they look identical | done |
 | 3.3 | 3 Injected file | security demo builder | Write demo2/REVEAL.md (exact location, how to show it) | done |
 | 4.1 | 4 Prompts/cache | prompt engineer | Write the 5 ladder stages and Demo 2 prompt (content/demo1.json, content/demo2.json) | done |
-| 4.2 | 4 Prompts/cache | prompt engineer | Author representative outputs; iterate until each stage is visibly better | todo |
+| 4.2 | 4 Prompts/cache | prompt engineer | Author representative outputs; iterate until each stage is visibly better | done |
 | 4.3 | 4 Prompts/cache | prompt engineer | scripts/build_cache.py (assemble cache.json, extract doc previews from real files) | todo |
 | 4.4 | 4 Prompts/cache | prompt engineer | scripts/regenerate_cache.py (live model calls at temperature 0) + shared model client | todo |
 | 5.1 | 5 App | front-end builder | app/index.html + app/app.js: Demo 1 ladder and side-by-side | todo |
