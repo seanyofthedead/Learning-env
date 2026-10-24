@@ -25,7 +25,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 5.3 | 5 App | front-end builder | Cache replay, embedded fallback for file://, optional live mode with 5 s fallback (scripts/live_server.py) | done |
 | 5.4 | 5 App | front-end builder | Presenter view (P), separate presenter window, reset (R), themes; screenshot QA at projector sizes | done |
 | 6.1 | 6 Script | presentation coach | Full scripts with timing marks (4:00 and 1:30), room questions | done |
-| 6.2 | 6 Script | presentation coach | 90-second and 45-second compressed versions; cut until it fits | todo |
+| 6.2 | 6 Script | presentation coach | 90-second and 45-second compressed versions; cut until it fits | done |
 | 7.1 | 7 Review | reliability engineer | scripts/preflight.py (+ headless app run) passing | todo |
 | 7.2 | 7 Review | integrity reviewer | scripts/inspect_files.py; inspect raw XML/metadata of all Demo 1 files; certify | todo |
 | 7.3 | 7 Review | skeptical NSA financial manager | Check every number, term, DoD FMR reference; fix findings | todo |
