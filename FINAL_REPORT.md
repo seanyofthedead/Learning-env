@@ -1,80 +1,74 @@
 # FINAL REPORT
 
 **Synthetic demonstration data.** Built 24 October 2026 for "AI and the Federal Financial
-Manager: From Curiosity to Capability" (SDFM event, 19 November 2026).
+Manager: From Curiosity to Capability" (SDFM event, 19 November 2026). Updated the same
+day to make **Microsoft 365 Copilot the primary path** (Phase 9).
 
 ## Outcome
 
-Both demos are built, reviewed and passing. `scripts/preflight.py` was run three times
-on the final build: **PASS** each time, with byte-identical verbose output (175 checks,
-output hash `41d14b86adc404e0`) and no change to the repository.
+Both demos are ready to run live in Microsoft 365 Copilot, with a tested runbook, a
+teleprompter, and an offline fallback app. `scripts/preflight.py` (195 checks) passes,
+three runs, identical output. What cannot be done from here is the Copilot run itself:
+that needs your tenant, your approvals and three rehearsals (see "What you must confirm").
+
+## How it runs on the day
+
+| | Demo 1: From weak to strong (4:00) | Demo 2: Trust but verify (1:30) |
+|---|---|---|
+| Projector | Microsoft 365 Copilot Chat, report .xlsx attached, five pre-staged chats (one Enter per stage), then two windows snapped side by side | Copilot in Word on the clean and injected .docx; reveal in Word (Ctrl+A → font color Automatic) |
+| Laptop | App presenter window (O), **Copilot live** script with timing marks, room questions, fallback lines | Same, with both endings: Copilot followed the hidden line / Copilot caught it |
+| Fallback | Alt+Tab to the app at the same step; it shows your recorded Copilot rehearsal, labelled with its date | Same; Demo 2 runs from the app if three successful rehearsals were not reached |
+
+Full steps: `copilot-kit/RUNBOOK.md`.
 
 ## What was built
 
-| Deliverable | Where | Notes |
-|-------------|-------|-------|
-| Demo app | `app/index.html`, `app/app.js`, `app/cache.json` | No build step. Opens from disk or `python -m http.server`. Cache schema in `app/SCHEMA.md`. |
-| Demo 1, "From weak to strong" | app, key 1 | Title card + 5 ladder stages (weak → +Role → +Task → +Context → +Output) + side-by-side with the leadership table as a real HTML table. The new prompt words are highlighted green; a "What the AI has to guess" list loses one item per stage. |
-| Demo 2, "Trust but verify" | app, key 2 | Title card + 3 presses: clean copy and correct answer; identical-looking copy and wrong answer; red reveal of the hidden line beside both answers under "Both files look identical to a human reader." |
-| Presenter view | key P (or O for its own window) | Exact script per step, timing marks and a running timer, room questions, Full (4:00 / 1:30), 90 s and 45 s versions (V), reset (R). Every cue checked to fit at a calm speaking pace. |
-| Synthetic report | `data/fy26_q3_execution_report.{csv,xlsx,docx}` | 25 `SYN-` lines; plan, obligations, expenditures; five planted variances (late contract award, one-time equipment buy, reprogramming, billing lag, duplicate posting). Totals look "on plan" (+1.5%) because the variances offset: the trap the weak prompt falls into. |
-| Answer key | `data/answer_key.md`, `.json` | Kept out of the report files. |
-| Injected copies | `demo2/INJECTED_demo_report_DO_NOT_USE.{xlsx,docx}` | One benign hidden sentence in white (1 pt in Word, cell A36 in Excel). Renders pixel-identical to the clean copy. Documented in `demo2/REVEAL.md`. |
-| Preflight | `scripts/preflight.py` | Runs both demos headlessly through the app's own code; prints PASS or the first failure. Negative-tested. |
-| Integrity inspection | `scripts/inspect_files.py` | Raw XML and metadata of every file; certifies Demo 1 files clean. |
-| Cache regeneration and live mode | `scripts/regenerate_cache.py`, `scripts/live_server.py` | Standard library only. Live mode falls back to the cache on any error or after 5 s. |
-| Copilot kit (optional) | `copilot-kit/` | Clean files, prompt list, rehearsal log with the three-rehearsal rule for Demo 2. |
-| Docs | `README.md`, `CONCEPTS.md`, `REVIEW.md`, `ASSUMPTIONS.md`, `TASKS.md` | Setup, day-of checklist, responsible Demo 2 guidance, design choices, sign-offs. |
-
-## How to run it
-
-```
-# on the presentation laptop, no network needed
-open app/index.html                  # or: python -m http.server 8000 --directory app
-python3 scripts/preflight.py         # must print PASS
-```
-
-Keys: → / PageDown next, ← back, 1 / 2 demos, P presenter, O presenter window, V script
-version, End last step, R reset, T theme. Full checklist in `README.md`.
+| Deliverable | Where |
+|-------------|-------|
+| Copilot runbook (approvals, tenant prep, pre-staging, live steps, fallback, clean-up) | `copilot-kit/RUNBOOK.md` |
+| Prompts, rehearsal log with the three-rehearsal rule, rehearsal recordings folder | `copilot-kit/prompts.txt`, `REHEARSAL_LOG.md`, `rehearsals/` |
+| Rehearsal judge and fallback importer | `scripts/check_copilot_run.py`, `scripts/import_copilot_run.py` |
+| Copilot-ready report: data rows are an Excel table `ExecutionReport` (A5:L30), as Copilot in Excel requires | `data/*.xlsx` (and identical copies) |
+| Demo app: Demo 1 ladder + side-by-side; Demo 2 three steps + red reveal; presenter view with Copilot live, Full, 90 s and 45 s scripts; source label on every answer | `app/` |
+| Synthetic report (.csv/.xlsx/.docx), five planted variances, answer key outside the files | `data/` |
+| Injected copies (white 1-pt sentence in Word, white cell A36 in Excel) and REVEAL.md | `demo2/` |
+| Preflight, integrity inspection, script timing check, cache regeneration, live mode | `scripts/` |
+| Design, assumptions, sign-offs, tasks | `CONCEPTS.md`, `ASSUMPTIONS.md`, `REVIEW.md`, `TASKS.md` |
 
 ## Which model generated the cache
 
-**None.** No project model API key (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`) was present.
-The cached outputs are **representative pre-generated outputs** written for this demo;
-the cache, the presenter view and the script say so. To use real model output, run
-`scripts/regenerate_cache.py` with a key, then preflight. It records the model and
-temperature used.
-
-Note on temperature 0: since Anthropic API version 2026-10-21, current Claude models
-accept only their default sampling. The script asks for temperature 0, falls back to the
-default if refused, and records which was used (ASSUMPTIONS.md A11).
+**None yet.** No model API key was available, and Copilot has no API this build could
+call. The app's answers are **representative pre-generated outputs**, and every answer
+panel says "Representative example". After your first good Copilot rehearsal, run
+`scripts/import_copilot_run.py`: the app then shows the answers Copilot actually gave,
+labelled "Recorded in Copilot · <date>", and ASSUMPTIONS/cache record it.
 
 ## Key assumptions (full list in ASSUMPTIONS.md)
 
-- Kept the existing git repo instead of `git init` (it held two unrelated guides).
-- Office files are written with Python's standard library, so every byte is inspectable
-  and builds are repeatable.
-- "Variance against plan" includes the expenditure plan, so the billing lag counts.
-- Before the reveal, on-screen file names are "Copy A" / "Copy B". When a model is
-  called, both files are sent under a neutral name so the safety label doesn't tip it off.
-- The representative injected answer names the second-largest variance as largest and
-  says "on plan": what the hidden line produces when followed literally.
-- Supported screens: 1280x720 and up, light and dark, 18px minimum text.
+- Demo 1 in Copilot Chat (file attached, new chat per stage); Demo 2 in Copilot in Word.
+- The injected file keeps the name `INJECTED_demo_report_DO_NOT_USE` on the tenant as you
+  specified. Copilot can see file names and may be more cautious because of it.
+- No hidden-text variants were written to get past Copilot's injection protections; the
+  script has an honest "Copilot caught it" ending instead.
+- The app is never to be presented as live Copilot. It labels its source on every answer.
 
 ## What you must confirm
 
-1. **Venue rules for a live injection demo.** At the 9–10 November NSA check, confirm
-   whether a disclosed prompt-injection demonstration is permitted, and whether it may
-   run live or only from the app's cache. Also confirm the injected files may be brought
-   onto the premises and the presentation machine.
-2. **Whether the Microsoft 365 Copilot path is permitted** at the venue and on the
-   presentation tenant. If yes, follow `copilot-kit/REHEARSAL_LOG.md`: Demo 2 runs live
-   only after three successful rehearsals on that tenant.
-3. **Real model output (recommended).** Run `scripts/regenerate_cache.py` with an
-   approved model before the event so on-screen answers are real model output, then
-   re-run preflight. If the model resists the hidden line, decide whether to present
-   that honestly or keep the representative cache.
-4. **DoD FMR chapter titles** in `data/answer_key.md` (Volume 3, Chapters 6 and 8). The
-   DoD Comptroller site blocked automated checks. They are not shown on screen.
-5. **Projector check:** run the day-of checklist in `README.md` on the venue projector
-   (far-corner legibility of the Demo 1 table and the Demo 2 red line; theme choice).
+1. **Venue rules (9–10 November NSA check):** a disclosed prompt-injection demo is
+   permitted; whether it may run live in Copilot or only from the recording; whether the
+   injected files may come on site and onto the presentation machine.
+2. **Copilot on the presentation tenant:** Microsoft 365 Copilot licence, Copilot Chat file
+   upload enabled (admins can turn it off), synthetic files approved, ideally a dedicated
+   demo account with Copilot memory/personalization off.
+3. **Security team sign-off before the first Demo 2 rehearsal.** Microsoft Defender can
+   raise a cross-prompt-injection (XPIA) alert when Copilot reads the injected file.
+4. **Three successful Demo 2 rehearsals on the presentation tenant**, logged. Copilot's
+   protections may ignore the hidden line. If they do, the honest "Copilot caught it" ending
+   is ready, but the "AI followed it" moment then exists only as a labelled recording,
+   and only if some rehearsal produced it.
+5. **File name on the tenant:** keep `INJECTED_demo_report_DO_NOT_USE` (current rule), or
+   allow a neutral name for the tenant copy, which is more realistic but less safe. Your call.
+6. **DoD FMR chapter titles** in `data/answer_key.md` (Volume 3, Chapters 6 and 8); the DoD
+   site blocked automated checks. Not shown on screen.
+7. **Projector check** per the README day-of checklist, including Copilot zoom (about
+   125–150%) so answers read from the back of the room.
