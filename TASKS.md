@@ -41,7 +41,7 @@ Re-read ASSUMPTIONS.md before resuming.
 |----|-------|------|------|--------|
 | 9.1 | 9 Copilot | synthetic data designer | Copilot-ready .xlsx: data as an Excel table (ExecutionReport, A5:L30); update integrity inspection | done |
 | 9.2 | 9 Copilot | security demo builder | copilot-kit/RUNBOOK.md: tenant prep, pre-staged chats, click paths, live and fallback branches, injection-resisted branch | done |
-| 9.3 | 9 Copilot | presentation coach + front-end builder | "Copilot live" presenter versions (4:00 / 1:30), default in presenter view; footer states where outputs came from | todo |
+| 9.3 | 9 Copilot | presentation coach + front-end builder | "Copilot live" presenter versions (4:00 / 1:30), default in presenter view; footer states where outputs came from | done |
 | 9.4 | 9 Copilot | reliability engineer | check_copilot_run.py (judge a rehearsal) and import_copilot_run.py (recorded Copilot answers become the app fallback) | todo |
 | 9.5 | 9 Copilot | builder | README, REHEARSAL_LOG, ASSUMPTIONS, REVIEW addendum, FINAL_REPORT updated for Copilot-first | todo |
 | 9.6 | 9 Copilot | builder | Preflight three times, identical PASS; push | todo |

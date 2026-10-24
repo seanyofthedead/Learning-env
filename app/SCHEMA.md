@@ -27,8 +27,8 @@ outputs is escaped, never rendered.
 
 | Key | Type | Notes |
 |-----|------|-------|
-| `mode` | `"representative-pregenerated"` or `"model-generated"` | First = authored by the builder. Second = produced by `scripts/regenerate_cache.py`. |
-| `model` | string or null | Model ID used, when `mode` is `model-generated`. |
+| `mode` | `"representative-pregenerated"`, `"model-generated"` or `"copilot-recorded"` | Authored by the builder; produced by `scripts/regenerate_cache.py`; or answers copied out of Microsoft 365 Copilot during rehearsal and imported by `scripts/import_copilot_run.py`. |
+| `model` | string or null | Model ID, or `"Microsoft 365 Copilot"`. Required unless representative. |
 | `temperature` | number or null | `0` when model-generated. |
 | `generated_at` | string | ISO date. |
 | `note` | string | One line shown in the presenter view. |
@@ -90,7 +90,7 @@ Three presses in total.
 ## `presenter`
 
 ```
-presenter.<demo1|demo2>.versions.<full|90s|45s> = {
+presenter.<demo1|demo2>.versions.<copilot|full|90s|45s> = {
   label, total,            // e.g. "Full", "4:00"
   cues: [ { step, at, seconds, say, do, ask } ]
 }
@@ -101,8 +101,16 @@ presenter.<demo1|demo2>.versions.<full|90s|45s> = {
 - `at` is the timing mark (`m:ss`) when the cue should start. `seconds` is its length.
   Cue lengths in each version add up to `total`.
 - `ask` is an optional room question.
+- `fallback` (Copilot live only): what to say and press if Copilot is slow or fails.
+- `if_followed` / `if_resisted` (Demo 2 reveal, Copilot live only): the two endings,
+  depending on whether Copilot followed the hidden line.
 
-Demo 1 has `full` (4:00), `90s` and `45s`. Demo 2 has `full` (1:30) and `45s`.
+`copilot` ("Copilot live") is the default: the projector shows Copilot and the app is the
+teleprompter and fallback. Demo 1 has `copilot` (4:00), `full` (4:00), `90s` and `45s`.
+Demo 2 has `copilot` (1:30), `full` (1:30) and `45s`.
+
+Every output panel shows where its answer came from (`Representative example`,
+`Pre-generated · <model>` or `Recorded in Copilot · <date>`).
 
 ## Live mode contract (optional)
 

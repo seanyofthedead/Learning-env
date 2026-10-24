@@ -22,8 +22,9 @@ def main():
     for demo in ("demo1", "demo2"):
         for name, v in d[demo]["versions"].items():
             for c in v["cues"]:
-                n = words(c["say"]) + (words(c["ask"]) if c.get("ask") else 0)
-                pause = (6 if name == "full" else 2) if c.get("ask") else 0
+                branch = max(words(c.get("if_followed", "")), words(c.get("if_resisted", "")))
+                n = words(c["say"]) + (words(c["ask"]) if c.get("ask") else 0) + branch
+                pause = (6 if name in ("full", "copilot") else 2) if c.get("ask") else 0
                 need = n / RATE + pause
                 ok = need <= c["seconds"]
                 bad += not ok
