@@ -18,7 +18,7 @@
             "seconds": 45,
             "label": "Weak prompt",
             "do": "Press →. Point at “Summarize this report.” Then at “generally on track.”",
-            "say": "This is how most of us start: “Summarize this report.” The answer is tidy, and it is useless. It leads with the total, plus one and a half percent, and calls execution generally on track. That total hides a four-point-eight-million-dollar shortfall. [Ask. Take two answers.] Right: who it works for, what to look for, which rules apply, what you want back. That is the list on the left.",
+            "say": "This is how most of us start: “Summarize this report.” The answer is tidy, and it is useless. It leads with the total, plus one and a half percent, and calls execution generally on track. That total hides four-point-eight million dollars of under-execution. [Ask. Take two answers.] Right: who it works for, what to look for, which rules apply, what you want back. That is the list on the left.",
             "ask": "What is the AI being forced to guess here?"
           },
           {

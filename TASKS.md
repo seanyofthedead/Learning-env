@@ -28,7 +28,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 6.2 | 6 Script | presentation coach | 90-second and 45-second compressed versions; cut until it fits | done |
 | 7.1 | 7 Review | reliability engineer | scripts/preflight.py (+ headless app run) passing | done |
 | 7.2 | 7 Review | integrity reviewer | scripts/inspect_files.py; inspect raw XML/metadata of all Demo 1 files; certify | done |
-| 7.3 | 7 Review | skeptical NSA financial manager | Check every number, term, DoD FMR reference; fix findings | todo |
+| 7.3 | 7 Review | skeptical NSA financial manager | Check every number, term, DoD FMR reference; fix findings | done |
 | 7.4 | 7 Review | all three | REVIEW.md with sign-offs after fixes repeat clean | todo |
 | 7.5 | 7 Review | builder | README.md (setup, offline run, cache regen, day-of checklist, responsible Demo 2) | todo |
 | 7.6 | 7 Review | builder | copilot-kit (clean files, prompts list, rehearsal log template + 3-rehearsal rule) | todo |
