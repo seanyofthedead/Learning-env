@@ -110,6 +110,10 @@ def run_checks(skip_node=False):
     check("INJECTED files live only in ./demo2", all(p.startswith("demo2" + os.sep) for p in injected_anywhere),
           ", ".join(injected_anywhere))
 
+    insp = subprocess.run([sys.executable, path("scripts", "inspect_files.py")], capture_output=True, text=True)
+    check("integrity inspection: Demo 1 files clean, injected differs only by the payload",
+          insp.returncode == 0, insp.stdout[-400:])
+
     # ---- 4. report numbers match the answer key
     rows = {r["code"]: r for r in rd.rows()}
     check("report has 25 lines", len(rows) == 25)
