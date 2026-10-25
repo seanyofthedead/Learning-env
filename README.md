@@ -4,169 +4,68 @@ Two short, repeatable demos for the session *"AI and the Federal Financial Manag
 From Curiosity to Capability"* (SDFM event, 19 November 2026). Educational and
 tool-agnostic. **Everything here is synthetic demonstration data.**
 
-| Demo | Length | Key presses | What the room sees |
-|------|--------|-------------|--------------------|
-| 1. From weak to strong | 4:00 (90 s and 45 s versions) | 6 | The same report and AI. The prompt grows Role → Task → Context → Output and the answer goes from "generally on track" to a leadership-ready table. |
-| 2. Trust but verify | 1:30 (45 s version) | 3 | Two identical-looking copies of the report. One has a hidden white line. The AI follows it. The red reveal. |
+| Demo | Length | What the room sees |
+|------|--------|--------------------|
+| 1. From weak to strong | 4:00 (90 s and 45 s versions) | The same report and AI. The prompt grows Role → Task → Context → Output and the answer goes from a generic summary to a leadership-ready table. |
+| 2. Trust but verify | 1:30 (45 s version) | Two identical-looking copies of the report. One has a hidden white line. The AI follows it. The reveal. |
 
-## Run it in Microsoft 365 Copilot (primary)
+# For presenters
 
-Both demos run **live in Microsoft 365 Copilot**: Demo 1 in Copilot Chat with the report
-attached, Demo 2 in Copilot in Word. Everything for that is in
-[`copilot-kit/RUNBOOK.md`](copilot-kit/RUNBOOK.md): approvals, tenant prep, pre-staging
-each prompt in its own chat so each stage is one Enter key, the live steps, fallback rules,
-and what to say if Copilot ignores the hidden line.
+**You need no Python and no installs:** a browser, Word, and the approved chat tool.
+Everything below is files you open, print, copy and paste.
 
-The app in `./app` plays two supporting roles during a Copilot session:
+## Pick your kit
 
-- **Teleprompter:** press O for the presenter window on your laptop screen. It opens on
-  the **Copilot live** script (4:00 / 1:30), with fallback lines and both Demo 2 endings.
-- **Fallback:** if Copilot is slow or fails, Alt+Tab to the app at the same step. After
-  each rehearsal, `tools/import_copilot_run.py` loads the answers Copilot actually gave,
-  so the fallback is a labelled recording of your own Copilot run.
+| Presenting in | Open | Contents |
+|---------------|------|----------|
+| Microsoft 365 Copilot (work tenant) | [`copilot-kit/`](copilot-kit/) | `RUNBOOK.md` (approvals, tenant prep, live steps, fallback), `SCRIPT.html` (print it), `REHEARSAL_CHECKLIST.md`, `REHEARSAL_LOG.md`, `prompts.txt`, the report files |
+| Any other chat tool (ChatGPT, Claude, Gemini, Copilot…) | [`chat-kit/`](chat-kit/) | `RUNBOOK.md`, `SCRIPT.html`, `REHEARSAL_CHECKLIST.md`, `REHEARSAL_LOG.md`, `TOOL_CARDS.md` (settings to reset per tool), `paste/` (Demo 1 paste blocks) |
 
-Rules carried over: Demo 2 runs live only after **three successful rehearsals on the
-presentation tenant** (`copilot-kit/REHEARSAL_LOG.md`); a disclosed injection demo needs
-the venue's OK; tell the tenant's security team first (Defender can raise a
-prompt-injection alert).
+Both kits use the Demo 2 files in [`demo2/`](demo2/) (see `REVEAL.md` there).
 
-> Until you import a Copilot rehearsal, the app's answers are *representative
-> pre-generated outputs* written for this demo, and every answer panel says so
-> ("Representative example"). Never present them as Copilot output.
+How it works in a chat tool, in short:
+- **Demo 1:** five pre-staged chats, one per stage; on stage you press Enter in each. Paste
+  the ready-made block from `chat-kit/paste/`, or attach the report if the tool allows.
+- **Demo 2:** copy each Word document into its own chat (or attach it) with the same
+  prompt. The reveal: Ctrl+A in Word, font color Automatic, and the hidden line appears. With
+  copy-paste, the line also sits unread at the bottom of the pasted text in the chat.
+- **Rehearse** with the paper `REHEARSAL_CHECKLIST.md`. **Demo 2 runs live only after
+  three successful rehearsals in the same tool, machine and account.** If the tool catches
+  the hidden line, the script has an honest "caught it" ending.
 
-## Run it in any major LLM chat tool
+## The fallback app (optional)
 
-The same demos run in ChatGPT, Claude, Gemini, Microsoft Copilot or any other approved chat
-tool: see [`chat-kit/RUNBOOK.md`](chat-kit/RUNBOOK.md).
-
-- **Demo 1, paste route:** `chat-kit/paste/demo1_<n>_<stage>.txt` holds the report plus that
-  stage's prompt. One paste per stage, no upload needed.
-- **Demo 2, copy-paste route:** select all in the Word file, copy, paste into the chat. The
-  white text travels as plain text at the bottom of a ~30-line paste. The reveal has two
-  beats: invisible in Word, unread in the chat.
-- **Reset checklist and tool cards** (`chat-kit/TOOL_CARDS.md`): temporary chat, memory
-  and custom instructions off, web search off, same model, no projects.
-- **Recordings labelled by tool:** `tools/check_chat_run.py <folder> --source "<tool, model>"`
-  judges a rehearsal; `tools/import_chat_run.py` makes it the app fallback, and every
-  answer panel then says "Recorded in <tool, model> · <date>".
-- The presenter window has an **Any chat live** script (press V).
-- Rule: Demo 2 runs live in a tool only after three successful rehearsals **in that tool**,
-  on the presentation machine and account.
-
-## Rehearse in Copilot and record it
-
-```
-# after each rehearsal, paste the 7 answers into copilot-kit/rehearsals/<date>/ (see its README)
-python3 tools/check_copilot_run.py copilot-kit/rehearsals/<date>    # SUCCESS / FAIL / RESISTED + log row
-python3 tools/import_copilot_run.py copilot-kit/rehearsals/<date>   # make it the app fallback
-python3 tools/preflight.py                                          # must print PASS
-```
-
-If Copilot ignored the hidden line in the run you import, preflight fails on purpose;
-add `--accept-resisted` only if you will present the "Copilot caught it" ending.
-`python3 tools/build_cache.py` restores the representative outputs.
-
-## Setup
-
-Needs only what is on a standard laptop:
-
-- A modern browser (Edge, Chrome or Firefox).
-- Python 3.8 or later (for preflight and the optional local server). No pip installs.
-- Node.js (optional): lets preflight run the app's own render code headlessly. Without
-  it preflight still runs and says the rendered-HTML checks were skipped.
-
-No internet connection is needed for anything except regenerating the cache or live mode.
-
-## Run it offline
-
-Either of these works:
-
-1. **Open the file.** Double-click `app/index.html`. (The cache is embedded in the page,
-   so `file://` works.)
-2. **Local server.** `python -m http.server 8000 --directory app` then open
-   <http://127.0.0.1:8000/>.
-
-### Keys
+Double-click `app/index.html`. No install, no network. It plays both demos from saved
+answers and works as your fallback if the chat tool is slow or down. Every answer panel
+says where its answer came from: "Representative example" (written for this demo), or
+"Recorded in <tool> · <date>" once the maintainer loads one of your rehearsals. Never
+present representative answers as live AI output.
 
 | Key | Action |
 |-----|--------|
 | → Space PageDown | Next step (clicker forward) |
 | ← PageUp | Previous step |
 | 1 / 2 / H | Demo 1 / Demo 2 / Home |
-| End or F | Jump to the last step (side-by-side / reveal); used by the 45 s versions |
-| R | Reset the current demo to its start and restart the timer |
-| P | Presenter view on this screen (script, timing marks, room questions) |
-| O | Presenter view in its own window, for an extended display. Keys pressed there drive the main screen. |
-| V | Presenter script version: Full / 90 s / 45 s |
-| S | Restart the presenter timer |
+| End or F | Jump to the last step (side-by-side / reveal) |
+| R | Reset the current demo |
+| P / O | Presenter view on this screen / in its own window |
+| V | Script version: Copilot live, Any chat live, Full, 90 s, 45 s |
 | T | Light / dark theme |
 | ? | Key help |
 
-Screens 1280x720 and larger are supported; body text never drops below 18px.
-
-## Preflight (run before every rehearsal and on the day)
-
-```
-python3 tools/preflight.py        # prints PASS, or FAIL and the first failure
-python3 tools/preflight.py -v     # lists all 223 checks
-python3 tools/inspect_files.py    # integrity report: raw XML and metadata of every file
-```
-
-Preflight runs both demos headlessly against the cache and checks stage counts, that all
-five planted variances (with cause and amount) appear in Demo 1's final table, that Demo
-2's clean run names the right largest variance, that the injected run follows the planted
-instruction, that every report file is byte-identical to a fresh build, that the injected
-text lives only in `./demo2`, and that the scripts add up to 4:00 / 1:30 / 90 s / 45 s.
-
-## Regenerate the cache (needs a key and network)
-
-```
-export ANTHROPIC_API_KEY=...          # or: export OPENAI_API_KEY=... DEMO_MODEL=<model>
-export DEMO_MODEL=claude-opus-5-5     # optional; this is the default for Anthropic
-python3 tools/regenerate_cache.py
-python3 tools/preflight.py
-```
-
-- Calls the model once per Demo 1 stage and once per Demo 2 file, asks for temperature
-  0, and records the model and the temperature actually used in `cache.json`,
-  the presenter view and `ASSUMPTIONS.md`. Current Claude models accept only their
-  default sampling; the script then retries without temperature and records that.
-- If preflight fails afterwards, read the message. The likely case is that the model
-  *did not* follow the hidden instruction in Demo 2. That is a good outcome for the
-  model, but the reveal then has nothing to show. Either re-run, or restore the
-  representative cache with `python3 tools/build_cache.py`.
-- After editing text in `content/` (prompts, outputs, presenter script), rebuild with
-  `python3 tools/build_cache.py` (add `--keep-outputs` to keep regenerated outputs).
-- After editing the report data in `tools/report_data.py`, run
-  `python3 tools/build_reports.py` then `python3 tools/build_cache.py`, and update
-  `data/answer_key.*`.
-
-## Live mode (optional)
-
-```
-export ANTHROPIC_API_KEY=...     # key stays in this process, never in the browser
-python3 tools/live_server.py   # then open http://127.0.0.1:8000/?live=1
-```
-
-Each stage asks the model live. On any error, or if the answer takes more than 5
-seconds, the saved output is shown and labelled. A fast model is advisable
-(`DEMO_MODEL=claude-haiku-5-5`, for example). Use live mode only where the venue allows
-network access and an approved tool.
+Screens 1280x720 and larger; text never smaller than 18px.
 
 ## Day-of checklist
 
-- [ ] `python3 tools/preflight.py` prints **PASS** on the presentation laptop.
-- [ ] Open `app/index.html`; press 1, step through Demo 1, press 2, step through Demo 2, press H.
-- [ ] Projector: check the far corner of the room can read the table at the side-by-side (Demo 1) and the red line (Demo 2). Press T if the other theme reads better.
-- [ ] Extended display: press O, drag the presenter window to the laptop screen, press P off on the main screen. Mirrored display: rehearse without P.
-- [ ] Clicker: forward/back advance the steps (PageDown/PageUp).
-- [ ] Choose the script version (V) to match the time you actually have.
-- [ ] Press R on each demo so both start at their title cards.
-- [ ] Notifications off, other windows closed, browser zoom 100%, full screen (F11).
-- [ ] If showing the files in Word/Excel: Office in light mode (dark mode can expose white text early), `demo2/REVEAL.md` steps rehearsed.
-- [ ] Venue confirmation on file that a disclosed prompt-injection demo is permitted (see below).
-- [ ] Copilot: every item in `copilot-kit/RUNBOOK.md` sections 1–3 done; Demo 2 live only with 3/3 in `REHEARSAL_LOG.md`.
-- [ ] App fallback holds your latest Copilot rehearsal (`Recorded in Copilot · <date>` on the answer panels) and preflight PASS.
+- [ ] Venue confirmation on file that a disclosed prompt-injection demo is permitted.
+- [ ] Your kit's `RUNBOOK.md` pre-staging done (chats ready, prompts typed, not sent).
+- [ ] Demo 2 live only with 3/3 successful rehearsals in `REHEARSAL_LOG.md`; otherwise use the app and say it is a recording or representative.
+- [ ] `SCRIPT.html` printed, or open on the laptop screen.
+- [ ] Word in light mode (dark mode can expose white text early).
+- [ ] Chat tool zoom about 125–150%; the far corner of the room can read the Demo 1 table and the reveal.
+- [ ] Fallback: `app/index.html` open in its own window at Demo 1, step 0. Its answer panels show the source label you expect.
+- [ ] Notifications off, other windows closed.
+- [ ] After the session: delete the demo chats and any uploaded copies; delete INJECTED files from the laptop.
 
 ## Presenting Demo 2 responsibly
 
@@ -177,22 +76,45 @@ network access and an approved tool.
   outside this synthetic report.
 - **Keep the injected files contained.** They live only in `./demo2`, are named
   `INJECTED_demo_report_DO_NOT_USE`, and must not be emailed, uploaded or left on a
-  shared drive. Delete copies from presentation laptops after the event.
+  shared drive beyond what the runbook's rehearsal steps require.
 - **Don't overclaim.** Some tools catch hidden instructions; some don't. The lesson is
   the habit, not the tool: verify output against the source, and use only approved
   tools on approved data.
-- **Get the venue's OK first,** especially before running anything live on a work tenant
-  (see `copilot-kit/`).
+- **Get approvals first:** the venue, the tool, and, for a work tenant, the security team
+  (Microsoft Defender can raise a prompt-injection alert).
+
+# For whoever maintains the kit
+
+Everything in [`tools/`](tools/) is for building and checking the kit's files, never for
+presenting. It needs Python 3.8+ (standard library only), plus Node.js for one check. See
+[`tools/README.md`](tools/README.md) for the full list.
+
+```
+python3 tools/preflight.py        # PASS, or FAIL and the first failure (223 checks)
+python3 tools/inspect_files.py    # integrity report: raw XML and metadata of every file
+```
+
+Preflight checks, among other things: all five planted variances (cause and amount) in
+Demo 1's final answer; Demo 2's clean answer names the right largest variance and the
+injected answer follows the planted line; every report file, paste block and printed
+script is identical to a fresh build; the injected text lives only in `./demo2`; the paper
+checklist matches the answer key; every script version adds up to its time.
+
+Common jobs:
+- **Load a rehearsal as the app's fallback:** `python3 tools/import_chat_run.py <folder> --source "<tool, model>"` (`import_copilot_run.py` for Copilot), then preflight.
+- **After editing `content/`** (prompts, outputs, presenter text): `build_cache.py`, `build_paste_blocks.py`, `build_presenter_scripts.py`, then preflight.
+- **After editing report data** (`tools/report_data.py`): `build_reports.py`, the three builds above, update `data/answer_key.*`, then preflight.
+- **Regenerate the app's answers with a model API key:** `regenerate_cache.py` (records the model and temperature used).
+- **Live mode with an API key:** `live_server.py`, then open `http://127.0.0.1:8000/?live=1` (falls back to saved answers after 5 seconds).
 
 ## Repository map
 
-| Path | What it is |
-|------|------------|
-| `app/index.html`, `app/app.js`, `app/cache.json` | The demo app (no build step). `app/SCHEMA.md` documents the cache. |
-| `data/` | The synthetic FY26 Q3 report (.csv/.xlsx/.docx) and the answer key (kept out of the report files). |
-| `demo2/` | Clean copy, the `INJECTED_demo_report_DO_NOT_USE` copies, and `REVEAL.md`. |
-| `chat-kit/` | Any chat tool: RUNBOOK.md, TOOL_CARDS.md, paste blocks, per-tool rehearsal log, recordings. |
-| `copilot-kit/` | **Primary path:** RUNBOOK.md, clean files, prompt list, rehearsal log, `rehearsals/` recordings. |
-| `content/` | Source text: ladder stages, outputs, presenter script. |
-| `tools/` | Build, regenerate, live server, preflight, integrity inspection, timing check. |
-| `CONCEPTS.md`, `REVIEW.md`, `ASSUMPTIONS.md`, `TASKS.md`, `FINAL_REPORT.md` | Design choices, sign-offs, assumptions, task log, final report. |
+| Path | What it is | Who |
+|------|------------|-----|
+| `copilot-kit/`, `chat-kit/` | Presenter kits | Presenters |
+| `demo2/` | Clean and `INJECTED_demo_report_DO_NOT_USE` copies, `REVEAL.md` | Presenters |
+| `app/` | Fallback app (double-click `index.html`); `SCHEMA.md` documents its data | Presenters |
+| `data/` | The synthetic report (.csv/.xlsx/.docx) and the answer key (kept out of the report files) | Both |
+| `content/` | Source text: ladder stages, saved answers, presenter script | Maintainer |
+| `tools/` | Build, check, regenerate, live server | Maintainer |
+| `CONCEPTS.md`, `REVIEW.md`, `ASSUMPTIONS.md`, `TASKS.md`, `FINAL_REPORT.md` | Design choices, sign-offs, assumptions, task log, final report | Both |

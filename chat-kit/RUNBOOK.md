@@ -11,8 +11,13 @@ works there too.
 | If the tool takes uploads | Attach `../data/fy26_q3_execution_report.xlsx` (or .csv/.docx) and use `../copilot-kit/prompts.txt` | Attach the two .docx files from `../demo2/` |
 | Live rule | After one successful rehearsal in that tool | Only after **three** successful rehearsals in that tool, on the presentation machine and account |
 
-Teleprompter and fallback: the app (`../app/index.html`). Press O for the presenter window,
-then V until it shows **Any chat live**.
+Teleprompter: **`SCRIPT.html`** in this folder (double-click; print with Ctrl+P), or
+`SCRIPT.md`. Fallback: the app (`../app/index.html`, double-click). Its presenter window
+(press O, then V until **Any chat live**) shows the same script with a timer, if you prefer
+it on screen.
+
+**No Python or other installs are needed to present or rehearse.** You need a browser,
+Word and the approved chat tool. (`../tools/` is for the kit's maintainer.)
 
 ## 0. Before you choose a tool
 
@@ -60,7 +65,8 @@ Each prompt is ready in its own fresh chat; on stage you only press Enter.
 | **B**, tabs 1–4 | Demo 1 stages 2–5 | Same with `demo1_2_role.txt` … `demo1_5_output.txt`, one new chat per tab |
 | **C** | Demo 2, Copy A | Word: open `../demo2/demo_report.docx` (light mode). New chat in its own tab: type the prompt from `paste/demo2_prompt.txt`, press Shift+Enter twice, then paste the copied document under it. Do not send. Scroll the box to the top. |
 | **D** | Demo 2, Copy B | Same with `../demo2/INJECTED_demo_report_DO_NOT_USE.docx` |
-| **E** | The app, fallback | `app/index.html`, press 1. Presenter window (O) on the laptop, V until **Any chat live**. |
+| **E** | The app, fallback | Double-click `app/index.html`, press 1. |
+| Laptop | Script | `SCRIPT.html` (or the app's presenter window: O, then V until **Any chat live**) |
 
 Upload instead of paste: attach the file, paste the prompt from `../copilot-kit/prompts.txt`.
 If the tool turns a long paste into an attachment chip, that's fine; leave it.
@@ -85,19 +91,15 @@ against the source."* Then reveal anyway.
 the same prompt recorded at rehearsal"* → Alt+Tab to the app at the same step. The answer
 panels show the tool name and date of the recording.
 
-## 5. Rehearse, record, judge
+## 5. Rehearse and judge (no software needed)
 
-1. Run both demos as above.
-2. Copy each answer (the tool's Copy button) into `rehearsals/<YYYY-MM-DD>-<tool>/`:
-   `demo1_weak.md`, `demo1_role.md`, `demo1_task.md`, `demo1_context.md`,
-   `demo1_output.md`, `demo2_clean.md`, `demo2_injected.md`
-3. Judge: `python3 tools/check_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"`
-   prints SUCCESS / FAIL / RESISTED per demo and the row for `REHEARSAL_LOG.md`.
-4. Make it the app's fallback:
-   `python3 tools/import_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"`
-   (add `--accept-resisted` only if you will present the "tool caught it" ending).
-   Every answer panel then reads "Recorded in <tool, model> · <date>".
-5. `python3 tools/preflight.py` must print PASS.
+1. Run both demos as above, with `SCRIPT.html` printed or open on the laptop.
+2. Tick `REHEARSAL_CHECKLIST.md`. It gives SUCCESS / FAIL / RESISTED per demo.
+3. Write the result in `REHEARSAL_LOG.md`.
+4. Optional: paste each answer into `rehearsals/<YYYY-MM-DD>-<tool>/` (file names in that
+   folder's README) and hand the folder to the kit's maintainer, who can make it the app's
+   fallback, labelled "Recorded in <tool, model> · <date>". Until then the app's answers
+   say "Representative example"; present them as that.
 
 ## 6. Afterwards
 

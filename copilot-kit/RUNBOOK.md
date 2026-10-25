@@ -1,7 +1,8 @@
 # Copilot runbook: running both demos live in Microsoft 365 Copilot
 
-**Synthetic demonstration data.** This is the primary way to run the session. The app in
-`../app` is your teleprompter (presenter window) and your fallback, loaded with answers
+**Synthetic demonstration data.** This is the primary way to run the session. **No Python
+or other installs are needed to present or rehearse:** a browser, Word and Copilot. Your
+script is `SCRIPT.html` (print it). The app in `../app` (double-click) is your fallback, loaded with answers
 recorded in Copilot during rehearsal.
 
 | | Demo 1: From weak to strong (4:00) | Demo 2: Trust but verify (1:30) |
@@ -43,15 +44,15 @@ per stage stops earlier answers leaking into later ones.
 | **C** (Word) | Copy A | Open `demo_report.docx` from OneDrive → Copilot → paste the Demo 2 prompt in the pane → do not send |
 | **D** (Word) | Copy B | Same with `INJECTED_demo_report_DO_NOT_USE.docx` |
 | **E** (browser) | The app, fallback | Open `app/index.html` (it already holds your recorded Copilot run, see section 6). Press 1. |
-| Laptop screen | Teleprompter | In window E press **O**, drag the presenter window to the laptop screen, press **V** until it shows **Copilot live**. |
+| Laptop screen | Script | `SCRIPT.html` from this folder (or in window E press **O**, drag the presenter window to the laptop screen, press **V** until it shows **Copilot live**) |
 
 Zoom: Ctrl+plus in Edge until the answers fill the projector (about 125–150%). Close
 notifications. Projector shows windows A–D; the presenter window stays on the laptop.
 
 ## 4. Demo 1 live (4:00)
 
-Follow the teleprompter. Press → in the presenter window as you move, so it tracks
-the step and the timer.
+Follow `SCRIPT.html`. (If you use the app's presenter window instead, press → in it as
+you move so it tracks the step and the timer.)
 
 | Step | You do | Expect |
 |------|--------|--------|
@@ -85,21 +86,15 @@ other wording get through. The habit doesn't change: verify against the source."
 do the reveal anyway. Never present a recorded or representative "followed" answer as if
 it just happened live.
 
-## 6. Rehearse and record (each rehearsal)
+## 6. Rehearse and judge (each rehearsal; no software needed)
 
-1. Run both demos exactly as above.
-2. For every answer, use Copilot's **Copy** button and paste it into a text file in
-   `rehearsals/<YYYY-MM-DD>/` with these names:
-   `demo1_weak.md`, `demo1_role.md`, `demo1_task.md`, `demo1_context.md`,
-   `demo1_output.md`, `demo2_clean.md`, `demo2_injected.md`
-3. Judge it: `python3 tools/check_copilot_run.py copilot-kit/rehearsals/<date>`.
-   It applies the same checks as preflight and prints the line for `REHEARSAL_LOG.md`.
-4. Make the best passing run the app's fallback:
-   `python3 tools/import_copilot_run.py copilot-kit/rehearsals/<date>` then
-   `python3 tools/preflight.py`. The app then says "Recorded live in Microsoft 365
-   Copilot on <date>" instead of "representative".
-   If Copilot resisted the hidden line in that run, preflight fails on purpose. Re-run
-   it with `--accept-resisted` only if you will present the "Copilot caught it" branch.
+1. Run both demos exactly as above, with `SCRIPT.html` printed or open on the laptop.
+2. Tick `REHEARSAL_CHECKLIST.md`. It gives SUCCESS / FAIL / RESISTED per demo.
+3. Write the result in `REHEARSAL_LOG.md`.
+4. Optional: paste each answer (Copilot's **Copy** button) into `rehearsals/<YYYY-MM-DD>/`
+   (file names in that folder's README) and hand it to the kit's maintainer, who can make
+   it the app's fallback, labelled "Recorded in Microsoft 365 Copilot · <date>". Until
+   then the app's answers say "Representative example"; present them as that.
 
 Rehearsal folders contain only synthetic data, but keep them off shared drives.
 

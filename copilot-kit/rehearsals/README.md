@@ -17,7 +17,5 @@ file:
 `.txt` works too. Tables pasted as tab-separated text and Copilot's citation markers are
 handled automatically.
 
-```
-python3 tools/check_copilot_run.py copilot-kit/rehearsals/2026-11-12    # judge the run
-python3 tools/import_copilot_run.py copilot-kit/rehearsals/2026-11-12   # make it the app fallback
-```
+Optional. Judge rehearsals with `../REHEARSAL_CHECKLIST.md`; these files only let the
+kit's maintainer make your run the app's labelled fallback (`tools/README.md`).
