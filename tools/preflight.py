@@ -201,6 +201,17 @@ def run_checks(skip_node=False, accept_resisted=False):
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
+    # ---- 7c. printable presenter scripts are current (no Python needed to present)
+    import build_presenter_scripts
+    tmp = tempfile.mkdtemp(prefix="preflight-scripts-")
+    try:
+        build_presenter_scripts.main(tmp)
+        for f in build_presenter_scripts.FILES:
+            check(f"printable script exists and is current: {f}",
+                  os.path.exists(path(f)) and sha(path(f)) == sha(os.path.join(tmp, f)))
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
     # ---- 8. presenter script
     pres = cache["presenter"]
     want = {"demo1": {"copilot": "4:00", "chat": "4:00", "full": "4:00", "90s": "1:30", "45s": "0:45"},
