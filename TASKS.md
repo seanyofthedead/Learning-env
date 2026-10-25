@@ -56,3 +56,13 @@ Re-read ASSUMPTIONS.md before resuming.
 | 10.4 | 10 Any chat | reliability engineer | Generic check_chat_run.py / import_chat_run.py --source; app and cache label any tool; Copilot scripts become wrappers | done |
 | 10.5 | 10 Any chat | presentation coach | "Any chat live" presenter versions (4:00 / 1:30) incl. copy-paste reveal | done |
 | 10.6 | 10 Any chat | all three reviewers | Preflight/inspection extended; REVIEW addendum; README, ASSUMPTIONS, FINAL_REPORT; preflight x3; push | done |
+
+## Phase 11: Presenter path with no Python (requested after Phase 10)
+
+| ID | Phase | Role | Task | Status |
+|----|-------|------|------|--------|
+| 11.1 | 11 No Python | builder | Move scripts/ to tools/ (maintainers only); fix every reference; tools/README.md | todo |
+| 11.2 | 11 No Python | presentation coach | Printable presenter scripts (SCRIPT.md + SCRIPT.html) in chat-kit and copilot-kit, generated from content/presenter.json | todo |
+| 11.3 | 11 No Python | reliability engineer | Manual rehearsal checklist with plain pass/fail criteria; rehearsal logs use it | todo |
+| 11.4 | 11 No Python | builder | Runbooks, README, day-of checklist free of Python; maintainer steps marked optional | todo |
+| 11.5 | 11 No Python | all three reviewers | Preflight covers new files; REVIEW addendum; FINAL_REPORT; preflight x3; push | todo |
