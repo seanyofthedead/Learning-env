@@ -2,12 +2,16 @@
 
 **Synthetic demonstration data.** Built 24 October 2026 for "AI and the Federal Financial
 Manager: From Curiosity to Capability" (SDFM event, 19 November 2026). Updated the same
-day to make **Microsoft 365 Copilot the primary path** (Phase 9).
+day to make **Microsoft 365 Copilot the primary path** (Phase 9), to run in **any major
+chat tool** (Phase 10), and updated 25 October so that **presenting needs no Python**
+(Phase 11).
 
 ## Outcome
 
-Both demos are ready to run live in Microsoft 365 Copilot, with a tested runbook, a
-teleprompter, and an offline fallback app. `tools/preflight.py` (223 checks) passes,
+Both demos are ready to run live in Microsoft 365 Copilot or any approved chat tool, with a
+runbook, a printable script, a paper rehearsal checklist and an offline fallback app.
+**Presenters need only a browser, Word and the chat tool; no Python, no installs.** The
+Python lives in `tools/` for whoever maintains the kit; its preflight (233 checks) passes,
 three runs, identical output. What cannot be done from here is the Copilot run itself:
 that needs your tenant, your approvals and three rehearsals (see "What you must confirm").
 
@@ -16,7 +20,7 @@ that needs your tenant, your approvals and three rehearsals (see "What you must 
 | | Demo 1: From weak to strong (4:00) | Demo 2: Trust but verify (1:30) |
 |---|---|---|
 | Projector | Microsoft 365 Copilot Chat, report .xlsx attached, five pre-staged chats (one Enter per stage), then two windows snapped side by side | Copilot in Word on the clean and injected .docx; reveal in Word (Ctrl+A → font color Automatic) |
-| Laptop | App presenter window (O), **Copilot live** script with timing marks, room questions, fallback lines | Same, with both endings: Copilot followed the hidden line / Copilot caught it |
+| Laptop | Printed `SCRIPT.html` (or the app's presenter window): **Copilot live** script with timing marks, room questions, fallback lines | Same, with both endings: Copilot followed the hidden line / Copilot caught it |
 | Fallback | Alt+Tab to the app at the same step; it shows your recorded Copilot rehearsal, labelled with its date | Same; Demo 2 runs from the app if three successful rehearsals were not reached |
 
 Full steps: `copilot-kit/RUNBOOK.md`.
@@ -37,21 +41,22 @@ Demo 2 live in a tool only after three successful rehearsals in that tool.
 |-------------|-------|
 | Copilot runbook (approvals, tenant prep, pre-staging, live steps, fallback, clean-up) | `copilot-kit/RUNBOOK.md` |
 | Prompts, rehearsal log with the three-rehearsal rule, rehearsal recordings folder | `copilot-kit/prompts.txt`, `REHEARSAL_LOG.md`, `rehearsals/` |
-| Rehearsal judge and fallback importer | `tools/check_copilot_run.py`, `tools/import_copilot_run.py` |
+| Printable presenter scripts and paper rehearsal checklists (no software) | `copilot-kit/` and `chat-kit/`: `SCRIPT.html`/`.md`, `REHEARSAL_CHECKLIST.md` |
+| Any-chat kit: runbook, tool cards, paste blocks, per-tool log | `chat-kit/` |
+| Maintainer tools: builds, preflight, integrity inspection, optional rehearsal grader and fallback importer, cache regeneration, live mode | `tools/` (see `tools/README.md`) |
 | Copilot-ready report: data rows are an Excel table `ExecutionReport` (A5:L30), as Copilot in Excel requires | `data/*.xlsx` (and identical copies) |
 | Demo app: Demo 1 ladder + side-by-side; Demo 2 three steps + red reveal; presenter view with Copilot live, Full, 90 s and 45 s scripts; source label on every answer | `app/` |
 | Synthetic report (.csv/.xlsx/.docx), five planted variances, answer key outside the files | `data/` |
 | Injected copies (white 1-pt sentence in Word, white cell A36 in Excel) and REVEAL.md | `demo2/` |
-| Preflight, integrity inspection, script timing check, cache regeneration, live mode | `tools/` |
 | Design, assumptions, sign-offs, tasks | `CONCEPTS.md`, `ASSUMPTIONS.md`, `REVIEW.md`, `TASKS.md` |
 
 ## Which model generated the cache
 
 **None yet.** No model API key was available, and Copilot has no API this build could
 call. The app's answers are **representative pre-generated outputs**, and every answer
-panel says "Representative example". After your first good Copilot rehearsal, run
-`tools/import_copilot_run.py`: the app then shows the answers Copilot actually gave,
-labelled "Recorded in Copilot · <date>", and ASSUMPTIONS/cache record it.
+panel says "Representative example". After a good rehearsal, save the answers in the kit's
+`rehearsals/` folder; the maintainer runs `tools/import_chat_run.py` and the app then
+shows the answers the tool actually gave, labelled "Recorded in <tool> · <date>".
 
 ## Key assumptions (full list in ASSUMPTIONS.md)
 

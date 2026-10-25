@@ -90,7 +90,7 @@ presenting. It needs Python 3.8+ (standard library only), plus Node.js for one c
 [`tools/README.md`](tools/README.md) for the full list.
 
 ```
-python3 tools/preflight.py        # PASS, or FAIL and the first failure (223 checks)
+python3 tools/preflight.py        # PASS, or FAIL and the first failure (233 checks)
 python3 tools/inspect_files.py    # integrity report: raw XML and metadata of every file
 ```
 

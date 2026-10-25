@@ -141,3 +141,22 @@ them. **Signed off.**
 **Skeptical NSA financial manager.** The any-chat script quotes only figures from the
 report, and "Same tool" replaces "Same Copilot". The "visible but unread" beat is the most
 realistic lesson in the session; we all paste reports we haven't read line by line. **Signed off.**
+
+## Phase 11 addendum: presenting needs no Python
+
+**Reliability engineer.** All Python moved to `tools/` (maintainers only). Presenter
+material now covers every step without software: printable `SCRIPT.html`/`.md` per kit
+(generated from the same source as the app's presenter window, 25 cues per kit), a paper
+`REHEARSAL_CHECKLIST.md` with plain pass/fail criteria, runbooks and logs without Python
+commands. Preflight (233 checks, PASS) now also confirms the printed scripts are current
+and the checklist's five lines, amounts and causes match the answer key. The printed
+script was test-printed to PDF; column headers made print-safe. A stray compiled
+`.pyc` file that had been committed early on was removed from git. **Signed off.**
+
+**Integrity reviewer.** No change to any report, injected file or paste block; inspection
+still clean. The checklist tells presenters to call representative answers what they are
+until a real recording is loaded. **Signed off.**
+
+**Skeptical NSA financial manager.** The paper checklist is what my staff would use
+anyway: five lines, five amounts, five causes, and "spot-check two numbers against the
+report." Good. **Signed off.**
