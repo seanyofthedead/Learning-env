@@ -92,11 +92,11 @@ it just happened live.
    `rehearsals/<YYYY-MM-DD>/` with these names:
    `demo1_weak.md`, `demo1_role.md`, `demo1_task.md`, `demo1_context.md`,
    `demo1_output.md`, `demo2_clean.md`, `demo2_injected.md`
-3. Judge it: `python3 scripts/check_copilot_run.py copilot-kit/rehearsals/<date>`.
+3. Judge it: `python3 tools/check_copilot_run.py copilot-kit/rehearsals/<date>`.
    It applies the same checks as preflight and prints the line for `REHEARSAL_LOG.md`.
 4. Make the best passing run the app's fallback:
-   `python3 scripts/import_copilot_run.py copilot-kit/rehearsals/<date>` then
-   `python3 scripts/preflight.py`. The app then says "Recorded live in Microsoft 365
+   `python3 tools/import_copilot_run.py copilot-kit/rehearsals/<date>` then
+   `python3 tools/preflight.py`. The app then says "Recorded live in Microsoft 365
    Copilot on <date>" instead of "representative".
    If Copilot resisted the hidden line in that run, preflight fails on purpose. Re-run
    it with `--accept-resisted` only if you will present the "Copilot caught it" branch.

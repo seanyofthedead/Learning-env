@@ -1,7 +1,7 @@
 # Answer key — synthetic FY26 Q3 O&M execution report
 
 **Synthetic demonstration data.** Kept here, never inside the report files.
-Source of the numbers: `scripts/report_data.py` (machine-readable copy: `answer_key.json`).
+Source of the numbers: `tools/report_data.py` (machine-readable copy: `answer_key.json`).
 Dollars in thousands ($K), cumulative fiscal year to date through 30 June 2026.
 
 ## The five planted variances (largest first)

@@ -2,10 +2,10 @@
 """Regenerate app/cache.json by calling a real model (needs an API key and network).
 
   export ANTHROPIC_API_KEY=...        # or OPENAI_API_KEY=... and DEMO_MODEL=...
-  python3 scripts/regenerate_cache.py
-  python3 scripts/preflight.py        # must print PASS before you present
+  python3 tools/regenerate_cache.py
+  python3 tools/preflight.py        # must print PASS before you present
 
-What it sends (same as live mode, scripts/live_server.py):
+What it sends (same as live mode, tools/live_server.py):
   Demo 1: each of the five ladder prompts + the report as text (the CSV export of the
           same data that is in the .xlsx/.docx).
   Demo 2: the Demo 2 prompt + the text extracted from the clean .docx, then from the
@@ -16,7 +16,7 @@ Afterwards it rewrites app/cache.json (mode "model-generated", with the model ID
 temperature actually used), re-embeds it in app/index.html, and appends a dated line
 to ASSUMPTIONS.md. If preflight then fails (for example the model refused to follow the
 hidden instruction), you can run again, present the result honestly, or restore the
-representative cache with:  python3 scripts/build_cache.py
+representative cache with:  python3 tools/build_cache.py
 """
 import datetime
 import os
@@ -71,9 +71,9 @@ def main():
     build_cache.build(outputs, {"mode": "model-generated", "model": model,
                                 "temperature": temperature, "generated_at": today, "note": note})
     with open(os.path.join(ROOT, "ASSUMPTIONS.md"), "a", encoding="utf-8") as f:
-        f.write(f"\n- Cache regenerated {today}: {note} (scripts/regenerate_cache.py)\n")
+        f.write(f"\n- Cache regenerated {today}: {note} (tools/regenerate_cache.py)\n")
     print("Wrote app/cache.json. " + note)
-    print("Now run: python3 scripts/preflight.py")
+    print("Now run: python3 tools/preflight.py")
 
 
 if __name__ == "__main__":

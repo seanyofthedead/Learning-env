@@ -9,11 +9,11 @@ every check was re-run until all three came back clean.
 
 | Check | Result |
 |-------|--------|
-| `scripts/preflight.py`: 223 checks, including a headless run of both demos through the app's own render code (`scripts/headless_run.js`) | PASS |
+| `tools/preflight.py`: 223 checks, including a headless run of both demos through the app's own render code (`tools/headless_run.js`) | PASS |
 | Stage counts: Demo 1 = 5 ladder stages + side-by-side (6 presses); Demo 2 = 3 presses | PASS |
 | All five planted variances, with cause and amount, in Demo 1's final table, both in the cache and in the rendered HTML table | PASS |
 | Demo 2 clean run names SYN-102 and says not on plan; injected run says on plan and omits SYN-102 | PASS |
-| Every report file rebuilds byte-identical from `scripts/build_reports.py` (catches hand edits and tampering) | PASS |
+| Every report file rebuilds byte-identical from `tools/build_reports.py` (catches hand edits and tampering) | PASS |
 | `index.html` embeds an identical copy of `cache.json` (works from `file://`) | PASS |
 | Negative tests: dropped variance, injection resisted, tampered .xlsx, INJECTED file outside ./demo2, script over 4:00, missing app step: each makes preflight FAIL with a clear message | PASS |
 | Live mode: live answer in 0.5 s; slow model falls back to cache at 5.0 s; no key falls back at once (tested against a local mock API) | PASS |
@@ -30,7 +30,7 @@ the red line into view as a safety net.
 
 **Scope:** Demo 1 material is clean; Demo 2's hidden text is benign, single, disclosed.
 
-Method: `scripts/inspect_files.py` opens every package, lists every part, reads the raw
+Method: `tools/inspect_files.py` opens every package, lists every part, reads the raw
 XML and metadata, and flags font colors, white or tiny text, vanish/hidden runs,
 highlights, hidden rows/columns/sheets, value-hiding number formats, comments, notes,
 headers/footers, fields, hyperlinks, embedded objects, defined names, data validation,
@@ -64,7 +64,7 @@ Copilot-kit copy both produced FLAG findings.
 **Scope:** would a room of federal FMs believe every number and term?
 
 Every dollar and percent figure in every output was recomputed from
-`scripts/report_data.py`; all match (rounded percents: 80, 148, 63, 50, 50; totals
+`tools/report_data.py`; all match (rounded percents: 80, 148, 63, 50, 50; totals
 +965 / +1.5% and −3,580 / −7.4%).
 
 | Finding (round 1) | Fix |

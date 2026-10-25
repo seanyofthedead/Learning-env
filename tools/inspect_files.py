@@ -14,7 +14,7 @@ package and flags anything that could hide or steer content:
 Then it diffs each INJECTED file against its clean twin and shows that the only
 difference is the disclosed sentence and its white formatting.
 
-  python3 scripts/inspect_files.py        # prints the report; exit 0 if all clean
+  python3 tools/inspect_files.py        # prints the report; exit 0 if all clean
 """
 import os
 import re
@@ -194,7 +194,7 @@ def main():
     ok &= d1_ok
     node = shutil.which("node")
     if node:
-        run = json.loads(subprocess.run([node, os.path.join(ROOT, "scripts", "headless_run.js")],
+        run = json.loads(subprocess.run([node, os.path.join(ROOT, "tools", "headless_run.js")],
                                         capture_output=True, text=True, check=True).stdout)
         bad = [s["step"] for s in run["demo1"]["steps"]
                if "hidden-run" in s["html"] or "data-hidden" in s["html"] or "display:none" in s["html"]]

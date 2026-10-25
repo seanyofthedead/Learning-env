@@ -10,7 +10,7 @@ Decisions made without asking. Each is reversible.
   was present. The sandbox exposes internal variables (`API_KEY`, `ANTHROPIC_BASE_URL`) that
   belong to the build tool itself, not to this project; I did not treat them as a project model
   key. Therefore all cached outputs are **representative pre-generated outputs** authored by
-  the builder, and `scripts/regenerate_cache.py` is provided to regenerate them with a key.
+  the builder, and `tools/regenerate_cache.py` is provided to regenerate them with a key.
 - A3. Office files (.xlsx/.docx) are written with Python's standard library only (`zipfile` +
   hand-written XML) so the files contain nothing a library might add silently, the integrity
   review can read every byte, and builds are byte-for-byte repeatable (fixed zip timestamps).
@@ -46,7 +46,7 @@ Decisions made without asking. Each is reversible.
 ## Model calls
 - A11. Temperature: since Anthropic API version 2026-10-21 (three days before this
   build) sampling parameters are removed, and current Claude models accept only their
-  default sampling. `scripts/model_client.py` asks for temperature 0 (using the older
+  default sampling. `tools/model_client.py` asks for temperature 0 (using the older
   `2023-06-01` API version header), retries once without it if the model refuses, and
   records the temperature actually used in `cache.json` and ASSUMPTIONS.md.
 - A12. Model calls use Python's `urllib` rather than a vendor SDK, to keep the "standard
@@ -59,10 +59,10 @@ Decisions made without asking. Each is reversible.
 
 ## App
 - A14. The app opens straight from disk (`file://`), where browsers block `fetch()`, so
-  `scripts/build_cache.py` embeds a byte-identical copy of `cache.json` inside
+  `tools/build_cache.py` embeds a byte-identical copy of `cache.json` inside
   `index.html`. Over HTTP the app fetches `cache.json` and falls back to the embedded copy.
   Preflight fails if the two differ.
-- A15. Live mode is opt-in (`?live=1`) and needs `scripts/live_server.py`, which keeps the
+- A15. Live mode is opt-in (`?live=1`) and needs `tools/live_server.py`, which keeps the
   API key server-side. The browser aborts after 5 s and shows the saved output, labelled.
 - A16. Supported screens: 1280x720 and up. Verified with no clipped content at 1280x720,
   1280x800, 1366x768 and 1920x1080, light and dark. Body text never drops below 18px. On
@@ -103,3 +103,8 @@ Decisions made without asking. Each is reversible.
 - A26. The three-rehearsal rule applies per tool, machine and account. A recording is
   labelled with the tool and model given by `--source`; the app never shows a recording
   under another tool's name.
+
+## Presenter path without Python (Phase 11)
+- A27. The `scripts/` folder your original spec named was moved to `tools/` and marked
+  maintainers-only, so presenters can ignore it. `tools/preflight.py` is the same file.
+  Presenting needs only a browser, Word and the approved chat tool.

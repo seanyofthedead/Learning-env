@@ -18,6 +18,6 @@ file:
 handled automatically.
 
 ```
-python3 scripts/check_copilot_run.py copilot-kit/rehearsals/2026-11-12    # judge the run
-python3 scripts/import_copilot_run.py copilot-kit/rehearsals/2026-11-12   # make it the app fallback
+python3 tools/check_copilot_run.py copilot-kit/rehearsals/2026-11-12    # judge the run
+python3 tools/import_copilot_run.py copilot-kit/rehearsals/2026-11-12   # make it the app fallback
 ```

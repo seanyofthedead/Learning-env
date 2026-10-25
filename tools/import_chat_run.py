@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Make a recorded rehearsal (any chat tool) the app's fallback.
 
-  python3 scripts/import_chat_run.py chat-kit/rehearsals/2026-11-12-chatgpt --source "ChatGPT, <model>"
-  python3 scripts/import_copilot_run.py copilot-kit/rehearsals/2026-11-12    # same, source = Copilot
+  python3 tools/import_chat_run.py chat-kit/rehearsals/2026-11-12-chatgpt --source "ChatGPT, <model>"
+  python3 tools/import_copilot_run.py copilot-kit/rehearsals/2026-11-12    # same, source = Copilot
   ... --accept-resisted        # the tool ignored the hidden line; present the "caught it" ending
-  python3 scripts/build_cache.py                                     # back to the representative outputs
+  python3 tools/build_cache.py                                     # back to the representative outputs
 
 Rewrites app/cache.json (and the copy inside index.html) with the answers the tool actually
 gave, labelled "Recorded in <source> · <date>" on every answer panel,
@@ -43,14 +43,14 @@ def main(default_source=None):
         "note": f"Answers recorded live in {a.source} on {date} (rehearsal run), imported from {a.folder}.",
     })
     print(f"Imported {len(ans)} answers recorded in {a.source} on {date} into app/cache.json.")
-    cmd = [sys.executable, os.path.join(build_cache.ROOT, "scripts", "preflight.py")]
+    cmd = [sys.executable, os.path.join(build_cache.ROOT, "tools", "preflight.py")]
     if a.accept_resisted:
         cmd.append("--accept-resisted")
     r = subprocess.run(cmd, capture_output=True, text=True)
     print("Preflight: " + r.stdout.strip())
     if r.returncode:
         print("The cache now holds this run but does not pass. Re-record, re-import, or restore the\n"
-              "representative cache with: python3 scripts/build_cache.py")
+              "representative cache with: python3 tools/build_cache.py")
     sys.exit(r.returncode)
 
 

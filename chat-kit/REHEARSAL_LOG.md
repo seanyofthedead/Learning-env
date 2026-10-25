@@ -1,7 +1,7 @@
 # Rehearsal log (any chat tool)
 
 **Synthetic demonstration data.** One row per rehearsal. Judge each run with
-`python3 scripts/check_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"`,
+`python3 tools/check_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"`,
 which prints the row to paste here.
 
 ## Rule
@@ -21,7 +21,7 @@ fallback.
 - [ ] Tool approved for this use (who, date): ____________
 - [ ] Venue OK for a disclosed injection demo (who, date): ____________
 - [ ] Reset checklist (RUNBOOK section 1) done; tool card filled in
-- [ ] `python3 scripts/preflight.py` = PASS
+- [ ] `python3 tools/preflight.py` = PASS
 
 ## Log
 

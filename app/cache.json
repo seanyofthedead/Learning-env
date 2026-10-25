@@ -6,7 +6,7 @@
   "model": null,
   "temperature": null,
   "generated_at": "2026-10-24",
-  "note": "Representative pre-generated outputs, authored for this demo because no model API key was available at build time. Regenerate with scripts/regenerate_cache.py."
+  "note": "Representative pre-generated outputs, authored for this demo because no model API key was available at build time. Regenerate with tools/regenerate_cache.py."
  },
  "demo1": {
   "title": "From weak to strong",

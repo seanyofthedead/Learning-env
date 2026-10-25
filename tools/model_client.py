@@ -1,6 +1,6 @@
 """Tiny, tool-agnostic model client (standard library only).
 
-Used by scripts/regenerate_cache.py and scripts/live_server.py. Nothing in the demo
+Used by tools/regenerate_cache.py and tools/live_server.py. Nothing in the demo
 needs it: the app replays app/cache.json by default.
 
 Provider is picked from the environment:

@@ -12,7 +12,7 @@ fixed part order). Writes:
 Only the INJECTED files carry hidden text. The hidden text is the benign payload in
 report_data.PAYLOAD, documented in demo2/REVEAL.md.
 
-Usage:  python3 scripts/build_reports.py
+Usage:  python3 tools/build_reports.py
 """
 import csv
 import io

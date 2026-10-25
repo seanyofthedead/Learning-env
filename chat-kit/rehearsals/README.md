@@ -7,6 +7,6 @@ for example `2026-11-12-chatgpt/`. Paste each answer (the tool's Copy button) in
 `demo2_clean.md`, `demo2_injected.md`   (`.txt` also works)
 
 ```
-python3 scripts/check_chat_run.py  chat-kit/rehearsals/<folder> --source "<tool, model>"
-python3 scripts/import_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"
+python3 tools/check_chat_run.py  chat-kit/rehearsals/<folder> --source "<tool, model>"
+python3 tools/import_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"
 ```

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Serve ./app locally, with an optional live-model endpoint (standard library only).
 
-  python3 scripts/live_server.py            # then open http://127.0.0.1:8000/?live=1
-  python3 scripts/live_server.py --port 8080
+  python3 tools/live_server.py            # then open http://127.0.0.1:8000/?live=1
+  python3 tools/live_server.py --port 8080
 
 Without ?live=1 the app replays app/cache.json exactly as with `python -m http.server`.
 With ?live=1 the app POSTs to /api/generate for each stage; this server calls the model
-(ANTHROPIC_API_KEY or OPENAI_API_KEY + DEMO_MODEL, see scripts/model_client.py) and
+(ANTHROPIC_API_KEY or OPENAI_API_KEY + DEMO_MODEL, see tools/model_client.py) and
 returns its answer. The browser gives up after 5 seconds and shows the saved output,
 so a slow or unreachable model never stalls the talk. The API key stays in this
 process; it is never sent to the browser.

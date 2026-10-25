@@ -2,8 +2,8 @@
 """Preflight: run both demos headlessly against the cache and check everything that
 must be true on the day. Prints PASS, or FAIL and the first failure. Exit code 0/1.
 
-  python3 scripts/preflight.py            # PASS / FAIL
-  python3 scripts/preflight.py -v         # list every check
+  python3 tools/preflight.py            # PASS / FAIL
+  python3 tools/preflight.py -v         # list every check
 
 Needs Python 3.8+. Uses Node.js (if installed) to run the app's own render code; without
 Node the rendered-HTML checks are skipped and PASS says so.
@@ -93,7 +93,7 @@ def run_checks(skip_node=False, accept_resisted=False):
     check("INJECTED files live only in ./demo2", all(p.startswith("demo2" + os.sep) for p in injected_anywhere),
           ", ".join(injected_anywhere))
 
-    insp = subprocess.run([sys.executable, path("scripts", "inspect_files.py")], capture_output=True, text=True)
+    insp = subprocess.run([sys.executable, path("tools", "inspect_files.py")], capture_output=True, text=True)
     check("integrity inspection: Demo 1 files clean, injected differs only by the payload",
           insp.returncode == 0, insp.stdout[-400:])
 
@@ -236,7 +236,7 @@ def run_checks(skip_node=False, accept_resisted=False):
     if skip_node or not node:
         notes.append("node not found: rendered-HTML checks skipped" if not skip_node else "rendered-HTML checks skipped")
         return "; ".join(notes)
-    out = subprocess.run([node, path("scripts", "headless_run.js"), path("app", "cache.json")],
+    out = subprocess.run([node, path("tools", "headless_run.js"), path("app", "cache.json")],
                          capture_output=True, text=True, timeout=60)
     check("headless app run succeeds", out.returncode == 0, out.stderr[:300])
     run = json.loads(out.stdout)

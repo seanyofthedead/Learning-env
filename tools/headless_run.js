@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* Run both demos headlessly with the app's own render code (app/app.js) against a
  * cache file, and print what each key press would put on screen as JSON.
- * Used by scripts/preflight.py.   Usage: node scripts/headless_run.js [cache.json]
+ * Used by tools/preflight.py.   Usage: node tools/headless_run.js [cache.json]
  */
 'use strict';
 const fs = require('fs');

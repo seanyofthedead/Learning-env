@@ -3,8 +3,8 @@
 copy into app/index.html so the app works from file:// as well as over HTTP.
 
 Usage:
-  python3 scripts/build_cache.py                 # representative outputs from content/outputs
-  python3 scripts/build_cache.py --keep-outputs  # keep outputs + generation info already in cache.json
+  python3 tools/build_cache.py                 # representative outputs from content/outputs
+  python3 tools/build_cache.py --keep-outputs  # keep outputs + generation info already in cache.json
                                                  # (use after regenerate_cache.py, when only
                                                  #  content or presenter text changed)
 """
@@ -38,7 +38,7 @@ REPRESENTATIVE = {
     "temperature": None,
     "generated_at": "2026-10-24",
     "note": ("Representative pre-generated outputs, authored for this demo because no model "
-             "API key was available at build time. Regenerate with scripts/regenerate_cache.py."),
+             "API key was available at build time. Regenerate with tools/regenerate_cache.py."),
 }
 
 

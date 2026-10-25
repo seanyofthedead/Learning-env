@@ -4,8 +4,8 @@
 previews and the presenter script. The app replays it by default. A byte-identical
 copy is embedded in `index.html` (inside `<script id="embedded-cache"
 type="application/json">`) so the app also works when opened straight from disk
-(`file://`), where browsers block `fetch()`. `scripts/build_cache.py` writes both;
-`scripts/preflight.py` fails if they differ.
+(`file://`), where browsers block `fetch()`. `tools/build_cache.py` writes both;
+`tools/preflight.py` fails if they differ.
 
 All text is plain UTF-8. Model outputs are stored as a small Markdown subset that
 `app.js` renders: paragraphs, `**bold**`, `-` bullets, `1.` numbered lists, `###`
@@ -27,7 +27,7 @@ outputs is escaped, never rendered.
 
 | Key | Type | Notes |
 |-----|------|-------|
-| `mode` | `"representative-pregenerated"`, `"model-generated"`, `"chat-recorded"` (or legacy `"copilot-recorded"`) | Authored by the builder; produced by `scripts/regenerate_cache.py`; or answers copied out of a chat tool during rehearsal and imported by `scripts/import_chat_run.py --source "<tool, model>"` (`import_copilot_run.py` sets the source to Microsoft 365 Copilot). |
+| `mode` | `"representative-pregenerated"`, `"model-generated"`, `"chat-recorded"` (or legacy `"copilot-recorded"`) | Authored by the builder; produced by `tools/regenerate_cache.py`; or answers copied out of a chat tool during rehearsal and imported by `tools/import_chat_run.py --source "<tool, model>"` (`import_copilot_run.py` sets the source to Microsoft 365 Copilot). |
 | `model` | string or null | Model ID, or for recordings the tool and model as given in `--source`; shown on every answer panel. Required unless representative. |
 | `temperature` | number or null | `0` when model-generated. |
 | `generated_at` | string | ISO date. |
@@ -69,7 +69,7 @@ five stages, `6` the side-by-side comparison. Six presses in total.
 | `documents` | `{clean, injected}` | Previews extracted from the real `.docx` files (below). |
 | `steps` | array, exactly 3 | `clean`, `injected`, `reveal`. |
 
-Each document preview (extracted by `scripts/build_cache.py` from the actual file, so
+Each document preview (extracted by `tools/build_cache.py` from the actual file, so
 the reveal shows what is really in it):
 
 | Key | Type | Notes |
@@ -114,7 +114,7 @@ Every output panel shows where its answer came from (`Representative example`,
 
 ## Live mode contract (optional)
 
-With `?live=1`, served by `scripts/live_server.py`, the app sends
+With `?live=1`, served by `tools/live_server.py`, the app sends
 `POST /api/generate` with `{"demo": "demo1", "stage": "<stage id>"}` or
 `{"demo": "demo2", "step": "clean" | "injected"}` and expects
 `{"markdown": "...", "model": "...", "latency_ms": 1234}`. Any error, non-200

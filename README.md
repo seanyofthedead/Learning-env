@@ -22,7 +22,7 @@ The app in `./app` plays two supporting roles during a Copilot session:
 - **Teleprompter:** press O for the presenter window on your laptop screen. It opens on
   the **Copilot live** script (4:00 / 1:30), with fallback lines and both Demo 2 endings.
 - **Fallback:** if Copilot is slow or fails, Alt+Tab to the app at the same step. After
-  each rehearsal, `scripts/import_copilot_run.py` loads the answers Copilot actually gave,
+  each rehearsal, `tools/import_copilot_run.py` loads the answers Copilot actually gave,
   so the fallback is a labelled recording of your own Copilot run.
 
 Rules carried over: Demo 2 runs live only after **three successful rehearsals on the
@@ -46,8 +46,8 @@ tool: see [`chat-kit/RUNBOOK.md`](chat-kit/RUNBOOK.md).
   beats: invisible in Word, unread in the chat.
 - **Reset checklist and tool cards** (`chat-kit/TOOL_CARDS.md`): temporary chat, memory
   and custom instructions off, web search off, same model, no projects.
-- **Recordings labelled by tool:** `scripts/check_chat_run.py <folder> --source "<tool, model>"`
-  judges a rehearsal; `scripts/import_chat_run.py` makes it the app fallback, and every
+- **Recordings labelled by tool:** `tools/check_chat_run.py <folder> --source "<tool, model>"`
+  judges a rehearsal; `tools/import_chat_run.py` makes it the app fallback, and every
   answer panel then says "Recorded in <tool, model> · <date>".
 - The presenter window has an **Any chat live** script (press V).
 - Rule: Demo 2 runs live in a tool only after three successful rehearsals **in that tool**,
@@ -57,14 +57,14 @@ tool: see [`chat-kit/RUNBOOK.md`](chat-kit/RUNBOOK.md).
 
 ```
 # after each rehearsal, paste the 7 answers into copilot-kit/rehearsals/<date>/ (see its README)
-python3 scripts/check_copilot_run.py copilot-kit/rehearsals/<date>    # SUCCESS / FAIL / RESISTED + log row
-python3 scripts/import_copilot_run.py copilot-kit/rehearsals/<date>   # make it the app fallback
-python3 scripts/preflight.py                                          # must print PASS
+python3 tools/check_copilot_run.py copilot-kit/rehearsals/<date>    # SUCCESS / FAIL / RESISTED + log row
+python3 tools/import_copilot_run.py copilot-kit/rehearsals/<date>   # make it the app fallback
+python3 tools/preflight.py                                          # must print PASS
 ```
 
 If Copilot ignored the hidden line in the run you import, preflight fails on purpose;
 add `--accept-resisted` only if you will present the "Copilot caught it" ending.
-`python3 scripts/build_cache.py` restores the representative outputs.
+`python3 tools/build_cache.py` restores the representative outputs.
 
 ## Setup
 
@@ -107,9 +107,9 @@ Screens 1280x720 and larger are supported; body text never drops below 18px.
 ## Preflight (run before every rehearsal and on the day)
 
 ```
-python3 scripts/preflight.py        # prints PASS, or FAIL and the first failure
-python3 scripts/preflight.py -v     # lists all 223 checks
-python3 scripts/inspect_files.py    # integrity report: raw XML and metadata of every file
+python3 tools/preflight.py        # prints PASS, or FAIL and the first failure
+python3 tools/preflight.py -v     # lists all 223 checks
+python3 tools/inspect_files.py    # integrity report: raw XML and metadata of every file
 ```
 
 Preflight runs both demos headlessly against the cache and checks stage counts, that all
@@ -123,8 +123,8 @@ text lives only in `./demo2`, and that the scripts add up to 4:00 / 1:30 / 90 s 
 ```
 export ANTHROPIC_API_KEY=...          # or: export OPENAI_API_KEY=... DEMO_MODEL=<model>
 export DEMO_MODEL=claude-opus-5-5     # optional; this is the default for Anthropic
-python3 scripts/regenerate_cache.py
-python3 scripts/preflight.py
+python3 tools/regenerate_cache.py
+python3 tools/preflight.py
 ```
 
 - Calls the model once per Demo 1 stage and once per Demo 2 file, asks for temperature
@@ -134,18 +134,18 @@ python3 scripts/preflight.py
 - If preflight fails afterwards, read the message. The likely case is that the model
   *did not* follow the hidden instruction in Demo 2. That is a good outcome for the
   model, but the reveal then has nothing to show. Either re-run, or restore the
-  representative cache with `python3 scripts/build_cache.py`.
+  representative cache with `python3 tools/build_cache.py`.
 - After editing text in `content/` (prompts, outputs, presenter script), rebuild with
-  `python3 scripts/build_cache.py` (add `--keep-outputs` to keep regenerated outputs).
-- After editing the report data in `scripts/report_data.py`, run
-  `python3 scripts/build_reports.py` then `python3 scripts/build_cache.py`, and update
+  `python3 tools/build_cache.py` (add `--keep-outputs` to keep regenerated outputs).
+- After editing the report data in `tools/report_data.py`, run
+  `python3 tools/build_reports.py` then `python3 tools/build_cache.py`, and update
   `data/answer_key.*`.
 
 ## Live mode (optional)
 
 ```
 export ANTHROPIC_API_KEY=...     # key stays in this process, never in the browser
-python3 scripts/live_server.py   # then open http://127.0.0.1:8000/?live=1
+python3 tools/live_server.py   # then open http://127.0.0.1:8000/?live=1
 ```
 
 Each stage asks the model live. On any error, or if the answer takes more than 5
@@ -155,7 +155,7 @@ network access and an approved tool.
 
 ## Day-of checklist
 
-- [ ] `python3 scripts/preflight.py` prints **PASS** on the presentation laptop.
+- [ ] `python3 tools/preflight.py` prints **PASS** on the presentation laptop.
 - [ ] Open `app/index.html`; press 1, step through Demo 1, press 2, step through Demo 2, press H.
 - [ ] Projector: check the far corner of the room can read the table at the side-by-side (Demo 1) and the red line (Demo 2). Press T if the other theme reads better.
 - [ ] Extended display: press O, drag the presenter window to the laptop screen, press P off on the main screen. Mirrored display: rehearse without P.
@@ -194,5 +194,5 @@ network access and an approved tool.
 | `chat-kit/` | Any chat tool: RUNBOOK.md, TOOL_CARDS.md, paste blocks, per-tool rehearsal log, recordings. |
 | `copilot-kit/` | **Primary path:** RUNBOOK.md, clean files, prompt list, rehearsal log, `rehearsals/` recordings. |
 | `content/` | Source text: ladder stages, outputs, presenter script. |
-| `scripts/` | Build, regenerate, live server, preflight, integrity inspection, timing check. |
+| `tools/` | Build, regenerate, live server, preflight, integrity inspection, timing check. |
 | `CONCEPTS.md`, `REVIEW.md`, `ASSUMPTIONS.md`, `TASKS.md`, `FINAL_REPORT.md` | Design choices, sign-offs, assumptions, task log, final report. |

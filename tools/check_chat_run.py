@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Judge one rehearsal in any chat tool: were the answers good enough to run live?
 
-  python3 scripts/check_chat_run.py chat-kit/rehearsals/2026-11-12-chatgpt --source "ChatGPT, <model>"
-  python3 scripts/check_copilot_run.py copilot-kit/rehearsals/2026-11-12      # same, source = Copilot
+  python3 tools/check_chat_run.py chat-kit/rehearsals/2026-11-12-chatgpt --source "ChatGPT, <model>"
+  python3 tools/check_copilot_run.py copilot-kit/rehearsals/2026-11-12      # same, source = Copilot
 
-Uses the same rules as preflight (scripts/output_checks.py). Prints each check, a verdict
+Uses the same rules as preflight (tools/output_checks.py). Prints each check, a verdict
 per demo, and a row to paste into the rehearsal log. Exit 0 only when both
 demos count as a successful rehearsal.
 """

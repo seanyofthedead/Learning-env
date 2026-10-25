@@ -7,7 +7,7 @@ day to make **Microsoft 365 Copilot the primary path** (Phase 9).
 ## Outcome
 
 Both demos are ready to run live in Microsoft 365 Copilot, with a tested runbook, a
-teleprompter, and an offline fallback app. `scripts/preflight.py` (223 checks) passes,
+teleprompter, and an offline fallback app. `tools/preflight.py` (223 checks) passes,
 three runs, identical output. What cannot be done from here is the Copilot run itself:
 that needs your tenant, your approvals and three rehearsals (see "What you must confirm").
 
@@ -37,12 +37,12 @@ Demo 2 live in a tool only after three successful rehearsals in that tool.
 |-------------|-------|
 | Copilot runbook (approvals, tenant prep, pre-staging, live steps, fallback, clean-up) | `copilot-kit/RUNBOOK.md` |
 | Prompts, rehearsal log with the three-rehearsal rule, rehearsal recordings folder | `copilot-kit/prompts.txt`, `REHEARSAL_LOG.md`, `rehearsals/` |
-| Rehearsal judge and fallback importer | `scripts/check_copilot_run.py`, `scripts/import_copilot_run.py` |
+| Rehearsal judge and fallback importer | `tools/check_copilot_run.py`, `tools/import_copilot_run.py` |
 | Copilot-ready report: data rows are an Excel table `ExecutionReport` (A5:L30), as Copilot in Excel requires | `data/*.xlsx` (and identical copies) |
 | Demo app: Demo 1 ladder + side-by-side; Demo 2 three steps + red reveal; presenter view with Copilot live, Full, 90 s and 45 s scripts; source label on every answer | `app/` |
 | Synthetic report (.csv/.xlsx/.docx), five planted variances, answer key outside the files | `data/` |
 | Injected copies (white 1-pt sentence in Word, white cell A36 in Excel) and REVEAL.md | `demo2/` |
-| Preflight, integrity inspection, script timing check, cache regeneration, live mode | `scripts/` |
+| Preflight, integrity inspection, script timing check, cache regeneration, live mode | `tools/` |
 | Design, assumptions, sign-offs, tasks | `CONCEPTS.md`, `ASSUMPTIONS.md`, `REVIEW.md`, `TASKS.md` |
 
 ## Which model generated the cache
@@ -50,7 +50,7 @@ Demo 2 live in a tool only after three successful rehearsals in that tool.
 **None yet.** No model API key was available, and Copilot has no API this build could
 call. The app's answers are **representative pre-generated outputs**, and every answer
 panel says "Representative example". After your first good Copilot rehearsal, run
-`scripts/import_copilot_run.py`: the app then shows the answers Copilot actually gave,
+`tools/import_copilot_run.py`: the app then shows the answers Copilot actually gave,
 labelled "Recorded in Copilot · <date>", and ASSUMPTIONS/cache record it.
 
 ## Key assumptions (full list in ASSUMPTIONS.md)

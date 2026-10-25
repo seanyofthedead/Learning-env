@@ -2,7 +2,7 @@
  * Synthetic demonstration data. Outputs replay from cache.json by default.
  *
  * The render functions below are pure (data in, HTML string out) so that
- * scripts/headless_run.js can run both demos in Node for preflight.
+ * tools/headless_run.js can run both demos in Node for preflight.
  */
 (function () {
   'use strict';
@@ -412,7 +412,7 @@
     var hiddenRun = main.querySelector('.revealed .hidden-tag');
     if (hiddenRun && hiddenRun.scrollIntoView) hiddenRun.scrollIntoView({ block: 'nearest' });
     $('footer-note').textContent = liveMode
-      ? (location.protocol === 'file:' ? 'Live mode needs scripts/live_server.py; showing saved outputs' : 'Live mode: falls back to saved outputs after 5 seconds')
+      ? (location.protocol === 'file:' ? 'Live mode needs tools/live_server.py; showing saved outputs' : 'Live mode: falls back to saved outputs after 5 seconds')
       : sourceLine(cache);
     var pv = $('presenter');
     pv.hidden = !state.presenter;

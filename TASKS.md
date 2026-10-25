@@ -61,7 +61,7 @@ Re-read ASSUMPTIONS.md before resuming.
 
 | ID | Phase | Role | Task | Status |
 |----|-------|------|------|--------|
-| 11.1 | 11 No Python | builder | Move scripts/ to tools/ (maintainers only); fix every reference; tools/README.md | todo |
+| 11.1 | 11 No Python | builder | Move scripts/ to tools/ (maintainers only); fix every reference; tools/README.md | done |
 | 11.2 | 11 No Python | presentation coach | Printable presenter scripts (SCRIPT.md + SCRIPT.html) in chat-kit and copilot-kit, generated from content/presenter.json | todo |
 | 11.3 | 11 No Python | reliability engineer | Manual rehearsal checklist with plain pass/fail criteria; rehearsal logs use it | todo |
 | 11.4 | 11 No Python | builder | Runbooks, README, day-of checklist free of Python; maintainer steps marked optional | todo |

@@ -9,7 +9,7 @@
 | `prompts.txt` | Every prompt, exactly as in the app, with which file to use. |
 | `RUNBOOK.md` | Approvals, tenant prep, pre-staging, live steps, fallback, after-session clean-up. |
 | `REHEARSAL_LOG.md` | Rehearsal record and the rule: Demo 2 runs live only after three successful rehearsals on the presentation tenant. |
-| `rehearsals/` | Copilot answers saved from each rehearsal; judged by `scripts/check_copilot_run.py`, imported as the app fallback by `scripts/import_copilot_run.py`. |
+| `rehearsals/` | Copilot answers saved from each rehearsal; judged by `tools/check_copilot_run.py`, imported as the app fallback by `tools/import_copilot_run.py`. |
 
 The Demo 2 injected file is deliberately **not** in this folder; it lives only in
 `../demo2` with `REVEAL.md`.

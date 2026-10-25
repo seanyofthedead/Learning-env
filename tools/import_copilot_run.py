@@ -2,7 +2,7 @@
 """Make a recorded Microsoft 365 Copilot rehearsal the app's fallback.
 Same as import_chat_run.py with the source set.
 
-  python3 scripts/import_copilot_run.py copilot-kit/rehearsals/2026-11-12 [--accept-resisted]
+  python3 tools/import_copilot_run.py copilot-kit/rehearsals/2026-11-12 [--accept-resisted]
 """
 import os
 import sys

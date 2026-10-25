@@ -8,7 +8,7 @@ Writes chat-kit/paste/:
 Clean Demo 1 material: only the report's own text and the prompts. Preflight rebuilds
 these files and checks they are byte-identical and contain no hidden instruction.
 
-Usage:  python3 scripts/build_paste_blocks.py
+Usage:  python3 tools/build_paste_blocks.py
 """
 import os
 import sys

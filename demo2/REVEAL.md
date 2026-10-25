@@ -30,15 +30,15 @@ about this synthetic report. It is disclosed to the audience in the same segment
 - In the raw XML: `xl/worksheets/sheet1.xml` row 36, string in `xl/sharedStrings.xml`,
   white font is the 5th `<font>` in `xl/styles.xml` (the clean file has only 4 fonts).
 
-That is the only difference. `scripts/inspect_files.py` prints the diff and
-`scripts/preflight.py` checks it.
+That is the only difference. `tools/inspect_files.py` prints the diff and
+`tools/preflight.py` checks it.
 
 ## How to show it
 
 **In the app (default).** Demo 2, third key press. The app shows the injected page
 with the hidden sentence turned red in place, beside both AI answers, under the
 caption "Both files look identical to a human reader." The preview is extracted from
-the real `.docx` by `scripts/build_cache.py`, so it shows what is actually in the file.
+the real `.docx` by `tools/build_cache.py`, so it shows what is actually in the file.
 
 **In Word (optional, 15 seconds).**
 1. Open the injected `.docx`. Point out the last line ends at "use only."

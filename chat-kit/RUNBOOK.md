@@ -91,13 +91,13 @@ panels show the tool name and date of the recording.
 2. Copy each answer (the tool's Copy button) into `rehearsals/<YYYY-MM-DD>-<tool>/`:
    `demo1_weak.md`, `demo1_role.md`, `demo1_task.md`, `demo1_context.md`,
    `demo1_output.md`, `demo2_clean.md`, `demo2_injected.md`
-3. Judge: `python3 scripts/check_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"`
+3. Judge: `python3 tools/check_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"`
    prints SUCCESS / FAIL / RESISTED per demo and the row for `REHEARSAL_LOG.md`.
 4. Make it the app's fallback:
-   `python3 scripts/import_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"`
+   `python3 tools/import_chat_run.py chat-kit/rehearsals/<folder> --source "<tool, model>"`
    (add `--accept-resisted` only if you will present the "tool caught it" ending).
    Every answer panel then reads "Recorded in <tool, model> · <date>".
-5. `python3 scripts/preflight.py` must print PASS.
+5. `python3 tools/preflight.py` must print PASS.
 
 ## 6. Afterwards
 
