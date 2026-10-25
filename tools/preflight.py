@@ -201,6 +201,16 @@ def run_checks(skip_node=False, accept_resisted=False):
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
+    # ---- 7b2. paper rehearsal checklist agrees with the answer key
+    ck = open(path("chat-kit", "REHEARSAL_CHECKLIST.md"), encoding="utf-8").read()
+    check("copilot-kit checklist is identical to chat-kit checklist",
+          ck == open(path("copilot-kit", "REHEARSAL_CHECKLIST.md"), encoding="utf-8").read())
+    for v in planted:
+        row = next((l for l in ck.splitlines() if v["code"] in l), "")
+        sign = "+" if v["variance_k"] > 0 else "\u2212"
+        check(f"rehearsal checklist lists {v['code']} with {sign}{abs(v['variance_k']):,} and its cause",
+              f"{sign}{abs(v['variance_k']):,}" in row and any(k in row.lower() for k in v["cause_keywords"]), row)
+
     # ---- 7c. printable presenter scripts are current (no Python needed to present)
     import build_presenter_scripts
     tmp = tempfile.mkdtemp(prefix="preflight-scripts-")

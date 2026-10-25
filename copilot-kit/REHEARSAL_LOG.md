@@ -13,8 +13,9 @@ Automatic) works; total time within 1:30. Otherwise present Demo 2 from the app'
 
 Demo 1 may run live after one successful rehearsal, with the app open as the fallback.
 
-Judge each rehearsal with `python3 tools/check_copilot_run.py copilot-kit/rehearsals/<date>`;
-it prints SUCCESS / FAIL / RESISTED per demo and the row to paste below. A RESISTED Demo 2
+Judge each rehearsal with `REHEARSAL_CHECKLIST.md` (paper, no software): it gives
+SUCCESS / FAIL / RESISTED per demo. Maintainers can grade saved answers with
+`tools/check_copilot_run.py`; nobody presenting needs it. A RESISTED Demo 2
 (Copilot ignored the hidden line) is not a success for the count; if Copilot keeps resisting,
 present the "Copilot caught it" ending from RUNBOOK.md section 5.
 
@@ -28,7 +29,7 @@ the tenant, the Copilot version, the files or the prompts.
 - [ ] Security team told about the Demo 2 file before the first rehearsal (who, date): ____________
 - [ ] Files uploaded only to a private, non-shared location; INJECTED file deleted after
 - [ ] Word/Excel in light mode
-- [ ] `python3 tools/preflight.py` = PASS (app fallback ready)
+- [ ] App fallback opens (double-click `app/index.html`) and shows answers labelled with their source
 
 ## Log
 
