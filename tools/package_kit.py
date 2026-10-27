@@ -26,6 +26,11 @@ START_HERE = """SDFM AI DEMO KIT: START HERE
 Synthetic demonstration data. Nothing here needs Python or any install:
 you need a browser, Word, and the approved chat tool.
 
+0. UNZIP FIRST
+   Right-click the zip, choose Extract All, and work from the extracted folder.
+   Use a laptop browser (Edge, Chrome or Firefox). Phone, email and Teams previews
+   don't run the app: you would see only the banner.
+
 1. QUICK LOOK (2 minutes, no AI tool needed)
    Double-click app/index.html.
    Press 1, then the right arrow 6 times: Demo 1, weak prompt to strong prompt.

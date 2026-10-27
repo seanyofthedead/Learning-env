@@ -375,9 +375,17 @@
   };
   if (typeof module !== 'undefined' && module.exports) { module.exports = core; }
   if (typeof document === 'undefined') return;
+  // index.html carries a backup copy of this file (for when app.js sits elsewhere or is
+  // missing); whichever copy runs first starts the app, the other stops here.
+  if (window.__fmDemoStarted) return;
+  window.__fmDemoStarted = true;
 
   // ================================================================ browser glue
-  var params = new URLSearchParams(location.search);
+  // No URLSearchParams: it is missing in older browsers and Edge's IE mode.
+  var params = { get: function (name) {
+    var m = new RegExp('[?&]' + name + '=([^&#]*)').exec(location.search);
+    return m ? decodeURIComponent(m[1]) : null;
+  } };
   var isPresenterWindow = params.get('presenter') === '1';
   var liveMode = params.get('live') === '1';
   var cache = null, presenterWin = null, timerHandle = null;

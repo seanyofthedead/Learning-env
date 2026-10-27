@@ -143,7 +143,7 @@ def build(outputs=None, generation=None):
     text = json.dumps(cache, indent=1, ensure_ascii=False) + "\n"
     with open(CACHE, "w", encoding="utf-8") as f:
         f.write(text)
-    embedded = embed(text)
+    embedded = embed(text) and embed_app()
     return cache, embedded
 
 
@@ -164,6 +164,30 @@ def embed(text):
     return True
 
 
+APP_RE = re.compile(r'(<script id="app-fallback">)(.*?)(</script>)', re.S)
+
+
+def embed_app():
+    """Copy app.js into index.html as a backup, so the page still works when app.js is
+    missing or cannot be loaded next to it. Returns False if there is no slot."""
+    if not os.path.exists(INDEX):
+        return False
+    html = read("app", "index.html")
+    js = read("app", "app.js").replace("</script", "<\\/script")
+    new, n = APP_RE.subn(lambda m: m.group(1) + "\n" + js + m.group(3), html)
+    if n != 1:
+        return False
+    with open(INDEX, "w", encoding="utf-8") as f:
+        f.write(new)
+    return True
+
+
+def embedded_app():
+    """The app.js copy embedded in index.html (used by preflight)."""
+    m = APP_RE.search(read("app", "index.html"))
+    return m.group(2).strip() if m else None
+
+
 def embedded_cache():
     """The JSON embedded in index.html, parsed (used by preflight)."""
     m = EMBED_RE.search(read("app", "index.html"))
@@ -179,7 +203,7 @@ def main():
         _, emb = build(outputs_from_cache(old), old["generation"])
     else:
         _, emb = build()
-    print("Wrote app/cache.json" + (" and embedded it in app/index.html" if emb else
+    print("Wrote app/cache.json" + (" and embedded it (and a backup copy of app.js) in app/index.html" if emb else
                                      " (index.html slot not found; not embedded)"))
 
 

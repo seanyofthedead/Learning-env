@@ -121,6 +121,8 @@ def run_checks(skip_node=False, accept_resisted=False):
     if gen["mode"] != "representative-pregenerated":
         check(f"{gen['mode']} cache names its source and date", bool(gen.get("model")) and bool(gen.get("generated_at")))
     check("index.html embeds an identical copy of cache.json", build_cache.embedded_cache() == cache)
+    check("index.html embeds an identical backup copy of app.js",
+          build_cache.embedded_app() == open(path("app", "app.js"), encoding="utf-8").read().strip())
 
     d1 = cache["demo1"]
     ids = [s["id"] for s in d1["stages"]]
