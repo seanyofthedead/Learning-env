@@ -108,3 +108,9 @@ Decisions made without asking. Each is reversible.
 - A27. The `scripts/` folder your original spec named was moved to `tools/` and marked
   maintainers-only, so presenters can ignore it. `tools/preflight.py` is the same file.
   Presenting needs only a browser, Word and the approved chat tool.
+- A28. A downloadable copy of the presenter kit is committed as
+  `release/SDFM_AI_demo_kit.zip` (built by `tools/package_kit.py release`; preflight fails if it
+  is out of date). It contains copies of the Demo 2 files, so "INJECTED files live only in
+  ./demo2" now means: loose files only in ./demo2, plus that packaged copy.
+- A29. The GitHub repository is public, so everything pushed, including the INJECTED
+  files, is publicly visible. Making it private is the owner's decision (see FINAL_REPORT).

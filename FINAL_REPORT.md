@@ -88,5 +88,8 @@ shows the answers the tool actually gave, labelled "Recorded in <tool> · <date>
 7. **Which chat tool(s)** are approved for the session and for rehearsal, if not Copilot,
    and that a personal or consumer account is acceptable under your policy (synthetic data
    alone does not settle that).
-8. **Projector check** per the README day-of checklist, including Copilot zoom (about
+8. **This GitHub repository is public**, so the kit, including the INJECTED files, is visible
+   to anyone. To make it private: GitHub → the repository → Settings → General → Danger
+   Zone → Change visibility → Private. Copies already downloaded or cached can't be recalled.
+9. **Projector check** per the README day-of checklist, including Copilot zoom (about
    125–150%) so answers read from the back of the room.

@@ -222,6 +222,23 @@ def run_checks(skip_node=False, accept_resisted=False):
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
+    # ---- 7d. the downloadable kit zip (release/) matches the files it packages
+    zp = path("release", "SDFM_AI_demo_kit.zip")
+    if os.path.exists(zp):
+        import package_kit
+        import zipfile
+        tmp = tempfile.mkdtemp(prefix="preflight-zip-")
+        try:
+            import contextlib, io
+            with contextlib.redirect_stdout(io.StringIO()):
+                fresh = package_kit.main(tmp)
+            with zipfile.ZipFile(zp) as a, zipfile.ZipFile(fresh) as b:
+                same = sorted(a.namelist()) == sorted(b.namelist()) and all(
+                    a.read(n) == b.read(n) for n in a.namelist())
+            check("release/SDFM_AI_demo_kit.zip is current (rebuild with tools/package_kit.py release)", same)
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
     # ---- 8. presenter script
     pres = cache["presenter"]
     want = {"demo1": {"copilot": "4:00", "chat": "4:00", "full": "4:00", "90s": "1:30", "45s": "0:45"},
