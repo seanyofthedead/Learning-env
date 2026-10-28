@@ -76,6 +76,10 @@ it takes about five seconds per stage and the script allows for it.
 
 ## 4. On stage
 
+Keep **`DEMO1_LADDER.html`** open (laptop or projected beside the chat). It shows each step's
+prompt with the new words highlighted and what to look for in the answer. Its **Copy report +
+prompt** buttons replace opening the paste files.
+
 Demo 1: Enter in A → Alt+Tab to B → Enter → Ctrl+Tab → Enter … → for the side-by-side,
 Win+Left on B and pick A in Snap Assist.
 

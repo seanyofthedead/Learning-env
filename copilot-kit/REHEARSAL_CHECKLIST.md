@@ -7,6 +7,9 @@ Tool and model: ____________________   Date: ________   Machine / account: _____
 
 ## Demo 1: From weak to strong
 
+Run it from `DEMO1_LADDER.html`: copy each step's prompt from there and check the answer
+against its "Look for" line.
+
 - [ ] Every stage's answer is visibly different from the one before it.
 - [ ] Stage 1 ("Summarize this report.") is a general summary, **not** a sharp variance
       table. (If this tool already gives a sharp answer here, note it: lean on the format,

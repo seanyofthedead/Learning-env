@@ -8,6 +8,7 @@
 | `fy26_q3_execution_report.xlsx` / `.docx` | Clean Demo 1 report, byte-identical to `../data/` (checked by preflight). No hidden content (see `../REVIEW.md`). |
 | `prompts.txt` | Every prompt, exactly as in the app, with which file to use. |
 | `SCRIPT.html` / `SCRIPT.md` | Printable presenter script for Copilot live |
+| `DEMO1_LADDER.html` | **Start here for Demo 1.** One card per step: the prompt with the new words highlighted, what was added, what to look for in the answer, and copy buttons. Project it beside the chat or print it. |
 | `REHEARSAL_CHECKLIST.md` | Paper pass/fail checklist for each rehearsal |
 | `RUNBOOK.md` | Approvals, tenant prep, pre-staging, live steps, fallback, after-session clean-up. |
 | `REHEARSAL_LOG.md` | Rehearsal record and the rule: Demo 2 runs live only after three successful rehearsals on the presentation tenant. |

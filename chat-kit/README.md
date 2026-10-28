@@ -5,6 +5,7 @@
 | File | Purpose |
 |------|---------|
 | `SCRIPT.html` / `SCRIPT.md` | Printable presenter script with timing marks, room questions, fallbacks and both Demo 2 endings |
+| `DEMO1_LADDER.html` | **Start here for Demo 1.** One card per step: the prompt with the new words highlighted, what was added, what to look for in the answer, and copy buttons. Project it beside the chat or print it. |
 | `REHEARSAL_CHECKLIST.md` | Paper pass/fail checklist for each rehearsal |
 | `RUNBOOK.md` | Routes (paste or upload), reset checklist, pre-staging, on-stage steps, fallback, recording |
 | `TOOL_CARDS.md` | Per-tool settings to clear and blanks to fill in at rehearsal (ChatGPT, Claude, Gemini, Copilot) |

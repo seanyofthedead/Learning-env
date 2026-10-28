@@ -183,6 +183,13 @@ def main():
         print(f"[{'FLAG ' if bad else 'CLEAN'}] {rel}" + ("" if not bad else "  ! unexpected content"))
         ok &= not bad
 
+    import build_ladder
+    for rel in build_ladder.FILES:
+        t = open(os.path.join(ROOT, rel), encoding="utf-8").read()
+        bad = bool(ZERO_WIDTH.search(t)) or rd.PAYLOAD.lower() in t.lower()
+        print(f"[{'FLAG ' if bad else 'CLEAN'}] {rel}" + ("  ! hidden instruction or zero-width character" if bad else ""))
+        ok &= not bad
+
     print("\nAPP: Demo 1 screens and cache")
     import json
     import shutil

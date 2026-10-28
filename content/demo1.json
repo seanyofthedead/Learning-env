@@ -2,10 +2,26 @@
   "title": "From weak to strong",
   "attachment": "fy26_q3_execution_report.xlsx",
   "parts": [
-    {"id": "role", "label": "Role", "hint": "Whose point of view"},
-    {"id": "task", "label": "Task", "hint": "What job to do"},
-    {"id": "context", "label": "Context", "hint": "Which situation and rules"},
-    {"id": "output", "label": "Output", "hint": "What shape, for whom"}
+    {
+      "id": "role",
+      "label": "Role",
+      "hint": "Whose point of view"
+    },
+    {
+      "id": "task",
+      "label": "Task",
+      "hint": "What job to do"
+    },
+    {
+      "id": "context",
+      "label": "Context",
+      "hint": "Which situation and rules"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "hint": "What shape, for whom"
+    }
   ],
   "guess_items": {
     "role": "Whose point of view should it take?",
@@ -14,37 +30,160 @@
     "output": "What should the answer look like, and for whom?"
   },
   "stages": [
-    {"id": "weak", "label": "Weak prompt", "adds": null,
-     "segments": [["Summarize this report.", "base", true]],
-     "change_note": "A tidy description, not an analysis. It leads with the total and calls execution “generally on track.”"},
-    {"id": "role", "label": "+ Role", "adds": "role",
-     "segments": [["Act as a federal budget analyst supporting an NSA directorate. ", "role", true],
-                  ["Summarize this report.", "base", false]],
-     "change_note": "Now it thinks like a budget analyst: obligations vs. expenditures, unliquidated obligations, year-end. It spots trouble, but it is still a summary."},
-    {"id": "task", "label": "+ Task", "adds": "task",
-     "segments": [["Act as a federal budget analyst supporting an NSA directorate. ", "role", false],
-                  ["Review the attached execution report and identify the five largest variances against plan.", "task", true]],
-     "change_note": "Now it does a specific job: the five largest variances, ranked, with dollars and percentages. The language is still generic and there is no sense of urgency."},
-    {"id": "context", "label": "+ Context", "adds": "context",
-     "segments": [["Act as a federal budget analyst supporting an NSA directorate. ", "role", false],
-                  ["Review the attached ", "task", false],
-                  ["FY26 Q3 ", "context", true],
-                  ["execution report ", "task", false],
-                  ["for the O&M appropriation ", "context", true],
-                  ["and identify the five largest variances against plan.", "task", false],
-                  [" Use DoD FMR Volume 3 terminology.", "context", true]],
-     "change_note": "Now it speaks the rulebook (unobligated balance, unliquidated obligation, below-threshold reprogramming, duplicate obligation) and sees the clock: O&M expires 30 September."},
-    {"id": "output", "label": "+ Output", "adds": "output",
-     "segments": [["Act as a federal budget analyst supporting an NSA directorate. ", "role", false],
-                  ["Review the attached ", "task", false],
-                  ["FY26 Q3 ", "context", false],
-                  ["execution report ", "task", false],
-                  ["for the O&M appropriation ", "context", false],
-                  ["and identify the five largest variances against plan.", "task", false],
-                  [" Use DoD FMR Volume 3 terminology.", "context", false],
-                  [" Present findings in a leadership-ready table with the variance, likely cause, and a recommended follow-up for each.", "output", true]],
-     "change_note": "Leadership-ready: one table with the variance, cause and next step for each, plus a bottom line a director can act on."}
+    {
+      "id": "weak",
+      "label": "Weak prompt",
+      "adds": null,
+      "segments": [
+        [
+          "Summarize this report.",
+          "base",
+          true
+        ]
+      ],
+      "change_note": "A tidy description, not an analysis. It leads with the total and calls execution “generally on track.”",
+      "adds_plain": "Nothing. Just “summarize.”",
+      "look_for": "A paragraph about totals (about 1.5% over plan) that sounds “on track.” No ranking, no causes, no actions."
+    },
+    {
+      "id": "role",
+      "label": "+ Role",
+      "adds": "role",
+      "segments": [
+        [
+          "Act as a federal budget analyst supporting an NSA directorate. ",
+          "role",
+          true
+        ],
+        [
+          "Summarize this report.",
+          "base",
+          false
+        ]
+      ],
+      "change_note": "Now it thinks like a budget analyst: obligations vs. expenditures, unliquidated obligations, year-end. It spots trouble, but it is still a summary.",
+      "adds_plain": "Who it should act as: a federal budget analyst.",
+      "look_for": "Budget words appear: obligations vs. expenditures, unliquidated obligations, year-end. Still a summary."
+    },
+    {
+      "id": "task",
+      "label": "+ Task",
+      "adds": "task",
+      "segments": [
+        [
+          "Act as a federal budget analyst supporting an NSA directorate. ",
+          "role",
+          false
+        ],
+        [
+          "Review the attached execution report and identify the five largest variances against plan.",
+          "task",
+          true
+        ]
+      ],
+      "change_note": "Now it does a specific job: the five largest variances, ranked, with dollars and percentages. The language is still generic and there is no sense of urgency.",
+      "adds_plain": "The exact job: find the five largest variances.",
+      "look_for": "A numbered list of five specific lines with dollar amounts. Help Desk (about −$4.8M) should be first."
+    },
+    {
+      "id": "context",
+      "label": "+ Context",
+      "adds": "context",
+      "segments": [
+        [
+          "Act as a federal budget analyst supporting an NSA directorate. ",
+          "role",
+          false
+        ],
+        [
+          "Review the attached ",
+          "task",
+          false
+        ],
+        [
+          "FY26 Q3 ",
+          "context",
+          true
+        ],
+        [
+          "execution report ",
+          "task",
+          false
+        ],
+        [
+          "for the O&M appropriation ",
+          "context",
+          true
+        ],
+        [
+          "and identify the five largest variances against plan.",
+          "task",
+          false
+        ],
+        [
+          " Use DoD FMR Volume 3 terminology.",
+          "context",
+          true
+        ]
+      ],
+      "change_note": "Now it speaks the rulebook (unobligated balance, unliquidated obligation, below-threshold reprogramming, duplicate obligation) and sees the clock: O&M expires 30 September.",
+      "adds_plain": "Which quarter, which appropriation, which rulebook (DoD FMR Volume 3).",
+      "look_for": "FMR terms: unobligated balance, reprogramming, de-obligate, tri-annual review. Mentions O&M expiring 30 September."
+    },
+    {
+      "id": "output",
+      "label": "+ Output",
+      "adds": "output",
+      "segments": [
+        [
+          "Act as a federal budget analyst supporting an NSA directorate. ",
+          "role",
+          false
+        ],
+        [
+          "Review the attached ",
+          "task",
+          false
+        ],
+        [
+          "FY26 Q3 ",
+          "context",
+          false
+        ],
+        [
+          "execution report ",
+          "task",
+          false
+        ],
+        [
+          "for the O&M appropriation ",
+          "context",
+          false
+        ],
+        [
+          "and identify the five largest variances against plan.",
+          "task",
+          false
+        ],
+        [
+          " Use DoD FMR Volume 3 terminology.",
+          "context",
+          false
+        ],
+        [
+          " Present findings in a leadership-ready table with the variance, likely cause, and a recommended follow-up for each.",
+          "output",
+          true
+        ]
+      ],
+      "change_note": "Leadership-ready: one table with the variance, cause and next step for each, plus a bottom line a director can act on.",
+      "adds_plain": "The format and audience: a leadership-ready table.",
+      "look_for": "A table with columns for variance, likely cause and recommended follow-up, five rows, often a bottom line."
+    }
   ],
-  "comparison": {"left": "weak", "right": "output",
-                 "caption": "Same report. Same AI. The only difference is the prompt."}
+  "comparison": {
+    "left": "weak",
+    "right": "output",
+    "caption": "Same report. Same AI. The only difference is the prompt."
+  }
 }

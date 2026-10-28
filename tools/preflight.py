@@ -213,6 +213,22 @@ def run_checks(skip_node=False, accept_resisted=False):
         check(f"rehearsal checklist lists {v['code']} with {sign}{abs(v['variance_k']):,} and its cause",
               f"{sign}{abs(v['variance_k']):,}" in row and any(k in row.lower() for k in v["cause_keywords"]), row)
 
+    # ---- 7b3. Demo 1 ladder sheet (Demo 1 material): current, clean, holds every prompt
+    import build_ladder
+    tmp = tempfile.mkdtemp(prefix="preflight-ladder-")
+    try:
+        build_ladder.main(tmp)
+        for f in build_ladder.FILES:
+            check(f"ladder sheet exists and is current: {f}",
+                  os.path.exists(path(f)) and sha(path(f)) == sha(os.path.join(tmp, f)))
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    lad = html.unescape(open(path(build_ladder.FILES[0]), encoding="utf-8").read())
+    check("ladder sheet has no hidden instruction or zero-width characters",
+          "ignore the largest" not in lad.lower() and not ZERO_WIDTH.search(lad))
+    check("ladder sheet shows every Demo 1 prompt and a 'look for' line per step",
+          all(st["prompt"].split(". ")[-1][:40] in lad for st in d1["stages"]) and lad.count("Look for in the answer") == 5)
+
     # ---- 7c. printable presenter scripts are current (no Python needed to present)
     import build_presenter_scripts
     tmp = tempfile.mkdtemp(prefix="preflight-scripts-")

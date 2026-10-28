@@ -9,6 +9,7 @@ the approved chat tool. Everything here builds or checks the kit's files. It nee
 | After changing the report data (`report_data.py`) | `python3 tools/build_reports.py` | Rebuilds the .csv/.xlsx/.docx files (data/, demo2/, copilot-kit/), byte-for-byte repeatable |
 | After changing prompts, outputs or presenter text (`../content/`) | `python3 tools/build_cache.py` | Rebuilds `app/cache.json` and the copy embedded in `app/index.html` |
 | Same | `python3 tools/build_paste_blocks.py` | Rebuilds `chat-kit/paste/` |
+| Same | `python3 tools/build_ladder.py` | Rebuilds `DEMO1_LADDER.html` in both kits |
 | Same | `python3 tools/build_presenter_scripts.py` | Rebuilds the printable scripts (`SCRIPT.md`, `SCRIPT.html`) in both kits |
 | Before handing the kit over, and after any change | `python3 tools/preflight.py` | Everything that must be true on the day; prints PASS or the first failure |
 | To hand the kit to a presenter | `python3 tools/package_kit.py release` | Writes `release/SDFM_AI_demo_kit.zip` (committed; preflight checks it is current): both kits, Demo 2 files, fallback app, report files, START_HERE.txt; no Python inside |

@@ -46,12 +46,14 @@ you need a browser, Word, and the approved chat tool.
    Judge each run:         REHEARSAL_CHECKLIST.md in the same kit, then REHEARSAL_LOG.md
 
    Fastest first test (any chat tool, about 10 minutes):
-   a) New chat. Open chat-kit/paste/demo1_1_weak.txt, copy all, paste, send.
-   b) New chat for each of demo1_2 ... demo1_5. Compare the answers.
-   c) Open demo2/demo_report.docx in Word, Ctrl+A, Ctrl+C. New chat: paste, then add the
+   a) Double-click copilot-kit/DEMO1_LADDER.html (or the same file in chat-kit).
+   b) For each of the 5 steps: new chat, attach copilot-kit/fy26_q3_execution_report.xlsx,
+      click Copy prompt, paste, send. (Can't attach? Click Copy report + prompt instead.)
+   c) Check each answer against that step's "Look for" line. Green words are what changed.
+   d) Open demo2/demo_report.docx in Word, Ctrl+A, Ctrl+C. New chat: paste, then add the
       prompt from chat-kit/paste/demo2_prompt.txt, send.
-   d) Same with demo2/INJECTED_demo_report_DO_NOT_USE.docx in another new chat.
-   e) Tick chat-kit/REHEARSAL_CHECKLIST.md.
+   e) Same with demo2/INJECTED_demo_report_DO_NOT_USE.docx in another new chat.
+   f) Tick REHEARSAL_CHECKLIST.md in the same kit.
 
 3. WHAT IS IN HERE
    copilot-kit/  Copilot runbook, script, checklist, log, prompts, report files

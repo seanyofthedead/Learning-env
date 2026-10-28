@@ -51,6 +51,11 @@ notifications. Projector shows windows A–D; the presenter window stays on the 
 
 ## 4. Demo 1 live (4:00)
 
+Keep **`DEMO1_LADDER.html`** open (laptop or projected beside Copilot). It shows each step's
+prompt with the new words highlighted and what to look for in the answer, so you and the
+room can see what changed. Its **Copy prompt** buttons are also the quickest way to stage the
+five chats.
+
 Follow `SCRIPT.html`. (If you use the app's presenter window instead, press → in it as
 you move so it tracks the step and the timer.)
 

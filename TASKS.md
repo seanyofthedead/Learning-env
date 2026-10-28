@@ -66,3 +66,11 @@ Re-read ASSUMPTIONS.md before resuming.
 | 11.3 | 11 No Python | reliability engineer | Manual rehearsal checklist with plain pass/fail criteria; rehearsal logs use it | done |
 | 11.4 | 11 No Python | builder | Runbooks, README, day-of checklist free of Python; maintainer steps marked optional | done |
 | 11.5 | 11 No Python | all three reviewers | Preflight covers new files; REVIEW addendum; FINAL_REPORT; preflight x3; push | done |
+
+## Phase 12: Make Demo 1 differences obvious in a live chat (after first Copilot test)
+
+| ID | Phase | Role | Task | Status |
+|----|-------|------|------|--------|
+| 12.1 | 12 Clarity | presentation coach | Plain "adds" and "look for in the answer" line per stage (content/demo1.json) | done |
+| 12.2 | 12 Clarity | front-end builder | DEMO1_LADDER.html in both kits: highlighted prompt, adds, look-for, copy buttons; print and phone tested | done |
+| 12.3 | 12 Clarity | reliability engineer | Preflight + inspection cover the ladder; runbooks, checklists, START_HERE point to it; zip rebuilt | done |
