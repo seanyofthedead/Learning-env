@@ -52,13 +52,12 @@ LINES = [
     ("SYN-105", "Network Operations Support", 9600, 7200, 7050, 5800, 5700,
      "Two contractor positions vacant in May."),
     ("SYN-106", "Data Center Operations", 6400, 4800, 4860, 3800, 3760, ""),
-    ("SYN-107", "End-User Device Refresh", 2800, 2100, 5200, 1600, 2050,
-     "One-time purchase of 1,150 replacement workstations (end of life), approved by "
-     "resource board 2 Jun; unit cost below expense/investment threshold."),
+    # SYN-107 and SYN-109 deliberately have no remark (Phase 14): as in real reports, not every
+    # line explains itself. SYN-107's cause must be asked for; SYN-109's shows in the numbers.
+    ("SYN-107", "End-User Device Refresh", 2800, 2100, 5200, 1600, 2050, ""),
     ("SYN-108", "Software Licenses & Maintenance", 3800, 2500, 3750, 2000, 2010,
      "Document SYN-26-0447 ($1,250K annual license renewal) posted 12 May and again 13 May."),
-    ("SYN-109", "Mission Support Services", 7200, 5400, 5360, 4100, 1500,
-     "Task order obligated on schedule; contractor invoices for Apr–Jun not yet received."),
+    ("SYN-109", "Mission Support Services", 7200, 5400, 5360, 4100, 1500, ""),
     ("SYN-110", "Cybersecurity Tools Sustainment", 5600, 4200, 4150, 3300, 3240, ""),
     ("SYN-111", "Travel — Mission", 1600, 1150, 1090, 1050, 990, ""),
     ("SYN-112", "Travel — Training", 600, 420, 400, 380, 360, ""),

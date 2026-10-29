@@ -85,7 +85,7 @@
       ],
       "change_note": "Now it does a specific job: the five largest variances, ranked, with dollars and percentages.",
       "adds_plain": "The exact job: find the five largest variances.",
-      "look_for": "A numbered list of five specific lines with dollar amounts. Help Desk (about −$4.8M) should be first.",
+      "look_for": "A numbered list of five specific lines with dollar amounts. Help Desk (about −$4.8M) should be first. Mission Support's cause isn't in the report: does it infer a billing lag?",
       "live": false
     },
     {
@@ -182,7 +182,7 @@
       ],
       "change_note": "Usable: a one-sentence bottom line and five short rows a Director can read in 30 seconds.",
       "adds_plain": "The format and audience: a leadership-ready table a Director reads in 30 seconds.",
-      "look_for": "It gets SHORT: a one-sentence bottom line, then a five-row table (cause and follow-up for each) that fits on one screen.",
+      "look_for": "It gets SHORT: a one-sentence bottom line, then a five-row table that fits on one screen. Watch Device Refresh: the report gives no cause, so a good answer says ask the program office.",
       "live": true
     }
   ],

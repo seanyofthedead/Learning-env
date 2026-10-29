@@ -28,13 +28,13 @@ Live in Microsoft 365 Copilot. Steps and keys: RUNBOOK.md. Pass/fail at rehearsa
 ### 2:10–3:05  + Output (live)
 
 - **Do:** Ctrl+Tab to tab 2 (the full prompt). Press Enter. Point at the last sentence of the prompt.
-- **Say:** Last part: Output. A leadership-ready table, and one sentence that changes everything: the Director will read this in thirty seconds. [Answer is up.] Now it gets short. A bottom line, then five rows: a cause and a next step for each.
+- **Say:** Last part: Output. A leadership-ready table, and one sentence that changes everything: the Director will read this in thirty seconds. [Answer is up.] Now it gets short. A bottom line, then five rows. Look at Device Refresh: the report doesn’t say why, so it says ask the program office. That’s judgment, not just reading.
 - **Fallback:** No answer starting within 20 s, or an error: “Here’s the same prompt recorded at rehearsal.” Alt+Tab to the app, press → to this step.
 
 ### 3:05–4:00  Side by side + check
 
 - **Do:** Win+Left on window B, click window A in Snap Assist. Then open the report file and press Ctrl+F: SYN-26-0447.
-- **Say:** Side by side. Left: something you have to read. Right: something you can send. Same report, same AI; only the prompt changed. [Ctrl+F.] And check one fact against the source: the same one-point-two-five-million-dollar document, posted 12 May and again 13 May. The AI was right. You still check. Who voted “on plan”?
+- **Say:** Side by side. Left: something you have to read. Right: something you can send. Same report, same AI; only the prompt changed. [Ctrl+F.] And check one fact against the source: the same one-point-two-five-million-dollar document, posted 12 May and again 13 May. The AI was right. You still check. Who voted “on plan”? Use it on whatever approved tool your system allows; the habits are the same.
 - **Fallback:** Snap fails: Alt+Tab to the app, press End for the recorded side-by-side.
 
 ## Demo 1: From weak to strong: 90 s (1:30)
@@ -103,7 +103,7 @@ Live in Microsoft 365 Copilot. Steps and keys: RUNBOOK.md. Pass/fail at rehearsa
 ### 0:00–0:10  Title
 
 - **Do:** Alt+Tab to Word, Copy A (demo_report.docx). Copilot pane open, prompt typed.
-- **Say:** Staged demo: two copies of the same synthetic report, built for today. One has a harmless hidden line. Same prompt for both.
+- **Say:** Staged demo. Say this spreadsheet came back from a program office data call, in two copies. One has a harmless hidden line. Same prompt for both.
 
 ### 0:10–0:30  Copy A
 
@@ -122,8 +122,8 @@ Live in Microsoft 365 Copilot. Steps and keys: RUNBOOK.md. Pass/fail at rehearsa
 
 - **Do:** In Copy B’s Copilot pane, send the quote prompt (prompts.txt). Then click in the document: Ctrl+A, Font Color Automatic, Font Size 12.
 - **Say:** Now I ask it to quote every sentence outside the table. [It quotes a sentence nobody saw.] Nobody here could see that. The AI read it. [Reveal in Word.] White, one-point type.
-- **If it followed the hidden line:** And it obeyed it. Three checks: ask it to quote its source, check one number yourself, ask what else is in the file. Approved tools, approved data.
-- **If the tool caught it:** It ignored it today. That’s a filter, not a guarantee. Three checks: ask it to quote its source, check one number yourself, ask what else is in the file. Approved tools, approved data.
+- **If it followed the hidden line:** And it obeyed it. Three checks: ask it to quote its source, check one number yourself, ask what else is in the file. Auditors expect that anyway. Approved tools, approved data.
+- **If the tool caught it:** It ignored it today. That’s a filter, not a guarantee. Three checks: ask it to quote its source, check one number yourself, ask what else is in the file. Auditors expect that anyway. Approved tools, approved data.
 - **Fallback:** Tool or Defender blocks or flags the file: “The control caught it: that’s why we stay on approved tools.” Go straight to the Word reveal. If the quote leaves the line out, go to the Word reveal. Never route around a block.
 
 ## Demo 2: Trust but verify: 45 s (0:45)

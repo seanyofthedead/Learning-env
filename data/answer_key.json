@@ -16,16 +16,89 @@
     "why_it_matters": "Net obligations look on plan (+1.5%) only because large line-level variances offset each other."
   },
   "planted": [
-    {"rank": 1, "code": "SYN-102", "name": "Enterprise Help Desk Services", "measure": "obligations", "variance_k": -4800, "variance_pct": -80.0,
-     "cause_id": "late_contract_award", "cause": "Late contract award", "cause_keywords": ["award", "contract slip", "contract delay"]},
-    {"rank": 2, "code": "SYN-107", "name": "End-User Device Refresh", "measure": "obligations", "variance_k": 3100, "variance_pct": 147.6,
-     "cause_id": "one_time_equipment_buy", "cause": "One-time equipment buy", "cause_keywords": ["one-time", "one time", "workstation"]},
-    {"rank": 3, "code": "SYN-109", "name": "Mission Support Services", "measure": "expenditures", "variance_k": -2600, "variance_pct": -63.4,
-     "cause_id": "billing_lag", "cause": "Billing lag", "cause_keywords": ["billing lag", "invoice", "billing"]},
-    {"rank": 4, "code": "SYN-103", "name": "Facilities Sustainment", "measure": "obligations", "variance_k": 1800, "variance_pct": 50.0,
-     "cause_id": "reprogramming", "cause": "Reprogramming", "cause_keywords": ["reprogramming"]},
-    {"rank": 5, "code": "SYN-108", "name": "Software Licenses & Maintenance", "measure": "obligations", "variance_k": 1250, "variance_pct": 50.0,
-     "cause_id": "duplicate_posting", "cause": "Duplicate posting", "cause_keywords": ["duplicate", "posted twice", "recorded twice", "double"]}
+    {
+      "rank": 1,
+      "code": "SYN-102",
+      "name": "Enterprise Help Desk Services",
+      "measure": "obligations",
+      "variance_k": -4800,
+      "variance_pct": -80.0,
+      "cause_id": "late_contract_award",
+      "cause": "Late contract award",
+      "cause_keywords": [
+        "award",
+        "contract slip",
+        "contract delay"
+      ]
+    },
+    {
+      "rank": 2,
+      "code": "SYN-107",
+      "name": "End-User Device Refresh",
+      "measure": "obligations",
+      "variance_k": 3100,
+      "variance_pct": 147.6,
+      "cause_id": "one_time_equipment_buy",
+      "cause": "One-time equipment buy (not stated in the report: a good answer flags the cause as unexplained and asks the program office)",
+      "cause_keywords": [
+        "not stated",
+        "unexplained",
+        "no explanation",
+        "not explained",
+        "unknown",
+        "no remark",
+        "program office",
+        "one-time",
+        "workstation"
+      ]
+    },
+    {
+      "rank": 3,
+      "code": "SYN-109",
+      "name": "Mission Support Services",
+      "measure": "expenditures",
+      "variance_k": -2600,
+      "variance_pct": -63.4,
+      "cause_id": "billing_lag",
+      "cause": "Billing lag (not stated in the report: inferable because obligations are on plan while expenditures lag)",
+      "cause_keywords": [
+        "billing",
+        "invoice",
+        "liquidat",
+        "payment",
+        "disburse",
+        "unpaid"
+      ]
+    },
+    {
+      "rank": 4,
+      "code": "SYN-103",
+      "name": "Facilities Sustainment",
+      "measure": "obligations",
+      "variance_k": 1800,
+      "variance_pct": 50.0,
+      "cause_id": "reprogramming",
+      "cause": "Reprogramming",
+      "cause_keywords": [
+        "reprogramming"
+      ]
+    },
+    {
+      "rank": 5,
+      "code": "SYN-108",
+      "name": "Software Licenses & Maintenance",
+      "measure": "obligations",
+      "variance_k": 1250,
+      "variance_pct": 50.0,
+      "cause_id": "duplicate_posting",
+      "cause": "Duplicate posting",
+      "cause_keywords": [
+        "duplicate",
+        "posted twice",
+        "recorded twice",
+        "double"
+      ]
+    }
   ],
   "largest_unplanted_variance_k": 150
 }

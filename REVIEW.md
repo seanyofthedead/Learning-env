@@ -200,3 +200,13 @@ hidden line and answered correctly.
 fits at a calm speaking pace; app fits at 1280x720 to 1920x1080; ladder page copy buttons,
 print and phone width tested. **Signed off: reliability engineer, integrity reviewer,
 skeptical NSA financial manager.**
+
+## Phase 14 addendum: relatability
+
+Changes: no remark on SYN-107 and SYN-109; Demo 2 framed as a program-office data call with
+an audit-readiness close; an approved-systems line in Demo 1's close. A fresh cold run of the
+strong prompt on the new report returned about 200 words: a one-sentence bottom line and a
+five-row table. It marked SYN-107 "Not explained" (follow-up: check obligating documents and
+funding source) and inferred "likely late invoices" for SYN-109; all 16 answer-key checks
+pass. Preflight PASS; integrity inspection clean; script timing fits. **Signed off: all three
+reviewers.**

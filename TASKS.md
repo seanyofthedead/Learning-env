@@ -84,3 +84,12 @@ Re-read ASSUMPTIONS.md before resuming.
 | 13.3 | 13 Optimize | security demo builder | Demo 2 quote step, three-checks habit card, honest recorded-version wording, Defender branch | done |
 | 13.4 | 13 Optimize | presentation coach | Presenter scripts rewritten (room vote, verify-the-source close, quote step); timing check | done |
 | 13.5 | 13 Optimize | builder | Runbooks, ladder (LIVE badges), prompts.txt, paste blocks, checklists, docs; preflight x3; zip; push | done |
+
+## Phase 14: Make the example relatable (after "does the audience relate?")
+
+| ID | Phase | Role | Task | Status |
+|----|-------|------|------|--------|
+| 14.1 | 14 Relatable | synthetic data designer | Blank remarks on SYN-107 (cause must be flagged as not stated) and SYN-109 (cause inferred from numbers); rebuild files; answer key | done |
+| 14.2 | 14 Relatable | prompt engineer | Representative answers, look-for lines, checklist and checks updated for the two lines | done |
+| 14.3 | 14 Relatable | presentation coach | Demo 2 framed as a program-office data call with an audit-readiness close; approved-systems line in Demo 1 close | done |
+| 14.4 | 14 Relatable | builder | Rebuild everything, preflight x3, docs, zip, push | done |

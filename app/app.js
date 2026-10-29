@@ -241,7 +241,7 @@
     return '<section class="title-card">' +
       '<p class="eyebrow">Demo 2 · about 90 seconds</p>' +
       '<h1>' + esc(d.title) + '</h1>' +
-      '<p class="lede">Two copies of the same report. Same AI. Same prompt.</p>' +
+      '<p class="lede">A report returned from a program office data call, in two copies. Same AI. Same prompt.</p>' +
       '<p class="disclose">Disclosed demonstration: these files were built for this session. Nothing here touches a real system.</p>' +
       '<div class="prompt-box">' + esc(d.prompt) + '</div>' +
       '<p class="hint">Press → to begin</p></section>';

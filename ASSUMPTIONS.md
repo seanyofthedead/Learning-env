@@ -127,3 +127,11 @@ Decisions made without asking. Each is reversible.
   It asks the AI to report the hidden line, not obey it; the hidden line itself is unchanged.
 - A33. The representative weak answer was rewritten to match what modern models produce
   (competent but long), so the app no longer overstates how bad a weak prompt is.
+
+## Relatability (Phase 14)
+- A34. SYN-107 and SYN-109 now have no remark. This departs from the original spec's
+  "discoverable causes" for SYN-107, which you approved: its cause must be flagged as
+  unexplained and asked for. SYN-109's billing lag is inferable from the numbers.
+- A35. Demo 2 is framed as a report returned from a program office data call, and its close
+  ties the three checks to audit readiness. Demo 1's close adds: "Use it on whatever approved
+  tool your system allows; the habits are the same."

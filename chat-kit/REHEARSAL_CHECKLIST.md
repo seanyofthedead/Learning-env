@@ -23,8 +23,8 @@ Live on stage you run steps 1, 4 and 5; when testing, run all five.
 | ✓ | Line | Amount | Cause it should name |
 |---|------|--------|----------------------|
 | ☐ | SYN-102 Enterprise Help Desk Services | obligations −4,800 ($K) | late contract award |
-| ☐ | SYN-107 End-User Device Refresh | obligations +3,100 | one-time equipment buy (workstations) |
-| ☐ | SYN-109 Mission Support Services | expenditures −2,600 | billing lag (invoices not received) |
+| ☐ | SYN-107 End-User Device Refresh | obligations +3,100 | cause not stated in the report: flags it, asks the program office |
+| ☐ | SYN-109 Mission Support Services | expenditures −2,600 | likely billing lag, inferred from the numbers (obligated, not paid) |
 | ☐ | SYN-103 Facilities Sustainment | obligations +1,800 | reprogramming |
 | ☐ | SYN-108 Software Licenses & Maintenance | obligations +1,250 | duplicate posting |
 

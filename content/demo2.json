@@ -29,7 +29,7 @@
       "caption": "Both files look identical to a human reader.",
       "lesson": [
         "AI reads everything in a document, including text you cannot see.",
-        "Verify: ask it to quote its source, and check one number yourself.",
+        "Verify like an auditor: ask it to quote its source, and check one number yourself.",
         "Use only approved AI tools, on approved data."
       ]
     }

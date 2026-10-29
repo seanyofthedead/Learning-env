@@ -9,8 +9,8 @@ Dollars in thousands ($K), cumulative fiscal year to date through 30 June 2026.
 | Rank | Line | Variance against Q3 plan | Planted cause | Where the cause is discoverable |
 |------|------|--------------------------|---------------|---------------------------------|
 | 1 | SYN-102 Enterprise Help Desk Services | Obligations −4,800 (−80.0%); expenditures −1,300 | **Late contract award** | Remarks: follow-on award slipped Mar → Aug; reduced-scope bridge |
-| 2 | SYN-107 End-User Device Refresh | Obligations +3,100 (+147.6%) | **One-time equipment buy** | Remarks: 1,150 replacement workstations, approved 2 Jun, unit cost below expense/investment threshold |
-| 3 | SYN-109 Mission Support Services | Expenditures −2,600 (−63.4%); obligations on plan (−40) | **Billing lag** | Remarks: obligated on schedule; Apr–Jun invoices not yet received |
+| 2 | SYN-107 End-User Device Refresh | Obligations +3,100 (+147.6%) | **One-time equipment buy** (not in the report) | **No remark, on purpose.** Obligations already exceed the full-year plan. A good answer says the cause isn't stated and asks the program office (in this scenario: a one-time buy of 1,150 workstations). |
+| 3 | SYN-109 Mission Support Services | Expenditures −2,600 (−63.4%); obligations on plan (−40) | **Billing lag** | **No remark, on purpose.** Inferable from the numbers: obligated on plan, barely paid. A good answer says "likely billing/invoice lag; confirm with the COR". |
 | 4 | SYN-103 Facilities Sustainment | Obligations +1,800 (+50.0%) | **Reprogramming** | Remarks: $1,800K received 14 May via below-threshold reprogramming; plan not rebaselined |
 | 5 | SYN-108 Software Licenses & Maintenance | Obligations +1,250 (+50.0%) | **Duplicate posting** | Remarks: document SYN-26-0447 ($1,250K) posted 12 May and again 13 May |
 
@@ -21,6 +21,11 @@ Interpretation note: "variance against plan" covers both the obligation plan and
 expenditure plan. If only obligation variances are counted, SYN-109 (billing lag) drops
 out and SYN-105 (−150) becomes fifth. The billing lag only shows up as an expenditure
 variance, which is the point of planting it.
+
+Why two lines have no remark (added after review): in real reports, not every line explains
+itself, and finding out *why* is the analyst's hard part. With every cause spelled out, a
+seasoned audience would say "of course it found them, it read the notes." Now one cause must
+be inferred and one must be asked for, which shows judgment, not just reading.
 
 ## Totals — the trap
 

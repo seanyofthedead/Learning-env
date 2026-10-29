@@ -11,9 +11,9 @@ SYN-103,Facilities Sustainment,4800,3600,5400,1800,50.0%,2700,3050,350,13.0%,"Re
 SYN-104,Utilities,5200,3900,3960,60,1.5%,3900,3880,-20,-0.5%,Seasonal cooling load slightly above estimate.
 SYN-105,Network Operations Support,9600,7200,7050,-150,-2.1%,5800,5700,-100,-1.7%,Two contractor positions vacant in May.
 SYN-106,Data Center Operations,6400,4800,4860,60,1.2%,3800,3760,-40,-1.1%,
-SYN-107,End-User Device Refresh,2800,2100,5200,3100,147.6%,1600,2050,450,28.1%,"One-time purchase of 1,150 replacement workstations (end of life), approved by resource board 2 Jun; unit cost below expense/investment threshold."
+SYN-107,End-User Device Refresh,2800,2100,5200,3100,147.6%,1600,2050,450,28.1%,
 SYN-108,Software Licenses & Maintenance,3800,2500,3750,1250,50.0%,2000,2010,10,0.5%,"Document SYN-26-0447 ($1,250K annual license renewal) posted 12 May and again 13 May."
-SYN-109,Mission Support Services,7200,5400,5360,-40,-0.7%,4100,1500,-2600,-63.4%,Task order obligated on schedule; contractor invoices for Apr–Jun not yet received.
+SYN-109,Mission Support Services,7200,5400,5360,-40,-0.7%,4100,1500,-2600,-63.4%,
 SYN-110,Cybersecurity Tools Sustainment,5600,4200,4150,-50,-1.2%,3300,3240,-60,-1.8%,
 SYN-111,Travel — Mission,1600,1150,1090,-60,-5.2%,1050,990,-60,-5.7%,
 SYN-112,Travel — Training,600,420,400,-20,-4.8%,380,360,-20,-5.3%,
