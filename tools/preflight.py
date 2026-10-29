@@ -183,6 +183,7 @@ def run_checks(skip_node=False, accept_resisted=False):
     for st in d1["stages"]:
         check(f"copilot-kit/prompts.txt has the {st['id']} prompt verbatim", st["prompt"] in kit)
     check("copilot-kit/prompts.txt has the Demo 2 prompt verbatim", d2["prompt"] in kit)
+    check("copilot-kit/prompts.txt has the Demo 2 quote prompt verbatim", build_cache.QUOTE_PROMPT in kit)
 
     # ---- 7b. any-chat paste blocks (clean Demo 1 material)
     import build_paste_blocks
@@ -271,7 +272,7 @@ def run_checks(skip_node=False, accept_resisted=False):
                   f"{secs // 60}:{secs % 60:02d}" == total, str(secs))
             if vname in ("copilot", "chat"):
                 check(f"presenter {demo}/{vname} says it is live, on synthetic data",
-                      "live" in v["cues"][0]["say"] or "staged" in v["cues"][0]["say"])
+                      "live" in v["cues"][0]["say"].lower() or "staged" in v["cues"][0]["say"].lower())
                 check(f"presenter {demo}/{vname} has a fallback line for every live step",
                       all(c.get("fallback") for c in v["cues"]
                           if c["step"] in ((1, 2, 3, 4, 5) if demo == "demo1" else (1, 2))))

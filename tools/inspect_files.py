@@ -105,7 +105,8 @@ def _prompts():
     """Every prompt the demos use (Demo 1 stages + Demo 2)."""
     import json
     c = json.load(open(os.path.join(ROOT, "app", "cache.json"), encoding="utf-8"))
-    return [st["prompt"] for st in c["demo1"]["stages"]] + [c["demo2"]["prompt"]]
+    import build_cache
+    return [st["prompt"] for st in c["demo1"]["stages"]] + [c["demo2"]["prompt"], build_cache.QUOTE_PROMPT]
 
 
 def unescape(s):

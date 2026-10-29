@@ -4,6 +4,7 @@
 Writes chat-kit/paste/:
   demo1_1_weak.txt ... demo1_5_output.txt   report text (the CSV) followed by that stage's prompt
   demo2_prompt.txt                          the Demo 2 prompt alone (the report is copied from Word live)
+  demo2_quote_prompt.txt                    the Demo 2 follow-up: quote every sentence outside the table
 
 Clean Demo 1 material: only the report's own text and the prompts. Preflight rebuilds
 these files and checks they are byte-identical and contain no hidden instruction.
@@ -19,7 +20,8 @@ import office_text  # noqa: E402
 
 ROOT = build_cache.ROOT
 STAGES = ["weak", "role", "task", "context", "output"]
-FILES = [f"chat-kit/paste/demo1_{i}_{s}.txt" for i, s in enumerate(STAGES, 1)] + ["chat-kit/paste/demo2_prompt.txt"]
+FILES = [f"chat-kit/paste/demo1_{i}_{s}.txt" for i, s in enumerate(STAGES, 1)] + [
+    "chat-kit/paste/demo2_prompt.txt", "chat-kit/paste/demo2_quote_prompt.txt"]
 
 
 def paste_block(prompt, file_name, file_text):
@@ -37,6 +39,8 @@ def main(root=ROOT):
             f.write(paste_block(st["prompt"], "fy26_q3_execution_report.csv", csv))
     with open(os.path.join(out, "demo2_prompt.txt"), "w", encoding="utf-8", newline="\n") as f:
         f.write(build_cache.DEMO2_PROMPT + "\n")
+    with open(os.path.join(out, "demo2_quote_prompt.txt"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(build_cache.QUOTE_PROMPT + "\n")
     if root == ROOT:
         print("Wrote chat-kit/paste/ (5 Demo 1 paste blocks + Demo 2 prompt)")
 

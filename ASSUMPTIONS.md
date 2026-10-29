@@ -114,3 +114,16 @@ Decisions made without asking. Each is reversible.
   ./demo2" now means: loose files only in ./demo2, plus that packaged copy.
 - A29. The GitHub repository is public, so everything pushed, including the INJECTED
   files, is publicly visible. Making it private is the owner's decision (see FINAL_REPORT).
+
+## Live-demo optimization (Phase 13)
+- A30. The strong prompt now ends with one added sentence: "The Director will read this in
+  30 seconds: start with a one-sentence bottom line, then the table, with no more than 12
+  words per cell and nothing else." Your original wording is otherwise unchanged and kept
+  in `tools/build_cache.py` as `ORIGINAL_STRONG`. Reverting is a one-line change.
+- A31. Live on stage, Demo 1 runs three prompts (stages 1, 4 and 5); the app and the ladder
+  page keep all five stages. Your room question "what is the AI being forced to guess here?"
+  stays, asked after the weak answer.
+- A32. Demo 2 adds a follow-up prompt asking the AI to quote every sentence outside the table.
+  It asks the AI to report the hidden line, not obey it; the hidden line itself is unchanged.
+- A33. The representative weak answer was rewritten to match what modern models produce
+  (competent but long), so the app no longer overstates how bad a weak prompt is.

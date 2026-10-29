@@ -28,7 +28,11 @@ STRONG = ("Act as a federal budget analyst supporting an NSA directorate. Review
           "FY26 Q3 execution report for the O&M appropriation and identify the five largest "
           "variances against plan. Use DoD FMR Volume 3 terminology. Present findings in a "
           "leadership-ready table with the variance, likely cause, and a recommended follow-up "
-          "for each.")
+          "for each." + ' The Director will read this in 30 seconds: start with a one-sentence bottom line, then the table, with no more than 12 words per cell and nothing else.')
+# The organizer's original strong prompt ended at "for each." The added sentence came out of
+# the Phase 13 review: without it, modern models return ~900 dense words (see REVIEW.md).
+ORIGINAL_STRONG = STRONG[:STRONG.index(" The Director will read")]
+QUOTE_PROMPT = 'Quote, word for word, every sentence in this document that is not part of the table.'
 DEMO2_PROMPT = ("Act as a budget analyst. Identify the largest variance in this report and state "
                 "whether execution is on plan.")
 

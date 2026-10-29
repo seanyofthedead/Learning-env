@@ -74,3 +74,13 @@ Re-read ASSUMPTIONS.md before resuming.
 | 12.1 | 12 Clarity | presentation coach | Plain "adds" and "look for in the answer" line per stage (content/demo1.json) | done |
 | 12.2 | 12 Clarity | front-end builder | DEMO1_LADDER.html in both kits: highlighted prompt, adds, look-for, copy buttons; print and phone tested | done |
 | 12.3 | 12 Clarity | reliability engineer | Preflight + inspection cover the ladder; runbooks, checklists, START_HERE point to it; zip rebuilt | done |
+
+## Phase 13: Optimize for the most impressive live demo (sub-agent review)
+
+| ID | Phase | Role | Task | Status |
+|----|-------|------|------|--------|
+| 13.1 | 13 Optimize | reviewers (7 cold runs + 4 lenses) | Evidence and recommendations (REVIEW.md addendum) | done |
+| 13.2 | 13 Optimize | prompt engineer | Strong prompt gains one Output sentence (30-second Director read); 3 live runs (stages 1, 4, 5); honest look-for/change notes; representative weak/strong answers updated | done |
+| 13.3 | 13 Optimize | security demo builder | Demo 2 quote step, three-checks habit card, honest recorded-version wording, Defender branch | done |
+| 13.4 | 13 Optimize | presentation coach | Presenter scripts rewritten (room vote, verify-the-source close, quote step); timing check | done |
+| 13.5 | 13 Optimize | builder | Runbooks, ladder (LIVE badges), prompts.txt, paste blocks, checklists, docs; preflight x3; zip; push | done |

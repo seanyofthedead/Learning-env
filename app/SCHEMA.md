@@ -120,3 +120,10 @@ With `?live=1`, served by `tools/live_server.py`, the app sends
 `{"markdown": "...", "model": "...", "latency_ms": 1234}`. Any error, non-200
 response or a wait over 5 seconds falls back to the cached output, and the status
 badge says so.
+
+## Content-only fields (not in cache.json)
+
+`content/demo1.json` stages also carry `adds_plain`, `look_for` and `live` (run live on stage
+or explain from the ladder page); `tools/build_ladder.py` uses them. `content/demo2.json`
+carries `quote_prompt` (the Demo 2 follow-up), also defined as `QUOTE_PROMPT` in
+`tools/build_cache.py`.

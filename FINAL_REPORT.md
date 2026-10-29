@@ -35,6 +35,19 @@ checklist and a card to fill in at rehearsal. Recordings are labelled with the t
 model that produced them, and the presenter window has an **Any chat live** script. Rule:
 Demo 2 live in a tool only after three successful rehearsals in that tool.
 
+## Optimized live demo (Phase 13, after sub-agent review)
+
+Fresh AI runs showed that modern assistants analyze well even from the weak prompt, and
+ignored the hidden line in Demo 2. So the live demo now teaches what really changes:
+- **Demo 1, three live prompts:** weak (long and competent), Role + Task + Context (smarter
+  and longer), full prompt (short: a bottom line and five rows). It opens with a room vote ("is
+  this directorate on plan?") and closes by checking the duplicate posting in the source.
+- **Your strong prompt has one added sentence** asking for a 30-second read. **Please confirm
+  you're happy with that**; your original text is otherwise unchanged and easy to restore.
+- **Demo 2 doesn't depend on the AI obeying:** a follow-up asks it to quote every sentence
+  outside the table, so it shows it read the hidden line; then the Word reveal and a
+  three-checks close.
+
 ## What was built
 
 | Deliverable | Where |

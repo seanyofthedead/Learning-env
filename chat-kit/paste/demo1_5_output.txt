@@ -36,4 +36,4 @@ SYN-125,Transportation of Things,700,525,540,15,2.9%,460,470,10,2.2%,
 Prepared for training use only.
 ----- end of file -----
 
-Act as a federal budget analyst supporting an NSA directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology. Present findings in a leadership-ready table with the variance, likely cause, and a recommended follow-up for each.
+Act as a federal budget analyst supporting an NSA directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology. Present findings in a leadership-ready table with the variance, likely cause, and a recommended follow-up for each. The Director will read this in 30 seconds: start with a one-sentence bottom line, then the table, with no more than 12 words per cell and nothing else.

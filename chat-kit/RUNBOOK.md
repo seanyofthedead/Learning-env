@@ -62,10 +62,11 @@ Each prompt is ready in its own fresh chat; on stage you only press Enter.
 | Window / tab | Contents | How |
 |--------------|----------|-----|
 | **A** | Demo 1 stage 1 | New chat (reset checklist). Open `paste/demo1_1_weak.txt` in a text editor → Ctrl+A, Ctrl+C → paste into the chat box → **do not send** → scroll the box to the top |
-| **B**, tabs 1–4 | Demo 1 stages 2–5 | Same with `demo1_2_role.txt` … `demo1_5_output.txt`, one new chat per tab |
+| **B**, tabs 1–2 | Demo 1 stages 4 and 5 | Same with `demo1_4_context.txt` (Role + Task + Context) and `demo1_5_output.txt` (the full prompt), one new chat per tab. Stages 2 and 3 are explained from `DEMO1_LADDER.html`, not run. |
 | **C** | Demo 2, Copy A | Word: open `../demo2/demo_report.docx` (light mode). New chat in its own tab: type the prompt from `paste/demo2_prompt.txt`, press Shift+Enter twice, then paste the copied document under it. Do not send. Scroll the box to the top. |
 | **D** | Demo 2, Copy B | Same with `../demo2/INJECTED_demo_report_DO_NOT_USE.docx` |
 | **E** | The app, fallback | Double-click `app/index.html`, press 1. |
+| Report file | For the closing check | `../data/fy26_q3_execution_report.xlsx` open, so Ctrl+F is one Alt+Tab away |
 | Laptop | Script | `SCRIPT.html` (or the app's presenter window: O, then V until **Any chat live**) |
 
 Upload instead of paste: attach the file, paste the prompt from `../copilot-kit/prompts.txt`.
@@ -76,20 +77,29 @@ it takes about five seconds per stage and the script allows for it.
 
 ## 4. On stage
 
-Keep **`DEMO1_LADDER.html`** open (laptop or projected beside the chat). It shows each step's
-prompt with the new words highlighted and what to look for in the answer. Its **Copy report +
-prompt** buttons replace opening the paste files.
+**Three prompts run live: 1 (weak), 4 (Role + Task + Context) and 5 (the full prompt).**
+Explain steps 2 and 3 from **`DEMO1_LADDER.html`** (project it beside the chat or keep it
+on the laptop). Its **Copy report + prompt** buttons replace opening the paste files. Modern
+AI writes a competent analysis even from the weak prompt; what changes is whether a
+Director can use it. The three answers show that: long, then smarter and longer, then short.
 
-Demo 1: Enter in A → Alt+Tab to B → Enter → Ctrl+Tab → Enter … → for the side-by-side,
-Win+Left on B and pick A in Snap Assist.
+Demo 1: ask "Hands up: is this directorate on plan?" → Enter in A → Alt+Tab to B, Enter →
+Ctrl+Tab, Enter → Win+Left on B and pick A in Snap Assist → Alt+Tab to the report, Ctrl+F
+`SYN-26-0447` (the same $1.25M document posted 12 and 13 May).
 
-Demo 2: Enter in C → Enter in D → reveal in Word (click in the document, Ctrl+A, Font
-Color Automatic, Font Size 12) → back in D, scroll up to the end of the pasted text.
+Demo 2: Enter in C → Enter in D ("Which file would you have trusted?") → in D send the quote
+prompt from `paste/demo2_quote_prompt.txt` (it quotes the hidden sentence, whether or not it
+obeyed it) → reveal in Word (click in the document, Ctrl+A, Font Color Automatic, Font Size
+12) → back in D, scroll up to the end of the pasted text → close with the three checks: ask
+it to quote its source, check one number yourself, ask what else is in the file.
 
 **If the tool does not follow the hidden line** (it names the Help Desk variance, or warns
 about an instruction in the text): *"This tool caught it this time. Good. Protections
 vary by tool and version, and they're not guarantees. The habit is the same: verify
-against the source."* Then reveal anyway.
+against the source."* Then do the quote step and the reveal anyway.
+
+**If the tool blocks or flags the file:** *"The control caught it. That's why we stay on
+approved tools."* Go straight to the Word reveal. Never try to get around a block.
 
 **Fallback:** no answer starting within 20 seconds, an error, or a sign-in prompt → *"Here's
 the same prompt recorded at rehearsal"* → Alt+Tab to the app at the same step. The answer

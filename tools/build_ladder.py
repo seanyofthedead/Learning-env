@@ -42,6 +42,8 @@ h2{margin:0 0 6px;font-size:22px}
 .prompt .old{color:var(--mut)}
 mark{background:var(--g);color:var(--c);font-weight:bold;padding:0 3px;border-radius:3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .look{margin:8px 0}
+.badge{display:inline-block;font-size:16px;font-weight:bold;border:2px solid var(--c);border-radius:6px;padding:0 8px;vertical-align:middle}
+.badge.live{background:var(--c);color:#fff}
 .look b{color:var(--gt)}
 .btns{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:8px}
 button{font:inherit;font-weight:bold;padding:6px 14px;border-radius:8px;border:2px solid var(--c);background:#fff;color:var(--c);cursor:pointer}
@@ -92,7 +94,9 @@ def build_page():
                        for t, _, new in st["segments"])
         cards.append(
             f"<section class=\"step\"><div class=\"num\">{i}</div><div>"
-            f"<h2>{e(st['label'])}<span class=\"adds\">Adds: {e(st['adds_plain'])}</span></h2>"
+            f"<h2>{e(st['label'])} <span class=\"badge{' live' if st.get('live') else ''}\">"
+            f"{'Run live' if st.get('live') else 'Explain from this page'}</span>"
+            f"<span class=\"adds\">Adds: {e(st['adds_plain'])}</span></h2>"
             f"<p class=\"prompt\">{segs}</p>"
             f"<p class=\"look\"><b>Look for in the answer:</b> {e(st['look_for'])}</p>"
             f"<div class=\"btns\"><button class=\"primary\" data-copy=\"p{i}\">Copy prompt</button>"
@@ -109,6 +113,8 @@ def build_page():
             f"<li class=\"screen\">Attach <b>{REPORT}</b> and click <b>Copy prompt</b>. If the tool can't take "
             "attachments, click <b>Copy report + prompt</b> instead and attach nothing.</li>"
             "<li>Paste, send, then check the answer against <b>Look for</b>. Green words are new at that step.</li>"
+            "<li><b>On stage, run only the three steps marked Run live</b> (1, 4 and 5) and explain steps 2 and 3 "
+            "from this page. When testing, run all five.</li>"
             "</ol>" + "".join(cards) +
             "<p class=\"point\">The point for the room: put the answers to step 1 and step 5 side by side. "
             "Same report, same AI. Only the prompt changed.</p>"

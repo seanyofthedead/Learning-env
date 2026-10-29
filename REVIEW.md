@@ -160,3 +160,43 @@ until a real recording is loaded. **Signed off.**
 **Skeptical NSA financial manager.** The paper checklist is what my staff would use
 anyway: five lines, five amounts, five causes, and "spot-check two numbers against the
 report." Good. **Signed off.**
+
+## Phase 13 addendum: optimizing for the most impressive live demo (sub-agent review)
+
+**Method.** Seven cold runs: fresh sub-agents imitating a typical enterprise chat assistant
+each answered one demo prompt with no knowledge of the demo (an approximation of Copilot,
+not Copilot itself). Then four reviewers (audience impact, live reliability, Demo 2
+design, showrunner) read the evidence and the kit and proposed ranked changes.
+
+**Evidence.** The weak prompt already produced the full analysis: all five problems, the
+duplicate posting, the corrected totals and recommended actions, in about 700 words. Each
+"better" prompt got longer and denser (about 1,000 words; the strong prompt's table cells
+held statute citations), so the visible difference was length and jargon, not insight. This
+matches the organizer's own Copilot test. On the injected Demo 2 copy, the model ignored the
+hidden line and answered correctly.
+
+**Consensus and what was done.**
+1. *The lesson is usability, not intelligence.* Modern AI is competent at every step; the
+   prompt decides whether a Director can use the answer. Scripts, look-for lines and the
+   representative weak answer now say so honestly.
+2. *One added Output sentence on the strong prompt* (all three Demo 1 reviewers): "The
+   Director will read this in 30 seconds: start with a one-sentence bottom line, then the
+   table, with no more than 12 words per cell and nothing else." This is the most reliable
+   lever (models follow length and format limits) and turns the climax into "long answer vs.
+   one screen". **This changes the organizer's specified prompt; flagged for sign-off.**
+3. *Three live runs instead of five:* weak, Role + Task + Context (stage 4), full prompt.
+   Steps 2 and 3 are explained from the ladder page (LIVE badges added).
+4. *Room vote to open* ("Hands up: is this directorate on plan?") and a *closing check
+   against the source* (Ctrl+F `SYN-26-0447`, posted twice), which links Demo 1 to "verify".
+5. *Demo 2 no longer depends on the AI obeying.* After Copy B, a follow-up asks the AI to
+   quote every sentence outside the table, so it shows on screen that it read the hidden
+   line. A "three checks" close (quote the source, check one number, ask what else is in the
+   file), a Defender/blocked branch, and honest wording in the recorded app versions ("in
+   this example… some tools obey it; some don't").
+6. Not done: reshaping the report to make the weak prompt fail (removing Remarks or adding
+   noise). Reviewers rated it unreliable and less credible to a skeptical room.
+
+**Checks after the changes.** Preflight PASS; integrity inspection clean; every script cue
+fits at a calm speaking pace; app fits at 1280x720 to 1920x1080; ladder page copy buttons,
+print and phone width tested. **Signed off: reliability engineer, integrity reviewer,
+skeptical NSA financial manager.**
