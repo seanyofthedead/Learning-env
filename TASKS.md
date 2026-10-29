@@ -93,3 +93,10 @@ Re-read ASSUMPTIONS.md before resuming.
 | 14.2 | 14 Relatable | prompt engineer | Representative answers, look-for lines, checklist and checks updated for the two lines | done |
 | 14.3 | 14 Relatable | presentation coach | Demo 2 framed as a program-office data call with an audit-readiness close; approved-systems line in Demo 1 close | done |
 | 14.4 | 14 Relatable | builder | Rebuild everything, preflight x3, docs, zip, push | done |
+
+## Phase 15: Lean test kit (after "too many files")
+
+| ID | Phase | Role | Task | Status |
+|----|-------|------|------|--------|
+| 15.1 | 15 Test kit | presentation coach | TEST_GUIDE.html: steps, prompts with copy buttons, what to look for, audience-readiness scorecard, colleague test | done |
+| 15.2 | 15 Test kit | builder | release/SDFM_demo_test_kit.zip = guide + 3 demo files; full kit only on request (--full); preflight; docs; push | done |

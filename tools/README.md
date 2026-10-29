@@ -12,7 +12,8 @@ the approved chat tool. Everything here builds or checks the kit's files. It nee
 | Same | `python3 tools/build_ladder.py` | Rebuilds `DEMO1_LADDER.html` in both kits |
 | Same | `python3 tools/build_presenter_scripts.py` | Rebuilds the printable scripts (`SCRIPT.md`, `SCRIPT.html`) in both kits |
 | Before handing the kit over, and after any change | `python3 tools/preflight.py` | Everything that must be true on the day; prints PASS or the first failure |
-| To hand the kit to a presenter | `python3 tools/package_kit.py release` | Writes `release/SDFM_AI_demo_kit.zip` (committed; preflight checks it is current): both kits, Demo 2 files, fallback app, report files, START_HERE.txt; no Python inside |
+| To hand someone the test kit | `python3 tools/build_test_guide.py` then `python3 tools/package_test_kit.py` | Writes `test-kit/TEST_GUIDE.html` and `release/SDFM_demo_test_kit.zip` (guide + 3 demo files; committed; preflight checks both are current) |
+| To hand over the full presenter kit | `python3 tools/package_kit.py` | Writes `dist/SDFM_AI_demo_kit.zip`: both kits, fallback app, report files, START_HERE.txt (not committed) |
 | To audit the files | `python3 tools/inspect_files.py` | Raw XML and metadata of every file; certifies no hidden content in Demo 1 material |
 | After editing presenter text | `python3 tools/check_script_timing.py` | Every cue fits its time slot at a calm speaking pace |
 

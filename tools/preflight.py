@@ -241,22 +241,31 @@ def run_checks(skip_node=False, accept_resisted=False):
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
-    # ---- 7d. the downloadable kit zip (release/) matches the files it packages
-    zp = path("release", "SDFM_AI_demo_kit.zip")
-    if os.path.exists(zp):
-        import package_kit
-        import zipfile
-        tmp = tempfile.mkdtemp(prefix="preflight-zip-")
-        try:
-            import contextlib, io
-            with contextlib.redirect_stdout(io.StringIO()):
-                fresh = package_kit.main(tmp)
-            with zipfile.ZipFile(zp) as a, zipfile.ZipFile(fresh) as b:
-                same = sorted(a.namelist()) == sorted(b.namelist()) and all(
-                    a.read(n) == b.read(n) for n in a.namelist())
-            check("release/SDFM_AI_demo_kit.zip is current (rebuild with tools/package_kit.py release)", same)
-        finally:
-            shutil.rmtree(tmp, ignore_errors=True)
+    # ---- 7d. lean test kit: guide is current and holds every prompt; zip matches its files
+    import build_test_guide
+    import package_test_kit
+    import zipfile
+    tmp = tempfile.mkdtemp(prefix="preflight-testkit-")
+    try:
+        build_test_guide.main(tmp)
+        check("test guide exists and is current: " + build_test_guide.FILE,
+              os.path.exists(path(build_test_guide.FILE)) and
+              sha(path(build_test_guide.FILE)) == sha(os.path.join(tmp, build_test_guide.FILE)))
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    guide = html.unescape(open(path(build_test_guide.FILE), encoding="utf-8").read())
+    check("test guide holds the weak, middle and strong prompts, the Demo 2 prompt and the quote prompt",
+          all(p in guide for p in (build_cache.WEAK, d1["stages"][3]["prompt"], build_cache.STRONG,
+                                   build_cache.DEMO2_PROMPT, build_cache.QUOTE_PROMPT)))
+    zp = path("release", package_test_kit.TOP + ".zip")
+    check("release/SDFM_demo_test_kit.zip exists", os.path.exists(zp))
+    with zipfile.ZipFile(zp) as z:
+        names = sorted(n.split("/", 1)[1] for n in z.namelist())
+        same = names == sorted(package_test_kit.FILES) and all(
+            z.read(f"{package_test_kit.TOP}/{n}") == open(path(src), "rb").read()
+            for n, src in package_test_kit.FILES.items())
+    check("test kit zip holds exactly the guide and the three demo files, all current "
+          "(rebuild with tools/package_test_kit.py)", same)
 
     # ---- 8. presenter script
     pres = cache["presenter"]

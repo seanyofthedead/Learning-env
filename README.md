@@ -14,8 +14,10 @@ tool-agnostic. **Everything here is synthetic demonstration data.**
 **You need no Python and no installs:** a browser, Word, and the approved chat tool.
 Everything below is files you open, print, copy and paste.
 
-**Download everything in one file:** [`release/SDFM_AI_demo_kit.zip`](release/SDFM_AI_demo_kit.zip)
-(both kits, Demo 2 files, fallback app, report files). Unzip and open `START_HERE.txt`.
+**Testing it? Download the test kit:** [`release/SDFM_demo_test_kit.zip`](release/SDFM_demo_test_kit.zip):
+four files, the three demo files plus `TEST_GUIDE.html` (steps, prompts with copy buttons,
+what to look for, and a scorecard for whether it will land). Unzip and open the guide.
+The full presenter kit (runbooks, scripts, fallback app) is in the folders below.
 
 ## Pick your kit
 

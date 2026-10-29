@@ -135,3 +135,6 @@ Decisions made without asking. Each is reversible.
 - A35. Demo 2 is framed as a report returned from a program office data call, and its close
   ties the three checks to audit readiness. Demo 1's close adds: "Use it on whatever approved
   tool your system allows; the habits are the same."
+- A36. The download on GitHub is now the lean test kit, `release/SDFM_demo_test_kit.zip`:
+  TEST_GUIDE.html plus the three demo files. The full presenter kit zip is no longer
+  committed; `tools/package_kit.py` builds it into `dist/` on request.
