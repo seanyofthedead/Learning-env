@@ -1,0 +1,20 @@
+{
+ "name": "Town of Vienna Community Center Auditorium (Vienna VA)",
+ "venue_type": "rental",
+ "jurisdiction": "VA-FAIRFAX",
+ "hourly_rate": 460.0,
+ "hours_booked": 11,
+ "min_hours": 4,
+ "price_year": 2026,
+ "includes": ["tables_chairs", "ceremony_space"],
+ "outside_catering": {"food_pp": 60, "staff_pp": 15, "alcohol_pp": 20, "soft_pp": 3, "service_pct": 0.2, "label": "ASSUMPTION budget buffet + beer and wine"},
+ "seated_capacity_with_dance_floor": 150,
+ "indoor_ceremony": true,
+ "separate_cocktail_space": null,
+ "allows_outside_vendors": null,
+ "end_time": "rentals limited to regular hours of operation (not stated)",
+ "date_available": null,
+ "within_60_min_of_dc": true,
+ "source_url": "https://www.viennava.gov/files/assets/town/v/10/parks-and-rec/pdfs/facility-and-park-rentals/vienna-community-center/facility-rental-handbook-july-2026.pdf",
+ "price_date": "Handbook July 2026, rates 1 Jul 2026-30 Jun 2027: non-resident private Auditorium $360/hr (4-hr min) + Commercial Kitchen $100/hr = $460/hr. Gyms excluded: 'Food and drink are not permitted in the gymnasiums'. Jurisdiction ASSUMPTION: VA-FAIRFAX stands in for the Town of Vienna meals tax."
+}

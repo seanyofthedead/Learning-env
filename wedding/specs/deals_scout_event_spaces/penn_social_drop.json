@@ -1,0 +1,24 @@
+{
+ "name": "Penn Social (Main + Little Penn) DROP CHECK",
+ "venue_type": "package",
+ "jurisdiction": "DC",
+ "rental_fee": 8800,
+ "tax_on_rental_fee": true,
+ "package_pp": 73,
+ "bar_pp": 65,
+ "service_pct": 0.2,
+ "price_year": 2024,
+ "includes": [
+  "tables_chairs",
+  "dance_floor",
+  "china",
+  "basic_linens",
+  "setup_breakdown"
+ ],
+ "seated_capacity_with_dance_floor": 280,
+ "indoor_ceremony": null,
+ "separate_cocktail_space": true,
+ "within_60_min_of_dc": true,
+ "source_url": "https://www.pennsocialdc.com/corporate-party-event-page",
+ "price_date": "menu PDF Jun 2024"
+}

@@ -1,0 +1,23 @@
+{
+ "venue_type": "package",
+ "price_year": 2027,
+ "within_60_min_of_dc": true,
+ "name": "Old Hickory Golf Club - in-house wedding package (price unknown)",
+ "jurisdiction": "VA-FAIRFAX",
+ "service_pct": 0.22,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "basic_linens",
+  "china",
+  "dance_floor",
+  "cake_cutting",
+  "getting_ready",
+  "free_parking"
+ ],
+ "seated_capacity_with_dance_floor": null,
+ "allows_enclosed_candles": true,
+ "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+ "package_pp": 122.88,
+ "price_date": "ASSUMPTION: package_pp set to the highest 2027 ++ price that still fits trimmed (no published price)"
+}

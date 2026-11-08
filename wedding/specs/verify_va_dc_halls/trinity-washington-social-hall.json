@@ -1,0 +1,19 @@
+{
+ "name": "Trinity Washington University O'Connor Auditorium + Social Hall (Washington DC)",
+ "venue_type": "rental",
+ "jurisdiction": "DC",
+ "rental_fee": 0.0,
+ "price_year": 2027,
+ "includes": ["free_parking", "ceremony_space"],
+ "outside_catering": {"food_pp": 60, "staff_pp": 15, "alcohol_pp": 20, "soft_pp": 3, "service_pct": 0.2, "label": "ASSUMPTION budget buffet + beer and wine"},
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": true,
+ "separate_cocktail_space": null,
+ "allows_enclosed_candles": false,
+ "allows_outside_vendors": null,
+ "end_time": null,
+ "date_available": null,
+ "within_60_min_of_dc": true,
+ "source_url": "https://www2.trinitydc.edu/conferences/",
+ "price_date": "rental not published (PLACEHOLDER $0); outside caterer must be pre-approved and adds a 20% service fee on top of the rental; setup/housekeeping extra (unknown); A/V $100-150/room/day"
+}

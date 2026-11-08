@@ -1,0 +1,21 @@
+{
+ "name": "Cascades Overlook Friday 1pm-1am (backup Fri 12 Nov 2027) + ASSUMPTION caterer",
+ "venue_type": "rental",
+ "jurisdiction": "VA",
+ "rental_fee": 2900,
+ "price_year": 2024,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "getting_ready"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "within_60_min_of_dc": true
+}

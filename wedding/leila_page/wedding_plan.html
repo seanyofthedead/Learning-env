@@ -1,0 +1,697 @@
+<title>Sean &amp; Leila's Wedding Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Marcellus&display=swap">
+<style>
+/* Layout: one narrow column, like a folded wedding programme. Quiet rules between sections; money shown in tables and to-scale bars. */
+:root {
+  --paper: #F4F6F1;
+  --card: #FFFFFF;
+  --ink: #1D2821;
+  --muted: #56635B;
+  --line: #D6DDD2;
+  --sage: #52715A;
+  --sage-strong: #3D5A45;
+  --sage-soft: #E2EBDF;
+  --stone: #9E978A;
+  --stone-soft: #EAE7E0;
+  --amber: #85560F;
+  --amber-soft: #F5EAD6;
+  --rose: #8E3F3A;
+  --rose-soft: #F4E3E0;
+  --display: "Marcellus", Georgia, "Times New Roman", serif;
+  --body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --measure: 42rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131815; --card: #1A211C; --ink: #E5EAE2; --muted: #A2ADA5; --line: #2C362F;
+    --sage: #9DBB9F; --sage-strong: #B9D2BA; --sage-soft: #213026; --stone: #857F74; --stone-soft: #2A2925;
+    --amber: #E3B865; --amber-soft: #2E2615; --rose: #E3A19A; --rose-soft: #33201E;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #131815; --card: #1A211C; --ink: #E5EAE2; --muted: #A2ADA5; --line: #2C362F;
+  --sage: #9DBB9F; --sage-strong: #B9D2BA; --sage-soft: #213026; --stone: #857F74; --stone-soft: #2A2925;
+  --amber: #E3B865; --amber-soft: #2E2615; --rose: #E3A19A; --rose-soft: #33201E;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 56px;
+}
+main { max-width: var(--measure); margin: 0 auto; display: flex; flex-direction: column; gap: 44px; }
+section { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; margin: 0; letter-spacing: 0.005em; }
+h1 { font-size: clamp(2.1rem, 7vw, 2.9rem); line-height: 1.08; }
+h2 { font-size: 1.6rem; line-height: 1.2; }
+h3 { font-size: 1.18rem; line-height: 1.3; }
+p { margin: 0; }
+a { color: var(--sage-strong); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; border-radius: 4px; }
+.eyebrow { font-size: 0.76rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); }
+.muted { color: var(--muted); }
+.small { font-size: 0.88rem; }
+.num { font-variant-numeric: tabular-nums; }
+.section-head { display: flex; flex-direction: column; gap: 6px; }
+.rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+
+/* Header */
+header { display: flex; flex-direction: column; gap: 14px; }
+.dateline { display: flex; align-items: center; gap: 12px; color: var(--sage); }
+.dateline svg { flex: none; }
+.dateline span { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+.lede { font-size: 1.08rem; max-width: 38rem; }
+.your-part { background: var(--sage-soft); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.your-part strong { font-weight: 600; }
+
+/* Decided */
+.decided { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 0; }
+.decided div { background: var(--card); padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.decided dt { font-size: 0.76rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.decided dd { margin: 0; }
+@media (max-width: 560px) { .decided { grid-template-columns: minmax(0, 1fr); } }
+
+/* Budget */
+.figure { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.figure .big { font-family: var(--display); font-size: clamp(2.6rem, 11vw, 3.6rem); line-height: 1; color: var(--sage-strong); }
+.stack { display: flex; height: 28px; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); }
+.stack span { display: block; height: 100%; }
+.seg-other { background: var(--stone); }
+.seg-venue { background: var(--sage); }
+.seg-reserve { background: repeating-linear-gradient(135deg, var(--stone-soft) 0 6px, var(--card) 6px 12px); }
+.legend { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.legend li { display: flex; flex-direction: column; gap: 2px; min-width: 0; font-size: 0.9rem; }
+.legend .key { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+.legend .swatch { width: 12px; height: 12px; border-radius: 3px; flex: none; border: 1px solid var(--line); }
+.legend strong { font-weight: 600; font-variant-numeric: tabular-nums; }
+@media (max-width: 480px) { .legend { grid-template-columns: minmax(0, 1fr); } }
+.includes { margin: 0; padding-left: 1.1rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 20px; }
+@media (max-width: 480px) { .includes { grid-template-columns: minmax(0, 1fr); } }
+
+.compare { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+.cmp-row { display: flex; flex-direction: column; gap: 6px; }
+.cmp-label { display: flex; justify-content: space-between; gap: 12px; font-size: 0.92rem; }
+.cmp-label strong { font-variant-numeric: tabular-nums; font-weight: 600; }
+.track { position: relative; height: 18px; background: var(--stone-soft); border-radius: 4px; }
+.fill { position: absolute; inset: 0 auto 0 0; border-radius: 4px; }
+.fill.over { background: var(--rose); }
+.fill.ok { background: var(--sage); }
+.limit { position: absolute; top: -5px; bottom: -5px; width: 2px; background: var(--ink); }
+.limit-note { font-size: 0.82rem; color: var(--muted); }
+
+/* Caps table */
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+td.amt, th.amt { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+tr:last-child td { border-bottom: 0; }
+tfoot td { font-weight: 600; border-top: 1px solid var(--line); }
+td .what { color: var(--muted); font-size: 0.86rem; display: block; margin-top: 2px; }
+
+/* Status */
+.status { font-size: 0.9rem; color: var(--muted); background: var(--card); border: 1px dashed var(--line); border-radius: 8px; padding: 10px 12px; }
+.status.warn { color: var(--amber); border-color: var(--amber); background: var(--amber-soft); border-style: solid; }
+
+/* Venues */
+.venues { display: flex; flex-direction: column; gap: 12px; }
+.venue { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.v-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 12px; }
+.v-meta { color: var(--muted); font-size: 0.9rem; }
+.v-cost { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.v-cost .label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.v-cost strong { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 1.05rem; }
+.v-facts { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 3px; font-size: 0.94rem; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+.chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.chip.fits { color: var(--sage-strong); background: var(--sage-soft); }
+.chip.edge { color: var(--amber); background: var(--amber-soft); }
+.chip.unknown, .chip.no { color: var(--muted); background: var(--stone-soft); }
+.chip.agree { color: var(--sage-strong); background: var(--sage-soft); }
+.chip.differ { color: var(--amber); background: var(--amber-soft); }
+.react, .choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.react button, .choice {
+  font: inherit; font-size: 0.92rem; color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; cursor: pointer; min-height: 38px;
+}
+.react button:hover:not(:disabled), .choice:hover:not(:disabled) { border-color: var(--sage); }
+.react button[aria-pressed="true"], .choice[aria-pressed="true"] { background: var(--sage); border-color: var(--sage); color: var(--card); }
+.react button:disabled, .choice:disabled { cursor: default; opacity: 0.55; }
+.others { font-size: 0.88rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.others b { font-weight: 600; color: var(--ink); }
+.empty { background: var(--card); border: 1px dashed var(--line); border-radius: 12px; padding: 20px 16px; color: var(--muted); }
+.v-link { font-size: 0.9rem; }
+
+/* Questions */
+.questions { display: flex; flex-direction: column; gap: 12px; }
+.q { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.q .hint { color: var(--muted); font-size: 0.9rem; }
+.q label { font-size: 0.84rem; color: var(--muted); }
+.q textarea { font: inherit; font-size: 0.95rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; width: 100%; box-sizing: border-box; resize: vertical; min-height: 2.6rem; }
+.q textarea:disabled { opacity: 0.6; }
+.answers { display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; }
+.answers:empty { display: none; }
+.answers .row { display: flex; flex-wrap: wrap; gap: 2px 8px; }
+.answers .who { font-weight: 600; }
+.answers .said { color: var(--ink); }
+.answers .note { color: var(--muted); }
+
+/* Agent */
+.split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.split > div { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.split ul, .both ul { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 3px; }
+@media (max-width: 560px) { .split { grid-template-columns: minmax(0, 1fr); } }
+.never { border-left: 3px solid var(--rose); padding: 4px 0 4px 12px; }
+.both { display: flex; flex-direction: column; gap: 8px; }
+
+/* Timeline */
+.timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.timeline li { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.timeline li:last-child { border-bottom: 0; }
+.timeline time { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--sage-strong); }
+.timeline li.key time { color: var(--ink); }
+.timeline li.key span { font-weight: 600; }
+@media (max-width: 420px) { .timeline li { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+
+footer { color: var(--muted); font-size: 0.85rem; display: flex; flex-direction: column; gap: 6px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .react button, .choice { transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease; }
+}
+</style>
+
+<main>
+  <header>
+    <div class="dateline">
+      <svg width="34" height="18" viewBox="0 0 34 18" aria-hidden="true">
+        <path d="M1 9 H33" stroke="currentColor" stroke-width="1" fill="none"/>
+        <path d="M17 2 C21 5 21 13 17 16 C13 13 13 5 17 2 Z" fill="currentColor"/>
+      </svg>
+      <span>Saturday · 13 November 2027</span>
+    </div>
+    <h1>Finding our venue</h1>
+    <p class="lede">Sean is using an AI planning agent to find a venue that fits the budget. This page shows what's settled, what the venue can cost, the first leads, and the questions that need both of you.</p>
+    <div class="your-part">
+      <p><strong>Your part, Leila:</strong> mark the venue leads you like, and answer the open questions near the bottom.</p>
+      <p class="small muted">Answers save on this page. Sean sees them, and so does the agent when he asks it to check.</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="h-decided">
+    <div class="section-head">
+      <p class="eyebrow">Settled on 8 November</p>
+      <h2 id="h-decided">Already decided</h2>
+    </div>
+    <dl class="decided">
+      <div><dt>Where</dt><dd>Within about an hour of DC, across DC, Maryland and Northern Virginia.</dd></div>
+      <div><dt>Guests</dt><dd>185, with tighter limits on the other categories so it fits.</dd></div>
+      <div><dt>Budget</dt><dd><span class="num">$60,000</span> including a 10% reserve of <span class="num">$5,455</span>. Spending limit <span class="num">$54,545</span>.</dd></div>
+      <div><dt>Date</dt><dd>Sat 13 Nov 2027. Backups: Sat 6 Nov, Sat 20 Nov, Fri 12 Nov. Sun 14 Nov only as a last resort.</dd></div>
+    </dl>
+  </section>
+
+  <section aria-labelledby="h-budget">
+    <div class="section-head">
+      <p class="eyebrow">The number that decides the venue</p>
+      <h2 id="h-budget">What the venue can cost</h2>
+    </div>
+    <div class="figure">
+      <span class="big num">$32,139</span>
+      <span class="muted">all in, for the venue plus food, drink and rentals · about <span class="num">$174</span> per guest</span>
+    </div>
+    <div class="stack" role="img" aria-label="Of the $60,000: $22,406 for everything else, $32,139 for the venue, food and drink, and $5,455 kept in reserve.">
+      <span class="seg-other" style="width:37.34%"></span>
+      <span class="seg-venue" style="width:53.57%"></span>
+      <span class="seg-reserve" style="width:9.09%"></span>
+    </div>
+    <ul class="legend">
+      <li><span class="key"><span class="swatch seg-other"></span>Everything else</span><strong>$22,406</strong><span class="small muted">photo, flowers, attire, music, planning</span></li>
+      <li><span class="key"><span class="swatch seg-venue"></span>Venue, food &amp; drink</span><strong>$32,139</strong><span class="small muted">the search target</span></li>
+      <li><span class="key"><span class="swatch seg-reserve"></span>Reserve</span><strong>$5,455</strong><span class="small muted">kept for surprises</span></li>
+    </ul>
+    <p>"All in" means every cost the venue choice brings with it:</p>
+    <ul class="includes small">
+      <li>Rental, including setup and cleanup hours</li>
+      <li>Food, staff and bar</li>
+      <li>Service charge and tax</li>
+      <li>Cake and cake cutting</li>
+      <li>Tables, chairs, linens, china if not included</li>
+      <li>Dance floor and delivery</li>
+      <li>Getting-ready room and parking</li>
+      <li>Required fees, like security</li>
+    </ul>
+
+    <div class="compare" role="group" aria-labelledby="h-compare">
+      <h3 id="h-compare">Catering decides whether a hall fits</h3>
+      <p class="small muted">The same $3,000 fire-company hall for 185 guests, two ways:</p>
+      <div class="cmp-row">
+        <div class="cmp-label"><span>Typical mid-range caterer, full bar</span><strong>$48,100</strong></div>
+        <div class="track"><span class="fill over" style="width:96.2%"></span><span class="limit" style="left:64.28%"></span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-label"><span>BBQ or buffet caterer, beer and wine</span><strong>$27,150</strong></div>
+        <div class="track"><span class="fill ok" style="width:54.3%"></span><span class="limit" style="left:64.28%"></span></div>
+      </div>
+      <p class="limit-note">The dark line is the $32,139 target. Bars run from $0 to $50,000.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-caps">
+    <div class="section-head">
+      <p class="eyebrow">What makes 185 guests fit</p>
+      <h2 id="h-caps">The limits for each category</h2>
+      <p class="muted">Any limit can go up if another comes down by the same amount. Changes need both of you.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Category</th><th class="amt">Limit</th></tr></thead>
+        <tbody>
+          <tr><td>Venue, food &amp; drink<span class="what">The $32,139 above, plus $2,635 of fixed costs: insurance, specialty linens, vendor meals, wedding-night room</span></td><td class="amt">$34,774</td></tr>
+          <tr><td>Planning &amp; legal<span class="what">Day-of coordinator $2,500, officiant $500, license $50, tips $2,000, emergency kit $200</span></td><td class="amt">$5,250</td></tr>
+          <tr><td>Flowers &amp; décor<span class="what">Centerpieces $100 a table for 19 tables, candles $1,000, no arch, plus bouquet, ceremony and cocktail flowers</span></td><td class="amt">$5,446</td></tr>
+          <tr><td>Attire &amp; beauty<span class="what">Dress $1,200, rings $1,200, suit $300, hair &amp; makeup trials $125, the rest at the original estimates</span></td><td class="amt">$4,375</td></tr>
+          <tr><td>Photo &amp; video<span class="what">Photographer $750 (booked), videographer $1,800</span></td><td class="amt">$2,550</td></tr>
+          <tr><td>Music &amp; sound<span class="what">DJ $1,500, ceremony and cocktail sound $500</span></td><td class="amt">$2,000</td></tr>
+          <tr><td>Stationery<span class="what">Thank-you cards. Sean's brother is covering the rest.</span></td><td class="amt">$150</td></tr>
+          <tr><td>Guests &amp; transport, pre/post events<span class="what">Only if a gift or a cut elsewhere pays for them</span></td><td class="amt">$0</td></tr>
+        </tbody>
+        <tfoot><tr><td>Total, with the reserve untouched</td><td class="amt">$54,545</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-venues">
+    <div class="section-head">
+      <p class="eyebrow">Leads to confirm, not bookings</p>
+      <h2 id="h-venues">Venue leads</h2>
+      <p class="muted">Prices come from each venue's own price sheet. Nobody has checked whether our dates are open yet. A fuller ranked list is on its way. Mark how you feel about each one.</p>
+    </div>
+    <p class="status" id="status" role="status">Loading the venue leads and saved answers…</p>
+    <div class="venues" id="venues">
+      <div class="empty">Venue leads appear here once the page connects. Each one shows its all-in cost at 185 guests and the key facts.</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-questions">
+    <div class="section-head">
+      <p class="eyebrow">Both of you</p>
+      <h2 id="h-questions">Questions for you two</h2>
+      <p class="muted">Tap an answer, and add a note if you like. Each person's answer is shown, so you can see where you agree.</p>
+    </div>
+    <div class="questions" id="questions"></div>
+  </section>
+
+  <section aria-labelledby="h-agent">
+    <div class="section-head">
+      <p class="eyebrow">Who does what</p>
+      <h2 id="h-agent">How the agent helps</h2>
+    </div>
+    <div class="split">
+      <div>
+        <h3>The agent</h3>
+        <ul>
+          <li>Searches public venue and vendor websites</li>
+          <li>Prices every venue all in, at 185 guests</li>
+          <li>Drafts every email and call script</li>
+          <li>Tracks replies, tours and holds</li>
+          <li>Keeps every category inside its limit</li>
+        </ul>
+      </div>
+      <div>
+        <h3>You two</h3>
+        <ul>
+          <li>Send the messages it drafts</li>
+          <li>Make calls and go on tours</li>
+          <li>Run the Peerspace and wedding-site searches it writes</li>
+          <li>Choose, sign and pay</li>
+        </ul>
+      </div>
+    </div>
+    <p class="never">The agent never gets your passwords. It never sends, books, signs or pays for anything.</p>
+    <div class="both">
+      <h3>Needs both of you</h3>
+      <ul>
+        <li>The guest count, the budget and the dates</li>
+        <li>Any hold that carries a fee</li>
+        <li>Choosing and signing the venue, and every deposit</li>
+        <li>Moving money between categories</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-time">
+    <div class="section-head">
+      <p class="eyebrow">Next few weeks</p>
+      <h2 id="h-time">What happens when</h2>
+    </div>
+    <ol class="timeline">
+      <li><time>Sun 8 Nov</time><span>Decisions settled. Emails to the photographer, three coordinators and three videographers.</span></li>
+      <li><time>Tue 10 Nov</time><span>First 8 to 10 venue inquiries go out, plus caterer quote requests.</span></li>
+      <li><time>21–22 Nov</time><span>First venue tours.</span></li>
+      <li><time>Wed 25 Nov</time><span>Checkpoint. If fewer than three venues fit, push on the backup dates.</span></li>
+      <li><time>5–6, 12–13 Dec</time><span>More tours, then holds on the favorites.</span></li>
+      <li class="key"><time>Fri 18 Dec</time><span>Sign the venue, after buying event insurance.</span></li>
+      <li><time>13 Feb 2027</time><span>Save-the-dates out.</span></li>
+      <li><time>18 Sep 2027</time><span>Invitations out.</span></li>
+    </ol>
+  </section>
+
+  <footer>
+    <hr class="rule">
+    <p>Updated Sun 8 Nov 2026. Venue prices come from price sheets dated 2022 to 2026 and will change before 2027.</p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var QUESTIONS = [
+    { id: "guests", q: "Is 185 the invite list, or the number you expect to come?", hint: "If 185 is the invite list, the real count may land lower, which frees up money.", options: ["Invite list", "Expected to come", "Not sure yet"] },
+    { id: "dinner", q: "What kind of dinner feels right?", hint: "At 185 guests, a buffet or BBQ caterer is what lets most halls fit.", options: ["Buffet or BBQ is fine", "Family style", "Plated dinner"] },
+    { id: "bar", q: "What should the bar serve?", options: ["Beer and wine", "Beer, wine and a signature cocktail", "Full bar"] },
+    { id: "ceremony", q: "Where should the ceremony happen?", hint: "Some halls have one big room. Staff reset it for dinner while guests are at cocktail hour.", options: ["Same venue, a room change is fine", "Same venue, separate room only", "A separate ceremony site is fine"] },
+    { id: "county", q: "Which county or city do you live in?", hint: "Some public halls charge residents less.", options: ["Montgomery", "Prince George's", "DC", "Fairfax", "Arlington", "Alexandria", "Other"] },
+    { id: "budget_share", q: "May the agent tell venues a budget range?", options: ["Yes, a range", "No, ask for their prices"] },
+    { id: "coordinator", q: "What should the coordinator do?", hint: "The higher option means $1,000 less somewhere else.", options: ["Day-of only, up to $2,500", "Help find the venue too, up to $3,500"] },
+    { id: "family", q: "Will family cover anything, such as the cake, DJ or rehearsal dinner?", options: [] },
+    { id: "avoid", q: "Any venues or areas to avoid?", hint: "The agent never suggests anything on this list.", options: [] }
+  ];
+  var REACTIONS = [["love", "Love it"], ["maybe", "Maybe"], ["pass", "Pass"]];
+  var REACTION_LABEL = { love: "Love it", maybe: "Maybe", pass: "Pass" };
+  var FIT_CLASS = { fits: "fits", edge: "edge", unknown: "unknown", no: "no" };
+
+  var db = null, user = null, myId = null;
+  var readOnly = true;
+  var venues = [], people = {}, mine = emptyMine();
+  var loaded = { venues: false, people: false };
+  var inFlight = false, dirty = false, retried = false, renderSeq = 0;
+
+  var statusEl = document.getElementById("status");
+  var venuesEl = document.getElementById("venues");
+  var questionsEl = document.getElementById("questions");
+
+  function emptyMine() { return { answers: {}, reactions: {} }; }
+  function clone(o) { return JSON.parse(JSON.stringify(o || {})); }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function setStatus(msg, warn) {
+    statusEl.textContent = msg;
+    statusEl.classList.toggle("warn", !!warn);
+    statusEl.hidden = !msg;
+  }
+  var READONLY_MSG = "You can see everything here, but your picks can't be saved from this account. Ask Sean to invite you by email as an Editor.";
+
+  // Questions render right away; controls switch on once saving is possible.
+  function buildQuestions() {
+    QUESTIONS.forEach(function (qq) {
+      var box = el("div", "q");
+      box.id = "q-" + qq.id;
+      box.appendChild(el("h3", null, qq.q));
+      if (qq.hint) box.appendChild(el("p", "hint", qq.hint));
+      if (qq.options.length) {
+        var group = el("div", "choices");
+        group.setAttribute("role", "group");
+        group.setAttribute("aria-label", qq.q);
+        qq.options.forEach(function (opt, i) {
+          var b = el("button", "choice", opt);
+          b.type = "button";
+          b.id = "c-" + qq.id + "-" + i;
+          b.setAttribute("aria-pressed", "false");
+          b.disabled = true;
+          b.addEventListener("click", function () { onChoice(qq.id, opt); });
+          group.appendChild(b);
+        });
+        box.appendChild(group);
+      }
+      var lab = el("label", null, qq.options.length ? "Add a note (optional)" : "Your answer");
+      lab.setAttribute("for", "note-" + qq.id);
+      var ta = el("textarea");
+      ta.id = "note-" + qq.id;
+      ta.rows = 2;
+      ta.disabled = true;
+      ta.addEventListener("change", function () { onNote(qq.id, ta.value); });
+      box.appendChild(lab);
+      box.appendChild(ta);
+      var ans = el("div", "answers");
+      ans.id = "a-" + qq.id;
+      ans.setAttribute("aria-live", "polite");
+      box.appendChild(ans);
+      questionsEl.appendChild(box);
+    });
+  }
+
+  function onChoice(qid, opt) {
+    if (readOnly) return;
+    var a = mine.answers[qid] || {};
+    a.choice = a.choice === opt ? "" : opt;
+    mine.answers[qid] = a;
+    commit();
+  }
+  function onNote(qid, text) {
+    if (readOnly) return;
+    var a = mine.answers[qid] || {};
+    a.note = String(text || "").slice(0, 1000);
+    mine.answers[qid] = a;
+    commit();
+  }
+  function onReact(slug, value) {
+    if (readOnly) return;
+    if (mine.reactions[slug] === value) delete mine.reactions[slug];
+    else mine.reactions[slug] = value;
+    commit();
+  }
+
+  function commit() {
+    mine.updated = new Date().toISOString();
+    people[myId] = clone(mine);
+    renderAll();
+    flush();
+  }
+
+  // One write at a time to this person's document; later edits fold into the next write.
+  async function flush() {
+    if (inFlight) { dirty = true; return; }
+    inFlight = true;
+    try {
+      do {
+        dirty = false;
+        setStatus("Saving…");
+        await db.collection("people").doc(myId).set(clone(mine));
+      } while (dirty);
+      retried = false;
+      setStatus(savedMsg());
+    } catch (e) {
+      var code = e && e.code;
+      if (code === "invalid_argument") {
+        readOnly = true;
+        setStatus(READONLY_MSG, true);
+        renderAll();
+      } else if ((code === "unavailable" || code === "resource_exhausted") && !retried) {
+        retried = true;
+        inFlight = false;
+        setTimeout(flush, 700 + Math.floor(Math.random() * 900));
+        return;
+      } else {
+        setStatus("Couldn't save just now. Check your connection, then tap your answer again.", true);
+      }
+    }
+    inFlight = false;
+  }
+  function savedMsg() { return "Your picks save automatically."; }
+
+  async function profilesFor(ids) {
+    if (!user || !ids.length) return {};
+    try { return await user.profiles(ids); } catch (e) { return {}; }
+  }
+  function nameOf(ps, id) {
+    if (id === myId) return "You";
+    var p = ps[id];
+    return (p && p.name) || "Someone";
+  }
+
+  async function renderAll() {
+    var seq = ++renderSeq;
+    var ids = Object.keys(people);
+    var ps = await profilesFor(ids);
+    if (seq !== renderSeq) return;
+    renderVenues(ps);
+    renderAnswers(ps);
+  }
+
+  function safeUrl(u) { return typeof u === "string" && /^https:\/\//i.test(u) ? u : null; }
+
+  function renderVenues(ps) {
+    if (!loaded.venues) return;
+    venuesEl.textContent = "";
+    if (!venues.length) {
+      venuesEl.appendChild(el("div", "empty", "No venue leads yet. The agent adds them here as it confirms them."));
+      return;
+    }
+    venues.forEach(function (v) {
+      var card = el("article", "venue");
+      var head = el("div", "v-head");
+      head.appendChild(el("h3", null, String(v.name || "Unnamed venue")));
+      var fit = FIT_CLASS[v.fit] || "unknown";
+      head.appendChild(el("span", "chip " + fit, String(v.fitLabel || "To confirm")));
+      card.appendChild(head);
+      var meta = [v.town, v.kind].filter(Boolean).join(" · ");
+      if (meta) card.appendChild(el("p", "v-meta", meta));
+      if (v.allIn) {
+        var cost = el("p", "v-cost");
+        cost.appendChild(el("span", "label", "All in at 185"));
+        cost.appendChild(el("strong", null, String(v.allIn)));
+        if (v.allInNote) cost.appendChild(el("span", "small muted", String(v.allInNote)));
+        card.appendChild(cost);
+      }
+      if (Array.isArray(v.facts) && v.facts.length) {
+        var ul = el("ul", "v-facts");
+        v.facts.slice(0, 6).forEach(function (f) { ul.appendChild(el("li", null, String(f))); });
+        card.appendChild(ul);
+      }
+      var url = safeUrl(v.url);
+      if (url) {
+        var a = el("a", "v-link", "Venue's own page");
+        a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer";
+        var lp = el("p"); lp.appendChild(a); card.appendChild(lp);
+      }
+      var group = el("div", "react");
+      group.setAttribute("role", "group");
+      group.setAttribute("aria-label", "Your reaction to " + (v.name || "this venue"));
+      REACTIONS.forEach(function (r) {
+        var b = el("button", null, r[1]);
+        b.type = "button";
+        b.id = "r-" + v.id + "-" + r[0];
+        b.setAttribute("aria-pressed", mine.reactions[v.id] === r[0] ? "true" : "false");
+        b.disabled = readOnly;
+        b.addEventListener("click", function () { onReact(v.id, r[0]); });
+        group.appendChild(b);
+      });
+      card.appendChild(group);
+      var others = el("p", "others");
+      Object.keys(people).forEach(function (pid) {
+        if (pid === myId) return;
+        var rx = people[pid] && people[pid].reactions && people[pid].reactions[v.id];
+        if (!rx || !REACTION_LABEL[rx]) return;
+        var s = el("span");
+        s.appendChild(el("b", null, nameOf(ps, pid)));
+        s.appendChild(document.createTextNode(": " + REACTION_LABEL[rx]));
+        others.appendChild(s);
+      });
+      if (others.childNodes.length) card.appendChild(others);
+      venuesEl.appendChild(card);
+    });
+  }
+
+  function renderAnswers(ps) {
+    QUESTIONS.forEach(function (qq) {
+      var my = mine.answers[qq.id] || {};
+      qq.options.forEach(function (opt, i) {
+        var b = document.getElementById("c-" + qq.id + "-" + i);
+        if (!b) return;
+        b.setAttribute("aria-pressed", my.choice === opt ? "true" : "false");
+        b.disabled = readOnly;
+      });
+      var ta = document.getElementById("note-" + qq.id);
+      if (ta) {
+        ta.disabled = readOnly;
+        if (document.activeElement !== ta) ta.value = my.note || "";
+      }
+      var box = document.getElementById("a-" + qq.id);
+      if (!box) return;
+      box.textContent = "";
+      var rows = [], choices = [];
+      Object.keys(people).forEach(function (pid) {
+        var a = people[pid] && people[pid].answers && people[pid].answers[qq.id];
+        if (!a || (!a.choice && !a.note)) return;
+        rows.push([pid, a]);
+        if (a.choice) choices.push(a.choice);
+      });
+      if (!rows.length) return;
+      rows.sort(function (x, y) { return (x[0] === myId) - (y[0] === myId); });
+      rows.forEach(function (r) {
+        var row = el("div", "row");
+        row.appendChild(el("span", "who", nameOf(ps, r[0]) + ":"));
+        if (r[1].choice) row.appendChild(el("span", "said", String(r[1].choice)));
+        if (r[1].note) row.appendChild(el("span", "note", (r[1].choice ? "· " : "") + String(r[1].note)));
+        box.appendChild(row);
+      });
+      if (choices.length >= 2 && qq.options.length) {
+        var same = choices.every(function (c) { return c === choices[0]; });
+        var chip = el("span", "chip " + (same ? "agree" : "differ"), same ? "You agree" : "Different answers");
+        var wrap = el("div", "row"); wrap.appendChild(chip); box.appendChild(wrap);
+      }
+    });
+  }
+
+  async function init() {
+    if (!window.claude || typeof window.claude.use !== "function") {
+      setStatus("Open this page on claude.ai to see the venue leads and save your answers.", true);
+      return;
+    }
+    var both = await Promise.all([window.claude.use("db"), window.claude.use("user")]);
+    db = both[0]; user = both[1];
+    if (!db) {
+      setStatus("Sign in to claude.ai to see the venue leads and save your answers.", true);
+      return;
+    }
+    myId = user ? await user.id() : null;
+    var canWrite = user ? await user.can("data.write") : null;
+    readOnly = !myId || canWrite === false;
+
+    var timer = setTimeout(function () {
+      if (!loaded.venues || !loaded.people) setStatus("Can't reach the saved data yet. It will appear when the connection returns.", true);
+    }, 10000);
+    function settle() {
+      if (loaded.venues && loaded.people) {
+        clearTimeout(timer);
+        setStatus(readOnly ? READONLY_MSG : savedMsg(), readOnly);
+      }
+    }
+    function fail() {
+      clearTimeout(timer);
+      setStatus("The saved data stopped updating. Refresh the page later to see the latest.", true);
+    }
+
+    db.collection("venues").orderBy("order").onSnapshot(function (snap) {
+      venues = snap.docs.map(function (d) { var o = clone(d.data()); o.id = d.id; return o; });
+      if (!snap.metadata.fromCache) loaded.venues = true;
+      else if (!loaded.venues && snap.size) loaded.venues = true;
+      renderAll(); settle();
+    }, fail);
+
+    db.collection("people").onSnapshot(function (snap) {
+      var next = {};
+      snap.docs.forEach(function (d) { next[d.id] = clone(d.data()); });
+      people = next;
+      if (myId && !inFlight && !dirty) {
+        var m = people[myId];
+        mine = m ? { answers: clone(m.answers), reactions: clone(m.reactions), updated: m.updated } : emptyMine();
+      } else if (myId) {
+        people[myId] = clone(mine);
+      }
+      if (!snap.metadata.fromCache) loaded.people = true;
+      renderAll(); settle();
+    }, fail);
+  }
+
+  buildQuestions();
+  init().catch(function () {
+    setStatus("Something went wrong loading the saved data. Refresh the page to try again.", true);
+  });
+})();
+</script>

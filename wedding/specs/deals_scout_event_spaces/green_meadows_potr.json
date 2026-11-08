@@ -1,0 +1,25 @@
+{
+ "name": "Green Meadows Farm - The Stables + POTR published menu",
+ "venue_type": "rental",
+ "jurisdiction": "MD",
+ "rental_fee": 4350,
+ "ceremony_fee": 650,
+ "other_fees": 500,
+ "price_year": 2027,
+ "includes": [
+  "free_parking",
+  "getting_ready"
+ ],
+ "outside_catering": {
+  "food_pp": 79.95,
+  "staff_pp": 0,
+  "alcohol_pp": 16.45,
+  "soft_pp": 0,
+  "bartender_fee": 375,
+  "guests_per_bartender": 75,
+  "service_pct": 0.0,
+  "cake_cutting_pp": 0.0,
+  "label": "Putting on the Ritz published: Buffet #3 top of $65.95-79.95 range (Oct 2026 PDF) + beer&wine 5h $13.95+$2.50 (2026) + bartenders $300/4h; no service charge stated (ASK)"
+ },
+ "within_60_min_of_dc": true
+}

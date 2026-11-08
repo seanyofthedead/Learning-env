@@ -1,0 +1,30 @@
+{
+ "name": "Silver Spring Civic Building Great Hall (prior lead, out-of-county)",
+ "venue_type": "hourly",
+ "jurisdiction": "MD",
+ "hourly_rate": 485,
+ "hours_booked": 11,
+ "min_hours": 4,
+ "other_fees": 700,
+ "security_fee": 320,
+ "price_year": 2026,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "within_60_min_of_dc": true,
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": null,
+ "separate_cocktail_space": null,
+ "allows_enclosed_candles": true,
+ "source_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+ "price_date": "undated (c)2026"
+}

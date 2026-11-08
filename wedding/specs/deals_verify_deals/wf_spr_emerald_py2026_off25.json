@@ -1,0 +1,30 @@
+{
+ "venue_type": "package",
+ "jurisdiction": "VA-FAIRFAX",
+ "service_pct": 0.22,
+ "tax_on_service": true,
+ "ceremony_fee": 1110.0,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "basic_linens",
+  "china",
+  "dance_floor",
+  "free_parking",
+  "ceremony_space",
+  "cocktail_space"
+ ],
+ "indoor_ceremony": true,
+ "separate_cocktail_space": true,
+ "allows_enclosed_candles": true,
+ "allows_outside_vendors": null,
+ "date_available": null,
+ "within_60_min_of_dc": true,
+ "end_time": "unknown; 5-hr package (1 hr cocktail + 4 hr ballroom); Springfield evening start from 4:00 pm, Fair Oaks from 5:30 pm -> about 10:30 pm+",
+ "price_date": "undated; waterfordreceptions.com is a stale mirror (Last-Modified 26 Apr 2025; savings calendar frozen at Oct 2018); home page hijacked by spam",
+ "name": "Waterford at Springfield (Hazel Ballroom) - emerald $77pp -25% calendar, price_year ASSUMPTION 2026",
+ "package_pp": 57.75,
+ "price_year": 2026,
+ "seated_capacity_with_dance_floor": 190,
+ "source_url": "https://www.waterfordreceptions.com/weddings/packages/wedding-reception/emerald-buffet-package/"
+}

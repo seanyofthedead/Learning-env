@@ -1,0 +1,30 @@
+{
+ "name": "The Lodge at Hal & Berni Hanson Regional Park (Aldie VA)",
+ "venue_type": "rental",
+ "jurisdiction": "VA",
+ "rental_fee": 6250.0,
+ "price_year": 2026,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "dance_floor",
+  "free_parking"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": null,
+ "separate_cocktail_space": false,
+ "allows_outside_vendors": true,
+ "end_time": "11:00pm (last call 10:45pm; vendors out by midnight)",
+ "date_available": null,
+ "within_60_min_of_dc": null,
+ "source_url": "https://www.loudoun.gov/DocumentCenter/View/173616/The-Lodge-Rental-Rates",
+ "price_date": "undated rate sheet (current Nov 2026)"
+}

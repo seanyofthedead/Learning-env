@@ -1,0 +1,17 @@
+{
+ "venue_type": "package",
+ "price_year": 2027,
+ "within_60_min_of_dc": true,
+ "name": "Spates Hall Conference Center - Patton Ballroom (JBM-HH Fort Myer) - catered package (price unknown)",
+ "jurisdiction": "VA-ARLINGTON",
+ "service_pct": 0.25,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "dance_floor",
+  "free_parking"
+ ],
+ "source_url": "https://jbmhh.armymwr.com/programs/Spates-Hall-Conference-Center",
+ "package_pp": 102.99,
+ "price_date": "ASSUMPTION: package_pp set to the highest 2027 ++ price that still fits trimmed (no published price)"
+}

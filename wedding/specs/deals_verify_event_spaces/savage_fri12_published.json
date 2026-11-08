@@ -1,0 +1,25 @@
+{
+ "name": "Great Room at Historic Savage Mill - Fri 12 Nov (POTR exclusive)",
+ "venue_type": "package",
+ "jurisdiction": "MD",
+ "rental_fee": 1900,
+ "package_pp": 79.95,
+ "bar_pp": 16.45,
+ "service_pct": 0.0,
+ "other_fees": 900,
+ "price_year": 2026,
+ "includes": [
+  "tables_chairs",
+  "dance_floor",
+  "free_parking",
+  "cake_cutting"
+ ],
+ "seated_capacity_with_dance_floor": 275,
+ "indoor_ceremony": false,
+ "separate_cocktail_space": false,
+ "allows_outside_vendors": null,
+ "end_time": "4-h block starting 7pm or later, +$150/h, all parties end by 1am",
+ "within_60_min_of_dc": true,
+ "source_url": "greatroomsavagemill.com/rental-info, /faqs, /great-room-weddings, /about-us; POTR PDFs",
+ "price_date": "room 2025&2026; POTR Buffet3 Oct-2026; bar Mar-2026"
+}

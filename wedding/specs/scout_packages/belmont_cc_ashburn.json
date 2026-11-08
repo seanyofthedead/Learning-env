@@ -1,0 +1,12 @@
+{
+ "venue_type": "package",
+ "price_year": 2027,
+ "within_60_min_of_dc": true,
+ "name": "Belmont Country Club (Ashburn) - package (price unknown)",
+ "jurisdiction": "VA",
+ "service_pct": 0.22,
+ "includes": [],
+ "source_url": "https://www.invitedclubs.com/clubs/belmont-country-club/host-an-event/event-rooms",
+ "package_pp": 89.88,
+ "price_date": "ASSUMPTION: package_pp set to the highest 2027 ++ price that still fits trimmed (no published price)"
+}

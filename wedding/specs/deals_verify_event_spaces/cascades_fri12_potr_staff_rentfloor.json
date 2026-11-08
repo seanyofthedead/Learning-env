@@ -1,0 +1,31 @@
+{
+ "name": "Cascades Overlook - Fri 12 Nov + POTR + ASSUMPTION staff",
+ "venue_type": "rental",
+ "jurisdiction": "VA",
+ "rental_fee": 2900,
+ "price_year": 2024,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "getting_ready"
+ ],
+ "outside_catering": {
+  "food_pp": 83.15,
+  "staff_pp": 15.0,
+  "alcohol_pp": 17.11,
+  "soft_pp": 0,
+  "bartender_fee": 390.0,
+  "guests_per_bartender": 75,
+  "service_pct": 0.0,
+  "cake_cutting_pp": 0.0,
+  "label": "POTR published 2026 x1.04: Buffet #3 top $79.95 (Oct-2026 PDF) + beer&wine 5h $16.45 (Mar-2026 PDF) + bartender $300/4h (~$375/5h ASSUMPTION); no staff/service listed + ASSUMPTION staff $15/guest (FAQ: catering staff billed extra)"
+ },
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": null,
+ "separate_cocktail_space": null,
+ "allows_outside_vendors": null,
+ "end_time": "PDF: until 1am; website: bookable 8am-12am",
+ "within_60_min_of_dc": true,
+ "source_url": "cascadeseventcenter.com/weddings + 2024 pricing PDF",
+ "price_date": "2024"
+}

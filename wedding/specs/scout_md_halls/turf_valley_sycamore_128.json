@@ -1,0 +1,24 @@
+{
+ "name": "Turf Valley Resort - Sycamore + 1 extra hour full bar ($10pp) (prior lead update)",
+ "venue_type": "package",
+ "jurisdiction": "MD",
+ "package_pp": 128,
+ "service_pct": 0.22,
+ "ceremony_fee": 1000,
+ "price_year": 2026,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "basic_linens",
+  "china",
+  "dance_floor",
+  "free_parking",
+  "cake_cutting",
+  "ceremony_space",
+  "cocktail_space"
+ ],
+ "seated_capacity_with_dance_floor": null,
+ "within_60_min_of_dc": true,
+ "source_url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+ "price_date": "brochure file dated nov2026"
+}

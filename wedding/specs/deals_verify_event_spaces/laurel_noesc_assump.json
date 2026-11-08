@@ -1,0 +1,27 @@
+{
+ "name": "Laurel Park - same rooms, 2017 rates NOT escalated (optimistic)",
+ "venue_type": "rental",
+ "jurisdiction": "MD",
+ "rental_fee": 5000,
+ "price_year": 2027,
+ "includes": [
+  "tables_chairs",
+  "basic_linens"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": true,
+ "separate_cocktail_space": true,
+ "allows_outside_vendors": null,
+ "end_time": null,
+ "within_60_min_of_dc": true,
+ "source_url": "laurelpark.com NEW Room Rental Pricing.pdf (created 2 Nov 2017); laurelpark.com/events-at-the-maryland-jockey-club",
+ "price_date": "2017"
+}

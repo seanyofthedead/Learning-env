@@ -1,0 +1,24 @@
+{
+ "name": "Howard County Fairgrounds - Dining Hall + 4-H Hall",
+ "venue_type": "rental",
+ "jurisdiction": "MD",
+ "rental_fee": 1000,
+ "price_year": 2026,
+ "includes": [
+  "free_parking"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "within_60_min_of_dc": null,
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": true,
+ "separate_cocktail_space": true,
+ "source_url": "https://howardcountyfairmd.com/rental/",
+ "price_date": "undated; page notes 2026 renovation"
+}

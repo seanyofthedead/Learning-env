@@ -1,0 +1,23 @@
+{
+ "name": "Brentsville Hall DROP CHECK (Sat off-peak, Silver buffet + beer/wine)",
+ "venue_type": "package",
+ "jurisdiction": "VA-FAIRFAX",
+ "rental_fee": 7900,
+ "package_pp": 99,
+ "bar_pp": 35,
+ "service_pct": 0.2,
+ "price_year": 2026,
+ "includes": [
+  "tables_chairs",
+  "dance_floor",
+  "china",
+  "basic_linens",
+  "setup_breakdown",
+  "getting_ready",
+  "free_parking"
+ ],
+ "seated_capacity_with_dance_floor": 180,
+ "within_60_min_of_dc": true,
+ "source_url": "https://brentsvillehall.com/wedding-experience",
+ "price_date": "2026 (search snippet; page did not list)"
+}

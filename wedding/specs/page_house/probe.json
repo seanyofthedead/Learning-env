@@ -1,0 +1,1 @@
+{"name": "Page House probe", "venue_type": "hourly", "jurisdiction": "DC", "min_hours": 4, "cleaning_fee": 300, "price_year": 2026, "hourly_rate": 750, "hours_booked": 11, "platform_fee_pct": 0.09, "outside_catering": {"food_pp": 0, "staff_pp": 0, "alcohol_pp": 0, "soft_pp": 0, "service_pct": 0.2, "bartender_fee": 0, "label": "probe"}, "within_60_min_of_dc": true}

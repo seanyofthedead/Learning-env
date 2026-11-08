@@ -1,0 +1,8 @@
+{"name":"Samuel Riggs IV Alumni Center (UMD) - Nov off-peak Fri/Sat, 101-249 tier","venue_type":"rental","jurisdiction":"MD",
+ "rental_fee":8500,"ceremony_fee":1200,"extra_hour_fee":400,
+ "other_fees":6049.5,
+ "price_year":2026,
+ "includes":["tables_chairs","dance_floor","getting_ready","free_parking","ceremony_space","cocktail_space"],
+ "outside_catering":{"food_pp":60,"staff_pp":15,"alcohol_pp":0,"soft_pp":3,"service_pct":0.2,"label":"ASSUMPTION budget buffet from Riggs required-caterer list (bar bought from Riggs, in other_fees)"},
+ "seated_capacity_with_dance_floor":500,"indoor_ceremony":true,"separate_cocktail_space":true,"allows_outside_vendors":null,
+ "within_60_min_of_dc":true,"source_url":"https://riggs.umd.edu/events-packages/wedding-packages","price_date":"undated page, read 8 Nov 2026"}

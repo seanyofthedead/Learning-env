@@ -1,0 +1,32 @@
+{
+ "name": "The Clubs at Quantico - Tradition Buffet package (2023 guide) - variant: cash bar after cocktail hour (no assumed $15pp bar extension)",
+ "venue_type": "package",
+ "jurisdiction": "VA",
+ "other_fees": 23520,
+ "ceremony_fee": 500,
+ "price_year": 2023,
+ "outside_catering": {
+  "food_pp": 0,
+  "staff_pp": 0,
+  "alcohol_pp": 0,
+  "soft_pp": 0,
+  "bartender_fee": 0,
+  "service_pct": 0,
+  "cake_cutting_pp": 0,
+  "label": "none - all F&B inside venue package (tax-free, service included)"
+ },
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "basic_linens",
+  "china",
+  "dance_floor",
+  "cake_cutting",
+  "cocktail_space"
+ ],
+ "allows_enclosed_candles": false,
+ "within_60_min_of_dc": true,
+ "end_time": "unknown: event start 10:00 AM-7:00 PM; 4h reception, then $300/h",
+ "source_url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1",
+ "price_date": "Wedding Guide revised 12/13/2023"
+}

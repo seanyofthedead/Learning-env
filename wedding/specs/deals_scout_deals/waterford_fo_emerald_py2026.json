@@ -1,0 +1,26 @@
+{
+ "venue_type": "package",
+ "jurisdiction": "VA-FAIRFAX",
+ "service_pct": 0.22,
+ "ceremony_fee": 1110,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "basic_linens",
+  "china",
+  "dance_floor",
+  "free_parking",
+  "cocktail_space",
+  "ceremony_space"
+ ],
+ "indoor_ceremony": true,
+ "separate_cocktail_space": true,
+ "allows_outside_vendors": null,
+ "within_60_min_of_dc": true,
+ "name": "Waterford at Fair Oaks (Alexander/Carrington) - Emerald buffet $77, no discount, price_year ASSUMPTION 2026",
+ "package_pp": 77,
+ "price_year": 2026,
+ "seated_capacity_with_dance_floor": 300,
+ "source_url": "https://www.waterfordreceptions.com/weddings/packages/wedding-reception/emerald-buffet-package/",
+ "price_date": "undated; mirror pages, savings calendar shows 2018"
+}

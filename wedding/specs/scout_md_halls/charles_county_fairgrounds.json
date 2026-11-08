@@ -1,0 +1,21 @@
+{
+ "name": "Charles County Fairgrounds (Grand Hall / Halls A-C)",
+ "venue_type": "rental",
+ "jurisdiction": "MD",
+ "rental_fee": 0,
+ "price_year": 2026,
+ "includes": [
+  "free_parking"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "within_60_min_of_dc": true,
+ "source_url": "https://fairgroundrentals.com/charles/",
+ "price_date": "no prices published"
+}

@@ -1,0 +1,27 @@
+{
+ "name": "Odenton Volunteer Fire Company Social Hall",
+ "venue_type": "rental",
+ "jurisdiction": "MD",
+ "rental_fee": 800,
+ "extra_hour_fee": 300,
+ "other_fees": 300,
+ "required_insurance_extra": 150,
+ "price_year": 2026,
+ "includes": [
+  "tables_chairs",
+  "free_parking"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine",
+  "holds_liquor_license": false
+ },
+ "within_60_min_of_dc": true,
+ "end_time": "vacate by 12:00 AM Fri/Sat",
+ "source_url": "https://www.ovfc28.org/contact-us/",
+ "price_date": "page undated (live Nov 2026)"
+}

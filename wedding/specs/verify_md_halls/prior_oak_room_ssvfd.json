@@ -1,0 +1,30 @@
+{
+ "name": "Oak Room at Sandy Spring VFD (prior lead)",
+ "venue_type": "rental",
+ "jurisdiction": "MD",
+ "rental_fee": 3000,
+ "extra_hour_fee": 400,
+ "other_fees": 500,
+ "price_year": 2026,
+ "includes": [
+  "tables_chairs",
+  "dance_floor",
+  "free_parking"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "within_60_min_of_dc": true,
+ "seated_capacity_with_dance_floor": 220,
+ "indoor_ceremony": null,
+ "separate_cocktail_space": null,
+ "allows_enclosed_candles": true,
+ "end_time": "events end 12:00am; music ends 11:00pm",
+ "source_url": "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+ "price_date": "2026 contract"
+}

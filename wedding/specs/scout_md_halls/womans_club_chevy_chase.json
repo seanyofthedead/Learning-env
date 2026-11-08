@@ -1,0 +1,24 @@
+{
+ "name": "Woman's Club of Chevy Chase",
+ "venue_type": "rental",
+ "jurisdiction": "MD",
+ "rental_fee": 0,
+ "price_year": 2026,
+ "includes": [
+  "dance_floor",
+  "getting_ready"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "within_60_min_of_dc": true,
+ "indoor_ceremony": true,
+ "separate_cocktail_space": true,
+ "source_url": "https://wcccmaryland.org/weddings",
+ "price_date": "no prices published"
+}

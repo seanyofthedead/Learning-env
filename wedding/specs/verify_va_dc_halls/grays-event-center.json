@@ -1,0 +1,18 @@
+{
+ "name": "Gray's Event Center (Woodbridge VA)",
+ "venue_type": "rental",
+ "jurisdiction": "VA-FAIRFAX",
+ "rental_fee": 0.0,
+ "price_year": 2027,
+ "includes": ["tables_chairs", "getting_ready", "free_parking"],
+ "outside_catering": {"food_pp": 60, "staff_pp": 15, "alcohol_pp": 20, "soft_pp": 3, "service_pct": 0.2, "label": "ASSUMPTION budget buffet + beer and wine"},
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": null,
+ "separate_cocktail_space": null,
+ "allows_outside_vendors": true,
+ "end_time": null,
+ "date_available": null,
+ "within_60_min_of_dc": true,
+ "source_url": "https://graysevents.com/venue",
+ "price_date": "rental price not published (PLACEHOLDER $0). Jurisdiction ASSUMPTION: VA-FAIRFAX (10%) stands in for Prince William County 6% sales + 3% meals tax = 9% (pwcva.gov, from 1 Jan 2026)"
+}

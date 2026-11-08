@@ -1,0 +1,18 @@
+{
+ "venue_type": "package",
+ "price_year": 2027,
+ "within_60_min_of_dc": true,
+ "name": "Crowne Plaza College Park - Washington DC (Greenbelt) - hotel package (price unknown)",
+ "jurisdiction": "MD",
+ "service_pct": 0.24,
+ "includes": [
+  "tables_chairs",
+  "setup_breakdown",
+  "basic_linens",
+  "china",
+  "cocktail_space"
+ ],
+ "source_url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet",
+ "package_pp": 108.45,
+ "price_date": "ASSUMPTION: package_pp set to the highest 2027 ++ price that still fits trimmed (no published price)"
+}

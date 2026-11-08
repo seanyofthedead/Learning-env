@@ -1,0 +1,24 @@
+{
+ "name": "Union Mills Public House - Sat half day 7h (Nov 2027) + FAQ in-house est. $120/guest",
+ "venue_type": "package",
+ "jurisdiction": "MD",
+ "rental_fee": 4700,
+ "extra_hour_fee": 450,
+ "package_pp": 124.8,
+ "service_pct": 0.0,
+ "price_year": 2027,
+ "includes": [
+  "tables_chairs",
+  "china",
+  "getting_ready",
+  "dance_floor"
+ ],
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": null,
+ "separate_cocktail_space": true,
+ "allows_outside_vendors": null,
+ "end_time": "guests exit 10pm; cleanup to 11pm; extra time $350/h (weddings page) or $450/h (FAQ)",
+ "within_60_min_of_dc": null,
+ "source_url": "unionmillspublichouse.com/offerings/weddings; /faqs; /event-layout-options",
+ "price_date": "rental 2027; F&B FAQ estimate undated (ASSUMPTION 2026, x1.04)"
+}

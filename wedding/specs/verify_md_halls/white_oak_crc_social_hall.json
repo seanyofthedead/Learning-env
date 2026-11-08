@@ -1,0 +1,27 @@
+{
+ "name": "White Oak Community Recreation Center Social Hall (Montgomery County Recreation)",
+ "venue_type": "rental",
+ "jurisdiction": "MD",
+ "rental_fee": 0,
+ "price_year": 2026,
+ "includes": [
+  "tables_chairs",
+  "free_parking"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "within_60_min_of_dc": true,
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": false,
+ "separate_cocktail_space": false,
+ "allows_enclosed_candles": false,
+ "end_time": "unknown; center open Sat 9am-10pm",
+ "source_url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation/choose-right-space",
+ "price_date": "new pricing eff. 5 Oct 2026; amounts not published"
+}

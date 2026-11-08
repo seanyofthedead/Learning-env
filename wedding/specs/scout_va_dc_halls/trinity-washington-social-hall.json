@@ -1,0 +1,28 @@
+{
+ "name": "Trinity Washington University Social Hall (Washington DC)",
+ "venue_type": "rental",
+ "jurisdiction": "DC",
+ "rental_fee": 0.0,
+ "price_year": 2027,
+ "includes": [
+  "ceremony_space",
+  "cocktail_space"
+ ],
+ "outside_catering": {
+  "food_pp": 60,
+  "staff_pp": 15,
+  "alcohol_pp": 20,
+  "soft_pp": 3,
+  "service_pct": 0.2,
+  "label": "ASSUMPTION budget buffet + beer and wine"
+ },
+ "seated_capacity_with_dance_floor": null,
+ "indoor_ceremony": true,
+ "separate_cocktail_space": true,
+ "allows_outside_vendors": null,
+ "end_time": null,
+ "date_available": null,
+ "within_60_min_of_dc": true,
+ "source_url": "https://www2.trinitydc.edu/conferences/",
+ "price_date": "price not published"
+}
