@@ -1,0 +1,30 @@
+{
+  "name": "Beth El Hebrew Congregation Ballroom (Alexandria VA) \u2014 $90/guest all-in catering sensitivity, not quoted",
+  "venue_type": "rental",
+  "jurisdiction": "VA-ALEXANDRIA",
+  "rental_fee": 0,
+  "price_year": 2027,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "dance_floor"
+  ],
+  "outside_catering": {
+    "food_pp": 81.08108108108108,
+    "staff_pp": 0,
+    "alcohol_pp": 0,
+    "soft_pp": 0,
+    "service_pct": 0,
+    "label": "ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote",
+    "bartender_fee": 0
+  },
+  "seated_capacity_with_dance_floor": 290,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "allows_outside_vendors": null,
+  "end_time": "Saturday 6pm-midnight, vacate by 1am (setup from 2pm included); Sunday 5-11pm",
+  "date_available": null,
+  "within_60_min_of_dc": true,
+  "source_url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+  "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+}

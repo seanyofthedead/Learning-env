@@ -1,0 +1,28 @@
+{
+  "name": "Montgomery County Agricultural Center - Heritage Building (Harvest Room + Garden Room) \u2014 $110/guest all-in catering sensitivity, not quoted",
+  "venue_type": "rental",
+  "jurisdiction": "MD",
+  "rental_fee": 0,
+  "price_year": 2027,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "free_parking"
+  ],
+  "outside_catering": {
+    "food_pp": 103.77358490566037,
+    "staff_pp": 0,
+    "alcohol_pp": 0,
+    "soft_pp": 0,
+    "service_pct": 0,
+    "label": "ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote",
+    "bartender_fee": 0
+  },
+  "within_60_min_of_dc": true,
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "end_time": "rental window 8AM-12AM",
+  "source_url": "https://mcagfair.com/rentals",
+  "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+}

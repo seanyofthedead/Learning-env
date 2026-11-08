@@ -2092,6 +2092,1241 @@
         "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
       },
       "max_caterer_all_in_pp_at_modeled_fees": null
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/ag_center_catering_100.json",
+      "result": {
+        "venue": "Montgomery County Agricultural Center - Heritage Building (Harvest Room + Garden Room) \u2014 $100/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 25475.15,
+        "per_guest": 137.7,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $100/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 18500.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -2404.7,
+        "headroom_r1_trimmed": 6664.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "rental window 8AM-12AM"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://mcagfair.com/rentals",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.02
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/ag_center_catering_110.json",
+      "result": {
+        "venue": "Montgomery County Agricultural Center - Heritage Building (Harvest Room + Garden Room) \u2014 $110/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 27325.15,
+        "per_guest": 147.7,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 20350.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -4254.7,
+        "headroom_r1_trimmed": 4814.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "rental window 8AM-12AM"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://mcagfair.com/rentals",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.02
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/ag_center_catering_90.json",
+      "result": {
+        "venue": "Montgomery County Agricultural Center - Heritage Building (Harvest Room + Garden Room) \u2014 $90/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 23625.15,
+        "per_guest": 127.7,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 16650.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -554.7,
+        "headroom_r1_trimmed": 8514.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "rental window 8AM-12AM"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://mcagfair.com/rentals",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.02
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/beth_el_catering_100.json",
+      "result": {
+        "venue": "Beth El Hebrew Congregation Ballroom (Alexandria VA) \u2014 $100/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-ALEXANDRIA",
+        "all_in": 25313.15,
+        "per_guest": 136.83,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $100/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 18500.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -2242.7,
+        "headroom_r1_trimmed": 6826.3,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Saturday 6pm-midnight, vacate by 1am (setup from 2pm included); Sunday 5-11pm"
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.9
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/beth_el_catering_110.json",
+      "result": {
+        "venue": "Beth El Hebrew Congregation Ballroom (Alexandria VA) \u2014 $110/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-ALEXANDRIA",
+        "all_in": 27163.15,
+        "per_guest": 146.83,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 20350.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -4092.7,
+        "headroom_r1_trimmed": 4976.3,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Saturday 6pm-midnight, vacate by 1am (setup from 2pm included); Sunday 5-11pm"
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.9
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/beth_el_catering_90.json",
+      "result": {
+        "venue": "Beth El Hebrew Congregation Ballroom (Alexandria VA) \u2014 $90/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-ALEXANDRIA",
+        "all_in": 23463.15,
+        "per_guest": 126.83,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 16650.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -392.7,
+        "headroom_r1_trimmed": 8676.3,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Saturday 6pm-midnight, vacate by 1am (setup from 2pm included); Sunday 5-11pm"
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.9
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/gathering_place_catering_100.json",
+      "result": {
+        "venue": "The Gathering Place - Patuxent Grand Ballroom (rental UNKNOWN=0) \u2014 $100/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 24203.15,
+        "per_guest": 130.83,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $100/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 18500.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -1132.7,
+        "headroom_r1_trimmed": 7936.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://thegatheringplacemd.net/details/",
+        "price_date": "Rental unpublished; zero is an algebra placeholder, not free rent"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 142.9
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/gathering_place_catering_110.json",
+      "result": {
+        "venue": "The Gathering Place - Patuxent Grand Ballroom (rental UNKNOWN=0) \u2014 $110/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 26053.15,
+        "per_guest": 140.83,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 20350.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -2982.7,
+        "headroom_r1_trimmed": 6086.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://thegatheringplacemd.net/details/",
+        "price_date": "Rental unpublished; zero is an algebra placeholder, not free rent"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 142.9
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/gathering_place_catering_90.json",
+      "result": {
+        "venue": "The Gathering Place - Patuxent Grand Ballroom (rental UNKNOWN=0) \u2014 $90/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 22353.15,
+        "per_guest": 120.83,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 16650.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": 717.3,
+        "headroom_r1_trimmed": 9786.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS as-is -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://thegatheringplacemd.net/details/",
+        "price_date": "Rental unpublished; zero is an algebra placeholder, not free rent"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 142.9
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/grays_catering_100.json",
+      "result": {
+        "venue": "Gray's Event Center (Woodbridge VA) \u2014 $100/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-PRINCE-WILLIAM",
+        "all_in": 25463.45,
+        "per_guest": 137.64,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $100/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 18500.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -2393.0,
+        "headroom_r1_trimmed": 6676.0,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://graysevents.com/venue",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.08
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/grays_catering_110.json",
+      "result": {
+        "venue": "Gray's Event Center (Woodbridge VA) \u2014 $110/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-PRINCE-WILLIAM",
+        "all_in": 27313.45,
+        "per_guest": 147.64,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 20350.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -4243.0,
+        "headroom_r1_trimmed": 4826.0,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://graysevents.com/venue",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.08
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/grays_catering_90.json",
+      "result": {
+        "venue": "Gray's Event Center (Woodbridge VA) \u2014 $90/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-PRINCE-WILLIAM",
+        "all_in": 23613.45,
+        "per_guest": 127.64,
+        "lines": {
+          "outside catering all-in (ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 16650.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -543.0,
+        "headroom_r1_trimmed": 8526.0,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://graysevents.com/venue",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 136.08
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/leesburg_flame_room_catering_100.json",
+      "result": {
+        "venue": "Leesburg VFC Flame Room \u2014 $100/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA",
+        "all_in": 28813.45,
+        "per_guest": 155.75,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2750.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $100/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 18500.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -5743.0,
+        "headroom_r1_trimmed": 3326.0,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Full-day rental8am-midnight; event end time unknown"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.leesburgfire.org/hallrental",
+        "price_date": "2027 published rates"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 117.98
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/leesburg_flame_room_catering_110.json",
+      "result": {
+        "venue": "Leesburg VFC Flame Room \u2014 $110/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA",
+        "all_in": 30663.45,
+        "per_guest": 165.75,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2750.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 20350.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -7593.0,
+        "headroom_r1_trimmed": 1476.0,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Full-day rental8am-midnight; event end time unknown"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.leesburgfire.org/hallrental",
+        "price_date": "2027 published rates"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 117.98
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/leesburg_flame_room_catering_90.json",
+      "result": {
+        "venue": "Leesburg VFC Flame Room \u2014 $90/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA",
+        "all_in": 26963.45,
+        "per_guest": 145.75,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2750.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 16650.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -3893.0,
+        "headroom_r1_trimmed": 5176.0,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Full-day rental8am-midnight; event end time unknown"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.leesburgfire.org/hallrental",
+        "price_date": "2027 published rates"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 117.98
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/oak_room_catering_100.json",
+      "result": {
+        "venue": "Oak Room at Sandy Spring VFD \u2014 $100/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 28847.45,
+        "per_guest": 155.93,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 4056.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $100/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 18500.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 208.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -5777.0,
+        "headroom_r1_trimmed": 3292.0,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": "events end 12:00am; music ends 11:00pm"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+        "price_date": "2026 contract"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 117.79
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/oak_room_catering_110.json",
+      "result": {
+        "venue": "Oak Room at Sandy Spring VFD \u2014 $110/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 30697.45,
+        "per_guest": 165.93,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 4056.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 20350.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 208.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -7627.0,
+        "headroom_r1_trimmed": 1442.0,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": "events end 12:00am; music ends 11:00pm"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+        "price_date": "2026 contract"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 117.79
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/oak_room_catering_90.json",
+      "result": {
+        "venue": "Oak Room at Sandy Spring VFD \u2014 $90/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 26997.45,
+        "per_guest": 145.93,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 4056.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 16650.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 208.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -3927.0,
+        "headroom_r1_trimmed": 5142.0,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": "events end 12:00am; music ends 11:00pm"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+        "price_date": "2026 contract"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 117.79
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/silver_spring_civic_catering_100.json",
+      "result": {
+        "venue": "Silver Spring Civic Building Great Hall, nonresident \u2014 $100/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 34000.35,
+        "per_guest": 183.79,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 7415.2,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $100/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 18500.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -10929.9,
+        "headroom_r1_trimmed": -1860.9,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+        "price_date": "Undated official rates; modeled2026 with+4% assumption"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 89.94
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/silver_spring_civic_catering_110.json",
+      "result": {
+        "venue": "Silver Spring Civic Building Great Hall, nonresident \u2014 $110/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 35850.35,
+        "per_guest": 193.79,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 7415.2,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 20350.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -12779.9,
+        "headroom_r1_trimmed": -3710.9,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+        "price_date": "Undated official rates; modeled2026 with+4% assumption"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 89.94
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/silver_spring_civic_catering_90.json",
+      "result": {
+        "venue": "Silver Spring Civic Building Great Hall, nonresident \u2014 $90/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 32150.35,
+        "per_guest": 173.79,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 7415.2,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 16650.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9079.9,
+        "headroom_r1_trimmed": -10.9,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+        "price_date": "Undated official rates; modeled2026 with+4% assumption"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 89.94
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/turf_friday_service_charge_only.json",
+      "result": {
+        "venue": "Turf Valley Resort Bluebird Buffet \u2014 Friday discount interpretation service_charge_only, unconfirmed",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 32824.95,
+        "per_guest": 177.43,
+        "lines": {
+          "in-house F&B (package/minimum)": 23088.0,
+          "F&B service charge": 4571.42,
+          "F&B tax": 1825.52,
+          "wedding cake + tasting/delivery": 1630.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9754.5,
+        "headroom_r1_trimmed": -685.5,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+        "price_date": "Nov2026 menu, escalated4%; conditional Friday12Nov2027 promotion calculation, not a quote; ceremony/site/required staffing unpriced"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": null
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/turf_friday_service_credit_10pct_base.json",
+      "result": {
+        "venue": "Turf Valley Resort Bluebird Buffet \u2014 Friday discount interpretation service_credit_10pct_base, unconfirmed",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 30905.22,
+        "per_guest": 167.06,
+        "lines": {
+          "in-house F&B (package/minimum)": 23088.0,
+          "F&B service charge": 2770.56,
+          "F&B tax": 1706.66,
+          "wedding cake + tasting/delivery": 1630.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -7834.77,
+        "headroom_r1_trimmed": 1234.23,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+        "price_date": "Nov2026 menu, escalated4%; conditional Friday12Nov2027 promotion calculation, not a quote; ceremony/site/required staffing unpriced"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": null
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/vienna_vfd_catering_100.json",
+      "result": {
+        "venue": "Vienna VFD Event Hall \u2014 $100/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-VIENNA",
+        "all_in": 30675.15,
+        "per_guest": 165.81,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 5100.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $100/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 18500.0,
+          "one-day liquor license": 100.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -7604.7,
+        "headroom_r1_trimmed": 1464.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "11pm, including cleanup (prior booking verification)"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+        "price_date": "2027 published rent/kitchen/custom arrangement; cleaning/support/extra hours carried prior official booking site"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 107.91
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/vienna_vfd_catering_110.json",
+      "result": {
+        "venue": "Vienna VFD Event Hall \u2014 $110/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-VIENNA",
+        "all_in": 32525.15,
+        "per_guest": 175.81,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 5100.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $110/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 20350.0,
+          "one-day liquor license": 100.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9454.7,
+        "headroom_r1_trimmed": -385.7,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "11pm, including cleanup (prior booking verification)"
+        },
+        "flags": [],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+        "price_date": "2027 published rent/kitchen/custom arrangement; cleaning/support/extra hours carried prior official booking site"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 107.91
+    },
+    {
+      "spec": "wedding/output/specs/value_scenarios/vienna_vfd_catering_90.json",
+      "result": {
+        "venue": "Vienna VFD Event Hall \u2014 $90/guest all-in catering sensitivity, not quoted",
+        "guests": 185,
+        "jurisdiction": "VA-VIENNA",
+        "all_in": 28825.15,
+        "per_guest": 155.81,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 5100.0,
+          "outside catering all-in (ASSUMPTION aggregate 2027 $90/guest bill INCLUDING food,staff,beer/wine,soft drinks,bartenders,service and tax; not a menu or quote)": 16650.0,
+          "one-day liquor license": 100.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -5754.7,
+        "headroom_r1_trimmed": 3314.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "11pm, including cleanup (prior booking verification)"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+        "price_date": "2027 published rent/kitchen/custom arrangement; cleaning/support/extra hours carried prior official booking site"
+      },
+      "max_caterer_all_in_pp_at_modeled_fees": 107.91
     }
   ]
 }

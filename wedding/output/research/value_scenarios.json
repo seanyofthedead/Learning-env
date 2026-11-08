@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-08",
+  "guests": 185,
+  "target": 32139,
+  "warning": "Hypothetical full-service 2027 quotes at90/100/110 per guest, not advertised offers. Unknown fees remain additional. No altered guest count or reserve spending.",
+  "results": {
+    "oak_room": {
+      "90": {
+        "model_total": 26997.45,
+        "headroom_before_unknown_fees": 5141.55,
+        "savings_vs_original_catering_scenario": 7180.56,
+        "spec": "specs/value_scenarios/oak_room_catering_90.json"
+      },
+      "100": {
+        "model_total": 28847.45,
+        "headroom_before_unknown_fees": 3291.55,
+        "savings_vs_original_catering_scenario": 5330.56,
+        "spec": "specs/value_scenarios/oak_room_catering_100.json"
+      },
+      "110": {
+        "model_total": 30697.45,
+        "headroom_before_unknown_fees": 1441.55,
+        "savings_vs_original_catering_scenario": 3480.56,
+        "spec": "specs/value_scenarios/oak_room_catering_110.json"
+      }
+    },
+    "gathering_place": {
+      "90": {
+        "model_total": 22353.15,
+        "headroom_before_unknown_fees": 9785.85,
+        "savings_vs_original_catering_scenario": 7180.56,
+        "spec": "specs/value_scenarios/gathering_place_catering_90.json"
+      },
+      "100": {
+        "model_total": 24203.15,
+        "headroom_before_unknown_fees": 7935.85,
+        "savings_vs_original_catering_scenario": 5330.56,
+        "spec": "specs/value_scenarios/gathering_place_catering_100.json"
+      },
+      "110": {
+        "model_total": 26053.15,
+        "headroom_before_unknown_fees": 6085.85,
+        "savings_vs_original_catering_scenario": 3480.56,
+        "spec": "specs/value_scenarios/gathering_place_catering_110.json"
+      }
+    },
+    "ag_center": {
+      "90": {
+        "model_total": 23625.15,
+        "headroom_before_unknown_fees": 8513.85,
+        "savings_vs_original_catering_scenario": 7180.56,
+        "spec": "specs/value_scenarios/ag_center_catering_90.json"
+      },
+      "100": {
+        "model_total": 25475.15,
+        "headroom_before_unknown_fees": 6663.85,
+        "savings_vs_original_catering_scenario": 5330.56,
+        "spec": "specs/value_scenarios/ag_center_catering_100.json"
+      },
+      "110": {
+        "model_total": 27325.15,
+        "headroom_before_unknown_fees": 4813.85,
+        "savings_vs_original_catering_scenario": 3480.56,
+        "spec": "specs/value_scenarios/ag_center_catering_110.json"
+      }
+    },
+    "beth_el": {
+      "90": {
+        "model_total": 23463.15,
+        "headroom_before_unknown_fees": 8675.85,
+        "savings_vs_original_catering_scenario": 8165.16,
+        "spec": "specs/value_scenarios/beth_el_catering_90.json"
+      },
+      "100": {
+        "model_total": 25313.15,
+        "headroom_before_unknown_fees": 6825.85,
+        "savings_vs_original_catering_scenario": 6315.16,
+        "spec": "specs/value_scenarios/beth_el_catering_100.json"
+      },
+      "110": {
+        "model_total": 27163.15,
+        "headroom_before_unknown_fees": 4975.85,
+        "savings_vs_original_catering_scenario": 4465.16,
+        "spec": "specs/value_scenarios/beth_el_catering_110.json"
+      }
+    },
+    "vienna_vfd": {
+      "90": {
+        "model_total": 28825.15,
+        "headroom_before_unknown_fees": 3313.85,
+        "savings_vs_original_catering_scenario": 7941.6,
+        "spec": "specs/value_scenarios/vienna_vfd_catering_90.json"
+      },
+      "100": {
+        "model_total": 30675.15,
+        "headroom_before_unknown_fees": 1463.85,
+        "savings_vs_original_catering_scenario": 6091.6,
+        "spec": "specs/value_scenarios/vienna_vfd_catering_100.json"
+      },
+      "110": {
+        "model_total": 32525.15,
+        "headroom_before_unknown_fees": -386.15,
+        "savings_vs_original_catering_scenario": 4241.6,
+        "spec": "specs/value_scenarios/vienna_vfd_catering_110.json"
+      }
+    },
+    "grays": {
+      "90": {
+        "model_total": 23613.45,
+        "headroom_before_unknown_fees": 8525.55,
+        "savings_vs_original_catering_scenario": 7718.04,
+        "spec": "specs/value_scenarios/grays_catering_90.json"
+      },
+      "100": {
+        "model_total": 25463.45,
+        "headroom_before_unknown_fees": 6675.55,
+        "savings_vs_original_catering_scenario": 5868.04,
+        "spec": "specs/value_scenarios/grays_catering_100.json"
+      },
+      "110": {
+        "model_total": 27313.45,
+        "headroom_before_unknown_fees": 4825.55,
+        "savings_vs_original_catering_scenario": 4018.04,
+        "spec": "specs/value_scenarios/grays_catering_110.json"
+      }
+    },
+    "silver_spring_civic": {
+      "90": {
+        "model_total": 32150.35,
+        "headroom_before_unknown_fees": -11.35,
+        "savings_vs_original_catering_scenario": 7180.56,
+        "spec": "specs/value_scenarios/silver_spring_civic_catering_90.json"
+      },
+      "100": {
+        "model_total": 34000.35,
+        "headroom_before_unknown_fees": -1861.35,
+        "savings_vs_original_catering_scenario": 5330.56,
+        "spec": "specs/value_scenarios/silver_spring_civic_catering_100.json"
+      },
+      "110": {
+        "model_total": 35850.35,
+        "headroom_before_unknown_fees": -3711.35,
+        "savings_vs_original_catering_scenario": 3480.56,
+        "spec": "specs/value_scenarios/silver_spring_civic_catering_110.json"
+      }
+    },
+    "leesburg_flame_room": {
+      "90": {
+        "model_total": 26963.45,
+        "headroom_before_unknown_fees": 5175.55,
+        "savings_vs_original_catering_scenario": 7047.36,
+        "spec": "specs/value_scenarios/leesburg_flame_room_catering_90.json"
+      },
+      "100": {
+        "model_total": 28813.45,
+        "headroom_before_unknown_fees": 3325.55,
+        "savings_vs_original_catering_scenario": 5197.36,
+        "spec": "specs/value_scenarios/leesburg_flame_room_catering_100.json"
+      },
+      "110": {
+        "model_total": 30663.45,
+        "headroom_before_unknown_fees": 1475.55,
+        "savings_vs_original_catering_scenario": 3347.36,
+        "spec": "specs/value_scenarios/leesburg_flame_room_catering_110.json"
+      }
+    },
+    "turf_friday": {
+      "service_charge_only": {
+        "subtotal": 32824.95,
+        "saving": 541.46,
+        "headroom_before_unknown_fees": -685.95,
+        "spec": "specs/value_scenarios/turf_friday_service_charge_only.json"
+      },
+      "service_credit_10pct_base": {
+        "subtotal": 30905.22,
+        "saving": 2461.19,
+        "headroom_before_unknown_fees": 1233.78,
+        "spec": "specs/value_scenarios/turf_friday_service_credit_10pct_base.json"
+      }
+    }
+  }
+}
