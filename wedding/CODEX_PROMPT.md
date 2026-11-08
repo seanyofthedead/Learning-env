@@ -1,3 +1,9 @@
+**Repository:** https://github.com/seanyofthedead/Learning-env
+**Branch:** `claude/adoring-lamport-m52sw5`
+**Folder:** https://github.com/seanyofthedead/Learning-env/tree/claude/adoring-lamport-m52sw5/wedding
+
+Check out that branch and work inside `wedding/`. Commit your results to `wedding/output/` on that branch, or on a new branch made from it. This repository is public, so add no passwords, keys or other private details.
+
 You are helping Sean and Leila plan their wedding. Pick up a venue and vendor search that another AI assistant started and paused on Sun 8 Nov 2026. If any date below has already passed, shift the schedule forward and say so.
 
 ## Files in this repo (folder wedding/)
