@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Venue-neutral wedding budget model (Sean & Leila, Nov 2027).
 
-Source of every workbook figure: venue_neutral_items.md (same folder) -- the
-couple's 10 categories / 83 items with mid-range DC-area estimates, with ALL
+Source of historical workbook figures: venue_neutral_items.md (same folder) -- the
+couple's 10 categories / 82 items with mid-range DC-area estimates, with ALL
 venue-specific content removed. No venue the couple already looked at is used
 or named here; the agent keeps its own exclusion list (see EXCLUSION_FILE).
 
@@ -11,18 +11,18 @@ What it does
      scaling centerpieces (per table of 10), specialty linens
      (tables*20 + guests*3) and the florist fee (12% of florals); vendor meals
      and everything else stay flat.
-  2. Venue envelope = spend limit - non-venue total, for any guest count,
-     Reading 1 ($60K / 1.10 = $54,545.45, reserve inside) or Reading 2 ($60K,
-     reserve on top), as-is or with the trims.
+  2. Approved allocations come from approved_plan.json. The $5,454.55 reserve
+     is protected, spending is capped at $54,545.45 and venue costs at $32,139.
+     Guest-count sensitivities do not change the approved 185-person plan.
   3. evaluate(Venue, guests) -> all-in venue cost (rental, F&B, service, tax,
      missing rentals, cake, getting-ready, parking, extra hours, fees, 2027
      escalation) + must-have check + fit verdict.
   4. Search-filter solvers (max package $/guest, max F&B minimum, max rental,
      max hourly rate) used to brief the venue scout.
 
-Run:  python3 venue_neutral_budget.py            # tests + report
-      python3 venue_neutral_budget.py --json     # machine-readable report
-      python3 venue_neutral_budget.py --venue candidate.json --guests 165
+Run:  python3 wedding_budget_model.py            # tests + report
+      python3 wedding_budget_model.py --json     # machine-readable report
+      python3 wedding_budget_model.py --venue candidate.json --guests 185
 
 ASSUMPTIONS are labelled "ASSUMPTION" -- confirm or replace with real quotes.
 """
@@ -31,6 +31,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 import sys
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -38,6 +39,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ITEMS_MD = HERE / "venue_neutral_items.md"
 EXCLUSION_FILE = HERE / "excluded_venues.txt"   # one name per line, kept by the couple
+APPROVED_PLAN_FILE = HERE / "approved_plan.json"
 
 BUDGET = 60_000.0
 CONTINGENCY = 0.10
@@ -70,7 +72,7 @@ FLORIST_FEE_PCT = 0.12
 CENTERPIECE_PER_TABLE = 150.0
 CENTERPIECE_PER_TABLE_TRIMMED = 100.0
 
-TRIMS = {  # ceilings ("trimmed" plan)
+TRIMS = {  # historical reduction assumptions; superseded by approved_plan.json
     "Day-of coordinator": 2500, "Videographer": 1800, "DJ / MC": 1500,
     "Vendor tips": 2000, "Wedding bands": 1200, "Wedding dress": 1200,
     "Groom's suit / tux": 300, "Hair & makeup trials": 125,
@@ -105,8 +107,47 @@ def tables(guests: int) -> int:
     return math.ceil(guests / 10)
 
 
+def approved_plan() -> dict:
+    """The approved allocations are targets, never evidence of supplier prices."""
+    plan = json.loads(APPROVED_PLAN_FILE.read_text(encoding="utf-8"))
+    allocations = plan["nonvenue_allocations"]
+    names = [r["item"] for r in allocations]
+    required = {r["item"] for r in ITEMS if r["must"] and r["item"] not in ENVELOPE_ITEMS}
+    if len(names) != len(set(names)) or not required.issubset(names):
+        raise ValueError("Approved plan must uniquely cover every required non-venue item")
+    if any(r["category"] not in CATEGORIES or r["amount"] < 0 for r in allocations):
+        raise ValueError("Invalid approved allocation category or negative amount")
+    if round(sum(r["amount"] for r in allocations), 2) != 22406:
+        raise ValueError("Approved non-venue allocations must total $22,406")
+    if round(plan["spend_limit"] + plan["reserve"], 2) != BUDGET:
+        raise ValueError("Spending limit plus protected reserve must equal $60,000")
+    if plan["guests"] != BASE_GUESTS or plan["venue_hard_cap"] != 32139 or plan["venue_fit_cap"] != 31139:
+        raise ValueError("Approved guest count and venue policy must retain locked requirements")
+    amounts = {r["item"]: r["amount"] for r in allocations}
+    if amounts["Photographer"] != LOCKED["Photographer"]:
+        raise ValueError("Booked photographer allocation must remain $750")
+    totals = {category: sum(r["amount"] for r in allocations if r["category"] == category)
+              for category in CATEGORIES}
+    expected = {"Venue & ceremony": 2235, "Food & drink": 400,
+                "Planning & legal": 5250, "Flowers & décor": 5446,
+                "Attire & beauty": 4375, "Photo & video": 2550,
+                "Music & sound": 2000, "Stationery": 150,
+                "Guests & transport": 0, "Pre/post events": 0}
+    if totals != expected:
+        raise ValueError("Approved allocations must preserve every locked category cap")
+    return plan
+
+
 def nonvenue_items(guests: int = BASE_GUESTS, trimmed: bool = False) -> dict[str, dict]:
-    """Must-have, non-envelope items costed at `guests`."""
+    """Historical workbook, or approved allocations without assumed new savings.
+
+    Approved fixed allocations remain unchanged in guest-count sensitivities;
+    a different table/guest count requires a revised quote and allocation plan.
+    """
+    if trimmed:
+        return {r["item"]: dict(category=r["category"], cost=float(r["amount"]),
+                                 firm=r["status"], scope=r.get("scope", ""))
+                for r in approved_plan()["nonvenue_allocations"]}
     t = tables(guests)
     out: dict[str, dict] = {}
     for r in ITEMS:
@@ -114,10 +155,8 @@ def nonvenue_items(guests: int = BASE_GUESTS, trimmed: bool = False) -> dict[str
             continue
         name = r["item"]
         v = r["estimate"] or 0.0
-        if trimmed and name in TRIMS:
-            v = float(TRIMS[name])
         if name == "Centerpieces":
-            v = t * (CENTERPIECE_PER_TABLE_TRIMMED if trimmed else CENTERPIECE_PER_TABLE)
+            v = t * CENTERPIECE_PER_TABLE
         elif name == "Specialty linens & chargers":
             v = t * 20 + guests * 3
         out[name] = dict(category=r["category"], cost=v, firm=r["firm"])
@@ -142,18 +181,21 @@ def nonvenue_by_category(guests: int = BASE_GUESTS, trimmed: bool = False) -> di
 # --------------------------------------------------------------------------
 
 def spend_limit(reading: int = 1) -> float:
-    """Reading 1: reserve inside the $60K (workbook logic). Reading 2: reserve on top."""
-    return BUDGET / (1 + CONTINGENCY) if reading == 1 else BUDGET
+    """Only spending that preserves the protected reserve is supported."""
+    if reading != 1:
+        raise ValueError("Spending the protected reserve is not an approved budget option")
+    return float(approved_plan()["spend_limit"])
 
 
 def envelope(guests: int = BASE_GUESTS, reading: int = 1, trimmed: bool = False) -> float:
-    return round(spend_limit(reading) - nonvenue_total(guests, trimmed), 2)
+    available = round(spend_limit(reading) - nonvenue_total(guests, trimmed), 2)
+    return min(available, float(approved_plan()["venue_hard_cap"])) if trimmed else available
 
 
-def envelope_table(guest_counts=(185, 165, 150, 130)) -> list[dict]:
+def envelope_table(guest_counts=(185,)) -> list[dict]:
     rows = []
     for g in guest_counts:
-        for reading in (1, 2):
+        for reading in (1,):
             a, t = envelope(g, reading, False), envelope(g, reading, True)
             rows.append(dict(guests=g, reading=reading,
                              nonvenue_as_is=nonvenue_total(g), nonvenue_trimmed=nonvenue_total(g, True),
@@ -285,7 +327,7 @@ class Venue:
     outside_catering: Catering | None = None  # for rental / hourly venues
     parking_cost: float | None = None  # if known; None + no free_parking -> ASSUMPTION default
     # must-haves / policies (None = unknown -> ask)
-    seated_capacity_with_dance_floor: int | None = None
+    seated_capacity_with_dance_floor: int | None = None  # rounds + dance floor in the SAME room
     indoor_ceremony: bool | None = None
     separate_cocktail_space: bool | None = None
     allows_enclosed_candles: bool | None = None
@@ -295,6 +337,16 @@ class Venue:
     within_60_min_of_dc: bool | None = None
     source_url: str = ""
     price_date: str = ""
+    # Evidence gates. Missing fields in historical specs deliberately stay unknown.
+    allows_alcohol: bool | None = None
+    heated_indoor_ceremony: bool | None = None
+    ceremony_seated_capacity: int | None = None
+    ceremony_requires_flip: bool | None = None
+    ceremony_flip_priced: bool | None = None
+    holding_room_capacity: int | None = None
+    reception_end_time: str | None = None  # confirmed event end, e.g. 22:00; not building access
+    quote_complete: bool | None = None    # complete 2027 written quote, not a ceiling/placeholder
+    tax_inclusion_confirmed: bool | None = None  # all separately priced costs reconciled
 
 
 def load_exclusions(path: Path = EXCLUSION_FILE) -> set[str]:
@@ -309,11 +361,41 @@ def is_excluded(name: str, exclusions: set[str]) -> bool:
     return any(x in n or n in x for x in exclusions)
 
 
+def end_time_meets_requirement(value: str | None) -> bool | None:
+    """Parse only a confirmed standalone clock time, never infer from prose.
+
+    Midnight through 05:59 is treated as the following morning of this evening
+    event. Rental windows, cleanup deadlines and conflicting text stay unknown.
+    """
+    if not value:
+        return None
+    value = value.strip().lower()
+    if value == "midnight":
+        return True
+    match = re.fullmatch(r"(\d{1,2})(?::(\d{2}))?\s*(am|pm)?", value)
+    if not match:
+        return None
+    hour, minute, suffix = int(match[1]), int(match[2] or 0), match[3]
+    if minute > 59 or (suffix and not 1 <= hour <= 12) or (not suffix and hour > 23):
+        return None
+    if suffix:
+        hour = hour % 12 + (12 if suffix == "pm" else 0)
+    return hour >= 22 or hour < 6
+
+
+def budget_verdict(all_in: float) -> str:
+    plan = approved_plan()
+    if all_in <= plan["venue_fit_cap"]:
+        return "fits"
+    return "edge" if all_in <= plan["venue_hard_cap"] else "no"
+
+
 def evaluate(v: Venue, guests: int = BASE_GUESTS, exclusions: set[str] | None = None,
              tax_override: Tax | None = None) -> dict:
     exclusions = load_exclusions() if exclusions is None else exclusions
     if is_excluded(v.name, exclusions):
-        return dict(venue=v.name, verdict="EXCLUDED (already considered by the couple)", all_in=None)
+        return dict(venue=v.name, verdict="EXCLUDED (already considered by the couple)",
+                    fit="no", budget_verdict=None, all_in=None)
     tax = tax_override if tax_override is not None else TAX[v.jurisdiction]
     inc = set(v.includes)
     d = DEFAULTS
@@ -381,9 +463,9 @@ def evaluate(v: Venue, guests: int = BASE_GUESTS, exclusions: set[str] | None = 
     # --- cake ---
     if "cake" not in inc:
         lines["wedding cake + tasting/delivery"] = d["cake_pp"] * guests + d["cake_tasting_delivery"]
-        cut = caterer.cake_cutting_pp if caterer else d["cake_cutting_pp"]
-        if "cake_cutting" not in inc:
-            lines["cake cutting"] = cut * guests
+    cut = caterer.cake_cutting_pp if caterer else d["cake_cutting_pp"]
+    if "cake_cutting" not in inc:
+        lines["cake cutting"] = cut * guests
 
     # --- getting ready, parking ---
     if "getting_ready" not in inc:
@@ -398,47 +480,72 @@ def evaluate(v: Venue, guests: int = BASE_GUESTS, exclusions: set[str] | None = 
     all_in = round(sum(lines.values()), 2)
 
     # --- must-haves ---
+    if v.ceremony_requires_flip is False:
+        flip_priced = holding_capacity = True
+    elif v.ceremony_requires_flip is True:
+        flip_priced = v.ceremony_flip_priced
+        holding_capacity = None if v.holding_room_capacity is None else v.holding_room_capacity >= guests
+    else:
+        flip_priced = holding_capacity = None
     must = {
-        "seats guests with dance floor": None if v.seated_capacity_with_dance_floor is None
+        "seats guests at rounds with dance floor in same room": None if v.seated_capacity_with_dance_floor is None
         else v.seated_capacity_with_dance_floor >= guests,
-        "indoor ceremony space": v.indoor_ceremony if "ceremony_space" not in inc else True,
-        "separate cocktail-hour space": v.separate_cocktail_space if "cocktail_space" not in inc else True,
+        "indoor ceremony space": v.indoor_ceremony,
+        "heated indoor ceremony": v.heated_indoor_ceremony,
+        "ceremony seats all guests": None if v.ceremony_seated_capacity is None else v.ceremony_seated_capacity >= guests,
+        "ceremony room arrangement and any flip priced": flip_priced,
+        "holding room for all guests if a flip is required": holding_capacity,
+        "separate cocktail-hour space": v.separate_cocktail_space,
+        "alcohol allowed": v.allows_alcohol,
+        "allows enclosed candles": v.allows_enclosed_candles,
+        "allows outside DJ/florist/cake": v.allows_outside_vendors,
+        "reception runs to at least 22:00": end_time_meets_requirement(v.reception_end_time or v.end_time),
         "date available": v.date_available,
-        "within ~60 min of downtown DC (assumption)": v.within_60_min_of_dc,
+        "within ~60 min of downtown DC": v.within_60_min_of_dc,
+        "approved guest count": guests == BASE_GUESTS,
     }
-    nice = {"allows enclosed candles": v.allows_enclosed_candles,
-            "allows outside DJ/florist/cake": v.allows_outside_vendors, "end time": v.end_time}
+    nice = {"end time source note": v.end_time, "confirmed reception end": v.reception_end_time}
     failed = [k for k, ok in must.items() if ok is False]
     unknown = [k for k, ok in must.items() if ok is None]
     if v.allows_enclosed_candles is False:
-        flags.append("no enclosed flame: switch candles to LED (budget the same $1,000-2,000 line)")
+        flags.append("Enclosed candles are required; a substitution requires an explicit plan change")
     if v.price_year < 2027:
         flags.append(f"price from {v.price_year}: escalated x{esc:.3f}; get 2027 pricing in writing")
 
-    env = {
-        "R1 as-is": envelope(guests, 1, False), "R1 trimmed": envelope(guests, 1, True),
-        "R2 as-is": envelope(guests, 2, False), "R2 trimmed": envelope(guests, 2, True),
-    }
-    if all_in <= env["R1 as-is"]:
-        cost_verdict = "FITS as-is"
-    elif all_in <= env["R1 trimmed"]:
-        cost_verdict = "FITS only with the trims"
-    elif all_in <= env["R2 trimmed"]:
-        cost_verdict = "FITS only by spending the 10% reserve (Reading 2) -- couple must approve"
-    else:
-        cost_verdict = f"OVER by ${all_in - env['R2 trimmed']:,.0f} even trimmed + reserve"
+    plan = approved_plan()
+    env = {"R1 as-is": envelope(guests, 1, False), "R1 trimmed": plan["venue_hard_cap"]}
+    cost_verdict = budget_verdict(all_in)
+    evidence = {"complete written 2027 quote": v.quote_complete,
+                "all applicable tax included or explicitly reconciled": v.tax_inclusion_confirmed}
+    missing_evidence = [k for k, value in evidence.items() if value is not True]
+    if v.price_year < 2027:
+        missing_evidence.append("historical prices require an actual 2027 quote")
+    if v.tax_inclusion_confirmed is not True:
+        flags.append("Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged")
+    if v.quote_complete is not True:
+        flags.append("Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote")
     if failed:
-        verdict = f"REJECT (fails must-have: {', '.join(failed)}); cost: {cost_verdict}"
-    elif unknown:
-        verdict = f"{cost_verdict} -- PENDING answers: {', '.join(unknown)}"
+        fit = "no"
+        reason = f"fails must-have: {', '.join(failed)}"
+    elif cost_verdict == "no":
+        fit = "no"
+        reason = "modeled cost exceeds the $32,139 cap"
+        if missing_evidence:
+            reason += "; actual quote may differ"
+    elif unknown or missing_evidence:
+        fit = "unknown"
+        reason = "unverified: " + ", ".join(unknown + missing_evidence)
     else:
-        verdict = cost_verdict
+        fit = cost_verdict
+        reason = "complete quote and required policies confirmed"
+    verdict = f"{fit.upper()}: {reason}; budget scenario: {cost_verdict}"
     return dict(venue=v.name, guests=guests, jurisdiction=v.jurisdiction, all_in=all_in,
                 per_guest=round(all_in / guests, 2),
                 lines={k: round(x, 2) for k, x in lines.items() if x},
                 envelopes=env, headroom_r1_as_is=round(env["R1 as-is"] - all_in, 2),
                 headroom_r1_trimmed=round(env["R1 trimmed"] - all_in, 2),
-                must_haves=must, nice_to_check=nice, flags=flags, verdict=verdict,
+                must_haves=must, quote_evidence=evidence, nice_to_check=nice, flags=flags,
+                fit=fit, budget_verdict=cost_verdict, verdict=verdict,
                 source_url=v.source_url, price_date=v.price_date)
 
 
@@ -499,11 +606,24 @@ def run_tests() -> list[str]:
     assert nonvenue_total(185) == 31475, nonvenue_total(185)
     assert nonvenue_total(150) == 30618 and nonvenue_total(130) == 30182
     ok.append("non-venue total 185=$31,475, 150=$30,618, 130=$30,182")
-    exp = {185: (23070, 32139), 165: (23506, 32463), 150: (23927, 32772), 130: (24363, 33096)}
-    for g, (a, t) in exp.items():
-        assert round(envelope(g)) == a and round(envelope(g, trimmed=True)) == t, (g, envelope(g), envelope(g, trimmed=True))
-        assert round(envelope(g, 2) - envelope(g), 2) == 5454.55
-    ok.append("envelope table reproduced (185/165/150/130, as-is & trimmed); Reading 2 adds $5,454.55")
+    assert round(envelope(185)) == 23070
+    assert envelope(185, trimmed=True) == 32139
+    assert nonvenue_total(185, True) == nonvenue_total(150, True) == 22406
+    approved = nonvenue_items(185, True)
+    assert approved["Florist delivery & setup fee"]["cost"] == 700
+    assert approved["Ceremony backdrop / arch"]["cost"] == 200
+    assert approved["Hair & makeup trials"]["cost"] == 400
+    categories = nonvenue_by_category(185, True)
+    assert categories["Flowers & décor"] == 5446 and categories["Attire & beauty"] == 4375
+    assert sum(categories.values()) + approved_plan()["venue_hard_cap"] == 54545
+    assert approved["Photographer"]["cost"] == 750
+    try:
+        spend_limit(2)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Protected reserve must never become an available spending option")
+    ok.append("Approved allocations total $22,406; category caps, fixed labor, funded arch/trial and protected reserve enforced")
     # workbook F&B lines at 185 with the workbook's flat 6% (tax base = catering + rentals + specialty linens)
     c = Catering().cost(185, TAX["WORKBOOK"])
     for k, n in (("food", "Hors d'oeuvres + dinner"), ("staff", "Catering service staff"),
@@ -528,10 +648,10 @@ def run_tests() -> list[str]:
                   date_available=True, within_60_min_of_dc=True)
     r = evaluate(probe, 185, exclusions=set())
     assert abs(r["all_in"] - env) < 1, (r["all_in"], env)
-    assert r["verdict"] == "FITS as-is"
+    assert r["budget_verdict"] == "fits" and r["fit"] == "unknown"
     probe.package_pp += 1
-    assert evaluate(probe, 185, exclusions=set())["verdict"].startswith("FITS only with the trims")
-    ok.append(f"package solver/evaluator round-trip: ${pp:.2f}++ (22%, MD) -> all-in == envelope -> FITS as-is; +$1 -> trims")
+    assert evaluate(probe, 185, exclusions=set())["fit"] == "unknown"
+    ok.append(f"package solver/evaluator round-trip: ${pp:.2f}++ (22%, MD); affordable ceiling remains unknown without quote/evidence")
     # hourly solver round-trip
     rate = max_hourly(150, envelope(150, trimmed=True), 120, TAX["VA"], hours=11, platform_fee=0.09, cleaning=300)
     cat120 = Catering(food_pp=120 / 1.06, staff_pp=0, alcohol_pp=0, soft_pp=0, bartender_fee=0,
@@ -544,9 +664,9 @@ def run_tests() -> list[str]:
     # must-have failure and exclusion
     bad = Venue("probe small", package_pp=50, service_pct=0.2, seated_capacity_with_dance_floor=120,
                 indoor_ceremony=True, separate_cocktail_space=True, date_available=True, within_60_min_of_dc=True)
-    assert evaluate(bad, 185, exclusions=set())["verdict"].startswith("REJECT")
+    assert evaluate(bad, 185, exclusions=set())["fit"] == "no"
     assert evaluate(Venue("Some Hall"), 185, exclusions={"some hall"})["verdict"].startswith("EXCLUDED")
-    ok.append("capacity < guests -> REJECT; exclusion list honoured")
+    ok.append("capacity < guests -> no; exclusion list honoured")
     # F&B minimum shortfall
     fm = Venue("probe min", venue_type="fb_minimum", package_pp=80, fb_minimum=20000, service_pct=0.2)
     assert evaluate(fm, 150, exclusions=set())["lines"]["in-house F&B (package/minimum)"] == 20000
@@ -564,6 +684,47 @@ def run_tests() -> list[str]:
                     cleaning_fee=300, outside_catering=dc_cat)
     assert abs(evaluate(dc_hall, 150, exclusions=set())["all_in"] - envelope(150, trimmed=True)) < 0.02
     ok.append("BYO stack propagates supplied rental tax; DC hourly solver/evaluator round-trip")
+    # Decision gates are separate from numerical affordability.
+    zero_tax = Tax(0, 0, 0, "synthetic test only")
+    confirmed = dict(package_pp=31139 / 185,
+                     includes=["tables_chairs", "setup_breakdown", "basic_linens", "china",
+                               "dance_floor", "cake", "cake_cutting", "getting_ready", "free_parking",
+                               "ceremony_space", "cocktail_space"],
+                     seated_capacity_with_dance_floor=185, indoor_ceremony=True,
+                     heated_indoor_ceremony=True, ceremony_seated_capacity=185,
+                     ceremony_requires_flip=False, separate_cocktail_space=True,
+                     allows_alcohol=True, allows_enclosed_candles=True, allows_outside_vendors=True,
+                     reception_end_time="22:00", date_available=True, within_60_min_of_dc=True,
+                     quote_complete=True, tax_inclusion_confirmed=True)
+    def check(**overrides):
+        return evaluate(Venue("synthetic confirmed policy test", **(confirmed | overrides)),
+                        exclusions=set(), tax_override=zero_tax)
+    for amount, expected in ((31139, "fits"), (31139.01, "edge"), (32139, "edge"), (32139.01, "no")):
+        result = check(package_pp=amount / 185)
+        assert result["all_in"] == amount
+        assert result["budget_verdict"] == result["fit"] == expected, result
+    for key in ("allows_enclosed_candles", "allows_outside_vendors", "allows_alcohol",
+                "indoor_ceremony", "heated_indoor_ceremony", "separate_cocktail_space"):
+        assert check(**{key: False})["fit"] == "no", key
+        assert check(**{key: None})["fit"] == "unknown", key
+    assert check(reception_end_time="21:59")["fit"] == "no"
+    assert check(reception_end_time=None, end_time="rental window 8AM-12AM")["fit"] == "unknown"
+    assert check(reception_end_time="midnight")["fit"] == "fits"
+    assert end_time_meets_requirement("25:00") is None
+    assert check(quote_complete=None)["fit"] == "unknown"
+    assert check(tax_inclusion_confirmed=None)["fit"] == "unknown"
+    assert check(quote_complete=False, package_pp=32140 / 185)["fit"] == "no"
+    assert check(ceremony_requires_flip=True)["fit"] == "unknown"
+    assert check(ceremony_requires_flip=True, ceremony_flip_priced=False, holding_room_capacity=185)["fit"] == "no"
+    assert check(ceremony_requires_flip=True, ceremony_flip_priced=True, holding_room_capacity=184)["fit"] == "no"
+    assert check(ceremony_requires_flip=True, ceremony_flip_priced=True, holding_room_capacity=185)["fit"] == "fits"
+    assert check(ceremony_seated_capacity=184)["fit"] == "no"
+    no_cutting = [x for x in confirmed["includes"] if x != "cake_cutting"]
+    cake_result = check(includes=no_cutting)
+    assert "wedding cake + tasting/delivery" not in cake_result["lines"]
+    assert cake_result["lines"]["cake cutting"] == 370
+    assert cake_result["all_in"] == 31509
+    ok.append("Decision boundaries, failed/unknown policies, flip holding capacity, unknown quotes/tax and cake-included/cutting-extra regressions")
     return ok
 
 
@@ -579,11 +740,11 @@ def filters_report() -> dict:
     out = {}
     # (a) all-inclusive packages: extras = cake + cutting + getting-ready (if not included)
     pk = []
-    for g in (185, 165, 150):
+    for g in (185,):
         extras = DEFAULTS["cake_pp"] * g + DEFAULTS["cake_tasting_delivery"] + 2 * g + DEFAULTS["getting_ready"]
-        for trimmed in (False, True):
+        for trimmed in (True,):
             env = envelope(g, 1, trimmed)
-            row = dict(guests=g, plan="trimmed" if trimmed else "as-is", envelope=env,
+            row = dict(guests=g, plan="approved allocations" if trimmed else "historical workbook", envelope=env,
                        all_in_pp_incl_extras=round(env / g, 2),
                        package_allin_pp_ceiling=round((env - extras) / g, 2))
             for label, s, t in (("22% svc, 6% (MD/VA no meals tax)", 0.22, TAX["VA"]),
@@ -596,13 +757,13 @@ def filters_report() -> dict:
     out["package"] = pk
     # (b) rental-only + outside caterer
     rt = []
-    for g in (185, 150, 130):
-        for trimmed in (False, True):
+    for g in (185,):
+        for trimmed in (True,):
             env = envelope(g, 1, trimmed)
             for label, inc, park in (("bare hall (BYO everything, paid parking)", (), True),
                                      ("hall incl. tables/chairs/setup + dance floor, free lot",
                                       ("tables_chairs", "setup_breakdown", "dance_floor", "free_parking"), False)):
-                row = dict(guests=g, plan="trimmed" if trimmed else "as-is", venue=label, envelope=env,
+                row = dict(guests=g, plan="approved allocations" if trimmed else "historical workbook", venue=label, envelope=env,
                            byo_stack=round(byo_stack(g, TAX["MD"], inc, None, park), 2))
                 for R in (0, 2000, 4000, 6000):
                     row[f"max caterer all-in $/guest @ rental ${R:,}"] = round(
@@ -615,24 +776,24 @@ def filters_report() -> dict:
     out["rental"] = rt
     # (c) restaurant buyout with F&B minimum (includes tables/chairs/china/linens/staff; no dance floor)
     rb = []
-    for g in (185, 150, 130):
-        for trimmed in (False, True):
+    for g in (185,):
+        for trimmed in (True,):
             env = envelope(g, 1, trimmed)
             extras = (DEFAULTS["dance_floor"] + DEFAULTS["rental_delivery"]) * (1 + TAX["DC"].rental) \
                 + DEFAULTS["cake_pp"] * g + DEFAULTS["cake_tasting_delivery"] + 2 * g + DEFAULTS["getting_ready"]
             for buyout in (0, 2500):
-                rb.append(dict(guests=g, plan="trimmed" if trimmed else "as-is", buyout_fee=buyout,
+                rb.append(dict(guests=g, plan="approved allocations" if trimmed else "historical workbook", buyout_fee=buyout,
                                max_fb_min_dc_22pct=round(max_fb_minimum(env, 0.22, TAX["DC"], extras + buyout), 0),
                                max_fb_min_va_20pct_6=round(max_fb_minimum(env, 0.20, TAX["VA"], extras + buyout), 0),
                                max_menu_pp_dc=round(max_fb_minimum(env, 0.22, TAX["DC"], extras + buyout) / g, 2)))
     out["restaurant"] = rb
     # (d) hourly (Peerspace-type), 9% guest fee (conservative end of unverified 5-9%), $300 cleaning
     hr = []
-    for g in (185, 150, 130):
-        for trimmed in (False, True):
+    for g in (185,):
+        for trimmed in (True,):
             env = envelope(g, 1, trimmed)
             for cpp in (100, 125, 150):
-                row = dict(guests=g, plan="trimmed" if trimmed else "as-is", catering_allin_pp=cpp)
+                row = dict(guests=g, plan="approved allocations" if trimmed else "historical workbook", catering_allin_pp=cpp)
                 for h in (10, 11, 12):
                     row[f"max $/hr @{h}h"] = round(max_hourly(g, env, cpp, TAX["DC"], h, 0.09, 300), 0)
                 hr.append(row)
@@ -641,33 +802,16 @@ def filters_report() -> dict:
 
 
 def levers_report() -> dict:
-    L = {}
-    L["trims_value_185"] = round(envelope(185, trimmed=True) - envelope(185), 2)
-    L["reading2_value"] = round(spend_limit(2) - spend_limit(1), 2)
-    L["nonvenue_saving_per_guest_cut"] = round((nonvenue_total(185) - nonvenue_total(150)) / 35, 2)
-    # beer & wine bar: alcohol 35 -> 22 (ASSUMPTION), 20% svc, DC 10%
-    L["beer_wine_saving_185_dc"] = round(Catering().cost(185, TAX["DC"])["total"]
-                                         - Catering(alcohol_pp=22).cost(185, TAX["DC"])["total"], 0)
-    # buffet/family style: food 95->72, staff 25->18 (ASSUMPTION)
-    L["buffet_saving_185_dc"] = round(Catering().cost(185, TAX["DC"])["total"]
-                                      - Catering(food_pp=72, staff_pp=18).cost(185, TAX["DC"])["total"], 0)
-    # jurisdiction: same mid-range caterer DC 10% vs MD (6%/9% alcohol)
-    L["dc_vs_md_tax_185"] = round(Catering().cost(185, TAX["DC"])["total"] - Catering().cost(185, TAX["MD"])["total"], 0)
-    # brunch/lunch: ASSUMPTION ~25% off food & ~40% off alcohol
-    L["brunch_saving_185_dc"] = round(Catering().cost(185, TAX["DC"])["total"]
-                                      - Catering(food_pp=95 * 0.75, alcohol_pp=35 * 0.6).cost(185, TAX["DC"])["total"], 0)
-    # package all-in $150/guest: cost at each count vs envelope
-    L["pkg150_by_count"] = {g: dict(cost=150 * g, env_as_is=envelope(g), env_trim=envelope(g, trimmed=True))
-                            for g in (185, 165, 150, 130)}
-    # breakeven guest count for a package all-in P/guest (as-is and trimmed)
-    def breakeven(P, trimmed):
-        g = 200
-        while g > 50 and P * g > envelope(g, 1, trimmed):
-            g -= 1
-        return g
-    L["breakeven_guests"] = {P: dict(as_is=breakeven(P, False), trimmed=breakeven(P, True))
-                             for P in (125, 150, 175, 200, 225)}
-    return L
+    """Current plan sensitivities, not new savings or supplier offers."""
+    plan = approved_plan()
+    return {
+        "already_assumed_nonvenue_reductions": nonvenue_total(185) - nonvenue_total(185, True),
+        "ten_dollars_all_in_per_guest": 1850,
+        "ten_dollars_before_22pct_service_and_9pct_tax": round(185 * 10 * 1.22 * 1.09, 2),
+        "venue_shopping_target": plan["venue_shopping_target"],
+        "headroom_at_shopping_target": round(spend_limit() - nonvenue_total(185, True) - plan["venue_shopping_target"], 2),
+        "warning": "Targets and sensitivities are not quotes or secured savings; 185 guests and the protected reserve remain fixed.",
+    }
 
 
 def caps_report() -> dict:
@@ -703,7 +847,7 @@ def examples() -> list[dict]:
               min_hours=4, platform_fee_pct=0.09, cleaning_fee=300, outside_catering=BUDGET_BUFFET_BEER_WINE,
               seated_capacity_with_dance_floor=150, indoor_ceremony=True, separate_cocktail_space=False),
     ]
-    return [evaluate(v, g, exclusions=set()) for v, g in zip(ex, (185, 150, 150, 150))]
+    return [evaluate(v, g, exclusions=set()) for v, g in zip(ex, (185, 185, 185, 185))]
 
 
 def main(argv=None):
@@ -727,7 +871,7 @@ def main(argv=None):
         print(json.dumps(rep, indent=1, default=str))
         return
     print("TESTS PASSED:"); [print("  -", t) for t in tests]
-    print("\nENVELOPE (Reading 1 = $54,545.45 limit; Reading 2 = $60,000)")
+    print("\nAPPROVED PLAN: 185 guests; $54,545.45 spending limit; $5,454.55 reserve protected")
     print(f"{'guests':>6} {'rdg':>3} {'non-venue':>10} {'env as-is':>10} {'$/g':>6} {'env trim':>10} {'$/g':>6}")
     for r in rep["envelope_table"]:
         print(f"{r['guests']:>6} {r['reading']:>3} {r['nonvenue_as_is']:>10,.0f} {r['envelope_as_is']:>10,.0f} "

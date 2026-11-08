@@ -34,7 +34,7 @@
       "quote_status": "planning scenario, not an offer"
     },
     {
-      "label": "Suggested early quote target",
+      "label": "Approved venue shopping target",
       "venue_driven": 30000.0,
       "other_spending": 22406.0,
       "planned_spending": 52406.0,
@@ -46,12 +46,12 @@
   "marginal_costs": {
     "ten_dollars_all_in_per_guest": 1850,
     "ten_dollars_before_22pct_service_and_9pct_tax": 2460.13,
-    "five_more_tables_before_additional_tax": 810
+    "historical_five_more_tables_before_additional_tax": 810
   },
   "limitations": [
     "Targets are not supplier quotes.",
     "Unknown required costs remain unknown, not zero.",
     "No scenario authorizes spending the protected reserve.",
-    "The model's legacy FITS verdict does not enforce every locked requirement."
+    "Approved category caps remain fixed; actual table quantities and complete supplier quotes are still required."
   ]
 }

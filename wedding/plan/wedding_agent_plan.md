@@ -1,3 +1,9 @@
+# Current approved plan
+
+The couple approved the November 8, 2026 budget review changes. Use [approved_plan.json](../budget/approved_plan.json), [the approved budget](../output/approved_budget.md) and [the fulfillment plan](../output/fulfillment_plan.md) for current allocations and vendor research. The older planning material below is retained as history. The venue shopping target is $30,000; the existing $32,139 hard ceiling and untouched $5,454.55 reserve remain in force.
+
+---
+
 # Wedding-planning agent: finding a new venue
 
 *Sean & Leila · Sun 8 Nov 2026 · replaces the earlier draft*

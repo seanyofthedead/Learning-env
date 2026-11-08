@@ -1,0 +1,230 @@
+{
+  "checked_date": "2026-11-08",
+  "status": "Research complete; vendor quotes and date availability pending. No outreach, bookings or purchases.",
+  "approved_guests": 185,
+  "source_policy": "Vendor official websites and prior same-day official research only; search snippets not used as facts.",
+  "sections": [
+    {
+      "id": "coordination",
+      "title": "Day-of coordinator",
+      "budget_scope": "$2,500 approved total; assistant, rehearsal, hours, travel and mandatory charges must fit.",
+      "budget_items": [
+        "Day-of coordinator"
+      ],
+      "vendors": [
+        {
+          "name": "White Dress Black Tie Events",
+          "url": "https://www.wdbtevents.com/weddingmanagement",
+          "source_urls": [
+            "https://www.wdbtevents.com/weddingmanagement",
+            "https://www.wdbtevents.com/_files/ugd/291960_65f5fa39a56c4740b854833b0b8c2e95.pdf"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Starts $1,900",
+          "scope": "Wedding Management; timeline, rehearsal, walkthrough, vendor management; day-of assistant in previously verified guide.",
+          "gaps": "Final hours, assistant scope, travel, 185-guest/flip requirements and 2027 rate.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        },
+        {
+          "name": "MICKNICS — Full-Day",
+          "url": "https://www.micknics.com/wedding-day-coordination",
+          "source_urls": [
+            "https://www.micknics.com/wedding-day-coordination"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "$1,495 + $330 required assistant = $1,825 starting",
+          "scope": "10–12 consecutive hours advertised; assistant required above 100 guests/for flips; rehearsal now explicitly included with Full Wedding Day Coordination.",
+          "gaps": "Confirm Full wording maps to selected Full-Day package; exact hours, travel, overtime and 2027 total.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit",
+          "source_notes": {
+            "retrieval": "Direct official HTML and web-tool opened November 8, 2026",
+            "rehearsal_inclusion_excerpt": "Included with: Full Wedding Day Coordination",
+            "source_url": "https://www.micknics.com/wedding-day-coordination",
+            "correction": "Do not automatically add the $250 rehearsal enhancement to Full-Day; the prior $2,075 comparison may duplicate an included service."
+          }
+        },
+        {
+          "name": "Mayapple Weddings — Trillium",
+          "url": "https://www.mayappleweddings.com/packages",
+          "source_urls": [
+            "https://www.mayappleweddings.com/packages"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "$2,000 on directly retrieved current page",
+          "scope": "Ten hours; timeline, walkthrough, rehearsal, vendor logistics and personal-item cleanup.",
+          "gaps": "Assistant, travel, 185-guest/flip requirements and 2027 price.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit",
+          "source_notes": {
+            "retrieval": "Direct official HTML November 8, 2026",
+            "conflict": "Cached web-tool page showed $1,500; current origin showed $2,000. Use $2,000 pending written quote."
+          }
+        }
+      ],
+      "recommendation": "Request equivalent lead-plus-assistant day-of proposals. Coordinator supervision does not establish physical setup, furniture-flip or rental-strike labor."
+    },
+    {
+      "id": "music_sound",
+      "title": "DJ, MC, ceremony and cocktail sound",
+      "budget_scope": "$1,500 DJ/MC + $500 separate-room sound = $2,000 combined; allocate included systems once.",
+      "budget_items": [
+        "DJ / MC",
+        "Ceremony & cocktail-hour sound"
+      ],
+      "vendors": [
+        {
+          "name": "Shenandoah Entertainment — The Experience",
+          "url": "https://www.shenandoahentertainment.com/pricing",
+          "source_urls": [
+            "https://www.shenandoahentertainment.com/pricing"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Starts $1,500; up to five hours",
+          "scope": "Ceremony/cocktail/reception DJ/MC; second ceremony sound with microphones; local service-area travel included.",
+          "gaps": "185-person sound needs, separate cocktail coverage, additional hours, actual event end, tax, setup/strike and 2027 quote.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        },
+        {
+          "name": "Mixmasters",
+          "url": "https://www.mixmastersmd.com/package-information",
+          "source_urls": [
+            "https://www.mixmastersmd.com/package-information",
+            "https://www.mixmastersmd.com/service-overviews"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Wedding packages advertised from $1,500",
+          "scope": "Reception sound/microphones, second independent same-site ceremony/cocktail sound system, planning portal and dance lighting.",
+          "gaps": "Exact package tier, included hours, assigned performer, local travel, tax and 2027 total.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        },
+        {
+          "name": "Black Tie Entertainment",
+          "url": "https://www.musicdj.com/check-availability",
+          "source_urls": [
+            "https://www.musicdj.com/check-availability",
+            "https://www.musicdj.com/services"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "$975–$1,975 for four hours; +$250/hour",
+          "scope": "DJ/MC; lowest-tier six-hour arithmetic $1,475 before unknown additions.",
+          "gaps": "Named DJ availability, room systems, tax/travel and hours. Coordination is tied to its DJs; obtain itemized combined quote if wanted.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        }
+      ],
+      "recommendation": "Give each provider the same timeline and rooms. Keep the sound allocation until all microphones, systems, staffing and transitions are covered in writing."
+    },
+    {
+      "id": "videography",
+      "title": "Video-only wedding coverage",
+      "budget_scope": "$1,800 approved total; preserve booked photography separately.",
+      "budget_items": [
+        "Videographer"
+      ],
+      "vendors": [
+        {
+          "name": "MacroSnaps",
+          "url": "https://www.macrosnaps.com/wedding-videography",
+          "source_urls": [
+            "https://www.macrosnaps.com/wedding-videography",
+            "https://www.macrosnaps.com/faq"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Current direct page: six hours $1,300; seven hours $1,500",
+          "scope": "One videographer; 4–7 or 4–8 minute highlight; three revisions; raw footage on request; three-to-four-week delivery advertised.",
+          "gaps": "Full uninterrupted ceremony/speeches edits, dedicated audio, raw-footage charge, assigned crew/backup, consecutive coverage, travel/tax and 2027 rate.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit",
+          "source_notes": {
+            "retrieval": "Direct official HTML November 8, 2026",
+            "conflict": "Web-tool cached wedding page showed $1,450/$1,650 for six/seven hours; current origin showed $1,300/$1,500. Written event quote needed.",
+            "contract_questions": "FAQ describes multiple events per day and nonrefundable client cancellation/rescheduling; confirm dedicated coverage, buffers and replacement plan."
+          }
+        },
+        {
+          "name": "Precious Pics Pro",
+          "url": "https://www.preciouspicspro.com/packages",
+          "source_urls": [
+            "https://www.preciouspicspro.com/packages",
+            "https://www.preciouspicspro.com/dc"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Video from $1,499; four hours or more",
+          "scope": "Lead videographer, multicamera coverage, no travel fees advertised; video-only raw footage is an add-on.",
+          "gaps": "Actual needed hours, full ceremony/speeches, audio, final-film length, raw footage, delivery timing, tax and 2027 price.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        },
+        {
+          "name": "The Studio Weddings",
+          "url": "https://thestudioweddings.com/",
+          "source_urls": [
+            "https://thestudioweddings.com/"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Collection range $1,800–$4,400; no explicit price assigned to Essential",
+          "scope": "Prior same-day Essential check: one filmmaker, up to six hours, ceremony and highlight; current homepage includes professional audio.",
+          "gaps": "Exact video-only Essential rate, full ceremony/speeches delivery, travel, tax, overtime and 2027 availability.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        }
+      ],
+      "recommendation": "MacroSnaps is a new scoped-price lead, not a confirmed complete fit. Define capture milestones and full-audio/ceremony needs before choosing hours. Complete Northern Virginia remains an alternate only if its 2027 scope and price fit."
+    },
+    {
+      "id": "photography_booked",
+      "title": "Existing photographer",
+      "budget_scope": "$750 booked per supplied workbook; no replacement or duplicate photo package.",
+      "budget_items": [
+        "Photographer"
+      ],
+      "vendors": [
+        {
+          "name": "We Love Photography — existing booking",
+          "url": "https://github.com/seanyofthedead/Learning-env/blob/codex/wedding-research-nov8/wedding/budget/venue_neutral_items.md",
+          "source_urls": [
+            "https://github.com/seanyofthedead/Learning-env/blob/codex/wedding-research-nov8/wedding/budget/venue_neutral_items.md"
+          ],
+          "price_year": "booking year not documented in public extract",
+          "published_price": "$750 booked amount in workbook; not a public tariff",
+          "scope": "Retain the existing booking and use the existing contract contact.",
+          "gaps": "Exact provider website/identity, date, coverage hours, travel, delivery, backup, balance and date-change terms require existing agreement.",
+          "priority": 1,
+          "availability": "existing booking per workbook; exact date-change availability unknown",
+          "budget_status": "booked allowance retained"
+        }
+      ],
+      "recommendation": "Confirm the existing contract before defining video coverage or a backup date. Booked does not establish paid-in-full or transferability."
+    }
+  ],
+  "additional_checks": [
+    {
+      "name": "Complete Northern Virginia",
+      "url": "https://completewedo.com/northern-virginia/blog/whats-included-in-a-northern-virginia-wedding-photo-and-video-package/",
+      "result": "October 18, 2026 Signature $1,795 becomes $1,866.80 with approved 4% planning uplift; above video cap. Full ceremony associated with Signature Plus."
+    },
+    {
+      "name": "Brandon Media Group",
+      "url": "https://www.brandonmediagroup.com/wedding-videography",
+      "result": "Starting $1,500 collections do not establish exact video-only hours; no stronger complete fit demonstrated."
+    },
+    {
+      "name": "Artistic DJs",
+      "url": "https://artisticdjs.com/wedding-videography-virginia/",
+      "result": "$1,500–$2,100 range; Basic is four-hour reception-only, higher-tier pricing unknown and generic FAQ scope conflicts with detailed tiers."
+    }
+  ]
+}

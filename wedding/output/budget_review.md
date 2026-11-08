@@ -1,5 +1,7 @@
 # Wedding budget review — Sean & Leila
 
+**Approved and implemented November 8, 2026.** This page preserves the review that led to the decision; its “current” and “proposed” descriptions below refer to the review-stage budget. Use the [approved budget](approved_budget.md) and [vendor fulfillment plan](fulfillment_plan.md) for current allocations and next steps. The original workbook remains historical evidence.
+
 **The budget can guide shopping, but it is not yet a fully priced wedding.** Its arithmetic works only if the already-reduced allowances can be achieved. The best improvement is to buy complete service and a comfortable room layout, then choose a simpler, cohesive design within the remaining allowances.
 
 Reviewed November 8, 2026. Six independent reviews covered arithmetic, venue/catering value, vendors, décor/attire, taxes/fees and logistics. The baseline remains **185 guests, $60,000 total, $54,545.45 maximum spending and $5,454.55 kept untouched**. The preferred November 2027 dates and all required venue features remain intact. No new savings are secured by this review.

@@ -1,0 +1,1405 @@
+{
+  "checked_date": "2026-11-08",
+  "approved_plan": "../budget/approved_plan.json",
+  "warning": "Supplier routes and published prices are research, not selections, full quotes or confirmed 2027 availability.",
+  "budget_rows": 85,
+  "sections": [
+    {
+      "id": "venues/venue_rooms",
+      "title": "Venue, ceremony and cocktail rooms",
+      "report": "research/fulfillment_venues.md",
+      "budget_scope": "Single venue-driven envelope: shop toward $30,000; hard ceiling $32,139; financial fits requires $31,139 or less. All room, food/bar, staff, rental, cake, ready-room, parking and required-fee costs share that envelope.",
+      "budget_items": [
+        "Reception venue",
+        "Ceremony space (indoor)",
+        "Cocktail hour space",
+        "Getting-ready suite",
+        "Guest parking",
+        "Extra hour for décor setup",
+        "Setup & breakdown labor",
+        "Liquor license"
+      ],
+      "vendors": [
+        {
+          "name": "Old Hickory Golf Club",
+          "url": "https://www.golfoldhickory.com/events/weddings-banquets",
+          "source_urls": [
+            "https://www.golfoldhickory.com/events/weddings-banquets",
+            "https://www.golfoldhickory.com/events/special-occasions",
+            "https://www.golfoldhickory.com/events/gallery"
+          ],
+          "price_year": "unknown",
+          "published_price": "Wedding package, minimums and required wedding fees unknown. The $119.50 figure in older analysis is a solver ceiling, not a price.",
+          "scope": "Club ballroom; advertised furniture, standard linens, tableware, dance floor, service personnel, cake cutting, changing rooms and coordinator. In-house wedding food/bar proposal is the intended route.",
+          "gaps": "185 rounds with dance floor; heated indoor ceremony/holding plan; separate cocktails; full access/flip/strike; outside-vendor and candle permissions; end time; coordinator scope; parking charges; 2027 all-in price and dates.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Unknown; prioritize requested-interest quote, not a confirmed budget fit."
+        },
+        {
+          "name": "The Villa — Grand Ballroom / Catering by Uptown",
+          "url": "https://www.thevillaweddingvenue.com/faq/",
+          "source_urls": [
+            "https://www.thevillaweddingvenue.com/faq/",
+            "https://www.thevillaweddingvenue.com/ballrooms/",
+            "https://www.thevillaweddingvenue.com/"
+          ],
+          "price_year": "unknown",
+          "published_price": "Wedding package and date-dependent food/beverage minimum unknown.",
+          "scope": "Package route with mandatory in-house food and alcohol; outside cake permitted. Grand Ballroom advertised for 125–250 and indoor weather backup offered. Additional floral/decor installation and removal require a licensed professional unless an exception is confirmed.",
+          "gaps": "185 rounds plus dance floor, heated ceremony and separate cocktail allocation, precise included rentals/rooms, access/strike hours, paid rehearsal, candle/outside-DJ rules, parking charges and complete 2027 quote.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Unknown; compare a complete package, not a bare room price."
+        },
+        {
+          "name": "Oak Room at Sandy Spring Volunteer Fire Department",
+          "url": "https://ssvfd.org/the-oak-room/",
+          "source_urls": [
+            "https://ssvfd.org/the-oak-room/",
+            "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+            "https://ssvfd.org/wp-content/uploads/2026/06/2023-Oak-Room-Rules-And-Regulations.pdf"
+          ],
+          "price_year": 2026,
+          "published_price": "Saturday rental $3,000 for 8 hours; outside caterer $500; contracted extra hours $200/hour. Current 2027 proposal unknown; model applies 4% to dated costs.",
+          "scope": "Hall route: published 220 seated with dance floor, tables/chairs, kitchen, breakout room and free parking. Venue approves licensed/insured caterer and qualified bartender; renter supplies table setup/strike labor.",
+          "gaps": "Rounds layout, heated ceremony or priced flip with 185-person holding room, breakout/cocktail capacity, getting-ready solution, all access hours and complete catering/rental/cleanup proposal.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Unknown; published rental does not establish complete wedding cost or required room flow."
+        },
+        {
+          "name": "The Gathering Place — Patuxent Grand Ballroom",
+          "url": "https://thegatheringplacemd.net/details/",
+          "source_urls": [
+            "https://thegatheringplacemd.net/details/",
+            "https://thegatheringplacemd.net/about/"
+          ],
+          "price_year": "unknown",
+          "published_price": "Rent and required room fees unpublished; getting-ready suite has an additional charge.",
+          "scope": "Hall route: ballroom advertised up to 265 seated with dance floor, movable partitions, venue table/chair setup and licensed outside catering permitted. Preferred list includes MISSION BBQ.",
+          "gaps": "Approved 185-person rounds/dance layout, heated ceremony/holding and separate cocktail sequence, actual table sizes, rental/partition/ready-room prices, cleanup/strike duties, permits, parking and full 2027 quote.",
+          "priority": 4,
+          "availability": "unknown",
+          "budget_status": "Unknown; zero-rent models are incomplete subtotals."
+        },
+        {
+          "name": "Crowne Plaza College Park — Grand Ballroom + Annapolis room",
+          "url": "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+          "source_urls": [
+            "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+            "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet"
+          ],
+          "price_year": "unknown",
+          "published_price": "Wedding package unknown. Current hotel amenities page publishes $15/day parking; event waiver/2027 event charge unknown.",
+          "scope": "Hotel package route: fact sheet lists Grand Ballroom banquet capacity 320 and Annapolis reception capacity 250. Onsite hotel rooms can simplify the overnight plan if separately quoted.",
+          "gaps": "185 rounds plus dance floor, heated ceremony/holding allocation, furniture/service package, actual access hours, outside vendors/candles and 2027 total. Old fact-sheet free-parking claim conflicts with current hotel parking tariff; written event terms required.",
+          "priority": 5,
+          "availability": "unknown",
+          "budget_status": "Unknown; do not credit free event parking pending written confirmation."
+        }
+      ]
+    },
+    {
+      "id": "venues/hotel",
+      "title": "Wedding-night room and conditional getting-ready fallback",
+      "report": "research/fulfillment_venues.md",
+      "budget_scope": "$600 wedding-night room is outside the venue envelope. A separate getting-ready need is inside the venue envelope; the model carries $600 if needed. Do not count a single booking twice or assume one night permits morning access.",
+      "budget_items": [
+        "Wedding-night hotel room",
+        "Getting-ready suite"
+      ],
+      "vendors": [
+        {
+          "name": "Home2 Suites by Hilton Woodbridge Potomac Mills",
+          "url": "https://www.hilton.com/en/hotels/dcawdht-home2-suites-woodbridge-potomac-mills/",
+          "source_urls": [
+            "https://www.hilton.com/en/hotels/dcawdht-home2-suites-woodbridge-potomac-mills/"
+          ],
+          "price_year": "unknown",
+          "published_price": "November 2027 room rate unknown; published parking $12/day.",
+          "scope": "Woodbridge/Old Hickory cluster option at 14005 Telegraph Road; suites with in-room kitchens; published check-in 3pm and checkout 11am.",
+          "gaps": "Actual room category, date-specific tax-inclusive total within $600 overnight allowance, incidental hold, parking, cancellations, venue drive time, early/day-use/prior-night access and permission for preparation team.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Quote needed; hotel night does not establish getting-ready access."
+        },
+        {
+          "name": "Residence Inn by Marriott Fulton at Maple Lawn",
+          "url": "https://www.marriott.com/en-us/hotels/bwirf-residence-inn-fulton-at-maple-lawn/overview/",
+          "source_urls": [
+            "https://www.marriott.com/en-us/hotels/bwirf-residence-inn-fulton-at-maple-lawn/overview/"
+          ],
+          "price_year": "unknown",
+          "published_price": "November 2027 room rate unknown; official page lists complimentary onsite parking.",
+          "scope": "Fulton option to compare for Clarksville/Gathering Place and Sandy Spring/Oak routes; studio and one-/two-bedroom suites, published 3pm check-in and 11am checkout.",
+          "gaps": "Verify drive time to selected venue, actual room/policy and 2027 total including taxes, incidental hold and preparation access. Airport shuttle is not provided; no wedding shuttle assumed.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Quote needed; $600 is a cap, not a quoted room price."
+        },
+        {
+          "name": "Crowne Plaza College Park — overnight room",
+          "url": "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+          "source_urls": [
+            "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+            "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/rooms"
+          ],
+          "price_year": "unknown",
+          "published_price": "November 2027 room rate unknown; published parking $15/day and $150 incidental deposit at check-in.",
+          "scope": "Onsite overnight option if Crowne Plaza hosts the wedding; Greenbelt cluster comparison for The Villa, with actual drive time still to verify. Published check-in 3pm, checkout 11am; hotel says it has no shuttle.",
+          "gaps": "Package-included night versus separate charge, room type, tax-inclusive total, deposit release terms, early access/day-use and event-parking waiver.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Quote needed; incidental deposit is a cash requirement, not automatically an expense."
+        }
+      ]
+    },
+    {
+      "id": "food/food_staff_fees",
+      "title": "Food, catering staff and required charges",
+      "report": "research/fulfillment_food.md",
+      "budget_scope": "Within complete venue-driven shopping target $30,000 / hard cap $32,139, together with venue, hosted bar, cake, rentals and tax. Outside caterers require venue approval. No complete quote establishes budget fit.",
+      "budget_items": [
+        "Hors d'oeuvres + dinner",
+        "Catering service staff",
+        "Caterer service charge (~20%)",
+        "Sales tax (~6%)"
+      ],
+      "vendors": [
+        {
+          "name": "MISSION BBQ",
+          "url": "https://mission-bbq.com/catering-a/",
+          "source_urls": [
+            "https://mission-bbq.com/catering-a/"
+          ],
+          "price_year": "unknown; current webpage undated",
+          "published_price": "Party Pack $17.54/person; XL $23.79/person, plus tax; staff $35/hour each; allow two hours setup/breakdown; gratuity additional.",
+          "scope": "BBQ food packages and disposables; staffed buffet service and equipment can be added. First inquiry for food value.",
+          "gaps": "Local-store applicability; 185 guests; cocktail-hour food; dietary needs; staff count/hours; delivery; tax/gratuity; china/glasses/flatware and guest linens; room setup/flip, bussing/strike; hosted bar and coffee not established.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising component pricing; complete venue and food-service fit requires quote. No all-in price inferred."
+        },
+        {
+          "name": "IndAroma",
+          "url": "https://indaroma.com/catering/",
+          "source_urls": [
+            "https://indaroma.com/catering/"
+          ],
+          "price_year": "unknown; current webpage undated",
+          "published_price": "Typical $14,000 event for about 250 guests; Saturday/peak minimums higher. Not a $56/person rate and not a 185-guest quote.",
+          "scope": "Buffet/family-style service, kitchen and waitstaff, rentals/equipment, and professional bar service can be itemized together; client usually supplies alcohol.",
+          "gaps": "Saturday minimum; 185-person menu; exact rentals and labor; fees/gratuity/tax/travel; alcohol and bar supplies; venue approval. Taking 2027 weddings is not date availability.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Strong integrated-service inquiry; complete price and budget fit unknown."
+        },
+        {
+          "name": "Catering At Your Door",
+          "url": "https://cateringatyourdoormd.com/barbecue/",
+          "source_urls": [
+            "https://cateringatyourdoormd.com/barbecue/",
+            "https://cateringatyourdoormd.com/wp-content/uploads/2024/03/All-Menus-MD-April-2024-Barbecue-Menus.pdf",
+            "https://cateringatyourdoormd.com/f-a-qs/",
+            "https://cateringatyourdoormd.com/wp-content/uploads/2024/03/All-Menus-MD-April-2024-Beverages.pdf"
+          ],
+          "price_year": "2024 linked April menus; matching webpage prices undated",
+          "published_price": "Supreme BBQ $32.95/person at 100+; chef up to 4 hours with 1.5 hours serving. Waitstaff $212/4 hours plus $53/hour thereafter. FAQ adds 20% gratuity or specified fixed amount, travel and applicable food tax. Beverage options $3/person each; bar setup $4/person with client alcohol.",
+          "scope": "BBQ with chef, separately priced waitstaff and beverage components; useful alternative for an approved outside-catering hall.",
+          "gaps": "2027 tariff and complete wedding service; cocktail food; extended hours; rentals and china; bartenders; ice/glassware; travel; cleanup. Confirm included gratuity once and avoid duplicate assumed charges.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Partial dated menu, not full quote. Escalate dated components 4% annually only for planning; full fit unproven."
+        }
+      ]
+    },
+    {
+      "id": "food/bar_beverages",
+      "title": "Hosted beer and wine, bartenders and nonalcoholic drinks",
+      "report": "research/fulfillment_food.md",
+      "budget_scope": "Inside complete venue envelope, not an additional budget. Require 185-person capacity and hosted beer/wine; smaller published packages do not establish a wedding price.",
+      "budget_items": [
+        "Bartenders",
+        "Bar / alcohol",
+        "Soft drinks, coffee & tea",
+        "Liquor license"
+      ],
+      "vendors": [
+        {
+          "name": "Cartistry",
+          "url": "https://www.cartistryllc.com/dry-hire",
+          "source_urls": [
+            "https://www.cartistryllc.com/dry-hire"
+          ],
+          "price_year": "unknown; undated",
+          "published_price": "$799 for 51–100 guests, two bartenders, up to four hours; not a 185-person package.",
+          "scope": "Dry-hire bartending with setup/breakdown; client supplies alcohol.",
+          "gaps": "185-person capacity/staff/price; bar table, ice, cups and mixers add-ons; full table bussing and venue cleaning excluded; travel/tax, insurance/venue authorization and legal purchasing arrangement must be confirmed.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Custom 185-person quote required; no extrapolation from smaller tier."
+        },
+        {
+          "name": "Sunrise Rentals DMV",
+          "url": "https://sunriserentalsdmv.com/mobile-bar/",
+          "source_urls": [
+            "https://sunriserentalsdmv.com/mobile-bar/"
+          ],
+          "price_year": "unknown; undated",
+          "published_price": "Deluxe Grand Bar $1,120 or mobile bar $1,360; three hours, two bartenders, up to 150 guests. Extra hour $180; beverage essentials +$5/person.",
+          "scope": "Bar equipment and service; client alcohol; setup/cleanup and specified disposables.",
+          "gaps": "185-person upgrade/capacity; full hours; travel/tax; glassware; venue approval. Package and FAQ conflict on ice/mixers, requiring written reconciliation. Coffee/tea not established.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Published tier excludes our guest count; complete price unknown."
+        },
+        {
+          "name": "Total Wine & More — retail support only",
+          "url": "https://www.totalwine.com/discover/wedding",
+          "source_urls": [
+            "https://www.totalwine.com/discover/wedding"
+          ],
+          "price_year": "unknown; products and local store pricing depend on selection",
+          "published_price": "Free wedding consultation; no 185-person hosted-beer/wine price published.",
+          "scope": "Possible beer/wine retailer after venue/caterer purchasing rules permit it. Consultation does not include alcohol, staff or bar service.",
+          "gaps": "Permitted purchase location and owner; adult drinkers; service duration; products, quantities, local tax, pickup/delivery, ice/storage and returns. Do not use default out-of-state website prices.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Retail sourcing option only; full alcohol cost unknown and separate from bartending quote."
+        }
+      ]
+    },
+    {
+      "id": "food/cake",
+      "title": "Wedding cake, tasting, delivery and cutting",
+      "report": "research/fulfillment_food.md",
+      "budget_scope": "Current model allowances within venue envelope: cake $1,480 + tasting/delivery $150 + cutting $370. Published components do not replace these allowances until complete quotes arrive.",
+      "budget_items": [
+        "Wedding cake",
+        "Cake tasting & delivery",
+        "Cake cutting"
+      ],
+      "vendors": [
+        {
+          "name": "Heidelberg Pastry Shoppe — traditional wedding cake",
+          "url": "https://heidelbergbakery.com/wedding-cakes-options-prices/",
+          "source_urls": [
+            "https://heidelbergbakery.com/wedding-cakes-options-prices/"
+          ],
+          "price_year": "2024; detailed sheet dated 06/24",
+          "published_price": "$5.50/serving base; tasting $20; delivery from $40. 185 base servings $1,017.50; cake+tasting+minimum delivery $1,077.50 raw / $1,212.04 after 4% annual escalation to 2027.",
+          "scope": "Traditional buttercream wedding cake with base flavors/fillings. Raw and escalated totals are partial estimates only.",
+          "gaps": "2027 quote; design, premium flavors/fillings, actual delivery mileage/time, tax, stand, top-tier retention and cake cutting/service. Detailed dated sheet takes precedence over older conflicting introductory price.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising within $1,630 cake/tasting/delivery baseline before unresolved costs; no saving secured. Cutting separately retained."
+        },
+        {
+          "name": "Classic Bakery — traditional wedding cake",
+          "url": "https://www.classicbakery.com/the-wedding-center/pricing-guidelines/",
+          "source_urls": [
+            "https://www.classicbakery.com/the-wedding-center/pricing-guidelines/",
+            "https://www.classicbakery.com/the-wedding-center/"
+          ],
+          "price_year": "unknown; undated pricing guide",
+          "published_price": "From $7/serving at 75+ servings and three tiers; delivery from $100. Tasting $60 credited toward order. 185 base servings + minimum delivery = $1,395 before tax/upgrades/actual travel/cutting.",
+          "scope": "Traditional cake with base filling, icing and decoration; delivery priced separately.",
+          "gaps": "2027 tariff and design; delivery mileage; tax; cutting/service; optional stand rental and refundable deposit if needed. Avoid counting credited tasting twice.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Published partial floor suggests possible baseline fit; undated tariff and full quote remain unknown."
+        },
+        {
+          "name": "Heidelberg Pastry Shoppe — optional small cutting cake and sheets",
+          "url": "https://heidelbergbakery.com/price-sheets/",
+          "source_urls": [
+            "https://heidelbergbakery.com/price-sheets/"
+          ],
+          "price_year": "2022; cake section dated 01/22",
+          "published_price": "Group B 6-inch round $23.95 (6–8 servings), full sheet $220 (80–120), quarter sheet $69 (20–30). Two full + one quarter + 6-inch round: minimum 186 stated servings, $532.95 raw / $648.42 after five years at 4%.",
+          "scope": "Optional presentation change with small display/cutting cake and sheet portions. Sheet cakes are not layered; differs from traditional wedding cake.",
+          "gaps": "Old price sheet; baker-approved wedding portions, design, actual 2027 price, tasting, delivery, tax and cutting/service. Couple must choose this presentation before implementation.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Illustrative saving opportunity only, not a quote or approved design substitution. Keep allowances intact."
+        }
+      ]
+    },
+    {
+      "id": "food/vendor_meals",
+      "title": "Meals for the working vendor team",
+      "report": "research/fulfillment_food.md",
+      "budget_scope": "$400 separate approved allowance; roughly ten workers is an unconfirmed planning assumption.",
+      "budget_items": [
+        "Vendor meals"
+      ],
+      "vendors": [
+        {
+          "name": "Selected caterer — MISSION BBQ, IndAroma or Catering At Your Door if venue-approved",
+          "url": "https://mission-bbq.com/catering-a/",
+          "source_urls": [
+            "https://mission-bbq.com/catering-a/",
+            "https://indaroma.com/catering/",
+            "https://cateringatyourdoormd.com/barbecue/"
+          ],
+          "price_year": "unknown for vendor-meal scope",
+          "published_price": "No dedicated wedding vendor-meal price established; $400 is the internal allowance, not a supplier quote.",
+          "scope": "Add contracted working-crew meals to the same caterer's proposal and schedule.",
+          "gaps": "Actual crew headcount including assistants, hot-meal requirements, timing/dietary needs, tax and fees; prevent double counting in the 185 guest count.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Must fit $400 or be offset within the approved plan after complete quote; no reserve use."
+        }
+      ]
+    },
+    {
+      "id": "design/fresh_florals",
+      "title": "Fresh bouquets, personal flowers, ceremony pieces and centerpieces",
+      "report": "research/fulfillment_design.md",
+      "budget_scope": "Within the $5,446 floral/decor cap: bouquet $300; personal flowers $220; ceremony flowers $650; centerpieces $1,600; cocktail/bar/cake flowers $150. Tax, labor, candles and other items retain separate allocations within that cap.",
+      "budget_items": [
+        "Bridal bouquet",
+        "Boutonnieres & corsages",
+        "Ceremony florals",
+        "Centerpieces",
+        "Cocktail, bar & cake flowers"
+      ],
+      "vendors": [
+        {
+          "name": "She Loves Me — à la carte",
+          "url": "https://shelovesme.com/pages/a-la-carte-florals",
+          "source_urls": [
+            "https://shelovesme.com/pages/a-la-carte-florals"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Deluxe bouquet from $285; boutonniere from $25; bud-vase trio from $75; accent centerpiece from $100; impact arrangement from $295; $500 order minimum.",
+          "scope": "Finished flower products in preset palettes; packaged for someone at the event to place. Product checks: 19 $75 trios=$1,425; two $295 impact arrangements=$590.",
+          "gaps": "2027 rates and capacity; exact sage/stone/ivory palette; personal-flower count; tax; delivery; professional placement, moves and removal; no full-service labor established.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Products plausibly fit selected line allowances; complete fulfillment remains quote pending."
+        },
+        {
+          "name": "Little Acre Flowers — à la carte",
+          "url": "https://www.littleacreflowers.com/collections/a-la-carte-wedding",
+          "source_urls": [
+            "https://www.littleacreflowers.com/collections/a-la-carte-wedding",
+            "https://www.littleacreflowers.com/products/bud-vase-trio",
+            "https://www.littleacreflowers.com/pages/full-service-weddings-and-events"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Bridal bouquet $275; boutonniere $25; floral wrist cuff $75; three styled bud vases $75. Full-service minimum $7,000; custom delivery-only proposals from $3,000.",
+          "scope": "Local seasonal flowers; no minimum for à la carte on the service page. 19 bud-vase trios=$1,425 before tax/logistics. Color preferences are requests, not guaranteed exact flowers.",
+          "gaps": "Product page includes a sold-out state; stock and 2027 event quantity/date must be confirmed. Delivery to selected venue, installation/strike, palette and ceremony pieces need a quote.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "À la carte is the budget route; $7,000 full-service minimum exceeds the entire $5,446 decor cap."
+        }
+      ]
+    },
+    {
+      "id": "design/decor_styling",
+      "title": "Arch, enclosed candles, chargers and tabletop styling",
+      "report": "research/fulfillment_design.md",
+      "budget_scope": "Arch $200 and candles $650 inside floral cap; specialty linens/chargers $935 in fixed venue costs. Bundles must be itemized across their existing lines without counting labor/tax twice.",
+      "budget_items": [
+        "Ceremony backdrop / arch",
+        "Candles (hurricanes & votives)",
+        "Specialty linens & chargers"
+      ],
+      "vendors": [
+        {
+          "name": "MICKNICS — tabletop styling and arch rental",
+          "url": "https://www.micknics.com/event-tablescape-venue-styling",
+          "source_urls": [
+            "https://www.micknics.com/event-tablescape-venue-styling",
+            "https://www.micknics.com/wedding-arch-rentals-maryland",
+            "https://www.micknics.com/wedding-event-party-rentals-maryland",
+            "https://www.micknics.com/event-styling-rentals-faq"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "15+ tables $75/table for up to eight seats each, plus styling/curation fee starting $175; more than eight seats per table quoted. Plain arch stand from $75; graduated set from $125.",
+          "scope": "Tabletop scope lists chargers, napkins, runners, candles, small faux centerpiece or four bud vases, some welcome/place-card elements and delivery/setup/breakdown. At 24 eight-seat tables, headline calculation is $1,975 before tax/additional charges. Plain-arch page lists up to 12 hours delivery/setup/breakdown.",
+          "gaps": "Exact fresh/faux composition and style choice; enclosed real-flame vessels and venue permission; 185-place inventory; fee overlap; tablecloths versus runners; travel, tax, midnight strike, room flip, refundable damage hold. 19 ten-seat tables require a custom price. Welcome/place cards do not establish a seating chart/table numbers.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising consolidated decor route, not a confirmed saving. Dinnerware is a separate add-on from $30/person and should not duplicate venue/caterer china."
+        },
+        {
+          "name": "A&A Rental Station — plain frame and rental accessories",
+          "url": "https://anarentalstation.com/bridal-equipment/",
+          "source_urls": [
+            "https://anarentalstation.com/bridal-equipment/",
+            "https://anarentalstation.com/delivery/"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "White lattice arch $50 for one day; tripod easel $13.",
+          "scope": "A plain reusable ceremony frame and support for a printed sign. Flowers and candle packages are not included.",
+          "gaps": "Delivery/setup/strike, venue location/service area, taxes, rental period, frame appearance/measurements and availability must be quoted. No verified hurricane-candle inventory from these pages.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Frame merchandise is below $200 allocation; delivered and installed total is unknown."
+        }
+      ]
+    },
+    {
+      "id": "design/core_rentals",
+      "title": "Tables, chairs, basic linens, china/glass/flatware and dance floor",
+      "report": "research/fulfillment_design.md",
+      "budget_scope": "Required basic rentals, setup and rental delivery belong inside the $30,000 venue shopping target/$32,139 hard venue envelope. Specialty linens/chargers remain in their separate $935 fixed line. Rent only items missing from venue/caterer scope.",
+      "budget_items": [
+        "Guest tables & chairs",
+        "Basic table linens & napkins",
+        "China, glassware & flatware",
+        "Dance floor",
+        "Rental delivery & late-night pickup"
+      ],
+      "vendors": [
+        {
+          "name": "A&A Rental Station — transparent catalog pricing",
+          "url": "https://anarentalstation.com/",
+          "source_urls": [
+            "https://anarentalstation.com/tables/",
+            "https://anarentalstation.com/chairs/",
+            "https://anarentalstation.com/linens-skirting/",
+            "https://anarentalstation.com/china/",
+            "https://anarentalstation.com/glassware/",
+            "https://anarentalstation.com/silverware-flatware/",
+            "https://anarentalstation.com/dance-floors/",
+            "https://anarentalstation.com/delivery/"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "72-inch round $15; white padded garden chair $5; 120-inch round linen $21; napkin $1; dinner/salad plates $0.90 each; standard wine/water glasses $0.90 each; stainless flatware $0.85 per piece; 15x20 indoor dance floor $775 before installation/delivery.",
+          "scope": "Available product categories can cover the missing basic rental stack. Illustrative quantities: 19 rounds plus 185 padded chairs=$1,210; setup at $6/table+$1.80/chair=$447. Seven-piece place-setting example costs $6.15/person, before additional pieces, spares, tax and logistics.",
+          "gaps": "Approved floor plan/table diameter; adequate dance-floor size; inventory185; serving/buffet/cake/cocktail tables; linen drop; delivery service to exact venue; stairs/elevators/time window; tax; table setting, wash-up, restacking, strike and late pickup. Tailgate delivery is not room placement; items must return clean and packed.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Useful price benchmarks only. No complete 2027 rental or labor quote; do not replace full model allowances with these incomplete subtotals."
+        },
+        {
+          "name": "Brooke Rental Center — alternative consolidated quote",
+          "url": "https://brookerentalcenter.com/party-and-event-rentals/",
+          "source_urls": [
+            "https://brookerentalcenter.com/party-and-event-rentals/",
+            "https://brookerentalcenter.com/rent-now/linens/",
+            "https://brookerentalcenter.com/rent-now/party-goods/",
+            "https://brookerentalcenter.com/terms_conditions/"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Complete event pricing unpublished on checked readable pages.",
+          "scope": "DC/MD/Northern Virginia rental supplier for tables, chairs, linens, glassware and broader event equipment; in-house and special-order linen categories.",
+          "gaps": "Every price and185-person inventory; exact setup/strike obligations; delivery and late pickup; rental duration, damage/cleaning charges and correct sizes/colors. Saturday office closes at noon and Sunday is closed; a late-event arrangement must be explicit.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Quote pending; compare the same itemized list with A&A and venue/caterer inclusions."
+        }
+      ]
+    },
+    {
+      "id": "design/physical_labor",
+      "title": "Physical setup, room flip, flower placement and end-of-night strike",
+      "report": "research/fulfillment_design.md",
+      "budget_scope": "Decor delivery/placement/move/removal allowance $700, plus $411 uncommitted floral allowance if needed within the same category. Furniture setup/flip/strike and required access hours are venue-driven costs. Coordination is a separate $2,500 function.",
+      "budget_items": [
+        "Setup & breakdown labor",
+        "Florist delivery & setup fee",
+        "Extra hour for décor setup"
+      ],
+      "vendors": [
+        {
+          "name": "Elilta Events — setup and breakdown crews",
+          "url": "https://www.eliltaevents.com/faq",
+          "source_urls": [
+            "https://www.eliltaevents.com/faq"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Custom quote; minimum service hours apply but number/rates unpublished.",
+          "scope": "Official FAQ offers decor setup, table settings, breakdown/cleanup and setup/breakdown crews for weddings in DC, Maryland and Northern Virginia; reports large-event staffing capability.",
+          "gaps": "Named crew size, shift lengths, split shifts/return trip, delivery handling, fresh-flower placement and moving, candles, tableware washing/packing, furniture flipping, final trash and departure; business/insurance credentials accepted by the venue; tax/travel/minimums and2027availability.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Best targeted standalone physical-labor inquiry; no claim that $700 covers the complete job."
+        },
+        {
+          "name": "A&A Rental Station — its own furniture setup",
+          "url": "https://anarentalstation.com/tables/",
+          "source_urls": [
+            "https://anarentalstation.com/tables/",
+            "https://anarentalstation.com/chairs/",
+            "https://anarentalstation.com/delivery/"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Setup $6/table and $1.80/chair, booked in advance. At19tables/185chairs: $447 before delivery/tax and additional work.",
+          "scope": "Setting out its rented tables/chairs; delivery otherwise arrives stacked.",
+          "gaps": "Does not establish table dressing, flower/candle placement, mid-event flip, end-of-night restacking, washing, or late pickup. Quote all required work and equipment transport separately.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Venue-envelope labor option for missing furniture setup only; not a substitute for the decor crew."
+        },
+        {
+          "name": "MICKNICS — its own rented decor installation",
+          "url": "https://www.micknics.com/event-tablescape-venue-styling",
+          "source_urls": [
+            "https://www.micknics.com/event-tablescape-venue-styling",
+            "https://www.micknics.com/wedding-arch-rentals-maryland",
+            "https://www.micknics.com/wedding-event-party-rentals-maryland"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Quoted styling fee; $175 starting fee described with tabletop pricing; full venue design starts $1,500 before separately priced rentals/materials.",
+          "scope": "Delivery, styling and breakdown of selected supplier-owned rentals are described. A bundle may remove duplicate work if the same tasks are covered.",
+          "gaps": "Whether staff will handle separately purchased fresh flowers/client-owned decor, room flips, exact final collection time and additional labor; full venue design fee alone exceeds $700 decor-labor line.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Use bundled installation when its scope covers the job; do not presume coordination or rental drop-off covers other suppliers' items."
+        }
+      ]
+    },
+    {
+      "id": "style/wedding_dress",
+      "title": "Wedding dress: ranked shopping routes",
+      "report": "research/fulfillment_style.md",
+      "budget_scope": "$950 dress purchase, with $450 alterations and category tax allocated separately. No gown, size, silhouette or color has been selected.",
+      "budget_items": [
+        "Wedding dress"
+      ],
+      "vendors": [
+        {
+          "name": "David's Bridal — Springfield",
+          "url": "https://www.davidsbridal.com/content/diamond-pearl/springfield-va-wedding-dress",
+          "source_urls": [
+            "https://www.davidsbridal.com/content/diamond-pearl/springfield-va-wedding-dress",
+            "https://www.davidsbridal.com/content/collections/wedding-dress-under-1000",
+            "https://www.davidsbridal.com/product/lace-applique-tulle-v-neck-mermaid-wedding-gown-ms251255"
+          ],
+          "price_year": "unknown; undated live listings checked 2026-11-08",
+          "published_price": "Collection lists Melissa Sweet lace-applique tulle V-neck mermaid gown at $499.99 and other individually priced gowns below $950; not every item in the under-$1,000 collection fits the $950 cap.",
+          "scope": "Local bridal styling and in-house alterations at 7206 Old Keene Mill Road, Springfield. The $499.99 gown is a price benchmark, not a selected style.",
+          "gaps": "Exact size, color, local stock and final checkout price unknown. Referenced Melissa Sweet product says no returns/exchanges. Get an alteration estimate before a final-sale purchase. Do not assume the collection's broad free-alterations promotional wording applies to the chosen garment; retain the separate $450 allowance. Tax, shipping, undergarments and steaming need coverage.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising local route; some published dress prices fit, complete dressed-and-fitted cost unknown."
+        },
+        {
+          "name": "Azazie — online bridal and home try-on",
+          "url": "https://www.azazie.com/all/wedding-dresses",
+          "source_urls": [
+            "https://www.azazie.com/products/azazie-mirabeth-diamond-white-ball-gown-strapless-lace-chapel-train-wedding-dress/57737607"
+          ],
+          "price_year": "unknown; US/USD product listing checked 2026-11-08",
+          "published_price": "Mirabeth gown $439 in USD. Home try-on is advertised; no promotional discount counted.",
+          "scope": "Lower purchase-price route with local alterations separately. Mirabeth demonstrates pricing only; its page currently marks numerous size/fabric combinations unavailable.",
+          "gaps": "An actually orderable size/color/style must be found. Try-on charges, return/custom-size restrictions, shipping, tax, garment construction and alteration feasibility must be checked. The product page's current production estimate is not a November 2027 delivery commitment. Confirm the site remains in United States/USD.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Published benchmark below $950; current example stock is constrained and a complete fit is unconfirmed."
+        },
+        {
+          "name": "Cherie Sustainable Bridal — Savage, Maryland",
+          "url": "https://www.cheriesb.com/",
+          "source_urls": [
+            "https://www.cheriesb.com/",
+            "https://www.cheriesb.com/faqs"
+          ],
+          "price_year": "unknown",
+          "published_price": "Gown prices unpublished. Fourth accompanying guest adds a $50 nonrefundable booking fee; bride plus three guests is the stated normal party size.",
+          "scope": "Appointment-only donated/off-rack gowns at 8600 Foundry Street, Savage. Website says dresses are cleaned before reaching the sales floor.",
+          "gaps": "Ask whether current inventory includes suitable gowns at or below $950. All gowns are final sale, first-come-first-served, with no holds. Size, condition, prior alterations and further alteration feasibility must be checked before buying. Travel, appointment terms, tax and any additional cleaning unknown.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Potential value shopping route; unpublished gown pricing means no verified budget fit."
+        }
+      ]
+    },
+    {
+      "id": "style/alterations",
+      "title": "Dress alterations: two local quote routes",
+      "report": "research/fulfillment_style.md",
+      "budget_scope": "$450 for the wedding dress's required fitting work; groom fitting belongs within the $350 suit allowance.",
+      "budget_items": [
+        "Alterations"
+      ],
+      "vendors": [
+        {
+          "name": "Y & Z Tailoring — Woodbridge",
+          "url": "https://yandztailoring.com/",
+          "source_urls": [
+            "https://yandztailoring.com/"
+          ],
+          "price_year": "unknown; undated price list checked 2026-11-08",
+          "published_price": "Generic gown/dress hem from $45; other gown work requires an estimate. This is not a wedding-dress alteration package.",
+          "scope": "Bridal/gown and menswear alterations at 1455 Old Bridge Road, Suite 105, Woodbridge. Free consultation advertised.",
+          "gaps": "Need an estimate on the actual gown covering hem layers, bodice, bustle, cups, pressing/steaming, fittings and rush fees. November 2027 workload and completion timeline unknown.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "$450 is unverified; lower starting rates warrant a consultation for a simple alteration scope."
+        },
+        {
+          "name": "Tang's Bridal Alterations & Bespoke — Manassas",
+          "url": "https://tangsalterations.com/alterations",
+          "source_urls": [
+            "https://tangsalterations.com/alterations",
+            "https://tangsalterations.com/"
+          ],
+          "price_year": "unknown",
+          "published_price": "Bridal alteration prices unpublished.",
+          "scope": "Full-service alterations in Manassas; accepts gowns purchased elsewhere. Two locations are advertised.",
+          "gaps": "Actual-gown fitting estimate, included appointments, steaming, rush schedule and tax unknown. This recommendation is for alterations; the shop's published gown range of $1,200–$3,500 exceeds the $950 purchase allowance.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Suitable service lead; no evidence yet that complete work fits $450."
+        },
+        {
+          "name": "BeFitted Tailoring — price-risk comparison",
+          "url": "https://www.befittedtailoringco.com/faq-1",
+          "source_urls": [
+            "https://www.befittedtailoringco.com/faq-1"
+          ],
+          "price_year": "unknown; undated FAQ checked 2026-11-08",
+          "published_price": "Typical bridal alterations $795–$1,600, although the vendor says it has no price floor. Estimate-only consultation $50; waived when proceeding at the appointment.",
+          "scope": "Specialist bridal tailoring; typical fitting process about 3.5 months and rush fees when starting under three months before the wedding.",
+          "gaps": "Individual quote required. Typical range is above this plan's allowance; sample/pre-worn gown acceptance also needs explicit checking against the FAQ restrictions.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Typical published range exceeds $450; not the first budget route."
+        }
+      ]
+    },
+    {
+      "id": "style/bridal_accessories",
+      "title": "Veil, jewelry and accessories",
+      "report": "research/fulfillment_style.md",
+      "budget_scope": "$100 combined before separately allocated category tax; include shipping and any needed hair accessories within the remaining room.",
+      "budget_items": [
+        "Veil, jewelry & accessories"
+      ],
+      "vendors": [
+        {
+          "name": "Lulus — veil and modest costume jewelry",
+          "url": "https://www.lulus.com/categories/2042_5036/wedding-accessories.html",
+          "source_urls": [
+            "https://www.lulus.com/products/eleonora-ivory-tulle-layered-long-veil/2728111.html",
+            "https://www.lulus.com/categories/2042_2066/wedding-jewelry.html"
+          ],
+          "price_year": "unknown; undated retail listings checked 2026-11-08",
+          "published_price": "Eleonora layered veil $55 before optional promotional code; Upscale Direction earrings $19. Illustrative veil-plus-earrings total $74 before tax/shipping, leaving $26 within this line.",
+          "scope": "A credible two-piece route within $100. Product names/colors demonstrate price only, not selections for Leila. Collection also lists jewelry at $14–$19.",
+          "gaps": "Match veil color to the actual gown and jewelry to preferences; confirm metal sensitivity, stock, returns and delivery fees. Additional necklace, bracelet, hairpiece or undergarments are not all included in the $74 example.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Illustrative partial accessory set below $100; complete desired set and checkout total unknown."
+        }
+      ]
+    },
+    {
+      "id": "style/bridal_shoes",
+      "title": "Bride's shoes",
+      "report": "research/fulfillment_style.md",
+      "budget_scope": "$100 before separately allocated category tax; include shipping/returns in the purchase decision.",
+      "budget_items": [
+        "Bride's shoes"
+      ],
+      "vendors": [
+        {
+          "name": "Dream Pairs — flats and lower heels",
+          "url": "https://www.dreampairs.com/collections/wedding-shoes",
+          "source_urls": [
+            "https://www.dreampairs.com/collections/wedding-shoes"
+          ],
+          "price_year": "unknown; undated US/USD collection checked 2026-11-08",
+          "published_price": "Collection examples: wide-width sparkly ballet flats $36.99, Annee pointed-toe low chunky heels $37.99, classic low-heel chunky pumps $42.99.",
+          "scope": "Budget shoe retailer with different shapes and heel heights. No width, heel height or color is assumed for Leila.",
+          "gaps": "Exact size/color stock, comfort, delivery fees, return conditions and durability require checking. Brand comfort claims are not independent fit evidence.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Several published pair prices below $100; actual fit and checkout total unknown."
+        },
+        {
+          "name": "Lulus — bridal shoes",
+          "url": "https://www.lulus.com/categories/2042_2802/bridal-shoes.html",
+          "source_urls": [
+            "https://www.lulus.com/categories/2042_2802/bridal-shoes.html"
+          ],
+          "price_year": "unknown; undated collection checked 2026-11-08",
+          "published_price": "Honorata slingback pumps $39; Suttonn satin bow pumps $49; Harper ankle-strap heels $35. No sale code counted.",
+          "scope": "Alternative styles within the shoe allowance; some third-party brands in the same collection exceed $100.",
+          "gaps": "Select only after trying comfort and the correct size. Confirm returns, shipping and stock; not every bridal shoe in the collection fits this cap.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Selected examples fit before fees; complete purchase unknown."
+        }
+      ]
+    },
+    {
+      "id": "style/groom_attire",
+      "title": "Groom's suit or tux and accessories",
+      "report": "research/fulfillment_style.md",
+      "budget_scope": "$350 suit/tux including fit adjustments plus $75 accessories, $425 combined before separately allocated category tax. Any redistribution between those two lines must be recorded; this report does not change them.",
+      "budget_items": [
+        "Groom's suit / tux",
+        "Groom's accessories"
+      ],
+      "vendors": [
+        {
+          "name": "SuitShop — purchase with local hemming",
+          "url": "https://suitshop.com/products/mens-navy-blue-suit/",
+          "source_urls": [
+            "https://suitshop.com/products/mens-navy-blue-suit/",
+            "https://suitshop.com/collections/mens/suits-and-tuxedos/",
+            "https://yandztailoring.com/"
+          ],
+          "price_year": "unknown; undated retail listings checked 2026-11-08",
+          "published_price": "Navy suit $199; example shirt $49, tie $24, belt $29, shoes $99. These five products total $400 before tailoring, shipping and tax. Pants have an unfinished hem. Y & Z publishes plain trouser hemming from $15.",
+          "scope": "Purchase route with specific accessory/shoe supplier links on the suit page. Shirt plus tie is $73 against the $75 accessory line; shoes and belt still need funding within an explicitly reconciled groom outfit.",
+          "gaps": "The $400 example leaves only $25 of combined $425 for fitting and other fees; additional sleeve/waist work could exceed it. Socks, pocket square, preferred colors and existing items unknown. Itemized allocation would need reconciliation if shoes/belt use suit headroom. No group discount counted; exact stock and November needs unknown.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Suit base comfortably below $350; complete new outfit is close to combined cap and not confirmed."
+        },
+        {
+          "name": "Generation Tux — rental",
+          "url": "https://generationtux.com/collection/tuxedos-and-suits/black-notch-lapel-tuxedo",
+          "source_urls": [
+            "https://generationtux.com/collection/tuxedos-and-suits/black-notch-lapel-tuxedo",
+            "https://generationtux.com/collection/tuxedos-and-suits"
+          ],
+          "price_year": "unknown; undated rental listing checked 2026-11-08",
+          "published_price": "Black Notch Lapel Tuxedo listed at $159. This is a base listing, not a verified complete-outfit total.",
+          "scope": "Rental alternative. Vendor advertises free shipping both ways, home try-on for wedding couples and delivery 14 days before the event. Free groom offer requires five paid wedding-party rentals and is not counted.",
+          "gaps": "Need itemized final price for jacket, trousers, shirt, tie, shoes, waist accessory, fitting/replacements, mandatory fees and tax. Return deadline, damage/late charges, size suitability, 2027 pricing and availability unknown. Do not equate $159 with a full outfit.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Promising rental base below allowance; complete rental quote unknown."
+        }
+      ]
+    },
+    {
+      "id": "style/wedding_bands",
+      "title": "Wedding bands: two pair paths",
+      "report": "research/fulfillment_style.md",
+      "budget_scope": "$1,100 for both rings, with category tax separately allocated. Materials, widths, sizes and matching preferences remain open.",
+      "budget_items": [
+        "Wedding bands"
+      ],
+      "vendors": [
+        {
+          "name": "Quince — pair from two individually priced 14K bands",
+          "url": "https://www.quince.com/shop/women/jewelry/wedding-bands-all",
+          "source_urls": [
+            "https://www.quince.com/women/low-dome-band---3mm?color=yellow-gold",
+            "https://www.quince.com/unisex/14k-gold-4mm-dome-band?color=yellow-gold",
+            "https://www.quince.com/unisex/14k-gold-4mm-dome-band?color=white-gold"
+          ],
+          "price_year": "unknown; undated US/USD product listings checked 2026-11-08",
+          "published_price": "Example pair: 3 mm low-dome yellow-gold band $428 + 4 mm lightweight round-edge yellow-gold band $398 = $826. Alternative matching 4 mm bands: 2 × $398 = $796; listed yellow or white gold. Standard shipping advertised free.",
+          "scope": "Actual two-ring arithmetic, not a single-ring teaser. The 3 mm page offers sizes 4–9; 4 mm page offers 4–12, with some variants unavailable. No metal or width has been selected for the couple.",
+          "gaps": "Professional sizing, exact variant stock, comfortable width/profile, engagement-ring fit, resizing/engraving terms and actual tax unknown. Listings do not guarantee price or inventory through 2027.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Example pair below $1,100 before tax and any sizing/engraving charges; not yet selected or confirmed."
+        },
+        {
+          "name": "Catbird + Quince — mixed-supplier pair",
+          "url": "https://www.catbirdnyc.com/catbird-classic-wedding-bands-solid-half-round-band-2mm.html",
+          "source_urls": [
+            "https://www.catbirdnyc.com/catbird-classic-wedding-bands-solid-half-round-band-2mm.html",
+            "https://www.quince.com/unisex/14k-gold-4mm-dome-band?color=yellow-gold"
+          ],
+          "price_year": "unknown; undated product listings checked 2026-11-08",
+          "published_price": "Catbird 2 mm half-round band starts at $550; paired with Quince 4 mm $398 gives a starting pair subtotal of $948. Catbird lists two-day delivery $9; engraving/configuration may add cost.",
+          "scope": "Second supplier path if one partner prefers Catbird's narrower band. Catbird lists 14K, 18K and platinum choices, but the $550 floor is not verified for every configuration. Two Catbird 2 mm bands would start at $1,100 before shipping, so that alternative has no fee headroom.",
+          "gaps": "Exact size/metal/finish price, shipping method, resizing, engagement-ring fit, tax and lead time unknown. Engraved Catbird orders are final sale. The two rings need not match unless the couple wants that.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Potential pair from $948 plus fees; starting price is not a configured quote."
+        }
+      ]
+    },
+    {
+      "id": "style/hair_makeup",
+      "title": "Bride-only hair, makeup and both trials",
+      "report": "research/fulfillment_style.md",
+      "budget_scope": "$650 wedding-day total (planning split $550 service + $100 travel/mandatory fees) and $400 for both trials; $1,050 combined. No bridal-party services are funded.",
+      "budget_items": [
+        "Hair & makeup",
+        "Hair & makeup trials"
+      ],
+      "vendors": [
+        {
+          "name": "Fleur Beauty — bride-only route",
+          "url": "https://www.fleurbeautystudio.com/bridal-hair-makeup-northern-virginia",
+          "source_urls": [
+            "https://www.fleurbeautystudio.com/bridal-hair-makeup-northern-virginia"
+          ],
+          "price_year": "unknown; undated service menu checked 2026-11-08",
+          "published_price": "Bride-Only MicroWedding Bridal Glow $600; both-services trial $290. Listed subtotal $890 before travel/fees. Monday–Thursday studio discount does not apply to the proposed Friday/Saturday dates.",
+          "scope": "Menu expressly has a party-of-three-or-fewer tier. Confirm the $600 package includes both hair and makeup and that eligibility concerns beauty-party size rather than wedding guest count.",
+          "gaps": "At $600, only $50 remains in the $650 day allowance for all travel/fees. During peak season, on-site micro services are limited to 20 miles of Reston 20190; farther travel is by availability/custom quote. Whether November is peak, any November/Saturday premium, parking, early start and acceptance for a 185-guest wedding remain unknown. Artist/date availability unknown.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising bride-only subtotal; travel radius, eligibility and total day price must be confirmed."
+        },
+        {
+          "name": "Sandra Makeup & Hair Artistry — conditional bride-only route",
+          "url": "https://www.sandramakeupartistry.com/weddingpricing",
+          "source_urls": [
+            "https://www.sandramakeupartistry.com/weddingpricing"
+          ],
+          "price_year": "unknown; undated service menu checked 2026-11-08",
+          "published_price": "Bride hair + makeup $475; studio makeup trial $150 and hair trial $150 = $300, so $775 before minimums/travel. Travel per artist from Manassas 20110: $30 for 0–20 minutes, $45 for 20–40, $60 for 40–60, $75 for 60–75; farther travel by quote. Before 7:30 a.m. adds $50/hour.",
+          "scope": "Virginia/MD/DC bridal provider; trials normally in its Manassas studio. A 25% nonrefundable retainer is credited toward the total, not a separate surcharge.",
+          "gaps": "Advanced Saturday bookings made at least three months ahead have an unpublished service minimum excluding travel/fees. Thus the $475 bride-only rate is not confirmed for November 6, 13 or 20, 2027. Friday November 12 minimum, November surcharge, artist count, travel, parking, special styles and actual trial/day artists need confirmation.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Low published service subtotal, but Saturday minimum can invalidate the apparent fit."
+        },
+        {
+          "name": "The Basement Beauty — bride-only exception quote",
+          "url": "https://www.thebasementbeauty.com/bridal-weddings",
+          "source_urls": [
+            "https://www.thebasementbeauty.com/bridal-weddings"
+          ],
+          "price_year": "unknown; undated service menu checked 2026-11-08",
+          "published_price": "Premier Bride package $700 including hair, makeup, trial, veiling and lashes. Standard minimum is five services / at least three people; smaller parties and bride-only receive special pricing by inquiry.",
+          "scope": "Arlington-area on-location provider; a possible fallback when a specifically itemized bride-only exception is offered.",
+          "gaps": "Do not apply the $700 package as a confirmed bride-only total. Need exception price, whether trial includes both services, service/day allocation, November/Friday/Saturday premiums, travel, parking, early start, extra hair work and artist availability.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Quote-only fallback; published standard package does not prove bride-only eligibility."
+        }
+      ]
+    },
+    {
+      "id": "style/attire_tax",
+      "title": "Category tax and complete fulfillment check",
+      "report": "research/fulfillment_style.md",
+      "budget_scope": "$200 tax allowance already inside the $4,375 category, not extra spending capacity.",
+      "budget_items": [
+        "Attire & beauty sales tax allowance"
+      ],
+      "vendors": []
+    },
+    {
+      "id": "services/coordination",
+      "title": "Day-of coordinator",
+      "report": "research/fulfillment_services.md",
+      "budget_scope": "$2,500 approved total; assistant, rehearsal, hours, travel and mandatory charges must fit.",
+      "budget_items": [
+        "Day-of coordinator"
+      ],
+      "vendors": [
+        {
+          "name": "White Dress Black Tie Events",
+          "url": "https://www.wdbtevents.com/weddingmanagement",
+          "source_urls": [
+            "https://www.wdbtevents.com/weddingmanagement",
+            "https://www.wdbtevents.com/_files/ugd/291960_65f5fa39a56c4740b854833b0b8c2e95.pdf"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Starts $1,900",
+          "scope": "Wedding Management; timeline, rehearsal, walkthrough, vendor management; day-of assistant in previously verified guide.",
+          "gaps": "Final hours, assistant scope, travel, 185-guest/flip requirements and 2027 rate.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        },
+        {
+          "name": "MICKNICS — Full-Day",
+          "url": "https://www.micknics.com/wedding-day-coordination",
+          "source_urls": [
+            "https://www.micknics.com/wedding-day-coordination"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "$1,495 + $330 required assistant = $1,825 starting",
+          "scope": "10–12 consecutive hours advertised; assistant required above 100 guests/for flips; rehearsal now explicitly included with Full Wedding Day Coordination.",
+          "gaps": "Confirm Full wording maps to selected Full-Day package; exact hours, travel, overtime and 2027 total.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit",
+          "source_notes": {
+            "retrieval": "Direct official HTML and web-tool opened November 8, 2026",
+            "rehearsal_inclusion_excerpt": "Included with: Full Wedding Day Coordination",
+            "source_url": "https://www.micknics.com/wedding-day-coordination",
+            "correction": "Do not automatically add the $250 rehearsal enhancement to Full-Day; the prior $2,075 comparison may duplicate an included service."
+          }
+        },
+        {
+          "name": "Mayapple Weddings — Trillium",
+          "url": "https://www.mayappleweddings.com/packages",
+          "source_urls": [
+            "https://www.mayappleweddings.com/packages"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "$2,000 on directly retrieved current page",
+          "scope": "Ten hours; timeline, walkthrough, rehearsal, vendor logistics and personal-item cleanup.",
+          "gaps": "Assistant, travel, 185-guest/flip requirements and 2027 price.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit",
+          "source_notes": {
+            "retrieval": "Direct official HTML November 8, 2026",
+            "conflict": "Cached web-tool page showed $1,500; current origin showed $2,000. Use $2,000 pending written quote."
+          }
+        }
+      ]
+    },
+    {
+      "id": "services/music_sound",
+      "title": "DJ, MC, ceremony and cocktail sound",
+      "report": "research/fulfillment_services.md",
+      "budget_scope": "$1,500 DJ/MC + $500 separate-room sound = $2,000 combined; allocate included systems once.",
+      "budget_items": [
+        "DJ / MC",
+        "Ceremony & cocktail-hour sound"
+      ],
+      "vendors": [
+        {
+          "name": "Shenandoah Entertainment — The Experience",
+          "url": "https://www.shenandoahentertainment.com/pricing",
+          "source_urls": [
+            "https://www.shenandoahentertainment.com/pricing"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Starts $1,500; up to five hours",
+          "scope": "Ceremony/cocktail/reception DJ/MC; second ceremony sound with microphones; local service-area travel included.",
+          "gaps": "185-person sound needs, separate cocktail coverage, additional hours, actual event end, tax, setup/strike and 2027 quote.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        },
+        {
+          "name": "Mixmasters",
+          "url": "https://www.mixmastersmd.com/package-information",
+          "source_urls": [
+            "https://www.mixmastersmd.com/package-information",
+            "https://www.mixmastersmd.com/service-overviews"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Wedding packages advertised from $1,500",
+          "scope": "Reception sound/microphones, second independent same-site ceremony/cocktail sound system, planning portal and dance lighting.",
+          "gaps": "Exact package tier, included hours, assigned performer, local travel, tax and 2027 total.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        },
+        {
+          "name": "Black Tie Entertainment",
+          "url": "https://www.musicdj.com/check-availability",
+          "source_urls": [
+            "https://www.musicdj.com/check-availability",
+            "https://www.musicdj.com/services"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "$975–$1,975 for four hours; +$250/hour",
+          "scope": "DJ/MC; lowest-tier six-hour arithmetic $1,475 before unknown additions.",
+          "gaps": "Named DJ availability, room systems, tax/travel and hours. Coordination is tied to its DJs; obtain itemized combined quote if wanted.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        }
+      ]
+    },
+    {
+      "id": "services/videography",
+      "title": "Video-only wedding coverage",
+      "report": "research/fulfillment_services.md",
+      "budget_scope": "$1,800 approved total; preserve booked photography separately.",
+      "budget_items": [
+        "Videographer"
+      ],
+      "vendors": [
+        {
+          "name": "MacroSnaps",
+          "url": "https://www.macrosnaps.com/wedding-videography",
+          "source_urls": [
+            "https://www.macrosnaps.com/wedding-videography",
+            "https://www.macrosnaps.com/faq"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Current direct page: six hours $1,300; seven hours $1,500",
+          "scope": "One videographer; 4–7 or 4–8 minute highlight; three revisions; raw footage on request; three-to-four-week delivery advertised.",
+          "gaps": "Full uninterrupted ceremony/speeches edits, dedicated audio, raw-footage charge, assigned crew/backup, consecutive coverage, travel/tax and 2027 rate.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit",
+          "source_notes": {
+            "retrieval": "Direct official HTML November 8, 2026",
+            "conflict": "Web-tool cached wedding page showed $1,450/$1,650 for six/seven hours; current origin showed $1,300/$1,500. Written event quote needed.",
+            "contract_questions": "FAQ describes multiple events per day and nonrefundable client cancellation/rescheduling; confirm dedicated coverage, buffers and replacement plan."
+          }
+        },
+        {
+          "name": "Precious Pics Pro",
+          "url": "https://www.preciouspicspro.com/packages",
+          "source_urls": [
+            "https://www.preciouspicspro.com/packages",
+            "https://www.preciouspicspro.com/dc"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Video from $1,499; four hours or more",
+          "scope": "Lead videographer, multicamera coverage, no travel fees advertised; video-only raw footage is an add-on.",
+          "gaps": "Actual needed hours, full ceremony/speeches, audio, final-film length, raw footage, delivery timing, tax and 2027 price.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        },
+        {
+          "name": "The Studio Weddings",
+          "url": "https://thestudioweddings.com/",
+          "source_urls": [
+            "https://thestudioweddings.com/"
+          ],
+          "price_year": "unknown; undated published page",
+          "published_price": "Collection range $1,800–$4,400; no explicit price assigned to Essential",
+          "scope": "Prior same-day Essential check: one filmmaker, up to six hours, ceremony and highlight; current homepage includes professional audio.",
+          "gaps": "Exact video-only Essential rate, full ceremony/speeches delivery, travel, tax, overtime and 2027 availability.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "quote pending; no confirmed 2027 fit"
+        }
+      ]
+    },
+    {
+      "id": "services/photography_booked",
+      "title": "Existing photographer",
+      "report": "research/fulfillment_services.md",
+      "budget_scope": "$750 booked per supplied workbook; no replacement or duplicate photo package.",
+      "budget_items": [
+        "Photographer"
+      ],
+      "vendors": [
+        {
+          "name": "We Love Photography — existing booking",
+          "url": "https://github.com/seanyofthedead/Learning-env/blob/codex/wedding-research-nov8/wedding/budget/venue_neutral_items.md",
+          "source_urls": [
+            "https://github.com/seanyofthedead/Learning-env/blob/codex/wedding-research-nov8/wedding/budget/venue_neutral_items.md"
+          ],
+          "price_year": "booking year not documented in public extract",
+          "published_price": "$750 booked amount in workbook; not a public tariff",
+          "scope": "Retain the existing booking and use the existing contract contact.",
+          "gaps": "Exact provider website/identity, date, coverage hours, travel, delivery, backup, balance and date-change terms require existing agreement.",
+          "priority": 1,
+          "availability": "existing booking per workbook; exact date-change availability unknown",
+          "budget_status": "booked allowance retained"
+        }
+      ]
+    },
+    {
+      "id": "admin/officiant",
+      "title": "Officiant",
+      "report": "research/fulfillment_admin.md",
+      "budget_scope": "$500 total; include required travel, tax and any agreed rehearsal. No vendor selected.",
+      "budget_items": [
+        "Officiant"
+      ],
+      "vendors": [
+        {
+          "name": "Ciao Bella Celebrations / Sweet & Simple Weddings",
+          "url": "https://www.sweetandsimpleweddings.com/our-officiants",
+          "source_urls": [
+            "https://www.sweetandsimpleweddings.com/our-officiants"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$350 + stated 5.3% tax for covered locations outside lower-priced local zones; rehearsal +$150.",
+          "scope": "Virginia ceremony; up to 90 minutes onsite; travel/personalization included.",
+          "gaps": "Confirm venue, 185-guest scope, assigned officiant authority and 2027 dated total. Small-wedding arbor/speaker are not assumed sufficient.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "conditional: current ceremony $368.55; with rehearsal $526.50 exceeds cap. A provisional 4% sensitivity gives $383.29 or $547.56; source effective year remains unknown."
+        },
+        {
+          "name": "Matt Sims Wedding Officiant",
+          "url": "https://mattsimsweddingofficiant.com/services",
+          "source_urls": [
+            "https://mattsimsweddingofficiant.com/services"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$300–$500 ceremony; $125–$150 rehearsal.",
+          "scope": "Custom ceremony; site states MD/VA/DC service.",
+          "gaps": "2027 date, travel/tax, rehearsal need and jurisdiction authorization unknown.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "conditional: lower-range complete quote may fit; upper ceremony plus rehearsal does not"
+        },
+        {
+          "name": "Karen Gray",
+          "url": "https://www.karengray.com/weddings",
+          "source_urls": [
+            "https://www.karengray.com/weddings"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "Typically $350–$600; travel and rehearsal additional.",
+          "scope": "Personalized/interfaith ceremony.",
+          "gaps": "2027 availability, exact inclusions, travel and legal qualification for venue jurisdiction.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "conditional: lower-range only, with all extras inside $500"
+        }
+      ]
+    },
+    {
+      "id": "admin/insurance",
+      "title": "Liability and cancellation insurance",
+      "report": "research/fulfillment_admin.md",
+      "budget_scope": "$300 liability + $400 cancellation = $700; retain separate allowances.",
+      "budget_items": [
+        "Liability insurance",
+        "Cancellation insurance"
+      ],
+      "vendors": [
+        {
+          "name": "Markel",
+          "url": "https://www.markel.com/us/personal-insurance/wedding",
+          "source_urls": [
+            "https://www.markel.com/us/personal-insurance/wedding"
+          ],
+          "price_year": "2025-09 advertised minimums; 2027 quote unknown",
+          "published_price": "Advertised minimums: $75 liability / $130 cancellation; actual wedding quote unknown.",
+          "scope": "Both policy types; compare required limits and cancellation exposure.",
+          "gaps": "Venue wording, state eligibility, host-liquor terms, exclusions, dates, deductibles, actual premiums/fees. Low-price floors do not establish adequate coverage.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "unknown: retain $700; no minimum-price saving recorded"
+        },
+        {
+          "name": "WedSafe",
+          "url": "https://www.wedsafe.com/Pages/wedding-event-insurance.aspx",
+          "source_urls": [
+            "https://www.wedsafe.com/Pages/wedding-event-insurance.aspx",
+            "https://www.wedsafe.com/Pages/wedding-liability-insurance-faq.aspx"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "Premium unknown; liability FAQ lists $1,000 third-party property-damage deductible.",
+          "scope": "Both policy types; compare equivalent coverage.",
+          "gaps": "Full 2027 premium, limits, exclusions, venue requirements; deductible is additional potential exposure.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "unknown: no quote proving $300/$400 fit"
+        }
+      ]
+    },
+    {
+      "id": "admin/marriage_license",
+      "title": "Marriage license jurisdiction",
+      "report": "research/fulfillment_admin.md",
+      "budget_scope": "$50; issuing office depends on ceremony location. Do not automatically use home county.",
+      "budget_items": [
+        "Marriage license"
+      ],
+      "vendors": [
+        {
+          "name": "Fairfax Circuit Court (Virginia license)",
+          "url": "https://www.fairfaxcounty.gov/circuit/marriage/marriage-license-information",
+          "source_urls": [
+            "https://www.fairfaxcounty.gov/circuit/marriage/marriage-license-information"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$30 cash; 4% card fee makes $31.20.",
+          "scope": "Virginia circuit-court license valid within Virginia; no residency requirement; 60-day validity.",
+          "gaps": "2027 statutory fee and optional certified-copy costs; identify application window.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "current base fee fits"
+        },
+        {
+          "name": "Howard County Circuit Court",
+          "url": "https://www.courts.state.md.us/clerks/howard/marriage",
+          "source_urls": [
+            "https://www.courts.state.md.us/clerks/howard/marriage"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$50.",
+          "scope": "For a Howard County ceremony; six-month validity, effective at 6 a.m. second calendar day.",
+          "gaps": "2027 fee, documents and optional extra costs.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "current fee uses entire allowance"
+        },
+        {
+          "name": "Prince George's County Circuit Court",
+          "url": "https://princegeorgescourts.org/225/Marriage-License",
+          "source_urls": [
+            "https://princegeorgescourts.org/225/Marriage-License"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$70.",
+          "scope": "For a ceremony in this Maryland county.",
+          "gaps": "2027 fee and complete application/copy costs.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "shortfall: $20 over $50; explicit within-category reallocation needed if selected"
+        },
+        {
+          "name": "Montgomery County Circuit Court",
+          "url": "https://www.montgomerycountymd.gov/cct/marriage-license.html",
+          "source_urls": [
+            "https://www.montgomerycountymd.gov/cct/marriage-license.html"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$55; certified copy $5.50 if needed.",
+          "scope": "For a ceremony in this Maryland county. Official HTML directly checked.",
+          "gaps": "2027 fee and whether copies are required.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "shortfall: $5 over $50 before copies; explicit within-category reallocation needed"
+        },
+        {
+          "name": "District of Columbia Courts Marriage Bureau",
+          "url": "https://www.dccourts.gov/services/marriage-matters",
+          "source_urls": [
+            "https://www.dccourts.gov/services/marriage-matters"
+          ],
+          "price_year": "unknown",
+          "published_price": "unknown; official page returned 403.",
+          "scope": "Government source to verify if a DC ceremony is selected.",
+          "gaps": "Fee and rules unverified in this review; search/third-party summaries not accepted as evidence.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "admin/thank_you_cards",
+      "title": "Thank-you cards and postage scope",
+      "report": "research/fulfillment_admin.md",
+      "budget_scope": "$150 thank-you cards. Postage is a $0 gift; whether it includes thank-you mailings is unconfirmed.",
+      "budget_items": [
+        "Thank-you cards",
+        "Postage"
+      ],
+      "vendors": [
+        {
+          "name": "Hallmark Watercolor Eucalyptus notes, 40-pack",
+          "url": "https://www.hallmark.com/cards/note-cards-and-stationery/watercolor-eucalyptus-assorted-blank-thank-you-notes-pack-of-40-3THK2142.html",
+          "source_urls": [
+            "https://www.hallmark.com/cards/note-cards-and-stationery/watercolor-eucalyptus-assorted-blank-thank-you-notes-pack-of-40-3THK2142.html"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$14.99 for 40 cards and envelopes; 3 packs $44.97 before tax/shipping.",
+          "scope": "Economical sage/ivory-style blank notes, 120-card purchase illustration.",
+          "gaps": "Actual household/gift recipient count, future stock, tax/shipping and thank-you postage gift scope.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "conditional: 100 standard mailings plus 120-card purchase = $126.97 before tax/shipping at current prices; provisional 4% on cards makes $128.77 with current postage assumption"
+        },
+        {
+          "name": "Staples custom thank-you cards",
+          "url": "https://www.staples.com/services/printing/custom-cards/general-thank-you-cards/",
+          "source_urls": [
+            "https://www.staples.com/services/printing/custom-cards/general-thank-you-cards/",
+            "https://www.staples.com/services/printing/print-deals/wedding-planning-solutions/"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "Wedding print page advertises from $54.99 for 25.",
+          "scope": "Custom printing comparison.",
+          "gaps": "Final quantity/configuration, envelopes, tax, shipping, postage and 2027 price.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "not a fit at four starting-price 25-card batches: $219.96 before extras; other bulk configuration unknown"
+        },
+        {
+          "name": "USPS First-Class Mail",
+          "url": "https://www.usps.com/ship/first-class-mail.htm",
+          "source_urls": [
+            "https://www.usps.com/ship/first-class-mail.htm"
+          ],
+          "price_year": "2026 current displayed rate; 2027 unknown",
+          "published_price": "$0.82 standard one-ounce letter currently displayed.",
+          "scope": "Mailing service; card must meet weight, shape and machinability rules.",
+          "gaps": "2027 rate, final assembled weight and whether brother covers thank-you postage.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "conditional: 100 stamps $82; 185 stamps $151.70 alone exceed $150"
+        }
+      ]
+    },
+    {
+      "id": "admin/signage",
+      "title": "Seating chart, necessary signs and table numbers",
+      "report": "research/fulfillment_admin.md",
+      "budget_scope": "$180 seating chart/signage + $35 table numbers. Floral/decor tax allowance is separate within the same category; avoid duplicate tax.",
+      "budget_items": [
+        "Seating chart & signage",
+        "Table numbers"
+      ],
+      "vendors": [
+        {
+          "name": "Staples Print & Marketing",
+          "url": "https://www.staples.com/services/printing/foam-boards/",
+          "source_urls": [
+            "https://www.staples.com/services/printing/foam-boards/",
+            "https://www.staples.com/services/printing/print-deals/wedding-planning-solutions/"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$19.99 displayed for default 12×18 foam board; table-number B&W printing from $0.34/page on wedding page.",
+          "scope": "Custom seating-chart/sign print and table-number printing.",
+          "gaps": "Readable final 185-guest chart size, 19-number stock/cutting/folding, easel/holders, proof, pickup/shipping and tax. Floor prices are not a complete quote.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "unknown: complete $180/$35 fit not verified"
+        },
+        {
+          "name": "FedEx Office",
+          "url": "https://www.office.fedex.com/default/print-solutions/wedding-solutions",
+          "source_urls": [
+            "https://www.office.fedex.com/default/print-solutions/wedding-solutions",
+            "https://www.office.fedex.com/default/mounted-poster.html"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "unknown for complete specified order.",
+          "scope": "Official wedding seating-chart and table-number products; mounted poster option.",
+          "gaps": "Final-size proof, stock, quantity, stands, pickup/shipping and tax. Multi-product bundle price is not one poster price.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "unknown: quote against separate $180/$35 allocations"
+        }
+      ]
+    },
+    {
+      "id": "admin/emergency_kit",
+      "title": "Emergency kit and miscellaneous",
+      "report": "research/fulfillment_admin.md",
+      "budget_scope": "$200 total allowance; purchase only missing supplies after coordinator inventory.",
+      "budget_items": [
+        "Emergency kit & misc."
+      ],
+      "vendors": [
+        {
+          "name": "Pinch Provisions Minimergency Kit for Brides",
+          "url": "https://www.pinchprovisions.com/products/minimergency-kit-for-brides",
+          "source_urls": [
+            "https://www.pinchprovisions.com/products/minimergency-kit-for-brides"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$22.50 before tax/shipping; provisional 4% sensitivity $23.40.",
+          "scope": "Optional compact 21-item convenience kit.",
+          "gaps": "Review contents and coordinator supplies; not a complete wedding-day supply plan. Tax/shipping and future stock unknown.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "conditional: optional item under cap; retain remaining misc. allowance"
+        }
+      ]
+    },
+    {
+      "id": "admin/vendor_tips",
+      "title": "Vendor tip ledger",
+      "report": "research/fulfillment_admin.md",
+      "budget_scope": "$2,000; internal allocation and distribution responsibility, not a new vendor.",
+      "budget_items": [
+        "Vendor tips"
+      ],
+      "vendors": []
+    }
+  ],
+  "coverage_status_counts": {
+    "Options researched; selection and complete quote pending": 55,
+    "Not funded": 21,
+    "Payment ledger; no additional supplier": 1,
+    "Existing booking; confirm contract scope": 1,
+    "Gift; confirm scope and delivery": 4,
+    "Budget control; no separate supplier": 3
+  },
+  "provider_entries": 69,
+  "distinct_provider_names": 69
+}

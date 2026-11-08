@@ -1,0 +1,207 @@
+{
+  "checked_date": "2026-11-08",
+  "basis": "Existing same-day official venue research reused; venue pages and new official hotel pages reopened where stated. No outreach, forms, bookings or live date-price search submitted.",
+  "sections": [
+    {
+      "id": "venue_rooms",
+      "title": "Venue, ceremony and cocktail rooms",
+      "budget_scope": "Single venue-driven envelope: shop toward $30,000; hard ceiling $32,139; financial fits requires $31,139 or less. All room, food/bar, staff, rental, cake, ready-room, parking and required-fee costs share that envelope.",
+      "budget_items": [
+        "Reception venue",
+        "Ceremony space (indoor)",
+        "Cocktail hour space",
+        "Getting-ready suite",
+        "Guest parking",
+        "Extra hour for décor setup",
+        "Setup & breakdown labor",
+        "Liquor license"
+      ],
+      "vendors": [
+        {
+          "name": "Old Hickory Golf Club",
+          "url": "https://www.golfoldhickory.com/events/weddings-banquets",
+          "source_urls": [
+            "https://www.golfoldhickory.com/events/weddings-banquets",
+            "https://www.golfoldhickory.com/events/special-occasions",
+            "https://www.golfoldhickory.com/events/gallery"
+          ],
+          "price_year": "unknown",
+          "published_price": "Wedding package, minimums and required wedding fees unknown. The $119.50 figure in older analysis is a solver ceiling, not a price.",
+          "scope": "Club ballroom; advertised furniture, standard linens, tableware, dance floor, service personnel, cake cutting, changing rooms and coordinator. In-house wedding food/bar proposal is the intended route.",
+          "gaps": "185 rounds with dance floor; heated indoor ceremony/holding plan; separate cocktails; full access/flip/strike; outside-vendor and candle permissions; end time; coordinator scope; parking charges; 2027 all-in price and dates.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Unknown; prioritize requested-interest quote, not a confirmed budget fit."
+        },
+        {
+          "name": "The Villa — Grand Ballroom / Catering by Uptown",
+          "url": "https://www.thevillaweddingvenue.com/faq/",
+          "source_urls": [
+            "https://www.thevillaweddingvenue.com/faq/",
+            "https://www.thevillaweddingvenue.com/ballrooms/",
+            "https://www.thevillaweddingvenue.com/"
+          ],
+          "price_year": "unknown",
+          "published_price": "Wedding package and date-dependent food/beverage minimum unknown.",
+          "scope": "Package route with mandatory in-house food and alcohol; outside cake permitted. Grand Ballroom advertised for 125–250 and indoor weather backup offered. Additional floral/decor installation and removal require a licensed professional unless an exception is confirmed.",
+          "gaps": "185 rounds plus dance floor, heated ceremony and separate cocktail allocation, precise included rentals/rooms, access/strike hours, paid rehearsal, candle/outside-DJ rules, parking charges and complete 2027 quote.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Unknown; compare a complete package, not a bare room price."
+        },
+        {
+          "name": "Oak Room at Sandy Spring Volunteer Fire Department",
+          "url": "https://ssvfd.org/the-oak-room/",
+          "source_urls": [
+            "https://ssvfd.org/the-oak-room/",
+            "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+            "https://ssvfd.org/wp-content/uploads/2026/06/2023-Oak-Room-Rules-And-Regulations.pdf"
+          ],
+          "price_year": 2026,
+          "published_price": "Saturday rental $3,000 for 8 hours; outside caterer $500; contracted extra hours $200/hour. Current 2027 proposal unknown; model applies 4% to dated costs.",
+          "scope": "Hall route: published 220 seated with dance floor, tables/chairs, kitchen, breakout room and free parking. Venue approves licensed/insured caterer and qualified bartender; renter supplies table setup/strike labor.",
+          "gaps": "Rounds layout, heated ceremony or priced flip with 185-person holding room, breakout/cocktail capacity, getting-ready solution, all access hours and complete catering/rental/cleanup proposal.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Unknown; published rental does not establish complete wedding cost or required room flow."
+        },
+        {
+          "name": "The Gathering Place — Patuxent Grand Ballroom",
+          "url": "https://thegatheringplacemd.net/details/",
+          "source_urls": [
+            "https://thegatheringplacemd.net/details/",
+            "https://thegatheringplacemd.net/about/"
+          ],
+          "price_year": "unknown",
+          "published_price": "Rent and required room fees unpublished; getting-ready suite has an additional charge.",
+          "scope": "Hall route: ballroom advertised up to 265 seated with dance floor, movable partitions, venue table/chair setup and licensed outside catering permitted. Preferred list includes MISSION BBQ.",
+          "gaps": "Approved 185-person rounds/dance layout, heated ceremony/holding and separate cocktail sequence, actual table sizes, rental/partition/ready-room prices, cleanup/strike duties, permits, parking and full 2027 quote.",
+          "priority": 4,
+          "availability": "unknown",
+          "budget_status": "Unknown; zero-rent models are incomplete subtotals."
+        },
+        {
+          "name": "Crowne Plaza College Park — Grand Ballroom + Annapolis room",
+          "url": "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+          "source_urls": [
+            "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+            "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet"
+          ],
+          "price_year": "unknown",
+          "published_price": "Wedding package unknown. Current hotel amenities page publishes $15/day parking; event waiver/2027 event charge unknown.",
+          "scope": "Hotel package route: fact sheet lists Grand Ballroom banquet capacity 320 and Annapolis reception capacity 250. Onsite hotel rooms can simplify the overnight plan if separately quoted.",
+          "gaps": "185 rounds plus dance floor, heated ceremony/holding allocation, furniture/service package, actual access hours, outside vendors/candles and 2027 total. Old fact-sheet free-parking claim conflicts with current hotel parking tariff; written event terms required.",
+          "priority": 5,
+          "availability": "unknown",
+          "budget_status": "Unknown; do not credit free event parking pending written confirmation."
+        }
+      ],
+      "recommendation": "Request the same full room/staffing timeline and complete 2027 proposal from these five routes. Old Hickory remains a priority because of the couple’s interest, while Villa and two hall routes provide service/value comparisons. Do not choose by hypothetical ceiling or rent alone."
+    },
+    {
+      "id": "hotel",
+      "title": "Wedding-night room and conditional getting-ready fallback",
+      "budget_scope": "$600 wedding-night room is outside the venue envelope. A separate getting-ready need is inside the venue envelope; the model carries $600 if needed. Do not count a single booking twice or assume one night permits morning access.",
+      "budget_items": [
+        "Wedding-night hotel room",
+        "Getting-ready suite"
+      ],
+      "vendors": [
+        {
+          "name": "Home2 Suites by Hilton Woodbridge Potomac Mills",
+          "url": "https://www.hilton.com/en/hotels/dcawdht-home2-suites-woodbridge-potomac-mills/",
+          "source_urls": [
+            "https://www.hilton.com/en/hotels/dcawdht-home2-suites-woodbridge-potomac-mills/"
+          ],
+          "price_year": "unknown",
+          "published_price": "November 2027 room rate unknown; published parking $12/day.",
+          "scope": "Woodbridge/Old Hickory cluster option at 14005 Telegraph Road; suites with in-room kitchens; published check-in 3pm and checkout 11am.",
+          "gaps": "Actual room category, date-specific tax-inclusive total within $600 overnight allowance, incidental hold, parking, cancellations, venue drive time, early/day-use/prior-night access and permission for preparation team.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Quote needed; hotel night does not establish getting-ready access."
+        },
+        {
+          "name": "Residence Inn by Marriott Fulton at Maple Lawn",
+          "url": "https://www.marriott.com/en-us/hotels/bwirf-residence-inn-fulton-at-maple-lawn/overview/",
+          "source_urls": [
+            "https://www.marriott.com/en-us/hotels/bwirf-residence-inn-fulton-at-maple-lawn/overview/"
+          ],
+          "price_year": "unknown",
+          "published_price": "November 2027 room rate unknown; official page lists complimentary onsite parking.",
+          "scope": "Fulton option to compare for Clarksville/Gathering Place and Sandy Spring/Oak routes; studio and one-/two-bedroom suites, published 3pm check-in and 11am checkout.",
+          "gaps": "Verify drive time to selected venue, actual room/policy and 2027 total including taxes, incidental hold and preparation access. Airport shuttle is not provided; no wedding shuttle assumed.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Quote needed; $600 is a cap, not a quoted room price."
+        },
+        {
+          "name": "Crowne Plaza College Park — overnight room",
+          "url": "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+          "source_urls": [
+            "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+            "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/rooms"
+          ],
+          "price_year": "unknown",
+          "published_price": "November 2027 room rate unknown; published parking $15/day and $150 incidental deposit at check-in.",
+          "scope": "Onsite overnight option if Crowne Plaza hosts the wedding; Greenbelt cluster comparison for The Villa, with actual drive time still to verify. Published check-in 3pm, checkout 11am; hotel says it has no shuttle.",
+          "gaps": "Package-included night versus separate charge, room type, tax-inclusive total, deposit release terms, early access/day-use and event-parking waiver.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Quote needed; incidental deposit is a cash requirement, not automatically an expense."
+        }
+      ],
+      "recommendation": "Choose after venue selection. Ask the selected hotel for actual November 2027 terms and guaranteed preparation access if needed; all published 3pm check-ins are too late to assume morning preparation. Any extra night/day-use charge must fit the correct existing allocation."
+    }
+  ],
+  "responsibilities": [
+    {
+      "task": "Ceremony, cocktail and reception layout",
+      "owner": "Selected venue event manager with caterer and coordinator",
+      "completion_evidence": "One dimensioned plan: 185 at rounds with dance floor retained, heated ceremony and adequate holding room if flipping, separate cocktails, accessibility and service aisles."
+    },
+    {
+      "task": "Physical setup, flip and strike",
+      "owner": "Venue/caterer/rental crew as assigned in writing; coordinator supervises only unless physical labor contracted",
+      "completion_evidence": "Named workers, arrival/departure times and fee; no essential labor silently assigned to guests."
+    },
+    {
+      "task": "Getting ready",
+      "owner": "Selected venue if suitable early access is included; otherwise selected hotel with written preparation permission",
+      "completion_evidence": "Guaranteed hours, people/vendors permitted, adequate space, early/day-use/prior-night charges."
+    },
+    {
+      "task": "Guest parking",
+      "owner": "Selected venue or its approved parking operator",
+      "completion_evidence": "Guest/vendor car capacity, accessible spaces/dropoff, price or written waiver, nighttime pickup and vehicle-removal rules."
+    },
+    {
+      "task": "Security",
+      "owner": "Venue-approved licensed security or required police detail, arranged through venue",
+      "completion_evidence": "Whether required; headcount threshold, number of staff, paid hours, invoice and included versus extra charge. No independent security vendor selected before venue rules."
+    },
+    {
+      "task": "Alcohol permission and permits",
+      "owner": "Venue license holder or approved licensed caterer, with required government issuer if applicable",
+      "completion_evidence": "Who purchases/serves alcohol, whose license covers event, permit type/fees/deadline, insurance requirements; never assume a dry-hire bartender supplies a license."
+    },
+    {
+      "task": "Room block or shuttle",
+      "owner": "Couple and selected hotel, only if terms create no unfunded obligation",
+      "completion_evidence": "No automatic couple-paid room block, attrition guarantee, shuttle or guest transportation under the $0 category."
+    }
+  ],
+  "critical_update": {
+    "venue": "Crowne Plaza College Park",
+    "finding": "Current official amenities page lists $15/day parking and no shuttle; prior fact sheet lists free parking. Event waiver is unknown.",
+    "source_url": "https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities",
+    "implication": "Remove any unconditional free-parking claim; quote event parking before financial fit. Ordinary hotel parking does not prove wedding-event tariff."
+  },
+  "limits": [
+    "All requested 2027 dates are unverified.",
+    "No hotel rate for the wedding dates was obtained; generic search snippets or other dates are not prices.",
+    "The 60-minute DC drive requirement and hotel-to-venue travel times require actual route checks.",
+    "Oak official PDF was blocked by the web fetch on this pass; existing same-day ordinary-curl verification is retained as evidence, not claimed as a new web fetch.",
+    "The original protected reserve and category caps remain unchanged."
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "checked_date": "2026-11-08",
+  "guests": 185,
+  "availability_note": "Unknown for November 13, November 6, November 20 and November 12, 2027; no outreach or holds.",
+  "pricing_method": "Published components are not full wedding quotes. Dated prices use 4% annual escalation to 2027 for planning only; undated price years remain unknown. No confirmed savings or budget reductions.",
+  "sections": [
+    {
+      "id": "food_staff_fees",
+      "title": "Food, catering staff and required charges",
+      "budget_scope": "Within complete venue-driven shopping target $30,000 / hard cap $32,139, together with venue, hosted bar, cake, rentals and tax. Outside caterers require venue approval. No complete quote establishes budget fit.",
+      "budget_items": ["Hors d'oeuvres + dinner", "Catering service staff", "Caterer service charge (~20%)", "Sales tax (~6%)"],
+      "vendors": [
+        {
+          "name": "MISSION BBQ",
+          "url": "https://mission-bbq.com/catering-a/",
+          "source_urls": ["https://mission-bbq.com/catering-a/"],
+          "price_year": "unknown; current webpage undated",
+          "published_price": "Party Pack $17.54/person; XL $23.79/person, plus tax; staff $35/hour each; allow two hours setup/breakdown; gratuity additional.",
+          "scope": "BBQ food packages and disposables; staffed buffet service and equipment can be added. First inquiry for food value.",
+          "gaps": "Local-store applicability; 185 guests; cocktail-hour food; dietary needs; staff count/hours; delivery; tax/gratuity; china/glasses/flatware and guest linens; room setup/flip, bussing/strike; hosted bar and coffee not established.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising component pricing; complete venue and food-service fit requires quote. No all-in price inferred."
+        },
+        {
+          "name": "IndAroma",
+          "url": "https://indaroma.com/catering/",
+          "source_urls": ["https://indaroma.com/catering/"],
+          "price_year": "unknown; current webpage undated",
+          "published_price": "Typical $14,000 event for about 250 guests; Saturday/peak minimums higher. Not a $56/person rate and not a 185-guest quote.",
+          "scope": "Buffet/family-style service, kitchen and waitstaff, rentals/equipment, and professional bar service can be itemized together; client usually supplies alcohol.",
+          "gaps": "Saturday minimum; 185-person menu; exact rentals and labor; fees/gratuity/tax/travel; alcohol and bar supplies; venue approval. Taking 2027 weddings is not date availability.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Strong integrated-service inquiry; complete price and budget fit unknown."
+        },
+        {
+          "name": "Catering At Your Door",
+          "url": "https://cateringatyourdoormd.com/barbecue/",
+          "source_urls": ["https://cateringatyourdoormd.com/barbecue/", "https://cateringatyourdoormd.com/wp-content/uploads/2024/03/All-Menus-MD-April-2024-Barbecue-Menus.pdf", "https://cateringatyourdoormd.com/f-a-qs/", "https://cateringatyourdoormd.com/wp-content/uploads/2024/03/All-Menus-MD-April-2024-Beverages.pdf"],
+          "price_year": "2024 linked April menus; matching webpage prices undated",
+          "published_price": "Supreme BBQ $32.95/person at 100+; chef up to 4 hours with 1.5 hours serving. Waitstaff $212/4 hours plus $53/hour thereafter. FAQ adds 20% gratuity or specified fixed amount, travel and applicable food tax. Beverage options $3/person each; bar setup $4/person with client alcohol.",
+          "scope": "BBQ with chef, separately priced waitstaff and beverage components; useful alternative for an approved outside-catering hall.",
+          "gaps": "2027 tariff and complete wedding service; cocktail food; extended hours; rentals and china; bartenders; ice/glassware; travel; cleanup. Confirm included gratuity once and avoid duplicate assumed charges.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Partial dated menu, not full quote. Escalate dated components 4% annually only for planning; full fit unproven."
+        }
+      ],
+      "recommendation": "Compare these three against the selected venue's caterer using identical 185-person scope. Prefer one accountable food/bar service team when the complete price is competitive. Retain all existing allowances until staffing, service, tax, rentals and logistics are covered."
+    },
+    {
+      "id": "bar_beverages",
+      "title": "Hosted beer and wine, bartenders and nonalcoholic drinks",
+      "budget_scope": "Inside complete venue envelope, not an additional budget. Require 185-person capacity and hosted beer/wine; smaller published packages do not establish a wedding price.",
+      "budget_items": ["Bartenders", "Bar / alcohol", "Soft drinks, coffee & tea", "Liquor license"],
+      "vendors": [
+        {
+          "name": "Cartistry",
+          "url": "https://www.cartistryllc.com/dry-hire",
+          "source_urls": ["https://www.cartistryllc.com/dry-hire"],
+          "price_year": "unknown; undated",
+          "published_price": "$799 for 51–100 guests, two bartenders, up to four hours; not a 185-person package.",
+          "scope": "Dry-hire bartending with setup/breakdown; client supplies alcohol.",
+          "gaps": "185-person capacity/staff/price; bar table, ice, cups and mixers add-ons; full table bussing and venue cleaning excluded; travel/tax, insurance/venue authorization and legal purchasing arrangement must be confirmed.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Custom 185-person quote required; no extrapolation from smaller tier."
+        },
+        {
+          "name": "Sunrise Rentals DMV",
+          "url": "https://sunriserentalsdmv.com/mobile-bar/",
+          "source_urls": ["https://sunriserentalsdmv.com/mobile-bar/"],
+          "price_year": "unknown; undated",
+          "published_price": "Deluxe Grand Bar $1,120 or mobile bar $1,360; three hours, two bartenders, up to 150 guests. Extra hour $180; beverage essentials +$5/person.",
+          "scope": "Bar equipment and service; client alcohol; setup/cleanup and specified disposables.",
+          "gaps": "185-person upgrade/capacity; full hours; travel/tax; glassware; venue approval. Package and FAQ conflict on ice/mixers, requiring written reconciliation. Coffee/tea not established.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Published tier excludes our guest count; complete price unknown."
+        },
+        {
+          "name": "Total Wine & More — retail support only",
+          "url": "https://www.totalwine.com/discover/wedding",
+          "source_urls": ["https://www.totalwine.com/discover/wedding"],
+          "price_year": "unknown; products and local store pricing depend on selection",
+          "published_price": "Free wedding consultation; no 185-person hosted-beer/wine price published.",
+          "scope": "Possible beer/wine retailer after venue/caterer purchasing rules permit it. Consultation does not include alcohol, staff or bar service.",
+          "gaps": "Permitted purchase location and owner; adult drinkers; service duration; products, quantities, local tax, pickup/delivery, ice/storage and returns. Do not use default out-of-state website prices.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Retail sourcing option only; full alcohol cost unknown and separate from bartending quote."
+        }
+      ],
+      "recommendation": "First price bar service with IndAroma or the chosen caterer; Cartistry and Sunrise are standalone alternatives requiring custom capacity confirmation. Assign all water, soft drinks, coffee/tea, ice, equipment and replenishment once. Venue and licensed provider must identify applicable permissions and fees."
+    },
+    {
+      "id": "cake",
+      "title": "Wedding cake, tasting, delivery and cutting",
+      "budget_scope": "Current model allowances within venue envelope: cake $1,480 + tasting/delivery $150 + cutting $370. Published components do not replace these allowances until complete quotes arrive.",
+      "budget_items": ["Wedding cake", "Cake tasting & delivery", "Cake cutting"],
+      "vendors": [
+        {
+          "name": "Heidelberg Pastry Shoppe — traditional wedding cake",
+          "url": "https://heidelbergbakery.com/wedding-cakes-options-prices/",
+          "source_urls": ["https://heidelbergbakery.com/wedding-cakes-options-prices/"],
+          "price_year": "2024; detailed sheet dated 06/24",
+          "published_price": "$5.50/serving base; tasting $20; delivery from $40. 185 base servings $1,017.50; cake+tasting+minimum delivery $1,077.50 raw / $1,212.04 after 4% annual escalation to 2027.",
+          "scope": "Traditional buttercream wedding cake with base flavors/fillings. Raw and escalated totals are partial estimates only.",
+          "gaps": "2027 quote; design, premium flavors/fillings, actual delivery mileage/time, tax, stand, top-tier retention and cake cutting/service. Detailed dated sheet takes precedence over older conflicting introductory price.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising within $1,630 cake/tasting/delivery baseline before unresolved costs; no saving secured. Cutting separately retained."
+        },
+        {
+          "name": "Classic Bakery — traditional wedding cake",
+          "url": "https://www.classicbakery.com/the-wedding-center/pricing-guidelines/",
+          "source_urls": ["https://www.classicbakery.com/the-wedding-center/pricing-guidelines/", "https://www.classicbakery.com/the-wedding-center/"],
+          "price_year": "unknown; undated pricing guide",
+          "published_price": "From $7/serving at 75+ servings and three tiers; delivery from $100. Tasting $60 credited toward order. 185 base servings + minimum delivery = $1,395 before tax/upgrades/actual travel/cutting.",
+          "scope": "Traditional cake with base filling, icing and decoration; delivery priced separately.",
+          "gaps": "2027 tariff and design; delivery mileage; tax; cutting/service; optional stand rental and refundable deposit if needed. Avoid counting credited tasting twice.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Published partial floor suggests possible baseline fit; undated tariff and full quote remain unknown."
+        },
+        {
+          "name": "Heidelberg Pastry Shoppe — optional small cutting cake and sheets",
+          "url": "https://heidelbergbakery.com/price-sheets/",
+          "source_urls": ["https://heidelbergbakery.com/price-sheets/"],
+          "price_year": "2022; cake section dated 01/22",
+          "published_price": "Group B 6-inch round $23.95 (6–8 servings), full sheet $220 (80–120), quarter sheet $69 (20–30). Two full + one quarter + 6-inch round: minimum 186 stated servings, $532.95 raw / $648.42 after five years at 4%.",
+          "scope": "Optional presentation change with small display/cutting cake and sheet portions. Sheet cakes are not layered; differs from traditional wedding cake.",
+          "gaps": "Old price sheet; baker-approved wedding portions, design, actual 2027 price, tasting, delivery, tax and cutting/service. Couple must choose this presentation before implementation.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Illustrative saving opportunity only, not a quote or approved design substitution. Keep allowances intact."
+        }
+      ],
+      "recommendation": "Quote Heidelberg traditional first and Classic second. Keep sheet-cake route optional. Venue/caterer separately owns cutting, plating, service and dessert dishes unless expressly included."
+    },
+    {
+      "id": "vendor_meals",
+      "title": "Meals for the working vendor team",
+      "budget_scope": "$400 separate approved allowance; roughly ten workers is an unconfirmed planning assumption.",
+      "budget_items": ["Vendor meals"],
+      "vendors": [
+        {
+          "name": "Selected caterer — MISSION BBQ, IndAroma or Catering At Your Door if venue-approved",
+          "url": "https://mission-bbq.com/catering-a/",
+          "source_urls": ["https://mission-bbq.com/catering-a/", "https://indaroma.com/catering/", "https://cateringatyourdoormd.com/barbecue/"],
+          "price_year": "unknown for vendor-meal scope",
+          "published_price": "No dedicated wedding vendor-meal price established; $400 is the internal allowance, not a supplier quote.",
+          "scope": "Add contracted working-crew meals to the same caterer's proposal and schedule.",
+          "gaps": "Actual crew headcount including assistants, hot-meal requirements, timing/dietary needs, tax and fees; prevent double counting in the 185 guest count.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Must fit $400 or be offset within the approved plan after complete quote; no reserve use."
+        }
+      ],
+      "recommendation": "Use the selected caterer, not a separate delivery service. Coordinator collects vendor contract meal counts and schedules service with the caterer. Late-night snack remains optional and unfunded."
+    }
+  ]
+}

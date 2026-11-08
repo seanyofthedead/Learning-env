@@ -1,0 +1,326 @@
+{
+  "version": 1,
+  "approved_date": "2026-11-08",
+  "authorization": "User approved the budget review changes in conversation; supplier selection and bookings remain open.",
+  "guests": 185,
+  "planning_table_count": 19,
+  "total_budget": 60000,
+  "spend_limit": 54545.45,
+  "reserve": 5454.55,
+  "venue_hard_cap": 32139,
+  "venue_fit_cap": 31139,
+  "venue_shopping_target": 30000,
+  "nonvenue_total": 22406,
+  "spending_at_shopping_target": 52406,
+  "headroom_at_shopping_target": 2139.45,
+  "category_caps": {
+    "Venue + food & drink": 34774,
+    "Planning & legal": 5250,
+    "Flowers & décor": 5446,
+    "Attire & beauty": 4375,
+    "Photo & video": 2550,
+    "Music & sound": 2000,
+    "Stationery": 150,
+    "Guests & transport": 0,
+    "Pre/post events": 0
+  },
+  "policy": [
+    "All amounts are USD. Approving allocations does not establish vendor prices or availability.",
+    "Keep the original workbook extract as historical evidence; this file controls approved non-venue allocations.",
+    "All required costs must fit the spending limit and their category; never use the protected reserve.",
+    "Shopping target is $30,000 for complete venue-driven costs; hard cap remains $32,139.",
+    "Keep 185 guests and every locked venue requirement. Nineteen tables is a cost assumption, not a fixed seating plan.",
+    "Tax allocations are within category caps and must not duplicate quoted tax.",
+    "Keep confirmed savings unallocated until remaining required costs are priced.",
+    "No outreach, booking, payment or purchase is authorized; research and drafts only."
+  ],
+  "nonvenue_allocations": [
+    {
+      "item": "Wedding-night hotel room",
+      "category": "Venue & ceremony",
+      "amount": 600.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "Specialty linens & chargers",
+      "category": "Venue & ceremony",
+      "amount": 935.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. Sage/stone/ivory palette."
+    },
+    {
+      "item": "Liability insurance",
+      "category": "Venue & ceremony",
+      "amount": 300.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "Cancellation insurance",
+      "category": "Venue & ceremony",
+      "amount": 400.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "DJ / MC",
+      "category": "Music & sound",
+      "amount": 1500.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "Ceremony & cocktail-hour sound",
+      "category": "Music & sound",
+      "amount": 500.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. Separate rooms from the reception."
+    },
+    {
+      "item": "Vendor meals",
+      "category": "Food & drink",
+      "amount": 400.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. ~10 vendors."
+    },
+    {
+      "item": "Day-of coordinator",
+      "category": "Planning & legal",
+      "amount": 2500.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. Overdue — book now."
+    },
+    {
+      "item": "Officiant",
+      "category": "Planning & legal",
+      "amount": 500.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "Marriage license",
+      "category": "Planning & legal",
+      "amount": 50.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "Vendor tips",
+      "category": "Planning & legal",
+      "amount": 2000.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "Emergency kit & misc.",
+      "category": "Planning & legal",
+      "amount": 200.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "Photographer",
+      "category": "Photo & video",
+      "amount": 750.0,
+      "status": "Booked",
+      "scope": "Workbook marks $750 booked; confirm contracted hours, travel, delivery, backup, date-change terms and payment balance. We Love Photography."
+    },
+    {
+      "item": "Videographer",
+      "category": "Photo & video",
+      "amount": 1800.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. Overdue — book now."
+    },
+    {
+      "item": "Bridal bouquet",
+      "category": "Flowers & décor",
+      "amount": 300,
+      "status": "Approved allowance; quote pending",
+      "scope": "One finished fresh bouquet; ivory blooms and sage foliage."
+    },
+    {
+      "item": "Boutonnieres & corsages",
+      "category": "Flowers & décor",
+      "amount": 220,
+      "status": "Approved allowance; quote pending",
+      "scope": "Exact count must be quoted."
+    },
+    {
+      "item": "Ceremony florals",
+      "category": "Flowers & décor",
+      "amount": 650,
+      "status": "Approved allowance; quote pending",
+      "scope": "Two modest freestanding pieces; coordinate paid reuse."
+    },
+    {
+      "item": "Ceremony backdrop / arch",
+      "category": "Flowers & décor",
+      "amount": 200,
+      "status": "Approved allowance; quote pending",
+      "scope": "Simple frame rental or supplied backdrop; not a flower-covered installation."
+    },
+    {
+      "item": "Centerpieces",
+      "category": "Flowers & décor",
+      "amount": 1600,
+      "status": "Approved allowance; quote pending",
+      "scope": "19 modest arrangements/bud-vase groups for the planning layout; $1,600 total, revise within cap for actual table count."
+    },
+    {
+      "item": "Cocktail, bar & cake flowers",
+      "category": "Flowers & décor",
+      "amount": 150,
+      "status": "Approved allowance; quote pending",
+      "scope": "Small accents with planned reuse."
+    },
+    {
+      "item": "Candles (hurricanes & votives)",
+      "category": "Flowers & décor",
+      "amount": 650,
+      "status": "Approved allowance; quote pending",
+      "scope": "Enclosed candles and vessels, placement/removal responsibility; venue permission required."
+    },
+    {
+      "item": "Florist delivery & setup fee",
+      "category": "Flowers & décor",
+      "amount": 700,
+      "status": "Approved allowance; quote pending",
+      "scope": "Fixed allowance for delivery, placement, decor move, removal and returns; not a percentage or a quote."
+    },
+    {
+      "item": "Seating chart & signage",
+      "category": "Flowers & décor",
+      "amount": 180,
+      "status": "Approved allowance; quote pending",
+      "scope": "Readable seating chart and necessary signs."
+    },
+    {
+      "item": "Table numbers",
+      "category": "Flowers & décor",
+      "amount": 35,
+      "status": "Approved allowance; quote pending",
+      "scope": "Matching numbers for assumed 19 tables."
+    },
+    {
+      "item": "Wedding dress",
+      "category": "Attire & beauty",
+      "amount": 950,
+      "status": "Approved allowance; quote pending",
+      "scope": "Dress purchase target before separately allocated tax and alterations; fit/condition checked before buying."
+    },
+    {
+      "item": "Alterations",
+      "category": "Attire & beauty",
+      "amount": 450,
+      "status": "Approved allowance; quote pending",
+      "scope": "Separate fitting quote; complexity and steaming to be confirmed."
+    },
+    {
+      "item": "Veil, jewelry & accessories",
+      "category": "Attire & beauty",
+      "amount": 100,
+      "status": "Approved allowance; quote pending",
+      "scope": "Coordinated modest accessories."
+    },
+    {
+      "item": "Bride's shoes",
+      "category": "Attire & beauty",
+      "amount": 100,
+      "status": "Approved allowance; quote pending",
+      "scope": "Comfortable shoes with agreed hem height."
+    },
+    {
+      "item": "Groom's suit / tux",
+      "category": "Attire & beauty",
+      "amount": 350,
+      "status": "Approved allowance; quote pending",
+      "scope": "Rental or simple suit; include fit adjustments in quote."
+    },
+    {
+      "item": "Groom's accessories",
+      "category": "Attire & beauty",
+      "amount": 75,
+      "status": "Approved allowance; quote pending",
+      "scope": "Confirm what suit/rental already includes."
+    },
+    {
+      "item": "Wedding bands",
+      "category": "Attire & beauty",
+      "amount": 1100,
+      "status": "Approved allowance; quote pending",
+      "scope": "Pair of bands; confirm materials, sizes, width, resizing and tax."
+    },
+    {
+      "item": "Hair & makeup",
+      "category": "Attire & beauty",
+      "amount": 650,
+      "status": "Approved allowance; quote pending",
+      "scope": "Bride only; planning split up to $550 services plus $100 travel/parking/mandatory surcharges; check minimums."
+    },
+    {
+      "item": "Hair & makeup trials",
+      "category": "Attire & beauty",
+      "amount": 400,
+      "status": "Approved allowance; quote pending",
+      "scope": "Hair and makeup together; in-studio target, preferably actual wedding-day artists."
+    },
+    {
+      "item": "Save-the-dates",
+      "category": "Stationery",
+      "amount": 0.0,
+      "status": "Gift",
+      "scope": "Confirm promised scope and timing; current cash allowance is zero. Covered by your brother."
+    },
+    {
+      "item": "Invitation design & addressing",
+      "category": "Stationery",
+      "amount": 0.0,
+      "status": "Gift",
+      "scope": "Confirm promised scope and timing; current cash allowance is zero. Covered by your brother."
+    },
+    {
+      "item": "Invitations & RSVP cards",
+      "category": "Stationery",
+      "amount": 0.0,
+      "status": "Gift",
+      "scope": "Confirm promised scope and timing; current cash allowance is zero. Covered by your brother."
+    },
+    {
+      "item": "Postage",
+      "category": "Stationery",
+      "amount": 0.0,
+      "status": "Gift",
+      "scope": "Confirm promised scope and timing; current cash allowance is zero. Covered by your brother."
+    },
+    {
+      "item": "Thank-you cards",
+      "category": "Stationery",
+      "amount": 150.0,
+      "status": "Approved allowance; quote pending",
+      "scope": "Target must include applicable tax, delivery, travel, required labor and fees. "
+    },
+    {
+      "item": "Flowers & decor sales tax allowance",
+      "category": "Flowers & décor",
+      "amount": 350,
+      "status": "Approved allowance; invoice-dependent",
+      "scope": "Tax allocation inside floral cap; do not add again to a tax-inclusive quote."
+    },
+    {
+      "item": "Flowers & decor uncommitted allowance",
+      "category": "Flowers & décor",
+      "amount": 411,
+      "status": "Uncommitted within category",
+      "scope": "Hold for actual installation/strike, arch or price changes before upgrades; separate from protected wedding reserve."
+    },
+    {
+      "item": "Attire & beauty sales tax allowance",
+      "category": "Attire & beauty",
+      "amount": 200,
+      "status": "Approved allowance; invoice-dependent",
+      "scope": "Tax allocation inside attire cap; apply actual taxable invoice components and avoid duplication."
+    }
+  ]
+}

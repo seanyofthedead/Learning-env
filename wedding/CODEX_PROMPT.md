@@ -1,6 +1,8 @@
+**Current approved update — November 8, 2026:** The couple approved the budget review changes. Read `budget/approved_plan.json` and `output/approved_budget.md` before using the older estimates below. The approved plan replaces the old trimmed floral/attire allocations, including explicit tax and labor allowances, and sets an internal $30,000 venue shopping target. The $32,139 hard venue cap, $31,139 financial-fit threshold, $54,545.45 spending limit, $5,454.55 untouched reserve, 185 guests and venue requirements are unchanged. The original workbook extract is historical evidence; new vendor research belongs in `output/fulfillment_plan.md`. Approval covers implementation and research, not outreach, purchasing or booking.
+
 **Repository:** https://github.com/seanyofthedead/Learning-env
-**Branch:** `claude/adoring-lamport-m52sw5`
-**Folder:** https://github.com/seanyofthedead/Learning-env/tree/claude/adoring-lamport-m52sw5/wedding
+**Branch:** `codex/wedding-research-nov8`
+**Folder:** https://github.com/seanyofthedead/Learning-env/tree/codex/wedding-research-nov8/wedding
 
 Check out that branch and work inside `wedding/`. Commit your results to `wedding/output/` on that branch, or on a new branch made from it. This repository is public, so add no passwords, keys or other private details.
 

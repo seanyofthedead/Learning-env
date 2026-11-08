@@ -1,0 +1,312 @@
+{
+  "checked_date": "2026-11-08",
+  "sections": [
+    {
+      "id": "officiant",
+      "title": "Officiant",
+      "budget_scope": "$500 total; include required travel, tax and any agreed rehearsal. No vendor selected.",
+      "budget_items": [
+        "Officiant"
+      ],
+      "vendors": [
+        {
+          "name": "Ciao Bella Celebrations / Sweet & Simple Weddings",
+          "url": "https://www.sweetandsimpleweddings.com/our-officiants",
+          "source_urls": [
+            "https://www.sweetandsimpleweddings.com/our-officiants"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$350 + stated 5.3% tax for covered locations outside lower-priced local zones; rehearsal +$150.",
+          "scope": "Virginia ceremony; up to 90 minutes onsite; travel/personalization included.",
+          "gaps": "Confirm venue, 185-guest scope, assigned officiant authority and 2027 dated total. Small-wedding arbor/speaker are not assumed sufficient.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "conditional: current ceremony $368.55; with rehearsal $526.50 exceeds cap. A provisional 4% sensitivity gives $383.29 or $547.56; source effective year remains unknown."
+        },
+        {
+          "name": "Matt Sims Wedding Officiant",
+          "url": "https://mattsimsweddingofficiant.com/services",
+          "source_urls": [
+            "https://mattsimsweddingofficiant.com/services"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$300–$500 ceremony; $125–$150 rehearsal.",
+          "scope": "Custom ceremony; site states MD/VA/DC service.",
+          "gaps": "2027 date, travel/tax, rehearsal need and jurisdiction authorization unknown.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "conditional: lower-range complete quote may fit; upper ceremony plus rehearsal does not"
+        },
+        {
+          "name": "Karen Gray",
+          "url": "https://www.karengray.com/weddings",
+          "source_urls": [
+            "https://www.karengray.com/weddings"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "Typically $350–$600; travel and rehearsal additional.",
+          "scope": "Personalized/interfaith ceremony.",
+          "gaps": "2027 availability, exact inclusions, travel and legal qualification for venue jurisdiction.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "conditional: lower-range only, with all extras inside $500"
+        }
+      ],
+      "recommendation": "Compare Ciao Bella for a Virginia venue and Matt Sims across jurisdictions. Do not spend assumed savings. Confirm the officiant under the ceremony jurisdiction rules; Virginia reference: https://www.fairfaxcounty.gov/circuit/marriage/celebrant-information. Unknown effective price years must be clarified; apply 4% annually to genuinely older dated pricing, not an invented source year."
+    },
+    {
+      "id": "insurance",
+      "title": "Liability and cancellation insurance",
+      "budget_scope": "$300 liability + $400 cancellation = $700; retain separate allowances.",
+      "budget_items": [
+        "Liability insurance",
+        "Cancellation insurance"
+      ],
+      "vendors": [
+        {
+          "name": "Markel",
+          "url": "https://www.markel.com/us/personal-insurance/wedding",
+          "source_urls": [
+            "https://www.markel.com/us/personal-insurance/wedding"
+          ],
+          "price_year": "2025-09 advertised minimums; 2027 quote unknown",
+          "published_price": "Advertised minimums: $75 liability / $130 cancellation; actual wedding quote unknown.",
+          "scope": "Both policy types; compare required limits and cancellation exposure.",
+          "gaps": "Venue wording, state eligibility, host-liquor terms, exclusions, dates, deductibles, actual premiums/fees. Low-price floors do not establish adequate coverage.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "unknown: retain $700; no minimum-price saving recorded"
+        },
+        {
+          "name": "WedSafe",
+          "url": "https://www.wedsafe.com/Pages/wedding-event-insurance.aspx",
+          "source_urls": [
+            "https://www.wedsafe.com/Pages/wedding-event-insurance.aspx",
+            "https://www.wedsafe.com/Pages/wedding-liability-insurance-faq.aspx"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "Premium unknown; liability FAQ lists $1,000 third-party property-damage deductible.",
+          "scope": "Both policy types; compare equivalent coverage.",
+          "gaps": "Full 2027 premium, limits, exclusions, venue requirements; deductible is additional potential exposure.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "unknown: no quote proving $300/$400 fit"
+        }
+      ],
+      "recommendation": "Compare actual policies before deposits; keep $300/$400 pending quotes. Liability, venue additional insured, host liquor and setup/strike periods must match contract; cancellation limits must match nonrefundable exposure. The $5,000 Markel cancellation rider is not assumed sufficient. No forms or purchases submitted."
+    },
+    {
+      "id": "marriage_license",
+      "title": "Marriage license jurisdiction",
+      "budget_scope": "$50; issuing office depends on ceremony location. Do not automatically use home county.",
+      "budget_items": [
+        "Marriage license"
+      ],
+      "vendors": [
+        {
+          "name": "Fairfax Circuit Court (Virginia license)",
+          "url": "https://www.fairfaxcounty.gov/circuit/marriage/marriage-license-information",
+          "source_urls": [
+            "https://www.fairfaxcounty.gov/circuit/marriage/marriage-license-information"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$30 cash; 4% card fee makes $31.20.",
+          "scope": "Virginia circuit-court license valid within Virginia; no residency requirement; 60-day validity.",
+          "gaps": "2027 statutory fee and optional certified-copy costs; identify application window.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "current base fee fits"
+        },
+        {
+          "name": "Howard County Circuit Court",
+          "url": "https://www.courts.state.md.us/clerks/howard/marriage",
+          "source_urls": [
+            "https://www.courts.state.md.us/clerks/howard/marriage"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$50.",
+          "scope": "For a Howard County ceremony; six-month validity, effective at 6 a.m. second calendar day.",
+          "gaps": "2027 fee, documents and optional extra costs.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "current fee uses entire allowance"
+        },
+        {
+          "name": "Prince George's County Circuit Court",
+          "url": "https://princegeorgescourts.org/225/Marriage-License",
+          "source_urls": [
+            "https://princegeorgescourts.org/225/Marriage-License"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$70.",
+          "scope": "For a ceremony in this Maryland county.",
+          "gaps": "2027 fee and complete application/copy costs.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "shortfall: $20 over $50; explicit within-category reallocation needed if selected"
+        },
+        {
+          "name": "Montgomery County Circuit Court",
+          "url": "https://www.montgomerycountymd.gov/cct/marriage-license.html",
+          "source_urls": [
+            "https://www.montgomerycountymd.gov/cct/marriage-license.html"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$55; certified copy $5.50 if needed.",
+          "scope": "For a ceremony in this Maryland county. Official HTML directly checked.",
+          "gaps": "2027 fee and whether copies are required.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "shortfall: $5 over $50 before copies; explicit within-category reallocation needed"
+        },
+        {
+          "name": "District of Columbia Courts Marriage Bureau",
+          "url": "https://www.dccourts.gov/services/marriage-matters",
+          "source_urls": [
+            "https://www.dccourts.gov/services/marriage-matters"
+          ],
+          "price_year": "unknown",
+          "published_price": "unknown; official page returned 403.",
+          "scope": "Government source to verify if a DC ceremony is selected.",
+          "gaps": "Fee and rules unverified in this review; search/third-party summaries not accepted as evidence.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "unknown"
+        }
+      ],
+      "recommendation": "Choose venue jurisdiction, then confirm government instructions and fee. VA is not restricted to the home county; MD requires the ceremony county. Preserve approved cap and protected reserve; close any $5/$20 gap by explicit planning-category reconciliation. Current statutory fees are not represented as inflation-derived 2027 fees."
+    },
+    {
+      "id": "thank_you_cards",
+      "title": "Thank-you cards and postage scope",
+      "budget_scope": "$150 thank-you cards. Postage is a $0 gift; whether it includes thank-you mailings is unconfirmed.",
+      "budget_items": [
+        "Thank-you cards",
+        "Postage"
+      ],
+      "vendors": [
+        {
+          "name": "Hallmark Watercolor Eucalyptus notes, 40-pack",
+          "url": "https://www.hallmark.com/cards/note-cards-and-stationery/watercolor-eucalyptus-assorted-blank-thank-you-notes-pack-of-40-3THK2142.html",
+          "source_urls": [
+            "https://www.hallmark.com/cards/note-cards-and-stationery/watercolor-eucalyptus-assorted-blank-thank-you-notes-pack-of-40-3THK2142.html"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$14.99 for 40 cards and envelopes; 3 packs $44.97 before tax/shipping.",
+          "scope": "Economical sage/ivory-style blank notes, 120-card purchase illustration.",
+          "gaps": "Actual household/gift recipient count, future stock, tax/shipping and thank-you postage gift scope.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "conditional: 100 standard mailings plus 120-card purchase = $126.97 before tax/shipping at current prices; provisional 4% on cards makes $128.77 with current postage assumption"
+        },
+        {
+          "name": "Staples custom thank-you cards",
+          "url": "https://www.staples.com/services/printing/custom-cards/general-thank-you-cards/",
+          "source_urls": [
+            "https://www.staples.com/services/printing/custom-cards/general-thank-you-cards/",
+            "https://www.staples.com/services/printing/print-deals/wedding-planning-solutions/"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "Wedding print page advertises from $54.99 for 25.",
+          "scope": "Custom printing comparison.",
+          "gaps": "Final quantity/configuration, envelopes, tax, shipping, postage and 2027 price.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "not a fit at four starting-price 25-card batches: $219.96 before extras; other bulk configuration unknown"
+        },
+        {
+          "name": "USPS First-Class Mail",
+          "url": "https://www.usps.com/ship/first-class-mail.htm",
+          "source_urls": [
+            "https://www.usps.com/ship/first-class-mail.htm"
+          ],
+          "price_year": "2026 current displayed rate; 2027 unknown",
+          "published_price": "$0.82 standard one-ounce letter currently displayed.",
+          "scope": "Mailing service; card must meet weight, shape and machinability rules.",
+          "gaps": "2027 rate, final assembled weight and whether brother covers thank-you postage.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "conditional: 100 stamps $82; 185 stamps $151.70 alone exceed $150"
+        }
+      ],
+      "recommendation": "Prefer Hallmark, confirm count by household/gift rather than assuming one card per guest, and verify gift postage scope. At 120 mailings current cards+stamps = $143.37 before tax/shipping; cap is tight. Gifted save-the-dates, invitation design/addressing, invitations/RSVP cards and postage remain zero-cash gifts; confirm scope/timing without claiming new savings."
+    },
+    {
+      "id": "signage",
+      "title": "Seating chart, necessary signs and table numbers",
+      "budget_scope": "$180 seating chart/signage + $35 table numbers. Floral/decor tax allowance is separate within the same category; avoid duplicate tax.",
+      "budget_items": [
+        "Seating chart & signage",
+        "Table numbers"
+      ],
+      "vendors": [
+        {
+          "name": "Staples Print & Marketing",
+          "url": "https://www.staples.com/services/printing/foam-boards/",
+          "source_urls": [
+            "https://www.staples.com/services/printing/foam-boards/",
+            "https://www.staples.com/services/printing/print-deals/wedding-planning-solutions/"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$19.99 displayed for default 12×18 foam board; table-number B&W printing from $0.34/page on wedding page.",
+          "scope": "Custom seating-chart/sign print and table-number printing.",
+          "gaps": "Readable final 185-guest chart size, 19-number stock/cutting/folding, easel/holders, proof, pickup/shipping and tax. Floor prices are not a complete quote.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "unknown: complete $180/$35 fit not verified"
+        },
+        {
+          "name": "FedEx Office",
+          "url": "https://www.office.fedex.com/default/print-solutions/wedding-solutions",
+          "source_urls": [
+            "https://www.office.fedex.com/default/print-solutions/wedding-solutions",
+            "https://www.office.fedex.com/default/mounted-poster.html"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "unknown for complete specified order.",
+          "scope": "Official wedding seating-chart and table-number products; mounted poster option.",
+          "gaps": "Final-size proof, stock, quantity, stands, pickup/shipping and tax. Multi-product bundle price is not one poster price.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "unknown: quote against separate $180/$35 allocations"
+        }
+      ],
+      "recommendation": "Use matching ivory/sage designs and readable print. Couple owns guest/table data and final proof; coordinator scope must assign pickup, placement and removal. Check included venue easel/holders before purchasing. Plan 19 numbers then reconcile actual layout. Complete pricing remains open; no savings or 2027 availability assumed."
+    },
+    {
+      "id": "emergency_kit",
+      "title": "Emergency kit and miscellaneous",
+      "budget_scope": "$200 total allowance; purchase only missing supplies after coordinator inventory.",
+      "budget_items": [
+        "Emergency kit & misc."
+      ],
+      "vendors": [
+        {
+          "name": "Pinch Provisions Minimergency Kit for Brides",
+          "url": "https://www.pinchprovisions.com/products/minimergency-kit-for-brides",
+          "source_urls": [
+            "https://www.pinchprovisions.com/products/minimergency-kit-for-brides"
+          ],
+          "price_year": "unknown; undated listing checked 2026-11-08",
+          "published_price": "$22.50 before tax/shipping; provisional 4% sensitivity $23.40.",
+          "scope": "Optional compact 21-item convenience kit.",
+          "gaps": "Review contents and coordinator supplies; not a complete wedding-day supply plan. Tax/shipping and future stock unknown.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "conditional: optional item under cap; retain remaining misc. allowance"
+        }
+      ],
+      "recommendation": "Administrative responsibility belongs to couple/coordinator. Inventory existing supplies first; fill gaps such as safety pins, sewing kit, stain wipes, tissues, fashion tape and pens. Assign named custodian and accessible storage. The $200 is a ceiling for kit plus misc., not a shopping target. No purchase or saving recorded."
+    },
+    {
+      "id": "vendor_tips",
+      "title": "Vendor tip ledger",
+      "budget_scope": "$2,000; internal allocation and distribution responsibility, not a new vendor.",
+      "budget_items": [
+        "Vendor tips"
+      ],
+      "vendors": [],
+      "recommendation": "Couple approves recipient/role, contractual charge, discretionary amount, payer, due date and distribution record. Coordinator distributes only if that duty is agreed. Check actual contracts: service charge does not automatically establish a voluntary tip. Do not double-count required gratuity already included in venue/catering costs. Keep total within $2,000 and unused funds unallocated; no universal percentage or savings assumed."
+    }
+  ]
+}

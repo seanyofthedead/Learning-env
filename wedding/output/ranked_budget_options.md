@@ -1,5 +1,7 @@
 # Ranked budget opportunities — Sean & Leila
 
+Current allocations and the $30,000 venue shopping target are in [the approved budget](approved_budget.md); see [fulfillment options](fulfillment_plan.md) for the newest supplier checks. Crowne Plaza parking and related ceilings were corrected during that research.
+
 **A promising money-saving path is a suitable rental hall plus a full-service restaurant/BBQ quote.** Start with Oak Room, The Gathering Place, Heritage Building and Beth El, while obtaining package comparisons from The Villa, Crowne Plaza and Old Hickory. The [whole-budget review](budget_review.md) explains why a complete package may offer better value after hall staffing, rentals and cleanup are priced; no approach is a proven winner yet.
 
 This is a value ranking of all 43 researched venue leads, not a claim that any is already available or qualified. **No complete 2027 quote currently proves a fit.** Keep 185 guests, the $32,139 venue envelope, the $54,545.45 spend limit and $5,454.55 untouched reserve. Keep Saturday November 13 first, then Saturday 6, Saturday 20 and Friday 12 November 2027. No required feature has been dropped.
@@ -25,7 +27,7 @@ To preserve at least $1,000 headroom, deduct $1,000 from the remaining-cost colu
 
 Oak Room is especially useful as a benchmark: **$26,997 / $28,847 / $30,697** at **$90 / $100 / $110** all-in catering, before any newly discovered required fees. At $110 it leaves $1,442 total headroom; only $442 of new fees would preserve the extra $1,000 cushion. Its ceremony/holding-room solution remains a pass/fail question.
 
-The Villa, Crowne Plaza and Old Hickory are **quote opportunities, not known bargains**. Current calculated maximum package prices are respectively **$118.16, $112.99 and $119.50 per guest before service and tax**, assuming modeled inclusions and 22%, 24%, 22% service. Those are break-even ceilings with essentially no cushion or unpriced fees. A $1,000 room/ceremony charge consumes $1,000 of that allowance. Prefer a complete proposal comfortably below $32,139 over a headline per-person price.
+The Villa, Crowne Plaza and Old Hickory are **quote opportunities, not known bargains**. Current calculated maximum package prices are respectively **$118.16, $108.45 and $119.50 per guest before service and tax**, assuming modeled inclusions and 22%, 24%, 22% service. Those are break-even ceilings with essentially no cushion or unpriced fees. A $1,000 room/ceremony charge consumes $1,000 of that allowance. Prefer a complete proposal comfortably below $32,139 over a headline per-person price.
 
 Old Hickory now has a [detailed requirements review](old_hickory_deep_review.md), direct sales contact and service/fee sensitivity calculations. Its price and key room requirements remain unknown; no ranking upgrade is justified.
 
@@ -71,7 +73,7 @@ All vendor prices below are advertised starting points or menu components checke
 | 1 | White Dress Black Tie | $1,900; assistant and rehearsal supported | $600; confirm exact hours and 2027 fees |
 | 2 | Black Tie Entertainment | $1,750; 10 hours and rehearsal | $750; required assistant and standalone terms unknown |
 | 3 | Mayapple | $2,000; 10 hours and rehearsal | $500; assistant/travel unknown |
-| 4 | MICKNICS | $1,495+$330 assistant+$250 rehearsal start=$2,075 | $425 on comparable rehearsal scope; travel unknown |
+| 4 | MICKNICS | $1,495+$330 required assistant=$1,825 starting; current Full-Day page includes rehearsal | $675 before travel/additions; exact contracted scope and 2027 rate unknown |
 | 5 | Lula Mae | $1,950 | $550; exact hours/assistant unknown |
 | 6 | Best Wishes | $2,100+ | At most $400 before additions |
 | 7 | Days and Eves | $2,500+ | No starting headroom |
@@ -96,7 +98,7 @@ All vendor prices below are advertised starting points or menu components checke
 | 3 | [Ag Center — Heritage Building](https://mcagfair.com/rentals) | Pursue | [$30,806 before unknown rent/fees](specs/hall_venues/ag_center.json) | Two substantial rooms and included table setup. Confirm heat, alcohol, 185-rounds layout and all fees. |
 | 4 | [Beth El Hebrew Congregation Ballroom](https://www.bethelhebrew.org/resources/plan-your-private-event/) | Pursue | [$31,628 before unknown rent/fees](specs/hall_venues/beth_el.json) | 290 with dance floor; setup and police included. Unknown rent, alcohol/dietary rules and ceremony/cocktail rooms. |
 | 5 | [The Villa (Catering by Uptown) - all-inclusive wedding package](https://www.thevillaweddingvenue.com/faq/) | Pursue | [Unknown; ceiling scenario only](specs/package_venues/the_villa_beltsville.json) | Request package alternative: good room scale and indoor backup; actual price and full room allocation unknown. |
-| 6 | [Crowne Plaza College Park - Washington DC (Grand Ballroom + Annapolis Room)](https://digital.ihg.com/is/content/ihg/cpc-fact-sheet) | Pursue | [Unknown; ceiling scenario only](specs/package_venues/crowne_plaza_college_park.json) | Grand Ballroom and separate Annapolis room with free parking; actual package and heated ceremony plan unknown. |
+| 6 | [Crowne Plaza College Park - Washington DC (Grand Ballroom + Annapolis Room)](https://digital.ihg.com/is/content/ihg/cpc-fact-sheet) | Pursue | [Unknown; ceiling scenario only](specs/package_venues/crowne_plaza_college_park.json) | Grand Ballroom and separate Annapolis room; parking now modeled at $1,110 because current $15/day policy conflicts with older free-parking sheet. Actual package and heated ceremony plan unknown. |
 | 7 | [Old Hickory Golf Club - ballroom wedding package](https://www.golfoldhickory.com/events/weddings-banquets) | Pursue | [Unknown; ceiling scenario only](specs/package_venues/old_hickory_gc.json) | Useful rentals/changing-room inclusions; quote and 185-person same-room/indoor ceremony plan needed. |
 | 8 | [Holiday Inn Gaithersburg](https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf) | Targeted backup | [$35,184; incomplete scenario](specs/hall_venues/holiday_inn_gaithersburg.json) | Could pair restaurant food with hotel services. Required hotel bar plus outside food must fit about $92.02 all-in/guest. |
 | 9 | [Vienna VFD Event Hall](https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf) | Targeted backup | [$36,767; incomplete scenario](specs/hall_venues/vienna_vfd.json) | Works numerically near $100 all-in catering, but weak separate-room evidence; do not tour before resolving. |

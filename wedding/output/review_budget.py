@@ -2,7 +2,8 @@
 """Read-only reconciliation of the workbook and the current wedding plan.
 
 Run from any directory. Prints audit JSON; never changes the workbook or tracker.
-The independent Decimal reconstruction is in research/budget_math_audit.json.
+The independent pre-approval reconstruction is in research/budget_math_audit.json.
+Current approved allocations come from budget/approved_plan.json.
 """
 import importlib.util
 import json
@@ -30,7 +31,7 @@ assert nonvenue == Decimal("22406")
 scenarios = []
 for label, venue in [("Current hard ceiling", Decimal("32139")),
                      ("Minimum $1,000 venue headroom", Decimal("31139")),
-                     ("Suggested early quote target", Decimal("30000"))]:
+                     ("Approved venue shopping target", Decimal("30000"))]:
     total = venue + nonvenue
     scenarios.append(dict(label=label, venue_driven=float(venue),
                           other_spending=float(nonvenue), planned_spending=float(total),
@@ -50,11 +51,11 @@ findings = dict(
     marginal_costs=dict(
         ten_dollars_all_in_per_guest=1850,
         ten_dollars_before_22pct_service_and_9pct_tax=round(185*10*1.22*1.09, 2),
-        five_more_tables_before_additional_tax=5*(100+12+30+20),
+        historical_five_more_tables_before_additional_tax=5*(100+12+30+20),
     ),
     limitations=["Targets are not supplier quotes.",
                  "Unknown required costs remain unknown, not zero.",
                  "No scenario authorizes spending the protected reserve.",
-                 "The model's legacy FITS verdict does not enforce every locked requirement."]
+                 "Approved category caps remain fixed; actual table quantities and complete supplier quotes are still required."]
 )
 print(json.dumps(findings, indent=2))

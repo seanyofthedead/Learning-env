@@ -1,5 +1,7 @@
 # Flowers, décor, attire and beauty: protect the look and price the work
 
+**Update: the couple approved these allocations on November 8, 2026.** They are now in [the approved budget](../approved_budget.md) and the model. The review text below is preserved as decision history. Approved allowances remain spending targets; vendor prices and availability require quotes.
+
 Prepared 8 November 2026. **Planning alternatives only: no budget changes accepted, vendors contacted or purchases made.** Keep 185 guests and the sage / stone / ivory palette. These allocations use the model's current 19-table assumption; the approved floor plan may require more tables. Keep the $5,454.55 wedding reserve untouched.
 
 The best improvement is to protect fit, personal flowers, lighting and paid setup while simplifying the number of custom designs. A small coordinated arrangement on every table can carry the palette. A cheap collection of products without delivery, placement and removal is not a complete wedding service.

@@ -78,26 +78,41 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -7735.26,
-        "headroom_r1_trimmed": 1333.74,
+        "headroom_r1_trimmed": 1333.29,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "rental window 8AM-12AM"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
         },
-        "flags": [],
-        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "rental window 8AM-12AM",
+          "confirmed reception end": null
+        },
+        "flags": [
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
+        ],
+        "fit": "unknown",
+        "budget_verdict": "fits",
+        "verdict": "UNKNOWN: unverified: seats guests at rounds with dance floor in same room, indoor ceremony space, heated indoor ceremony, ceremony seats all guests, ceremony room arrangement and any flip priced, holding room for all guests if a flip is required, separate cocktail-hour space, alcohol allowed, allows enclosed candles, allows outside DJ/florist/cake, reception runs to at least 22:00, date available, complete written 2027 quote, all applicable tax included or explicitly reconciled; budget scenario: fits",
         "source_url": "https://mcagfair.com/rentals",
         "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
       },
@@ -208,28 +223,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -9879.56,
-        "headroom_r1_trimmed": -810.56,
+        "headroom_r1_trimmed": -811.01,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": false,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "vacate by 12:00 AM Fri/Sat"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "vacate by 12:00 AM Fri/Sat",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "REJECT (fails must-have: separate cocktail-hour space); cost: FITS only by spending the 10% reserve (Reading 2) -- couple must approve",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: fails must-have: separate cocktail-hour space; budget scenario: no",
         "source_url": "https://www.ovfc28.org/contact-us/",
         "price_date": "undated, live Nov 2026"
       },
@@ -323,28 +352,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -11324.56,
-        "headroom_r1_trimmed": -2255.56,
+        "headroom_r1_trimmed": -2256.01,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://howardcountyfairmd.com/rental/",
         "price_date": "undated; page notes 2026 renovation"
       },
@@ -436,28 +479,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -15047.76,
-        "headroom_r1_trimmed": -5978.76,
+        "headroom_r1_trimmed": -5979.21,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": true,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "city noise ordinance 10pm-7am; loading banned 10pm-7am"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "city noise ordinance 10pm-7am; loading banned 10pm-7am",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "OVER by $524 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, date available, within ~60 min of downtown DC (assumption)",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://thegreatfrederickfair.com/year-round-rental",
         "price_date": "undated page; checklist PDF uploaded 2026/02"
       },
@@ -544,28 +601,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -11826.88,
-        "headroom_r1_trimmed": -2757.88,
+        "headroom_r1_trimmed": -2758.33,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "rental must end by midnight incl. cleanup"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "rental must end by midnight incl. cleanup",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://www.pgparks.com/community-center-rentals",
         "price_date": "undated (site (c)2026)"
       },
@@ -663,28 +734,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -8323.56,
-        "headroom_r1_trimmed": 745.44,
+        "headroom_r1_trimmed": 744.99,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": false,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": false,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": false,
           "allows outside DJ/florist/cake": null,
-          "end time": "unknown; center open Sat 9am-10pm"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "unknown; center open Sat 9am-10pm",
+          "confirmed reception end": null
         },
         "flags": [
-          "no enclosed flame: switch candles to LED (budget the same $1,000-2,000 line)"
+          "Enclosed candles are required; a substitution requires an explicit plan change",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "REJECT (fails must-have: indoor ceremony space, separate cocktail-hour space); cost: FITS only with the trims",
+        "fit": "no",
+        "budget_verdict": "edge",
+        "verdict": "NO: fails must-have: indoor ceremony space, separate cocktail-hour space, allows enclosed candles; budget scenario: edge",
         "source_url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation/choose-right-space",
         "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
       },
@@ -778,28 +863,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -12269.2,
-        "headroom_r1_trimmed": -3200.2,
+        "headroom_r1_trimmed": -3200.65,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": true,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": true,
           "allows outside DJ/florist/cake": true,
-          "end time": "all events must end by 12am"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "all events must end by 12am",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2025: escalated x1.082; get 2027 pricing in writing"
+          "price from 2025: escalated x1.082; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, separate cocktail-hour space, date available",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://cityofglenarden.org/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf",
         "price_date": "PDF created 16 Sep 2025"
       },
@@ -902,26 +1001,41 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -8412.56,
-        "headroom_r1_trimmed": 656.44,
+        "headroom_r1_trimmed": 655.99,
         "must_haves": {
-          "seats guests with dance floor": false,
+          "seats guests at rounds with dance floor in same room": false,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": true,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
         },
-        "flags": [],
-        "verdict": "REJECT (fails must-have: seats guests with dance floor); cost: FITS only with the trims",
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
+        },
+        "flags": [
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
+        ],
+        "fit": "no",
+        "budget_verdict": "edge",
+        "verdict": "NO: fails must-have: seats guests at rounds with dance floor in same room; budget scenario: edge",
         "source_url": "https://wcccmaryland.org/rentals",
         "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
       },
@@ -998,28 +1112,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -11394.56,
-        "headroom_r1_trimmed": -2325.56,
+        "headroom_r1_trimmed": -2326.01,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
         },
         "flags": [
-          "parking cost unknown -- ask (free lot? validation? valet required?)"
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://cheverly-md.gov/357/Community-Organizations",
         "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
       },
@@ -1105,26 +1233,41 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -10284.56,
-        "headroom_r1_trimmed": -1215.56,
+        "headroom_r1_trimmed": -1216.01,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
         },
-        "flags": [],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
+        },
+        "flags": [
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
+        ],
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://fairgroundrentals.com/charles/",
         "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
       },
@@ -1218,28 +1361,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -12592.29,
-        "headroom_r1_trimmed": -3523.29,
+        "headroom_r1_trimmed": -3523.74,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": true,
-          "end time": "music off 11:00pm; rental hours include setup and breakdown"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "music off 11:00pm; rental hours include setup and breakdown",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2024: escalated x1.125; get 2027 pricing in writing"
+          "price from 2024: escalated x1.125; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://gsvfd.org/hall-rentals/",
         "price_date": "GSVFD HALL RENTAL PRICING (2024)"
       },
@@ -1328,28 +1485,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -8557.86,
-        "headroom_r1_trimmed": 511.14,
+        "headroom_r1_trimmed": 510.69,
         "must_haves": {
-          "seats guests with dance floor": true,
+          "seats guests at rounds with dance floor in same room": true,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "Saturday 6pm-midnight, vacate by 1am (setup from 2pm included); Sunday 5-11pm"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "Saturday 6pm-midnight, vacate by 1am (setup from 2pm included); Sunday 5-11pm",
+          "confirmed reception end": null
         },
         "flags": [
-          "parking cost unknown -- ask (free lot? validation? valet required?)"
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available",
+        "fit": "unknown",
+        "budget_verdict": "edge",
+        "verdict": "UNKNOWN: unverified: indoor ceremony space, heated indoor ceremony, ceremony seats all guests, ceremony room arrangement and any flip priced, holding room for all guests if a flip is required, separate cocktail-hour space, alcohol allowed, allows enclosed candles, allows outside DJ/florist/cake, reception runs to at least 22:00, date available, complete written 2027 quote, all applicable tax included or explicitly reconciled; budget scenario: edge",
         "source_url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
         "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
       },
@@ -1454,26 +1625,41 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -8261.04,
-        "headroom_r1_trimmed": 807.96,
+        "headroom_r1_trimmed": 807.51,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
         },
-        "flags": [],
-        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
+        },
+        "flags": [
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
+        ],
+        "fit": "unknown",
+        "budget_verdict": "edge",
+        "verdict": "UNKNOWN: unverified: seats guests at rounds with dance floor in same room, indoor ceremony space, heated indoor ceremony, ceremony seats all guests, ceremony room arrangement and any flip priced, holding room for all guests if a flip is required, separate cocktail-hour space, alcohol allowed, allows enclosed candles, allows outside DJ/florist/cake, reception runs to at least 22:00, date available, complete written 2027 quote, all applicable tax included or explicitly reconciled; budget scenario: edge",
         "source_url": "https://graysevents.com/venue",
         "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
       },
@@ -1564,28 +1750,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -13794.77,
-        "headroom_r1_trimmed": -4725.77,
+        "headroom_r1_trimmed": -4726.22,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "building rental hours Sat 9am-midnight, Fri 8am-midnight"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "building rental hours Sat 9am-midnight, Fri 8am-midnight",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2023: escalated x1.170; get 2027 pricing in writing"
+          "price from 2023: escalated x1.170; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://mcleancenter.org/wp-content/uploads/2026/09/Rental-Fees-Updated-Sept.-30-2026.pdf",
         "price_date": "Effective May2023 per PDF, postedSep2026; escalated four years to2027"
       },
@@ -1695,28 +1895,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -9896.16,
-        "headroom_r1_trimmed": -827.16,
+        "headroom_r1_trimmed": -827.61,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2023: escalated x1.170; get 2027 pricing in writing"
+          "price from 2023: escalated x1.170; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://www.columbusclubevents.com/files/offerings.pdf",
         "price_date": "Nov 2023 PDFs; escalated to 2027 by the model"
       },
@@ -1806,29 +2020,43 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -16744.04,
-        "headroom_r1_trimmed": -7675.04,
+        "headroom_r1_trimmed": -7675.49,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": true,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": true
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": true,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
         },
         "flags": [
           "parking cost unknown -- ask (free lot? validation? valet required?)",
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "OVER by $2,220 even trimmed + reserve -- PENDING answers: seats guests with dance floor, separate cocktail-hour space, date available",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://www.alexandriava.gov/sites/default/files/2026-06/RPCAFY2027FeeSchedule.pdf",
         "price_date": "FY2027 (eff. 1 Jul 2026)"
       },
@@ -1941,28 +2169,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -11107.56,
-        "headroom_r1_trimmed": -2038.56,
+        "headroom_r1_trimmed": -2039.01,
         "must_haves": {
-          "seats guests with dance floor": true,
+          "seats guests at rounds with dance floor in same room": true,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": true,
           "allows outside DJ/florist/cake": null,
-          "end time": "events end 12:00am; music ends 11:00pm"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "events end 12:00am; music ends 11:00pm",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
         "price_date": "2026 contract"
       },
@@ -2056,26 +2298,41 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -13696.3,
-        "headroom_r1_trimmed": -4627.3,
+        "headroom_r1_trimmed": -4627.75,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "11pm, including cleanup (prior booking verification)"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
         },
-        "flags": [],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "11pm, including cleanup (prior booking verification)",
+          "confirmed reception end": null
+        },
+        "flags": [
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
+        ],
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
         "price_date": "2027 published rent/kitchen/custom arrangement; cleaning/support/extra hours carried prior official booking site"
       },
@@ -2165,29 +2422,43 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -18190.08,
-        "headroom_r1_trimmed": -9121.08,
+        "headroom_r1_trimmed": -9121.53,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": true,
           "allows outside DJ/florist/cake": null,
-          "end time": "Event12am; cleanup ends1am"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "Event12am; cleanup ends1am",
+          "confirmed reception end": null
         },
         "flags": [
           "parking cost unknown -- ask (free lot? validation? valet required?)",
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "OVER by $3,667 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://www.fairfaxva.gov/files/assets/city/v/3/parks-amp-rec/documents/scscc-pricing-policies-contract-fiscal-year-2026-fillable-updated.pdf",
         "price_date": "FY2026 rate sheet, modeled2026+4%; actual FY2028 unknown"
       },
@@ -2282,29 +2553,43 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -16260.46,
-        "headroom_r1_trimmed": -7191.46,
+        "headroom_r1_trimmed": -7191.91,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": true,
           "allows outside DJ/florist/cake": null,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
         },
         "flags": [
           "parking cost unknown -- ask (free lot? validation? valet required?)",
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "OVER by $1,737 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
         "price_date": "Undated official rates; modeled2026 with+4% assumption"
       },
@@ -2386,28 +2671,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -12113.61,
-        "headroom_r1_trimmed": -3044.61,
+        "headroom_r1_trimmed": -3045.06,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "Latest rental12am; actual event duration and breakdown TBD"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "Latest rental12am; actual event duration and breakdown TBD",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2023: escalated x1.170; get 2027 pricing in writing"
+          "price from 2023: escalated x1.170; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf",
         "price_date": "Hotel venue-service package2023; separate food/bar2027 assumptions"
       },
@@ -2513,29 +2812,43 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -10295.96,
-        "headroom_r1_trimmed": -1226.96,
+        "headroom_r1_trimmed": -1227.41,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": null
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": null,
+          "confirmed reception end": null
         },
         "flags": [
           "parking cost unknown -- ask (free lot? validation? valet required?)",
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
         "price_date": "Nov2026 menu, escalated4%"
       },
@@ -2598,26 +2911,41 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -10940.36,
-        "headroom_r1_trimmed": -1871.36,
+        "headroom_r1_trimmed": -1871.81,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": null,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": null,
-          "end time": "Full-day rental8am-midnight; event end time unknown"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
         },
-        "flags": [],
-        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "Full-day rental8am-midnight; event end time unknown",
+          "confirmed reception end": null
+        },
+        "flags": [
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
+        ],
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: modeled cost exceeds the $32,139 cap; actual quote may differ; budget scenario: no",
         "source_url": "https://www.leesburgfire.org/hallrental",
         "price_date": "2027 published rates"
       },
@@ -2659,28 +2987,42 @@
         },
         "envelopes": {
           "R1 as-is": 23070.45,
-          "R1 trimmed": 32139.45,
-          "R2 as-is": 28525.0,
-          "R2 trimmed": 37594.0
+          "R1 trimmed": 32139
         },
         "headroom_r1_as_is": -12830.06,
-        "headroom_r1_trimmed": -3761.06,
+        "headroom_r1_trimmed": -3761.51,
         "must_haves": {
-          "seats guests with dance floor": null,
+          "seats guests at rounds with dance floor in same room": null,
           "indoor ceremony space": null,
+          "heated indoor ceremony": null,
+          "ceremony seats all guests": null,
+          "ceremony room arrangement and any flip priced": null,
+          "holding room for all guests if a flip is required": null,
           "separate cocktail-hour space": false,
-          "date available": null,
-          "within ~60 min of downtown DC (assumption)": null
-        },
-        "nice_to_check": {
+          "alcohol allowed": null,
           "allows enclosed candles": null,
           "allows outside DJ/florist/cake": true,
-          "end time": "11:00pm (last call 10:45pm; vendors out by midnight)"
+          "reception runs to at least 22:00": null,
+          "date available": null,
+          "within ~60 min of downtown DC": null,
+          "approved guest count": true
+        },
+        "quote_evidence": {
+          "complete written 2027 quote": null,
+          "all applicable tax included or explicitly reconciled": null
+        },
+        "nice_to_check": {
+          "end time source note": "11:00pm (last call 10:45pm; vendors out by midnight)",
+          "confirmed reception end": null
         },
         "flags": [
-          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+          "price from 2026: escalated x1.040; get 2027 pricing in writing",
+          "Tax inclusion for cake and other separately priced costs is unconfirmed; defaults are unchanged",
+          "Modeled scenario only: prices, required fees and inclusions need a complete written 2027 quote"
         ],
-        "verdict": "REJECT (fails must-have: separate cocktail-hour space); cost: FITS only by spending the 10% reserve (Reading 2) -- couple must approve",
+        "fit": "no",
+        "budget_verdict": "no",
+        "verdict": "NO: fails must-have: separate cocktail-hour space; budget scenario: no",
         "source_url": "https://www.loudoun.gov/DocumentCenter/View/173616/The-Lodge-Rental-Rates",
         "price_date": "undated rate sheet (current Nov 2026)"
       },
@@ -2691,5 +3033,6 @@
       "price_completeness": "Scenario; required fees/ceremony/second room availability unknown.",
       "fit": "no"
     }
-  ]
+  ],
+  "model_policy_updated_on": "2026-11-08; approved allocations, strict fit gates and protected reserve. Source facts/actual-quote status remain separate from modeled scenario verdicts."
 }

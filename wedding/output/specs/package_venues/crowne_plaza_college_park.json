@@ -10,11 +10,10 @@
     "setup_breakdown",
     "basic_linens",
     "china",
-    "cocktail_space",
-    "free_parking"
+    "cocktail_space"
   ],
   "source_url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet",
-  "package_pp": 112.99,
-  "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json.",
+  "package_pp": 108.45,
+  "price_date": "UNKNOWN PRICE. Nominal 2027 package ceiling scenario, not a quote. Parking now carries an assumed $1,110 pending event terms: current official amenities lists $15/day, conflicting with an undated free-parking fact sheet. Unknown venue/ceremony/access fees remain unpriced.",
   "date_available": null
 }

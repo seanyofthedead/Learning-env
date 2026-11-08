@@ -1,0 +1,268 @@
+{
+  "checked_date": "2026-11-08",
+  "sections": [
+    {
+      "id": "wedding_dress",
+      "title": "Wedding dress: ranked shopping routes",
+      "budget_scope": "$950 dress purchase, with $450 alterations and category tax allocated separately. No gown, size, silhouette or color has been selected.",
+      "budget_items": ["Wedding dress"],
+      "vendors": [
+        {
+          "name": "David's Bridal — Springfield",
+          "url": "https://www.davidsbridal.com/content/diamond-pearl/springfield-va-wedding-dress",
+          "source_urls": ["https://www.davidsbridal.com/content/diamond-pearl/springfield-va-wedding-dress", "https://www.davidsbridal.com/content/collections/wedding-dress-under-1000", "https://www.davidsbridal.com/product/lace-applique-tulle-v-neck-mermaid-wedding-gown-ms251255"],
+          "price_year": "unknown; undated live listings checked 2026-11-08",
+          "published_price": "Collection lists Melissa Sweet lace-applique tulle V-neck mermaid gown at $499.99 and other individually priced gowns below $950; not every item in the under-$1,000 collection fits the $950 cap.",
+          "scope": "Local bridal styling and in-house alterations at 7206 Old Keene Mill Road, Springfield. The $499.99 gown is a price benchmark, not a selected style.",
+          "gaps": "Exact size, color, local stock and final checkout price unknown. Referenced Melissa Sweet product says no returns/exchanges. Get an alteration estimate before a final-sale purchase. Do not assume the collection's broad free-alterations promotional wording applies to the chosen garment; retain the separate $450 allowance. Tax, shipping, undergarments and steaming need coverage.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising local route; some published dress prices fit, complete dressed-and-fitted cost unknown."
+        },
+        {
+          "name": "Azazie — online bridal and home try-on",
+          "url": "https://www.azazie.com/all/wedding-dresses",
+          "source_urls": ["https://www.azazie.com/products/azazie-mirabeth-diamond-white-ball-gown-strapless-lace-chapel-train-wedding-dress/57737607"],
+          "price_year": "unknown; US/USD product listing checked 2026-11-08",
+          "published_price": "Mirabeth gown $439 in USD. Home try-on is advertised; no promotional discount counted.",
+          "scope": "Lower purchase-price route with local alterations separately. Mirabeth demonstrates pricing only; its page currently marks numerous size/fabric combinations unavailable.",
+          "gaps": "An actually orderable size/color/style must be found. Try-on charges, return/custom-size restrictions, shipping, tax, garment construction and alteration feasibility must be checked. The product page's current production estimate is not a November 2027 delivery commitment. Confirm the site remains in United States/USD.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Published benchmark below $950; current example stock is constrained and a complete fit is unconfirmed."
+        },
+        {
+          "name": "Cherie Sustainable Bridal — Savage, Maryland",
+          "url": "https://www.cheriesb.com/",
+          "source_urls": ["https://www.cheriesb.com/", "https://www.cheriesb.com/faqs"],
+          "price_year": "unknown",
+          "published_price": "Gown prices unpublished. Fourth accompanying guest adds a $50 nonrefundable booking fee; bride plus three guests is the stated normal party size.",
+          "scope": "Appointment-only donated/off-rack gowns at 8600 Foundry Street, Savage. Website says dresses are cleaned before reaching the sales floor.",
+          "gaps": "Ask whether current inventory includes suitable gowns at or below $950. All gowns are final sale, first-come-first-served, with no holds. Size, condition, prior alterations and further alteration feasibility must be checked before buying. Travel, appointment terms, tax and any additional cleaning unknown.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Potential value shopping route; unpublished gown pricing means no verified budget fit."
+        }
+      ],
+      "recommendation": "Start with local fittings at David's Bridal, compare a genuinely available Azazie style, and use Cherie if its current inventory suits Leila. Prefer a gown whose existing fit and construction limit alteration work. Do not spend the entire $950 merely because it is allocated."
+    },
+    {
+      "id": "alterations",
+      "title": "Dress alterations: two local quote routes",
+      "budget_scope": "$450 for the wedding dress's required fitting work; groom fitting belongs within the $350 suit allowance.",
+      "budget_items": ["Alterations"],
+      "vendors": [
+        {
+          "name": "Y & Z Tailoring — Woodbridge",
+          "url": "https://yandztailoring.com/",
+          "source_urls": ["https://yandztailoring.com/"],
+          "price_year": "unknown; undated price list checked 2026-11-08",
+          "published_price": "Generic gown/dress hem from $45; other gown work requires an estimate. This is not a wedding-dress alteration package.",
+          "scope": "Bridal/gown and menswear alterations at 1455 Old Bridge Road, Suite 105, Woodbridge. Free consultation advertised.",
+          "gaps": "Need an estimate on the actual gown covering hem layers, bodice, bustle, cups, pressing/steaming, fittings and rush fees. November 2027 workload and completion timeline unknown.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "$450 is unverified; lower starting rates warrant a consultation for a simple alteration scope."
+        },
+        {
+          "name": "Tang's Bridal Alterations & Bespoke — Manassas",
+          "url": "https://tangsalterations.com/alterations",
+          "source_urls": ["https://tangsalterations.com/alterations", "https://tangsalterations.com/"],
+          "price_year": "unknown",
+          "published_price": "Bridal alteration prices unpublished.",
+          "scope": "Full-service alterations in Manassas; accepts gowns purchased elsewhere. Two locations are advertised.",
+          "gaps": "Actual-gown fitting estimate, included appointments, steaming, rush schedule and tax unknown. This recommendation is for alterations; the shop's published gown range of $1,200–$3,500 exceeds the $950 purchase allowance.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Suitable service lead; no evidence yet that complete work fits $450."
+        },
+        {
+          "name": "BeFitted Tailoring — price-risk comparison",
+          "url": "https://www.befittedtailoringco.com/faq-1",
+          "source_urls": ["https://www.befittedtailoringco.com/faq-1"],
+          "price_year": "unknown; undated FAQ checked 2026-11-08",
+          "published_price": "Typical bridal alterations $795–$1,600, although the vendor says it has no price floor. Estimate-only consultation $50; waived when proceeding at the appointment.",
+          "scope": "Specialist bridal tailoring; typical fitting process about 3.5 months and rush fees when starting under three months before the wedding.",
+          "gaps": "Individual quote required. Typical range is above this plan's allowance; sample/pre-worn gown acceptance also needs explicit checking against the FAQ restrictions.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Typical published range exceeds $450; not the first budget route."
+        }
+      ],
+      "recommendation": "Obtain a garment-specific estimate before a final-sale gown commitment wherever possible. The $450 allowance is the most vulnerable attire estimate; buying a less expensive, well-fitting gown helps preserve room, but no reallocation or savings is assumed here."
+    },
+    {
+      "id": "bridal_accessories",
+      "title": "Veil, jewelry and accessories",
+      "budget_scope": "$100 combined before separately allocated category tax; include shipping and any needed hair accessories within the remaining room.",
+      "budget_items": ["Veil, jewelry & accessories"],
+      "vendors": [
+        {
+          "name": "Lulus — veil and modest costume jewelry",
+          "url": "https://www.lulus.com/categories/2042_5036/wedding-accessories.html",
+          "source_urls": ["https://www.lulus.com/products/eleonora-ivory-tulle-layered-long-veil/2728111.html", "https://www.lulus.com/categories/2042_2066/wedding-jewelry.html"],
+          "price_year": "unknown; undated retail listings checked 2026-11-08",
+          "published_price": "Eleonora layered veil $55 before optional promotional code; Upscale Direction earrings $19. Illustrative veil-plus-earrings total $74 before tax/shipping, leaving $26 within this line.",
+          "scope": "A credible two-piece route within $100. Product names/colors demonstrate price only, not selections for Leila. Collection also lists jewelry at $14–$19.",
+          "gaps": "Match veil color to the actual gown and jewelry to preferences; confirm metal sensitivity, stock, returns and delivery fees. Additional necklace, bracelet, hairpiece or undergarments are not all included in the $74 example.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Illustrative partial accessory set below $100; complete desired set and checkout total unknown."
+        }
+      ],
+      "recommendation": "Choose accessories after the gown and hairstyle. A veil plus one jewelry focal point can meet the allowance; do not assume a complete matching jewelry set or bridal undergarments is already funded."
+    },
+    {
+      "id": "bridal_shoes",
+      "title": "Bride's shoes",
+      "budget_scope": "$100 before separately allocated category tax; include shipping/returns in the purchase decision.",
+      "budget_items": ["Bride's shoes"],
+      "vendors": [
+        {
+          "name": "Dream Pairs — flats and lower heels",
+          "url": "https://www.dreampairs.com/collections/wedding-shoes",
+          "source_urls": ["https://www.dreampairs.com/collections/wedding-shoes"],
+          "price_year": "unknown; undated US/USD collection checked 2026-11-08",
+          "published_price": "Collection examples: wide-width sparkly ballet flats $36.99, Annee pointed-toe low chunky heels $37.99, classic low-heel chunky pumps $42.99.",
+          "scope": "Budget shoe retailer with different shapes and heel heights. No width, heel height or color is assumed for Leila.",
+          "gaps": "Exact size/color stock, comfort, delivery fees, return conditions and durability require checking. Brand comfort claims are not independent fit evidence.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Several published pair prices below $100; actual fit and checkout total unknown."
+        },
+        {
+          "name": "Lulus — bridal shoes",
+          "url": "https://www.lulus.com/categories/2042_2802/bridal-shoes.html",
+          "source_urls": ["https://www.lulus.com/categories/2042_2802/bridal-shoes.html"],
+          "price_year": "unknown; undated collection checked 2026-11-08",
+          "published_price": "Honorata slingback pumps $39; Suttonn satin bow pumps $49; Harper ankle-strap heels $35. No sale code counted.",
+          "scope": "Alternative styles within the shoe allowance; some third-party brands in the same collection exceed $100.",
+          "gaps": "Select only after trying comfort and the correct size. Confirm returns, shipping and stock; not every bridal shoe in the collection fits this cap.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Selected examples fit before fees; complete purchase unknown."
+        }
+      ],
+      "recommendation": "Set the final shoe and heel height before hemming. Reserve the unused part of the $100 until comfort and return costs are resolved."
+    },
+    {
+      "id": "groom_attire",
+      "title": "Groom's suit or tux and accessories",
+      "budget_scope": "$350 suit/tux including fit adjustments plus $75 accessories, $425 combined before separately allocated category tax. Any redistribution between those two lines must be recorded; this report does not change them.",
+      "budget_items": ["Groom's suit / tux", "Groom's accessories"],
+      "vendors": [
+        {
+          "name": "SuitShop — purchase with local hemming",
+          "url": "https://suitshop.com/products/mens-navy-blue-suit/",
+          "source_urls": ["https://suitshop.com/products/mens-navy-blue-suit/", "https://suitshop.com/collections/mens/suits-and-tuxedos/", "https://yandztailoring.com/"],
+          "price_year": "unknown; undated retail listings checked 2026-11-08",
+          "published_price": "Navy suit $199; example shirt $49, tie $24, belt $29, shoes $99. These five products total $400 before tailoring, shipping and tax. Pants have an unfinished hem. Y & Z publishes plain trouser hemming from $15.",
+          "scope": "Purchase route with specific accessory/shoe supplier links on the suit page. Shirt plus tie is $73 against the $75 accessory line; shoes and belt still need funding within an explicitly reconciled groom outfit.",
+          "gaps": "The $400 example leaves only $25 of combined $425 for fitting and other fees; additional sleeve/waist work could exceed it. Socks, pocket square, preferred colors and existing items unknown. Itemized allocation would need reconciliation if shoes/belt use suit headroom. No group discount counted; exact stock and November needs unknown.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Suit base comfortably below $350; complete new outfit is close to combined cap and not confirmed."
+        },
+        {
+          "name": "Generation Tux — rental",
+          "url": "https://generationtux.com/collection/tuxedos-and-suits/black-notch-lapel-tuxedo",
+          "source_urls": ["https://generationtux.com/collection/tuxedos-and-suits/black-notch-lapel-tuxedo", "https://generationtux.com/collection/tuxedos-and-suits"],
+          "price_year": "unknown; undated rental listing checked 2026-11-08",
+          "published_price": "Black Notch Lapel Tuxedo listed at $159. This is a base listing, not a verified complete-outfit total.",
+          "scope": "Rental alternative. Vendor advertises free shipping both ways, home try-on for wedding couples and delivery 14 days before the event. Free groom offer requires five paid wedding-party rentals and is not counted.",
+          "gaps": "Need itemized final price for jacket, trousers, shirt, tie, shoes, waist accessory, fitting/replacements, mandatory fees and tax. Return deadline, damage/late charges, size suitability, 2027 pricing and availability unknown. Do not equate $159 with a full outfit.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Promising rental base below allowance; complete rental quote unknown."
+        }
+      ],
+      "recommendation": "Compare a complete rental against a complete purchase after determining what Sean already wants to wear. Groom shoes are not an explicit workbook line; include them in the comparison rather than silently assuming an existing pair."
+    },
+    {
+      "id": "wedding_bands",
+      "title": "Wedding bands: two pair paths",
+      "budget_scope": "$1,100 for both rings, with category tax separately allocated. Materials, widths, sizes and matching preferences remain open.",
+      "budget_items": ["Wedding bands"],
+      "vendors": [
+        {
+          "name": "Quince — pair from two individually priced 14K bands",
+          "url": "https://www.quince.com/shop/women/jewelry/wedding-bands-all",
+          "source_urls": ["https://www.quince.com/women/low-dome-band---3mm?color=yellow-gold", "https://www.quince.com/unisex/14k-gold-4mm-dome-band?color=yellow-gold", "https://www.quince.com/unisex/14k-gold-4mm-dome-band?color=white-gold"],
+          "price_year": "unknown; undated US/USD product listings checked 2026-11-08",
+          "published_price": "Example pair: 3 mm low-dome yellow-gold band $428 + 4 mm lightweight round-edge yellow-gold band $398 = $826. Alternative matching 4 mm bands: 2 × $398 = $796; listed yellow or white gold. Standard shipping advertised free.",
+          "scope": "Actual two-ring arithmetic, not a single-ring teaser. The 3 mm page offers sizes 4–9; 4 mm page offers 4–12, with some variants unavailable. No metal or width has been selected for the couple.",
+          "gaps": "Professional sizing, exact variant stock, comfortable width/profile, engagement-ring fit, resizing/engraving terms and actual tax unknown. Listings do not guarantee price or inventory through 2027.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Example pair below $1,100 before tax and any sizing/engraving charges; not yet selected or confirmed."
+        },
+        {
+          "name": "Catbird + Quince — mixed-supplier pair",
+          "url": "https://www.catbirdnyc.com/catbird-classic-wedding-bands-solid-half-round-band-2mm.html",
+          "source_urls": ["https://www.catbirdnyc.com/catbird-classic-wedding-bands-solid-half-round-band-2mm.html", "https://www.quince.com/unisex/14k-gold-4mm-dome-band?color=yellow-gold"],
+          "price_year": "unknown; undated product listings checked 2026-11-08",
+          "published_price": "Catbird 2 mm half-round band starts at $550; paired with Quince 4 mm $398 gives a starting pair subtotal of $948. Catbird lists two-day delivery $9; engraving/configuration may add cost.",
+          "scope": "Second supplier path if one partner prefers Catbird's narrower band. Catbird lists 14K, 18K and platinum choices, but the $550 floor is not verified for every configuration. Two Catbird 2 mm bands would start at $1,100 before shipping, so that alternative has no fee headroom.",
+          "gaps": "Exact size/metal/finish price, shipping method, resizing, engagement-ring fit, tax and lead time unknown. Engraved Catbird orders are final sale. The two rings need not match unless the couple wants that.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Potential pair from $948 plus fees; starting price is not a configured quote."
+        }
+      ],
+      "recommendation": "Try widths and get both ring sizes before comparing configured totals. The Quince pair offers the clearest current price room. Preserve that room for resizing and tax until the full category is priced."
+    },
+    {
+      "id": "hair_makeup",
+      "title": "Bride-only hair, makeup and both trials",
+      "budget_scope": "$650 wedding-day total (planning split $550 service + $100 travel/mandatory fees) and $400 for both trials; $1,050 combined. No bridal-party services are funded.",
+      "budget_items": ["Hair & makeup", "Hair & makeup trials"],
+      "vendors": [
+        {
+          "name": "Fleur Beauty — bride-only route",
+          "url": "https://www.fleurbeautystudio.com/bridal-hair-makeup-northern-virginia",
+          "source_urls": ["https://www.fleurbeautystudio.com/bridal-hair-makeup-northern-virginia"],
+          "price_year": "unknown; undated service menu checked 2026-11-08",
+          "published_price": "Bride-Only MicroWedding Bridal Glow $600; both-services trial $290. Listed subtotal $890 before travel/fees. Monday–Thursday studio discount does not apply to the proposed Friday/Saturday dates.",
+          "scope": "Menu expressly has a party-of-three-or-fewer tier. Confirm the $600 package includes both hair and makeup and that eligibility concerns beauty-party size rather than wedding guest count.",
+          "gaps": "At $600, only $50 remains in the $650 day allowance for all travel/fees. During peak season, on-site micro services are limited to 20 miles of Reston 20190; farther travel is by availability/custom quote. Whether November is peak, any November/Saturday premium, parking, early start and acceptance for a 185-guest wedding remain unknown. Artist/date availability unknown.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising bride-only subtotal; travel radius, eligibility and total day price must be confirmed."
+        },
+        {
+          "name": "Sandra Makeup & Hair Artistry — conditional bride-only route",
+          "url": "https://www.sandramakeupartistry.com/weddingpricing",
+          "source_urls": ["https://www.sandramakeupartistry.com/weddingpricing"],
+          "price_year": "unknown; undated service menu checked 2026-11-08",
+          "published_price": "Bride hair + makeup $475; studio makeup trial $150 and hair trial $150 = $300, so $775 before minimums/travel. Travel per artist from Manassas 20110: $30 for 0–20 minutes, $45 for 20–40, $60 for 40–60, $75 for 60–75; farther travel by quote. Before 7:30 a.m. adds $50/hour.",
+          "scope": "Virginia/MD/DC bridal provider; trials normally in its Manassas studio. A 25% nonrefundable retainer is credited toward the total, not a separate surcharge.",
+          "gaps": "Advanced Saturday bookings made at least three months ahead have an unpublished service minimum excluding travel/fees. Thus the $475 bride-only rate is not confirmed for November 6, 13 or 20, 2027. Friday November 12 minimum, November surcharge, artist count, travel, parking, special styles and actual trial/day artists need confirmation.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Low published service subtotal, but Saturday minimum can invalidate the apparent fit."
+        },
+        {
+          "name": "The Basement Beauty — bride-only exception quote",
+          "url": "https://www.thebasementbeauty.com/bridal-weddings",
+          "source_urls": ["https://www.thebasementbeauty.com/bridal-weddings"],
+          "price_year": "unknown; undated service menu checked 2026-11-08",
+          "published_price": "Premier Bride package $700 including hair, makeup, trial, veiling and lashes. Standard minimum is five services / at least three people; smaller parties and bride-only receive special pricing by inquiry.",
+          "scope": "Arlington-area on-location provider; a possible fallback when a specifically itemized bride-only exception is offered.",
+          "gaps": "Do not apply the $700 package as a confirmed bride-only total. Need exception price, whether trial includes both services, service/day allocation, November/Friday/Saturday premiums, travel, parking, early start, extra hair work and artist availability.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Quote-only fallback; published standard package does not prove bride-only eligibility."
+        }
+      ],
+      "recommendation": "First confirm Fleur's eligibility and travel; compare Sandra only after its minimum is stated. Request both day services, both trials, artist count and every travel/November fee in one written price. No public menu here establishes a complete 2027 bride-only quote."
+    },
+    {
+      "id": "attire_tax",
+      "title": "Category tax and complete fulfillment check",
+      "budget_scope": "$200 tax allowance already inside the $4,375 category, not extra spending capacity.",
+      "budget_items": ["Attire & beauty sales tax allowance"],
+      "vendors": [],
+      "recommendation": "Use actual taxable items, delivery destination and vendor invoices; avoid double-counting tax-inclusive quotes. All nine purchase/service lines plus this tax allowance sum to $4,375. Overall category fulfillment remains unconfirmed until actual alterations, bride-only beauty minimum/travel, groom shoes/fitting and any undergarments or steaming are priced. Keep discounts and apparent savings uncommitted; do not draw on the wedding reserve."
+    }
+  ]
+}

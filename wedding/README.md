@@ -2,7 +2,9 @@
 
 This folder holds the plan, budget model and research for finding a wedding venue near DC. It's a starting point for Codex or any other assistant.
 
-**Start here:** paste `CODEX_PROMPT.md` into Codex. It has the locked decisions, budget rules, leads found so far, and the next steps.
+**Current plan:** [approved budget and implementation](output/approved_budget.md), then [vendor fulfillment plan](output/fulfillment_plan.md). The couple approved the review changes on November 8, 2026. [approved_plan.json](budget/approved_plan.json) controls the current allocations; the workbook extract remains historical evidence.
+
+For task instructions, use `CODEX_PROMPT.md` together with the approved plan and latest output files.
 
 | Path | What it is |
 |---|---|
@@ -17,6 +19,7 @@ This folder holds the plan, budget model and research for finding a wedding venu
 - 185 guests.
 - $60,000 total, which includes a 10% reserve, so the spend limit is $54,545.
 - The venue, food, drink and rentals must come to $32,139 all-in or less.
+- Shop toward a complete $30,000 venue-driven bill; $31,139 is the maximum for a financial “fits” result with at least $1,000 headroom. An incomplete quote or unresolved requirement cannot establish an overall fit.
 - First-choice date: Sat 13 Nov 2027.
 
 Run the budget model's tests:

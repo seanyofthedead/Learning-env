@@ -39,7 +39,7 @@ The official page describes the Grand Ballroom for 125–250 and an indoor cerem
 
 ### 2. Crowne Plaza College Park
 
-The official fact sheet lists Grand Ballroom banquet capacity 320, Annapolis reception capacity 250, and free parking. This is a promising two-room arrangement, but neither heated ceremony allocation nor rounds plus dancing is confirmed.
+The official fact sheet lists Grand Ballroom banquet capacity 320 and Annapolis reception capacity 250. Its free-parking claim conflicts with the current official amenities page, which lists $15/day; retain a $1,110 modeled parking allowance until wedding terms confirm a waiver. This is a promising two-room arrangement, but neither heated ceremony allocation nor rounds plus dancing is confirmed. [Current parking policy](https://www.ihg.com/crowneplaza/hotels/us/en/greenbelt/wasgm/hoteldetail/amenities) (undated, checked November 8, 2026).
 
 **Price basis:** undated fact sheet; price unknown. **Contact:** sales@crowneplazacollegepark.com; 301-614-8241. The PDF has inconsistent email spellings; use the last-page address or phone.
 

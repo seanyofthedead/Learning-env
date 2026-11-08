@@ -1,0 +1,231 @@
+{
+  "checked_date": "2026-11-08",
+  "basis": "Approved plan; published vendor evidence, not 2027 quotes. No supplier contacted.",
+  "sections": [
+    {
+      "id": "fresh_florals",
+      "title": "Fresh bouquets, personal flowers, ceremony pieces and centerpieces",
+      "budget_scope": "Within the $5,446 floral/decor cap: bouquet $300; personal flowers $220; ceremony flowers $650; centerpieces $1,600; cocktail/bar/cake flowers $150. Tax, labor, candles and other items retain separate allocations within that cap.",
+      "budget_items": [
+        "Bridal bouquet",
+        "Boutonnieres & corsages",
+        "Ceremony florals",
+        "Centerpieces",
+        "Cocktail, bar & cake flowers"
+      ],
+      "vendors": [
+        {
+          "name": "She Loves Me — à la carte",
+          "url": "https://shelovesme.com/pages/a-la-carte-florals",
+          "source_urls": [
+            "https://shelovesme.com/pages/a-la-carte-florals"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Deluxe bouquet from $285; boutonniere from $25; bud-vase trio from $75; accent centerpiece from $100; impact arrangement from $295; $500 order minimum.",
+          "scope": "Finished flower products in preset palettes; packaged for someone at the event to place. Product checks: 19 $75 trios=$1,425; two $295 impact arrangements=$590.",
+          "gaps": "2027 rates and capacity; exact sage/stone/ivory palette; personal-flower count; tax; delivery; professional placement, moves and removal; no full-service labor established.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Products plausibly fit selected line allowances; complete fulfillment remains quote pending."
+        },
+        {
+          "name": "Little Acre Flowers — à la carte",
+          "url": "https://www.littleacreflowers.com/collections/a-la-carte-wedding",
+          "source_urls": [
+            "https://www.littleacreflowers.com/collections/a-la-carte-wedding",
+            "https://www.littleacreflowers.com/products/bud-vase-trio",
+            "https://www.littleacreflowers.com/pages/full-service-weddings-and-events"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Bridal bouquet $275; boutonniere $25; floral wrist cuff $75; three styled bud vases $75. Full-service minimum $7,000; custom delivery-only proposals from $3,000.",
+          "scope": "Local seasonal flowers; no minimum for à la carte on the service page. 19 bud-vase trios=$1,425 before tax/logistics. Color preferences are requests, not guaranteed exact flowers.",
+          "gaps": "Product page includes a sold-out state; stock and 2027 event quantity/date must be confirmed. Delivery to selected venue, installation/strike, palette and ceremony pieces need a quote.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "À la carte is the budget route; $7,000 full-service minimum exceeds the entire $5,446 decor cap."
+        }
+      ],
+      "recommendation": "Quote the same modest fresh-flower list from She Loves Me and Little Acre, then pair only with a documented paid placement/strike plan. Do not treat either product total as a complete wedding floral quote."
+    },
+    {
+      "id": "decor_styling",
+      "title": "Arch, enclosed candles, chargers and tabletop styling",
+      "budget_scope": "Arch $200 and candles $650 inside floral cap; specialty linens/chargers $935 in fixed venue costs. Bundles must be itemized across their existing lines without counting labor/tax twice.",
+      "budget_items": [
+        "Ceremony backdrop / arch",
+        "Candles (hurricanes & votives)",
+        "Specialty linens & chargers"
+      ],
+      "vendors": [
+        {
+          "name": "MICKNICS — tabletop styling and arch rental",
+          "url": "https://www.micknics.com/event-tablescape-venue-styling",
+          "source_urls": [
+            "https://www.micknics.com/event-tablescape-venue-styling",
+            "https://www.micknics.com/wedding-arch-rentals-maryland",
+            "https://www.micknics.com/wedding-event-party-rentals-maryland",
+            "https://www.micknics.com/event-styling-rentals-faq"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "15+ tables $75/table for up to eight seats each, plus styling/curation fee starting $175; more than eight seats per table quoted. Plain arch stand from $75; graduated set from $125.",
+          "scope": "Tabletop scope lists chargers, napkins, runners, candles, small faux centerpiece or four bud vases, some welcome/place-card elements and delivery/setup/breakdown. At 24 eight-seat tables, headline calculation is $1,975 before tax/additional charges. Plain-arch page lists up to 12 hours delivery/setup/breakdown.",
+          "gaps": "Exact fresh/faux composition and style choice; enclosed real-flame vessels and venue permission; 185-place inventory; fee overlap; tablecloths versus runners; travel, tax, midnight strike, room flip, refundable damage hold. 19 ten-seat tables require a custom price. Welcome/place cards do not establish a seating chart/table numbers.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Promising consolidated decor route, not a confirmed saving. Dinnerware is a separate add-on from $30/person and should not duplicate venue/caterer china."
+        },
+        {
+          "name": "A&A Rental Station — plain frame and rental accessories",
+          "url": "https://anarentalstation.com/bridal-equipment/",
+          "source_urls": [
+            "https://anarentalstation.com/bridal-equipment/",
+            "https://anarentalstation.com/delivery/"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "White lattice arch $50 for one day; tripod easel $13.",
+          "scope": "A plain reusable ceremony frame and support for a printed sign. Flowers and candle packages are not included.",
+          "gaps": "Delivery/setup/strike, venue location/service area, taxes, rental period, frame appearance/measurements and availability must be quoted. No verified hurricane-candle inventory from these pages.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Frame merchandise is below $200 allocation; delivered and installed total is unknown."
+        }
+      ],
+      "recommendation": "Ask MICKNICS for an itemized 185-person styling proposal before buying separate candles and chargers. Fresh personal flowers can remain with a florist; faux reception flowers are an explicit appearance option, not an assumed substitution. A&A is the simple-frame alternative."
+    },
+    {
+      "id": "core_rentals",
+      "title": "Tables, chairs, basic linens, china/glass/flatware and dance floor",
+      "budget_scope": "Required basic rentals, setup and rental delivery belong inside the $30,000 venue shopping target/$32,139 hard venue envelope. Specialty linens/chargers remain in their separate $935 fixed line. Rent only items missing from venue/caterer scope.",
+      "budget_items": [
+        "Guest tables & chairs",
+        "Basic table linens & napkins",
+        "China, glassware & flatware",
+        "Dance floor",
+        "Rental delivery & late-night pickup"
+      ],
+      "vendors": [
+        {
+          "name": "A&A Rental Station — transparent catalog pricing",
+          "url": "https://anarentalstation.com/",
+          "source_urls": [
+            "https://anarentalstation.com/tables/",
+            "https://anarentalstation.com/chairs/",
+            "https://anarentalstation.com/linens-skirting/",
+            "https://anarentalstation.com/china/",
+            "https://anarentalstation.com/glassware/",
+            "https://anarentalstation.com/silverware-flatware/",
+            "https://anarentalstation.com/dance-floors/",
+            "https://anarentalstation.com/delivery/"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "72-inch round $15; white padded garden chair $5; 120-inch round linen $21; napkin $1; dinner/salad plates $0.90 each; standard wine/water glasses $0.90 each; stainless flatware $0.85 per piece; 15x20 indoor dance floor $775 before installation/delivery.",
+          "scope": "Available product categories can cover the missing basic rental stack. Illustrative quantities: 19 rounds plus 185 padded chairs=$1,210; setup at $6/table+$1.80/chair=$447. Seven-piece place-setting example costs $6.15/person, before additional pieces, spares, tax and logistics.",
+          "gaps": "Approved floor plan/table diameter; adequate dance-floor size; inventory185; serving/buffet/cake/cocktail tables; linen drop; delivery service to exact venue; stairs/elevators/time window; tax; table setting, wash-up, restacking, strike and late pickup. Tailgate delivery is not room placement; items must return clean and packed.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Useful price benchmarks only. No complete 2027 rental or labor quote; do not replace full model allowances with these incomplete subtotals."
+        },
+        {
+          "name": "Brooke Rental Center — alternative consolidated quote",
+          "url": "https://brookerentalcenter.com/party-and-event-rentals/",
+          "source_urls": [
+            "https://brookerentalcenter.com/party-and-event-rentals/",
+            "https://brookerentalcenter.com/rent-now/linens/",
+            "https://brookerentalcenter.com/rent-now/party-goods/",
+            "https://brookerentalcenter.com/terms_conditions/"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Complete event pricing unpublished on checked readable pages.",
+          "scope": "DC/MD/Northern Virginia rental supplier for tables, chairs, linens, glassware and broader event equipment; in-house and special-order linen categories.",
+          "gaps": "Every price and185-person inventory; exact setup/strike obligations; delivery and late pickup; rental duration, damage/cleaning charges and correct sizes/colors. Saturday office closes at noon and Sunday is closed; a late-event arrangement must be explicit.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Quote pending; compare the same itemized list with A&A and venue/caterer inclusions."
+        }
+      ],
+      "recommendation": "Use A&A as the transparent catalog benchmark and Brooke as the competing consolidated quote. First subtract documented venue/caterer equipment. Rental discounts do not excuse inadequate seating, table space or a small dance floor."
+    },
+    {
+      "id": "physical_labor",
+      "title": "Physical setup, room flip, flower placement and end-of-night strike",
+      "budget_scope": "Decor delivery/placement/move/removal allowance $700, plus $411 uncommitted floral allowance if needed within the same category. Furniture setup/flip/strike and required access hours are venue-driven costs. Coordination is a separate $2,500 function.",
+      "budget_items": [
+        "Setup & breakdown labor",
+        "Florist delivery & setup fee",
+        "Extra hour for décor setup"
+      ],
+      "vendors": [
+        {
+          "name": "Elilta Events — setup and breakdown crews",
+          "url": "https://www.eliltaevents.com/faq",
+          "source_urls": [
+            "https://www.eliltaevents.com/faq"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Custom quote; minimum service hours apply but number/rates unpublished.",
+          "scope": "Official FAQ offers decor setup, table settings, breakdown/cleanup and setup/breakdown crews for weddings in DC, Maryland and Northern Virginia; reports large-event staffing capability.",
+          "gaps": "Named crew size, shift lengths, split shifts/return trip, delivery handling, fresh-flower placement and moving, candles, tableware washing/packing, furniture flipping, final trash and departure; business/insurance credentials accepted by the venue; tax/travel/minimums and2027availability.",
+          "priority": 1,
+          "availability": "unknown",
+          "budget_status": "Best targeted standalone physical-labor inquiry; no claim that $700 covers the complete job."
+        },
+        {
+          "name": "A&A Rental Station — its own furniture setup",
+          "url": "https://anarentalstation.com/tables/",
+          "source_urls": [
+            "https://anarentalstation.com/tables/",
+            "https://anarentalstation.com/chairs/",
+            "https://anarentalstation.com/delivery/"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Setup $6/table and $1.80/chair, booked in advance. At19tables/185chairs: $447 before delivery/tax and additional work.",
+          "scope": "Setting out its rented tables/chairs; delivery otherwise arrives stacked.",
+          "gaps": "Does not establish table dressing, flower/candle placement, mid-event flip, end-of-night restacking, washing, or late pickup. Quote all required work and equipment transport separately.",
+          "priority": 2,
+          "availability": "unknown",
+          "budget_status": "Venue-envelope labor option for missing furniture setup only; not a substitute for the decor crew."
+        },
+        {
+          "name": "MICKNICS — its own rented decor installation",
+          "url": "https://www.micknics.com/event-tablescape-venue-styling",
+          "source_urls": [
+            "https://www.micknics.com/event-tablescape-venue-styling",
+            "https://www.micknics.com/wedding-arch-rentals-maryland",
+            "https://www.micknics.com/wedding-event-party-rentals-maryland"
+          ],
+          "price_year": "unknown; undated official page checked 2026-11-08",
+          "published_price": "Quoted styling fee; $175 starting fee described with tabletop pricing; full venue design starts $1,500 before separately priced rentals/materials.",
+          "scope": "Delivery, styling and breakdown of selected supplier-owned rentals are described. A bundle may remove duplicate work if the same tasks are covered.",
+          "gaps": "Whether staff will handle separately purchased fresh flowers/client-owned decor, room flips, exact final collection time and additional labor; full venue design fee alone exceeds $700 decor-labor line.",
+          "priority": 3,
+          "availability": "unknown",
+          "budget_status": "Use bundled installation when its scope covers the job; do not presume coordination or rental drop-off covers other suppliers' items."
+        }
+      ],
+      "recommendation": "Assign every physical task to one named paid provider. At The Villa, added flowers/decor require licensed-professional placement and removal unless a written exception applies. Keep affordable flowers conditional on a compliant labor plan."
+    }
+  ],
+  "material_constraints": [
+    "All 2027 availability and final prices remain unknown.",
+    "The Villa requires licensed professional placement/removal for added flowers/decor; exception must be written.",
+    "Nineteen tables is provisional. MICKNICS base table pricing covers eight seats;185people requires24such tables.",
+    "A&A returned tableware must be clean and in original containers; this affects staffing and venue kitchen suitability.",
+    "No named supplier has yet confirmed all required decor labor within $700.",
+    "No new savings may be counted from a bundle until the exact same scope is removed once from existing lines."
+  ],
+  "additional_sources": [
+    "https://www.thevillaweddingvenue.com/faq/",
+    "https://petalsedge.com/wedding-florist/"
+  ],
+  "catalog_arithmetic_not_quotes": {
+    "she_loves_me_19_bud_vase_trios": 1425,
+    "she_loves_me_two_impact_arrangements": 590,
+    "little_acre_19_bud_vase_trios": 1425,
+    "micknics_24_tables_plus_starting_fee": 1975,
+    "a_and_a_19_rounds_plus_185_padded_chairs": 1210,
+    "a_and_a_19_tables_185_chairs_setup_only": 447,
+    "a_and_a_seven_piece_place_setting_per_person": 6.15,
+    "a_and_a_185_seven_piece_place_settings": 1137.75
+  },
+  "limits": "Catalog arithmetic excludes unquoted tax, delivery, installation, stock/date confirmation and other required items; it is not a modeled complete venue price. Price years are unknown unless explicitly dated; copyright years are not price years."
+}
