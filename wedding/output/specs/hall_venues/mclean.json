@@ -1,0 +1,27 @@
+{
+  "name": "McLean Community Center Community Hall (McLean VA)",
+  "venue_type": "rental",
+  "jurisdiction": "VA-FAIRFAX",
+  "rental_fee": 2350,
+  "price_year": 2023,
+  "includes": [
+    "free_parking"
+  ],
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 15,
+    "alcohol_pp": 20,
+    "soft_pp": 3,
+    "service_pct": 0.2,
+    "label": "ASSUMPTION budget buffet + beer and wine"
+  },
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "allows_outside_vendors": null,
+  "end_time": "building rental hours Sat 9am-midnight, Fri 8am-midnight",
+  "date_available": null,
+  "within_60_min_of_dc": true,
+  "source_url": "https://mcleancenter.org/wp-content/uploads/2026/09/Rental-Fees-Updated-Sept.-30-2026.pdf",
+  "price_date": "Effective May2023 per PDF, postedSep2026; escalated four years to2027"
+}

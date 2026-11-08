@@ -1,0 +1,26 @@
+{
+  "name": "Hidden Creek Country Club - Premium Package",
+  "venue_type": "package",
+  "jurisdiction": "VA-FAIRFAX",
+  "package_pp": 99.95,
+  "service_pct": 0.22,
+  "rental_fee": 1000,
+  "service_on_rental_fee": true,
+  "tax_on_rental_fee": true,
+  "ceremony_fee": 805.2,
+  "extra_hour_fee": 500,
+  "price_year": 2019,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "basic_linens",
+    "china",
+    "cake_cutting",
+    "free_parking"
+  ],
+  "within_60_min_of_dc": null,
+  "allows_outside_vendors": null,
+  "source_url": "https://cdn.cybergolf.com/images/808/HCCC_Single-Page-Brochure.pdf",
+  "price_date": "Price year unknown; PDF metadata2019-01-18 used as conservative artifact-year scenario, escalated4% annually to2027.22%service, $500extra hour and setup labor inclusion assumptions; $600ceremony grossed with22%service and10%food tax.",
+  "date_available": null
+}

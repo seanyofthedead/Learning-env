@@ -1,0 +1,28 @@
+{
+  "name": "Event Center at Cascades Overlook - Sat all day 8am-1am (2024 guide)",
+  "venue_type": "rental",
+  "jurisdiction": "VA",
+  "rental_fee": 4500,
+  "price_year": 2024,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "getting_ready"
+  ],
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 15,
+    "alcohol_pp": 20,
+    "soft_pp": 3,
+    "service_pct": 0.2,
+    "label": "ASSUMPTION budget buffet + beer and wine"
+  },
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "allows_outside_vendors": null,
+  "end_time": "PDF: until 1am; website: bookable 8am-12am",
+  "within_60_min_of_dc": true,
+  "source_url": "https://www.cascadeseventcenter.com/s/The-event-Center-At-Cascades-Overlook-Wedding-Pricing-2024-1.pdf",
+  "price_date": "2024"
+}

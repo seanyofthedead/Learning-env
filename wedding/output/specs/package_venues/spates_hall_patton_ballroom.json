@@ -1,0 +1,15 @@
+{
+  "venue_type": "package",
+  "price_year": 2027,
+  "within_60_min_of_dc": null,
+  "name": "Spates Hall Conference Center \u2014 UNKNOWN PRICE; maximum-package scenario only",
+  "jurisdiction": "VA-ARLINGTON",
+  "service_pct": 0.25,
+  "includes": [
+    "dance_floor"
+  ],
+  "source_url": "https://jbmhh.armymwr.com/programs/Spates-Hall-Conference-Center",
+  "package_pp": 88.73,
+  "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json.",
+  "date_available": null
+}

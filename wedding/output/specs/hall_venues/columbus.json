@@ -1,0 +1,29 @@
+{
+  "name": "Columbus Club of Arlington Main Ballroom, Silver Wedding Package (Arlington VA)",
+  "venue_type": "package",
+  "jurisdiction": "VA-ARLINGTON",
+  "rental_fee": 3500,
+  "tax_on_rental_fee": true,
+  "extra_hour_fee": 500,
+  "package_pp": 85,
+  "service_pct": 0.2,
+  "price_year": 2023,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "basic_linens",
+    "china",
+    "getting_ready",
+    "cake_cutting",
+    "free_parking"
+  ],
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "allows_outside_vendors": null,
+  "end_time": null,
+  "date_available": null,
+  "within_60_min_of_dc": true,
+  "source_url": "https://www.columbusclubevents.com/files/offerings.pdf",
+  "price_date": "Nov 2023 PDFs; escalated to 2027 by the model"
+}

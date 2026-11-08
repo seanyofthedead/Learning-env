@@ -1,0 +1,32 @@
+{
+  "name": "Glenarden Gold Room (James R. Cousins Jr. Municipal Center, City of Glenarden)",
+  "venue_type": "rental",
+  "jurisdiction": "MD",
+  "rental_fee": 2850,
+  "extra_hour_fee": 814,
+  "security_fee": 1080,
+  "other_fees": 80,
+  "price_year": 2025,
+  "includes": [
+    "tables_chairs",
+    "dance_floor",
+    "free_parking"
+  ],
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 15,
+    "alcohol_pp": 20,
+    "soft_pp": 3,
+    "service_pct": 0.2,
+    "label": "ASSUMPTION budget buffet + beer and wine"
+  },
+  "within_60_min_of_dc": true,
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": true,
+  "separate_cocktail_space": null,
+  "allows_enclosed_candles": true,
+  "allows_outside_vendors": true,
+  "end_time": "all events must end by 12am",
+  "source_url": "https://cityofglenarden.org/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf",
+  "price_date": "PDF created 16 Sep 2025"
+}

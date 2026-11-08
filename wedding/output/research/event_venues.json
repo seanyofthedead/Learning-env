@@ -1,0 +1,800 @@
+{
+  "checked_at": "2026-11-08",
+  "method": "Official pages and PDFs read with curl. Initial urllib403/406 responses resolved via ordinary curl; no forms submitted and no banned websites opened. Price years marked unknown when undated; escalation years explicitly assumptions. All figures are model scenarios at185, not vendor quotes.",
+  "venues": [
+    {
+      "name": "Great Room at Historic Savage Mill",
+      "town": "Savage, MD",
+      "type": "Exclusive caterer / rental",
+      "fit": "unknown",
+      "recommendation": "Do not call this a fit. Only pursue if an indoor heated ceremony and holding/cocktail plan for 185 can be documented.",
+      "contact": {
+        "email": "aw@puttingontheritz.com",
+        "phone": "301-490-1668"
+      },
+      "facts": [
+        "2025\u20132026 November Saturday evening room $2,995 for four hours; fifth hour $150 plus staff/bar extension.",
+        "Buffet capacity 275 and 20-by-40-foot dance floor published separately; rounds with the dance floor retained are not explicit.",
+        "Only advertised ceremony option is tented deck for 180; five fewer than the guest count.",
+        "Exclusive caterer Putting on the Ritz; outside photographer/DJ permitted; BYO alcohol with POTR bartenders/mixers allowed; parties finish by 1am."
+      ],
+      "assumptions": [
+        "Uses upper Buffet 3 price $79.95 and five-hour beer/wine $16.45; no quoted service charge.",
+        "Adds assumed staff $15 \u00d7185 and three bartenders at $375 for five hours (four-hour published $300 extended pro rata). Costs entered as 2026 and escalated 4%. This is a sensitivity, not a complete quote.",
+        "Five-hour event plus free ceremony half-hour; setup/teardown access and paid staffing duration still unknown. Rental labor allowance retained.",
+        "Published menu and bar inputs and assumed staff/bartender extension individually escalated4% to2027 before applying model MD food/alcohol taxes. Additional service charge is unknown and modeled zero only in this sensitivity; not a complete quote."
+      ],
+      "unknowns": [
+        "All date availability; 2027 written price; indoor heated ceremony for185; separate cocktail space; rounds-and-dancing layout; setup/strike access; actual staffing/service/linen charges; outside florist/cake; enclosed candles."
+      ],
+      "sources": [
+        {
+          "url": "https://greatroomsavagemill.com/rental-info/",
+          "price_year": 2026,
+          "checked": "2026-11-08",
+          "excerpt": "2025 & 2026 Rental Rates (for a four-hour event); Saturday Evening $2995.00"
+        },
+        {
+          "url": "https://greatroomsavagemill.com/faqs/",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "We have a tented deck that can hold 180 guests. All parties must finish by 1 am at the latest."
+        },
+        {
+          "url": "https://puttingontheritz.com/wp-content/uploads/2026/10/Buffet-Menu-3.pdf",
+          "price_year": 2026,
+          "checked": "2026-11-08",
+          "excerpt": "$65.95 \u2013 $79.95 Per Person + Tax; We Will Cut and Serve Your Wedding Cake at No Additional Charge; A customized linen package will be incorporated into your proposal."
+        },
+        {
+          "url": "https://puttingontheritz.com/wp-content/uploads/2026/03/Bar-Packages-2026-1.pdf",
+          "price_year": 2026,
+          "checked": "2026-11-08",
+          "excerpt": "Beer and Wine Bar $13.95; $2.50 Per Person, Each Additional Hour. Bartenders are charged at $300.00 each, based on a four-hour event."
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/savage_mill_saturday.json",
+      "model_result": {
+        "venue": "Great Room at Historic Savage Mill \u2014 Saturday sensitivity, staffing unquoted",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 33246.76,
+        "per_guest": 179.71,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 3270.8,
+          "outside catering all-in (POTR published upper Buffet3 +5h beer/wine,2026 x1.04; assumed staff$15pp and bartender5h extension; additional service unknown)": 24054.51,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 208.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -10176.31,
+        "headroom_r1_trimmed": -1107.31,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "4-h block starting 7pm or later, +$150/h, all parties end by 1am"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://greatroomsavagemill.com/rental-info/",
+        "price_date": "2025\u20132026 room rates; Oct 2026 menu; Mar 2026 bar. Staff and fifth bartender hour are assumptions."
+      },
+      "max_caterer_allin_pp": 124.04,
+      "ceiling_definition": "Maximum total POTR food/staff/bar/bartender/service/tax bill divided by185, with all separately modeled rentals,cake and venue costs unchanged. Exclusive caterer; cannot substitute an outside provider."
+    },
+    {
+      "name": "Morningside Inn",
+      "town": "Frederick, MD",
+      "type": "In-house package",
+      "fit": "no",
+      "recommendation": "Advertised dinner/dancing layout fails the one-room requirement. Reopen only with an alternative floor plan; do not treat placeholder food price as an available outside caterer.",
+      "contact": {
+        "email": "sales@morningside-inn.com",
+        "phone": "301-898-3920"
+      },
+      "facts": [
+        "November site rental starts at $3,500; date/day affect price. Rental includes6.5\u20137.5 hours; building temperature controlled.",
+        "On-site catering and bar service required; per-person price unpublished without requesting pamphlet.",
+        "Dining room and lower-level dancing/dessert room are separate.",
+        "Indoor ceremony, indoor/outdoor cocktails, ready suites, tables/chairs, linens, place settings, dance floor, setup/cleanup and parking lots published."
+      ],
+      "assumptions": [
+        "Outside-catering object is only a mathematical sensitivity for the unknown mandatory in-house food/bar bill; outside catering is not permitted.",
+        "Undated $3,500 floor treated as 2026 then +4%; actual November Saturday rental may be higher."
+      ],
+      "unknowns": [
+        "Alternative one-room dinner+dance plan; exact 185 layout; 2027 total price; end time; drive within60minutes; outside vendors/candles; dates."
+      ],
+      "sources": [
+        {
+          "url": "https://morningside-inn.com/weddings-frederick-md/wedding-packages-pricing-included",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "May | June | September October | November Starting at $3500. On-site Catering / Bar Service is required."
+        },
+        {
+          "url": "https://morningside-inn.com/weddings-frederick-md",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "After dinner, guests transition to the lower level of our window-lined reception space for dancing and dessert."
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/morningside_inn.json",
+      "model_result": {
+        "venue": "Morningside Inn \u2014 mandatory in-house catering unquoted, sensitivity only",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 29470.56,
+        "per_guest": 159.3,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 3640.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -6400.11,
+        "headroom_r1_trimmed": 2668.89,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": true,
+          "separate cocktail-hour space": true,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "6.5-7.5 h rental; clock end unknown"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://morningside-inn.com/weddings-frederick-md/wedding-packages-pricing-included",
+        "price_date": "undated published starting rental; 2026 base-year assumption, not a dated quote"
+      },
+      "max_caterer_allin_pp": 143.24,
+      "ceiling_definition": "Total catering bill / 185 including food, staffing, bar, bartenders, service and tax; excludes separately modeled rentals, cake/cutting and other venue costs. For missing rental deduct actual 2027 venue/room fees divided by 185. Assumed caterer inclusions remain unchanged."
+    },
+    {
+      "name": "The Gathering Place \u2014 Patuxent Grand Ballroom",
+      "town": "Clarksville, MD",
+      "type": "Rental / outside catering",
+      "fit": "unknown",
+      "recommendation": "Good inquiry: request ballroom plus heated ceremony/holding and cocktail rooms for185, all room fees and suite fee.",
+      "contact": {
+        "email": "sales@thegatheringplacemd.net",
+        "phone": "410-531-3229"
+      },
+      "facts": [
+        "Patuxent 5,000square feet, up to265 seated, oversized dance floor; exact simultaneous185-rounds layout unknown.",
+        "Potomac holds175 theater/100 seated; Patapsco60. Ballroom partitioning can accommodate ceremony-to-cocktails-to-reception flow, but185 plan is unconfirmed.",
+        "Tables/chairs, staff setup/breakdown, two hours complimentary setup, free parking; getting-ready suite costs extra.",
+        "Outside licensed reputable caterers allowed; Mission BBQ listed as preferred.",
+        "24-hour hold after tour; full nonrefundable rental to reserve; no charge to move date if new date available."
+      ],
+      "assumptions": [
+        "Zero rental only yields baseline before all quoted room/ceremony/security/extra-hour fees.",
+        "Budget buffet beer/wine placeholder; extra suite uses model $600 allowance."
+      ],
+      "unknowns": [
+        "Rental and room fees; round-table capacity with dancing; heated185 ceremony and separate cocktail area; alcohol licensing/bar terms; end time; candle/outside-vendor rules; dates; drive."
+      ],
+      "sources": [
+        {
+          "url": "https://thegatheringplacemd.net/about/",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "Patuxent Grand Ballroom accommodates up to265 for a seated dinner. There are dividing partitions...ceremony...cocktail hour...reception."
+        },
+        {
+          "url": "https://thegatheringplacemd.net/details/",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "We offer 2 hours of complimentary setup time...any outside licensed, reputable caterer. A non-refundable full rental payment is required."
+        },
+        {
+          "url": "https://thegatheringplacemd.net/social-events/",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "You will have access to our Wedding Parlor."
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/gathering_place.json",
+      "model_result": {
+        "venue": "The Gathering Place - Patuxent Grand Ballroom (rental UNKNOWN=0)",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 29533.71,
+        "per_guest": 159.64,
+        "lines": {
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -6463.26,
+        "headroom_r1_trimmed": 2605.74,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://thegatheringplacemd.net/details/",
+        "price_date": "Rental unpublished; zero is an algebra placeholder, not free rent"
+      },
+      "max_caterer_allin_pp": 142.9,
+      "ceiling_definition": "Total catering bill / 185 including food, staffing, bar, bartenders, service and tax; excludes separately modeled rentals, cake/cutting and other venue costs. For missing rental deduct actual 2027 venue/room fees divided by 185. Assumed caterer inclusions remain unchanged."
+    },
+    {
+      "name": "Waterford Event Center / historical Waterford at Springfield",
+      "town": "Springfield, VA",
+      "type": "Package, current terms unknown",
+      "fit": "unknown",
+      "recommendation": "Worth inquiry to current contact, but no present-day fit or discount established. Confirm continuity with historical Receptions and obtain a new proposal.",
+      "contact": {
+        "email": "info@waterfordeventcenter.com",
+        "phone": "703-850-7282"
+      },
+      "facts": [
+        "Current official Waterford Event Center site lists6715 Commerce Street, Springfield and contact.",
+        "Historical Receptions page lists Emerald $77/guest +22% service, five-hour reception, four-hour beer/wine bar, cocktail room, dance floor and parking.",
+        "Historical Hazel wedding capacity190 includes dance floor, cake and DJ table; only5seats spare."
+      ],
+      "assumptions": [
+        "2018 price year is an assumption, not a dated price sheet;4% yearly escalation produces sensitivity only. No2027 discount assumed.",
+        "Historical$6/guest ceremony and package inclusions retained only for sensitivity; current operator confirmation required."
+      ],
+      "unknowns": [
+        "Current pricing; continuity of operator and Emerald terms; capacity; indoor heated ceremony and separate cocktails; end time; date availability; vendor/candle policy; deposits and booking window."
+      ],
+      "sources": [
+        {
+          "url": "https://www.waterfordeventcenter.com/contact-us",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "6715 Commerce Street Springfield VA22150; info@waterfordeventcenter.com;7038507282"
+        },
+        {
+          "url": "https://www.waterfordreceptions.com/weddings/packages/wedding-reception/emerald-buffet-package/",
+          "price_year": "unknown; historical assumption2018",
+          "checked": "2026-11-08",
+          "excerpt": "$77.00 per person; Prices do not include6% Sales Tax and22% Service Charge"
+        },
+        {
+          "url": "https://www.waterfordreceptions.com/our-facilities/waterford-springfield/floor-plans-room-capacities/",
+          "price_year": "unknown; historical",
+          "checked": "2026-11-08",
+          "excerpt": "Hazel Ballroom...Wedding Reception190; Includes dance floor, cake table and DJ Table"
+        },
+        {
+          "url": "https://www.waterfordreceptions.com/weddings/faq/",
+          "price_year": "unknown; historical",
+          "checked": "2026-11-08",
+          "excerpt": "There is a $6.00 per person fee for the ceremony. Neither Waterford facility has an outdoor area for events or photos."
+        },
+        {
+          "url": "https://www.waterfordreceptions.com/our-facilities/savings-calendar/",
+          "price_year": 2018,
+          "checked": "2026-11-08",
+          "excerpt": "Springfield \u00ab September 2018 October 2018 November 2018 \u00bb; this calendar does not indicate availability."
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/waterford_springfield_historical.json",
+      "model_result": {
+        "venue": "Waterford at Springfield \u2014 historical Emerald sensitivity, current offer unknown",
+        "guests": 185,
+        "jurisdiction": "VA-FAIRFAX",
+        "all_in": 31389.03,
+        "per_guest": 169.67,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1579.88,
+          "in-house F&B (package/minimum)": 20275.08,
+          "F&B service charge": 4460.52,
+          "F&B tax": 2473.56,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -8318.58,
+        "headroom_r1_trimmed": 750.42,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "unknown; 5-hr package (1 hr cocktail + 4 hr ballroom); Springfield evening start from 4:00 pm, Fair Oaks from 5:30 pm -> about 10:30 pm+"
+        },
+        "flags": [
+          "price from 2018: escalated x1.423; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.waterfordreceptions.com/weddings/packages/wedding-reception/emerald-buffet-package/",
+        "price_date": "Historical undated page; 2018 base-year ASSUMPTION from stale calendar; current offer unknown"
+      }
+    },
+    {
+      "name": "Event Center at Cascades Overlook",
+      "town": "Sterling, VA",
+      "type": "Rental / outside catering",
+      "fit": "no",
+      "recommendation": "Over target with placeholder catering; lower-priced caterer and185 layout needed before reconsidering.",
+      "contact": {
+        "phone": "571-313-1145"
+      },
+      "facts": [
+        "2024 full Saturday8am\u20131am $4,500, Friday1pm\u20131am$2,900; Saturday includes Party Room. Current site says events end midnight; resolve conflict.",
+        "Full ballroom200 banquet vs340 theater. Party Room40; separate cocktail space for185 unconfirmed.",
+        "Tables/chairs setup, two changing rooms, kitchen and outside catering permitted; dance floor rental retained until hardwood-floor usability confirmed."
+      ],
+      "assumptions": [
+        "2024 fee escalated3years at4%; placeholder catering. Unknown parking charged model allowance."
+      ],
+      "unknowns": [
+        "185rounds with dancing; ceremony/holding/cocktail layout; current written price; alcohol/candle/florist/cake rules; all dates."
+      ],
+      "sources": [
+        {
+          "url": "https://www.cascadeseventcenter.com/weddings",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "Full Grand Ballroom...200 with guests seated at banquet (round) tables."
+        },
+        {
+          "url": "https://www.cascadeseventcenter.com/s/The-event-Center-At-Cascades-Overlook-Wedding-Pricing-2024-1.pdf",
+          "price_year": 2024,
+          "checked": "2026-11-08",
+          "excerpt": "SATURDAY (ALL DAY8AM-1AM) $4,500; includes Party Room rental; Friday $2,900"
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/cascades_overlook_saturday.json",
+      "model_result": {
+        "venue": "Event Center at Cascades Overlook - Sat all day 8am-1am (2024 guide)",
+        "guests": 185,
+        "jurisdiction": "VA",
+        "all_in": 36244.4,
+        "per_guest": 195.92,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 5061.89,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23697.36,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -13173.95,
+        "headroom_r1_trimmed": -4104.95,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "PDF: until 1am; website: bookable 8am-12am"
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2024: escalated x1.125; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://www.cascadeseventcenter.com/s/The-event-Center-At-Cascades-Overlook-Wedding-Pricing-2024-1.pdf",
+        "price_date": "2024"
+      },
+      "max_caterer_allin_pp": 105.9,
+      "ceiling_definition": "Total catering bill / 185 including food, staffing, bar, bartenders, service and tax; excludes separately modeled rentals, cake/cutting and other venue costs. For missing rental deduct actual 2027 venue/room fees divided by 185. Assumed caterer inclusions remain unchanged."
+    },
+    {
+      "name": "Union Mills Public House",
+      "town": "Frederick, MD",
+      "type": "In-house food/bar / full-day rental",
+      "fit": "no",
+      "recommendation": "Over target. Correct earlier half-day scenarios: FAQ requires full day for51+guests.",
+      "contact": {
+        "email": "info@unionmillspublichouse.com",
+        "phone": "301-524-0413"
+      },
+      "facts": [
+        "November2027 Saturday full day$8,400 for14hours9am\u201311pm; guests exit10pm.",
+        "FAQ requires full day for weddings51+; half-day cannot support185 absent exception.",
+        "FAQ suggests about$120/guest food/basic4hour open bar/staff/gratuity before linens/tax. Proposals only after booking: request written estimate before committing.",
+        "200 formal seats in main ballroom; separate2,900sqft cocktail room. Exact dance-floor retention unknown.",
+        "Outside-catering policy conflicts: weddings says prohibited; FAQ allows$1,050fee. Extra hours conflict$350 vs$450."
+      ],
+      "assumptions": [
+        "$120undated food/bar estimate treated as2026 and escalated4%; no additional service assumed because staff/gratuity included.",
+        "Dedicated usable dance floor inclusion unknown: model dance-floor rental and paid-parking allowance retained."
+      ],
+      "unknowns": [
+        "185rounds and dance floor; exact full-service bill; ceremony timing; drive; dates; resolution of catering/hour conflicts."
+      ],
+      "sources": [
+        {
+          "url": "https://unionmillspublichouse.com/offerings/weddings",
+          "price_year": 2027,
+          "checked": "2026-11-08",
+          "excerpt": "Holiday Months November\u2014December2027 Saturday$8,400Full Day$4,700Half Day; Food,Beverage&Staffing NOT included"
+        },
+        {
+          "url": "https://unionmillspublichouse.com/faqs",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "Weddings with guest counts of51or more require a full day rental. Approximately$120per guest...includes standard staffing and gratuity...does not include...linens and taxes."
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/union_mills_full_day.json",
+      "model_result": {
+        "venue": "Union Mills Public House - Sat full day 14h + FAQ est. $120/guest",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 38928.16,
+        "per_guest": 210.42,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 8400.0,
+          "in-house F&B (package/minimum)": 23088.0,
+          "F&B tax": 1523.81,
+          "basic linens & napkins": 847.5,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 158.85,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -15857.71,
+        "headroom_r1_trimmed": -6788.71,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": true,
+          "separate cocktail-hour space": true,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "guests exit 10pm; cleanup to 11pm; extra time $350/h (weddings page) or $450/h (FAQ)"
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "OVER by $1,334 even trimmed + reserve -- PENDING answers: seats guests with dance floor, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://unionmillspublichouse.com/offerings/weddings",
+        "price_date": "2027 room price; undated$120 F&B estimate treated as2026 and escalated4%"
+      }
+    },
+    {
+      "name": "Green Meadows Farm \u2014 The Stables",
+      "town": "Ijamsville, MD",
+      "type": "Rental barn",
+      "fit": "no",
+      "recommendation": "Over target, and185-rounds/indoor ceremony/cocktail plan not established.",
+      "contact": {
+        "email": "info@greenmeadowsevents.com",
+        "phone": "301-865-9203"
+      },
+      "facts": [
+        "Nov5\u201321,2027 rental$4,350 for200or fewer; ceremony$650; prep suite$500or more.",
+        "Stables heated; round tables,chairs,linens,tableware extra.",
+        "Alcohol may be served, not sold; alcohol/amplified music end11pm.",
+        "Setup10am;50%nonrefundable deposit and remainder30days prior."
+      ],
+      "assumptions": [
+        "Placeholder catering; suite floor$500 only; no extra Friday setup included."
+      ],
+      "unknowns": [
+        "Rounds with dance floor; heated ceremony; separate indoor cocktail room; all-hours rental and final fees; dates; drive."
+      ],
+      "sources": [
+        {
+          "url": "https://greenmeadowsevents.com/wedding-pricing",
+          "price_year": 2027,
+          "checked": "2026-11-08",
+          "excerpt": "Nov.5toNov.21\u2014$4,350.00; Our Stables/Event Venue is heated...Round tables,chairs...additional fees."
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/green_meadows.json",
+      "model_result": {
+        "venue": "Green Meadows Farm - The Stables (Nov 5-21 2027 rate)",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 38255.01,
+        "per_guest": 206.78,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 5500.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -15184.56,
+        "headroom_r1_trimmed": -6115.56,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "alcohol and amplified music end by 11pm"
+        },
+        "flags": [],
+        "verdict": "OVER by $661 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://greenmeadowsevents.com/wedding-pricing",
+        "price_date": "2027 table"
+      },
+      "max_caterer_allin_pp": 95.75,
+      "ceiling_definition": "Total catering bill / 185 including food, staffing, bar, bartenders, service and tax; excludes separately modeled rentals, cake/cutting and other venue costs. For missing rental deduct actual 2027 venue/room fees divided by 185. Assumed caterer inclusions remain unchanged."
+    },
+    {
+      "name": "Hylton Performing Arts Center \u2014 Gregory Family Theater",
+      "town": "Manassas area, Prince William County, VA",
+      "type": "Rental theater",
+      "fit": "no",
+      "recommendation": "Over target with placeholder catering. Current Prince William tax key uses9%combined; caterer origin and invoice taxability still need confirmation.",
+      "contact": {
+        "email": "esmith68@gmu.edu",
+        "phone": "703-993-1234"
+      },
+      "facts": [
+        "Reception packages generally$3,500\u20134,500 include base room,cleaning,required staff.",
+        "Gregory seats300for dinner, but exact185rounds+dance-floor arrangement unknown.",
+        "Mason-approved caterer required; police officer required with alcohol; parking charges added.",
+        "PWC prepared-food tax3%fromJan1,2026; plus6%sales tax suggests9%combined, invoice treatment must be confirmed."
+      ],
+      "assumptions": [
+        "High end$4,500 +$1,500extra-room allowance +$400police allowance from prior scenario; not published fees.",
+        "Prince William9%combined modeled; actual caterer invoice may depend on origin of sale and service-charge treatment."
+      ],
+      "unknowns": [
+        "2027quote,additional room/security/parking charges;185layout; ceremony/cocktail allocations; all dates; end time; vendor/candle rules; drive."
+      ],
+      "sources": [
+        {
+          "url": "https://hyltoncenter.org/rentals/rental-costs",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "Reception packages...generally cost$3500to$4500...base room rate,plus cleaning charges and required Hylton Center staff"
+        },
+        {
+          "url": "https://hyltoncenter.org/rentals/rental-faq",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "A Mason police officer will need to be hired...if alcohol is served. Parking charges will be added to your estimate."
+        },
+        {
+          "url": "https://www.pwcva.gov/department/tax-administration/food-and-beverage-tax",
+          "price_year": 2026,
+          "checked": "2026-11-08",
+          "excerpt": "Effective January1,2026:Tax rate change to3%"
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/hylton_gregory.json",
+      "model_result": {
+        "venue": "Hylton Performing Arts Center - Gregory Family Theater reception pkg (top $4,500)",
+        "guests": 185,
+        "jurisdiction": "VA-PRINCE-WILLIAM",
+        "all_in": 38425.49,
+        "per_guest": 207.71,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 6656.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 24368.04,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 208.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -15355.04,
+        "headroom_r1_trimmed": -6286.04,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "OVER by $831 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://hyltoncenter.org/rentals/rental-costs",
+        "price_date": "undated reception range;2026base-year assumption; supplemental room/security allowances are assumptions"
+      },
+      "max_caterer_allin_pp": 97.74,
+      "ceiling_definition": "Total catering bill / 185 including food, staffing, bar, bartenders, service and tax; excludes separately modeled rentals, cake/cutting and other venue costs. For missing rental deduct actual 2027 venue/room fees divided by 185. Assumed caterer inclusions remain unchanged."
+    },
+    {
+      "name": "Maryland Jockey Club at Laurel Park",
+      "town": "Laurel, MD",
+      "type": "Event venue / in-house menus",
+      "fit": "no",
+      "recommendation": "Over target in historical-room-price sensitivity; current quote needed but lower priority.",
+      "contact": {
+        "phone": "301-470-5416",
+        "email": "info@laurelpark.com"
+      },
+      "facts": [
+        "Historical sheet:Carriage Room$2,000/sixhours(1setup+1cleanup),$500extra hour,500seated;Sports Bar$2,000/sixhours,300seated.",
+        "Tables/chairs,white linens/napkins included;banquet captain/staff20%service fee listed.",
+        "Current official event page offers full-service event/menu planning but no current wedding prices."
+      ],
+      "assumptions": [
+        "Carriage Room8hours plus Sports Bar6hours=$5,000historical escalatedfrom2017; all185layout and indoor ceremony stillunconfirmed.",
+        "Placeholder caterer models sensitivity only; in-house quote and service application unknown."
+      ],
+      "unknowns": [
+        "Current venue/catering/service price;185rounds+dance floor; indoor ceremony;cocktail room;end time;all dates;vendor/candle rules;drive."
+      ],
+      "sources": [
+        {
+          "url": "https://www.laurelpark.com/sites/www.laurelpark.com/files/content/NEW%20Room%20Rental%20Pricing.pdf",
+          "price_year": "unknown;PDFmetadata2017",
+          "checked": "2026-11-08",
+          "excerpt": "CARRIAGE ROOM$2,000-6hour rental...$500peradditionalhour...Maximum500peopleseated"
+        },
+        {
+          "url": "https://laurelpark.com/events-at-the-maryland-jockey-club/",
+          "price_year": "unknown",
+          "checked": "2026-11-08",
+          "excerpt": "full-service event and menu planning service; OR CALL:301-470-5416"
+        }
+      ],
+      "spec_path": "wedding/output/specs/event_venues/laurel_park.json",
+      "model_result": {
+        "venue": "Maryland Jockey Club at Laurel Park - Carriage Room 8h + Sports Bar 6h (2017 sheet)",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 39006.88,
+        "per_guest": 210.85,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 7401.22,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 230.1,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -15936.43,
+        "headroom_r1_trimmed": -6867.43,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2017: escalated x1.480; get 2027 pricing in writing"
+        ],
+        "verdict": "OVER by $1,413 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.laurelpark.com/sites/www.laurelpark.com/files/content/NEW%20Room%20Rental%20Pricing.pdf",
+        "price_date": "undated sheet;PDFmetadata2017base-year assumption; mandatory in-house catering price unknown"
+      },
+      "max_caterer_allin_pp": 91.69,
+      "ceiling_definition": "Total catering bill / 185 including food, staffing, bar, bartenders, service and tax; excludes separately modeled rentals, cake/cutting and other venue costs. For missing rental deduct actual 2027 venue/room fees divided by 185. Assumed caterer inclusions remain unchanged."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Maryland Jockey Club at Laurel Park - Carriage Room 8h + Sports Bar 6h (2017 sheet)",
+  "venue_type": "rental",
+  "jurisdiction": "MD",
+  "rental_fee": 5000,
+  "price_year": 2017,
+  "includes": [
+    "tables_chairs",
+    "basic_linens"
+  ],
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 15,
+    "alcohol_pp": 20,
+    "soft_pp": 3,
+    "service_pct": 0.2,
+    "label": "ASSUMPTION budget buffet + beer and wine"
+  },
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "allows_outside_vendors": null,
+  "end_time": null,
+  "within_60_min_of_dc": null,
+  "source_url": "https://www.laurelpark.com/sites/www.laurelpark.com/files/content/NEW%20Room%20Rental%20Pricing.pdf",
+  "price_date": "undated sheet;PDFmetadata2017base-year assumption; mandatory in-house catering price unknown"
+}

@@ -1,0 +1,22 @@
+{
+  "venue_type": "package",
+  "jurisdiction": "MD",
+  "price_year": 2026,
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "within_60_min_of_dc": null,
+  "name": "Turf Valley Resort Bluebird Buffet",
+  "package_pp": 120,
+  "service_pct": 0.22,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "basic_linens",
+    "china",
+    "cake_cutting",
+    "dance_floor"
+  ],
+  "source_url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+  "price_date": "Nov2026 menu, escalated4%"
+}

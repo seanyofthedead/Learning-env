@@ -184,6 +184,12 @@ TAX = {
                       "(not in Herndon, Vienna, Clifton, Fairfax City, Falls Church -- own meals taxes)"),
     "VA-ARLINGTON": Tax(0.11, 0.11, 0.06, "6% + Arlington 5% meals tax (from 1 Jul 2025)"),
     "VA-ALEXANDRIA": Tax(0.11, 0.11, 0.06, "6% + Alexandria 5% meals tax"),
+    "VA-PRINCE-WILLIAM": Tax(0.09, 0.09, 0.06, "6% + Prince William 3% meals tax from 1 Jan 2026; "
+                            "outside catering depends on origin of sale -- confirm invoice"),
+    "VA-VIENNA": Tax(0.10, 0.10, 0.06, "6% + Vienna 4% meals tax from 1 Jan 2026; "
+                    "outside catering depends on origin of sale -- confirm invoice"),
+    "VA-FAIRFAX-CITY": Tax(0.105, 0.105, 0.06, "6% + Fairfax City 4.5% meals tax; "
+                          "outside catering depends on origin of sale -- confirm invoice"),
 }
 
 
@@ -303,11 +309,12 @@ def is_excluded(name: str, exclusions: set[str]) -> bool:
     return any(x in n or n in x for x in exclusions)
 
 
-def evaluate(v: Venue, guests: int = BASE_GUESTS, exclusions: set[str] | None = None) -> dict:
+def evaluate(v: Venue, guests: int = BASE_GUESTS, exclusions: set[str] | None = None,
+             tax_override: Tax | None = None) -> dict:
     exclusions = load_exclusions() if exclusions is None else exclusions
     if is_excluded(v.name, exclusions):
         return dict(venue=v.name, verdict="EXCLUDED (already considered by the couple)", all_in=None)
-    tax = TAX[v.jurisdiction]
+    tax = tax_override if tax_override is not None else TAX[v.jurisdiction]
     inc = set(v.includes)
     d = DEFAULTS
     esc = (1 + d["escalation_per_year"]) ** max(0, 2027 - v.price_year)
@@ -446,7 +453,7 @@ def byo_stack(guests: int, tax: Tax, includes=(), caterer: Catering | None = Non
               outside_catering=caterer or Catering(food_pp=0, staff_pp=0, alcohol_pp=0, soft_pp=0,
                                                    bartender_fee=0, label="probe"),
               parking_cost=None if parking else 0.0)
-    r = evaluate(v, guests, exclusions=set())
+    r = evaluate(v, guests, exclusions=set(), tax_override=tax)
     return r["all_in"] - r["lines"].get(next((k for k in r["lines"] if k.startswith("outside catering")), ""), 0)
 
 
@@ -544,6 +551,19 @@ def run_tests() -> list[str]:
     fm = Venue("probe min", venue_type="fb_minimum", package_pp=80, fb_minimum=20000, service_pct=0.2)
     assert evaluate(fm, 150, exclusions=set())["lines"]["in-house F&B (package/minimum)"] == 20000
     ok.append("F&B minimum binds when menu x guests is below it")
+    # Solvers must use the supplied rental tax, not the probe Venue's VA default.
+    # A bare hall rents tables/chairs, setup labor, linens, china, dance floor,
+    # and delivery: $5,625 at 150 guests. DC's extra 1% adds $56.25.
+    assert abs(byo_stack(150, TAX["DC"]) - byo_stack(150, TAX["VA"]) - 56.25) < 0.011
+    dc_rate = max_hourly(150, envelope(150, trimmed=True), 120, TAX["DC"],
+                         hours=11, platform_fee=0.09, cleaning=300)
+    dc_cat = Catering(food_pp=120 / 1.10, staff_pp=0, alcohol_pp=0, soft_pp=0,
+                      bartender_fee=0, service_pct=0, label="flat $120 all-in")
+    dc_hall = Venue("probe DC hourly", venue_type="hourly", jurisdiction="DC",
+                    hourly_rate=dc_rate, hours_booked=11, platform_fee_pct=0.09,
+                    cleaning_fee=300, outside_catering=dc_cat)
+    assert abs(evaluate(dc_hall, 150, exclusions=set())["all_in"] - envelope(150, trimmed=True)) < 0.02
+    ok.append("BYO stack propagates supplied rental tax; DC hourly solver/evaluator round-trip")
     return ok
 
 

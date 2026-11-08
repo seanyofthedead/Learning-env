@@ -1,0 +1,30 @@
+{
+  "venue_type": "rental",
+  "jurisdiction": "VA-VIENNA",
+  "price_year": 2027,
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 15,
+    "alcohol_pp": 20,
+    "soft_pp": 3,
+    "service_pct": 0.2,
+    "label": "ASSUMPTION budget buffet + beer and wine",
+    "holds_liquor_license": false
+  },
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "within_60_min_of_dc": null,
+  "name": "Vienna VFD Event Hall",
+  "rental_fee": 3500,
+  "other_fees": 1400,
+  "extra_hour_fee": 200,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "free_parking"
+  ],
+  "source_url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+  "price_date": "2027 published rent/kitchen/custom arrangement; cleaning/support/extra hours carried prior official booking site",
+  "end_time": "11pm, including cleanup (prior booking verification)"
+}

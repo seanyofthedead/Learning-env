@@ -1,0 +1,20 @@
+{
+  "venue_type": "package",
+  "price_year": 2027,
+  "within_60_min_of_dc": null,
+  "name": "Celebrations at the Bay (Pasadena) \u2014 UNKNOWN PRICE; maximum-package scenario only",
+  "jurisdiction": "MD",
+  "service_pct": 0.22,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "basic_linens",
+    "china",
+    "dance_floor"
+  ],
+  "source_url": "https://www.celebrationsatthebay.com/frequently-asked-questions/",
+  "package_pp": 118.16,
+  "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json.",
+  "date_available": null,
+  "indoor_ceremony": true
+}

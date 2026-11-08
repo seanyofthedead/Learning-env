@@ -1,0 +1,2695 @@
+{
+  "checked_on": "2026-11-08",
+  "basis": "Existing budget model at185; strict $32139 venue envelope; no reserve spent. Fresh fetch excerpts are separate from retained earlier verified research.",
+  "venues": [
+    {
+      "id": "ag_center",
+      "name": "Montgomery County Agricultural Center \u2013 Heritage Building (Harvest Room + Garden Room)",
+      "town": "Gaithersburg, MD (Montgomery County); mailing 16 Chestnut St, event parking 501 Perry Pkwy",
+      "type": "County fairgrounds event building: rental hall + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://mcagfair.com/rentals",
+        "https://mcagfair.com/wp-content/uploads/2022/05/Heritage-Floor-Plan-2.pdf",
+        "https://mcagfair.com/faqs/",
+        "https://mcagfair.com/non-fair-events/"
+      ],
+      "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+      "fetches": [
+        {
+          "url": "https://mcagfair.com/rentals",
+          "status": 200,
+          "final_url": "https://mcagfair.com/rentals/"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://mcagfair.com/rentals",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "tyle The Harvest Room Floor Plan PDF Seating Maximum of 360 \u2013 Banquet Style Maximum of 770 \u2013 Theater Style Additional amenities can be rented as well, including our free Butler\u2019s Pantry. &nbsp; Additional fees include but are not limited to security, security deposit, and extra set up"
+        },
+        {
+          "url": "https://mcagfair.com/rentals",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "for rent based on the following time period: 8AM-12AM. The Heritage rental comes with tables and chairs that will be set up to your specifications. The Garden Room Floor Plan PDF Seating Maximum of 160 \u2013 Banquet Style Maximum of 250 \u2013 Theater Style The Harvest Room Floor Plan PDF Seat"
+        },
+        {
+          "url": "https://mcagfair.com/rentals",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "od: 8AM-12AM. The Heritage rental comes with tables and chairs that will be set up to your specifications. The Garden Room Floor Plan PDF Seating Maximum of 160 \u2013 Banquet Style Maximum of 250 \u2013 Theater Style The Harvest Room Floor Plan PDF Seating Maximum of 360 \u2013 Banquet Style Maximu"
+        },
+        {
+          "url": "https://mcagfair.com/rentals",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": ", including our free Butler\u2019s Pantry. &nbsp; Additional fees include but are not limited to security, security deposit, and extra set up hours. Other Facilities &nbsp; The Montgomery County Agricultural Center offers several other facilities which are perfect for hosting large gatheri"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "CONFIRMED on the official page: Harvest Room 'Maximum of 360 \u2013 Banquet Style / 770 \u2013 Theater Style'; Garden Room '160 \u2013 Banquet / 250 \u2013 Theater'. Seating at rounds with a dance floor is not published. The official floor plan (2015 PDF) gives Garden Room 44'x56' (~2,460 sf). The Harvest Room is unlabeled but scales to ~59'x103' (~6,000 sf). ASSUMPTION: 185 at rounds plus a dance floor fits comfortably in the Harvest Room (modeled as 250).",
+        "ceremony_cocktail_check": "Two separate rooms plus a large foyer ('rental of the Heritage can be of a single room or a combination of both rooms'). Plan: ceremony in the Garden Room (250 theater), cocktails in the Garden Room and foyer, dinner pre-set in the Harvest Room. Both covered porches are outdoor.",
+        "policy_check": "Rental window '8AM-12AM' (official). 'Comes with tables and chairs that will be set up to your specifications.' Full commercial kitchen; the Butler's Pantry is FREE (the scout called it an add-on). 'Additional fees include but are not limited to security, security deposit, and extra set up hours.' 'Unlimited parking is adjacent' (free is an ASSUMPTION). Alcohol at private rentals: NOT stated (the fair FAQ bans alcohol at the fair itself). Outside-caterer policy: not stated. Heat: NOT stated; the FAQ lists 'Air conditioned Buildings: The Heritage, Building #6'. The scout's '4-H/FFA groups get priority' does not appear on the rentals page; unverified.",
+        "price_check": "No prices published ('All prices are subject to change'). Price year: none. Security and extra set-up hours are extra, amounts unknown.",
+        "booking_window": "Not stated. Only a Rental Interest Form (Google form, not submitted) and (301) 926-3100.",
+        "contact": "(301) 926-3100; Rental Interest Form linked on mcagfair.com/rentals",
+        "notes": "Still the best-shaped hall: two separate rooms plus a foyer, tables and chairs set up for you, and a midnight window. It is the only verified hall that can fit with the assumed caterer, and only if the total hall fee is about $1,334 or less. Heat and alcohol rules are the gating unknowns. The scout's core facts check out; corrections: the Butler's Pantry is free, and the priority claim is unsupported."
+      },
+      "corrections": [
+        "Published banquet/table capacity is not certified rounds-with-dance-floor capacity; changed model field to unknown.",
+        "Indoor room exists but heated ceremony/flip plan for185 is not fully confirmed."
+      ],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/ag_center.json",
+      "model_result": {
+        "venue": "Montgomery County Agricultural Center - Heritage Building (Harvest Room + Garden Room)",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 30805.71,
+        "per_guest": 166.52,
+        "lines": {
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -7735.26,
+        "headroom_r1_trimmed": 1333.74,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "rental window 8AM-12AM"
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://mcagfair.com/rentals",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "price_completeness": "Unknown rental and required fees excluded; subtotal only",
+      "all_in_at_185": null,
+      "subtotal_at_185": 30805.71,
+      "max_caterer_all_in_pp": 136.02,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "unknown",
+      "open_questions": [
+        "What is the 2027 Saturday rental fee for both Heritage rooms (8AM-12AM), and what are the security, security-deposit and extra-set-up-hour charges?",
+        "Is alcohol allowed at private rentals? Who must serve it (licensed caterer, certified bartender), and is a one-day license, liquor-liability insurance or security required?",
+        "Are outside licensed caterers allowed, with any approved list or kitchen fee? Is the Butler's Pantry/commercial kitchen included?",
+        "Is the Heritage heated in November? How many seat at 60-72\" rounds with a dance floor in the Harvest Room?",
+        "Is Sat 13 Nov 2027 open (else 6 Nov, 20 Nov, Fri 12 Nov), and how far ahead can 2027 dates be booked?",
+        "Is parking free? Does staff also break down tables and chairs, and is there a room the couple can use to get ready?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "odenton",
+      "name": "Odenton Volunteer Fire Company \u2013 Social Hall",
+      "town": "Odenton, MD (Anne Arundel County), 1425 Annapolis Rd",
+      "type": "Volunteer fire company hall + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.ovfc28.org/hall/",
+        "https://www.ovfc28.org/contact-us/",
+        "https://www.ovfc28.org/calendar/"
+      ],
+      "price_year": "undated, live Nov 2026",
+      "fetches": [
+        {
+          "url": "https://www.ovfc28.org/hall/",
+          "status": 200,
+          "final_url": "https://www.ovfc28.org/hall/"
+        },
+        {
+          "key": "odenton_contact",
+          "url": "https://www.ovfc28.org/contact-us/",
+          "status": 200
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://www.ovfc28.org/contact-us/",
+          "price_year": "undated, live Nov 2026",
+          "excerpt": "ITEM FEE Social Hall Rental (first 4 Hours) $800 Parking lot is free for you and your visitors. Training Facility Rental $250 Parking lot is free for you and your visitors. Parking Lot Rental $250 Parking lot rental fees apply to events held exclusively in the parking lot, as well as"
+        },
+        {
+          "url": "https://www.ovfc28.org/contact-us/",
+          "price_year": "undated, live Nov 2026",
+          "excerpt": "ts with Alcohol Alcohol may be served with a valid Anne Arundel County One-Day Liquor License obtained by the event organizer. Note: Applications must be submitted to the Anne Arundel County Liquor Board at least 10 days prior to your event. No exceptions. Special Event Conditions Eve"
+        },
+        {
+          "url": "https://www.ovfc28.org/contact-us/",
+          "price_year": "undated, live Nov 2026",
+          "excerpt": "intimate gatherings and larger celebrations. Training Facility Planning something smaller? We also rent out our Training Facility building, which accommodates up to 50 guests and is ideal for meetings, trainings, showers, and smaller gatherings. Supporting the Community When you host"
+        },
+        {
+          "url": "https://www.ovfc28.org/contact-us/",
+          "price_year": "undated, live Nov 2026",
+          "excerpt": "vacated by 11 PM Sunday through Thursday and 12:00 AM on Friday and Saturday nights. Rental Rates ITEM FEE Social Hall Rental (first 4 Hours) $800 Parking lot is free for you and your visitors. Training Facility Rental $250 Parking lot is free for you and your visitors. Parking Lot Re"
+        },
+        {
+          "url": "https://www.ovfc28.org/contact-us/",
+          "price_year": "undated, live Nov 2026",
+          "excerpt": "deposit depending on size and type of event. Crowd Manager Starting at $75 Required for certain events based on guest count. Price is per crowd manager. See details below. Crowd Manager Requirements To help ensure a safe event environment NFPA 101 Life Safety Code, and OVFC require th"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "The hall page says 'up to 300 people'; the rental (contact) page and inquiry form say 'up to 250 guests' / 'Social Hall Only (max 250)'. Seating at rounds with a dance floor is not published.",
+        "ceremony_cocktail_check": "FAILS separate cocktail space as published. The only other room is the 'Training Facility building', a separate building with max 50 guests. The 'Social Hall Bar Area' ($75) is a bar service area within the hall, not a second room. A ceremony would need a flip in the hall with nowhere to hold 185 guests.",
+        "policy_check": "Vacate by 12:00 AM Fri/Sat (11 PM Sun-Thu). Alcohol 'may be served with a valid Anne Arundel County One-Day Liquor License obtained by the event organizer', with the application to the Liquor Board \u226510 days ahead. The scout's 'guests may not bring their own' is NOT on the page. Kitchen access $100 covers fridge and prep only ('use of Appliances (Oven, Fryers, etc) is not permitted'). Crowd manager $75 per manager up to 4 h, +$25/h after; required above 50 occupants, two above 200. COI: GL $1M aggregate / $500k per occurrence + $1M umbrella, due 15 days before. Renter must return the hall to its standard configuration (Hall Reset Guide 2026-July), so setup labor is priced in. Over 250 attendees or a policy exception needs Board review, with requests \u226530 days ahead.",
+        "price_check": "Confirmed (undated page, \u00a92026; modeled as 2026): Social Hall $800 for 4 h of event + 2 h setup + 1 h pack-up (7 h). Additional event time $100/h; additional setup/food-prep $100/h; kitchen $100; bar area $75; refundable deposit 'starting at $300'; parking free. Modeled: $800 + 3 extra h $300 + kitchen/bar/1 crowd manager for 6 h ($300) + ASSUMPTION $150 umbrella + one-day license $100.",
+        "booking_window": "Not stated. Inquiry form (not submitted) or 410-674-4444.",
+        "contact": "410-674-4444; Hall Rental Inquiry Form on ovfc28.org/contact-us",
+        "notes": "Cheapest published hall fee, but no second room for a ceremony holding area or a cocktail hour. Even with a separate cocktail space, it costs $960.56 more than the trimmed envelope with the assumed caterer."
+      },
+      "corrections": [
+        "Removed earlier $150 insurance uplift: fixed budget already carries $700 insurance; incremental cost beyond that is unknown, not a confirmed fee."
+      ],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/odenton.json",
+      "model_result": {
+        "venue": "Odenton Volunteer Fire Company Social Hall",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 32950.01,
+        "per_guest": 178.11,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1456.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "one-day liquor license": 100.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9879.56,
+        "headroom_r1_trimmed": -810.56,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": false,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "vacate by 12:00 AM Fri/Sat"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "REJECT (fails must-have: separate cocktail-hour space); cost: FITS only by spending the 10% reserve (Reading 2) -- couple must approve",
+        "source_url": "https://www.ovfc28.org/contact-us/",
+        "price_date": "undated, live Nov 2026"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 32950.01,
+      "subtotal_at_185": 32950.01,
+      "max_caterer_all_in_pp": 124.43,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "Is the 'Social Hall Bar Area' a separate room? If so, how many standing guests does it hold? Without it, where would 185 guests go during a ceremony flip?",
+        "How many seat at rounds with a dance floor? Are round tables and chairs included, and do you have a dance floor?",
+        "Is the hall heated? Can the caterer use any warming equipment (ovens are not allowed)?",
+        "Would a 2pm-12am Saturday (10 h) be allowed, and what is the 2027 fee for it?",
+        "Is Sat 13 Nov 2027 open (else 6/20 Nov, Fri 12 Nov), and how far ahead can you book?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "howard_fairgrounds",
+      "name": "Howard County Fairgrounds \u2013 Dining Hall + 4-H Hall",
+      "town": "West Friendship, MD (Howard County)",
+      "type": "County fairgrounds halls + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://howardcountyfairmd.com/rental/",
+        "https://howardcountyfairmd.com/wp-content/uploads/2023/09/1-Howard-County-Fair-Event-Application-Fillable.pdf"
+      ],
+      "price_year": "undated; page notes 2026 renovation",
+      "fetches": [
+        {
+          "url": "https://howardcountyfairmd.com/rental/",
+          "status": 200,
+          "final_url": "https://howardcountyfairmd.com/rental/"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://howardcountyfairmd.com/rental/",
+          "price_year": "undated; page notes 2026 renovation",
+          "excerpt": "Exhibition Hall, if renting both. $3,500/day Dining Hall 59' x 48' Heat &amp; air conditioning included! Quarry tile floor. 225 chairs &amp; 25 tables included! The kitchen is not available for use at this time. $500/day 4-H Hall 59' x 38' Newly renovated in 2026! Heat &amp; air condi"
+        },
+        {
+          "url": "https://howardcountyfairmd.com/rental/",
+          "price_year": "undated; page notes 2026 renovation",
+          "excerpt": "not available for use at this time. $500/day 4-H Hall 59' x 38' Newly renovated in 2026! Heat &amp; air conditioning included! 100 chairs &amp; 20 tables included! 2 ranges with ovens &amp; refrigerator. $500/day Barn 7/8 120' x 100' Concrete floor. No Heat &amp; air conditioning is a"
+        },
+        {
+          "url": "https://howardcountyfairmd.com/rental/",
+          "price_year": "undated; page notes 2026 renovation",
+          "excerpt": "or. 225 chairs &amp; 25 tables included! The kitchen is not available for use at this time. $500/day 4-H Hall 59' x 38' Newly renovated in 2026! Heat &amp; air conditioning included! 100 chairs &amp; 20 tables included! 2 ranges with ovens &amp; refrigerator. $500/day Barn 7/8 120' x"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Confirmed: Dining Hall 59'x48' (~2,832 sf) with 225 chairs and 25 tables (table type not stated). ASSUMPTION: at ~12.5 sf/guest at rounds plus a dance floor, DJ and buffet, about 160-175 seat, likely under 185. Needs a floor plan.",
+        "ceremony_cocktail_check": "4-H Hall 59'x38' (~2,242 sf), 100 chairs and 20 tables, 'Newly renovated in 2026!'. Ceremony there, then cocktails there while the Dining Hall is set (separate buildings, outdoor walk between).",
+        "policy_check": "Heat and AC included in both halls. Dining Hall: 'The kitchen is not available for use at this time.' 4-H Hall: 2 ranges with ovens and a refrigerator. End time, alcohol policy and caterer policy: NOT stated. The application asks 'Will alcohol be served?' and about required permits. 'Parking is generally available at no additional charge.'",
+        "price_check": "Dining Hall $500/day and 4-H Hall $500/day (undated; 'All rental prices... subject to change'; modeled as 2026, +4%). Rounds, linens, china and dance floor rented in.",
+        "booking_window": "Not stated. Event application emailed to info@howardcountyfairmd.com (not sent).",
+        "contact": "info@howardcountyfairmd.com; 410-442-1022 (scout; not re-confirmed on the rental page)",
+        "notes": "The scout's facts are confirmed. Cheap rooms, but bare, and the Dining Hall is probably too small for 185 with a dance floor. It also costs more than the trimmed envelope with the assumed caterer."
+      },
+      "corrections": [
+        "4-H Hall supplies100chairs; no published185capacity. Ceremony and separate cocktail room changed to unknown rather than inferred from existence of second building."
+      ],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/howard_fairgrounds.json",
+      "model_result": {
+        "venue": "Howard County Fairgrounds - Dining Hall + 4-H Hall",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 34395.01,
+        "per_guest": 185.92,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1040.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -11324.56,
+        "headroom_r1_trimmed": -2255.56,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://howardcountyfairmd.com/rental/",
+        "price_date": "undated; page notes 2026 renovation"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 34395.01,
+      "subtotal_at_185": 34395.01,
+      "max_caterer_all_in_pp": 116.62,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "Can 185 seat at rounds with a dance floor and buffet in the Dining Hall? Please send a floor plan. Are the 25 tables rounds?",
+        "Is alcohol allowed at private events, and which permits, licenses, security and insurance are required?",
+        "Are outside caterers allowed, given the Dining Hall kitchen is unavailable? Can the caterer use the 4-H Hall kitchen?",
+        "What is the latest end time, and how many hours does the $500/day include for setup and cleanup?",
+        "Are 2027 rates the same? Is Sat 13 Nov 2027 open (else 6/20 Nov, Fri 12 Nov), and how far ahead can you book?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "frederick_fairgrounds",
+      "name": "Frederick Fairgrounds \u2013 Building 7 (Large Grandstand) + Building 8 (Small Grandstand)",
+      "town": "Frederick, MD (Frederick County)",
+      "type": "Fairgrounds halls + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://thegreatfrederickfair.com/year-round-rental",
+        "https://thegreatfrederickfair.com/wp-content/uploads/2026/02/Event-Checklist-and-Rental-Info.pdf",
+        "https://thegreatfrederickfair.com/calendar/"
+      ],
+      "price_year": "undated page; checklist PDF uploaded 2026/02",
+      "fetches": [
+        {
+          "url": "https://thegreatfrederickfair.com/year-round-rental",
+          "status": 200,
+          "final_url": "https://thegreatfrederickfair.com/year-round-rental/"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://thegreatfrederickfair.com/year-round-rental",
+          "price_year": "undated page; checklist PDF uploaded 2026/02",
+          "excerpt": "Rental Info Year-Round Event Calendar Hotels BUILDING 7 Large Grandstand | *HVAC Size: 240' x 34' (8,160 sq. ft.) $2,750/day Est. Capacity: 1,088 w/ Chairs Only; 544 w/ Tables &amp; Chairs Ceiling Height (Low Side: 9 ft. 6 in.) BUILDING 8 Small Grandstand | *HVAC Size: 95' x 32' (3,04"
+        },
+        {
+          "url": "https://thegreatfrederickfair.com/year-round-rental",
+          "price_year": "undated page; checklist PDF uploaded 2026/02",
+          "excerpt": "hairs Ceiling Height (Low Side: 9 ft. 6 in.) BUILDING 8 Small Grandstand | *HVAC Size: 95' x 32' (3,040 sq. ft.) $1,200/day Est. Capacity: 405 w/ Chairs Only; 202 w/ Tables &amp; Chairs BUILDING 9 The Null Building | *HVAC Size: 199' x 60' (11,940 sq. ft.) $5,000/day Est. Capacity: 1,"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Confirmed: Bldg 7 8,160 sf, 544 with tables and chairs (1,088 chairs only), low side ceiling 9'6\". Bldg 8 3,040 sf, 202 with tables and chairs. Both marked '*HVAC' with no explanation.",
+        "ceremony_cocktail_check": "Bldg 8 for the ceremony and cocktails, Bldg 7 for the reception (separate buildings)",
+        "policy_check": "Checklist PDF (uploaded 2026/02): 25% deposit at signing; balance and a $500 refundable escrow due 60 days prior. COI $1M aggregate, or $2M including liquor liability for any event with alcohol. Alcohol needs prior approval and Frederick County Liquor Board permitting. 'Events serving alcohol must have continuous security coverage for the duration of the event... Once security leaves, the event must conclude.' 'Loading and unloading of equipment is prohibited between 10:00 p.m. and 7:00 a.m.' 'the city noise ordinance is from 10:00 p.m. till 7:00 a.m.' Tables and chairs are invoiced after the event; minimum $300 cleaning fee if cleanup is unsatisfactory. 'Cooking is only to be done in building 10' (Bldg 10 $600/day). Check-out by 8am the next morning.",
+        "price_check": "Bldg 7 $2,750/day; Bldg 8 $1,200/day; Bldg 9 Null $5,000/day (undated page; modeled as 2026, +4%). Security ASSUMPTION $630; insurance uplift ASSUMPTION $150.",
+        "booking_window": "Not stated (rental coordinator Michele Lowe, 301-663-5895)",
+        "contact": "301-663-5895; email@thegreatfrederickfair.com",
+        "notes": "Refuted: over budget even with the reserve, a 10pm city noise ordinance and loading ban, and very likely more than 60 minutes from DC. Facts otherwise as the scout reported."
+      },
+      "corrections": [
+        "Published banquet/table capacity is not certified rounds-with-dance-floor capacity; changed model field to unknown.",
+        "Indoor room exists but heated ceremony/flip plan for185 is not fully confirmed.",
+        "Removed earlier $150 insurance uplift: fixed budget already carries $700 insurance; incremental cost beyond that is unknown, not a confirmed fee."
+      ],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/frederick_fairgrounds.json",
+      "model_result": {
+        "venue": "Frederick Fairgrounds - Building 7 Large Grandstand + Building 8 Small Grandstand",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 38118.21,
+        "per_guest": 206.04,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 4763.2,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -15047.76,
+        "headroom_r1_trimmed": -5978.76,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": true,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "city noise ordinance 10pm-7am; loading banned 10pm-7am"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "OVER by $524 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://thegreatfrederickfair.com/year-round-rental",
+        "price_date": "undated page; checklist PDF uploaded 2026/02"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 38118.21,
+      "subtotal_at_185": 38118.21,
+      "max_caterer_all_in_pp": 96.49,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "Can amplified music run past 10pm under the city noise ordinance?",
+        "Does '*HVAC' mean heated in November?",
+        "What do the tables and chairs cost?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "bowie",
+      "name": "Bowie Community Center (M-NCPPC Prince George's Parks) \u2013 Entire Facility, after hours",
+      "town": "Bowie, MD (Prince George's), 3209 Stonybrook Dr",
+      "type": "County park-authority community center (gym + large multipurpose room + small meeting space) + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.pgparks.com/community-center-rentals",
+        "https://www.pgparks.com/facilities/bowie-community-center",
+        "https://www.pgparks.com/wp-content/uploads/2026/04/Tagged-Rental-Guidelines.pdf",
+        "https://pgparks.screenstepslive.com/a/1066497-facility-rental-guidelines"
+      ],
+      "price_year": "undated (site (c)2026)",
+      "fetches": [
+        {
+          "url": "https://www.pgparks.com/community-center-rentals",
+          "status": 200,
+          "final_url": "https://www.pgparks.com/facilities-rentals/rental-permits-policies-2/community-center-rentals"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://www.pgparks.com/community-center-rentals",
+          "price_year": "undated (site (c)2026)",
+          "excerpt": "erating&nbsp;Hours N/A After Hours $310 (R); $403 (NR) * Entire Facility includes a large multipurpose room, one gymnasium (full court), and small meeting space (small multipurpose room) only. Additional fees are applicable for other spaces. This option may not be available at all fac"
+        },
+        {
+          "url": "https://www.pgparks.com/community-center-rentals",
+          "price_year": "undated (site (c)2026)",
+          "excerpt": "ental. Maximum occupancy listed for rooms is Fire Marshall capacity. Actual capacity may be less depending on activity and layout. Verified nonprofit organizations are eligible for a 50% discount during operating hours. Community Centers may offer additional amenities at an additional"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Not published. The rentals page says 'Maximum occupancy listed for rooms is Fire Marshall capacity.' The multipurpose 'Large' category is just 'over 60 people'. The full-court gym can plausibly seat 185 at rounds with a dance floor (ASSUMPTION).",
+        "ceremony_cocktail_check": "Entire Facility = 'a large multipurpose room, one gymnasium (full court), and small meeting space'. Ceremony in the multipurpose room (capacity unknown), cocktails there or in a common area (after hours, renters may use only rented spaces and bathrooms), dinner in the gym. All unconfirmed.",
+        "policy_check": "Saturday building hours 9am-4pm (teen night is Friday only), so the after-hours window is 4pm-12am: 8 h for setup, event and cleanup, even though the fee is 'per 9-hour rental'. 'Rentals must end by midnight. This includes any time that the Renter needs to cleanup.' Alcohol: beer and wine only, after hours, invite-only, no sales, Division Chief approval. 'Bowie' is on the NRLS designated-sites list (the KB does not name 'Bowie Community Center' exactly). Park Police required for alcohol, groups of 75+ and social events past 8 PM: 1 officer per 75 people, 4-h minimum. Food: catered allowed ('caterer's license on-site'); 'No food may be prepared on-site'; warming kitchen if reserved. DJ allowed with prior approval; live music needs Park Police approval.",
+        "price_check": "Entire Facility after hours $310 resident (PG/MoCo) / $403 non-resident per 9-hour rental. After-hours security deposit $300 (refundable). Security deposit and 50% of fees due at booking. Park Police: $60/h per officer on contract or $40/h cash per the knowledge base (updated 16 Oct 2026); the guidelines PDF (revised May 2023, re-uploaded Apr 2026) says $70/$50. Modeled: $403 + 3 officers x 6 h x $60 = $1,080 (2026 $, +4%). At the $70 rate the all-in rises by $187.20.",
+        "booking_window": "CORRECTED. The 180-day rule in the knowledge base is for 'Park Buildings', which it says hold 50-75 attendees, so it does NOT clearly apply to community centers. No maximum lead time is published for community centers. Minimums: 3 business days (during hours); after-hours \u226514 days; alcohol and other exceptions \u226530 days with Division Chief approval. Recurring rentals may run up to 365 days.",
+        "contact": "Bowie CC 301-464-1737, bowiecc@pgparks.com; PG Parks 301-699-2255",
+        "notes": "Cheapest room fee anywhere, but it is a gym, beer and wine only, an 8-hour window from 4pm to midnight for DIY setup and cleanup, and everything is rented in. Costs more than the trimmed envelope with the assumed caterer."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/bowie.json",
+      "model_result": {
+        "venue": "Bowie Community Center (M-NCPPC Prince George's Parks) - entire facility after hours",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 34897.33,
+        "per_guest": 188.63,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1542.32,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -11826.88,
+        "headroom_r1_trimmed": -2757.88,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "rental must end by midnight incl. cleanup"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://www.pgparks.com/community-center-rentals",
+        "price_date": "undated (site (c)2026)"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 34897.33,
+      "subtotal_at_185": 34897.33,
+      "max_caterer_all_in_pp": 113.9,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "What are the fire-marshal and banquet capacities of the gym and large multipurpose room? Can 185 sit at rounds plus a dance floor in the gym, and 185 theater-style in the multipurpose room?",
+        "Is Bowie Community Center the 'Bowie' alcohol-designated site, and will a beer/wine wedding reception be approved?",
+        "Do you supply round tables and chairs? Can a rental company deliver before 4pm on Saturday?",
+        "How far ahead can a community-center after-hours rental be booked for Nov 2027? Is Sat 13 Nov 2027 (else 6/20 Nov, Fri 12 Nov) open?",
+        "Which Park Police rate applies in 2027 ($60 or $70/h on contract), and for how many hours?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "white_oak",
+      "name": "White Oak Community Recreation Center \u2013 Social Hall (Montgomery County Recreation)",
+      "town": "Silver Spring (White Oak), MD, 1700 April Lane",
+      "type": "County recreation center social hall + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation/choose-right-space",
+        "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation",
+        "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation/facility-reservation-support",
+        "https://www.montgomerycountymd.gov/montgomery-county-recreation/facilities/recreation-centers/white-oak-community-recreation-center",
+        "https://assets.montgomerycountymd.gov/files/2026-04/rentalpolicy-revised9_25_remediation.pdf"
+      ],
+      "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+      "fetches": [
+        {
+          "url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation/choose-right-space",
+          "status": 200,
+          "final_url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation/choose-right-space"
+        },
+        {
+          "key": "white_policy",
+          "url": "https://assets.montgomerycountymd.gov/files/2026-04/rentalpolicy-revised9_25_remediation.pdf",
+          "status": 200
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation/choose-right-space",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "square feet Social events or large meetings White Oak Community Recreation Center 1700 April Lane, Silver Spring 240-777-6940 View White Oak ROOM CAPACITY IDEAL FOR... Art Room 50 people/1,600 square feet Meetings and small social events Classroom 30 people/700 square feet Meetings a"
+        },
+        {
+          "url": "https://assets.montgomerycountymd.gov/files/2026-04/rentalpolicy-revised9_25_remediation.pdf",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "remain in the rooms requested and approved. Common areas are\nNOT included for use.\n4. The responsible person signing or responsible designee on the permit must attend the event\nfrom beginning to end.\n5. Chairs and tables, and for the cleaning, recycling and trash removal as indicated"
+        },
+        {
+          "url": "https://assets.montgomerycountymd.gov/files/2026-04/rentalpolicy-revised9_25_remediation.pdf",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "that charge/collect admission.\n8. The use of open flames (candles), \"silly string\", heavy abrasive products and fog machines are\nprohibited.\n9. The responsible person must hire or provide, as required, additional adult chaperones/security.\n10. The reservation must take place as descri"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Social Hall 200 people / 4,000 sf (layout not stated). Other White Oak rooms: Community Lounge 65 (1,800 sf), Art Room 50, Classroom 30, Conference Rooms 30/10.",
+        "ceremony_cocktail_check": "FAILS. No second room holds 185 (largest is the 65-person Community Lounge), and the rental policy says 'Common areas are NOT included for use', so the lobby is out. There is no indoor ceremony holding room and no separate cocktail space.",
+        "policy_check": "Eligibility: 'Any Montgomery County resident or business owner who is at least 21' (plus nonprofits/partners); 'Proof Residency... required for all reservations'. Beer, wine and champagne only, with a permit \u226514 days ahead, approved 'at all levels'. 'The use of open flames (candles)... are prohibited' (LED only). Renter sets up, takes down and cleans; round and rectangular tables, chairs and a warming kitchen are included. Insurance $500,000 naming the County. Center open Sat 9am-10pm; rental end time not stated.",
+        "price_check": "Hourly rate NOT published. Pricing effective 5 Oct 2026 applies the hourly rate to the whole booking including setup and cleanup; social-hall security deposit $500; additional rooms at the standard room rate. Half the fees due at application, the balance and deposit 30 days prior.",
+        "booking_window": "Not stated (rec.bookings@montgomerycountymd.gov; 240-777-6840)",
+        "contact": "rec.bookings@montgomerycountymd.gov; Customer Service 240-777-6840; center 240-777-6940",
+        "notes": "Refuted: the secondary rooms are too small for a 185-person ceremony or cocktail hour, common areas are excluded, candles are banned, Saturday closing is 10pm, and only Montgomery County residents qualify. The scout's 'Lobby / Community Room' options are not usable."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/white_oak.json",
+      "model_result": {
+        "venue": "White Oak Community Recreation Center Social Hall (Montgomery County Recreation)",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 31394.01,
+        "per_guest": 169.7,
+        "lines": {
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -8323.56,
+        "headroom_r1_trimmed": 745.44,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": false,
+          "separate cocktail-hour space": false,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": false,
+          "allows outside DJ/florist/cake": null,
+          "end time": "unknown; center open Sat 9am-10pm"
+        },
+        "flags": [
+          "no enclosed flame: switch candles to LED (budget the same $1,000-2,000 line)"
+        ],
+        "verdict": "REJECT (fails must-have: indoor ceremony space, separate cocktail-hour space); cost: FITS only with the trims",
+        "source_url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/facility-reservation/choose-right-space",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "price_completeness": "Unknown rental and required fees excluded; subtotal only",
+      "all_in_at_185": null,
+      "subtotal_at_185": 31394.01,
+      "max_caterer_all_in_pp": 132.84,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "Could the gymnasium be rented for the ceremony or cocktails, and can alcohol be served there?",
+        "What is the latest Saturday end time including cleanup?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "glenarden",
+      "name": "Glenarden Gold Room (James R. Cousins Jr. Municipal Center, City of Glenarden)",
+      "town": "Glenarden, MD (Prince George's), 8600 Glenarden Pkwy",
+      "type": "City-owned event hall + licensed outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://cityofglenarden.org/community/community_rental_recreational_spaces/james_rcousinsjrmunicipal_center_gold_room.php",
+        "https://cityofglenarden.org/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf",
+        "https://cityofglenarden.org/community/community_rental_recreational_spaces/frequently_asked_questions.php",
+        "https://www.keepandshare.com/calendar45/show.php?i=2951323"
+      ],
+      "price_year": "PDF created 16 Sep 2025",
+      "fetches": [
+        {
+          "url": "https://cityofglenarden.org/community/community_rental_recreational_spaces/james_rcousinsjrmunicipal_center_gold_room.php",
+          "status": 200,
+          "final_url": "https://cityofglenarden.org/community/community_rental_recreational_spaces/james_rcousinsjrmunicipal_center_gold_room.php"
+        },
+        {
+          "url": "https://cityofglenarden.org/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf",
+          "status": 200,
+          "final_url": "https://cms7files1.revize.com/cityofglenarden/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://cityofglenarden.org/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf",
+          "price_year": "PDF created 16 Sep 2025",
+          "excerpt": "time.\nTime Slot/Service\n\nGlenarden Resident\n\nNon- Resident\n\nSecurity Deposit\n\u2022\n\u2022\n\u2022\n\u2022\n\nWorkshop/Class\nNon-Prime\nPrime-Time\nTicketed Events\n\n\u2022\n\u2022\n\u2022\n\u2022\n\n$250\n$500\n$700\n$800\n\nNon-Prime Time\n\nMonday- Thursday, Friday Day\nHourly rate with (4) hr. min, (7) max\n\nM-Thurs (9am- 10pm)\nFriday (9am-"
+        },
+        {
+          "url": "https://cityofglenarden.org/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf",
+          "price_year": "PDF created 16 Sep 2025",
+          "excerpt": "\u2022\n\n$60 Per Hour Per Officer\n(4) hr. minimum\n\nAlcoholic Events: (1) per 75 guests\n\nUpgraded Rentals\n\u2022\n\u2022\n\u2022\n\u2022\n\u2022\n\u2022\n\u2022\n\u2022\n\u2022\n\u2022\n\u2022\n\u2022\n\nStage\nSmall Speaker System\nPipe & Drape (White & Black Solid)\nEasel\nProjector/AV\nChargers\nLinen (stretch white)\nVotives\nMirrors\nCocktail Tables\nUplights\nCenterpi"
+        },
+        {
+          "url": "https://cityofglenarden.org/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf",
+          "price_year": "PDF created 16 Sep 2025",
+          "excerpt": "ty Deposit\n\u2022\n\u2022\n\u2022\n\u2022\n\nWorkshop/Class\nNon-Prime\nPrime-Time\nTicketed Events\n\n\u2022\n\u2022\n\u2022\n\u2022\n\n$250\n$500\n$700\n$800\n\nNon-Prime Time\n\nMonday- Thursday, Friday Day\nHourly rate with (4) hr. min, (7) max\n\nM-Thurs (9am- 10pm)\nFriday (9am- 4pm)\nDiscounted Flat Rate\n\u2022 Non-profit Organizations\n\u2022 City of Gl"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "CORRECTED (the official FAQ was not used by the scout): '(300) guests for a standing cocktail reception, and up to (250) guests for a seated dinner. This may vary depending on the floor plan.' Included: 'Tables and chairs, for 250 guests... Stage Area, Dance Floor'. Capacity with the dance floor in use is not stated (185 is 74% of 250).",
+        "ceremony_cocktail_check": "FAQ: 'Can we host ceremonies, cocktail hours and receptions? Absolutely, our layout makes it possible to host all three occasions on-site.' Caterers 'must provide food, trash, cleanup and flip services'. No separate cocktail room is named; ask. 'Is there a dressing suite? Not at this time.'",
+        "policy_check": "All events end by 12am. Alcohol: no BYO self-serve; 'All alcohol must be served by a tips/tams certified bartender' plus a host liquor liability policy (caterer/bartender's or a single-day policy), and you pay the venue's hired security: 1 off-duty officer per 75 guests at $60/h, 4-h minimum. Caterers must be licensed and insured, full-service, COI \u2265$1M; a favorites list is offered. 'Candles enclosed in glass on tables' allowed; floor candles battery only. Deliveries and pickups only within the rental window.",
+        "price_check": "Price PDF created 16 Sep 2025 (modeled as 2025, x1.082 to 2027). Saturday Evening 5pm-12am (7 h incl. setup/breakdown): $2,625 resident / $2,850 non-resident, +$375 / $407 per hour. Saturday Buyout 9am-12am (10 h): $4,500 / $5,000. Fri evening $2,100 / $2,150; Sunday $2,100 / $2,150. Prime-time security deposit $700. Kitchen $80. Modeled: $2,850 + 2 extra h ($814, 3pm start) + security 3 officers x 6 h x $60 ($1,080) + kitchen $80; setup labor and a getting-ready room priced in.",
+        "booking_window": "FAQ: 'We are unable to accept date holds and offer bookings on first-come-first-served basis'. A security deposit plus signed contract reserves a date. No advance window is published.",
+        "contact": "Lakesha Bunn, Events Manager, 240-539-7121, specialevents@cityofglenarden.org; Gold Room 301-773-2100",
+        "notes": "Best-documented hall in this batch: dance floor, tables and chairs for 250, all three events on site, and enclosed candles allowed. Even so, it costs more than the trimmed envelope unless the caterer is about $111/guest all-in or less. The scout's capacity and alcohol fields were 'unknown', but the official FAQ answers them."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/glenarden.json",
+      "model_result": {
+        "venue": "Glenarden Gold Room (James R. Cousins Jr. Municipal Center, City of Glenarden)",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 35339.65,
+        "per_guest": 191.03,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 5217.64,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 208.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -12269.2,
+        "headroom_r1_trimmed": -3200.2,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": true,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": true,
+          "end time": "all events must end by 12am"
+        },
+        "flags": [
+          "price from 2025: escalated x1.082; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, separate cocktail-hour space, date available",
+        "source_url": "https://cityofglenarden.org/Documents/Community/Gold%20Room/Guides/Gold%20Room%20Rental%20Prices.pdf",
+        "price_date": "PDF created 16 Sep 2025"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 35339.65,
+      "subtotal_at_185": 35339.65,
+      "max_caterer_all_in_pp": 111.51,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "How many seat at rounds with the dance floor down? Where do 185 guests go for cocktails while the caterer flips the room after the ceremony?",
+        "What are the 2027 Saturday rates? Would a 3pm-12am Saturday (Evening + 2 h) or the Buyout be required?",
+        "How many security officers and hours are required for 185 guests with a beer/wine bar?",
+        "Is there any room we can use to get ready? Do venue staff set the 5' rounds to our floor plan?",
+        "Is Sat 13 Nov 2027 open (else 6/20 Nov, Fri 12 Nov)? Can we book 2027 dates now?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "womans_club",
+      "name": "Woman's Club of Chevy Chase (clubhouse)",
+      "town": "Chevy Chase, MD (Montgomery County), 7931 Connecticut Ave",
+      "type": "Women's club clubhouse + outside vendors",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://wcccmaryland.org/weddings",
+        "https://wcccmaryland.org/rentals",
+        "https://wcccmaryland.org/event-contact",
+        "https://img1.wsimg.com/blobby/go/bdb8c0d7-aa9f-45c4-acaa-aaadc1a7934e/downloads/WCCC%20Floor%20Plan.pdf?ver=1676155648322"
+      ],
+      "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+      "fetches": [
+        {
+          "url": "https://wcccmaryland.org/weddings",
+          "status": 200,
+          "final_url": "https://wcccmaryland.org/weddings"
+        },
+        {
+          "key": "wccc_floor",
+          "url": "https://img1.wsimg.com/blobby/go/bdb8c0d7-aa9f-45c4-acaa-aaadc1a7934e/downloads/WCCC%20Floor%20Plan.pdf?ver=1676155648322",
+          "status": 200
+        },
+        {
+          "key": "wccc_contact",
+          "url": "https://wcccmaryland.org/event-contact",
+          "status": 200
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://img1.wsimg.com/blobby/go/bdb8c0d7-aa9f-45c4-acaa-aaadc1a7934e/downloads/WCCC%20Floor%20Plan.pdf?ver=1676155648322",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "nquet Room capacity\n\u2022 200 seated at tables\n\u2022 180 at tables with dance floor\n\u2022 250 seated theater style\n\nWARMING\nKITCHEN\n\nSTAGE\n\nLibrary capacity\n\u2022 75 seated theater style\n\u2022 90 standing, cocktail style\nSERVING\nAISLES\n\nBANQUET ROOM\n\n9\u2019 x 50\u2019\non both sides\nopen to\nauditorium\n\nTERRACE\n20\u2019"
+        },
+        {
+          "url": "https://img1.wsimg.com/blobby/go/bdb8c0d7-aa9f-45c4-acaa-aaadc1a7934e/downloads/WCCC%20Floor%20Plan.pdf?ver=1676155648322",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "PARKING LOT\nRAISED\n\nBanquet Room capacity\n\u2022 200 seated at tables\n\u2022 180 at tables with dance floor\n\u2022 250 seated theater style\n\nWARMING\nKITCHEN\n\nSTAGE\n\nLibrary capacity\n\u2022 75 seated theater style\n\u2022 90 standing, cocktail style\nSERVING\nAISLES\n\nBANQUET ROOM\n\n9\u2019 x 50\u2019\non both sides\nopen to"
+        },
+        {
+          "url": "https://img1.wsimg.com/blobby/go/bdb8c0d7-aa9f-45c4-acaa-aaadc1a7934e/downloads/WCCC%20Floor%20Plan.pdf?ver=1676155648322",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "eated theater style\n\nWARMING\nKITCHEN\n\nSTAGE\n\nLibrary capacity\n\u2022 75 seated theater style\n\u2022 90 standing, cocktail style\nSERVING\nAISLES\n\nBANQUET ROOM\n\n9\u2019 x 50\u2019\non both sides\nopen to\nauditorium\n\nTERRACE\n20\u2019 x 26\u2019\n\n33\u2019 x 50\u2019\n\nDUNLOP STREET\n\nSouth Wing Capacity\n\u2022 48 seated at tables\n\u2022 60 se"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "REFUTED by the official floor plan PDF: Banquet Room (33'x50' central space plus 9'x50' serving aisles) '200 seated at tables \u2022 180 at tables with dance floor \u2022 250 seated theater style'. 180 < 185. Library 75 theater / 90 standing; South Wing 48 at tables / 60 theater / 72 standing; terrace 20'x26', covered, with heaters.",
+        "ceremony_cocktail_check": "Indoor ceremony for 185 is possible only in the Banquet Room (250 theater) with a flip. Cocktails in the Library + Lobby + South Wing (90 + 72 standing, plus the lobby).",
+        "policy_check": "Event-contact FAQ: weekend minimum 8-hour rental; $1,000 security deposit; free parking for 86 vehicles; BYO alcohol 'Yes' (a county permit only if alcohol is sold); outside vendors 'Yes'; bridal prep area; warming kitchen.",
+        "price_check": "No rates published ('contact our Clubhouse Manager')",
+        "booking_window": "Not stated",
+        "contact": "Clubhouse Manager Marcy Michael, 301-652-8480, info@wcccmaryland.org",
+        "notes": "Refuted as too small at 185: the club's own floor plan seats 180 with a dance floor. It would only reopen if the guest count drops to 180 or fewer."
+      },
+      "corrections": [
+        "Indoor room exists but heated ceremony/flip plan for185 is not fully confirmed."
+      ],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/womans_club.json",
+      "model_result": {
+        "venue": "Woman's Club of Chevy Chase",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 31483.01,
+        "per_guest": 170.18,
+        "lines": {
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 319.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -8412.56,
+        "headroom_r1_trimmed": 656.44,
+        "must_haves": {
+          "seats guests with dance floor": false,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": true,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "REJECT (fails must-have: seats guests with dance floor); cost: FITS only with the trims",
+        "source_url": "https://wcccmaryland.org/rentals",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "price_completeness": "Unknown rental and required fees excluded; subtotal only",
+      "all_in_at_185": null,
+      "subtotal_at_185": 31483.01,
+      "max_caterer_all_in_pp": 132.36,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "Can the serving aisles take tables so 185 seat with the dance floor in use?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "cheverly",
+      "name": "Cheverly American Legion Post 108",
+      "town": "Cheverly, MD (Prince George's), 3608 Legion Dr",
+      "type": "Veterans post hall",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://cheverly-md.gov/357/Community-Organizations"
+      ],
+      "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+      "fetches": [
+        {
+          "url": "https://cheverly-md.gov/357/Community-Organizations",
+          "status": 200,
+          "final_url": "https://cheverly-md.gov/357/Community-Organizations"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://cheverly-md.gov/357/Community-Organizations",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "ool table, dartboards, and a hall that seats in excess of 200 people. Address: 3608 Legion Drive Phone: 301-773-0108 American Legion Auxiliary The Cheverly American Legion Auxiliary Unit 108 is a local veteran&apos;s support organization. We work hard to support our military and veter"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Town page only: 'a hall that seats in excess of 200 people'. Seating with a dance floor unknown. The 'Ross-Tayman Hall' name is not on the official page.",
+        "ceremony_cocktail_check": "Unknown",
+        "policy_check": "Unknown. The town page says the post is 'open seven days a week' with 450+ members; no official post website with rental terms was found.",
+        "price_check": "No rates published",
+        "booking_window": "Unknown",
+        "contact": "301-773-0108",
+        "notes": "Thin lead; only the town page confirms it exists."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/cheverly.json",
+      "model_result": {
+        "venue": "Cheverly American Legion Post 108",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 34465.01,
+        "per_guest": 186.3,
+        "lines": {
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -11394.56,
+        "headroom_r1_trimmed": -2325.56,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://cheverly-md.gov/357/Community-Organizations",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "price_completeness": "Unknown rental and required fees excluded; subtotal only",
+      "all_in_at_185": null,
+      "subtotal_at_185": 34465.01,
+      "max_caterer_all_in_pp": 116.24,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "unknown",
+      "open_questions": [
+        "What is the Saturday rental fee and how many hours does it include? Are tables, chairs and a dance floor included? Is parking free?",
+        "How many seat at rounds with a dance floor? Is there a second room for a ceremony or cocktails?",
+        "Must we use the post's bar and bartenders, or can a licensed caterer serve? Are outside caterers allowed?",
+        "What is the latest end time? Is Sat 13 Nov 2027 open (else 6/20 Nov, Fri 12 Nov)?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "charles_fairgrounds",
+      "name": "Charles County Fairgrounds (Grand Hall, Halls A-C, Commercial Bldgs A/B)",
+      "town": "La Plata, MD (Charles County), 8440 Fairgrounds Rd",
+      "type": "Fairgrounds halls + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://fairgroundrentals.com/charles/",
+        "https://fairgroundrentals.com/charles/calendar/",
+        "https://charlescountyfair.com/?p=234"
+      ],
+      "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+      "fetches": [
+        {
+          "url": "https://fairgroundrentals.com/charles/",
+          "status": 200,
+          "final_url": "https://fairgroundrentals.com/charles/"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://fairgroundrentals.com/charles/",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "arge for the Charles County Fairgrounds. All Grand Hall Hall A Hall B Hall C Commercial Building A Commercial Building B Pavillion Outdoor Stage Grand Stand/Track Festival Grounds Fairgrounds Rental Inquiry Location Use this form for general fairgrounds questions or comments, if you&#"
+        },
+        {
+          "url": "https://fairgroundrentals.com/charles/",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "Charles &#8211; Fairground Rentals charles@fairgroundrentals.com (301) 932-1234 Facebook Instagram Navigation About Us Rentals Location &#038; Contact Login About Us Rentals Location &#038; Contact Login The Perfect Rental Space in Southern Maryland We have a lot of options"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "'over 50,000 square feet of inside event space' across 6 halls; no per-hall sizes or capacities",
+        "ceremony_cocktail_check": "Multiple halls make separate rooms plausible; unconfirmed",
+        "policy_check": "Heat, alcohol, catering and end time not stated. Site footer: 'Charles County Fairgrounds, Inc. A Non-Profit 501(c)3', linked as 'Ground Rentals' from charlescountyfair.com.",
+        "price_check": "No rates published",
+        "booking_window": "Unknown",
+        "contact": "charles@fairgroundrentals.com; (301) 932-1234 / (301) 202-4560",
+        "notes": "Thin lead; the official site gives no hall-level facts."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/charles_fairgrounds.json",
+      "model_result": {
+        "venue": "Charles County Fairgrounds (Grand Hall / Halls A-C)",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 33355.01,
+        "per_guest": 180.3,
+        "lines": {
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -10284.56,
+        "headroom_r1_trimmed": -1215.56,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://fairgroundrentals.com/charles/",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "price_completeness": "Unknown rental and required fees excluded; subtotal only",
+      "all_in_at_185": null,
+      "subtotal_at_185": 33355.01,
+      "max_caterer_all_in_pp": 122.24,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "unknown",
+      "open_questions": [
+        "Which hall seats 185 at rounds with a dance floor, and what are the Saturday rates for it plus a second hall?",
+        "Are the halls heated in November?",
+        "Is alcohol allowed? Which license, security and insurance are required? Are outside caterers allowed, and is there a kitchen?",
+        "What is the latest end time, and are tables and chairs included?",
+        "Is Sat 13 Nov 2027 open (else 6/20 Nov, Fri 12 Nov)?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "greater_springfield",
+      "name": "Greater Springfield Volunteer Fire Department Community Hall",
+      "town": "Springfield, VA (Fairfax County)",
+      "type": "Fire department hall, rental + outside caterer (bar service by The Masters of Mixology required)",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://gsvfd.org/hall-rentals/",
+        "https://gsvfd.org/1142-2/",
+        "https://calendar.google.com/calendar/ical/bookings%40gsvfd.org/public/basic.ics",
+        "https://www.themastersofmixology.com"
+      ],
+      "price_year": "GSVFD HALL RENTAL PRICING (2024)",
+      "fetches": [
+        {
+          "url": "https://gsvfd.org/hall-rentals/",
+          "status": 200,
+          "final_url": "https://gsvfd.org/hall-rentals/"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://gsvfd.org/hall-rentals/",
+          "price_year": "GSVFD HALL RENTAL PRICING (2024)",
+          "excerpt": "Email: bookings@gsvfd.org GSVFD HALL RENTAL PRICING (2024) Base Hourly Pricing Hall rentals are $250 per hour (minimum of 3 hours) The start and finish times include Set-up, Pickup and Breakdown time (** Music must turn off at 11:00pm **) 50% discount off total hourly charge is appli"
+        },
+        {
+          "url": "https://gsvfd.org/hall-rentals/",
+          "price_year": "GSVFD HALL RENTAL PRICING (2024)",
+          "excerpt": "(2024) Base Hourly Pricing Hall rentals are $250 per hour (minimum of 3 hours) The start and finish times include Set-up, Pickup and Breakdown time (** Music must turn off at 11:00pm **) 50% discount off total hourly charge is applied for rentals of 9 hours or more Additional Fees an"
+        },
+        {
+          "url": "https://gsvfd.org/hall-rentals/",
+          "price_year": "GSVFD HALL RENTAL PRICING (2024)",
+          "excerpt": "nd Breakdown time (** Music must turn off at 11:00pm **) 50% discount off total hourly charge is applied for rentals of 9 hours or more Additional Fees and Services $100 per table (rectangle tables &#8211; 8 chairs per table) 50% discount applied for events with 12 tables or more Bart"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "'Seating up to 225 persons, depending on table configuration'; 3,060 sq ft; up to 49 rectangular tables and 240 chairs (rectangular only). Seated capacity at rounds with a dance floor is not stated: unknown, and tight for 185.",
+        "ceremony_cocktail_check": "Only one hall is offered ('rents out its meeting hall'). No ceremony holding room or separate cocktail room is listed, so the separate-cocktail-space must-have is very likely to fail.",
+        "policy_check": "Music must turn off at 11:00pm; start and finish times include setup and breakdown. Alcohol allowed only with The Masters of Mixology bartending. Outside caterer implied (2024 post: 'Commercial grade, fully equipped kitchen'; hall page lists countertops, sink and ice machine). Free on-site parking for 75 cars. No rentals on Sundays, Tuesdays or the 3rd Wednesday (bingo).",
+        "price_check": "Confirmed 'GSVFD HALL RENTAL PRICING (2024)': $250/hr, 3-hr minimum, 50% off the total hourly charge for 9+ hours, so 11 h = $1,375 (2024). Tables are $100 each (rectangle, 8 chairs) with 50% off for 12+ tables. Rounds are not offered, so the model rents rounds (ASSUMPTION $10/guest). Bar quote from The Masters of Mixology: unknown (its site posts no prices).",
+        "booking_window": "Not stated. The calendar holds bookings into Nov 2028, which suggests Nov 2027 can be booked now (inference).",
+        "contact": "GSVFD Hall Event Coordinator 703-646-1579, bookings@gsvfd.org",
+        "notes": "Every scout fact checked out. Fails on cost (reserve only) and almost certainly on the separate cocktail room. Not worth an inquiry unless the couple accepts a single-room event."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/greater_springfield.json",
+      "model_result": {
+        "venue": "Greater Springfield VFD Community Hall (Springfield VA)",
+        "guests": 185,
+        "jurisdiction": "VA-FAIRFAX",
+        "all_in": 35662.74,
+        "per_guest": 192.77,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1546.69,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine (bar must be The Masters of Mixology; quote unknown))": 24591.6,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -12592.29,
+        "headroom_r1_trimmed": -3523.29,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": true,
+          "end time": "music off 11:00pm; rental hours include setup and breakdown"
+        },
+        "flags": [
+          "price from 2024: escalated x1.125; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://gsvfd.org/hall-rentals/",
+        "price_date": "GSVFD HALL RENTAL PRICING (2024)"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 35662.74,
+      "subtotal_at_185": 35662.74,
+      "max_caterer_all_in_pp": 113.88,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "Is there any second indoor room or lobby for a 185-guest cocktail hour, or a holding area for a ceremony flip?",
+        "How many guests fit at rounds of 8-10 with an 18x18 dance floor, buffet and DJ in the 3,060 sq ft hall? Can we bring in rented round tables?",
+        "What is the 2027 hourly rate, and does the 50% discount for 9+ hours still apply?",
+        "What does The Masters of Mixology charge per guest for beer and wine, and must we buy the alcohol through them?",
+        "What is the latest end time on a Saturday, with music off at 11pm?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "beth_el",
+      "name": "Beth El Hebrew Congregation Ballroom",
+      "town": "Alexandria, VA (3830 Seminary Rd)",
+      "type": "Synagogue ballroom rental, outside caterer (full kitchen access)",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+        "https://www.bethelhebrew.org/?p=83"
+      ],
+      "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+      "fetches": [
+        {
+          "url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+          "status": 200,
+          "final_url": "https://www.bethelhebrew.org/resources/plan-your-private-event/"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "prep work, and an ice machine. You and up to 290 of your closest friends and family will celebrate with 29 banquet tables, 290 chairs, and an 18&#8242; x 18&#8242; dance floor. Our expert maintenance team will set up the room according to your design and will take care of the break do"
+        },
+        {
+          "url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "break down too! Included in your rental are two uniformed members of the Alexandria Police and/or Sheriff&#8217;s Department to serve as security for the duration of your event. We can accommodate a Saturday night or Sunday night event. A Saturday night rental spans from 6 pm to midn"
+        },
+        {
+          "url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "ht event. A Saturday night rental spans from 6 pm to midnight &#8211; premises need to be vacated by 1 am. If you select a Sunday evening, your event will begin at 5 pm and end at 11 pm &#8211; premises need to be vacated by midnight. Set up begins at 2 pm and is also included in the"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Confirmed: 'up to 290 of your closest friends and family' with 29 banquet tables, 290 chairs and an 18' x 18' dance floor.",
+        "ceremony_cocktail_check": "Not stated. Only the ballroom is described. Whether non-members can use the sanctuary, a chapel or a lobby is unknown.",
+        "policy_check": "Included: setup from 2pm and breakdown by maintenance staff, and two uniformed Alexandria Police and/or Sheriff's officers. Saturday night rental 6pm-midnight, vacate by 1am. Sunday 5-11pm. Only Saturday or Sunday nights are offered, so Fri 12 Nov is not possible. Kitchen: double convection ovens, double pizza ovens, gas cooktop, microwave, ice machine. Alcohol, kosher, caterer and candle rules: not published. Search-snippet lead only (old bethelhebrew.org/welcome/ballroom-rental page, now 404): the rental form may be for members, though non-member weddings have been held.",
+        "price_check": "Not published ('Contact our Event Coordinator, Heather Glick, for more information and pricing'). Modeled at a $0 placeholder.",
+        "booking_window": "unknown",
+        "contact": "Event Coordinator Heather Glick via main office 703-370-9400 (no direct email published)",
+        "notes": "Strong on capacity and inclusions, but realistic only if the rental is a few hundred dollars or the caterer is cheaper than $134/guest all-in. A 6pm Saturday start (after Shabbat) means a 6pm ceremony."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/beth_el.json",
+      "model_result": {
+        "venue": "Beth El Hebrew Congregation Ballroom (Alexandria VA)",
+        "guests": 185,
+        "jurisdiction": "VA-ALEXANDRIA",
+        "all_in": 31628.31,
+        "per_guest": 170.96,
+        "lines": {
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 24815.16,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -8557.86,
+        "headroom_r1_trimmed": 511.14,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Saturday 6pm-midnight, vacate by 1am (setup from 2pm included); Sunday 5-11pm"
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://www.bethelhebrew.org/resources/plan-your-private-event/",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "price_completeness": "Unknown rental and required fees excluded; subtotal only",
+      "all_in_at_185": null,
+      "subtotal_at_185": 31628.31,
+      "max_caterer_all_in_pp": 136.9,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "unknown",
+      "open_questions": [
+        "What is the 2027 Saturday-night ballroom rental fee and deposit, and can non-members rent?",
+        "Is there an indoor ceremony space (sanctuary, chapel, or a ballroom flip with a holding room) and a separate room for a 185-guest cocktail hour?",
+        "Are outside non-kosher caterers allowed, and are there food rules (no pork or shellfish, kosher-style)?",
+        "Is alcohol allowed? Who must serve it, and what ABC license and insurance are needed?",
+        "Is the parking lot free for 185 guests, and are enclosed candles allowed?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "grays",
+      "name": "Gray's Event Center",
+      "town": "Woodbridge, VA (4323 Dale Blvd, Prince William County)",
+      "type": "Private banquet hall, rental with optional in-house Latino catering or your own caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://graysevents.com/",
+        "https://graysevents.com/venue",
+        "https://graysevents.com/availability-and-tour",
+        "https://graysevents.com/terms-of-service",
+        "https://calendar.google.com/calendar/ical/kl1kd8rco12s2njo3gvqqkl3i0%40group.calendar.google.com/public/basic.ics",
+        "https://www.pwcva.gov/department/tax-administration/food-and-beverage-tax"
+      ],
+      "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+      "fetches": [
+        {
+          "url": "https://graysevents.com/",
+          "status": 200,
+          "final_url": "https://graysevents.com/"
+        },
+        {
+          "key": "gray_venue",
+          "url": "https://graysevents.com/venue",
+          "status": 200
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://graysevents.com/",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "ings of 100 guest to large events with up to 200 guests. Is there a deposit required to book a banquet? Yes, we require an $1,000 deposit to secure your booking. The remaining balance is due 60 days before the event. Can we bring our own decorations? While we offer d\u00e9cor services, you"
+        },
+        {
+          "url": "https://graysevents.com/venue",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "Event Venue Woodbridge VA | 200-Guest Capacity | Gray&#x27;s Event Center ``` --- ### Page Content Structure (H1, H2, H3 tags) **H1 (Main Heading):** ``` Your Dream Event Venue in Woodbridge, Virginia ``` **H2 Headings (Use these subheadings on the page):** - Elegant"
+        },
+        {
+          "url": "https://graysevents.com/venue",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "dditional venue furnishings Other Amenities: Tables: 25 round (5 ft) 18 rectangular (8 ft) 4 cocktail tables 1 sweetheart table 2 six-foot utility table 200 Banquet chairs Easel for photo or sign display Convenience &amp; Location Easy highway access \u2014 just 7 minutes from I-95 Ample f"
+        },
+        {
+          "url": "https://graysevents.com/venue",
+          "price_year": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental",
+          "excerpt": "hway access \u2014 just 7 minutes from I-95 Ample free guest parking Event Parking MAP - Ample parking for your guests Need a perfect venue for your next celebration? This is it! u Click links below, and our team will get back to you quickly Get a Quote Tour In-Person We specialize in desi"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Official: 'comfortably hosts up to 200 guests with a banquet-style setup'. 25 round (5 ft) tables, 18 rectangular, 4 cocktail tables, 200 banquet chairs. 185 at rounds is possible (24 tables x 8). With a dance floor: not stated (unknown).",
+        "ceremony_cocktail_check": "Exclusive use of the whole facility: welcoming lobby area, private changing/dressing room, bar area. No separate ceremony room listed. Whether the lobby holds a 185-guest cocktail hour is unknown.",
+        "policy_check": "Outside caterers allowed ('You're also welcome to bring your own caterers'); own decorator allowed. Terms require compliance with 'Alcohol licensing requirements' (details unknown). End time unknown. Built-in speaker system for a DJ; bar area with a 300-bottle cooler.",
+        "price_check": "Not published. $1,000 non-refundable deposit; balance due 60 days before; possible 10% late fee (Terms effective 1 Jan 2026). CORRECTION: no dance floor is listed on the official site, so it is rented in the model. Included per the official site: tables and chairs, dressing room and 'ample free guest parking'.",
+        "booking_window": "Not stated. Bookings already run to 20 Nov 2027, so Nov 2027 dates can be booked now (inference).",
+        "contact": "571-373-1285; quote and tour forms on graysevents.com",
+        "notes": "Scout corrections: the dance floor is not included per the official site (only the Visit PWC lead said so); getting-ready room and free parking are included; the tax is 9%, not 6%; the first-choice backup date Sat 20 Nov 2027 is already booked. Its in-house caterer's prices are unknown."
+      },
+      "corrections": [
+        "Outside caterer/decorator allowed, but outside cake and DJ permission are not fully stated; full vendor approval unknown."
+      ],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/grays.json",
+      "model_result": {
+        "venue": "Gray's Event Center (Woodbridge VA)",
+        "guests": 185,
+        "jurisdiction": "VA-PRINCE-WILLIAM",
+        "all_in": 31331.49,
+        "per_guest": 169.36,
+        "lines": {
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 24368.04,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -8261.04,
+        "headroom_r1_trimmed": 807.96,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://graysevents.com/venue",
+        "price_date": "unknown; $0 is an omitted fee for sensitivity calculation, not free rental"
+      },
+      "price_completeness": "Unknown rental and required fees excluded; subtotal only",
+      "all_in_at_185": null,
+      "subtotal_at_185": 31331.49,
+      "max_caterer_all_in_pp": 136.08,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "unknown",
+      "open_questions": [
+        "What is the 2027 Saturday rental price and how many hours does it include (setup and breakdown)?",
+        "Can 185 be seated at rounds with a dance floor? Is a dance floor provided or rentable?",
+        "Where would the ceremony and a separate cocktail hour happen (lobby size? room flip?) and what does a flip cost?",
+        "What are the in-house catering per-guest prices, and the rules for an outside caterer (fees, insurance, kitchen use)?",
+        "What alcohol rules apply (licensed bartender, ABC banquet license, security), and what is the latest end time?",
+        "Is Sat 13 (or Sat 6) Nov 2027 still open?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "mclean",
+      "name": "McLean Community Center: Community Hall",
+      "town": "McLean, VA (1234 Ingleside Ave, Fairfax County)",
+      "type": "Special-tax-district community center, rental + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://mcleancenter.org/rentals",
+        "https://mcleancenter.org/wp-content/uploads/2026/09/Rental-Fees-Updated-Sept.-30-2026.pdf",
+        "https://mcleancenter.org/mcc-booking-form/"
+      ],
+      "price_year": "Effective May2023 per PDF, postedSep2026; escalated four years to2027",
+      "fetches": [
+        {
+          "url": "https://mcleancenter.org/rentals",
+          "status": 200,
+          "final_url": "https://mcleancenter.org/rentals/"
+        },
+        {
+          "key": "mclean_fees",
+          "url": "https://mcleancenter.org/wp-content/uploads/2026/09/Rental-Fees-Updated-Sept.-30-2026.pdf",
+          "status": 200
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://mcleancenter.org/rentals",
+          "price_year": "schedule effective 5.2023, posted 30 Sep 2026; modeled as 2026",
+          "excerpt": "ree parking. Rooms include seating for up to 250 people, theater style, a full commercial kitchen and multimedia equipment. Book MCC Contact us Telephone : 703-790-0123 1234 Ingleside Ave. McLean, VA 22101 Hours of operation Monday\u2013Thursday: 8 a.m.\u201311 p.m. Friday: 8 a.m.\u2013Midnight Satu"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Community Hall 3,000 sq ft (divisible into A/B/C, 1,000 each). MCC says 'Rooms include seating for up to 250 people, theater style'. Banquet or rounds-with-dance-floor capacity is not published: unknown, borderline for 185.",
+        "ceremony_cocktail_check": "Cocktail: McLean Room (1,000 sq ft) or DuVal Studio (1,100 sq ft), both tight for 185 standing. Ceremony: Community Hall flip, or the Alden Theatre (383 seats; Cat. 3 $275/hr with a 4-hr minimum; no Cat. 4 rate listed).",
+        "policy_check": "Hours: Friday 8am-midnight, Saturday 9am-midnight. 'Plenty of free parking'; full commercial kitchen. The booking form asks 'Alcohol Required? yes/no', so alcohol may be possible, but the rules are not published. Caterer rules not published.",
+        "price_check": "Confirmed from the rendered fee schedule 'Effective as of 5.2023' (current file posted 30 Sep 2026). Category 4 non-local: Community Hall $180/hr (3-hr min), Halls A/B/C $60/hr, McLean Room $50/hr, DuVal Studio $50/hr, Kitchen $20/hr. Small District One residents (Cat. 3) pay half. Modeled: Hall 11 h $1,980 + Kitchen 11 h $220 + McLean Room 3 h $150 = $2,350 (treated as 2026 pricing, x1.04).",
+        "booking_window": "unknown",
+        "contact": "703-790-0123; mcleancenter.org/mcc-booking-form (preliminary booking form, not submitted)",
+        "notes": "Scout's figures confirmed. Even if MCC supplies tables, chairs and setup (about -$2,500), it is still about $1,900 over the trimmed envelope with the assumed caterer."
+      },
+      "corrections": [
+        "Corrected effective2023 price year; posting2026 does not establish2026 effective rates."
+      ],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/mclean.json",
+      "model_result": {
+        "venue": "McLean Community Center Community Hall (McLean VA)",
+        "guests": 185,
+        "jurisdiction": "VA-FAIRFAX",
+        "all_in": 36865.22,
+        "per_guest": 199.27,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2749.17,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 24591.6,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -13794.77,
+        "headroom_r1_trimmed": -4725.77,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "building rental hours Sat 9am-midnight, Fri 8am-midnight"
+        },
+        "flags": [
+          "price from 2023: escalated x1.170; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://mcleancenter.org/wp-content/uploads/2026/09/Rental-Fees-Updated-Sept.-30-2026.pdf",
+        "price_date": "Effective May2023 per PDF, postedSep2026; escalated four years to2027"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 36865.22,
+      "subtotal_at_185": 36865.22,
+      "max_caterer_all_in_pp": 107.38,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "How many guests fit at rounds with a dance floor in the 3,000 sq ft Community Hall?",
+        "Is alcohol allowed? Who serves it, and what license, insurance or security is needed?",
+        "Are tables, chairs and setup/breakdown included in the hourly rate?",
+        "Can a non-local renter book the McLean Room and DuVal Studio together for a 185-guest cocktail hour, and what does a ceremony flip involve?",
+        "How far ahead can a non-local renter book a Saturday in November 2027?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "columbus",
+      "name": "Columbus Club of Arlington (Knights of Columbus): Main Ballroom",
+      "town": "Arlington, VA (5115 Little Falls Rd)",
+      "type": "Fraternal hall with in-house catering packages (outside caterer only at a much higher rental)",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "http://www.columbusclubevents.com",
+        "http://www.columbusclubevents.com/rentals",
+        "http://www.columbusclubevents.com/services",
+        "http://www.columbusclubevents.com/menus",
+        "https://www.columbusclubevents.com/files/offerings.pdf",
+        "https://www.columbusclubevents.com/files/silver-wedding-package.pdf",
+        "https://www.columbusclubevents.com/files/gold-weding-package.pdf",
+        "https://www.columbusclubevents.com/files/menu-11-2-23.pdf"
+      ],
+      "price_year": "Nov 2023 PDFs; escalated to 2027 by the model",
+      "fetches": [
+        {
+          "url": "https://www.columbusclubevents.com/files/silver-wedding-package.pdf",
+          "status": 200,
+          "final_url": "https://www.columbusclubevents.com/files/silver-wedding-package.pdf"
+        },
+        {
+          "url": "https://www.columbusclubevents.com/files/offerings.pdf",
+          "status": 200,
+          "final_url": "https://www.columbusclubevents.com/files/offerings.pdf"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://www.columbusclubevents.com/files/silver-wedding-package.pdf",
+          "price_year": "Nov 2023 PDFs; escalated to 2027 by the model",
+          "excerpt": "Silver Wedding R eception Package\n$85.00 per person\n\nIncludes\n\nEntr\u00e9e\n\nUse of Ballroom for Five Hours\nThree Hour Open Bar -Wine, Beer & Soft Drinks\nBridal Suite with Complimentary Champagne\nWhite Linens & Napkins\nRoom set up to Guest Specifications\nRedcoat Wait Staff\nCoffee"
+        },
+        {
+          "url": "https://www.columbusclubevents.com/files/silver-wedding-package.pdf",
+          "price_year": "Nov 2023 PDFs; escalated to 2027 by the model",
+          "excerpt": "ople.)\nMain Ballroom rental is an additional $3,500.00 plus tax.\nall prices subject to 20% gratuity , 6% virginia state tax , and 4 % arlington meal tax ; above pricing excludes venue rental fees\n\n3"
+        },
+        {
+          "url": "https://www.columbusclubevents.com/files/silver-wedding-package.pdf",
+          "price_year": "Nov 2023 PDFs; escalated to 2027 by the model",
+          "excerpt": "al $3,500.00 plus tax.\nall prices subject to 20% gratuity , 6% virginia state tax , and 4 % arlington meal tax ; above pricing excludes venue rental fees\n\n3"
+        },
+        {
+          "url": "https://www.columbusclubevents.com/files/offerings.pdf",
+          "price_year": "Nov 2023 PDFs; escalated to 2027 by the model",
+          "excerpt": "Venue Rental Fees\nmain ballroom\n\n$3,500.00 for 5 hours of Rental*\n\n*with outside caterer $8,000.00\n\nComfortably seats up to 350 people\nbarbecue pavilion\n$500.00 for 4 hours of Rental\nAdditional $150 for an event manager\nIncludes the usage of Grounds and Sporting Courts\nSwi"
+        },
+        {
+          "url": "https://www.columbusclubevents.com/files/offerings.pdf",
+          "price_year": "Nov 2023 PDFs; escalated to 2027 by the model",
+          "excerpt": "balance is due 15 days prior to the event. A 20% gratuity, 6% sales tax and 4%\nArlington County Food tax is added to all food & beverage orders. Menu prices are subject\nto change and are not confirmed until 15 days prior to your event.\n\n1\n\n\fThe Event\nWith the exception of the wedding"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Main Ballroom is 55.5' x 98' (about 5,400 sq ft) with an inset 25' x 22' stage and a full-service bar area; 'comfortably seats from 120 to 350 people'. Rounds-with-dance-floor capacity is not stated, but the room size makes 185 plausible. Dance floor not mentioned.",
+        "ceremony_cocktail_check": "Smaller 'Paradise Ballroom' on the lower level (capacity unknown) could hold the ceremony or cocktail hour; the third venue, the BBQ pavilion, is outdoor. The historic mansion (Council Home) is 'exclusively reserved for members'. Indoor ceremony and separate cocktail space: unknown.",
+        "policy_check": "No outside food or beverage except the wedding cake. The ballroom is open to members and non-members. Non-refundable deposit due immediately to hold a date; 50% at contract signing; balance 15 days before. End time, candle rules and outside DJ/florist rules: not published. Full-time chef and staff on site.",
+        "price_check": "CORRECTED: prices ARE published (PDFs dated Nov 2023). Main Ballroom $3,500 for 5 hours (+6% VA tax); with an outside caterer the ballroom costs $8,000 and the caterer must supply all tables, chairs, china, linens, setup and cleanup (no kitchen use). Extended hours $500/hr. Silver Wedding Package $85/guest (2023): 5 h ballroom use, 3-hour open bar of wine, beer and soft drinks, bridal suite with champagne, white linens and napkins, room setup, Redcoat wait staff, coffee, cake cutting, complimentary parking, seasonal coat check, a hors d'oeuvres display, first course and entree. Gold package $105/guest (2023). Packages are priced at 120 guests. The ballroom rental is extra. 20% gratuity plus tax on F&B (the PDF says 4% Arlington; it has been 5% since 1 Jul 2025). Chair covers $4.50.",
+        "booking_window": "unknown (deposit secures the date)",
+        "contact": "703-536-9656 ext. 7 (website); Event Coordinator ext. 311 (offerings PDF)",
+        "notes": "The most promising new lead: an in-house package close to the ceiling, with free parking and a bridal suite. The 2023 prices may have risen more than 4% a year, and the ceremony and cocktail rooms are unconfirmed."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/columbus.json",
+      "model_result": {
+        "venue": "Columbus Club of Arlington Main Ballroom, Silver Wedding Package (Arlington VA)",
+        "guests": 185,
+        "jurisdiction": "VA-ARLINGTON",
+        "all_in": 32966.61,
+        "per_guest": 178.2,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 4679.43,
+          "tax on rental fee": 245.67,
+          "in-house F&B (package/minimum)": 18396.03,
+          "F&B service charge": 3679.21,
+          "F&B tax": 2428.28,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 108.0,
+          "wedding cake + tasting/delivery": 1630.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9896.16,
+        "headroom_r1_trimmed": -827.16,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "price from 2023: escalated x1.170; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available",
+        "source_url": "https://www.columbusclubevents.com/files/offerings.pdf",
+        "price_date": "Nov 2023 PDFs; escalated to 2027 by the model"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 32966.61,
+      "subtotal_at_185": 32966.61,
+      "max_caterer_all_in_pp": null,
+      "max_caterer_note": "In-house package; outside-caterer ceiling not applicable.",
+      "fit": "no",
+      "open_questions": [
+        "What are the 2027 Silver package price and ballroom rental, and is there per-guest pricing at 185 rather than 120?",
+        "Is the ballroom floor usable for dancing, or must a dance floor be rented?",
+        "Where can an indoor ceremony and a separate 185-guest cocktail hour be held (Paradise Ballroom capacity and fee), and how many hours are needed?",
+        "What is the latest end time, and can we bring an outside DJ and florist and use enclosed candles?",
+        "Is Sat 13 Nov 2027 (or Sat 6 / Sat 20 Nov) available, and how much is the non-refundable deposit?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "lee_center",
+      "name": "Nannie J. Lee Memorial Recreation Center (Lee Center): Exhibit Hall + Kauffman Auditorium",
+      "town": "Alexandria, VA (1108 Jefferson St)",
+      "type": "City recreation center, rental + outside caterer",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.alexandriava.gov/sites/default/files/2026-06/RPCAFY2027FeeSchedule.pdf",
+        "https://www.alexandriava.gov/go/4638",
+        "https://www.alexandriava.gov/sites/default/files/2024-03/recreation_center_information.pdf",
+        "https://alexandriava.gov/sites/default/files/2024-07/FacilityReservationFormFillable_EN.pdf"
+      ],
+      "price_year": "FY2027 (eff. 1 Jul 2026)",
+      "fetches": [
+        {
+          "url": "https://www.alexandriava.gov/sites/default/files/2026-06/RPCAFY2027FeeSchedule.pdf",
+          "status": 200,
+          "final_url": "https://www.alexandriava.gov/sites/default/files/2026-06/RPCAFY2027FeeSchedule.pdf"
+        }
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://www.alexandriava.gov/sites/default/files/2026-06/RPCAFY2027FeeSchedule.pdf",
+          "price_year": "FY2027 (eff. 1 Jul 2026)",
+          "excerpt": "tural Activities (RPCA)\n\nFY2027 FEE\nSCHEDULE\nEffective July 1, 2026\n\n\fRPCA FY2027\nFee Schedule, Effective July 1, 2026\n\nTABLE OF CONTENTS\n\nFee Guidelines\nRoom Rental Fees (Based on Occupancy)\nRoom Rental Application, Security Deposit,\nand Staffing Fees\nABC Permission Fees\nSpecial Even"
+        },
+        {
+          "url": "https://www.alexandriava.gov/sites/default/files/2026-06/RPCAFY2027FeeSchedule.pdf",
+          "price_year": "FY2027 (eff. 1 Jul 2026)",
+          "excerpt": "ion\nUp to $500\n$45 per hour per staff (M-F);\n$59 per hour per staff (Sa, Su, Holidays & After Hours)\n\n1 Groups are de\ufb01ned on page 3\n2 Staff fees will also be charged if necessary\n\n4\n\n\fRPCA FY2027\nFee Schedule, Effective July 1, 2026\n\nABC PERMISSION FEES\nThe fee is non-refundable. A pe"
+        }
+      ],
+      "prior_verified_facts": {
+        "capacity_check": "Exhibit Hall fee class '125+ people'; banquet capacity not published (unknown). Kauffman Auditorium 'seats up to 400 guests'.",
+        "ceremony_cocktail_check": "Ceremony: Kauffman Auditorium. Cocktail: no stated room for 185 (a Large Room is 51-125).",
+        "policy_check": "Alcohol permit 'at facilities and parks where permitted'; the reservation form says alcohol is 'Not available at all locations'. Lee Center eligibility unknown. Center open Mon-Fri 9am-7pm; weekend rental hours not stated. Courtyard construction under way.",
+        "price_check": "Confirmed RPCA FY2027 (effective 1 Jul 2026), non-resident: Exhibit Hall/Large Multipurpose $135/hr, Kitchen $53/hr, Kauffman $199/hr, Large Room $95/hr; staff $59/hr per staff on Saturdays/after hours; $25 application; deposit up to $500; ABC permission $50 (dept) or $100 (special events). Resident rates $115/$39/$149/$75. Nov 2027 falls in FY2028 (modeled x1.04).",
+        "booking_window": "unknown",
+        "contact": "Lee Center 703.746.5414; Center Director Senai Beyen",
+        "notes": "Scout figures confirmed. Not worth pursuing at 185 guests."
+      },
+      "corrections": [],
+      "availability": "unknown; earlier calendar observations are not a hold",
+      "spec": "wedding/output/specs/hall_venues/lee_center.json",
+      "model_result": {
+        "venue": "Nannie J. Lee Recreation Center Exhibit Hall (Alexandria VA)",
+        "guests": 185,
+        "jurisdiction": "VA-ALEXANDRIA",
+        "all_in": 39814.49,
+        "per_guest": 215.21,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 4364.88,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 24815.16,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -16744.04,
+        "headroom_r1_trimmed": -7675.04,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": true,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": true
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "OVER by $2,220 even trimmed + reserve -- PENDING answers: seats guests with dance floor, separate cocktail-hour space, date available",
+        "source_url": "https://www.alexandriava.gov/sites/default/files/2026-06/RPCAFY2027FeeSchedule.pdf",
+        "price_date": "FY2027 (eff. 1 Jul 2026)"
+      },
+      "price_completeness": "Scenario, not quote; unknown ceremony/extra-room/required fees may be missing",
+      "all_in_at_185": 39814.49,
+      "subtotal_at_185": 39814.49,
+      "max_caterer_all_in_pp": 92.65,
+      "max_caterer_note": "Includes food, staff, bar, soft drinks, bartenders, service and tax; excludes cake/cutting and rentals already separately priced. Subtract each additional total venue dollar /185. Ceiling uses strict $32,139, not reserve.",
+      "fit": "no",
+      "open_questions": [
+        "Is alcohol permitted at the Lee Center Exhibit Hall?",
+        "What is the Exhibit Hall's banquet capacity with a dance floor?",
+        "What Saturday rental hours and how many staff are required for 185 guests?"
+      ],
+      "model_caveats": [
+        "All outside catering is the stipulated assumption, not a vendor quote.",
+        "Price-year unknown website rates retain prior conservative2026 estimate where used; availability/drive time/heat need confirmation.",
+        "Known included items follow prior official checks; any inclusion not freshly rechecked remains prior evidence."
+      ]
+    },
+    {
+      "id": "oak_room",
+      "name": "Oak Room at Sandy Spring VFD",
+      "town": "Sandy Spring, MD",
+      "type": "rental",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://ssvfd.org/the-oak-room/",
+        "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+        "https://ssvfd.org/wp-content/uploads/2026/06/2023-Oak-Room-Rules-And-Regulations.pdf"
+      ],
+      "price_year": 2026,
+      "verification": {
+        "name": "Oak Room at Sandy Spring VFD",
+        "checked_on": "2026-11-08",
+        "price_year": 2026,
+        "sources": [
+          {
+            "url": "https://ssvfd.org/the-oak-room/",
+            "initial_error": "HTTP Error 403: Forbidden",
+            "status": 200,
+            "retry": "Ordinary curl -L -sS succeeded; no authentication or challenge bypass used."
+          },
+          {
+            "url": "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+            "initial_error": "HTTP Error 403: Forbidden",
+            "status": 200,
+            "retry": "Ordinary curl -L -sS succeeded; no authentication or challenge bypass used."
+          },
+          {
+            "url": "https://ssvfd.org/wp-content/uploads/2026/06/2023-Oak-Room-Rules-And-Regulations.pdf",
+            "initial_error": "HTTP Error 403: Forbidden",
+            "status": 200,
+            "retry": "Ordinary curl -L -sS succeeded; no authentication or challenge bypass used."
+          }
+        ],
+        "verified_facts": {
+          "capacity": "Official hall page freshly confirms220 seated with dance floor,240seated without;4000sqft; separate breakout room with unknown capacity.",
+          "price": "2026 contract: Saturday$3000/8h; Friday$2500/8h; extra contracted hour$200; outside caterer$500. Events end12am/music11pm. Holiday surcharge$1000 (not applicable to target dates).",
+          "inclusions": "Tables/chairs220 but renter sets/strikes; kitchen, breakout room, elevator, free parking135cars.",
+          "payment": "$500nonrefundable deposit credited to rent; final oneweek before. Cancellation>=91days refunds other monies; within90days refunds discretionary.",
+          "policies": "Approved licensed insured outside caterer; licensed/certified bartender approved by staff one day prior; all deliveries/setup/collection inside booked hours; florist/musician vendors explicitly contemplated; candles staff-approved enclosed glass flame<=2in.",
+          "contact": "Chuck301-518-4073; crdscatering@verizon.net (public email encoded on official page); contract management Renaissance Chef301-228-2433/info@renaissancechef.com."
+        },
+        "unknowns": [
+          "Indoor heated ceremony or priced flip and a 185-person holding room; separate breakout-room capacity for cocktails; 2027 fees and dates; early access and getting-ready options."
+        ],
+        "contact": {
+          "phone": "301-518-4073",
+          "email": "crdscatering@verizon.net",
+          "status": "Fresh official page; public Cloudflare email encoding decoded locally."
+        },
+        "model_corrections": [
+          "Freshly confirmed 2026 Saturday rent $3000, outside-caterer fee $500, two extra hours $400 for 10 total hours, +4% to 2027; all amounts from freshly fetched official contract.",
+          "Freshly confirmed220 seated with dance floor; tables/chairs included but renter setup required; free lot; no getting-ready room published. Do not treat breakout room as confirmed capacity185.",
+          "No actual budget caterer quote exists. Prior $27.2K low-end is a different caterer scenario, not placeholder-caterer price."
+        ],
+        "prior_verification": {
+          "name": "The Oak Room at Sandy Spring Volunteer Fire Department",
+          "verdict": "confirmed",
+          "corrected_fit": "Fits at 185 only with the other categories trimmed AND a budget caterer. Food, drink and bartenders must stay at or below about $119/guest; the scout's low case is $92/guest. At 150 as-is it fits only up to about $97/guest; trimmed, up to about $156/guest. At the workbook's mid-range catering (about $205/guest) it does not fit any envelope.",
+          "evidence": "Official page: 220 seated with a dance floor, 240 seated without, 500 standing; 4,000 sq ft; large dance floor; separate break-out room; 135 free parking spaces; outside food adds $500. The page itself says 'pricing varies' (contact: Chuck, 301-518-4073). The 2026 contract PDF gives Saturday $3,000 for 8 contracted hours, extra hours $200, overtime $500/hr, holiday surcharge $1,000, and a $500 non-refundable deposit applied to the rent. Events end by 12am and music by 11pm. Tables and chairs for 220 are included, but the renter sets them up and breaks them down. Bartenders must be licensed or certified. The rules PDF allows candles only with staff approval, enclosed in glass, flame no taller than 2 in. No getting-ready room is mentioned anywhere.",
+          "capacity_check": "Confirmed: 220 seated with a dance floor (official page). Break-out room capacity for a 185-guest cocktail hour is not stated.",
+          "policy_check": "Confirmed. Renaissance Chef Catering or an approved outside caterer (+$500, food license and insurance required). Certified bartender required. Renter moves tables and chairs to and from the closet, supplies trash bags and dish soap, and takes trash to the dumpster.",
+          "price_check": "Confirmed from the 2026 contract (posted 2026/06). No 2027 rates are published, so the +4% default applies.",
+          "source": "https://ssvfd.org/the-oak-room/ ; https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf ; https://ssvfd.org/wp-content/uploads/2026/06/2023-Oak-Room-Rules-And-Regulations.pdf",
+          "corrected_allin_185": "$27,152 (low) to $36,685 (high), using a budget caterer and a beer-and-wine bar (scout's assumption, not the workbook's). $48,103 at the workbook mid-range. Venue-side costs $10,087: ($3,000 + 2 extra hours $400 + outside-caterer fee $500) x 1.04 = $4,056, plus $22.60/guest, $150 cake tasting and delivery, $600 rental delivery, $600 off-site getting-ready, and $500 setup labor (an assumption).",
+          "corrected_allin_150": "$23,046 to $30,775; $40,033 at mid-range. Venue-side costs $9,296."
+        }
+      },
+      "spec": "wedding/output/specs/hall_venues/oak_room.json",
+      "scenario_assumptions": "Prior2026official contract. 10h total, two added hours, $500outside-caterer fee; 2027 quote unknown.",
+      "model_result": {
+        "venue": "Oak Room at Sandy Spring VFD",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 34178.01,
+        "per_guest": 184.75,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 4056.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 208.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -11107.56,
+        "headroom_r1_trimmed": -2038.56,
+        "must_haves": {
+          "seats guests with dance floor": true,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": "events end 12:00am; music ends 11:00pm"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+        "price_date": "2026 contract"
+      },
+      "all_in_at_185": 34178.01,
+      "subtotal_at_185": 34178.01,
+      "price_completeness": "Scenario only; missing unquoted required space/ceremony fees may raise total. No held date or guaranteed2027 quote.",
+      "max_caterer_all_in_pp": 117.79,
+      "max_caterer_note": "Ceiling at strict32139. For hybridHolidayInn includes combined outside-food/hotel-bar, not outside caterer alone. All unknown fees reduce ceiling by fee/185.",
+      "fit": "no",
+      "open_questions": [
+        "All three official URLs returned HTTP 403 on this pass. Existing round2 verification is retained, not represented as a new fetch.",
+        "Indoor heated ceremony or priced flip and a 185-person holding room; separate breakout-room capacity for cocktails; 2027 fees and dates; early access and getting-ready options."
+      ]
+    },
+    {
+      "id": "vienna_vfd",
+      "name": "Vienna VFD Event Hall",
+      "town": "Vienna, VA",
+      "type": "rental",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://vvfd.org/event-space/",
+        "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+        "https://vvfd.simplybook.me/v2/"
+      ],
+      "price_year": 2027,
+      "verification": {
+        "name": "Vienna VFD Event Hall",
+        "checked_on": "2026-11-08",
+        "price_year": 2027,
+        "sources": [
+          {
+            "url": "https://vvfd.org/event-space/",
+            "final_url": "https://vvfd.org/event-space/",
+            "status": 200,
+            "length": 6401
+          },
+          {
+            "url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+            "final_url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+            "status": 200,
+            "length": 494
+          },
+          {
+            "url": "https://vvfd.simplybook.me/v2/",
+            "final_url": "https://vvfd.simplybook.me/v2/",
+            "status": 200,
+            "length": 79
+          }
+        ],
+        "verified_facts": {
+          "rental": "2027 VVFD Event Hall Pricing: Saturday evening $3500; Friday evening $2250; kitchen $400, custom table arrangement $400, A/V $100.",
+          "capacity": "Official event page: up to240; main room60ft x80ft and platform8ft x15ft; 20 six-foot circular tables and50 rectangular tables. No capacity at rounds WITH dance floor published.",
+          "policies": "Official FAQ allows outside food/caterer and alcohol with VA ABC license; all music must stop by11pm and be <=90dB. Free parking up to75 vehicles plus street parking.",
+          "fees": "Official FAQ says a cleaning fee or reconfiguration fee may apply; exact cleaning amount not on fresh static page."
+        },
+        "unknowns": [
+          "Separate cocktail/holding room for185 unknown: only coat room identified. Heated indoor ceremony plan/flip cost unknown. Full event end time8h window and extra-hour/support/cleaning charges are carried from prior booking-site verification; widget now yields no static content. Candle policy and outside DJ/florist/cake rules, availability/booking window unknown."
+        ],
+        "contact": {
+          "phone": "703-594-6117",
+          "email": "hallrental@vvfd.org",
+          "email_status": "prior round3 official booking-site verification; phone freshly read on official event page"
+        },
+        "model_corrections": [
+          "Use Town of Vienna tax jurisdiction rather than automatically Fairfax County; verify applicable catering tax.",
+          "Do not model240 as confirmed seated-with-dance-floor capacity.",
+          "Include kitchen/custom setup plus carried $400 cleaning, $200 extra hours for10h and potential $200 support pending written quote. Include ABC license assumption if venue demands renter license."
+        ]
+      },
+      "spec": "wedding/output/specs/hall_venues/vienna_vfd.json",
+      "scenario_assumptions": "10h scenario; otherfees=400kitchen+400custom setup+400cleaning+200support. Custom arrangement includes initial setup only; teardown needs confirmation. ABClicense100 assumption.",
+      "model_result": {
+        "venue": "Vienna VFD Event Hall",
+        "guests": 185,
+        "jurisdiction": "VA-VIENNA",
+        "all_in": 36766.75,
+        "per_guest": 198.74,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 5100.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 24591.6,
+          "one-day liquor license": 100.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -13696.3,
+        "headroom_r1_trimmed": -4627.3,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "11pm, including cleanup (prior booking verification)"
+        },
+        "flags": [],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+        "price_date": "2027 published rent/kitchen/custom arrangement; cleaning/support/extra hours carried prior official booking site"
+      },
+      "all_in_at_185": 36766.75,
+      "subtotal_at_185": 36766.75,
+      "price_completeness": "Scenario only; missing unquoted required space/ceremony fees may raise total. No held date or guaranteed2027 quote.",
+      "max_caterer_all_in_pp": 107.91,
+      "max_caterer_note": "Ceiling at strict32139. For hybridHolidayInn includes combined outside-food/hotel-bar, not outside caterer alone. All unknown fees reduce ceiling by fee/185.",
+      "fit": "no",
+      "open_questions": [
+        "Separate cocktail/holding room for185 unknown: only coat room identified. Heated indoor ceremony plan/flip cost unknown. Full event end time8h window and extra-hour/support/cleaning charges are carried from prior booking-site verification; widget now yields no static content. Candle policy and outside DJ/florist/cake rules, availability/booking window unknown."
+      ]
+    },
+    {
+      "id": "sherwood",
+      "name": "Stacy C. Sherwood Community Center, Entire Center",
+      "town": "Fairfax City, VA",
+      "type": "rental",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.fairfaxva.gov/files/assets/city/v/3/parks-amp-rec/documents/scscc-pricing-policies-contract-fiscal-year-2026-fillable-updated.pdf",
+        "https://www.fairfaxva.gov/Fun-Facilities/Facilities/Rent-a-Venue/Stacy-C-Sherwood-Community-Center-Event-Venue"
+      ],
+      "price_year": 2026,
+      "verification": {
+        "name": "Stacy C. Sherwood Community Center",
+        "checked_on": "2026-11-08",
+        "price_year": 2026,
+        "sources": [
+          {
+            "url": "https://www.fairfaxva.gov/files/assets/city/v/3/parks-amp-rec/documents/scscc-pricing-policies-contract-fiscal-year-2026-fillable-updated.pdf",
+            "final_url": "https://www.fairfaxva.gov/files/assets/city/v/3/parks-amp-rec/documents/scscc-pricing-policies-contract-fiscal-year-2026-fillable-updated.pdf",
+            "status": 200,
+            "length": 44929
+          },
+          {
+            "url": "https://www.fairfaxva.gov/Fun-Facilities/Facilities/Rent-a-Venue/Stacy-C-Sherwood-Community-Center-Event-Venue",
+            "final_url": "https://www.fairfaxva.gov/Fun-Facilities/Facilities/Rent-a-Venue/Stacy-C-Sherwood-Community-Center-Event-Venue",
+            "status": 200,
+            "length": 12339
+          }
+        ],
+        "verified_facts": {
+          "rent": "FY2026 PDF: Saturday Entire Center $3500/5h plus$700/h; Full Performance $3000/5h plus$600/h. Nonresident rate used; resident discount not assumed.",
+          "capacity": "PDF full Performance333 banquet wall-to-wall; Rehearsal70 banquet/71theater; Art60 banquet/61theater. Rounds-with-dance-floor capacity unknown.",
+          "hours": "Friday/Saturday rental7am\u20131am; event must end12am;12\u20131am cleanup only. Setup/cleanup count in reserved hours.",
+          "flip": "City staff set tables/chairs; only one staff assists ceremony-to-reception transition and ordinary hourly rent continues; renter supplies helpers.",
+          "alcohol": "Full/Entire Center alcohol fee$300; VA banquet license and$1M insurance naming city required. Security$150 applies only to end past10pm AND more than200 guests.",
+          "other": "Caterer corner$50; warming only. Flames may not rise above container. Rehearsal/Art rooms held for city programming until about3months out. Shared-space eating prohibited; hallways clear.",
+          "booking": "Current official page permits applications up to2years in advance; PDF requires >=6weeks notice. Deposit Entire$900/Full$650; final payment60days prior."
+        },
+        "unknowns": [
+          "185-person separate cocktail/holding room not established (small rooms only130 banquet combined). Ask venue before treating any price as a fit. 2027/FY2028 rates, round-table dance-floor plan and date availability unknown."
+        ],
+        "contact": {
+          "email": "rentalvenues@fairfaxva.gov",
+          "phone": "703-385-7858",
+          "status": "fresh official PDF/page"
+        },
+        "model_corrections": [
+          "Use full10\u201311h, not misleading5h room minimum; whole-center10h=$7000 before alcohol/kitchen and escalation. FY2026 dated sheet modeled2026+4%; ask actual FY2028 rate.",
+          "Do not convert333 wall-to-wall capacity into confirmed dance-floor capacity.",
+          "Do not state separate cocktail room=true simply because two small rooms exist."
+        ]
+      },
+      "spec": "wedding/output/specs/hall_venues/sherwood.json",
+      "scenario_assumptions": "11h Entire Center 3500+6x700=7700; 300alcohol+50kitchen. No confirmed185 cocktail room; dance floor and parking treated unknown cost defaults.",
+      "model_result": {
+        "venue": "Stacy C. Sherwood Community Center, Entire Center",
+        "guests": 185,
+        "jurisdiction": "VA-FAIRFAX-CITY",
+        "all_in": 41260.53,
+        "per_guest": 223.03,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 8372.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 24703.38,
+          "one-day liquor license": 100.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -18190.08,
+        "headroom_r1_trimmed": -9121.08,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Event12am; cleanup ends1am"
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "OVER by $3,667 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.fairfaxva.gov/files/assets/city/v/3/parks-amp-rec/documents/scscc-pricing-policies-contract-fiscal-year-2026-fillable-updated.pdf",
+        "price_date": "FY2026 rate sheet, modeled2026+4%; actual FY2028 unknown"
+      },
+      "all_in_at_185": 41260.53,
+      "subtotal_at_185": 41260.53,
+      "price_completeness": "Scenario only; missing unquoted required space/ceremony fees may raise total. No held date or guaranteed2027 quote.",
+      "max_caterer_all_in_pp": 84.23,
+      "max_caterer_note": "Ceiling at strict32139. For hybridHolidayInn includes combined outside-food/hotel-bar, not outside caterer alone. All unknown fees reduce ceiling by fee/185.",
+      "fit": "no",
+      "open_questions": [
+        "185-person separate cocktail/holding room not established (small rooms only130 banquet combined). Ask venue before treating any price as a fit. 2027/FY2028 rates, round-table dance-floor plan and date availability unknown."
+      ]
+    },
+    {
+      "id": "silver_spring_civic",
+      "name": "Silver Spring Civic Building Great Hall, nonresident",
+      "town": "Silver Spring, MD",
+      "type": "hourly",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+        "https://www.montgomerycountymd.gov/silver-spring-civic-building-policies-procedures",
+        "https://www.montgomerycountymd.gov/community-use-public-facilities/find-community-space/silver-spring-civic-building-veterans-plaza"
+      ],
+      "price_year": "unknown (undated current rate page)",
+      "verification": {
+        "name": "Silver Spring Civic Building Great Hall",
+        "checked_on": "2026-11-08",
+        "price_year": "unknown (undated current rate page)",
+        "sources": [
+          {
+            "url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+            "final_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+            "status": 200,
+            "length": 6061
+          },
+          {
+            "url": "https://www.montgomerycountymd.gov/silver-spring-civic-building-policies-procedures",
+            "final_url": "https://www.montgomerycountymd.gov/silver-spring-civic-building-policies-procedures",
+            "status": 200,
+            "length": 13081
+          },
+          {
+            "url": "https://www.montgomerycountymd.gov/community-use-public-facilities/find-community-space/silver-spring-civic-building-veterans-plaza",
+            "final_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/find-community-space/silver-spring-civic-building-veterans-plaza",
+            "status": 200,
+            "length": 6398
+          }
+        ],
+        "verified_facts": {
+          "rent": "Current county page out-of-county Great Hall$485/h; Atrium$65/h; kitchen$40/h; large activity rooms$80/h. Four-hour minimum Fri\u2013Sun. Event monitor$45/h; security$40/h; building worker$30/h; other/admin fees possible.",
+          "capacity": "Great Hall5,046sqft,320 banquet,725standing; no dance-floor seating figure. Activity rooms100\u2013120standing; Great Hall movable air wall.",
+          "booking": "Policy permits entire Great Hall request18months ahead with CUPF approval; other spaces12months. Approval is required, not automatic confirmed availability.",
+          "payment": "Great Hall nonrefundable$250confirmation applied to total; half permit cost due14days after approved permit, final90days before event.",
+          "catering": "Own licensed/insured caterer permitted; warming only. Free hosted bar requires approved alcohol-management plan; liquor liability names county. Additional security mandatory with alcohol.",
+          "inclusions": "Tables/chairs complimentary; sprung wood floors. Guests use public garages across street. Small votive candles require prior permit approval."
+        },
+        "unknowns": [
+          "Round-table dance-floor seating, heated ceremony/holding plan185, Atrium exclusive capacity and use, staffing duration/headcount, all fees and latest end time, parking charges and dates unknown."
+        ],
+        "contact": {
+          "email": "CUPFCivicBuilding@montgomerycountymd.gov",
+          "phone": "240-777-5350",
+          "status": "fresh official page mailto and text"
+        },
+        "model_corrections": [
+          "Current page is undated; price_year2026 is conservative modeling assumption, not a printed year.",
+          "Do not model capacity320 as confirmed with dance floor. Keep ceremony/cocktail unknown.",
+          "Carry11h Great Hall+kitchen plus4h Atrium/side room,7h security/11hmonitor as assumptions; venue must validate them."
+        ]
+      },
+      "spec": "wedding/output/specs/hall_venues/silver_spring_civic.json",
+      "scenario_assumptions": "11h GreatHall485/h +11h kitchen40/h +4hAtrium65/h +4hside room80/h +11hmonitor45/h +7hsecurity40/h. Rented dance floor conservative; public parking1110 allowance. Staff/space booking needs quote.",
+      "model_result": {
+        "venue": "Silver Spring Civic Building Great Hall, nonresident",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 39330.91,
+        "per_guest": 212.6,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 7415.2,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23830.56,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 247.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -16260.46,
+        "headroom_r1_trimmed": -7191.46,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": true,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "OVER by $1,737 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+        "price_date": "Undated official rates; modeled2026 with+4% assumption"
+      },
+      "all_in_at_185": 39330.91,
+      "subtotal_at_185": 39330.91,
+      "price_completeness": "Scenario only; missing unquoted required space/ceremony fees may raise total. No held date or guaranteed2027 quote.",
+      "max_caterer_all_in_pp": 89.94,
+      "max_caterer_note": "Ceiling at strict32139. For hybridHolidayInn includes combined outside-food/hotel-bar, not outside caterer alone. All unknown fees reduce ceiling by fee/185.",
+      "fit": "no",
+      "open_questions": [
+        "Round-table dance-floor seating, heated ceremony/holding plan185, Atrium exclusive capacity and use, staffing duration/headcount, all fees and latest end time, parking charges and dates unknown."
+      ]
+    },
+    {
+      "id": "holiday_inn_gaithersburg",
+      "name": "Holiday Inn Gaithersburg, outside catering package hybrid scenario",
+      "town": "Gaithersburg, MD",
+      "type": "rental",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf",
+        "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9489651099-original?fmt=pdf"
+      ],
+      "price_year": 2023,
+      "verification": {
+        "name": "Holiday Inn Gaithersburg Grand Ballroom",
+        "checked_on": "2026-11-08",
+        "price_year": 2023,
+        "sources": [
+          {
+            "url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf",
+            "final_url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf",
+            "status": 200,
+            "length": 1986
+          },
+          {
+            "url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9489651099-original?fmt=pdf",
+            "final_url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9489651099-original?fmt=pdf",
+            "status": 200,
+            "length": 3626
+          }
+        ],
+        "verified_facts": {
+          "price": "Outside Catering Package$40pp plus taxable23%service and applicable tax. PDF metadata created/modified29Sep2023; page itself undated. Additional hour$350.",
+          "time": "Five hours event plus two hours setup; rental may start8am/end12am. Breakdown time inside/outside published7h unclear.",
+          "included": "Banquet tables/chairs, dance floor, standard linens/napkins, coffee/tea/soda, chafing dishes, china/glass/flatware, hot box/prep table, service staff1per40guests, night-of-event suite and free self-parking.",
+          "catering": "Licensed insured outside caterer supplies fully cooked food; cannot cook or reheat in kitchen. All alcohol from hotel, beverage prices unpublished.",
+          "capacity": "Fact sheet ballroom350banquet/500theater; Goshen/Whetstone300theater; Washingtonian80theater. Not185-at-rounds-with-dance-floor evidence."
+        },
+        "unknowns": [
+          "2027 package/bar prices and outside food quote; heated ceremony plus holding/cocktail plan185; all-hours access; outside DJ/florist/cake/candle policies; date/hold/cancellation terms; suite access before ceremony unknown."
+        ],
+        "contact": {
+          "email": "SALES@HIGAITHERSBURG.COM",
+          "phone": "240-238-1127",
+          "hotel_phone": "301-948-8900",
+          "status": "fresh official hotel fact sheet"
+        },
+        "model_corrections": [
+          "Package is venue service only: food/bar cannot be omitted. Model hybrid using explicit assumed food/bar until quoted, clearly unknown verdict.",
+          "Do not subtract$600 night-room credit from locked venue envelope. Night suite does not establish early getting-ready access.",
+          "2023+4%fouryears for published rates; separate2027 assumptions must not be escalated fouryears by accident."
+        ]
+      },
+      "spec": "wedding/output/specs/hall_venues/holiday_inn_gaithersburg.json",
+      "scenario_assumptions": "Hybrid encoded as hotel venue-service fee40x185x1.23x1.06 in rental_fee, plus3hours350/h, all2023 escalated4years. Separate2027 food60+hotel bar20 with23%service assumed (food markup allowance, not quote); no double-charge staff/soft drinks. Bartenders NOT established as included: add200per75guests (threebartenders) plus model tax; hotel must quote staffing. Cake/cutting/early ready room added. Actual food/bar unknown: reported unknown.",
+      "model_result": {
+        "venue": "Holiday Inn Gaithersburg, outside catering package hybrid scenario",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 35184.06,
+        "per_guest": 190.18,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 12515.29,
+          "outside catering all-in (ASSUMPTION combined outside food + hotel-only beer/wine; staff/soft drinks in hotel fee)": 20068.77,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -12113.61,
+        "headroom_r1_trimmed": -3044.61,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Latest rental12am; actual event duration and breakdown TBD"
+        },
+        "flags": [
+          "price from 2023: escalated x1.170; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf",
+        "price_date": "Hotel venue-service package2023; separate food/bar2027 assumptions"
+      },
+      "all_in_at_185": null,
+      "subtotal_at_185": 35184.06,
+      "price_completeness": "Scenario only; missing unquoted required space/ceremony fees may raise total. No held date or guaranteed2027 quote.",
+      "max_caterer_all_in_pp": 92.02,
+      "max_caterer_note": "Ceiling at strict32139. For hybridHolidayInn includes combined outside-food/hotel-bar, not outside caterer alone. All unknown fees reduce ceiling by fee/185.",
+      "fit": "unknown",
+      "open_questions": [
+        "2027 package/bar prices and outside food quote; heated ceremony plus holding/cocktail plan185; all-hours access; outside DJ/florist/cake/candle policies; date/hold/cancellation terms; suite access before ceremony unknown."
+      ]
+    },
+    {
+      "id": "turf_valley",
+      "name": "Turf Valley Resort Bluebird Buffet",
+      "town": "Ellicott City, MD",
+      "type": "package",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+        "https://www.turfvalley.com/weddings/wedding-venues",
+        "https://www.turfvalley.com/weddings/all-inclusive-wedding-packages",
+        "https://www.turfvalley.com/weddings",
+        "https://www.turfvalley.com/all-specials/wedding-promotions"
+      ],
+      "price_year": 2026,
+      "verification": {
+        "name": "Turf Valley Resort",
+        "checked_on": "2026-11-08",
+        "price_year": 2026,
+        "sources": [
+          {
+            "url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+            "final_url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+            "status": 200,
+            "length": 44316
+          },
+          {
+            "url": "https://www.turfvalley.com/weddings/wedding-venues",
+            "initial_error": "HTTP Error 403: Forbidden",
+            "status": 200,
+            "retry": "Ordinary curl -L -sS succeeded."
+          },
+          {
+            "url": "https://www.turfvalley.com/weddings/all-inclusive-wedding-packages",
+            "initial_error": "HTTP Error 403: Forbidden",
+            "status": 200,
+            "retry": "Ordinary curl -L -sS succeeded."
+          },
+          {
+            "url": "https://www.turfvalley.com/weddings",
+            "initial_error": "HTTP Error 403: Forbidden",
+            "status": 200,
+            "retry": "Ordinary curl -L -sS succeeded."
+          },
+          {
+            "url": "https://www.turfvalley.com/all-specials/wedding-promotions",
+            "initial_error": "HTTP Error 403: Forbidden",
+            "status": 200,
+            "retry": "Ordinary curl -L -sS succeeded."
+          }
+        ],
+        "verified_facts": {
+          "price": "Official Nov2026 menu: Bluebird buffet$120pp; Sycamore plated$118pp; both include four-hour premium bar. Food22%taxable service+6%MDtax; alcohol22%service+9%MDtax in PDF.",
+          "included": "Bluebird menu includes maitre d, two candles/table, linenless tables or white floorlength cloths and white/black napkins, chairs/china/glass/flatware, cake cutting, two tasting passes, wedding-night hotel stay and anniversary-night stay subject to availability.",
+          "extras": "Additional hour including full bar$10pp; nonalcohol-only hour$6pp; additional bartender$200; extra server$175 (menu additions page).",
+          "verification_limit": "All listed official pages and menu now freshly fetched successfully by ordinary curl.",
+          "spaces": "Official venue page: Cameo up to250with large dance floor,4505sqft, lobby with built-in bar for cocktails; Waterford up to200with large dance floor3344sqft and two-tier lobby/bar for cocktails. Capacity explicitly at rounds remains unknown. Grand has private bridal suite.",
+          "promotion": "Official promotions page:10%off wedding package any day except Saturday; new bookings/min75guests/nootherdiscounts; discount applied to service charge; restrictions may apply. Ask calculation in writing.",
+          "catering": "Official FAQ generally unable to accommodate outside catering due to space; occasional offpeak/short-term availability. FAQ fourth-to-fifth hour prices8full/5.5nonalcohol conflict with newer menu10/6; use newer menu conservatively."
+        },
+        "unknowns": [
+          "Actual2027 price; indoor heated ceremony fee/holding room and separate cocktails; venue/site fees; included hours/setup/breakdown; required bartender staffing; early getting-ready suite; free parking; actual185-rounds-with-dance-floor plan and dates unknown."
+        ],
+        "contact": {
+          "email": "info_sales@turfvalley.com",
+          "phone": "410-465-1200",
+          "status": "Fresh official wedding promotions page."
+        },
+        "model_corrections": [
+          "Use buffet$120 as primary baseline, not$118 plated contrary to current dinner assumption. Keep2026+4% unless2027validityconfirmed.",
+          "Do not use unsupported third-party site or ceremony fee as verified. Carry only labeled sensitivity assumptions or exclude with explicit incomplete-total warning.",
+          "Do not subtract$600 room credit from locked envelope; included wedding-night room is a possible later saving only.",
+          "Friday promotion freshly confirmed but exact service-charge calculation ambiguous; ask for itemized quote and do not automatically discount total."
+        ]
+      },
+      "spec": "wedding/output/specs/hall_venues/turf_valley.json",
+      "scenario_assumptions": "Bluebirdbuffet120+22%service+blended MD6/9%tax (20%alcohol share assumption). Unknown ceremony/site/extra hours fees omitted; Dance floor freshly confirmed included; parking and early-ready defaults added. No600night-room credit.",
+      "model_result": {
+        "venue": "Turf Valley Resort Bluebird Buffet",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 33366.41,
+        "per_guest": 180.36,
+        "lines": {
+          "in-house F&B (package/minimum)": 23088.0,
+          "F&B service charge": 5079.36,
+          "F&B tax": 1859.05,
+          "wedding cake + tasting/delivery": 1630.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -10295.96,
+        "headroom_r1_trimmed": -1226.96,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+        "price_date": "Nov2026 menu, escalated4%"
+      },
+      "all_in_at_185": null,
+      "subtotal_at_185": 33366.41,
+      "price_completeness": "Scenario only; missing unquoted required space/ceremony fees may raise total. No held date or guaranteed2027 quote.",
+      "max_caterer_all_in_pp": null,
+      "max_caterer_note": "Ceiling at strict32139. For hybridHolidayInn includes combined outside-food/hotel-bar, not outside caterer alone. All unknown fees reduce ceiling by fee/185.",
+      "fit": "unknown",
+      "open_questions": [
+        "Actual2027 price; indoor heated ceremony fee/holding room and separate cocktails; venue/site fees; included hours/setup/breakdown; required bartender staffing; early getting-ready suite; free parking; actual185-rounds-with-dance-floor plan and dates unknown."
+      ],
+      "fresh_evidence": [
+        {
+          "url": "https://www.turfvalley.com/weddings/wedding-venues",
+          "accessed": "2026-11-08",
+          "price_year": "undated venue-facility page",
+          "excerpt": "The ballroom includes a large dance floor, outdoor patio, and scenic golf course views.",
+          "context": "Cameo Ballroom: Up to250Guests; RoomSize4505SQ. Rounds185withfloor still needs confirmation."
+        },
+        {
+          "url": "https://www.turfvalley.com/weddings/wedding-venues",
+          "accessed": "2026-11-08",
+          "price_year": "undated venue-facility page",
+          "excerpt": "The ballroom includes a large dance floor and scenic golf course views.",
+          "context": "Waterford Ballroom: Up to200Guests; RoomSize3344SQ."
+        }
+      ]
+    },
+    {
+      "id": "leesburg_flame_room",
+      "name": "Leesburg VFC Flame Room",
+      "town": "Leesburg, VA",
+      "type": "rental",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.leesburgfire.org/hallrental"
+      ],
+      "price_year": "2027 published rates",
+      "fresh_evidence": "Fresh official page:2027Saturday full day2500+cleaning250, refundabledeposit750; full day8am-midnight,275guests not stated with dance floor; tables/chairs; ampleparking assumed free. Phone571-577-6661. Catering/alcohol/heatedceremony/cocktails/endtime unknown. VA6%model tax per prompt is scenario; caterer-origin/local meals tax must be quoted.",
+      "spec": "wedding/output/specs/hall_venues/leesburg_flame_room.json",
+      "model_result": {
+        "venue": "Leesburg VFC Flame Room",
+        "guests": 185,
+        "jurisdiction": "VA",
+        "all_in": 34010.81,
+        "per_guest": 183.84,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2750.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23697.36,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 280.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -10940.36,
+        "headroom_r1_trimmed": -1871.36,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": "Full-day rental8am-midnight; event end time unknown"
+        },
+        "flags": [],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.leesburgfire.org/hallrental",
+        "price_date": "2027 published rates"
+      },
+      "all_in_at_185": 34010.81,
+      "subtotal_at_185": 34010.81,
+      "max_caterer_all_in_pp": 117.98,
+      "max_caterer_note": "All-in food/staff/bar/bartenders/service/tax at strict32139; deduct unquoted fees/185.",
+      "price_completeness": "Scenario; required fees/ceremony/second room availability unknown.",
+      "fit": "no"
+    },
+    {
+      "id": "hanson_lodge",
+      "name": "The Lodge at Hal & Berni Hanson Regional Park (Aldie VA)",
+      "town": "Aldie, VA",
+      "type": "rental",
+      "checked_on": "2026-11-08",
+      "sources": [
+        "https://www.loudoun.gov/DocumentCenter/View/173616/The-Lodge-Rental-Rates"
+      ],
+      "price_year": "undated rate sheet (current Nov 2026)",
+      "fresh_evidence": "Fresh official ratePDF:Nov-MarFri/Sat5000for8h+625per extra hour. 10h6250; undated modeled2026+4%. Prior scout:single room and outdoor patio only, fails separate indoor cocktail requirement. Contacthansonlodge@loudoun.gov.",
+      "spec": "wedding/output/specs/hall_venues/hanson_lodge.json",
+      "model_result": {
+        "venue": "The Lodge at Hal & Berni Hanson Regional Park (Aldie VA)",
+        "guests": 185,
+        "jurisdiction": "VA",
+        "all_in": 35900.51,
+        "per_guest": 194.06,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 6500.0,
+          "outside catering all-in (ASSUMPTION budget buffet + beer and wine)": 23697.36,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 175.65,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -12830.06,
+        "headroom_r1_trimmed": -3761.06,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": false,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": true,
+          "end time": "11:00pm (last call 10:45pm; vendors out by midnight)"
+        },
+        "flags": [
+          "price from 2026: escalated x1.040; get 2027 pricing in writing"
+        ],
+        "verdict": "REJECT (fails must-have: separate cocktail-hour space); cost: FITS only by spending the 10% reserve (Reading 2) -- couple must approve",
+        "source_url": "https://www.loudoun.gov/DocumentCenter/View/173616/The-Lodge-Rental-Rates",
+        "price_date": "undated rate sheet (current Nov 2026)"
+      },
+      "all_in_at_185": 35900.51,
+      "subtotal_at_185": 35900.51,
+      "max_caterer_all_in_pp": 107.76,
+      "max_caterer_note": "All-in food/staff/bar/bartenders/service/tax at strict32139; deduct unquoted fees/185.",
+      "price_completeness": "Scenario; required fees/ceremony/second room availability unknown.",
+      "fit": "no"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "International Country Club (Fairfax) - non-member F&B minimum",
+  "venue_type": "fb_minimum",
+  "jurisdiction": "VA-FAIRFAX",
+  "fb_minimum": 12000,
+  "package_pp": 54,
+  "bar_pp": 50,
+  "service_pct": 0.2,
+  "other_fees": 570,
+  "price_year": 2022,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "china"
+  ],
+  "within_60_min_of_dc": null,
+  "source_url": "https://media-c2c.s3.amazonaws.com/34969427/20222023CateringBanquetMenu.pdf",
+  "price_date": "2022-2023 official menu updated2022-10-01; 2022 prices escalated4% annually. Food54=44 buffet+10 assumed hors d'oeuvres; bar50=14first hour+4*9; other_fees570 assumed bartender allowance. Inclusions tables/setup/china assumptions.",
+  "date_available": null
+}

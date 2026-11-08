@@ -1,0 +1,295 @@
+{
+  "checked_on": "2026-11-08",
+  "notes": "Only official sources used. No forms submitted or venue contacted. Facts labeled prior were carried from repository verification and were not freshly confirmed.",
+  "venues": [
+    {
+      "name": "Oak Room at Sandy Spring VFD",
+      "checked_on": "2026-11-08",
+      "price_year": 2026,
+      "sources": [
+        {
+          "url": "https://ssvfd.org/the-oak-room/",
+          "initial_error": "HTTP Error 403: Forbidden",
+          "status": 200,
+          "retry": "Ordinary curl -L -sS succeeded; no authentication or challenge bypass used."
+        },
+        {
+          "url": "https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf",
+          "initial_error": "HTTP Error 403: Forbidden",
+          "status": 200,
+          "retry": "Ordinary curl -L -sS succeeded; no authentication or challenge bypass used."
+        },
+        {
+          "url": "https://ssvfd.org/wp-content/uploads/2026/06/2023-Oak-Room-Rules-And-Regulations.pdf",
+          "initial_error": "HTTP Error 403: Forbidden",
+          "status": 200,
+          "retry": "Ordinary curl -L -sS succeeded; no authentication or challenge bypass used."
+        }
+      ],
+      "verified_facts": {
+        "capacity": "Official hall page freshly confirms220 seated with dance floor,240seated without;4000sqft; separate breakout room with unknown capacity.",
+        "price": "2026 contract: Saturday$3000/8h; Friday$2500/8h; extra contracted hour$200; outside caterer$500. Events end12am/music11pm. Holiday surcharge$1000 (not applicable to target dates).",
+        "inclusions": "Tables/chairs220 but renter sets/strikes; kitchen, breakout room, elevator, free parking135cars.",
+        "payment": "$500nonrefundable deposit credited to rent; final oneweek before. Cancellation>=91days refunds other monies; within90days refunds discretionary.",
+        "policies": "Approved licensed insured outside caterer; licensed/certified bartender approved by staff one day prior; all deliveries/setup/collection inside booked hours; florist/musician vendors explicitly contemplated; candles staff-approved enclosed glass flame<=2in.",
+        "contact": "Chuck301-518-4073; crdscatering@verizon.net (public email encoded on official page); contract management Renaissance Chef301-228-2433/info@renaissancechef.com."
+      },
+      "unknowns": [
+        "Indoor heated ceremony or priced flip and a 185-person holding room; separate breakout-room capacity for cocktails; 2027 fees and dates; early access and getting-ready options."
+      ],
+      "contact": {
+        "phone": "301-518-4073",
+        "email": "crdscatering@verizon.net",
+        "status": "Fresh official page; public Cloudflare email encoding decoded locally."
+      },
+      "model_corrections": [
+        "Freshly confirmed 2026 Saturday rent $3000, outside-caterer fee $500, two extra hours $400 for 10 total hours, +4% to 2027; all amounts from freshly fetched official contract.",
+        "Freshly confirmed220 seated with dance floor; tables/chairs included but renter setup required; free lot; no getting-ready room published. Do not treat breakout room as confirmed capacity185.",
+        "No actual budget caterer quote exists. Prior $27.2K low-end is a different caterer scenario, not placeholder-caterer price."
+      ],
+      "prior_verification": {
+        "name": "The Oak Room at Sandy Spring Volunteer Fire Department",
+        "verdict": "confirmed",
+        "corrected_fit": "Fits at 185 only with the other categories trimmed AND a budget caterer. Food, drink and bartenders must stay at or below about $119/guest; the scout's low case is $92/guest. At 150 as-is it fits only up to about $97/guest; trimmed, up to about $156/guest. At the workbook's mid-range catering (about $205/guest) it does not fit any envelope.",
+        "evidence": "Official page: 220 seated with a dance floor, 240 seated without, 500 standing; 4,000 sq ft; large dance floor; separate break-out room; 135 free parking spaces; outside food adds $500. The page itself says 'pricing varies' (contact: Chuck, 301-518-4073). The 2026 contract PDF gives Saturday $3,000 for 8 contracted hours, extra hours $200, overtime $500/hr, holiday surcharge $1,000, and a $500 non-refundable deposit applied to the rent. Events end by 12am and music by 11pm. Tables and chairs for 220 are included, but the renter sets them up and breaks them down. Bartenders must be licensed or certified. The rules PDF allows candles only with staff approval, enclosed in glass, flame no taller than 2 in. No getting-ready room is mentioned anywhere.",
+        "capacity_check": "Confirmed: 220 seated with a dance floor (official page). Break-out room capacity for a 185-guest cocktail hour is not stated.",
+        "policy_check": "Confirmed. Renaissance Chef Catering or an approved outside caterer (+$500, food license and insurance required). Certified bartender required. Renter moves tables and chairs to and from the closet, supplies trash bags and dish soap, and takes trash to the dumpster.",
+        "price_check": "Confirmed from the 2026 contract (posted 2026/06). No 2027 rates are published, so the +4% default applies.",
+        "source": "https://ssvfd.org/the-oak-room/ ; https://ssvfd.org/wp-content/uploads/2026/06/2026-Oak-Room-Contract.pdf ; https://ssvfd.org/wp-content/uploads/2026/06/2023-Oak-Room-Rules-And-Regulations.pdf",
+        "corrected_allin_185": "$27,152 (low) to $36,685 (high), using a budget caterer and a beer-and-wine bar (scout's assumption, not the workbook's). $48,103 at the workbook mid-range. Venue-side costs $10,087: ($3,000 + 2 extra hours $400 + outside-caterer fee $500) x 1.04 = $4,056, plus $22.60/guest, $150 cake tasting and delivery, $600 rental delivery, $600 off-site getting-ready, and $500 setup labor (an assumption).",
+        "corrected_allin_150": "$23,046 to $30,775; $40,033 at mid-range. Venue-side costs $9,296."
+      }
+    },
+    {
+      "name": "Vienna VFD Event Hall",
+      "checked_on": "2026-11-08",
+      "price_year": 2027,
+      "sources": [
+        {
+          "url": "https://vvfd.org/event-space/",
+          "final_url": "https://vvfd.org/event-space/",
+          "status": 200,
+          "length": 6401
+        },
+        {
+          "url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+          "final_url": "https://vvfd.org/wp-content/uploads/2026/10/Pricing-Chart-1.pdf",
+          "status": 200,
+          "length": 494
+        },
+        {
+          "url": "https://vvfd.simplybook.me/v2/",
+          "final_url": "https://vvfd.simplybook.me/v2/",
+          "status": 200,
+          "length": 79
+        }
+      ],
+      "verified_facts": {
+        "rental": "2027 VVFD Event Hall Pricing: Saturday evening $3500; Friday evening $2250; kitchen $400, custom table arrangement $400, A/V $100.",
+        "capacity": "Official event page: up to240; main room60ft x80ft and platform8ft x15ft; 20 six-foot circular tables and50 rectangular tables. No capacity at rounds WITH dance floor published.",
+        "policies": "Official FAQ allows outside food/caterer and alcohol with VA ABC license; all music must stop by11pm and be <=90dB. Free parking up to75 vehicles plus street parking.",
+        "fees": "Official FAQ says a cleaning fee or reconfiguration fee may apply; exact cleaning amount not on fresh static page."
+      },
+      "unknowns": [
+        "Separate cocktail/holding room for185 unknown: only coat room identified. Heated indoor ceremony plan/flip cost unknown. Full event end time8h window and extra-hour/support/cleaning charges are carried from prior booking-site verification; widget now yields no static content. Candle policy and outside DJ/florist/cake rules, availability/booking window unknown."
+      ],
+      "contact": {
+        "phone": "703-594-6117",
+        "email": "hallrental@vvfd.org",
+        "email_status": "prior round3 official booking-site verification; phone freshly read on official event page"
+      },
+      "model_corrections": [
+        "Use Town of Vienna tax jurisdiction rather than automatically Fairfax County; verify applicable catering tax.",
+        "Do not model240 as confirmed seated-with-dance-floor capacity.",
+        "Include kitchen/custom setup plus carried $400 cleaning, $200 extra hours for10h and potential $200 support pending written quote. Include ABC license assumption if venue demands renter license."
+      ]
+    },
+    {
+      "name": "Stacy C. Sherwood Community Center",
+      "checked_on": "2026-11-08",
+      "price_year": 2026,
+      "sources": [
+        {
+          "url": "https://www.fairfaxva.gov/files/assets/city/v/3/parks-amp-rec/documents/scscc-pricing-policies-contract-fiscal-year-2026-fillable-updated.pdf",
+          "final_url": "https://www.fairfaxva.gov/files/assets/city/v/3/parks-amp-rec/documents/scscc-pricing-policies-contract-fiscal-year-2026-fillable-updated.pdf",
+          "status": 200,
+          "length": 44929
+        },
+        {
+          "url": "https://www.fairfaxva.gov/Fun-Facilities/Facilities/Rent-a-Venue/Stacy-C-Sherwood-Community-Center-Event-Venue",
+          "final_url": "https://www.fairfaxva.gov/Fun-Facilities/Facilities/Rent-a-Venue/Stacy-C-Sherwood-Community-Center-Event-Venue",
+          "status": 200,
+          "length": 12339
+        }
+      ],
+      "verified_facts": {
+        "rent": "FY2026 PDF: Saturday Entire Center $3500/5h plus$700/h; Full Performance $3000/5h plus$600/h. Nonresident rate used; resident discount not assumed.",
+        "capacity": "PDF full Performance333 banquet wall-to-wall; Rehearsal70 banquet/71theater; Art60 banquet/61theater. Rounds-with-dance-floor capacity unknown.",
+        "hours": "Friday/Saturday rental7am\u20131am; event must end12am;12\u20131am cleanup only. Setup/cleanup count in reserved hours.",
+        "flip": "City staff set tables/chairs; only one staff assists ceremony-to-reception transition and ordinary hourly rent continues; renter supplies helpers.",
+        "alcohol": "Full/Entire Center alcohol fee$300; VA banquet license and$1M insurance naming city required. Security$150 applies only to end past10pm AND more than200 guests.",
+        "other": "Caterer corner$50; warming only. Flames may not rise above container. Rehearsal/Art rooms held for city programming until about3months out. Shared-space eating prohibited; hallways clear.",
+        "booking": "Current official page permits applications up to2years in advance; PDF requires >=6weeks notice. Deposit Entire$900/Full$650; final payment60days prior."
+      },
+      "unknowns": [
+        "185-person separate cocktail/holding room not established (small rooms only130 banquet combined). Ask venue before treating any price as a fit. 2027/FY2028 rates, round-table dance-floor plan and date availability unknown."
+      ],
+      "contact": {
+        "email": "rentalvenues@fairfaxva.gov",
+        "phone": "703-385-7858",
+        "status": "fresh official PDF/page"
+      },
+      "model_corrections": [
+        "Use full10\u201311h, not misleading5h room minimum; whole-center10h=$7000 before alcohol/kitchen and escalation. FY2026 dated sheet modeled2026+4%; ask actual FY2028 rate.",
+        "Do not convert333 wall-to-wall capacity into confirmed dance-floor capacity.",
+        "Do not state separate cocktail room=true simply because two small rooms exist."
+      ]
+    },
+    {
+      "name": "Silver Spring Civic Building Great Hall",
+      "checked_on": "2026-11-08",
+      "price_year": "unknown (undated current rate page)",
+      "sources": [
+        {
+          "url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+          "final_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/pricing-rates/silver-spring-civic-building",
+          "status": 200,
+          "length": 6061
+        },
+        {
+          "url": "https://www.montgomerycountymd.gov/silver-spring-civic-building-policies-procedures",
+          "final_url": "https://www.montgomerycountymd.gov/silver-spring-civic-building-policies-procedures",
+          "status": 200,
+          "length": 13081
+        },
+        {
+          "url": "https://www.montgomerycountymd.gov/community-use-public-facilities/find-community-space/silver-spring-civic-building-veterans-plaza",
+          "final_url": "https://www.montgomerycountymd.gov/community-use-public-facilities/find-community-space/silver-spring-civic-building-veterans-plaza",
+          "status": 200,
+          "length": 6398
+        }
+      ],
+      "verified_facts": {
+        "rent": "Current county page out-of-county Great Hall$485/h; Atrium$65/h; kitchen$40/h; large activity rooms$80/h. Four-hour minimum Fri\u2013Sun. Event monitor$45/h; security$40/h; building worker$30/h; other/admin fees possible.",
+        "capacity": "Great Hall5,046sqft,320 banquet,725standing; no dance-floor seating figure. Activity rooms100\u2013120standing; Great Hall movable air wall.",
+        "booking": "Policy permits entire Great Hall request18months ahead with CUPF approval; other spaces12months. Approval is required, not automatic confirmed availability.",
+        "payment": "Great Hall nonrefundable$250confirmation applied to total; half permit cost due14days after approved permit, final90days before event.",
+        "catering": "Own licensed/insured caterer permitted; warming only. Free hosted bar requires approved alcohol-management plan; liquor liability names county. Additional security mandatory with alcohol.",
+        "inclusions": "Tables/chairs complimentary; sprung wood floors. Guests use public garages across street. Small votive candles require prior permit approval."
+      },
+      "unknowns": [
+        "Round-table dance-floor seating, heated ceremony/holding plan185, Atrium exclusive capacity and use, staffing duration/headcount, all fees and latest end time, parking charges and dates unknown."
+      ],
+      "contact": {
+        "email": "CUPFCivicBuilding@montgomerycountymd.gov",
+        "phone": "240-777-5350",
+        "status": "fresh official page mailto and text"
+      },
+      "model_corrections": [
+        "Current page is undated; price_year2026 is conservative modeling assumption, not a printed year.",
+        "Do not model capacity320 as confirmed with dance floor. Keep ceremony/cocktail unknown.",
+        "Carry11h Great Hall+kitchen plus4h Atrium/side room,7h security/11hmonitor as assumptions; venue must validate them."
+      ]
+    },
+    {
+      "name": "Holiday Inn Gaithersburg Grand Ballroom",
+      "checked_on": "2026-11-08",
+      "price_year": 2023,
+      "sources": [
+        {
+          "url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf",
+          "final_url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf",
+          "status": 200,
+          "length": 1986
+        },
+        {
+          "url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9489651099-original?fmt=pdf",
+          "final_url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9489651099-original?fmt=pdf",
+          "status": 200,
+          "length": 3626
+        }
+      ],
+      "verified_facts": {
+        "price": "Outside Catering Package$40pp plus taxable23%service and applicable tax. PDF metadata created/modified29Sep2023; page itself undated. Additional hour$350.",
+        "time": "Five hours event plus two hours setup; rental may start8am/end12am. Breakdown time inside/outside published7h unclear.",
+        "included": "Banquet tables/chairs, dance floor, standard linens/napkins, coffee/tea/soda, chafing dishes, china/glass/flatware, hot box/prep table, service staff1per40guests, night-of-event suite and free self-parking.",
+        "catering": "Licensed insured outside caterer supplies fully cooked food; cannot cook or reheat in kitchen. All alcohol from hotel, beverage prices unpublished.",
+        "capacity": "Fact sheet ballroom350banquet/500theater; Goshen/Whetstone300theater; Washingtonian80theater. Not185-at-rounds-with-dance-floor evidence."
+      },
+      "unknowns": [
+        "2027 package/bar prices and outside food quote; heated ceremony plus holding/cocktail plan185; all-hours access; outside DJ/florist/cake/candle policies; date/hold/cancellation terms; suite access before ceremony unknown."
+      ],
+      "contact": {
+        "email": "SALES@HIGAITHERSBURG.COM",
+        "phone": "240-238-1127",
+        "hotel_phone": "301-948-8900",
+        "status": "fresh official hotel fact sheet"
+      },
+      "model_corrections": [
+        "Package is venue service only: food/bar cannot be omitted. Model hybrid using explicit assumed food/bar until quoted, clearly unknown verdict.",
+        "Do not subtract$600 night-room credit from locked venue envelope. Night suite does not establish early getting-ready access.",
+        "2023+4%fouryears for published rates; separate2027 assumptions must not be escalated fouryears by accident."
+      ]
+    },
+    {
+      "name": "Turf Valley Resort",
+      "checked_on": "2026-11-08",
+      "price_year": 2026,
+      "sources": [
+        {
+          "url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+          "final_url": "https://assets.milestoneinternet.com/turf-valley/pdfs/weddingmenupackages-nov2026.pdf",
+          "status": 200,
+          "length": 44316
+        },
+        {
+          "url": "https://www.turfvalley.com/weddings/wedding-venues",
+          "initial_error": "HTTP Error 403: Forbidden",
+          "status": 200,
+          "retry": "Ordinary curl -L -sS succeeded."
+        },
+        {
+          "url": "https://www.turfvalley.com/weddings/all-inclusive-wedding-packages",
+          "initial_error": "HTTP Error 403: Forbidden",
+          "status": 200,
+          "retry": "Ordinary curl -L -sS succeeded."
+        },
+        {
+          "url": "https://www.turfvalley.com/weddings",
+          "initial_error": "HTTP Error 403: Forbidden",
+          "status": 200,
+          "retry": "Ordinary curl -L -sS succeeded."
+        },
+        {
+          "url": "https://www.turfvalley.com/all-specials/wedding-promotions",
+          "initial_error": "HTTP Error 403: Forbidden",
+          "status": 200,
+          "retry": "Ordinary curl -L -sS succeeded."
+        }
+      ],
+      "verified_facts": {
+        "price": "Official Nov2026 menu: Bluebird buffet$120pp; Sycamore plated$118pp; both include four-hour premium bar. Food22%taxable service+6%MDtax; alcohol22%service+9%MDtax in PDF.",
+        "included": "Bluebird menu includes maitre d, two candles/table, linenless tables or white floorlength cloths and white/black napkins, chairs/china/glass/flatware, cake cutting, two tasting passes, wedding-night hotel stay and anniversary-night stay subject to availability.",
+        "extras": "Additional hour including full bar$10pp; nonalcohol-only hour$6pp; additional bartender$200; extra server$175 (menu additions page).",
+        "verification_limit": "All listed official pages and menu now freshly fetched successfully by ordinary curl.",
+        "spaces": "Official venue page: Cameo up to250with large dance floor,4505sqft, lobby with built-in bar for cocktails; Waterford up to200with large dance floor3344sqft and two-tier lobby/bar for cocktails. Capacity explicitly at rounds remains unknown. Grand has private bridal suite.",
+        "promotion": "Official promotions page:10%off wedding package any day except Saturday; new bookings/min75guests/nootherdiscounts; discount applied to service charge; restrictions may apply. Ask calculation in writing.",
+        "catering": "Official FAQ generally unable to accommodate outside catering due to space; occasional offpeak/short-term availability. FAQ fourth-to-fifth hour prices8full/5.5nonalcohol conflict with newer menu10/6; use newer menu conservatively."
+      },
+      "unknowns": [
+        "Actual2027 price; indoor heated ceremony fee/holding room and separate cocktails; venue/site fees; included hours/setup/breakdown; required bartender staffing; early getting-ready suite; free parking; actual185-rounds-with-dance-floor plan and dates unknown."
+      ],
+      "contact": {
+        "email": "info_sales@turfvalley.com",
+        "phone": "410-465-1200",
+        "status": "Fresh official wedding promotions page."
+      },
+      "model_corrections": [
+        "Use buffet$120 as primary baseline, not$118 plated contrary to current dinner assumption. Keep2026+4% unless2027validityconfirmed.",
+        "Do not use unsupported third-party site or ceremony fee as verified. Carry only labeled sensitivity assumptions or exclude with explicit incomplete-total warning.",
+        "Do not subtract$600 room credit from locked envelope; included wedding-night room is a possible later saving only.",
+        "Friday promotion freshly confirmed but exact service-charge calculation ambiguous; ask for itemized quote and do not automatically discount total."
+      ]
+    }
+  ]
+}

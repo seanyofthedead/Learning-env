@@ -1,0 +1,1104 @@
+{
+  "checked_on": "2026-11-08",
+  "method": "Official webpages/PDFs only; all prices evaluated by wedding/budget/wedding_budget_model.py at185. Actual prices unknown unless stated as dated published values. Do not use model legacy reserve verdict; reserve is never available. No forms/contact actions taken.",
+  "venues": [
+    {
+      "name": "The Clubs at Quantico (and Crossroads Events Center) - Tradition Buffet wedding package",
+      "town": "Quantico, VA (Marine Corps Base Quantico, 3017 Russell Rd; Prince William County)",
+      "checked_on": "2026-11-08",
+      "price_year": "2023 guide revised 2023-12-13",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "Tradition Buffet $120/person; service included and no sales tax. Included bar covers cocktail hour only.",
+          "source_url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1",
+          "source_year": "2023 guide revised 2023-12-13"
+        },
+        {
+          "fact": "Tables, chairs, linens, china, dance floor, cake cutting, setup/breakdown and four-hour DJ included.",
+          "source_url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1",
+          "source_year": "2023 guide revised 2023-12-13"
+        },
+        {
+          "fact": "Candles are not permitted. Only ceremonial cakes/cupcakes/candy may be brought in. Vendors may set up two hours before event.",
+          "source_url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1",
+          "source_year": "2023 guide revised 2023-12-13"
+        },
+        {
+          "fact": "Deposit $500 non-refundable; payment/headcount five business days before; reception after four hours $300/hour and additional bartender $120/hour.",
+          "source_url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1",
+          "source_year": "2023 guide revised 2023-12-13"
+        }
+      ],
+      "contact": {
+        "email": "MCCSQuantico.catering@usmc-mccs.org",
+        "phone": "703-784-4264",
+        "source_url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1"
+      },
+      "source_checks": [
+        {
+          "url": "https://quantico.usmc-mccs.org/dining-entertainment/dining/catering-special-events",
+          "final_url": "https://quantico.usmc-mccs.org/dining-entertainment/dining/catering-special-events",
+          "status": 200,
+          "length": 209653,
+          "source_year": "2023 guide revised 2023-12-13"
+        },
+        {
+          "url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1",
+          "final_url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1",
+          "status": 200,
+          "length": 2011124,
+          "source_year": "2023 guide revised 2023-12-13"
+        },
+        {
+          "url": "https://visitpwc.com/plan-your-trip/quantico-virginia/the-clubs-at-quantico",
+          "error": "HTTP Error 403: Forbidden",
+          "source_year": "2023 guide revised 2023-12-13"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "Hosted reception beer/wine $15/person is NOT a quote. Six extra bartender-hours and two room hours are scenario allowances. Ceremony$500 unknown. Getting-ready and parking default allowances. Tax-free package stored as venue fees, not zero F&B."
+      ],
+      "fit": "no",
+      "reason": "Official candle prohibition fails locked must-have; hosted-bar price scenario also over target. Cash-bar option omitted because it changes agreed assumption.",
+      "model_result": {
+        "venue": "The Clubs at Quantico \u2014 hosted reception bar ASSUMPTION scenario at185",
+        "guests": 185,
+        "jurisdiction": "VA",
+        "all_in": 34686.36,
+        "per_guest": 187.49,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 31346.36,
+          "wedding cake + tasting/delivery": 1630.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -11615.91,
+        "headroom_r1_trimmed": -2546.91,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": true,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": false,
+          "allows outside DJ/florist/cake": null,
+          "end time": "unknown: event start 10:00 AM-7:00 PM; 4h reception, then $300/h"
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "no enclosed flame: switch candles to LED (budget the same $1,000-2,000 line)",
+          "price from 2023: escalated x1.170; get 2027 pricing in writing"
+        ],
+        "verdict": "FITS only by spending the 10% reserve (Reading 2) -- couple must approve -- PENDING answers: seats guests with dance floor, indoor ceremony space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://quantico.usmc-mccs.org/modules/media/?do=inline&id=8b95dc16-d0a1-4f3d-9dfb-c95b56d854c3&v=1",
+        "price_date": "2023 guide; fixed185 scenario: other_fees=22200 buffet+2775 assumed hosted reception bar+600 two extra room hours+720 six extra bartender-hours; ceremony_fee500 assumption. Package fees encoded as other_fees to preserve source no-sales-tax/service-included treatment."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/quantico_tradition_buffet_2023.json"
+    },
+    {
+      "name": "Hidden Creek Country Club - Premium Wedding Package",
+      "town": "Reston, VA (1711 Clubhouse Rd; unincorporated Fairfax County)",
+      "checked_on": "2026-11-08",
+      "price_year": "undated pricing; PDF created and modified 2019-01-18",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "Premium package starts $99.95++/person, with four-hour call-brand bar, four passed hors d'oeuvres and one station, buffet or plated meal, cake cutting and tasting.",
+          "source_url": "https://cdn.cybergolf.com/images/808/HCCC_Single-Page-Brochure.pdf",
+          "source_year": "undated pricing; PDF created and modified 2019-01-18"
+        },
+        {
+          "fact": "Reception $800\u20131,000++; ceremony $600++; banquet staff four hours; complimentary parking.",
+          "source_url": "https://cdn.cybergolf.com/images/808/HCCC_Single-Page-Brochure.pdf",
+          "source_year": "undated pricing; PDF created and modified 2019-01-18"
+        },
+        {
+          "fact": "Outdoor ceremony site, year-round covered deck and Fairway Ballroom advertised. Site says weddings for 200; capacity with dance floor unknown.",
+          "source_url": "https://www.hiddencreekcc.com/-weddings-and-bridal-events",
+          "source_year": "undated pricing; PDF created and modified 2019-01-18"
+        },
+        {
+          "fact": "PDF creation and modification metadata date 2019-01-18; price effective year is not printed. Earlier assumed2025 is unsupported.",
+          "source_url": "https://cdn.cybergolf.com/images/808/HCCC_Single-Page-Brochure.pdf",
+          "source_year": "undated pricing; PDF created and modified 2019-01-18"
+        }
+      ],
+      "contact": {
+        "email": "catering@hiddencreekcc.com",
+        "phone": "703-437-5223",
+        "source_url": "https://cdn.cybergolf.com/images/808/HCCC_Single-Page-Brochure.pdf"
+      },
+      "source_checks": [
+        {
+          "url": "https://cdn.cybergolf.com/images/808/HCCC_Single-Page-Brochure.pdf",
+          "final_url": "https://cdn.cybergolf.com/images/808/HCCC_Single-Page-Brochure.pdf",
+          "status": 200,
+          "length": 6555278,
+          "source_year": "undated pricing; PDF created and modified 2019-01-18"
+        },
+        {
+          "url": "https://www.hiddencreekcc.com/-weddings-and-bridal-events",
+          "final_url": "https://www.hiddencreekcc.com/-weddings-and-bridal-events",
+          "status": 200,
+          "length": 31532,
+          "source_year": "undated pricing; PDF created and modified 2019-01-18"
+        },
+        {
+          "url": "https://www.hiddencreekcc.com/-special-events-and-meetings",
+          "final_url": "https://www.hiddencreekcc.com/-special-events-and-meetings",
+          "status": 200,
+          "length": 30567,
+          "source_year": "undated pricing; PDF created and modified 2019-01-18"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "2019 metadata dates document, not guaranteed price validity.22%service and extra hour$500 unquoted. Ceremony++ grossed at22%service/10%tax. Reception fee uses model rental tax treatment; confirm invoice."
+      ],
+      "fit": "no",
+      "reason": "2019-artifact price scenario exceeds target. Indoor ceremony/holding room and capacity remain unknown.",
+      "model_result": {
+        "venue": "Hidden Creek Country Club - Premium Package",
+        "guests": 185,
+        "jurisdiction": "VA-FAIRFAX",
+        "all_in": 41636.5,
+        "per_guest": 225.06,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 3154.83,
+          "service charge on rental": 301.09,
+          "tax on rental fee": 82.11,
+          "in-house F&B (package/minimum)": 25305.87,
+          "F&B service charge": 5567.29,
+          "F&B tax": 3087.32,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 108.0,
+          "wedding cake + tasting/delivery": 1630.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -18566.05,
+        "headroom_r1_trimmed": -9497.05,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "price from 2019: escalated x1.369; get 2027 pricing in writing"
+        ],
+        "verdict": "OVER by $4,042 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://cdn.cybergolf.com/images/808/HCCC_Single-Page-Brochure.pdf",
+        "price_date": "Price year unknown; PDF metadata2019-01-18 used as conservative artifact-year scenario, escalated4% annually to2027.22%service, $500extra hour and setup labor inclusion assumptions; $600ceremony grossed with22%service and10%food tax."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/hidden_creek_cc_premium.json"
+    },
+    {
+      "name": "International Country Club - Grand Ballroom (non-member F&B minimum)",
+      "town": "Fairfax, VA (13200 Lee Jackson Memorial Hwy; Fairfax County)",
+      "checked_on": "2026-11-08",
+      "price_year": "2022-2023 menu updated 2022-10-01",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "November non-member Saturday food/beverage minimum $12,000; Friday $10,000; 18-month non-member booking window.",
+          "source_url": "https://media-c2c.s3.amazonaws.com/34969427/20222023CateringBanquetMenu.pdf",
+          "source_year": "2022-2023 menu updated 2022-10-01"
+        },
+        {
+          "fact": "Buffet dinner $44/person; house open bar $14 first hour+$9 each additional hour; bartender $150 for four hours; menu states20% service and historical6% sales tax.",
+          "source_url": "https://media-c2c.s3.amazonaws.com/34969427/20222023CateringBanquetMenu.pdf",
+          "source_year": "2022-2023 menu updated 2022-10-01"
+        },
+        {
+          "fact": "Grand Ballroom guest seating up to300; capacity with dance floor unknown.",
+          "source_url": "https://media-c2c.s3.amazonaws.com/34969427/20222023CateringBanquetMenu.pdf",
+          "source_year": "2022-2023 menu updated 2022-10-01"
+        }
+      ],
+      "contact": {
+        "email": "s.slade@internationalcc.com",
+        "phone": "703-449-3437",
+        "caution": "Contact printed in2022 menu; current contact unknown.",
+        "source_url": "https://media-c2c.s3.amazonaws.com/34969427/20222023CateringBanquetMenu.pdf"
+      },
+      "source_checks": [
+        {
+          "url": "https://media-c2c.s3.amazonaws.com/34969427/20222023CateringBanquetMenu.pdf",
+          "final_url": "https://media-c2c.s3.amazonaws.com/34969427/20222023CateringBanquetMenu.pdf",
+          "status": 200,
+          "length": 1903055,
+          "source_year": "2022-2023 menu updated 2022-10-01"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "Five-hour full house bar is a conservative published alternative to unknown beer/wine rate. $10/person hors d'oeuvres and $570 staffing allowance assumed; quote needed. Included tables/setup/china assumed."
+      ],
+      "fit": "no",
+      "reason": "Published-menu full-bar scenario exceeds target; no published beer/wine-only price.",
+      "model_result": {
+        "venue": "International Country Club (Fairfax) - non-member F&B minimum",
+        "guests": 185,
+        "jurisdiction": "VA-FAIRFAX",
+        "all_in": 38108.93,
+        "per_guest": 205.99,
+        "lines": {
+          "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 693.49,
+          "in-house F&B (package/minimum)": 23408.4,
+          "F&B service charge": 4681.68,
+          "F&B tax": 2809.01,
+          "basic linens & napkins": 847.5,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 158.85,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -15038.48,
+        "headroom_r1_trimmed": -5969.48,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)",
+          "price from 2022: escalated x1.217; get 2027 pricing in writing"
+        ],
+        "verdict": "OVER by $515 even trimmed + reserve -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://media-c2c.s3.amazonaws.com/34969427/20222023CateringBanquetMenu.pdf",
+        "price_date": "2022-2023 official menu updated2022-10-01; 2022 prices escalated4% annually. Food54=44 buffet+10 assumed hors d'oeuvres; bar50=14first hour+4*9; other_fees570 assumed bartender allowance. Inclusions tables/setup/china assumptions."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/international_cc_fairfax.json"
+    },
+    {
+      "name": "Old Hickory Golf Club - ballroom wedding package",
+      "town": "Woodbridge, VA (11921 Chanceford Dr; Prince William County)",
+      "checked_on": "2026-11-08",
+      "price_year": "undated webpage; price unknown",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "Clubhouse accommodates up to250; ballroom3,600sqft; dance floor, private bridal/groomsmen changing areas, four ceremony locations and onsite parking advertised.",
+          "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+          "source_year": "undated webpage; price unknown"
+        },
+        {
+          "fact": "Wedding features include tables/chairs, linens/napkins, china/glass/silverware, votive candles, dance floor, service personnel, day-of coordinator, toast and cake cutting.",
+          "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+          "source_year": "undated webpage; price unknown"
+        },
+        {
+          "fact": "Price, banquet capacity with dance floor, indoor ceremony and separate indoor cocktail allocation are unknown.",
+          "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+          "source_year": "undated webpage; price unknown"
+        },
+        {
+          "fact": "Prince William prepared food/beverage tax changes to3% effective2026-01-01; added to state/regional sales tax.",
+          "source_url": "https://www.pwcva.gov/department/tax-administration/food-and-beverage-tax",
+          "source_year": "undated webpage; price unknown"
+        }
+      ],
+      "contact": {
+        "email": "unknown",
+        "phone": "703-580-9000",
+        "contact_name": "Michelle Wang",
+        "note": "Public contact form exists; not submitted. Phone script needed.",
+        "source_url": "https://www.golfoldhickory.com/events/weddings-banquets"
+      },
+      "source_checks": [
+        {
+          "url": "https://www.golfoldhickory.com/events/weddings-banquets",
+          "final_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+          "status": 200,
+          "length": 101071,
+          "source_year": "undated webpage; price unknown"
+        },
+        {
+          "url": "https://www.pwcva.gov/department/tax-administration/food-and-beverage-tax",
+          "final_url": "https://www.pwcva.gov/department/tax-administration/food-and-beverage-tax",
+          "status": 200,
+          "length": 585418,
+          "source_year": "undated webpage; price unknown"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "2027 price_year is a solver convention, NOT a published price year. Service charge and any package inclusions not expressly listed above are assumptions. Unknown site/ceremony/room/extra-hour fees are excluded from ceiling scenario and must reduce allowable package price."
+      ],
+      "fit": "unknown",
+      "reason": "No current price; threshold scenario is a ceiling, not an offer or budget fit. Unpriced venue/ceremony/room fees still require quote.",
+      "maximum_2027_package_before_service_tax_scenario": 119.5,
+      "model_result": {
+        "venue": "Old Hickory Golf Club \u2014 UNKNOWN PRICE; maximum-package scenario only",
+        "guests": 185,
+        "jurisdiction": "VA-PRINCE-WILLIAM",
+        "all_in": 32138.55,
+        "per_guest": 173.72,
+        "lines": {
+          "in-house F&B (package/minimum)": 22107.5,
+          "F&B service charge": 4863.65,
+          "F&B tax": 2427.4,
+          "wedding cake + tasting/delivery": 1630.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9068.1,
+        "headroom_r1_trimmed": 0.9,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+        "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/old_hickory_gc.json"
+    },
+    {
+      "name": "The Villa (Catering by Uptown) - all-inclusive wedding package",
+      "town": "Beltsville, MD (4060 Powder Mill Rd; Prince George's County)",
+      "checked_on": "2026-11-08",
+      "price_year": "undated current page; price unknown",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "Grand Ballroom most suitable for125\u2013250; site offers seating/dancing layouts but no185-round-table floorplan. Renaissance dining/dancing is a climate-controlled tent.",
+          "source_url": "https://www.thevillaweddingvenue.com/ballrooms/",
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "fact": "Indoor ceremony weather backup; booking up to24months; reception4.5\u20136hours; venue-supplied alcohol and catering; outside cake permitted.",
+          "source_url": "https://www.thevillaweddingvenue.com/faq/",
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "fact": "Date-dependent minimum and price; decor must be placed/removed by licensed professional. Onsite parking advertised but fee not explicitly stated.",
+          "source_url": "https://www.thevillaweddingvenue.com/faq/",
+          "source_year": "undated current page; price unknown"
+        }
+      ],
+      "contact": {
+        "email": "info@thevillaweddingvenue.com",
+        "phone": "301-572-7744",
+        "source_url": "https://www.thevillaweddingvenue.com/faq/"
+      },
+      "source_checks": [
+        {
+          "url": "https://www.thevillaweddingvenue.com/",
+          "final_url": "https://www.thevillaweddingvenue.com/",
+          "status": 200,
+          "length": 91715,
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "url": "https://www.thevillaweddingvenue.com/faq/",
+          "final_url": "https://www.thevillaweddingvenue.com/faq/",
+          "status": 200,
+          "length": 71497,
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "url": "https://www.thevillaweddingvenue.com/ballrooms/",
+          "final_url": "https://www.thevillaweddingvenue.com/ballrooms/",
+          "status": 200,
+          "length": 106838,
+          "source_year": "undated current page; price unknown"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "2027 price_year is a solver convention, NOT a published price year. Service charge and any package inclusions not expressly listed above are assumptions. Unknown site/ceremony/room/extra-hour fees are excluded from ceiling scenario and must reduce allowable package price."
+      ],
+      "fit": "unknown",
+      "reason": "No current price; threshold scenario is a ceiling, not an offer or budget fit. Unpriced venue/ceremony/room fees still require quote.",
+      "maximum_2027_package_before_service_tax_scenario": 118.16,
+      "model_result": {
+        "venue": "The Villa (Beltsville) \u2014 UNKNOWN PRICE; maximum-package scenario only",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 32138.85,
+        "per_guest": 173.72,
+        "lines": {
+          "in-house F&B (package/minimum)": 21859.6,
+          "F&B service charge": 4809.11,
+          "F&B tax": 1760.13,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9068.4,
+        "headroom_r1_trimmed": 0.6,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": true,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.thevillaweddingvenue.com/faq/",
+        "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/the_villa_beltsville.json"
+    },
+    {
+      "name": "Celebrations at the Bay - Chesapeake Ballroom all-inclusive package",
+      "town": "Pasadena, MD (Anne Arundel County)",
+      "checked_on": "2026-11-08",
+      "price_year": "undated current page; price unknown",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "FAQ maximum350 venue-wide; not confirmed Chesapeake Ballroom capacity with dance floor. Indoor ceremony backup and24-month booking window.",
+          "source_url": "https://www.celebrationsatthebay.com/frequently-asked-questions/",
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "fact": "Reception4.5\u20136hours, catering and alcohol exclusively in-house, outside cake allowed. Date-dependent minimum; no package price.",
+          "source_url": "https://www.celebrationsatthebay.com/frequently-asked-questions/",
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "fact": "All-inclusive package describes food, bar options and table linens; precise rentals and ceremony fees require written quote.",
+          "source_url": "https://www.celebrationsatthebay.com/all-inclusive-wedding-package/",
+          "source_year": "undated current page; price unknown"
+        }
+      ],
+      "contact": {
+        "email": "info@celebrationsatthebay.com",
+        "phone": "301-572-7744",
+        "source_url": "https://www.celebrationsatthebay.com/frequently-asked-questions/"
+      },
+      "source_checks": [
+        {
+          "url": "https://www.celebrationsatthebay.com/",
+          "final_url": "https://www.celebrationsatthebay.com/",
+          "status": 200,
+          "length": 107166,
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "url": "https://www.celebrationsatthebay.com/all-inclusive-wedding-package/",
+          "final_url": "https://www.celebrationsatthebay.com/all-inclusive-wedding-package/",
+          "status": 200,
+          "length": 80835,
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "url": "https://www.celebrationsatthebay.com/frequently-asked-questions/",
+          "final_url": "https://www.celebrationsatthebay.com/frequently-asked-questions/",
+          "status": 200,
+          "length": 84190,
+          "source_year": "undated current page; price unknown"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "2027 price_year is a solver convention, NOT a published price year. Service charge and any package inclusions not expressly listed above are assumptions. Unknown site/ceremony/room/extra-hour fees are excluded from ceiling scenario and must reduce allowable package price."
+      ],
+      "fit": "unknown",
+      "reason": "No current price; threshold scenario is a ceiling, not an offer or budget fit. Unpriced venue/ceremony/room fees still require quote.",
+      "maximum_2027_package_before_service_tax_scenario": 118.16,
+      "model_result": {
+        "venue": "Celebrations at the Bay (Pasadena) \u2014 UNKNOWN PRICE; maximum-package scenario only",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 32138.85,
+        "per_guest": 173.72,
+        "lines": {
+          "in-house F&B (package/minimum)": 21859.6,
+          "F&B service charge": 4809.11,
+          "F&B tax": 1760.13,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9068.4,
+        "headroom_r1_trimmed": 0.6,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": true,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.celebrationsatthebay.com/frequently-asked-questions/",
+        "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/celebrations_at_the_bay.json"
+    },
+    {
+      "name": "Crowne Plaza College Park - Washington DC (Grand Ballroom + Annapolis Room)",
+      "town": "Greenbelt, MD (6400 Ivy Lane; Prince George's County)",
+      "checked_on": "2026-11-08",
+      "price_year": "undated fact sheet; price unknown",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "Grand Ballroom5,000sqft, banquet320. Annapolis Room2,700sqft, reception250 and built-in bar; full-service catering.",
+          "source_url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet",
+          "source_year": "undated fact sheet; price unknown"
+        },
+        {
+          "fact": "Free on-site parking explicitly listed. Seating at rounds plus dance floor and indoor ceremony/holding-room allocation remain unknown.",
+          "source_url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet",
+          "source_year": "undated fact sheet; price unknown"
+        },
+        {
+          "fact": "Fact-sheet cover email omits z in plaza; last page prints sales@crowneplazacollegepark.com. Use phone if email uncertain.",
+          "source_url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet",
+          "source_year": "undated fact sheet; price unknown"
+        }
+      ],
+      "contact": {
+        "email": "sales@crowneplazacollegepark.com",
+        "phone": "301-614-8241",
+        "caution": "PDF has inconsistent email spellings; this is last-page spelling.",
+        "source_url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet"
+      },
+      "source_checks": [
+        {
+          "url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet",
+          "final_url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet",
+          "status": 200,
+          "length": 7265195,
+          "source_year": "undated fact sheet; price unknown"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "2027 price_year is a solver convention, NOT a published price year. Service charge and any package inclusions not expressly listed above are assumptions. Unknown site/ceremony/room/extra-hour fees are excluded from ceiling scenario and must reduce allowable package price."
+      ],
+      "fit": "unknown",
+      "reason": "No current price; threshold scenario is a ceiling, not an offer or budget fit. Unpriced venue/ceremony/room fees still require quote.",
+      "maximum_2027_package_before_service_tax_scenario": 112.99,
+      "model_result": {
+        "venue": "Crowne Plaza College Park \u2014 UNKNOWN PRICE; maximum-package scenario only",
+        "guests": 185,
+        "jurisdiction": "MD",
+        "all_in": 32138.62,
+        "per_guest": 173.72,
+        "lines": {
+          "in-house F&B (package/minimum)": 20903.15,
+          "F&B service charge": 5016.76,
+          "F&B tax": 1710.71,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 108.0,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9068.17,
+        "headroom_r1_trimmed": 0.83,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": true,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://digital.ihg.com/is/content/ihg/cpc-fact-sheet",
+        "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/crowne_plaza_college_park.json"
+    },
+    {
+      "name": "Chantilly National Golf & Country Club (Invited) - wedding package",
+      "town": "Centreville, VA (Fairfax County)",
+      "checked_on": "2026-11-08",
+      "price_year": "undated current page; price unknown",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "All catering/bar supplied by club. Wedding tables, chairs, linens, china, glassware and setup included; outside florists/entertainment welcomed; outside cake policy unknown.",
+          "source_url": "https://www.invitedclubs.com/clubs/chantilly-national-golf-and-country-club/host-an-event",
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "fact": "Non-members welcome; date/space/time-dependent minimums and possible room fees. Rehearsal included. Price and capacities unpublished.",
+          "source_url": "https://www.invitedclubs.com/clubs/chantilly-national-golf-and-country-club/host-an-event",
+          "source_year": "undated current page; price unknown"
+        }
+      ],
+      "contact": {
+        "email": "unknown",
+        "phone": "703-631-9560",
+        "note": "Phone script needed; do not submit inquiry form.",
+        "source_url": "https://www.invitedclubs.com/clubs/chantilly-national-golf-and-country-club/host-an-event"
+      },
+      "source_checks": [
+        {
+          "url": "https://www.invitedclubs.com/clubs/chantilly-national-golf-and-country-club/host-an-event",
+          "final_url": "https://www.invitedclubs.com/clubs/chantilly-national-golf-country-club/host-an-event",
+          "status": 200,
+          "length": 98794,
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "url": "https://www.invitedclubs.com/clubs/chantilly-national-golf-and-country-club/host-an-event/event-rooms",
+          "final_url": "https://www.invitedclubs.com/clubs/chantilly-national-golf-country-club/host-an-event",
+          "status": 200,
+          "length": 98794,
+          "source_year": "undated current page; price unknown"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "2027 price_year is a solver convention, NOT a published price year. Service charge and any package inclusions not expressly listed above are assumptions. Unknown site/ceremony/room/extra-hour fees are excluded from ceiling scenario and must reduce allowable package price."
+      ],
+      "fit": "unknown",
+      "reason": "No current price; threshold scenario is a ceiling, not an offer or budget fit. Unpriced venue/ceremony/room fees still require quote.",
+      "maximum_2027_package_before_service_tax_scenario": 106.82,
+      "model_result": {
+        "venue": "Chantilly National Golf & Country Club (Centreville) \u2014 UNKNOWN PRICE; maximum-package scenario only",
+        "guests": 185,
+        "jurisdiction": "VA-FAIRFAX",
+        "all_in": 32138.2,
+        "per_guest": 173.72,
+        "lines": {
+          "in-house F&B (package/minimum)": 19761.7,
+          "F&B service charge": 4347.57,
+          "F&B tax": 2410.93,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 108.0,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9067.75,
+        "headroom_r1_trimmed": 1.25,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.invitedclubs.com/clubs/chantilly-national-golf-and-country-club/host-an-event",
+        "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/chantilly_national_gcc.json"
+    },
+    {
+      "name": "Spates Hall Conference Center - Patton Ballroom (Joint Base Myer-Henderson Hall)",
+      "town": "Fort Myer (Arlington), VA (214 McNair Rd, Bldg 407)",
+      "checked_on": "2026-11-08",
+      "price_year": "page updated 2026-02-27; price unknown",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "Patton Ballroom at Spates: sit-down200, standing300; this is not185 rounds plus dance-floor confirmation. Valor/Honor/Courage rooms sit-down100.",
+          "source_url": "https://jbmhh.armymwr.com/programs/Spates-Hall-Conference-Center",
+          "source_year": "page updated 2026-02-27; price unknown"
+        },
+        {
+          "fact": "Events Held Anytime; event planning/catering, florist/bakery coordination and Freedom Lounge available. Booking terms and package price unknown.",
+          "source_url": "https://jbmhh.armymwr.com/programs/Spates-Hall-Conference-Center",
+          "source_year": "page updated 2026-02-27; price unknown"
+        },
+        {
+          "fact": "Old Patton Hall menu is not a current Spates wedding quote and must not be carried across without confirmation.",
+          "source_url": "https://jbmhh.armymwr.com/download_file/view/4156360b-7c58-443a-a7e8-996311e49760/15568",
+          "source_year": "page updated 2026-02-27; price unknown"
+        }
+      ],
+      "contact": {
+        "email": "helena.hollo.naf@army.mil",
+        "phone": "703-524-0200",
+        "alternate_phone": "520-678-1259",
+        "source_url": "https://jbmhh.armymwr.com/programs/Spates-Hall-Conference-Center"
+      },
+      "source_checks": [
+        {
+          "url": "https://jbmhh.armymwr.com/programs/Spates-Hall-Conference-Center",
+          "final_url": "https://jbmhh.armymwr.com/programs/Spates-Hall-Conference-Center",
+          "status": 200,
+          "length": 102612,
+          "source_year": "page updated 2026-02-27; price unknown"
+        },
+        {
+          "url": "https://jbmhh.armymwr.com/download_file/view/4156360b-7c58-443a-a7e8-996311e49760/15568",
+          "final_url": "https://jbmhh.armymwr.com/application/files/8716/8069/4932/JBMHH_PH_WEDDING_Catering_Brochure-2023-4website.pdf",
+          "status": 200,
+          "length": 1008132,
+          "source_year": "page updated 2026-02-27; price unknown"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "2027 price_year is a solver convention, NOT a published price year. Service charge and any package inclusions not expressly listed above are assumptions. Unknown site/ceremony/room/extra-hour fees are excluded from ceiling scenario and must reduce allowable package price."
+      ],
+      "fit": "unknown",
+      "reason": "No current price; threshold scenario is a ceiling, not an offer or budget fit. Unpriced venue/ceremony/room fees still require quote.",
+      "maximum_2027_package_before_service_tax_scenario": 88.73,
+      "model_result": {
+        "venue": "Spates Hall Conference Center \u2014 UNKNOWN PRICE; maximum-package scenario only",
+        "guests": 185,
+        "jurisdiction": "VA-ARLINGTON",
+        "all_in": 32138.33,
+        "per_guest": 173.72,
+        "lines": {
+          "in-house F&B (package/minimum)": 16415.05,
+          "F&B service charge": 4103.76,
+          "F&B tax": 2257.07,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 319.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9067.88,
+        "headroom_r1_trimmed": 1.12,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://jbmhh.armymwr.com/programs/Spates-Hall-Conference-Center",
+        "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/spates_hall_patton_ballroom.json"
+    },
+    {
+      "name": "Belmont Country Club (Invited) - wedding package",
+      "town": "Ashburn, VA (Loudoun County)",
+      "checked_on": "2026-11-08",
+      "price_year": "undated current page; price unknown",
+      "actual_2027_price": "unknown",
+      "availability": "unknown",
+      "verified_facts": [
+        {
+          "fact": "Tailored packages with in-house catering and bar; members/non-members welcome; rehearsals included; club recommends booking12\u201318months ahead.",
+          "source_url": "https://www.invitedclubs.com/clubs/belmont-country-club/host-an-event/event-rooms",
+          "source_year": "undated current page; price unknown"
+        },
+        {
+          "fact": "Outside decor/entertainment/photography allowed subject to approval. Capacities, package rates, inclusions and ceremony/cocktail layouts unpublished.",
+          "source_url": "https://www.invitedclubs.com/clubs/belmont-country-club/host-an-event/event-rooms",
+          "source_year": "undated current page; price unknown"
+        }
+      ],
+      "contact": {
+        "email": "unknown",
+        "phone": "703-723-5330",
+        "contact_name": "Rhonda Lo Presti",
+        "note": "Phone script needed; do not submit inquiry form.",
+        "source_url": "https://www.invitedclubs.com/clubs/belmont-country-club/host-an-event/event-rooms"
+      },
+      "source_checks": [
+        {
+          "url": "https://www.invitedclubs.com/clubs/belmont-country-club/host-an-event/event-rooms",
+          "final_url": "https://www.invitedclubs.com/clubs/belmont-country-club/host-an-event/",
+          "status": 200,
+          "length": 88496,
+          "source_year": "undated current page; price unknown"
+        }
+      ],
+      "must_have_unknowns": [
+        "185 seated at round tables WITH dance floor in one room",
+        "indoor heated ceremony or priced flip with holding room",
+        "separate cocktail room for185",
+        "outside DJ/florist/cake permissions",
+        "enclosed candles",
+        "end time at least10pm",
+        "drive time about60minutes",
+        "dates available"
+      ],
+      "assumptions": [
+        "2027 price_year is a solver convention, NOT a published price year. Service charge and any package inclusions not expressly listed above are assumptions. Unknown site/ceremony/room/extra-hour fees are excluded from ceiling scenario and must reduce allowable package price."
+      ],
+      "fit": "unknown",
+      "reason": "No current price; threshold scenario is a ceiling, not an offer or budget fit. Unpriced venue/ceremony/room fees still require quote.",
+      "maximum_2027_package_before_service_tax_scenario": 89.88,
+      "model_result": {
+        "venue": "Belmont Country Club (Ashburn) \u2014 UNKNOWN PRICE; maximum-package scenario only",
+        "guests": 185,
+        "jurisdiction": "VA",
+        "all_in": 32137.52,
+        "per_guest": 173.72,
+        "lines": {
+          "in-house F&B (package/minimum)": 16627.8,
+          "F&B service charge": 3658.12,
+          "F&B tax": 1217.15,
+          "tables & chairs (ASSUMPTION $10/guest)": 1850.0,
+          "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+          "basic linens & napkins": 847.5,
+          "china, glass & flatware": 1480.0,
+          "dance floor": 1200.0,
+          "rental delivery & late-night pickup": 600.0,
+          "tax on rentals": 391.95,
+          "wedding cake + tasting/delivery": 1630.0,
+          "cake cutting": 370.0,
+          "getting-ready suite": 600.0,
+          "guest parking (ASSUMPTION $15/car)": 1110.0
+        },
+        "envelopes": {
+          "R1 as-is": 23070.45,
+          "R1 trimmed": 32139.45,
+          "R2 as-is": 28525.0,
+          "R2 trimmed": 37594.0
+        },
+        "headroom_r1_as_is": -9067.07,
+        "headroom_r1_trimmed": 1.93,
+        "must_haves": {
+          "seats guests with dance floor": null,
+          "indoor ceremony space": null,
+          "separate cocktail-hour space": null,
+          "date available": null,
+          "within ~60 min of downtown DC (assumption)": null
+        },
+        "nice_to_check": {
+          "allows enclosed candles": null,
+          "allows outside DJ/florist/cake": null,
+          "end time": null
+        },
+        "flags": [
+          "parking cost unknown -- ask (free lot? validation? valet required?)"
+        ],
+        "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+        "source_url": "https://www.invitedclubs.com/clubs/belmont-country-club/host-an-event/event-rooms",
+        "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
+      },
+      "model_all_in_is_actual_quote": false,
+      "spec_path": "wedding/output/specs/package_venues/belmont_cc_ashburn.json"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Union Mills Public House - Sat full day 14h + FAQ est. $120/guest",
+  "venue_type": "package",
+  "jurisdiction": "MD",
+  "rental_fee": 8400,
+  "extra_hour_fee": 0,
+  "package_pp": 124.8,
+  "service_pct": 0.0,
+  "price_year": 2027,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "china",
+    "getting_ready"
+  ],
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": true,
+  "separate_cocktail_space": true,
+  "allows_outside_vendors": null,
+  "end_time": "guests exit 10pm; cleanup to 11pm; extra time $350/h (weddings page) or $450/h (FAQ)",
+  "within_60_min_of_dc": null,
+  "source_url": "https://unionmillspublichouse.com/offerings/weddings",
+  "price_date": "2027 room price; undated$120 F&B estimate treated as2026 and escalated4%"
+}

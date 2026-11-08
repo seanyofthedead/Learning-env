@@ -1,0 +1,29 @@
+{
+  "name": "The Gathering Place - Patuxent Grand Ballroom (rental UNKNOWN=0)",
+  "venue_type": "rental",
+  "jurisdiction": "MD",
+  "rental_fee": 0,
+  "price_year": 2027,
+  "includes": [
+    "tables_chairs",
+    "dance_floor",
+    "free_parking",
+    "setup_breakdown"
+  ],
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 15,
+    "alcohol_pp": 20,
+    "soft_pp": 3,
+    "service_pct": 0.2,
+    "label": "ASSUMPTION budget buffet + beer and wine"
+  },
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "allows_outside_vendors": null,
+  "end_time": null,
+  "within_60_min_of_dc": null,
+  "source_url": "https://thegatheringplacemd.net/details/",
+  "price_date": "Rental unpublished; zero is an algebra placeholder, not free rent"
+}

@@ -1,0 +1,29 @@
+{
+  "venue_type": "rental",
+  "jurisdiction": "VA-FAIRFAX-CITY",
+  "price_year": 2026,
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 15,
+    "alcohol_pp": 20,
+    "soft_pp": 3,
+    "service_pct": 0.2,
+    "label": "ASSUMPTION budget buffet + beer and wine",
+    "holds_liquor_license": false
+  },
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "within_60_min_of_dc": null,
+  "name": "Stacy C. Sherwood Community Center, Entire Center",
+  "rental_fee": 7700,
+  "other_fees": 350,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown"
+  ],
+  "source_url": "https://www.fairfaxva.gov/files/assets/city/v/3/parks-amp-rec/documents/scscc-pricing-policies-contract-fiscal-year-2026-fillable-updated.pdf",
+  "price_date": "FY2026 rate sheet, modeled2026+4%; actual FY2028 unknown",
+  "allows_enclosed_candles": true,
+  "end_time": "Event12am; cleanup ends1am"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Frederick Fairgrounds - Building 7 Large Grandstand + Building 8 Small Grandstand",
+  "venue_type": "rental",
+  "jurisdiction": "MD",
+  "rental_fee": 3950,
+  "security_fee": 630,
+  "required_insurance_extra": 0,
+  "price_year": 2026,
+  "includes": [
+    "free_parking"
+  ],
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 15,
+    "alcohol_pp": 20,
+    "soft_pp": 3,
+    "service_pct": 0.2,
+    "label": "ASSUMPTION budget buffet + beer and wine"
+  },
+  "within_60_min_of_dc": null,
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": true,
+  "end_time": "city noise ordinance 10pm-7am; loading banned 10pm-7am",
+  "source_url": "https://thegreatfrederickfair.com/year-round-rental",
+  "price_date": "undated page; checklist PDF uploaded 2026/02"
+}

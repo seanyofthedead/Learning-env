@@ -1,0 +1,36 @@
+{
+  "venue_type": "rental",
+  "jurisdiction": "MD",
+  "price_year": 2023,
+  "outside_catering": {
+    "food_pp": 60,
+    "staff_pp": 0,
+    "alcohol_pp": 20,
+    "soft_pp": 0,
+    "service_pct": 0.23,
+    "label": "ASSUMPTION combined outside food + hotel-only beer/wine; staff/soft drinks in hotel fee",
+    "bartender_fee": 200,
+    "includes_china": true,
+    "includes_basic_linens": true,
+    "includes_setup_breakdown": true,
+    "guests_per_bartender": 75
+  },
+  "seated_capacity_with_dance_floor": null,
+  "indoor_ceremony": null,
+  "separate_cocktail_space": null,
+  "within_60_min_of_dc": null,
+  "name": "Holiday Inn Gaithersburg, outside catering package hybrid scenario",
+  "rental_fee": 9648.12,
+  "extra_hour_fee": 1050,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "basic_linens",
+    "china",
+    "dance_floor",
+    "free_parking"
+  ],
+  "source_url": "https://digital.ihg.com/is/content/ihg/holiday-inn-gaithersburg-9733465601-original?fmt=pdf",
+  "price_date": "Hotel venue-service package2023; separate food/bar2027 assumptions",
+  "end_time": "Latest rental12am; actual event duration and breakdown TBD"
+}
