@@ -27,6 +27,8 @@ Oak Room is especially useful as a benchmark: **$26,997 / $28,847 / $30,697** at
 
 The Villa, Crowne Plaza and Old Hickory are **quote opportunities, not known bargains**. Current calculated maximum package prices are respectively **$118.16, $112.99 and $119.50 per guest before service and tax**, assuming modeled inclusions and 22%, 24%, 22% service. Those are break-even ceilings with essentially no cushion or unpriced fees. A $1,000 room/ceremony charge consumes $1,000 of that allowance. Prefer a complete proposal comfortably below $32,139 over a headline per-person price.
 
+Old Hickory now has a [detailed requirements review](old_hickory_deep_review.md), direct sales contact and service/fee sensitivity calculations. Its price and key room requirements remain unknown; no ranking upgrade is justified.
+
 ## Friday savings — backup date only
 
 Check the photographer's date-change policy first. The preferred Saturdays remain ahead of Friday November 12.

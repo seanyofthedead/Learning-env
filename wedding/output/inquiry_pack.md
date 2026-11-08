@@ -194,17 +194,19 @@ Sean & Leila
 
 ### 4. Old Hickory Golf Club
 
-Subject: November 2027 wedding availability — about 185 guests
+To: michellew@golfoldhickory.com — [verified official contact](https://www.golfoldhickory.com/events/special-occasions). [Detailed review](old_hickory_deep_review.md).
 
-Hello,
+Subject: November 2027 wedding — about 185 guests
+
+Hello Michelle,
 
 Our first choice is Saturday, November 13, 2027. We'd also consider Saturday, November 6; Saturday, November 20; or Friday, November 12, 2027.
 
-For about 185 guests, please send availability and written 2027 Saturday/Friday itemized pricing. Can we seat everyone at round tables with a dance floor in one room, with a heated indoor ceremony or priced flip/holding room and separate cocktail space?
+For about 185 guests, please send availability and itemized 2027 Saturday/Friday pricing for buffet dinner and hosted beer/wine/soft drinks. Please provide a floor plan showing 185 at rounds with dancing in one room, a heated indoor ceremony or priced flip/holding room, and separate cocktails.
 
-What are your catering/bar rules, outside DJ/florist/cake and enclosed-candle policies, included setup/cleanup hours and end time (10pm minimum; 11pm preferred)? Please include holds, booking window, deposit, payment schedule and cancellation terms.
+Please confirm catering/bar rules, outside DJ/florist/cake and enclosed-candle permissions, setup/cleanup hours, end time (10pm minimum; 11pm preferred), holds, booking window, deposit, payments and cancellation.
 
-Can the ballroom hold dinner and dancing together? Is a separate heated ceremony room available?
+Which ceremony location is heated indoors? What does your included coordinator cover? Is parking free?
 
 Sean & Leila
 [wedding email] · [phone]
@@ -346,7 +348,7 @@ Can we reserve the Great Hall and adjacent rooms together? What security staffin
 Sean & Leila
 [wedding email] · [phone]
 
-### Phone script — Old Hickory; also usable wherever email is unknown
+### Optional phone script — Old Hickory (direct email now verified)
 
 Hello, we're Sean and Leila, planning for about 185 guests. Our first choice is Saturday, November 13, 2027. We'd also consider Saturday, November 6; Saturday, November 20; or Friday, November 12, 2027. Could someone email availability, itemized 2027 Saturday and Friday prices, and a floor plan showing 185 at rounds with a dance floor? We need a heated indoor ceremony and separate cocktails. Please include catering and bar rules, outside-vendor and candle policies, setup hours, end time, holds, booking window, deposits, payments and cancellation. At Old Hickory, can dinner and dancing share the ballroom, and is a separate heated ceremony room available? Our contacts are [wedding email] and [phone]. Thank you.
 

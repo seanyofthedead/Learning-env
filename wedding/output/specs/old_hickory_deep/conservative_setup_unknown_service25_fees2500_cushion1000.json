@@ -1,0 +1,23 @@
+{
+  "venue_type": "package",
+  "price_year": 2027,
+  "within_60_min_of_dc": null,
+  "name": "Old Hickory Golf Club \u2014 conservative inclusion sensitivity, not a quote",
+  "jurisdiction": "VA-PRINCE-WILLIAM",
+  "service_pct": 0.25,
+  "includes": [
+    "tables_chairs",
+    "basic_linens",
+    "china",
+    "dance_floor",
+    "cake_cutting",
+    "getting_ready"
+  ],
+  "seated_capacity_with_dance_floor": null,
+  "allows_enclosed_candles": null,
+  "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+  "package_pp": 97.89,
+  "price_date": "Hypothetical 2027 ceiling: 25% service, 9% F&B tax, $2500 all-in extra fees, $1000 cushion; setup/breakdown unconfirmed so model adds labor/delivery/tax; parking $1110 allowance retained. No price published.",
+  "date_available": null,
+  "other_fees": 2500
+}

@@ -372,11 +372,11 @@
         }
       ],
       "contact": {
-        "email": "unknown",
-        "phone": "703-580-9000",
+        "email": "michellew@golfoldhickory.com",
+        "phone": "703-580-9000 ext. 231",
         "contact_name": "Michelle Wang",
-        "note": "Public contact form exists; not submitted. Phone script needed.",
-        "source_url": "https://www.golfoldhickory.com/events/weddings-banquets"
+        "note": "Direct email verified on official special-events page; no message sent.",
+        "source_url": "https://www.golfoldhickory.com/events/special-occasions"
       },
       "source_checks": [
         {
@@ -451,7 +451,8 @@
         "price_date": "UNKNOWN PRICE.2027 ceiling SCENARIO only, solved against$32,139 with assumed service/inclusions. Zero unquoted site/ceremony/extra-hour fees means EXCLUDED/UNKNOWN, not free. See research/package_venues.json."
       },
       "model_all_in_is_actual_quote": false,
-      "spec_path": "wedding/output/specs/package_venues/old_hickory_gc.json"
+      "spec_path": "wedding/output/specs/package_venues/old_hickory_gc.json",
+      "deep_review": "wedding/output/old_hickory_deep_review.md"
     },
     {
       "name": "The Villa (Catering by Uptown) - all-inclusive wedding package",

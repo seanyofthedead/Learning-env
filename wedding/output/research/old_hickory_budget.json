@@ -1,0 +1,1005 @@
+{
+  "checked_on": "2026-11-08",
+  "venue": "Old Hickory Golf Club",
+  "actual_price": "unknown",
+  "price_year": "unknown; scenario prices are nominal2027 assumptions",
+  "fit": "unknown",
+  "guests": 185,
+  "budget_limit": 32139,
+  "reserve_spent": 0,
+  "base_spec": "wedding/output/specs/package_venues/old_hickory_gc.json",
+  "official_source": {
+    "url": "https://www.golfoldhickory.com/events/weddings-banquets",
+    "checked_on": "2026-11-08",
+    "publication_year": "unknown",
+    "verified_excerpt": "day-of wedding coordinator",
+    "parking_excerpt": "Ample, On-Site Parking Accommodations",
+    "changing_rooms": "Private Bride and Bridal Party Changing Area; Groomsmen Changing Area",
+    "verified_summary": "Advertised wedding inclusions include furniture, standard linens, tableware, dance floor, service staff, coordinator, toast, cake cutting and coffee."
+  },
+  "assumptions": [
+    "All package pp figures below are ceilings before service charge and tax, not vendor prices or availability.",
+    "Package must include dinner, staff and hosted beer/wine/soft drinks for agreed reception duration; toast/coffee alone do not establish included hosted bar.",
+    "Service percentages of 20%, 22% and 25% are wedding scenarios, not verified wedding terms. A separate 2026 golf-outing menu lists 20%. The 9% food/beverage tax combines Prince William 3% with Virginia 6%; quote classification controls actual tax.",
+    "Site/ceremony/extra-hour/security/other fee allowances0/1000/2500 are total all-in burdens inclusive of their own service/tax. Zero does not mean no fees.",
+    "Main matrix preserves prior spec assumption that setup/breakdown is included. Website says service personnel, not an explicit setup/breakdown promise. Conservative sensitivity adds model labor/delivery/tax.",
+    "Getting-ready cost omitted because private bride/bridal-party and groomsmen changing areas are advertised; access hours and suitability still require confirmation.",
+    "Cake purchase $1630 retained; cake cutting included based on official wording.",
+    "Onsite parking does NOT establish free parking: model retains $1110 (74 cars x$15) in every main scenario.",
+    "All unpriced costs must fit the fee allowance. A $1000 cushion is additional room below the venue limit, separate from untouched total-budget reserve.",
+    "No assumed day-of-coordinator savings are applied to venue costs or limits."
+  ],
+  "formula": "floor_to_cent((32139 - cushion - 1630 cake - 1110 parking - all_in_fee_allowance) / (185 * (1 + service_pct) * 1.09))",
+  "matrix": [
+    {
+      "service_pct_assumption": 0.2,
+      "all_in_site_ceremony_other_fees_allowance": 0,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 121.49,
+          "modeled_all_in": 32138.15,
+          "remaining_to_32139": 0.85,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service20_fees0_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 20%, all-in fee allowance $0, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32138.15,
+            "per_guest": 173.72,
+            "lines": {
+              "in-house F&B (package/minimum)": 22475.65,
+              "F&B service charge": 4495.13,
+              "F&B tax": 2427.37,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9067.7,
+            "headroom_r1_trimmed": 1.3,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 117.36,
+          "modeled_all_in": 31138.77,
+          "remaining_to_32139": 1000.23,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service20_fees0_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 20%, all-in fee allowance $0, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31138.77,
+            "per_guest": 168.32,
+            "lines": {
+              "in-house F&B (package/minimum)": 21711.6,
+              "F&B service charge": 4342.32,
+              "F&B tax": 2344.85,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8068.32,
+            "headroom_r1_trimmed": 1000.68,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    },
+    {
+      "service_pct_assumption": 0.2,
+      "all_in_site_ceremony_other_fees_allowance": 1000,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 117.36,
+          "modeled_all_in": 32138.77,
+          "remaining_to_32139": 0.23,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service20_fees1000_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 20%, all-in fee allowance $1000, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32138.77,
+            "per_guest": 173.72,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1000.0,
+              "in-house F&B (package/minimum)": 21711.6,
+              "F&B service charge": 4342.32,
+              "F&B tax": 2344.85,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9068.32,
+            "headroom_r1_trimmed": 0.68,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 113.22,
+          "modeled_all_in": 31136.98,
+          "remaining_to_32139": 1002.02,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service20_fees1000_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 20%, all-in fee allowance $1000, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31136.98,
+            "per_guest": 168.31,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1000.0,
+              "in-house F&B (package/minimum)": 20945.7,
+              "F&B service charge": 4189.14,
+              "F&B tax": 2262.14,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8066.53,
+            "headroom_r1_trimmed": 1002.47,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    },
+    {
+      "service_pct_assumption": 0.2,
+      "all_in_site_ceremony_other_fees_allowance": 2500,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 111.16,
+          "modeled_all_in": 32138.5,
+          "remaining_to_32139": 0.5,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service20_fees2500_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 20%, all-in fee allowance $2500, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32138.5,
+            "per_guest": 173.72,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2500.0,
+              "in-house F&B (package/minimum)": 20564.6,
+              "F&B service charge": 4112.92,
+              "F&B tax": 2220.98,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9068.05,
+            "headroom_r1_trimmed": 0.95,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 107.02,
+          "modeled_all_in": 31136.7,
+          "remaining_to_32139": 1002.3,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service20_fees2500_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 20%, all-in fee allowance $2500, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31136.7,
+            "per_guest": 168.31,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2500.0,
+              "in-house F&B (package/minimum)": 19798.7,
+              "F&B service charge": 3959.74,
+              "F&B tax": 2138.26,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8066.25,
+            "headroom_r1_trimmed": 1002.75,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    },
+    {
+      "service_pct_assumption": 0.22,
+      "all_in_site_ceremony_other_fees_allowance": 0,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 119.5,
+          "modeled_all_in": 32138.55,
+          "remaining_to_32139": 0.45,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service22_fees0_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 22%, all-in fee allowance $0, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32138.55,
+            "per_guest": 173.72,
+            "lines": {
+              "in-house F&B (package/minimum)": 22107.5,
+              "F&B service charge": 4863.65,
+              "F&B tax": 2427.4,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9068.1,
+            "headroom_r1_trimmed": 0.9,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 115.43,
+          "modeled_all_in": 31137.28,
+          "remaining_to_32139": 1001.72,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service22_fees0_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 22%, all-in fee allowance $0, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31137.28,
+            "per_guest": 168.31,
+            "lines": {
+              "in-house F&B (package/minimum)": 21354.55,
+              "F&B service charge": 4698.0,
+              "F&B tax": 2344.73,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8066.83,
+            "headroom_r1_trimmed": 1002.17,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    },
+    {
+      "service_pct_assumption": 0.22,
+      "all_in_site_ceremony_other_fees_allowance": 1000,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 115.43,
+          "modeled_all_in": 32137.28,
+          "remaining_to_32139": 1.72,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service22_fees1000_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 22%, all-in fee allowance $1000, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32137.28,
+            "per_guest": 173.72,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1000.0,
+              "in-house F&B (package/minimum)": 21354.55,
+              "F&B service charge": 4698.0,
+              "F&B tax": 2344.73,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9066.83,
+            "headroom_r1_trimmed": 2.17,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 111.37,
+          "modeled_all_in": 31138.47,
+          "remaining_to_32139": 1000.53,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service22_fees1000_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 22%, all-in fee allowance $1000, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31138.47,
+            "per_guest": 168.32,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1000.0,
+              "in-house F&B (package/minimum)": 20603.45,
+              "F&B service charge": 4532.76,
+              "F&B tax": 2262.26,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8068.02,
+            "headroom_r1_trimmed": 1000.98,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    },
+    {
+      "service_pct_assumption": 0.22,
+      "all_in_site_ceremony_other_fees_allowance": 2500,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 109.33,
+          "modeled_all_in": 32136.6,
+          "remaining_to_32139": 2.4,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service22_fees2500_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 22%, all-in fee allowance $2500, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32136.6,
+            "per_guest": 173.71,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2500.0,
+              "in-house F&B (package/minimum)": 20226.05,
+              "F&B service charge": 4449.73,
+              "F&B tax": 2220.82,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9066.15,
+            "headroom_r1_trimmed": 2.85,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 105.27,
+          "modeled_all_in": 31137.79,
+          "remaining_to_32139": 1001.21,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service22_fees2500_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 22%, all-in fee allowance $2500, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31137.79,
+            "per_guest": 168.31,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2500.0,
+              "in-house F&B (package/minimum)": 19474.95,
+              "F&B service charge": 4284.49,
+              "F&B tax": 2138.35,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8067.34,
+            "headroom_r1_trimmed": 1001.66,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    },
+    {
+      "service_pct_assumption": 0.25,
+      "all_in_site_ceremony_other_fees_allowance": 0,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 116.63,
+          "modeled_all_in": 32138.05,
+          "remaining_to_32139": 0.95,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service25_fees0_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 25%, all-in fee allowance $0, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32138.05,
+            "per_guest": 173.72,
+            "lines": {
+              "in-house F&B (package/minimum)": 21576.55,
+              "F&B service charge": 5394.14,
+              "F&B tax": 2427.36,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9067.6,
+            "headroom_r1_trimmed": 1.4,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 112.66,
+          "modeled_all_in": 31137.36,
+          "remaining_to_32139": 1001.64,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service25_fees0_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 25%, all-in fee allowance $0, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31137.36,
+            "per_guest": 168.31,
+            "lines": {
+              "in-house F&B (package/minimum)": 20842.1,
+              "F&B service charge": 5210.52,
+              "F&B tax": 2344.74,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8066.91,
+            "headroom_r1_trimmed": 1002.09,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    },
+    {
+      "service_pct_assumption": 0.25,
+      "all_in_site_ceremony_other_fees_allowance": 1000,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 112.66,
+          "modeled_all_in": 32137.36,
+          "remaining_to_32139": 1.64,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service25_fees1000_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 25%, all-in fee allowance $1000, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32137.36,
+            "per_guest": 173.72,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1000.0,
+              "in-house F&B (package/minimum)": 20842.1,
+              "F&B service charge": 5210.52,
+              "F&B tax": 2344.74,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9066.91,
+            "headroom_r1_trimmed": 2.09,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 108.69,
+          "modeled_all_in": 31136.67,
+          "remaining_to_32139": 1002.33,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service25_fees1000_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 25%, all-in fee allowance $1000, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31136.67,
+            "per_guest": 168.31,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 1000.0,
+              "in-house F&B (package/minimum)": 20107.65,
+              "F&B service charge": 5026.91,
+              "F&B tax": 2262.11,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8066.22,
+            "headroom_r1_trimmed": 1002.78,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    },
+    {
+      "service_pct_assumption": 0.25,
+      "all_in_site_ceremony_other_fees_allowance": 2500,
+      "cushion_scenarios": {
+        "0": {
+          "package_ceiling_before_service_tax": 106.71,
+          "modeled_all_in": 32137.59,
+          "remaining_to_32139": 1.41,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service25_fees2500_cushion0.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 25%, all-in fee allowance $2500, cushion $0",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 32137.59,
+            "per_guest": 173.72,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2500.0,
+              "in-house F&B (package/minimum)": 19741.35,
+              "F&B service charge": 4935.34,
+              "F&B tax": 2220.9,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -9067.14,
+            "headroom_r1_trimmed": 1.86,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        },
+        "1000": {
+          "package_ceiling_before_service_tax": 102.74,
+          "modeled_all_in": 31136.9,
+          "remaining_to_32139": 1002.1,
+          "spec_path": "wedding/output/specs/old_hickory_deep/service25_fees2500_cushion1000.json",
+          "model_result": {
+            "venue": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 25%, all-in fee allowance $2500, cushion $1000",
+            "guests": 185,
+            "jurisdiction": "VA-PRINCE-WILLIAM",
+            "all_in": 31136.9,
+            "per_guest": 168.31,
+            "lines": {
+              "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2500.0,
+              "in-house F&B (package/minimum)": 19006.9,
+              "F&B service charge": 4751.72,
+              "F&B tax": 2138.28,
+              "wedding cake + tasting/delivery": 1630.0,
+              "guest parking (ASSUMPTION $15/car)": 1110.0
+            },
+            "envelopes": {
+              "R1 as-is": 23070.45,
+              "R1 trimmed": 32139.45,
+              "R2 as-is": 28525.0,
+              "R2 trimmed": 37594.0
+            },
+            "headroom_r1_as_is": -8066.45,
+            "headroom_r1_trimmed": 1002.55,
+            "must_haves": {
+              "seats guests with dance floor": null,
+              "indoor ceremony space": null,
+              "separate cocktail-hour space": null,
+              "date available": null,
+              "within ~60 min of downtown DC (assumption)": null
+            },
+            "nice_to_check": {
+              "allows enclosed candles": null,
+              "allows outside DJ/florist/cake": null,
+              "end time": null
+            },
+            "flags": [
+              "parking cost unknown -- ask (free lot? validation? valet required?)"
+            ],
+            "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+            "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+            "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json."
+          }
+        }
+      }
+    }
+  ],
+  "conservative_setup_unknown": {
+    "rationale": "Website does not explicitly include setup/breakdown. The model adds $555 labor +$600 rental delivery +$69.30 rental tax = $1224.30. This is a conservative default, not a vendor fee.",
+    "spec_path": "wedding/output/specs/old_hickory_deep/conservative_setup_unknown_service25_fees2500_cushion1000.json",
+    "package_ceiling_before_service_tax": 97.89,
+    "model_result": {
+      "venue": "Old Hickory Golf Club \u2014 conservative inclusion sensitivity, not a quote",
+      "guests": 185,
+      "jurisdiction": "VA-PRINCE-WILLIAM",
+      "all_in": 31138.7,
+      "per_guest": 168.32,
+      "lines": {
+        "venue fees (rental/hourly/ceremony/coordinator/security/permits/other)": 2500.0,
+        "in-house F&B (package/minimum)": 18109.65,
+        "F&B service charge": 4527.41,
+        "F&B tax": 2037.34,
+        "setup & breakdown labor (ASSUMPTION $3/guest)": 555.0,
+        "rental delivery & late-night pickup": 600.0,
+        "tax on rentals": 69.3,
+        "wedding cake + tasting/delivery": 1630.0,
+        "guest parking (ASSUMPTION $15/car)": 1110.0
+      },
+      "envelopes": {
+        "R1 as-is": 23070.45,
+        "R1 trimmed": 32139.45,
+        "R2 as-is": 28525.0,
+        "R2 trimmed": 37594.0
+      },
+      "headroom_r1_as_is": -8068.25,
+      "headroom_r1_trimmed": 1000.75,
+      "must_haves": {
+        "seats guests with dance floor": null,
+        "indoor ceremony space": null,
+        "separate cocktail-hour space": null,
+        "date available": null,
+        "within ~60 min of downtown DC (assumption)": null
+      },
+      "nice_to_check": {
+        "allows enclosed candles": null,
+        "allows outside DJ/florist/cake": null,
+        "end time": null
+      },
+      "flags": [
+        "parking cost unknown -- ask (free lot? validation? valet required?)"
+      ],
+      "verdict": "FITS only with the trims -- PENDING answers: seats guests with dance floor, indoor ceremony space, separate cocktail-hour space, date available, within ~60 min of downtown DC (assumption)",
+      "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+      "price_date": "Hypothetical 2027 ceiling: 25% service, 9% F&B tax, $2500 all-in extra fees, $1000 cushion; setup/breakdown unconfirmed so model adds labor/delivery/tax; parking $1110 allowance retained. No price published."
+    },
+    "remaining_to_32139": 1000.3
+  },
+  "coordinator": {
+    "official_advertisement": "day-of wedding coordinator",
+    "scope": "unknown",
+    "current_budget_line": 2500,
+    "automatic_savings_applied": 0,
+    "potential_savings_range": [
+      0,
+      2500
+    ],
+    "treatment": "Potential reduction in Planning & legal, outside the venue envelope. Retain the full $2500 until written scope satisfies the couple; do not expand the $32139 venue envelope automatically. Any reallocation requires a separate explicit couple decision.",
+    "verify": [
+      "Named lead and backup, exact start/end hours, overtime and any required assistant at185 guests.",
+      "Pre-wedding timeline creation and all outside-vendor communication, rehearsal attendance and ceremony cueing.",
+      "Managing room flip, holding/cocktail transitions, setup/decor placement, vendor arrivals and end-of-night breakdown.",
+      "Whether responsibility is only club catering/service or coordination for the couple across all wedding vendors.",
+      "Whether an independent coordinator is required in addition, and whether included service may be removed for an actual written credit."
+    ]
+  },
+  "parking_sensitivity": {
+    "if_free_parking_confirmed_savings": 1110,
+    "not_applied": true,
+    "additional_pp_headroom_at_service22": 4.512,
+    "note": "Retain savings as cushion unless budget is explicitly revised; do not state free parking until confirmed."
+  },
+  "quote_request_guidance": "Ask for itemized2027 Saturday and Friday dinner+hosted beer/wine proposal, actual service/tax treatment, site/ceremony/holding-room/flip/extra-hour/parking charges, coordinator scope and exact inclusions. Do not send the internal ceiling, total budget or per-person target to vendors.",
+  "validation": "All19 saved specs evaluated by wedding_budget_model.evaluate at185. Every cushion1000 result stays at/below31139; all break-even results at/below32139. Actual must-haves and price remain unknown."
+}

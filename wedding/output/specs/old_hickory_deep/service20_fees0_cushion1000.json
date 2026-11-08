@@ -1,0 +1,24 @@
+{
+  "venue_type": "package",
+  "price_year": 2027,
+  "within_60_min_of_dc": null,
+  "name": "Old Hickory Golf Club \u2014 hypothetical ceiling; service 20%, all-in fee allowance $0, cushion $1000",
+  "jurisdiction": "VA-PRINCE-WILLIAM",
+  "service_pct": 0.2,
+  "includes": [
+    "tables_chairs",
+    "setup_breakdown",
+    "basic_linens",
+    "china",
+    "dance_floor",
+    "cake_cutting",
+    "getting_ready"
+  ],
+  "seated_capacity_with_dance_floor": null,
+  "allows_enclosed_candles": null,
+  "source_url": "https://www.golfoldhickory.com/events/weddings-banquets",
+  "package_pp": 117.36,
+  "price_date": "No published price year. Hypothetical 2027 package ceiling, NOT a venue offer. Includes hosted beer/wine only as an assumption. Fee allowance is all-in (including any fee tax/service); all missing quote charges must fit it. Setup/breakdown inclusion assumed from prior scenario, not expressly verified. See output/research/old_hickory_budget.json.",
+  "date_available": null,
+  "other_fees": 0
+}

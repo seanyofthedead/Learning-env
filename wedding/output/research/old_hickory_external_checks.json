@@ -1,0 +1,130 @@
+{
+  "checked_on": "2026-11-08",
+  "venue": "Old Hickory Golf Club, 11921 Chanceford Drive, Woodbridge VA 22192",
+  "scope": "Independent official-site/PDF and official-tourism discovery. No forms submitted, messages sent, bookings, or banned aggregator pages opened.",
+  "verdict": "Promising but unqualified: the published sources do not establish all locked requirements for 185 guests.",
+  "sources": [
+    {
+      "url": "https://www.golfoldhickory.com/events/weddings-banquets",
+      "source_year": "undated webpage; wedding price unknown",
+      "verification": "Opened successfully with web tool",
+      "short_excerpt": "Rustic 3,600 Square Foot Ballroom; FOUR Ceremony Locations",
+      "verified_summary": "Clubhouse maximum 250; ballroom and dining room with veranda. Includes tables/chairs, linens/napkins, tableware, votives, hardwood dance floor, service staff, day-of coordinator, toast, cake cutting and coffee. Separate bridal and groomsmen changing areas advertised.",
+      "limits": "No dimensioned floor plan, 185-rounds-plus-dancing capacity, heated ceremony capacity, cocktail-room capacity, candle-flame rule, outside DJ/florist/cake policy, event end time, wedding prices, or contract terms found."
+    },
+    {
+      "url": "https://www.golfoldhickory.com/events/special-occasions",
+      "source_year": "undated webpage",
+      "verification": "Opened successfully with web tool",
+      "short_excerpt": "Contact Michelle Wang at michellew@golfoldhickory.com or 703-580-9000 x231",
+      "verified_summary": "Direct sales contact; buffet and cocktail-reception menus are offered. No wedding-specific rates or terms."
+    },
+    {
+      "url": "https://www.golfoldhickory.com/images/downloads/OH_Golf_Outings_2026.pdf",
+      "source_year": 2026,
+      "verification": "Official link from club/outings opened as a 5-page PDF",
+      "short_excerpt": "Located only 26 miles from Downtown D.C.",
+      "verified_summary": "Golf-outing brochure describes clubhouse groups of 50\u2013250 and staff approval for outside food/beverage. It gives a 25% deposit for golf outings.",
+      "limits": "Not a wedding contract. Do not transfer its deposit or food exceptions to a wedding. Mileage does not establish travel time; 250 is not rounds-and-dance capacity."
+    },
+    {
+      "url": "https://www.golfoldhickory.com/images/downloads/OH_Outings_Menu_2026_f.pdf",
+      "source_year": 2026,
+      "verification": "Official link from club/outings; web fetch returned 403, ordinary curl download succeeded and PDF text inspected",
+      "short_excerpt": "POST-PLAY AWARDS BANQUET (2-HOUR POST-PLAY SERVICE ONLY)",
+      "verified_summary": "Golf-outing menu states 20% service plus 6% Virginia sales and 3% Prince William meals tax. BBQ buffet $26/person; other dinner buffets $24\u201344/person. Light beer/wine bar $16/person for two-hour post-play service; soft drinks included with buffets.",
+      "limits": "These are restricted golf-outing food/bar rates, not a wedding package or all-in cost. Wedding application, required fees, staffing, bar duration and 2027 prices unknown. Do not substitute these rates into a wedding estimate without written eligibility."
+    },
+    {
+      "url": "https://www.visitpwc.com/listing/old-hickory-golf-club/1577/",
+      "source_year": "unknown",
+      "verification": "Search-result lead only: web open returned navigation shell; direct curl returned Access Denied",
+      "unverified_leads": "Indexed listing mentions 240 banquet seats, one meeting room, free parking, an outdoor ceremony site and an indoor reception space. Not treated as verified facts.",
+      "limits": "Do not use search result to remove parking allowance or pass layout. Indexed 24-hour business-hours field does not establish permissible wedding hours."
+    },
+    {
+      "url": "https://www.visitpwc.com/listing/old-hickory-golf-club/45/",
+      "source_year": "unknown",
+      "verification": "Search-result lead; opened result again returned navigation shell",
+      "limits": "Same unverified tourism data; no requirement upgraded."
+    }
+  ],
+  "requirements": [
+    {
+      "requirement": "185 seated at round tables plus dance floor in one room",
+      "status": "unknown",
+      "needed": "Scaled floor plan showing all 185 seats, table sizes, DJ, cake/buffet and unobstructed exits with dance floor retained."
+    },
+    {
+      "requirement": "Indoor heated ceremony for 185 or priced flip with holding room",
+      "status": "unknown",
+      "needed": "Name, capacity and heating of indoor ceremony and holding spaces; written flip staffing/time/cost."
+    },
+    {
+      "requirement": "Separate cocktail-hour space for 185",
+      "status": "unknown",
+      "needed": "A separate space with capacity for all 185; identify whether it is indoors, outdoors or covered and its November weather plan.",
+      "scope_note": "The original prompt explicitly requires a heated indoor ceremony, but only says separate space for cocktail hour. An indoor/heated cocktail preference should not be presented as an additional locked requirement."
+    },
+    {
+      "requirement": "Hosted beer/wine",
+      "status": "bar service exists; wedding package unknown",
+      "needed": "2027 wedding bar duration, beer/wine selection, soft drinks, bartenders, minimums and all charges."
+    },
+    {
+      "requirement": "At least 10pm; 11pm preferred",
+      "status": "unknown",
+      "needed": "Separate guest/music/bar/vendor-clear times and all access hours."
+    },
+    {
+      "requirement": "Outside DJ, florist and cake",
+      "status": "unknown",
+      "needed": "Written wedding permissions, approved-vendor restrictions, insurance and fees."
+    },
+    {
+      "requirement": "Enclosed candles",
+      "status": "unknown",
+      "needed": "Confirm venue votives have real flame and client glass-enclosed candles allowed; quantity, height and placement restrictions."
+    },
+    {
+      "requirement": "About 60 minutes from downtown DC",
+      "status": "unknown",
+      "needed": "Check Saturday event-time route; venue brochure distance of 26 miles is no drive-time guarantee."
+    },
+    {
+      "requirement": "Date availability and $32,139 all-in venue ceiling",
+      "status": "unknown",
+      "needed": "Written 2027 proposal for dates in required order; no actual wedding price published."
+    }
+  ],
+  "discovery_result": "No public wedding-specific menu/contract/room plan found through targeted official-domain and official-tourism searches. This establishes a research gap, not proof that such documents do not exist.",
+  "recommended_next_step": "Use the direct sales email to request a scaled 185-guest floor plan, heated indoor ceremony/holding arrangement, separate cocktail space, vendor/candle/end-time rules and itemized 2027 wedding proposal. Ask whether a simple BBQ/buffet and beer/wine format can use the club culinary team; do not assume golf-outing rates apply.",
+  "contact": {
+    "name": "Michelle Wang",
+    "email": "michellew@golfoldhickory.com",
+    "phone": "703-580-9000 ext. 231",
+    "source_url": "https://www.golfoldhickory.com/events/special-occasions"
+  },
+  "additional_checks": [
+    {
+      "requirement": "Dates and contract terms",
+      "needed": "Check November 13 first, then November 6, November 20 and November 12, 2027, in that order. Request Saturday and Friday pricing, booking window, hold terms, deposit, payment schedule and cancellation/date-change policy."
+    },
+    {
+      "requirement": "Complete all-in cost",
+      "needed": "Written room/package price and minimum, service charge and taxes, ceremony/flip charge, staffing and bar hours, setup/breakdown, security, required rentals and fees. Confirm whether parking is free and changing rooms are available early enough for getting ready."
+    },
+    {
+      "requirement": "Included coordinator",
+      "needed": "Clarify the included day-of coordinator responsibilities and hours. Do not remove the separate coordinator budget unless the couple confirms this service covers their needs."
+    },
+    {
+      "requirement": "Budget treatment",
+      "needed": "Keep the reserve untouched. A calculated package ceiling is not a quote or confirmed fit. Keep budget figures private in vendor messages."
+    },
+    {
+      "requirement": "Already-booked photographer",
+      "needed": "Confirm We Love Photography may work at the venue, plus the selected videographer. The original must-have names outside DJ/florist/cake; honoring the booked photographer is an additional concrete planning check."
+    }
+  ]
+}

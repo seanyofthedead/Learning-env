@@ -57,7 +57,7 @@ The official page lists Patuxent seating up to 265 and an oversized dance floor;
 
 The venue advertises up to 250 in the clubhouse, a 3,600-square-foot ballroom, dance floor and changing rooms. This does not prove 185 at rounds with dancing or a separate heated ceremony space. Price, minimums and ceremony fees are unknown.
 
-**Price basis:** undated webpage; price unknown. **Contact:** 703-580-9000; ask for Michelle Wang. Email unknown; call script included.
+**Price basis:** undated webpage; price unknown. **Contact:** Michelle Wang, michellew@golfoldhickory.com; 703-580-9000 ext. 231, verified on the [official special-events page](https://www.golfoldhickory.com/events/special-occasions). See the [detailed requirements and budget review](old_hickory_deep_review.md); the fit remains unknown.
 
 [Model spec](specs/package_venues/old_hickory_gc.json); [Official source 1](https://www.golfoldhickory.com/events/weddings-banquets) · [Official source 2](https://www.pwcva.gov/department/tax-administration/food-and-beverage-tax).
 
