@@ -1,0 +1,57 @@
+{
+  "workbook_rows": 82,
+  "priced_must_haves": 76658.13,
+  "unpriced_must_haves": [
+    "Reception venue",
+    "Ceremony space (indoor)",
+    "Cocktail hour space",
+    "Guest tables & chairs",
+    "Setup & breakdown labor",
+    "Guest parking",
+    "Extra hour for d\u00e9cor setup"
+  ],
+  "original_nonvenue": 31475.0,
+  "current_nonvenue": 22406.0,
+  "already_assumed_nonvenue_reductions": 9069.0,
+  "strict_venue_envelope": 32139,
+  "scenarios": [
+    {
+      "label": "Current hard ceiling",
+      "venue_driven": 32139.0,
+      "other_spending": 22406.0,
+      "planned_spending": 54545.0,
+      "unallocated_spending_headroom": 0.45,
+      "protected_reserve": 5454.55,
+      "quote_status": "planning scenario, not an offer"
+    },
+    {
+      "label": "Minimum $1,000 venue headroom",
+      "venue_driven": 31139.0,
+      "other_spending": 22406.0,
+      "planned_spending": 53545.0,
+      "unallocated_spending_headroom": 1000.45,
+      "protected_reserve": 5454.55,
+      "quote_status": "planning scenario, not an offer"
+    },
+    {
+      "label": "Suggested early quote target",
+      "venue_driven": 30000.0,
+      "other_spending": 22406.0,
+      "planned_spending": 52406.0,
+      "unallocated_spending_headroom": 2139.45,
+      "protected_reserve": 5454.55,
+      "quote_status": "planning scenario, not an offer"
+    }
+  ],
+  "marginal_costs": {
+    "ten_dollars_all_in_per_guest": 1850,
+    "ten_dollars_before_22pct_service_and_9pct_tax": 2460.13,
+    "five_more_tables_before_additional_tax": 810
+  },
+  "limitations": [
+    "Targets are not supplier quotes.",
+    "Unknown required costs remain unknown, not zero.",
+    "No scenario authorizes spending the protected reserve.",
+    "The model's legacy FITS verdict does not enforce every locked requirement."
+  ]
+}

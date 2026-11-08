@@ -51,6 +51,6 @@ The handoff's “about $124/guest in MD” is too low for its stated placeholder
 
 The model's exact trimmed envelope is $32,139.45; deliverables use the user's more conservative $32,139 limit. The exact spend limit is $54,545.45 and reserve is $5,454.55. Do not use the model's alternative “Reading 2” reserve-spending verdict as permission to exceed the locked limit.
 
-The model's insurance line is labeled “beyond budgeted $300,” while the locked plan now has $700 fixed insurance. No automatic $400 insurance addition should be introduced; only a verified incremental requirement beyond the locked $700 belongs in the venue scenario.
+Corrected in the November 8 budget review: the fixed $700 comprises $300 liability insurance and $400 cancellation insurance. The model's “beyond budgeted $300” label correctly refers to liability alone. Compare each actual premium against its own allowance; for example, $500 liability plus $400 cancellation is $200 above the combined budget. Do not add cancellation a second time or use its allowance to conceal excess liability cost. See [the fee review](budget_fee_risk_review.md).
 
 Unknown rates, missing published fees and unknown vendor origin remain quote questions. No forms were submitted and no vendor was contacted.

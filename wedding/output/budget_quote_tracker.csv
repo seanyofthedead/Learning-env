@@ -1,0 +1,83 @@
+Category,Item,Must_have,Original_workbook_estimate,Workbook_status,Current_fixed_target,Budget_treatment,Supplier_quote_total,Quote_price_year,Included_in_package_or_other_row,Deposit_paid,Balance_due,Payment_due_date,Scope_to_confirm
+Venue & ceremony,Reception venue,Y,,Unpriced,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Ceremony space (indoor),Y,,Unpriced,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Cocktail hour space,Y,,Unpriced,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Guest tables & chairs,Y,,Unpriced,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Setup & breakdown labor,Y,,Unpriced,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Getting-ready suite,Y,600.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Guest parking,Y,,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Wedding-night hotel room,Y,600.0,Estimate,600.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Venue & ceremony,Specialty linens & chargers,Y,935.0,Estimate,935.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. Sage/stone/ivory palette."
+Venue & ceremony,Liability insurance,Y,300.0,Estimate,300.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Venue & ceremony,Cancellation insurance,Y,400.0,Estimate,400.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Venue & ceremony,Basic table linens & napkins,Y,847.5,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,"China, glassware & flatware",Y,1480.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. Usually in the caterer's quote."
+Venue & ceremony,Dance floor,Y,1200.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Rental delivery & late-night pickup,Y,600.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Extra hour for décor setup,Y,,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Venue & ceremony,Liquor license,Y,100.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. One-day license where the venue requires one."
+Venue & ceremony,Chiavari chair upgrade,N,1480.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Venue & ceremony,Stage / band riser,N,500.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Venue & ceremony,Coat check attendant,N,250.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Venue & ceremony,Restroom attendant,N,200.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Music & sound,DJ / MC,Y,2000.0,Estimate,1500.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Music & sound,Ceremony & cocktail-hour sound,Y,500.0,Estimate,500.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. Separate rooms from the reception."
+Music & sound,Uplighting,N,1000.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Music & sound,Ceremony musicians,N,800.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Food & drink,Hors d'oeuvres + dinner,Y,17575.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Food & drink,Catering service staff,Y,4625.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Food & drink,Bartenders,Y,600.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Food & drink,Bar / alcohol,Y,6475.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Food & drink,"Soft drinks, coffee & tea",Y,740.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Food & drink,Caterer service charge (~20%),Y,5883.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. Typical for outside caterers."
+Food & drink,Sales tax (~6%),Y,2457.63,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. On catering & rentals."
+Food & drink,Cake cutting,Y,370.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Food & drink,Wedding cake,Y,1480.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Food & drink,Cake tasting & delivery,Y,150.0,Estimate,,replace with complete venue scenario; no independent fixed cap,,,,,,,"Part of the single $32,139 venue-driven envelope; do not add the old estimate to a complete package again. "
+Food & drink,Vendor meals,Y,400.0,Estimate,400.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. ~10 vendors."
+Food & drink,Late-night snack,N,600.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Planning & legal,Day-of coordinator,Y,3500.0,Estimate,2500.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. Overdue — book now."
+Planning & legal,Officiant,Y,500.0,Estimate,500.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Planning & legal,Marriage license,Y,50.0,Estimate,50.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Planning & legal,Vendor tips,Y,3000.0,Estimate,2000.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Planning & legal,Emergency kit & misc.,Y,200.0,Estimate,200.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Photo & video,Photographer,Y,750.0,Booked,750.0,booked,,,,,,,"Workbook marks $750 booked; confirm contracted hours, travel, delivery, backup, date-change terms and payment balance. We Love Photography."
+Photo & video,Videographer,Y,3000.0,Estimate,1800.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. Overdue — book now."
+Photo & video,Wedding album,N,800.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Photo & video,Photo booth,N,950.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Flowers & décor,Bridal bouquet,Y,250.0,Estimate,250.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Flowers & décor,Boutonnieres & corsages,Y,200.0,Estimate,200.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Flowers & décor,Ceremony florals,Y,800.0,Estimate,800.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Flowers & décor,Ceremony backdrop / arch,Y,500.0,Estimate,0.0,unquoted allocation,,,,,,,Current model allocates $0 to a must-have. Need an included or paid design; see proposed allocation in budget review. 
+Flowers & décor,Centerpieces,Y,2850.0,Estimate,1900.0,unquoted allocation,,,,,,,"Current target: $100 per table x 19 tables, subject to approved floor plan and complete tax/delivery/labor quote. Original workbook basis: $150 per table of 10."
+Flowers & décor,"Cocktail, bar & cake flowers",Y,400.0,Estimate,400.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Flowers & décor,Candles (hurricanes & votives),Y,2000.0,Estimate,1000.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. Incl. setup & strike."
+Flowers & décor,Florist delivery & setup fee,Y,840.0,Estimate,546.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. ~12% of florals."
+Flowers & décor,Seating chart & signage,Y,300.0,Estimate,300.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Flowers & décor,Table numbers,Y,50.0,Estimate,50.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Flowers & décor,Bridesmaid bouquets,N,400.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Flowers & décor,Guest book,N,60.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Attire & beauty,Wedding dress,Y,2000.0,Estimate,1200.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,Alterations,Y,400.0,Estimate,400.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,"Veil, jewelry & accessories",Y,300.0,Estimate,300.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,Bride's shoes,Y,150.0,Estimate,150.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,Groom's suit / tux,Y,700.0,Estimate,300.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,Groom's accessories,Y,200.0,Estimate,200.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,Wedding bands,Y,2500.0,Estimate,1200.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,Hair & makeup,Y,500.0,Estimate,500.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,Hair & makeup trials,Y,250.0,Estimate,125.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Attire & beauty,Dress preservation,N,350.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Stationery,Save-the-dates,Y,0.0,Gift,0.0,gift,,,,,,,Confirm promised scope and timing; current cash allowance is zero. Covered by your brother.
+Stationery,Invitation design & addressing,Y,0.0,Gift,0.0,gift,,,,,,,Confirm promised scope and timing; current cash allowance is zero. Covered by your brother.
+Stationery,Invitations & RSVP cards,Y,0.0,Gift,0.0,gift,,,,,,,Confirm promised scope and timing; current cash allowance is zero. Covered by your brother.
+Stationery,Postage,Y,0.0,Gift,0.0,gift,,,,,,,Confirm promised scope and timing; current cash allowance is zero. Covered by your brother.
+Stationery,Thank-you cards,Y,150.0,Estimate,150.0,unquoted allocation,,,,,,,"Target must include applicable tax, delivery, travel, required labor and fees. "
+Stationery,Programs & menu cards,N,300.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Guests & transport,Couple's transportation,N,500.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Guests & transport,Guest shuttle,N,1500.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Guests & transport,Welcome bags,N,500.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Guests & transport,Favors,N,400.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Guests & transport,Wedding party gifts,N,400.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Pre/post events,Rehearsal space,N,,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Pre/post events,Rehearsal dinner,N,3000.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 
+Pre/post events,Welcome party / brunch,N,2000.0,Estimate,0,excluded optional,,,,,,,Not funded in current plan; removing this creates no additional saving. 

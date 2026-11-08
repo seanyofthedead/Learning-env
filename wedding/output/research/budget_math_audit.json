@@ -1,0 +1,1037 @@
+{
+  "review_date": "2026-11-08",
+  "price_year": "workbook estimates undated; current caps are targets, not 2027 quotes",
+  "source": "wedding/budget/venue_neutral_items.md",
+  "rows": [
+    {
+      "category": "Venue & ceremony",
+      "item": "Reception venue",
+      "must_have": true,
+      "source_estimate": null,
+      "source_status": "",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Ceremony space (indoor)",
+      "must_have": true,
+      "source_estimate": null,
+      "source_status": "",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Cocktail hour space",
+      "must_have": true,
+      "source_estimate": null,
+      "source_status": "",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Guest tables & chairs",
+      "must_have": true,
+      "source_estimate": null,
+      "source_status": "",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Setup & breakdown labor",
+      "must_have": true,
+      "source_estimate": null,
+      "source_status": "",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Getting-ready suite",
+      "must_have": true,
+      "source_estimate": 600.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Guest parking",
+      "must_have": true,
+      "source_estimate": null,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Wedding-night hotel room",
+      "must_have": true,
+      "source_estimate": 600.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 600.0
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Specialty linens & chargers",
+      "must_have": true,
+      "source_estimate": 935.0,
+      "source_status": "Estimate",
+      "note": "Sage/stone/ivory palette.",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 935.0
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Liability insurance",
+      "must_have": true,
+      "source_estimate": 300.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 300.0
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Cancellation insurance",
+      "must_have": true,
+      "source_estimate": 400.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 400.0
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Basic table linens & napkins",
+      "must_have": true,
+      "source_estimate": 847.5,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "China, glassware & flatware",
+      "must_have": true,
+      "source_estimate": 1480.0,
+      "source_status": "Estimate",
+      "note": "Usually in the caterer's quote.",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Dance floor",
+      "must_have": true,
+      "source_estimate": 1200.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Rental delivery & late-night pickup",
+      "must_have": true,
+      "source_estimate": 600.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Extra hour for d\u00e9cor setup",
+      "must_have": true,
+      "source_estimate": null,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Liquor license",
+      "must_have": true,
+      "source_estimate": 100.0,
+      "source_status": "Estimate",
+      "note": "One-day license where the venue requires one.",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Chiavari chair upgrade",
+      "must_have": false,
+      "source_estimate": 1480.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Stage / band riser",
+      "must_have": false,
+      "source_estimate": 500.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Coat check attendant",
+      "must_have": false,
+      "source_estimate": 250.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Venue & ceremony",
+      "item": "Restroom attendant",
+      "must_have": false,
+      "source_estimate": 200.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Music & sound",
+      "item": "DJ / MC",
+      "must_have": true,
+      "source_estimate": 2000.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 1500.0
+    },
+    {
+      "category": "Music & sound",
+      "item": "Ceremony & cocktail-hour sound",
+      "must_have": true,
+      "source_estimate": 500.0,
+      "source_status": "Estimate",
+      "note": "Separate rooms from the reception.",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 500.0
+    },
+    {
+      "category": "Music & sound",
+      "item": "Uplighting",
+      "must_have": false,
+      "source_estimate": 1000.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Music & sound",
+      "item": "Ceremony musicians",
+      "must_have": false,
+      "source_estimate": 800.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Food & drink",
+      "item": "Hors d'oeuvres + dinner",
+      "must_have": true,
+      "source_estimate": 17575.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Catering service staff",
+      "must_have": true,
+      "source_estimate": 4625.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Bartenders",
+      "must_have": true,
+      "source_estimate": 600.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Bar / alcohol",
+      "must_have": true,
+      "source_estimate": 6475.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Soft drinks, coffee & tea",
+      "must_have": true,
+      "source_estimate": 740.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Caterer service charge (~20%)",
+      "must_have": true,
+      "source_estimate": 5883.0,
+      "source_status": "Estimate",
+      "note": "Typical for outside caterers.",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Sales tax (~6%)",
+      "must_have": true,
+      "source_estimate": 2457.63,
+      "source_status": "Estimate",
+      "note": "On catering & rentals.",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Cake cutting",
+      "must_have": true,
+      "source_estimate": 370.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Wedding cake",
+      "must_have": true,
+      "source_estimate": 1480.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Cake tasting & delivery",
+      "must_have": true,
+      "source_estimate": 150.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "replace with complete venue scenario; no independent fixed cap",
+      "current_nonvenue_cap": null
+    },
+    {
+      "category": "Food & drink",
+      "item": "Vendor meals",
+      "must_have": true,
+      "source_estimate": 400.0,
+      "source_status": "Estimate",
+      "note": "~10 vendors.",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 400.0
+    },
+    {
+      "category": "Food & drink",
+      "item": "Late-night snack",
+      "must_have": false,
+      "source_estimate": 600.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Planning & legal",
+      "item": "Day-of coordinator",
+      "must_have": true,
+      "source_estimate": 3500.0,
+      "source_status": "Estimate",
+      "note": "Overdue \u2014 book now.",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 2500.0
+    },
+    {
+      "category": "Planning & legal",
+      "item": "Officiant",
+      "must_have": true,
+      "source_estimate": 500.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 500.0
+    },
+    {
+      "category": "Planning & legal",
+      "item": "Marriage license",
+      "must_have": true,
+      "source_estimate": 50.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 50.0
+    },
+    {
+      "category": "Planning & legal",
+      "item": "Vendor tips",
+      "must_have": true,
+      "source_estimate": 3000.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 2000.0
+    },
+    {
+      "category": "Planning & legal",
+      "item": "Emergency kit & misc.",
+      "must_have": true,
+      "source_estimate": 200.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 200.0
+    },
+    {
+      "category": "Photo & video",
+      "item": "Photographer",
+      "must_have": true,
+      "source_estimate": 750.0,
+      "source_status": "Booked",
+      "note": "We Love Photography.",
+      "current_treatment": "booked",
+      "current_nonvenue_cap": 750.0
+    },
+    {
+      "category": "Photo & video",
+      "item": "Videographer",
+      "must_have": true,
+      "source_estimate": 3000.0,
+      "source_status": "Estimate",
+      "note": "Overdue \u2014 book now.",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 1800.0
+    },
+    {
+      "category": "Photo & video",
+      "item": "Wedding album",
+      "must_have": false,
+      "source_estimate": 800.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Photo & video",
+      "item": "Photo booth",
+      "must_have": false,
+      "source_estimate": 950.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Bridal bouquet",
+      "must_have": true,
+      "source_estimate": 250.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 250.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Boutonnieres & corsages",
+      "must_have": true,
+      "source_estimate": 200.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 200.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Ceremony florals",
+      "must_have": true,
+      "source_estimate": 800.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 800.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Ceremony backdrop / arch",
+      "must_have": true,
+      "source_estimate": 500.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 0.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Centerpieces",
+      "must_have": true,
+      "source_estimate": 2850.0,
+      "source_status": "Estimate",
+      "note": "$150 per table of 10.",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 1900.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Cocktail, bar & cake flowers",
+      "must_have": true,
+      "source_estimate": 400.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 400.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Candles (hurricanes & votives)",
+      "must_have": true,
+      "source_estimate": 2000.0,
+      "source_status": "Estimate",
+      "note": "Incl. setup & strike.",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 1000.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Florist delivery & setup fee",
+      "must_have": true,
+      "source_estimate": 840.0,
+      "source_status": "Estimate",
+      "note": "~12% of florals.",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 546.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Seating chart & signage",
+      "must_have": true,
+      "source_estimate": 300.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 300.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Table numbers",
+      "must_have": true,
+      "source_estimate": 50.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 50.0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Bridesmaid bouquets",
+      "must_have": false,
+      "source_estimate": 400.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Flowers & d\u00e9cor",
+      "item": "Guest book",
+      "must_have": false,
+      "source_estimate": 60.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Wedding dress",
+      "must_have": true,
+      "source_estimate": 2000.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 1200.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Alterations",
+      "must_have": true,
+      "source_estimate": 400.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 400.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Veil, jewelry & accessories",
+      "must_have": true,
+      "source_estimate": 300.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 300.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Bride's shoes",
+      "must_have": true,
+      "source_estimate": 150.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 150.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Groom's suit / tux",
+      "must_have": true,
+      "source_estimate": 700.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 300.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Groom's accessories",
+      "must_have": true,
+      "source_estimate": 200.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 200.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Wedding bands",
+      "must_have": true,
+      "source_estimate": 2500.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 1200.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Hair & makeup",
+      "must_have": true,
+      "source_estimate": 500.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 500.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Hair & makeup trials",
+      "must_have": true,
+      "source_estimate": 250.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 125.0
+    },
+    {
+      "category": "Attire & beauty",
+      "item": "Dress preservation",
+      "must_have": false,
+      "source_estimate": 350.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Stationery",
+      "item": "Save-the-dates",
+      "must_have": true,
+      "source_estimate": 0.0,
+      "source_status": "Gift",
+      "note": "Covered by your brother.",
+      "current_treatment": "gift",
+      "current_nonvenue_cap": 0.0
+    },
+    {
+      "category": "Stationery",
+      "item": "Invitation design & addressing",
+      "must_have": true,
+      "source_estimate": 0.0,
+      "source_status": "Gift",
+      "note": "Covered by your brother.",
+      "current_treatment": "gift",
+      "current_nonvenue_cap": 0.0
+    },
+    {
+      "category": "Stationery",
+      "item": "Invitations & RSVP cards",
+      "must_have": true,
+      "source_estimate": 0.0,
+      "source_status": "Gift",
+      "note": "Covered by your brother.",
+      "current_treatment": "gift",
+      "current_nonvenue_cap": 0.0
+    },
+    {
+      "category": "Stationery",
+      "item": "Postage",
+      "must_have": true,
+      "source_estimate": 0.0,
+      "source_status": "Gift",
+      "note": "Covered by your brother.",
+      "current_treatment": "gift",
+      "current_nonvenue_cap": 0.0
+    },
+    {
+      "category": "Stationery",
+      "item": "Thank-you cards",
+      "must_have": true,
+      "source_estimate": 150.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "unquoted allocation",
+      "current_nonvenue_cap": 150.0
+    },
+    {
+      "category": "Stationery",
+      "item": "Programs & menu cards",
+      "must_have": false,
+      "source_estimate": 300.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Guests & transport",
+      "item": "Couple's transportation",
+      "must_have": false,
+      "source_estimate": 500.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Guests & transport",
+      "item": "Guest shuttle",
+      "must_have": false,
+      "source_estimate": 1500.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Guests & transport",
+      "item": "Welcome bags",
+      "must_have": false,
+      "source_estimate": 500.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Guests & transport",
+      "item": "Favors",
+      "must_have": false,
+      "source_estimate": 400.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Guests & transport",
+      "item": "Wedding party gifts",
+      "must_have": false,
+      "source_estimate": 400.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Pre/post events",
+      "item": "Rehearsal space",
+      "must_have": false,
+      "source_estimate": null,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Pre/post events",
+      "item": "Rehearsal dinner",
+      "must_have": false,
+      "source_estimate": 3000.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    },
+    {
+      "category": "Pre/post events",
+      "item": "Welcome party / brunch",
+      "must_have": false,
+      "source_estimate": 2000.0,
+      "source_status": "Estimate",
+      "note": "",
+      "current_treatment": "excluded optional",
+      "current_nonvenue_cap": 0
+    }
+  ],
+  "counts": {
+    "rows": 82,
+    "must_have": 61,
+    "optional": 21,
+    "status": {
+      "": 5,
+      "Estimate": 72,
+      "Booked": 1,
+      "Gift": 4
+    }
+  },
+  "categories": {
+    "Venue & ceremony": {
+      "source_must_numeric": 7062.5,
+      "source_optional_numeric": 2430.0,
+      "current_nonvenue_cap": 2235.0,
+      "venue_envelope_item_count": 13,
+      "unpriced_mandatory": [
+        "Reception venue",
+        "Ceremony space (indoor)",
+        "Cocktail hour space",
+        "Guest tables & chairs",
+        "Setup & breakdown labor",
+        "Guest parking",
+        "Extra hour for d\u00e9cor setup"
+      ]
+    },
+    "Music & sound": {
+      "source_must_numeric": 2500.0,
+      "source_optional_numeric": 1800.0,
+      "current_nonvenue_cap": 2000.0,
+      "venue_envelope_item_count": 0,
+      "unpriced_mandatory": []
+    },
+    "Food & drink": {
+      "source_must_numeric": 40755.63,
+      "source_optional_numeric": 600.0,
+      "current_nonvenue_cap": 400.0,
+      "venue_envelope_item_count": 10,
+      "unpriced_mandatory": []
+    },
+    "Planning & legal": {
+      "source_must_numeric": 7250.0,
+      "source_optional_numeric": 0.0,
+      "current_nonvenue_cap": 5250.0,
+      "venue_envelope_item_count": 0,
+      "unpriced_mandatory": []
+    },
+    "Photo & video": {
+      "source_must_numeric": 3750.0,
+      "source_optional_numeric": 1750.0,
+      "current_nonvenue_cap": 2550.0,
+      "venue_envelope_item_count": 0,
+      "unpriced_mandatory": []
+    },
+    "Flowers & d\u00e9cor": {
+      "source_must_numeric": 8190.0,
+      "source_optional_numeric": 460.0,
+      "current_nonvenue_cap": 5446.0,
+      "venue_envelope_item_count": 0,
+      "unpriced_mandatory": []
+    },
+    "Attire & beauty": {
+      "source_must_numeric": 7000.0,
+      "source_optional_numeric": 350.0,
+      "current_nonvenue_cap": 4375.0,
+      "venue_envelope_item_count": 0,
+      "unpriced_mandatory": []
+    },
+    "Stationery": {
+      "source_must_numeric": 150.0,
+      "source_optional_numeric": 300.0,
+      "current_nonvenue_cap": 150.0,
+      "venue_envelope_item_count": 0,
+      "unpriced_mandatory": []
+    },
+    "Guests & transport": {
+      "source_must_numeric": 0.0,
+      "source_optional_numeric": 3300.0,
+      "current_nonvenue_cap": 0.0,
+      "venue_envelope_item_count": 0,
+      "unpriced_mandatory": []
+    },
+    "Pre/post events": {
+      "source_must_numeric": 0.0,
+      "source_optional_numeric": 5000.0,
+      "current_nonvenue_cap": 0.0,
+      "venue_envelope_item_count": 0,
+      "unpriced_mandatory": []
+    }
+  },
+  "already_assumed_trims": [
+    {
+      "item": "DJ / MC",
+      "original": 2000.0,
+      "current_cap": 1500.0,
+      "already_assumed_reduction": 500.0
+    },
+    {
+      "item": "Day-of coordinator",
+      "original": 3500.0,
+      "current_cap": 2500.0,
+      "already_assumed_reduction": 1000.0
+    },
+    {
+      "item": "Vendor tips",
+      "original": 3000.0,
+      "current_cap": 2000.0,
+      "already_assumed_reduction": 1000.0
+    },
+    {
+      "item": "Videographer",
+      "original": 3000.0,
+      "current_cap": 1800.0,
+      "already_assumed_reduction": 1200.0
+    },
+    {
+      "item": "Ceremony backdrop / arch",
+      "original": 500.0,
+      "current_cap": 0.0,
+      "already_assumed_reduction": 500.0
+    },
+    {
+      "item": "Centerpieces",
+      "original": 2850.0,
+      "current_cap": 1900.0,
+      "already_assumed_reduction": 950.0
+    },
+    {
+      "item": "Candles (hurricanes & votives)",
+      "original": 2000.0,
+      "current_cap": 1000.0,
+      "already_assumed_reduction": 1000.0
+    },
+    {
+      "item": "Florist delivery & setup fee",
+      "original": 840.0,
+      "current_cap": 546.0,
+      "already_assumed_reduction": 294.0
+    },
+    {
+      "item": "Wedding dress",
+      "original": 2000.0,
+      "current_cap": 1200.0,
+      "already_assumed_reduction": 800.0
+    },
+    {
+      "item": "Groom's suit / tux",
+      "original": 700.0,
+      "current_cap": 300.0,
+      "already_assumed_reduction": 400.0
+    },
+    {
+      "item": "Wedding bands",
+      "original": 2500.0,
+      "current_cap": 1200.0,
+      "already_assumed_reduction": 1300.0
+    },
+    {
+      "item": "Hair & makeup trials",
+      "original": 250.0,
+      "current_cap": 125.0,
+      "already_assumed_reduction": 125.0
+    }
+  ],
+  "totals": {
+    "total_budget": 60000,
+    "protected_reserve": 5454.55,
+    "spend_limit": 54545.45,
+    "original_priced_mandatory": 76658.13,
+    "original_priced_optional": 15990,
+    "original_all_priced": 92648.13,
+    "original_unpriced_mandatory_count": 7,
+    "original_unpriced_optional_count": 1,
+    "original_nonvenue_mandatory": 31475,
+    "current_nonvenue_caps": 22406,
+    "current_booked_amount": 750,
+    "current_nonvenue_unquoted": 21656,
+    "current_strict_venue_envelope": 32139,
+    "current_spending_plan_at_ceiling": 54545,
+    "remaining_spend_headroom_at_ceiling": 0.45,
+    "preferred_venue_target_with_1000_headroom": 31139,
+    "spending_plan_at_preferred_venue_target": 53545,
+    "remaining_spend_headroom_at_preferred_venue_target": 1000.45
+  },
+  "sensitivity_not_predictions": [
+    {
+      "description": "10% overrun on nonvenue unquoted caps only, excluding photographer; venue at 31,139",
+      "nonvenue_increase": 2165.6,
+      "total_spend": 55710.6,
+      "over_spend_limit": 1165.15
+    },
+    {
+      "description": "Venue at 30,000; all nonvenue caps met",
+      "total_spend": 52406,
+      "remaining_spend_headroom": 2139.45
+    },
+    {
+      "description": "4% increase on a venue quote of 31,139 not already locked for 2027",
+      "increase": 1245.56,
+      "total_spend": 54790.56,
+      "over_spend_limit": 245.11
+    }
+  ],
+  "limitations": [
+    "Original numeric sums exclude unknown venue costs and are not a comparable complete bid.",
+    "Current category caps derive from assumed design and vendor-price changes; no quote verification performed by this arithmetic audit.",
+    "All optional lines already excluded; skipping them creates no new savings against the current cap plan.",
+    "Nonvenue estimates have no explicit tax/delivery/fee treatment. Treat caps as all-in and obtain complete quotes."
+  ]
+}

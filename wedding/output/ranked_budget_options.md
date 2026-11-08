@@ -1,6 +1,6 @@
 # Ranked budget opportunities — Sean & Leila
 
-**Best money-saving path: a suitable rental hall plus a full-service restaurant/BBQ quote.** Start with Oak Room, The Gathering Place, Heritage Building and Beth El, while obtaining package comparisons from The Villa, Crowne Plaza and Old Hickory.
+**A promising money-saving path is a suitable rental hall plus a full-service restaurant/BBQ quote.** Start with Oak Room, The Gathering Place, Heritage Building and Beth El, while obtaining package comparisons from The Villa, Crowne Plaza and Old Hickory. The [whole-budget review](budget_review.md) explains why a complete package may offer better value after hall staffing, rentals and cleanup are priced; no approach is a proven winner yet.
 
 This is a value ranking of all 43 researched venue leads, not a claim that any is already available or qualified. **No complete 2027 quote currently proves a fit.** Keep 185 guests, the $32,139 venue envelope, the $54,545.45 spend limit and $5,454.55 untouched reserve. Keep Saturday November 13 first, then Saturday 6, Saturday 20 and Friday 12 November 2027. No required feature has been dropped.
 
