@@ -10,16 +10,16 @@ Stage 1  Weak
 Summarize this report.
 
 Stage 2  + Role
-Act as a federal budget analyst supporting an NSA directorate. Summarize this report.
+Act as a federal budget analyst supporting a defense agency directorate. Summarize this report.
 
 Stage 3  + Task
-Act as a federal budget analyst supporting an NSA directorate. Review the attached execution report and identify the five largest variances against plan.
+Act as a federal budget analyst supporting a defense agency directorate. Review the attached execution report and identify the five largest variances against plan.
 
 Stage 4  + Context
-Act as a federal budget analyst supporting an NSA directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology.
+Act as a federal budget analyst supporting a defense agency directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology.
 
 Stage 5  + Output (the strong prompt)
-Act as a federal budget analyst supporting an NSA directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology. Present findings in a leadership-ready table with the variance, likely cause, and a recommended follow-up for each. The Director will read this in 30 seconds: start with a one-sentence bottom line, then the table, with no more than 12 words per cell and nothing else.
+Act as a federal budget analyst supporting a defense agency directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology. Present findings in a leadership-ready table with the variance, likely cause, and a recommended follow-up for each. The Director will read this in 30 seconds: start with a one-sentence bottom line, then the table, with no more than 12 words per cell and nothing else.
 
 DEMO 2  Trust but verify   (Copilot in Word; same prompt in each document's Copilot pane)
 File 1: demo2/demo_report.docx  (clean)

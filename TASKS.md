@@ -28,7 +28,7 @@ Re-read ASSUMPTIONS.md before resuming.
 | 6.2 | 6 Script | presentation coach | 90-second and 45-second compressed versions; cut until it fits | done |
 | 7.1 | 7 Review | reliability engineer | scripts/preflight.py (+ headless app run) passing | done |
 | 7.2 | 7 Review | integrity reviewer | scripts/inspect_files.py; inspect raw XML/metadata of all Demo 1 files; certify | done |
-| 7.3 | 7 Review | skeptical NSA financial manager | Check every number, term, DoD FMR reference; fix findings | done |
+| 7.3 | 7 Review | skeptical federal financial manager | Check every number, term, DoD FMR reference; fix findings | done |
 | 7.4 | 7 Review | all three | REVIEW.md with sign-offs after fixes repeat clean | done |
 | 7.5 | 7 Review | builder | README.md (setup, offline run, cache regen, day-of checklist, responsible Demo 2) | done |
 | 7.6 | 7 Review | builder | copilot-kit (clean files, prompts list, rehearsal log template + 3-rehearsal rule) | done |
@@ -100,3 +100,13 @@ Re-read ASSUMPTIONS.md before resuming.
 |----|-------|------|------|--------|
 | 15.1 | 15 Test kit | presentation coach | TEST_GUIDE.html: steps, prompts with copy buttons, what to look for, audience-readiness scorecard, colleague test | done |
 | 15.2 | 15 Test kit | builder | release/SDFM_demo_test_kit.zip = guide + 3 demo files; full kit only on request (--full); preflight; docs; push | done |
+
+## Phase 16: Client feedback from the 12 November call
+
+| ID | Phase | Role | Task | Status |
+|----|-------|------|------|--------|
+| 16.1 | 16 Feedback | builder | Remove every agency name; preflight check that none remains | done |
+| 16.2 | 16 Demo 3 | builder | Reconciliation data (recon_data.py), files (build_recon.py), answer key, demo3/README.md | done |
+| 16.3 | 16 Demo 3 | reliability engineer | Cold runs of the Demo 3 prompt with two models; all five breaks found | done |
+| 16.4 | 16 Test kit | presentation coach | Test guide for Gemini: Demo 3 section, talk track, scorecard rows; Demo 2 "Softened" outcome; neutral Demo 2 names in the zip | done |
+| 16.5 | 16 Test kit | builder | Package, preflight, docs, push | done |

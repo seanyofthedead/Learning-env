@@ -1,0 +1,155 @@
+{
+ "label": "Synthetic demonstration data",
+ "as_of": "30 June 2026",
+ "accounts": [
+  {
+   "account": "1730",
+   "title": "Buildings, Improvements and Renovations",
+   "sl": 1803500.0,
+   "gl": 2131500.0,
+   "diff": -328000.0
+  },
+  {
+   "account": "1750",
+   "title": "Equipment",
+   "sl": 1712560.0,
+   "gl": 1470610.0,
+   "diff": 241950.0
+  },
+  {
+   "account": "1820",
+   "title": "Leasehold Improvements",
+   "sl": 702450.0,
+   "gl": 437450.0,
+   "diff": 265000.0
+  }
+ ],
+ "total_difference": 178950.0,
+ "breaks": [
+  {
+   "id": "B1",
+   "type": "Duplicate record",
+   "account": "1750",
+   "docs": [
+    "D26-0117"
+   ],
+   "assets": [
+    "PA-26-0117",
+    "PA-26-0124"
+   ],
+   "effect": {
+    "1750": 186400.0
+   },
+   "why": "Same document and cost recorded twice in the property system (asset IDs PA-26-0117 and PA-26-0124, recorded 2 June and 26 June). The GL has it once.",
+   "action": "Property team: confirm one physical generator and retire the duplicate record PA-26-0124.",
+   "keywords": [
+    "duplicate",
+    "twice",
+    "double"
+   ]
+  },
+  {
+   "id": "B2",
+   "type": "Cutoff / timing",
+   "account": "1750",
+   "docs": [
+    "D26-0125",
+    "D26-0126"
+   ],
+   "assets": [
+    "PA-26-0125",
+    "PA-26-0126"
+   ],
+   "effect": {
+    "1750": 114250.0
+   },
+   "why": "Acquired 29 and 30 June and recorded in the property system, but not posted in the Q3 GL.",
+   "action": "Accounting: confirm the July postings; report as a timing difference, or accrue if material.",
+   "keywords": [
+    "timing",
+    "cutoff",
+    "cut-off",
+    "period end",
+    "quarter end",
+    "july",
+    "not yet posted",
+    "late"
+   ]
+  },
+  {
+   "id": "B3",
+   "type": "Missing property record",
+   "account": "1750",
+   "docs": [
+    "D26-0158"
+   ],
+   "assets": [],
+   "effect": {
+    "1750": -58700.0
+   },
+   "why": "Utility truck posted to Equipment in the GL with no asset record in the property system.",
+   "action": "Property team: locate and tag the truck and add the asset record, or reverse the posting if it isn't ours.",
+   "keywords": [
+    "missing",
+    "no asset record",
+    "not in the subledger",
+    "not recorded",
+    "untagged",
+    "no record"
+   ]
+  },
+  {
+   "id": "B4",
+   "type": "Transposition (keying error)",
+   "account": "1730",
+   "docs": [
+    "D26-0133"
+   ],
+   "assets": [
+    "PA-26-0203"
+   ],
+   "effect": {
+    "1730": -63000.0
+   },
+   "why": "Roof replacement is 418,600.00 in the subledger and 481,600.00 in the GL. The 63,000.00 difference divides evenly by 9, the classic sign of transposed digits.",
+   "action": "Accounting: check the invoice and correct the GL posting.",
+   "keywords": [
+    "transpos",
+    "keying",
+    "typo",
+    "data entry",
+    "digits",
+    "divisible by 9",
+    "418,600",
+    "481,600"
+   ]
+  },
+  {
+   "id": "B5",
+   "type": "Misclassification",
+   "account": "1730 / 1820",
+   "docs": [
+    "D26-0142"
+   ],
+   "assets": [
+    "PA-26-0302"
+   ],
+   "effect": {
+    "1820": 265000.0,
+    "1730": -265000.0
+   },
+   "why": "Leased suite 210 build-out is in 1820 Leasehold Improvements in the subledger but posted to 1730 Buildings in the GL. Equal and opposite differences; no net effect.",
+   "action": "Accounting: reclassify 265,000.00 from 1730 to 1820 in the GL.",
+   "keywords": [
+    "misclass",
+    "reclass",
+    "wrong account",
+    "miscoded",
+    "posted to 1730",
+    "offset"
+   ]
+  }
+ ],
+ "prompt": "Act as a federal property accountant. Reconcile the attached property subledger to the general ledger for FY26 Q3, as of 30 June 2026. Match records by document number. Start with one table by account: subledger total, general ledger total and difference. Then, for each account that doesn't tie, list the documents that explain the difference, the amount and the likely reason, such as a duplicate, timing, a keying error, a misclassification or a missing record. Confirm that the items add up to each account's difference. End with a short research list for the property and accounting teams, brief enough to review in five minutes.",
+ "verify_prompt": "Show your arithmetic for Equipment (1750): start from the subledger total, adjust for each item you found, and land on the general ledger total."
+}

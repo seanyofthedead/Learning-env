@@ -2,7 +2,7 @@ Attached file: fy26_q3_execution_report.csv
 ----- start of file -----
 FY26 Q3 Execution Report — Operation and Maintenance (O&M)
 Demonstration Directorate · Cumulative fiscal year to date through 30 June 2026 · Dollars in thousands ($K)
-"SYNTHETIC DEMONSTRATION DATA — not real NSA, DoD, vendor, personnel or program information"
+"SYNTHETIC DEMONSTRATION DATA — not real agency, vendor, personnel or program information"
 
 Code,Program / activity,FY26 annual plan,Q3 obligation plan,Obligations,Obligation variance,Obligation variance %,Q3 expenditure plan,Expenditures,Expenditure variance,Expenditure variance %,Remarks
 SYN-101,Workforce Training & Certification,4800,3600,3540,-60,-1.7%,2900,2860,-40,-1.4%,
@@ -36,4 +36,4 @@ SYN-125,Transportation of Things,700,525,540,15,2.9%,460,470,10,2.2%,
 Prepared for training use only.
 ----- end of file -----
 
-Act as a federal budget analyst supporting an NSA directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology.
+Act as a federal budget analyst supporting a defense agency directorate. Review the attached FY26 Q3 execution report for the O&M appropriation and identify the five largest variances against plan. Use DoD FMR Volume 3 terminology.

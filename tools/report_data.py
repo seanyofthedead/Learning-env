@@ -1,6 +1,6 @@
 """Single source of truth for the synthetic FY26 Q3 execution report.
 
-Synthetic demonstration data. No real NSA, DoD, vendor, personnel or program
+Synthetic demonstration data. No real agency, vendor, personnel or program
 identifiers. Codes use the made-up prefix "SYN-". Dollars in thousands ($K),
 cumulative fiscal year to date through 30 June 2026 (end of Q3).
 
@@ -14,7 +14,7 @@ LABEL = "Synthetic demonstration data"
 TITLE = "FY26 Q3 Execution Report — Operation and Maintenance (O&M)"
 SUBTITLE = ("Demonstration Directorate · Cumulative fiscal year to date through "
             "30 June 2026 · Dollars in thousands ($K)")
-LABEL_LINE = ("SYNTHETIC DEMONSTRATION DATA — not real NSA, DoD, vendor, personnel "
+LABEL_LINE = ("SYNTHETIC DEMONSTRATION DATA — not real agency, vendor, personnel "
               "or program information")
 NOTES = [
     "Notes: Variance = actual minus plan; negative means below plan. Plan = original FY26 "

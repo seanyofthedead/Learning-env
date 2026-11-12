@@ -82,7 +82,7 @@ shows the answers the tool actually gave, labelled "Recorded in <tool> · <date>
 
 ## What you must confirm
 
-1. **Venue rules (9–10 November NSA check):** a disclosed prompt-injection demo is
+1. **Venue rules (9–10 November venue check):** a disclosed prompt-injection demo is
    permitted; whether it may run live in Copilot or only from the recording; whether the
    injected files may come on site and onto the presentation machine.
 2. **Copilot on the presentation tenant:** Microsoft 365 Copilot licence, Copilot Chat file

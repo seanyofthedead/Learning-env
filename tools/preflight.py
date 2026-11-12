@@ -244,6 +244,8 @@ def run_checks(skip_node=False, accept_resisted=False):
     # ---- 7d. lean test kit: guide is current and holds every prompt; zip matches its files
     import build_test_guide
     import package_test_kit
+    import build_recon
+    import recon_data
     import zipfile
     tmp = tempfile.mkdtemp(prefix="preflight-testkit-")
     try:
@@ -264,8 +266,49 @@ def run_checks(skip_node=False, accept_resisted=False):
         same = names == sorted(package_test_kit.FILES) and all(
             z.read(f"{package_test_kit.TOP}/{n}") == open(path(src), "rb").read()
             for n, src in package_test_kit.FILES.items())
-    check("test kit zip holds exactly the guide and the three demo files, all current "
+    check("test kit zip holds exactly the guide and the demo files, all current "
           "(rebuild with tools/package_test_kit.py)", same)
+    check("test guide holds the Demo 3 prompt and follow-up",
+          build_recon.PROMPT in guide and build_recon.VERIFY_PROMPT in guide)
+
+    # ---- 7e. Demo 3 (reconciliation): data ties out and every file is what the builder makes
+    try:
+        recon_data.check()
+        check("Demo 3: the five planted breaks explain every account difference exactly", True)
+    except AssertionError as err:
+        check("Demo 3: the five planted breaks explain every account difference exactly", False, str(err))
+    tmp = tempfile.mkdtemp(prefix="preflight-recon-")
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            build_recon.main(tmp)
+        for rel in build_recon.OUTPUTS:
+            check(f"Demo 3 file is current: {rel}", os.path.exists(path(rel)) and sha(path(rel)) == sha(os.path.join(tmp, rel)))
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    rk = json.load(open(path("data", "recon_answer_key.json"), encoding="utf-8"))
+    for b in rk["breaks"]:
+        check(f"Demo 3 test guide lists break {b['id']} ({b['type']})", all(d in guide for d in b["docs"]))
+
+    # ---- 7f. the client asked for no agency name anywhere in the material
+    agency_hits = []
+    for d, _, fs in os.walk(ROOT):
+        if ".git" in d.split(os.sep) or "__pycache__" in d:
+            continue
+        for f in fs:
+            fp = os.path.join(d, f)
+            if fp == os.path.abspath(__file__):
+                continue
+            try:
+                raw = open(fp, "rb").read()
+            except OSError:
+                continue
+            if f.endswith((".docx", ".xlsx", ".zip")):
+                import zipfile as _zf
+                with _zf.ZipFile(fp) as zz:
+                    raw = b"".join(zz.read(n) for n in zz.namelist())
+            if re.search(rb"\bNSA\b", raw):
+                agency_hits.append(os.path.relpath(fp, ROOT))
+    check("no agency name (NSA) in any file", not agency_hits, ", ".join(agency_hits))
 
     # ---- 8. presenter script
     pres = cache["presenter"]

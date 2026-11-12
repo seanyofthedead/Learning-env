@@ -52,7 +52,7 @@
       "adds": "role",
       "segments": [
         [
-          "Act as a federal budget analyst supporting an NSA directorate. ",
+          "Act as a federal budget analyst supporting a defense agency directorate. ",
           "role",
           true
         ],
@@ -73,7 +73,7 @@
       "adds": "task",
       "segments": [
         [
-          "Act as a federal budget analyst supporting an NSA directorate. ",
+          "Act as a federal budget analyst supporting a defense agency directorate. ",
           "role",
           false
         ],
@@ -94,7 +94,7 @@
       "adds": "context",
       "segments": [
         [
-          "Act as a federal budget analyst supporting an NSA directorate. ",
+          "Act as a federal budget analyst supporting a defense agency directorate. ",
           "role",
           false
         ],
@@ -140,7 +140,7 @@
       "adds": "output",
       "segments": [
         [
-          "Act as a federal budget analyst supporting an NSA directorate. ",
+          "Act as a federal budget analyst supporting a defense agency directorate. ",
           "role",
           false
         ],

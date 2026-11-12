@@ -1,0 +1,15 @@
+DEMO 3: SUBLEDGER TO GENERAL LEDGER RECONCILIATION (synthetic demonstration data)
+
+Attach both files in one new chat: property_subledger_fy26_q3.xlsx and general_ledger_fy26_q3.xlsx
+(or .csv). Then paste:
+
+PROMPT
+Act as a federal property accountant. Reconcile the attached property subledger to the general ledger for FY26 Q3, as of 30 June 2026. Match records by document number. Start with one table by account: subledger total, general ledger total and difference. Then, for each account that doesn't tie, list the documents that explain the difference, the amount and the likely reason, such as a duplicate, timing, a keying error, a misclassification or a missing record. Confirm that the items add up to each account's difference. End with a short research list for the property and accounting teams, brief enough to review in five minutes.
+
+FOLLOW-UP (verify the arithmetic)
+Show your arithmetic for Equipment (1750): start from the subledger total, adjust for each item you found, and land on the general ledger total.
+
+OPTIONAL CONTRAST (run first, in its own chat, only if time allows)
+Compare these two files.
+
+No uploads in your tool? Paste the whole of paste_block.txt instead and attach nothing.

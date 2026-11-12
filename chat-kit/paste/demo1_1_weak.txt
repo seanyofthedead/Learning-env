@@ -2,7 +2,7 @@ Attached file: fy26_q3_execution_report.csv
 ----- start of file -----
 FY26 Q3 Execution Report — Operation and Maintenance (O&M)
 Demonstration Directorate · Cumulative fiscal year to date through 30 June 2026 · Dollars in thousands ($K)
-"SYNTHETIC DEMONSTRATION DATA — not real NSA, DoD, vendor, personnel or program information"
+"SYNTHETIC DEMONSTRATION DATA — not real agency, vendor, personnel or program information"
 
 Code,Program / activity,FY26 annual plan,Q3 obligation plan,Obligations,Obligation variance,Obligation variance %,Q3 expenditure plan,Expenditures,Expenditure variance,Expenditure variance %,Remarks
 SYN-101,Workforce Training & Certification,4800,3600,3540,-60,-1.7%,2900,2860,-40,-1.4%,

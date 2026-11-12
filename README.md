@@ -1,6 +1,6 @@
-# AI and the Federal Financial Manager: two live demos
+# AI and the Federal Financial Manager: three live demos
 
-Two short, repeatable demos for the session *"AI and the Federal Financial Manager:
+Three short, repeatable demos for the session *"AI and the Federal Financial Manager:
 From Curiosity to Capability"* (SDFM event, 19 November 2026). Educational and
 tool-agnostic. **Everything here is synthetic demonstration data.**
 
@@ -8,6 +8,7 @@ tool-agnostic. **Everything here is synthetic demonstration data.**
 |------|--------|--------------------|
 | 1. From weak to strong | 4:00 (90 s and 45 s versions) | The same report and AI. The prompt grows Role → Task → Context → Output and the answer goes from a generic summary to a leadership-ready table. |
 | 2. Trust but verify | 1:30 (45 s version) | Two identical-looking copies of the report. One has a hidden white line. The AI follows it. The reveal. |
+| 3. Reconcile the subledger to the GL | about 5:00 | Two property reports that don't agree. The AI totals each account, finds the five breaks (duplicate, timing, missing record, keying error, misclassification) and drafts a research list; a person confirms one in five seconds. See [`demo3/`](demo3/). |
 
 # For presenters
 
@@ -15,8 +16,10 @@ tool-agnostic. **Everything here is synthetic demonstration data.**
 Everything below is files you open, print, copy and paste.
 
 **Testing it? Download the test kit:** [`release/SDFM_demo_test_kit.zip`](release/SDFM_demo_test_kit.zip):
-four files, the three demo files plus `TEST_GUIDE.html` (steps, prompts with copy buttons,
-what to look for, and a scorecard for whether it will land). Unzip and open the guide.
+`TEST_GUIDE.html` (steps, prompts with copy buttons, what to look for, and a scorecard for
+whether it will land) plus the demo files: the Demo 1 report, the two Demo 2 copies (neutral
+names, so the file name doesn't give the reveal away) and the two Demo 3 reports. Written
+for Gemini or any approved chat tool that takes uploads. Unzip and open the guide.
 The full presenter kit (runbooks, scripts, fallback app) is in the folders below.
 
 ## Pick your kit

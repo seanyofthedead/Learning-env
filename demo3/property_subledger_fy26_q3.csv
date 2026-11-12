@@ -1,0 +1,47 @@
+"Property Subledger — Capitalized Property, FY26 Q3"
+Demonstration Directorate · Property accountability system extract · Asset records as of 30 June 2026 · Dollars
+"SYNTHETIC DEMONSTRATION DATA — not real agency, vendor, personnel or program information"
+
+Asset ID,Document number,Account,Account title,Description,Acquisition date,Date recorded,Acquisition cost
+PA-26-0101,D26-0101,1750,Equipment,"Forklift, electric, 5,000 lb",2026-04-03,2026-04-06,38950.00
+PA-26-0102,D26-0102,1750,Equipment,"Server rack and UPS, data room A",2026-04-07,2026-04-09,64200.00
+PA-26-0103,D26-0103,1750,Equipment,"Network switch stack, Building 1",2026-04-09,2026-04-13,52780.00
+PA-26-0104,D26-0104,1750,Equipment,"Lab freezer, -80 C",2026-04-14,2026-04-15,27640.00
+PA-26-0105,D26-0105,1750,Equipment,Electric utility cart,2026-04-16,2026-04-20,31500.00
+PA-26-0106,D26-0106,1750,Equipment,"Video conferencing system, Conference Center",2026-04-21,2026-04-23,45300.00
+PA-26-0107,D26-0107,1750,Equipment,Large-format printer and plotter,2026-04-24,2026-04-27,26875.00
+PA-26-0108,D26-0108,1750,Equipment,"Floor scrubber, ride-on",2026-04-28,2026-04-30,29400.00
+PA-26-0109,D26-0109,1750,Equipment,"Storage array, 500 TB",2026-05-01,2026-05-05,142600.00
+PA-26-0110,D26-0110,1750,Equipment,"Mobile shelving system, records room",2026-05-05,2026-05-07,33250.00
+PA-26-0111,D26-0111,1750,Equipment,Access control panels and badge readers,2026-05-08,2026-05-12,58125.00
+PA-26-0112,D26-0112,1750,Equipment,"Telehandler, 10,000 lb",2026-05-12,2026-05-14,96800.00
+PA-26-0113,D26-0113,1750,Equipment,X-ray mail screening unit,2026-05-15,2026-05-19,74500.00
+PA-26-0114,D26-0114,1750,Equipment,"CNC lathe, maintenance shop",2026-05-19,2026-05-21,88300.00
+PA-26-0115,D26-0115,1750,Equipment,"Pallet racking system, warehouse bay 4",2026-05-22,2026-05-27,41960.00
+PA-26-0116,D26-0116,1750,Equipment,"Uninterruptible power system, 200 kVA",2026-05-27,2026-05-29,118450.00
+PA-26-0117,D26-0117,1750,Equipment,"Generator, 500 kW diesel",2026-06-01,2026-06-02,186400.00
+PA-26-0118,D26-0118,1750,Equipment,Snow removal attachment set,2026-06-04,2026-06-08,23900.00
+PA-26-0119,D26-0119,1750,Equipment,"Audio-visual control system, auditorium",2026-06-09,2026-06-11,39780.00
+PA-26-0120,D26-0120,1750,Equipment,"Air compressor, 100 hp",2026-06-12,2026-06-15,47250.00
+PA-26-0121,D26-0121,1750,Equipment,"Commercial dishwasher, dining facility",2026-06-16,2026-06-17,25600.00
+PA-26-0122,D26-0122,1750,Equipment,Spectrum analyzer,2026-06-22,2026-06-23,63450.00
+PA-26-0123,D26-0123,1750,Equipment,Firewall appliance pair,2026-06-24,2026-06-25,54900.00
+PA-26-0124,D26-0117,1750,Equipment,"Generator, 500 kW diesel",2026-06-01,2026-06-26,186400.00
+PA-26-0125,D26-0125,1750,Equipment,"Boom lift, 60 ft",2026-06-29,2026-06-30,72900.00
+PA-26-0126,D26-0126,1750,Equipment,Loading dock leveler set,2026-06-30,2026-06-30,41350.00
+PA-26-0201,D26-0131,1730,"Buildings, Improvements and Renovations","HVAC chiller replacement, Building 1",2026-04-10,2026-04-14,312400.00
+PA-26-0202,D26-0132,1730,"Buildings, Improvements and Renovations","Elevator modernization, Building 3",2026-04-30,2026-05-04,228750.00
+PA-26-0203,D26-0133,1730,"Buildings, Improvements and Renovations","Roof replacement, Building 2",2026-05-14,2026-05-18,418600.00
+PA-26-0204,D26-0134,1730,"Buildings, Improvements and Renovations","Fire suppression upgrade, data room A",2026-05-20,2026-05-22,167300.00
+PA-26-0205,D26-0135,1730,"Buildings, Improvements and Renovations","Restroom renovation, Building 1",2026-06-05,2026-06-09,96450.00
+PA-26-0206,D26-0136,1730,"Buildings, Improvements and Renovations","Security vestibule, main entrance",2026-06-11,2026-06-12,184900.00
+PA-26-0207,D26-0137,1730,"Buildings, Improvements and Renovations","Boiler replacement, Building 3",2026-06-19,2026-06-22,255300.00
+PA-26-0208,D26-0138,1730,"Buildings, Improvements and Renovations","Window replacement, Building 2",2026-06-23,2026-06-25,139800.00
+PA-26-0301,D26-0141,1820,Leasehold Improvements,"Interior build-out, leased suite 120",2026-04-17,2026-04-21,198500.00
+PA-26-0302,D26-0142,1820,Leasehold Improvements,"Interior build-out, leased suite 210",2026-05-06,2026-05-08,265000.00
+PA-26-0303,D26-0143,1820,Leasehold Improvements,"Cabling and data drops, leased suite 120",2026-05-13,2026-05-15,46800.00
+PA-26-0304,D26-0144,1820,Leasehold Improvements,"Lighting retrofit, leased warehouse",2026-05-29,2026-06-02,58300.00
+PA-26-0305,D26-0145,1820,Leasehold Improvements,"Conference room fit-out, leased suite 210",2026-06-08,2026-06-10,72650.00
+PA-26-0306,D26-0146,1820,Leasehold Improvements,"Security upgrades, leased suite 300",2026-06-15,2026-06-17,61200.00
+
+Prepared for training use only.

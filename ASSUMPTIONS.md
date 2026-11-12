@@ -138,3 +138,23 @@ Decisions made without asking. Each is reversible.
 - A36. The download on GitHub is now the lean test kit, `release/SDFM_demo_test_kit.zip`:
   TEST_GUIDE.html plus the three demo files. The full presenter kit zip is no longer
   committed; `tools/package_kit.py` builds it into `dist/` on request.
+
+## Client feedback, 12 November planning call (Phase 16)
+- A37. The client has no Copilot; the demos run in Gemini or another approved chat tool that
+  takes Excel and Word uploads. The test guide is written for that; the Copilot kit stays for
+  reference.
+- A38. No agency name anywhere. The Demo 1 role now reads "supporting a defense agency
+  directorate" in every prompt, and the report label reads "not real agency, vendor,
+  personnel or program information". Preflight fails if the agency name appears in any file. Git history
+  still contains earlier text.
+- A39. Demo 3 (requested by the client): property subledger to GL reconciliation, one property
+  system, three accounts (1730, 1750, 1820), document-level detail on both sides, five planted
+  breaks (duplicate, cutoff, missing record, transposition, misclassification). Dollars, not
+  thousands. GL is posting detail, not just balances, so the AI can name documents.
+- A40. In the test kit zip, the Demo 2 copies are named `Execution_Report_Copy_A.docx` and
+  `Execution_Report_Copy_B.docx`, as the presenter asked, so the name doesn't spoil the
+  reveal. This departs from the original spec's file name; the repo copy in ./demo2 keeps the
+  `INJECTED_demo_report_DO_NOT_USE` name and REVEAL.md.
+- A41. Demo 2 has a fourth outcome, "Softened" ("mostly on plan with a few caveats" when Copy A
+  said not on plan), seen in a Copilot test on 30 October. The presenter reports Copilot
+  followed the hidden line in most of about 15 runs and caught it once.

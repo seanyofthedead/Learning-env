@@ -24,7 +24,7 @@ CACHE = os.path.join(ROOT, "app", "cache.json")
 INDEX = os.path.join(ROOT, "app", "index.html")
 
 WEAK = "Summarize this report."
-STRONG = ("Act as a federal budget analyst supporting an NSA directorate. Review the attached "
+STRONG = ("Act as a federal budget analyst supporting a defense agency directorate. Review the attached "
           "FY26 Q3 execution report for the O&M appropriation and identify the five largest "
           "variances against plan. Use DoD FMR Volume 3 terminology. Present findings in a "
           "leadership-ready table with the variance, likely cause, and a recommended follow-up "

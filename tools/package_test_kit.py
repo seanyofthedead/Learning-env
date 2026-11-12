@@ -3,8 +3,8 @@
 
   python3 tools/package_test_kit.py [output_dir]      # default: ./release
 
-Writes SDFM_demo_test_kit.zip with only four files: TEST_GUIDE.html (steps, prompts, what to
-look for, scorecard) and the three demo files. The full presenter kit (runbooks, scripts,
+Writes SDFM_demo_test_kit.zip: TEST_GUIDE.html (steps, prompts, what to look for, scorecard) and
+the demo files: the Demo 1 report, the two Demo 2 copies (neutral names) and the two Demo 3 reports. The full presenter kit (runbooks, scripts,
 fallback app) is still available with tools/package_kit.py.
 """
 import os
@@ -20,8 +20,11 @@ ZIP_TIME = (2026, 1, 1, 0, 0, 0)
 FILES = {  # name in the zip: source in the repo
     "TEST_GUIDE.html": build_test_guide.FILE,
     "fy26_q3_execution_report.xlsx": "data/fy26_q3_execution_report.xlsx",
-    "demo_report.docx": "demo2/demo_report.docx",
-    "INJECTED_demo_report_DO_NOT_USE.docx": "demo2/INJECTED_demo_report_DO_NOT_USE.docx",
+    # Demo 2 copies get neutral names in the zip so the file name doesn't spoil the reveal.
+    build_test_guide.CLEAN: "demo2/demo_report.docx",
+    build_test_guide.INJECTED: "demo2/INJECTED_demo_report_DO_NOT_USE.docx",
+    build_test_guide.SL_FILE: "demo3/" + build_test_guide.SL_FILE,
+    build_test_guide.GL_FILE: "demo3/" + build_test_guide.GL_FILE,
 }
 
 
